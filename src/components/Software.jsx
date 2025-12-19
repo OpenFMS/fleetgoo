@@ -11,7 +11,7 @@ const Software = ({ data }) => {
   if (!data) return null;
 
   return (
-    <div className="py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+    <div className="py-20 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -20,8 +20,8 @@ const Software = ({ data }) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{data.hero.title}</h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">{data.hero.subtitle}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">{data.hero.title}</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">{data.hero.subtitle}</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -34,17 +34,17 @@ const Software = ({ data }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:bg-slate-800/50 hover:border-blue-500/50 transition-all duration-300"
+                className="group bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-xl p-6 hover:bg-white dark:hover:bg-slate-800/50 hover:shadow-xl dark:hover:border-blue-500/50 transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                       {feature.description}
                     </p>
                   </div>

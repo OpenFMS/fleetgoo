@@ -11,7 +11,7 @@ const About = ({ data }) => {
   if (!data) return null;
 
   return (
-    <div className="py-20 bg-slate-950">
+    <div className="py-20 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -20,9 +20,9 @@ const About = ({ data }) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{data.hero.title}</h2>
-          <p className="text-xl text-blue-400 mb-8">{data.hero.subtitle}</p>
-          <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed text-lg">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">{data.hero.title}</h2>
+          <p className="text-xl text-blue-600 dark:text-blue-400 mb-8">{data.hero.subtitle}</p>
+          <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed text-lg">
             {data.hero.description}
           </p>
         </motion.div>
@@ -35,12 +35,12 @@ const About = ({ data }) => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-blue-600/10 to-cyan-600/10 border border-blue-500/20 rounded-xl p-6 text-center"
+              className="bg-blue-50 dark:bg-slate-800/10 border border-blue-100 dark:border-blue-500/20 rounded-xl p-6 text-center shadow-lg dark:shadow-none bg-gradient-to-br from-white to-blue-50/50 dark:from-slate-800/10 dark:to-cyan-600/5"
             >
-              <div className="text-3xl md:text-4xl font-bold text-blue-400 mb-2">
+              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
                 {stat.value}
               </div>
-              <div className="text-gray-400 text-sm">{stat.label}</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -55,15 +55,15 @@ const About = ({ data }) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-slate-800/50 border border-slate-700 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300 group"
+                className="group bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-xl p-6 hover:bg-white dark:hover:bg-slate-800 hover:shadow-xl dark:hover:border-blue-500/50 transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {value.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
                   {value.description}
                 </p>
               </motion.div>

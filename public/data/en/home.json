@@ -35,15 +35,15 @@
     "subtitle": "Explore our flagship devices designed for reliability and performance.",
     "tabs": [
       {
-        "id": "d510",
-        "label": "D510 - AI Dashcam",
-        "title": "D510 Smart 4G Dashcam",
+        "id": "d501",
+        "label": "D501 - AI Dashcam",
+        "title": "D501 Smart 4G Dashcam",
         "description": "The ultimate all-in-one telematics camera with built-in AI processor for driver behavior analysis.",
-        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "image": "images/products/d510-main.png",
         "benefits": [
           "AI-powered ADAS & DMS (Fatigue/Distraction)",
           "Real-time 1080p HD Video Streaming",
-          "Dual Camera Recording (Road & Cabin)"
+          "Supports JT 808/1078 standards protocol"
         ],
         "bestFor": [
           "Taxis",
@@ -56,10 +56,10 @@
         "label": "D901 - Rugged MDVR",
         "title": "D901 4-Channel MDVR",
         "description": "Military-grade mobile digital video recorder designed for heavy-duty applications and extreme environments.",
-        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "image": "images/products/d901-main.png",
         "benefits": [
-          "Supports up to 8 AHD Cameras",
-          "2TB SSD Storage + SD Card Backup",
+          "AI Detection fuel theft prevention, and voice recognition",
+          "Supports up to 4 AHD Cameras",
           "IP67 Waterproof & Anti-vibration Design"
         ],
         "bestFor": [

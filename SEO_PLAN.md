@@ -1,4 +1,4 @@
-# FleetGoo Horizons SEO 优化方案
+# FleetGoo SEO 优化方案
 
 为了确保 FleetGoo 独立站在发布到 Vercel 后能够获得最佳的搜索引擎排名（尤其是 Google），并有效引流，我们需要从 **技术架构**、**内容策略**、**结构化数据** 和 **性能优化** 四个维度进行全面升级。
 

@@ -103,10 +103,10 @@ const Footer = ({ language }) => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#' },
-    { icon: Twitter, href: '#' },
-    { icon: Linkedin, href: '#' },
-    { icon: Instagram, href: '#' },
+    { icon: Facebook, href: 'https://www.facebook.com/people/Mapgoo/61581872645799/' },
+    // { icon: Twitter, href: '#' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/fleetgoo' },
+    { icon: Instagram, href: 'https://www.instagram.com/mapgoosales' },
   ];
 
   return (

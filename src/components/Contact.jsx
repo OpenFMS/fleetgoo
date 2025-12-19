@@ -1,13 +1,20 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, HelpCircle } from 'lucide-react';
+import { Send, HelpCircle, ArrowRight } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/use-toast';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 const Contact = ({ data, language }) => {
   const { toast } = useToast();
@@ -16,6 +23,7 @@ const Contact = ({ data, language }) => {
     email: '',
     company: '',
     phone: '',
+    productInterest: '',
     message: '',
   });
 
@@ -26,8 +34,8 @@ const Contact = ({ data, language }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Store in localStorage
+
+    // Simulate API call and store in localStorage
     const inquiries = JSON.parse(localStorage.getItem('contactInquiries') || '[]');
     inquiries.push({
       ...formData,
@@ -37,8 +45,8 @@ const Contact = ({ data, language }) => {
     localStorage.setItem('contactInquiries', JSON.stringify(inquiries));
 
     toast({
-      title: form.successTitle || "Inquiry Submitted Successfully! ✅",
-      description: form.successDesc || "Thank you for your interest. Our team will contact you within 24 hours.",
+      title: "Quote Request Sent!",
+      description: "Thank you for your inquiry. Our team will contact you shortly.",
     });
 
     setFormData({
@@ -46,6 +54,7 @@ const Contact = ({ data, language }) => {
       email: '',
       company: '',
       phone: '',
+      productInterest: '',
       message: '',
     });
   };
@@ -57,8 +66,15 @@ const Contact = ({ data, language }) => {
     });
   };
 
+  const handleSelectChange = (value) => {
+    setFormData({
+      ...formData,
+      productInterest: value
+    });
+  };
+
   return (
-    <div className="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+    <div className="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -67,8 +83,8 @@ const Contact = ({ data, language }) => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{data?.title}</h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">{data?.subtitle}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">{data?.title}</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">{data?.subtitle}</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -78,85 +94,102 @@ const Contact = ({ data, language }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6 bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+            <form onSubmit={handleSubmit} className="space-y-6 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-xl dark:shadow-none">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-gray-300">{form.nameLabel}</Label>
+                  <Label htmlFor="name" className="text-slate-700 dark:text-gray-300">Name <span className="text-red-500">*</span></Label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder={form.namePlaceholder}
+                    placeholder="John Doe"
                     required
-                    className="bg-slate-900 border-slate-600 text-white placeholder:text-gray-500 focus:border-blue-500"
+                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-gray-300">{form.emailLabel}</Label>
+                  <Label htmlFor="email" className="text-slate-700 dark:text-gray-300">Email <span className="text-red-500">*</span></Label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder={form.emailPlaceholder}
+                    placeholder="john@company.com"
                     required
-                    className="bg-slate-900 border-slate-600 text-white placeholder:text-gray-500 focus:border-blue-500"
+                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
                   />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="company" className="text-gray-300">{form.companyLabel}</Label>
+                  <Label htmlFor="company" className="text-slate-700 dark:text-gray-300">Company</Label>
                   <Input
                     id="company"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    placeholder={form.companyPlaceholder}
-                    required
-                    className="bg-slate-900 border-slate-600 text-white placeholder:text-gray-500 focus:border-blue-500"
+                    placeholder="Acme Logistics"
+                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-gray-300">{form.phoneLabel}</Label>
+                  <Label htmlFor="phone" className="text-slate-700 dark:text-gray-300">Phone</Label>
                   <Input
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder={form.phonePlaceholder}
-                    className="bg-slate-900 border-slate-600 text-white placeholder:text-gray-500 focus:border-blue-500"
+                    placeholder="+1 (555) 000-0000"
+                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message" className="text-gray-300">{form.messageLabel}</Label>
+                <Label htmlFor="product-interest" className="text-slate-700 dark:text-gray-300">Product Interest</Label>
+                <Select onValueChange={handleSelectChange} value={formData.productInterest}>
+                  <SelectTrigger className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white w-full">
+                    <SelectValue placeholder="Select a product..." />
+                  </SelectTrigger>
+                  <SelectContent className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white">
+                    <SelectItem value="d510">D510 AI Dashcam</SelectItem>
+                    <SelectItem value="d901">D901 MDVR System</SelectItem>
+                    <SelectItem value="platform">Software Platform</SelectItem>
+                    <SelectItem value="other">Other / General Inquiry</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="message" className="text-slate-700 dark:text-gray-300">Message</Label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder={form.messagePlaceholder}
-                  required
+                  placeholder="Tell us about your fleet size and specific requirements..."
                   rows={6}
-                  className="bg-slate-900 border-slate-600 text-white placeholder:text-gray-500 focus:border-blue-500 resize-none"
+                  className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500 resize-none"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white py-6 text-lg rounded-lg shadow-lg shadow-blue-500/20 transition-all hover:shadow-blue-500/40 hover:scale-105"
+                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg rounded-lg shadow-lg shadow-blue-500/20 transition-all hover:shadow-blue-500/40 hover:scale-105"
               >
-                {form.submitButton}
-                <Send className="ml-2 w-5 h-5" />
+                Send Message
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
+              <p className="text-center text-xs text-slate-500 dark:text-gray-500 mt-4">
+                We respect your privacy. Your information is safe with us.
+              </p>
             </form>
           </motion.div>
 
+          {/* Contact Info (Right Side) */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -164,8 +197,8 @@ const Contact = ({ data, language }) => {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <div className="bg-gradient-to-br from-blue-600/20 to-cyan-600/20 border border-blue-500/30 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">{contactInfo.title}</h3>
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-600/20 dark:to-cyan-600/20 border border-blue-200 dark:border-blue-500/30 rounded-2xl p-8 shadow-lg dark:shadow-none">
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">{contactInfo.title}</h3>
               <div className="space-y-6">
                 {contactInfoItems.map((info, index) => {
                   const Icon = LucideIcons[info.icon] || HelpCircle;
@@ -175,8 +208,8 @@ const Contact = ({ data, language }) => {
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
-                        <div className="text-sm text-gray-400 mb-1">{info.label}</div>
-                        <div className="text-white font-medium">{info.value}</div>
+                        <div className="text-sm text-slate-500 dark:text-gray-400 mb-1">{info.label}</div>
+                        <div className="text-slate-900 dark:text-white font-medium">{info.value}</div>
                       </div>
                     </div>
                   );
@@ -184,11 +217,11 @@ const Contact = ({ data, language }) => {
               </div>
             </div>
 
-            <div className="relative rounded-2xl overflow-hidden h-64">
-              <img 
-                alt="Modern office building headquarters" 
-                className="w-full h-full object-cover" 
-                src={data?.officeImage || "https://images.unsplash.com/photo-1697673468681-d536aa3bc870"} 
+            <div className="relative rounded-2xl overflow-hidden h-64 shadow-xl dark:shadow-none">
+              <img
+                alt="Modern office building headquarters"
+                className="w-full h-full object-cover"
+                src={data?.officeImage || "https://images.unsplash.com/photo-1697673468681-d536aa3bc870"}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
             </div>
