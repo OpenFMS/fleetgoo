@@ -112,10 +112,17 @@ const Header = ({ language }) => {
         <div className="flex items-center justify-between">
           <Link to={`/${language}`}>
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 cursor-pointer">
+              {/* Light Mode Logo */}
               <img
-                src="https://horizons-cdn.hostinger.com/d7bb4810-a883-4ff6-8fd8-0ad7f5b4a494/562e9d2eff059326def4743368c28927.png"
+                src="/images/brand/logo-light.webp"
                 alt="FleetGoo Official Logo"
-                className="h-8 md:h-10 w-auto"
+                className="h-8 md:h-10 w-auto dark:hidden"
+              />
+              {/* Dark Mode Logo */}
+              <img
+                src="/images/brand/logo-dark.png"
+                alt="FleetGoo Official Logo"
+                className="h-8 md:h-10 w-auto hidden dark:block"
               />
             </motion.div>
           </Link>

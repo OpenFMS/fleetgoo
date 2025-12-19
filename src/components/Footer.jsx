@@ -118,10 +118,8 @@ const Footer = ({ language }) => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 mb-4"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">F</span>
-              </div>
-              <span className="text-xl font-bold text-slate-900 dark:text-white">About Us</span>
+              <img src="/images/brand/logo-light.webp" alt="FleetGoo Logo" className="h-8 w-auto dark:hidden" />
+              <img src="/images/brand/logo-dark.png" alt="FleetGoo Logo" className="h-8 w-auto hidden dark:block" />
             </motion.div>
             <p className="text-slate-600 dark:text-gray-400 text-sm mb-4">
               Leading provider of intelligent vehicle tracking and fleet management solutions.

@@ -78,6 +78,18 @@ npm run preview
 - **Tailwind 配置**: 位于 `tailwind.config.js`。
 - **内容数据**: 位于 `public/data/{language}/` 下的 JSON 文件中。
 
+## 📂 资源管理 (Asset Management)
+
+为了保持项目整洁，请按照以下目录结构存放静态资源（Images, Logos, Favicons）：
+
+*   **`public/images/brand/`**: 存放 Logo、Icon 等品牌标识。
+*   **`public/images/favicons/`**: 存放网站图标 (Favicon)。
+*   **`public/images/products/`**: 存放产品高清图片。
+*   **`public/images/solutions/`**: 存放解决方案相关图片。
+*   **`public/images/company/`**: 存放公司环境、团队照片等。
+
+> **注意**: 在代码或 JSON 数据引用这些图片时，请使用绝对路径，例如 `/images/products/my-product.jpg`。
+
 ## 🤝 贡献
 
 欢迎提交 Issue 或 Pull Request 来改进本项目。

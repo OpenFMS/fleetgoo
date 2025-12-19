@@ -28,7 +28,7 @@ const SEO = ({
     const defaults = {
         title: 'FleetGoo - Advanced Fleet Management Solutions',
         description: 'Leading provider of AI-powered fleet management solutions, 4G AI dashcams, MDVR,GPS tracking, and fleet management software for commercial vehicles.',
-        image: `${siteUrl}/og-image.jpg` // Need to ensure this exists or use a prop
+        image: `${siteUrl}/images/brand/logo-light.webp` // Updated from default
     };
 
     const metaTitle = title ? `${title} | FleetGoo` : defaults.title;
@@ -77,7 +77,7 @@ const SEO = ({
                 "name": "FleetGoo",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": `${siteUrl}/logo.png`
+                    "url": `${siteUrl}/images/brand/logo-light.webp`
                 }
             },
             "description": metaDesc
@@ -88,7 +88,7 @@ const SEO = ({
             "@type": "Organization",
             "name": "FleetGoo",
             "url": siteUrl,
-            "logo": `${siteUrl}/logo.png`,
+            "logo": `${siteUrl}/images/brand/logo-light.webp`,
             "sameAs": [
                 "https://www.facebook.com/fleetgoo",
                 "https://twitter.com/fleetgoo",
