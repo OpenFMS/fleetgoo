@@ -35,6 +35,73 @@ const SEO = ({
     const metaDesc = description || defaults.description;
     const metaImage = image || defaults.image;
 
+    // Structured Data (JSON-LD) Generation
+    let schemaData = null;
+
+    if (type === 'website') {
+        schemaData = {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "FleetGoo Horizons",
+            "url": siteUrl,
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": `${siteUrl}/search?q={search_term_string}`,
+                "query-input": "required name=search_term_string"
+            }
+        };
+    } else if (type === 'product') {
+        schemaData = {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": title,
+            "image": metaImage,
+            "description": metaDesc,
+            "brand": {
+                "@type": "Brand",
+                "name": "FleetGoo"
+            }
+        };
+    } else if (type === 'article') {
+        schemaData = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": title,
+            "image": metaImage,
+            "author": {
+                "@type": "Organization",
+                "name": "FleetGoo"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "FleetGoo",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": `${siteUrl}/logo.png`
+                }
+            },
+            "description": metaDesc
+        };
+    } else if (type === 'organization') { // For Home or Contact page
+        schemaData = {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "FleetGoo",
+            "url": siteUrl,
+            "logo": `${siteUrl}/logo.png`,
+            "sameAs": [
+                "https://www.facebook.com/fleetgoo",
+                "https://twitter.com/fleetgoo",
+                "https://www.linkedin.com/company/fleetgoo"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-800-555-5555",
+                "contactType": "customer service"
+            }
+        };
+    }
+
     return (
         <Helmet>
             {/* Standard Meta Tags */}
@@ -71,6 +138,13 @@ const SEO = ({
                 hreflang="x-default"
                 href={`${siteUrl}/en/${purePath}`}
             />
+
+            {/* Structured Data (JSON-LD) */}
+            {schemaData && (
+                <script type="application/ld+json">
+                    {JSON.stringify(schemaData)}
+                </script>
+            )}
         </Helmet>
     );
 };

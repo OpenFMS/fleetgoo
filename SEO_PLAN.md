@@ -95,5 +95,5 @@ SEO 的核心指标之一是 Core Web Vitals (CWV)。
 1.  **第一周**: [Completed] 重构路由结构，支持 URL 语言路径 (`/en/`, `/es/`)。
 2.  **第一周**: [Completed] 引入 `react-helmet-async` 并为所有页面配置动态 Title/Description。
 3.  **第二周**: [Completed] 生成 Sitemap.xml 和 Robots.txt。
-4.  **第二周**: 添加 JSON-LD 结构化数据。
+4.  **第二周**: [Completed] 添加 JSON-LD 结构化数据。
 5.  **上线前**: 使用 Lighthouse 进行性能跑分并优化图片。
