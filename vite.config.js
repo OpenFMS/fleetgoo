@@ -6,6 +6,27 @@ import inlineEditPlugin from './plugins/visual-editor/vite-plugin-react-inline-e
 import editModeDevPlugin from './plugins/visual-editor/vite-plugin-edit-mode.js';
 import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-restoration.js';
 import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-mode.js';
+import fs from 'fs'; // Added fs import
+
+// Helper to recursively finding files
+function getFiles(dir, files = []) {
+	try {
+		const fileList = fs.readdirSync(dir);
+		for (const file of fileList) {
+			const name = path.join(dir, file);
+			if (fs.statSync(name).isDirectory()) {
+				getFiles(name, files);
+			} else {
+				if (file.endsWith('.json')) {
+					files.push(name);
+				}
+			}
+		}
+	} catch (e) {
+		console.warn("Directory not found or inaccessible:", dir);
+	}
+	return files;
+}
 
 // Generate routes dynamically from JSON data
 const generateRoutes = () => {
@@ -294,7 +315,116 @@ export default defineConfig({
 			changefreq: 'weekly',
 			priority: 1.0,
 			readable: true
-		})
+		}),
+		{
+			name: 'admin-fs-api',
+			configureServer(server) {
+				server.middlewares.use((req, res, next) => {
+					// Basic middleware to match /api/admin
+					if (req.url && req.url.startsWith('/api/admin')) {
+						// Manually parse the URL to handle query params
+						// Note: in generic middleware, req.url is the full path from the root
+						const protocol = req.socket.encrypted ? 'https' : 'http';
+						const host = req.headers.host || 'localhost';
+						const url = new URL(req.url, `${protocol}://${host}`);
+
+						// 1. LIST FILES
+						if (url.pathname === '/api/admin/files' && req.method === 'GET') {
+							try {
+								const dataDir = path.resolve(__dirname, 'public/data');
+								if (!fs.existsSync(dataDir)) {
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ files: [] }));
+									return;
+								}
+								const files = getFiles(dataDir).map(f => path.relative(dataDir, f));
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ files }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// 2. READ FILE
+						if (url.pathname === '/api/admin/content' && req.method === 'GET') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							// Security check: only allow files inside public/data
+							const safePath = path.join(path.resolve(__dirname, 'public/data'), fileParam);
+							if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+								res.statusCode = 403;
+								res.end(JSON.stringify({ error: 'Access denied' }));
+								return;
+							}
+
+							try {
+								if (!fs.existsSync(safePath)) {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'File not found' }));
+									return;
+								}
+								const content = fs.readFileSync(safePath, 'utf-8');
+								res.setHeader('Content-Type', 'application/json');
+								res.end(content);
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// 3. WRITE FILE
+						if (url.pathname === '/api/admin/content' && req.method === 'POST') {
+							// Basic body parsing
+							let body = '';
+							req.on('data', chunk => {
+								body += chunk.toString();
+							});
+							req.on('end', () => {
+								try {
+									const { file, content } = JSON.parse(body);
+									if (!file || !content) {
+										res.statusCode = 400;
+										res.end(JSON.stringify({ error: 'Missing file or content' }));
+										return;
+									}
+
+									// Security check
+									const safePath = path.join(path.resolve(__dirname, 'public/data'), file);
+									if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+										res.statusCode = 403;
+										res.end(JSON.stringify({ error: 'Access denied' }));
+										return;
+									}
+
+									// Write formatted JSON
+									const jsonString = typeof content === 'string' ? content : JSON.stringify(content, null, 2);
+									fs.writeFileSync(safePath, jsonString);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+					}
+
+					next();
+				});
+			}
+		}
 	],
 	server: {
 		cors: true,

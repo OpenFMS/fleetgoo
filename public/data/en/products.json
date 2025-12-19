@@ -47,7 +47,7 @@
     {
       "id": "gps-tracker",
       "categoryId": "gps-tracker",
-      "title": "GPS Tracker",
+      "title": "4G GPS Tracker",
       "description": "Real-time12 location tracking with global coverage, geofencing, and advanced analytics",
       "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
       "gradient": "from-blue-600 to-cyan-500"
@@ -55,9 +55,9 @@
     {
       "id": "4g-dashcam",
       "categoryId": "4g-dashcam",
-      "title": "4G Dashcam",
+      "title": "4G AI Dashcam",
       "description": "High-definition recording with live streaming, AI driver monitoring, and cloud storage",
-      "image": "https://images.unsplash.com/photo-1697554471026-62151121d15c?q=80&w=2070&auto=format&fit=crop",
+      "image": "/images/products/d510-main.png",
       "gradient": "from-cyan-600 to-blue-500"
     },
     {

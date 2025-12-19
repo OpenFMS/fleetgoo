@@ -1,49 +1,66 @@
-
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useOutletContext } from 'react-router-dom';
 import Layout from '@/components/Layout';
-import HomePage from '@/pages/HomePage';
-import ProductsPage from '@/pages/ProductsPage';
-import ProductDetailPage from '@/pages/ProductDetailPage';
-import SolutionsPage from '@/pages/SolutionsPage';
-import SolutionDetailPage from '@/pages/SolutionDetailPage';
-import SoftwarePage from '@/pages/SoftwarePage';
-import AboutPage from '@/pages/AboutPage';
-import ContactPage from '@/pages/ContactPage';
 
-// Helper component to pass language context as prop to pages
-// This avoids modifying all page components immediately
+// Lazy loading components
+const HomePage = lazy(() => import('@/pages/HomePage'));
+const AboutPage = lazy(() => import('@/pages/AboutPage'));
+const ProductsPage = lazy(() => import('@/pages/ProductsPage'));
+const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage'));
+const SolutionsPage = lazy(() => import('@/pages/SolutionsPage'));
+const SolutionDetailPage = lazy(() => import('@/pages/SolutionDetailPage'));
+const ContactPage = lazy(() => import('@/pages/ContactPage'));
+const SoftwarePage = lazy(() => import('@/pages/SoftwarePage'));
+
+// Admin Components
+const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
+const ContentEditor = lazy(() => import('@/pages/admin/ContentEditor'));
+
+const LoadingFallback = () => (
+  <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+  </div>
+);
+
+// Helper component to pass language context to pages
 const PageWrapper = ({ Component }) => {
   const context = useOutletContext();
-  // Ensure context exists before accessing property
   const language = context ? context.language : 'en';
   return <Component language={language} />;
 };
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Routes>
-        {/* Redirect root to /en */}
-        <Route path="/" element={<Navigate to="/en" replace />} />
+      <Suspense fallback={<LoadingFallback />}>
+        <Routes>
+          {/* Admin Routes */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route index element={<div className="p-8 text-center text-slate-500">Select a file from the sidebar to start editing</div>} />
+            <Route path="editor" element={<ContentEditor />} />
+          </Route>
 
-        {/* Language Routes */}
-        <Route path="/:lang" element={<Layout />}>
-          <Route index element={<PageWrapper Component={HomePage} />} />
-          <Route path="products" element={<PageWrapper Component={ProductsPage} />} />
-          <Route path="products/:productId" element={<PageWrapper Component={ProductDetailPage} />} />
-          <Route path="solutions" element={<PageWrapper Component={SolutionsPage} />} />
-          <Route path="solutions/:solutionId" element={<PageWrapper Component={SolutionDetailPage} />} />
-          <Route path="software" element={<PageWrapper Component={SoftwarePage} />} />
-          <Route path="about-us" element={<PageWrapper Component={AboutPage} />} />
-          <Route path="contact" element={<PageWrapper Component={ContactPage} />} />
-        </Route>
+          {/* Public Routes */}
+          <Route path="/" element={<Navigate to="/en" replace />} />
 
-        {/* Global 404 - Redirect to /en */}
-        <Route path="*" element={<Navigate to="/en" replace />} />
-      </Routes>
+          <Route path="/:lang" element={<Layout />}>
+            <Route index element={<PageWrapper Component={HomePage} />} />
+            <Route path="about-us" element={<PageWrapper Component={AboutPage} />} />
+            <Route path="products" element={<PageWrapper Component={ProductsPage} />} />
+            <Route path="products/:id" element={<PageWrapper Component={ProductDetailPage} />} />
+
+            <Route path="solutions" element={<PageWrapper Component={SolutionsPage} />} />
+            <Route path="solutions/:id" element={<PageWrapper Component={SolutionDetailPage} />} />
+
+            <Route path="contact" element={<PageWrapper Component={ContactPage} />} />
+            <Route path="software" element={<PageWrapper Component={SoftwarePage} />} />
+          </Route>
+
+          <Route path="*" element={<Navigate to="/en" replace />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
-}
+};
 
 export default App;
