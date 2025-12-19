@@ -1,10 +1,59 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
+import Sitemap from 'vite-plugin-sitemap';
 import inlineEditPlugin from './plugins/visual-editor/vite-plugin-react-inline-editor.js';
 import editModeDevPlugin from './plugins/visual-editor/vite-plugin-edit-mode.js';
 import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-restoration.js';
 import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-mode.js';
+
+// Generate routes dynamically from JSON data
+const generateRoutes = () => {
+	const routes = [];
+	const languages = ['en', 'es', 'zh'];
+
+	languages.forEach(lang => {
+		// Base routes
+		routes.push(`/${lang}`);
+		routes.push(`/${lang}/products`);
+		routes.push(`/${lang}/solutions`);
+		routes.push(`/${lang}/software`);
+		routes.push(`/${lang}/about-us`);
+		routes.push(`/${lang}/contact`);
+
+		// Products
+		try {
+			const productsPath = path.resolve(__dirname, `public/data/${lang}/products.json`);
+			if (fs.existsSync(productsPath)) {
+				const productsData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+				if (productsData.items) {
+					productsData.items.forEach(item => {
+						routes.push(`/${lang}/products/${item.id}`);
+					});
+				}
+			}
+		} catch (e) {
+			console.warn(`Warning: Could not load products for ${lang}`, e.message);
+		}
+
+		// Solutions
+		try {
+			const solutionsPath = path.resolve(__dirname, `public/data/${lang}/solutions.json`);
+			if (fs.existsSync(solutionsPath)) {
+				const solutionsData = JSON.parse(fs.readFileSync(solutionsPath, 'utf-8'));
+				if (solutionsData.items) {
+					solutionsData.items.forEach(item => {
+						routes.push(`/${lang}/solutions/${item.id}`);
+					});
+				}
+			}
+		} catch (e) {
+			console.warn(`Warning: Could not load solutions for ${lang}`, e.message);
+		}
+	});
+
+	return routes;
+};
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -182,7 +231,7 @@ const addTransformIndexHtml = {
 			},
 			{
 				tag: 'script',
-				attrs: {type: 'module'},
+				attrs: { type: 'module' },
 				children: configHorizonsConsoleErrroHandler,
 				injectTo: 'head',
 			},
@@ -220,7 +269,7 @@ const addTransformIndexHtml = {
 	},
 };
 
-console.warn = () => {};
+console.warn = () => { };
 
 const logger = createLogger()
 const loggerError = logger.error
@@ -238,7 +287,14 @@ export default defineConfig({
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
 		react(),
-		addTransformIndexHtml
+		addTransformIndexHtml,
+		Sitemap({
+			hostname: 'https://fleetgoo.com',
+			dynamicRoutes: generateRoutes(),
+			changefreq: 'weekly',
+			priority: 1.0,
+			readable: true
+		})
 	],
 	server: {
 		cors: true,
@@ -248,7 +304,7 @@ export default defineConfig({
 		allowedHosts: true,
 	},
 	resolve: {
-		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
+		extensions: ['.jsx', '.js', '.tsx', '.ts', '.json',],
 		alias: {
 			'@': path.resolve(__dirname, './src'),
 		},
