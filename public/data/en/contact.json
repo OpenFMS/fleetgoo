@@ -1,0 +1,42 @@
+{
+  "metaTitle": "Contact Us | FleetGoo",
+  "metaDesc": "Get in touch with our sales and support team for your vehicle tracking and fleet management needs.",
+  "title": "Get in Touch",
+  "subtitle": "Have questions about our vehicle tracking solutions? We're here to help.",
+  "form": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@company.com",
+    "companyLabel": "Company Name",
+    "companyPlaceholder": "Acme Logistics",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "messageLabel": "Your Message",
+    "messagePlaceholder": "Tell us about your fleet management needs...",
+    "submitButton": "Send Message",
+    "successTitle": "Inquiry Submitted Successfully! ✅",
+    "successDesc": "Thank you for your interest. Our team will contact you within 24 hours."
+  },
+  "contactInfo": {
+    "title": "Contact Information",
+    "items": [
+      {
+        "icon": "MapPin",
+        "label": "Headquarters",
+        "value": "123 Innovation Drive, Tech City, TC 90210"
+      },
+      {
+        "icon": "Mail",
+        "label": "Email Us",
+        "value": "sales@vehicletechpro.com"
+      },
+      {
+        "icon": "Phone",
+        "label": "Call Us",
+        "value": "+1 (800) 123-4567"
+      }
+    ]
+  },
+  "officeImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+}

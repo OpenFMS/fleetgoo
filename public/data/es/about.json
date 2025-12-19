@@ -1,0 +1,51 @@
+{
+    "page": {
+        "metaTitle": "Sobre Nosotros | FleetGoo",
+        "metaDesc": "Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software."
+    },
+    "hero": {
+        "title": "Acerca de FleetGoo",
+        "subtitle": "Liderando el futuro de la gestión inteligente de flotas",
+        "description": "Con más de una década de experiencia en tecnología de seguimiento de vehículos, ofrecemos soluciones de hardware y software de vanguardia a empresas de todo el mundo. Nuestra misión es empoderar a los operadores de flotas con información en tiempo real, análisis avanzados y una fiabilidad inigualable."
+    },
+    "stats": [
+        {
+            "label": "Dispositivos Activos",
+            "value": "500K+"
+        },
+        {
+            "label": "Países Servidos",
+            "value": "85+"
+        },
+        {
+            "label": "Satisfacción del Cliente",
+            "value": "98%"
+        },
+        {
+            "label": "Garantía de Tiempo de Actividad",
+            "value": "99.9%"
+        }
+    ],
+    "values": [
+        {
+            "icon": "Award",
+            "title": "Excelencia en la Industria",
+            "description": "Tecnología galardonada reconocida mundialmente"
+        },
+        {
+            "icon": "Users2",
+            "title": "Cliente Primero",
+            "description": "Soporte y servicio multilingüe 24/7"
+        },
+        {
+            "icon": "Globe2",
+            "title": "Alcance Global",
+            "description": "Sirviendo a clientes en más de 85 países"
+        },
+        {
+            "icon": "TrendingUp",
+            "title": "Innovación",
+            "description": "I+D continuo y mejora de productos"
+        }
+    ]
+}

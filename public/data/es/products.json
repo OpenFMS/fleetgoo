@@ -1,0 +1,102 @@
+{
+    "page": {
+        "title": "Nuestros Productos",
+        "subtitle": "Soluciones de hardware de vanguardia para monitoreo vehicular completo",
+        "metaTitle": "Productos de Hardware Vehicular | GPS, Dashcams, MDVR",
+        "metaDesc": "Explore nuestra gama de hardware profesional para vehículos, incluyendo rastreadores GPS, dashcams 4G, sistemas MDVR y pantallas inteligentes.",
+        "viewDetailsBtn": "Ver Detalles"
+    },
+    "categories": [
+        {
+            "id": "all",
+            "label": "Todos los Productos",
+            "icon": "Layers"
+        },
+        {
+            "id": "gps-tracker",
+            "label": "Rastreador GPS",
+            "icon": "MapPin"
+        },
+        {
+            "id": "4g-dashcam",
+            "label": "DashCam 4G",
+            "icon": "Camera"
+        },
+        {
+            "id": "4g-aicarbox",
+            "label": "AICarBox 4G",
+            "icon": "MonitorPlay"
+        },
+        {
+            "id": "4g-camera",
+            "label": "Cámara 4G",
+            "icon": "Camera"
+        },
+        {
+            "id": "oem-odm",
+            "label": "OEM y ODM",
+            "icon": "Wrench"
+        },
+        {
+            "id": "accessories",
+            "label": "Accesorios",
+            "icon": "Cpu"
+        }
+    ],
+    "items": [
+        {
+            "id": "gps-tracker",
+            "categoryId": "gps-tracker",
+            "icon": "MapPin",
+            "title": "Rastreador GPS",
+            "description": "Seguimiento de ubicación en tiempo real con cobertura global, geocercas y análisis avanzado",
+            "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
+            "gradient": "from-blue-600 to-cyan-500"
+        },
+        {
+            "id": "4g-dashcam",
+            "categoryId": "4g-dashcam",
+            "icon": "Camera",
+            "title": "Dashcam 4G",
+            "description": "Grabación de alta definición con transmisión en vivo, monitoreo de conductor por IA y almacenamiento en la nube",
+            "image": "https://images.unsplash.com/photo-1697554471026-62151121d15c?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-cyan-600 to-blue-500"
+        },
+        {
+            "id": "mdvr-system",
+            "categoryId": "4g-aicarbox",
+            "icon": "MonitorPlay",
+            "title": "Sistema MDVR",
+            "description": "Grabadora de video digital multicanal con conectividad 4G y acceso remoto",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-blue-700 to-indigo-600"
+        },
+        {
+            "id": "4g-ptz-camera",
+            "categoryId": "4g-camera",
+            "icon": "Camera",
+            "title": "Cámara PTZ 4G",
+            "description": "Cámara de vigilancia 4G independiente con pan-tilt-zoom para monitoreo de sitios remotos",
+            "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop",
+            "gradient": "from-indigo-600 to-purple-600"
+        },
+        {
+            "id": "oem-custom-solution",
+            "categoryId": "oem-odm",
+            "icon": "Cpu",
+            "title": "Solución Personalizada OEM",
+            "description": "Servicios de diseño y fabricación de hardware a medida para sus necesidades específicas de flota",
+            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-slate-700 to-slate-600"
+        },
+        {
+            "id": "smart-display",
+            "categoryId": "accessories",
+            "icon": "Tv",
+            "title": "Pantalla Inteligente",
+            "description": "Pantalla interactiva del conductor con navegación, alertas y métricas de rendimiento",
+            "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop",
+            "gradient": "from-indigo-600 to-blue-700"
+        }
+    ]
+}

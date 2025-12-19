@@ -1,0 +1,137 @@
+{
+  "hero": {
+    "title": "Advanced Vehicle Intelligence",
+    "subtitle": "Transform Your Fleet with Smart Hardware & AI-Powered Software",
+    "description": "Industry-leading GPS tracking, 4G dashcams, MDVR systems, and comprehensive fleet management platform trusted by businesses worldwide.",
+    "ctaPrimary": "Explore Products",
+    "ctaSecondary": "Contact Sales"
+  },
+  "valueProps": {
+    "title": "Solving Your Toughest Fleet Challenges",
+    "subtitle": "We turn operational data into actionable intelligence.",
+    "items": [
+      {
+        "icon": "Shield",
+        "title": "Eliminate Safety Blind Spots",
+        "pain": "Rising accident rates and unclear liability.",
+        "solution": "Our ADAS & DMS dashcams detect fatigue and dangers in real-time, preventing accidents before they happen."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Reduce Operational Costs",
+        "pain": "High fuel consumption and unauthorized usage.",
+        "solution": "Optimize routes and monitor idling with precision tracking to cut fuel costs by up to 20%."
+      },
+      {
+        "icon": "Zap",
+        "title": "Maximise Asset Utilization",
+        "pain": "Unknown asset locations and downtime.",
+        "solution": "Gain total visibility over every vehicle and heavy machine to ensure they are always working for you."
+      }
+    ]
+  },
+  "featuredProducts": {
+    "title": "Featured Hardware",
+    "subtitle": "Explore our flagship devices designed for reliability and performance.",
+    "tabs": [
+      {
+        "id": "d510",
+        "label": "D510 - AI Dashcam",
+        "title": "D510 Smart 4G Dashcam",
+        "description": "The ultimate all-in-one telematics camera with built-in AI processor for driver behavior analysis.",
+        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "benefits": [
+          "AI-powered ADAS & DMS (Fatigue/Distraction)",
+          "Real-time 1080p HD Video Streaming",
+          "Dual Camera Recording (Road & Cabin)"
+        ],
+        "bestFor": [
+          "Taxis",
+          "Ride-hailing",
+          "Last-mile Delivery"
+        ]
+      },
+      {
+        "id": "d901",
+        "label": "D901 - Rugged MDVR",
+        "title": "D901 4-Channel MDVR",
+        "description": "Military-grade mobile digital video recorder designed for heavy-duty applications and extreme environments.",
+        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "benefits": [
+          "Supports up to 8 AHD Cameras",
+          "2TB SSD Storage + SD Card Backup",
+          "IP67 Waterproof & Anti-vibration Design"
+        ],
+        "bestFor": [
+          "Buses",
+          "Trucks",
+          "Construction"
+        ]
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Why Choose FleetGoo?",
+    "items": [
+      {
+        "icon": "Settings",
+        "title": "Advanced Engineering",
+        "description": "Proprietary video compression technology reducing data usage by 40%."
+      },
+      {
+        "icon": "Globe",
+        "title": "Global Connectivity",
+        "description": "Multi-network IoT SIMs ensuring seamless coverage across borders."
+      },
+      {
+        "icon": "Shield",
+        "title": "Enterprise Security",
+        "description": "End-to-end encryption and GDPR compliant cloud infrastructure."
+      },
+      {
+        "icon": "CheckCircle2",
+        "title": "99.9% Uptime",
+        "description": "Redundant server architecture ensuring your data is always accessible."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Trusted by Industry Leaders",
+    "stats": [
+      {
+        "icon": "Award",
+        "label": "15+ Years IoT Exp.",
+        "color": "yellow"
+      },
+      {
+        "icon": "Factory",
+        "label": "OEM/ODM Services",
+        "color": "blue"
+      },
+      {
+        "icon": "Check",
+        "label": "CE/FCC Certified",
+        "color": "green"
+      },
+      {
+        "icon": "Radio",
+        "label": "In-house R&D",
+        "color": "purple"
+      }
+    ]
+  },
+  "leadMagnet": {
+    "title": "Get a Custom Quote for Your Fleet",
+    "subtitle": "Fill out the form below and one of our fleet experts will reach out with a tailored solution.",
+    "form": {
+      "nameLabel": "Full Name",
+      "emailLabel": "Work Email",
+      "companyLabel": "Company Name",
+      "phoneLabel": "WhatsApp / Phone",
+      "productInterestLabel": "Product Interest",
+      "messageLabel": "Message",
+      "submitBtn": "Send Inquiry",
+      "privacyNote": "We respect your privacy. Your data is secure and will never be shared with third parties."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "metaTitle": "联系我们 | FleetGoo",
+    "metaDesc": "联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。",
+    "title": "取得联系",
+    "subtitle": "对我们的车辆追踪解决方案有疑问？我们随时为您提供帮助。",
+    "form": {
+        "nameLabel": "全名",
+        "namePlaceholder": "张三",
+        "emailLabel": "电子邮件地址",
+        "emailPlaceholder": "zhangsan@company.com",
+        "companyLabel": "公司名称",
+        "companyPlaceholder": "宏达物流",
+        "phoneLabel": "电话号码",
+        "phonePlaceholder": "+86 (138) 0000-0000",
+        "messageLabel": "您的留言",
+        "messagePlaceholder": "告诉我们要关于您的车队管理需求...",
+        "submitButton": "发送消息",
+        "successTitle": "咨询提交成功！✅",
+        "successDesc": "感谢您的兴趣。我们的团队将在 24 小时内联系您。"
+    },
+    "contactInfo": {
+        "title": "联系信息",
+        "items": [
+            {
+                "icon": "MapPin",
+                "label": "总部",
+                "value": "123 Innovation Drive, Tech City, TC 90210"
+            },
+            {
+                "icon": "Mail",
+                "label": "给我们发邮件",
+                "value": "sales@vehicletechpro.com"
+            },
+            {
+                "icon": "Phone",
+                "label": "致电我们",
+                "value": "+1 (800) 123-4567"
+            }
+        ]
+    },
+    "officeImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+}

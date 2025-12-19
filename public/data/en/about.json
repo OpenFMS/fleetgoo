@@ -1,0 +1,51 @@
+{
+  "page": {
+    "metaTitle": "About Us | FleetGoo",
+    "metaDesc": "Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions."
+  },
+  "hero": {
+    "title": "About FleetGoo",
+    "subtitle": "Leading the future of intelligent fleet management",
+    "description": "With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide. Our mission is to empower fleet operators with real-time insights, advanced analytics, and unparalleled reliability."
+  },
+  "stats": [
+    {
+      "label": "Active Devices",
+      "value": "500K+"
+    },
+    {
+      "label": "Countries Served",
+      "value": "85+"
+    },
+    {
+      "label": "Customer Satisfaction",
+      "value": "98%"
+    },
+    {
+      "label": "Uptime Guarantee",
+      "value": "99.9%"
+    }
+  ],
+  "values": [
+    {
+      "icon": "Award",
+      "title": "Industry Excellence",
+      "description": "Award-winning technology recognized globally"
+    },
+    {
+      "icon": "Users2",
+      "title": "Customer First",
+      "description": "24/7 multilingual support and service"
+    },
+    {
+      "icon": "Globe2",
+      "title": "Global Reach",
+      "description": "Serving customers in over 85 countries"
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Innovation",
+      "description": "Continuous R&D and product enhancement"
+    }
+  ]
+}

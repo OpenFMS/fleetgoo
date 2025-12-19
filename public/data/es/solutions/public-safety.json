@@ -1,0 +1,66 @@
+{
+    "id": "public-safety",
+    "categoryId": "government",
+    "title": "Gestión de Flotas de Seguridad Pública",
+    "summary": "Asegurando una respuesta rápida y responsabilidad para servicios de policía, bomberos y ambulancias con seguimiento en tiempo real.",
+    "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
+    "color": "blue",
+    "overview": {
+        "title": "Descripción General",
+        "content": "Esta solución integral aprovecha la tecnología IoT de vanguardia y el análisis de datos para transformar las operaciones, mejorar los estándares de seguridad y reducir significativamente los costos generales."
+    },
+    "challenge": {
+        "title": "El Desafío",
+        "description": "En el panorama rápidamente cambiante de la seguridad pública, los operadores enfrentan una presión creciente para mejorar la eficiencia mientras mantienen estrictos estándares de seguridad.",
+        "points": [
+            "Ineficiencia Operativa",
+            "Puntos Ciegos de Seguridad",
+            "Aumento de Costos de Combustible",
+            "Riesgos de Cumplimiento"
+        ]
+    },
+    "solution": {
+        "title": "Nuestra Solución Inteligente",
+        "description": "FleetGoo introduce un enfoque holístico integrando sensores de hardware con una plataforma de gestión basada en la nube.",
+        "features": [
+            {
+                "title": "Telemetría en tiempo real",
+                "description": "Transmisión de datos de alta frecuencia asegurando que la ubicación, velocidad y estado estén siempre actualizados."
+            },
+            {
+                "title": "Información impulsada por IA",
+                "description": "Algoritmos de aprendizaje automático que predicen las necesidades de mantenimiento antes de que ocurran averías."
+            },
+            {
+                "title": "Cumplimiento Automatizado",
+                "description": "Libros de registro digitales e informes automatizados para satisfacer los requisitos regulatorios sin esfuerzo."
+            },
+            {
+                "title": "Integración Perfecta",
+                "description": "Arquitectura API abierta que permite una fácil conexión con el software ERP y de RR.HH. existente."
+            }
+        ]
+    },
+    "results": {
+        "title": "Resultados Clave",
+        "description": "Las organizaciones que implementan nuestra solución han reportado mejoras significativas dentro del primer trimestre de implementación.",
+        "stats": [
+            {
+                "value": "35%",
+                "label": "Reducción de Costos"
+            },
+            {
+                "value": "99.9%",
+                "label": "Tiempo de Actividad"
+            },
+            {
+                "value": "2x",
+                "label": "Eficiencia"
+            }
+        ]
+    },
+    "meta": {
+        "author": "Equipo FleetGoo",
+        "date": "12 de Dic, 2024"
+    }
+}

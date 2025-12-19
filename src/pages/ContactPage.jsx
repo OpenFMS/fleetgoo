@@ -1,0 +1,35 @@
+
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import Contact from '@/components/Contact';
+import { useFetchData } from '@/hooks/useFetchData';
+
+const ContactPage = ({ language }) => {
+  const { data, loading, error } = useFetchData(`/data/${language}/contact.json`);
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading contact information...</div>;
+  }
+
+  if (error || !data) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-red-500">
+        <p>Error loading contact page. Please try again later.</p>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <Helmet>
+        <title>{data.metaTitle}</title>
+        <meta name="description" content={data.metaDesc} />
+      </Helmet>
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+        <Contact data={data} language={language} />
+      </div>
+    </>
+  );
+};
+
+export default ContactPage;

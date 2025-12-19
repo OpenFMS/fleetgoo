@@ -1,0 +1,130 @@
+
+{
+  "hero": {
+    "title": "Inteligencia Vehicular Avanzada",
+    "subtitle": "Transforme Su Flota con Hardware Inteligente y Software con IA",
+    "description": "Rastreo GPS, dashcams 4G, sistemas MDVR y plataforma integral de gestión de flotas líder en la industria, confiada por empresas en todo el mundo.",
+    "ctaPrimary": "Explorar Productos",
+    "ctaSecondary": "Contactar Ventas"
+  },
+  "valueProps": {
+    "title": "Resolviendo sus Desafíos de Flota",
+    "subtitle": "Convertimos datos operativos en inteligencia accionable.",
+    "items": [
+      {
+        "icon": "Shield",
+        "title": "Elimine Puntos Ciegos de Seguridad",
+        "pain": "Aumento de tasas de accidentes y responsabilidad poco clara.",
+        "solution": "Nuestras dashcams ADAS y DMS detectan fatiga y peligros en tiempo real, previniendo accidentes antes de que ocurran."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Reduzca Costos Operativos",
+        "pain": "Alto consumo de combustible y uso no autorizado.",
+        "solution": "Optimice rutas y monitoree el ralentí con seguimiento de precisión para reducir costos de combustible hasta un 20%."
+      },
+      {
+        "icon": "Zap",
+        "title": "Maximice la Utilización de Activos",
+        "pain": "Ubicaciones de activos desconocidas y tiempo de inactividad.",
+        "solution": "Obtenga visibilidad total sobre cada vehículo y maquinaria pesada para asegurar que siempre trabajen para usted."
+      }
+    ]
+  },
+  "featuredProducts": {
+    "title": "Hardware Destacado",
+    "subtitle": "Explore nuestros dispositivos insignia diseñados para fiabilidad y rendimiento.",
+    "tabs": [
+      {
+        "id": "d510",
+        "label": "D510 - Dashcam IA",
+        "title": "D510 Dashcam Inteligente 4G",
+        "description": "La cámara telemática todo en uno definitiva con procesador IA integrado para análisis de comportamiento del conductor.",
+        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "benefits": [
+          "ADAS y DMS impulsados por IA (Fatiga/Distracción)",
+          "Transmisión de Video HD 1080p en Tiempo Real",
+          "Grabación de Doble Cámara (Carretera y Cabina)"
+        ],
+        "bestFor": ["Taxis", "Transporte Privado", "Entrega de Última Milla"]
+      },
+      {
+        "id": "d901",
+        "label": "D901 - MDVR Robusto",
+        "title": "D901 MDVR de 8 Canales",
+        "description": "Grabador de video digital móvil de grado militar diseñado para aplicaciones pesadas y entornos extremos.",
+        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "benefits": [
+          "Soporta hasta 8 Cámaras AHD",
+          "Almacenamiento SSD 2TB + Respaldo en Tarjeta SD",
+          "Diseño Impermeable IP67 y Anti-vibración"
+        ],
+        "bestFor": ["Autobuses", "Camiones", "Construcción"]
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "¿Por qué elegir FleetGoo?",
+    "items": [
+      {
+        "icon": "Settings",
+        "title": "Ingeniería Avanzada",
+        "description": "Tecnología de compresión de video patentada que reduce el uso de datos en un 40%."
+      },
+      {
+        "icon": "Globe",
+        "title": "Conectividad Global",
+        "description": "SIMs IoT multi-red que aseguran cobertura sin interrupciones a través de fronteras."
+      },
+      {
+        "icon": "Shield",
+        "title": "Seguridad Empresarial",
+        "description": "Cifrado de extremo a extremo e infraestructura en la nube compatible con GDPR."
+      },
+      {
+        "icon": "CheckCircle2",
+        "title": "99.9% Tiempo de Actividad",
+        "description": "Arquitectura de servidor redundante que asegura que sus datos siempre sean accesibles."
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "Confiado por Líderes de la Industria",
+    "stats": [
+      {
+        "icon": "Award",
+        "label": "15+ Años Exp. IoT",
+        "color": "yellow"
+      },
+      {
+        "icon": "Factory",
+        "label": "Servicios OEM/ODM",
+        "color": "blue"
+      },
+      {
+        "icon": "Check",
+        "label": "Certificado CE/FCC",
+        "color": "green"
+      },
+      {
+        "icon": "Radio",
+        "label": "I+D Interno",
+        "color": "purple"
+      }
+    ]
+  },
+  "leadMagnet": {
+    "title": "Obtenga una Cotización Personalizada",
+    "subtitle": "Complete el formulario a continuación y uno de nuestros expertos en flotas se pondrá en contacto con una solución a medida.",
+    "form": {
+      "nameLabel": "Nombre Completo",
+      "emailLabel": "Correo Laboral",
+      "companyLabel": "Nombre de la Empresa",
+      "phoneLabel": "WhatsApp / Teléfono",
+      "productInterestLabel": "Interés del Producto",
+      "messageLabel": "Mensaje",
+      "submitBtn": "Enviar Consulta",
+      "privacyNote": "Respetamos su privacidad. Sus datos están seguros y nunca se compartirán con terceros."
+    }
+  }
+}

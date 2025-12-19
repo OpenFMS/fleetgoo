@@ -1,0 +1,41 @@
+
+{
+  "id": "public-safety",
+  "categoryId": "government",
+  "title": "Public Safety Fleet Management",
+  "summary": "Ensuring rapid response and accountability for police, fire, and ambulance services with real-time tracking.",
+  "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
+  "color": "blue",
+  "overview": {
+    "title": "Overview",
+    "content": "This comprehensive solution leverages cutting-edge IoT technology and data analytics to transform operations, improve safety standards, and significantly reduce overhead costs."
+  },
+  "challenge": {
+    "title": "The Challenge",
+    "description": "In the rapidly evolving landscape of public safety, operators face increasing pressure to improve efficiency while maintaining strict safety standards.",
+    "points": ["Operational Inefficiency", "Safety Blind Spots", "Rising Fuel Costs", "Compliance Risks"]
+  },
+  "solution": {
+    "title": "Our Intelligent Solution",
+    "description": "FleetGoo introduces a holistic approach by integrating hardware sensors with a cloud-based management platform.",
+    "features": [
+      { "title": "Real-time Telemetry", "description": "High-frequency data transmission ensuring that location, speed, and status are always up-to-date." },
+      { "title": "AI-Powered Insights", "description": "Machine learning algorithms that predict maintenance needs before breakdowns occur." },
+      { "title": "Automated Compliance", "description": "Digital logbooks and automated reporting to satisfy regulatory requirements effortlessly." },
+      { "title": "Seamless Integration", "description": "Open API architecture allowing easy connection with existing ERP and HR software." }
+    ]
+  },
+  "results": {
+    "title": "Key Results",
+    "description": "Organizations implementing our solution have reported significant improvements within the first quarter of deployment.",
+    "stats": [
+      { "value": "35%", "label": "Cost Reduction" },
+      { "value": "99.9%", "label": "Uptime" },
+      { "value": "2x", "label": "Efficiency" }
+    ]
+  },
+  "meta": {
+    "author": "FleetGoo Team",
+    "date": "Dec 12, 2024"
+  }
+}

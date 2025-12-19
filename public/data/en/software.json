@@ -1,0 +1,42 @@
+{
+  "page": {
+    "metaTitle": "SaaS Fleet Management Platform | FleetGoo",
+    "metaDesc": "Powerful cloud-based fleet management software with advanced analytics, real-time tracking, and mobile apps."
+  },
+  "hero": {
+    "title": "SaaS Platform Features",
+    "subtitle": "Comprehensive fleet management software with powerful analytics"
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "Cloud-Based Platform",
+      "description": "Access your fleet data anytime, anywhere with our secure cloud infrastructure"
+    },
+    {
+      "icon": "BarChart3",
+      "title": "Advanced Analytics",
+      "description": "Real-time insights, predictive maintenance, and performance optimization"
+    },
+    {
+      "icon": "Shield",
+      "title": "Enterprise Security",
+      "description": "Bank-level encryption, role-based access, and compliance certifications"
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Mobile Apps",
+      "description": "iOS and Android apps for drivers and managers with offline capability"
+    },
+    {
+      "icon": "Bell",
+      "title": "Smart Alerts",
+      "description": "Customizable notifications for speeding, geofence violations, and maintenance"
+    },
+    {
+      "icon": "MapPinned",
+      "title": "Live Tracking",
+      "description": "Real-time GPS tracking with route history and location sharing"
+    }
+  ]
+}

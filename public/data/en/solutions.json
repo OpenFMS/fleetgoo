@@ -1,0 +1,41 @@
+
+{
+  "page": {
+    "title": "Industry Solutions",
+    "subtitle": "Specialized fleet management strategies for your sector",
+    "metaTitle": "Industry Solutions | FleetGoo",
+    "metaDesc": "Explore our tailored fleet management solutions for Government, Logistics, Construction, and more.",
+    "readMoreBtn": "Read Case Study"
+  },
+  "categories": [
+    { "id": "all", "label": "All Solutions", "icon": "Layers" },
+    { "id": "government", "label": "Government", "icon": "Building2" },
+    { "id": "insurance", "label": "Insurance", "icon": "ShieldCheck" },
+    { "id": "logistics", "label": "Logistics & Delivery", "icon": "Truck" },
+    { "id": "micromobility", "label": "Micro-Mobility", "icon": "Bike" },
+    { "id": "rental", "label": "Rental & Leasing", "icon": "Key" },
+    { "id": "taxi", "label": "Taxi & Ride-Hailing", "icon": "Car" },
+    { "id": "asset", "label": "Asset Management", "icon": "Database" },
+    { "id": "construction", "label": "Construction & Mining", "icon": "HardHat" }
+  ],
+  "items": [
+    {
+      "id": "public-safety",
+      "categoryId": "government",
+      "icon": "Building2",
+      "title": "Public Safety Fleet Management",
+      "summary": "Ensuring rapid response and accountability for police, fire, and ambulance services with real-time tracking.",
+      "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
+      "color": "blue"
+    },
+    {
+      "id": "cold-chain",
+      "categoryId": "logistics",
+      "icon": "Truck",
+      "title": "Cold Chain Monitoring",
+      "summary": "Real-time temperature and humidity tracking for perishable goods transport to ensure compliance.",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+      "color": "cyan"
+    }
+  ]
+}

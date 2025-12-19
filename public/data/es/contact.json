@@ -1,0 +1,42 @@
+{
+    "metaTitle": "Contáctenos | FleetGoo",
+    "metaDesc": "Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.",
+    "title": "Póngase en Contacto",
+    "subtitle": "¿Tiene preguntas sobre nuestras soluciones de seguimiento de vehículos? Estamos aquí para ayudar.",
+    "form": {
+        "nameLabel": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "emailLabel": "Dirección de Correo Electrónico",
+        "emailPlaceholder": "juan@empresa.com",
+        "companyLabel": "Nombre de la Empresa",
+        "companyPlaceholder": "Logística Acme",
+        "phoneLabel": "Número de Teléfono",
+        "phonePlaceholder": "+1 (555) 000-0000",
+        "messageLabel": "Su Mensaje",
+        "messagePlaceholder": "Cuéntenos sobre sus necesidades de gestión de flotas...",
+        "submitButton": "Enviar Mensaje",
+        "successTitle": "¡Consulta Enviada con Éxito! ✅",
+        "successDesc": "Gracias por su interés. Nuestro equipo se pondrá en contacto con usted dentro de las 24 horas."
+    },
+    "contactInfo": {
+        "title": "Información de Contacto",
+        "items": [
+            {
+                "icon": "MapPin",
+                "label": "Sede Central",
+                "value": "123 Innovation Drive, Tech City, TC 90210"
+            },
+            {
+                "icon": "Mail",
+                "label": "Envíenos un Correo",
+                "value": "sales@vehicletechpro.com"
+            },
+            {
+                "icon": "Phone",
+                "label": "Llámenos",
+                "value": "+1 (800) 123-4567"
+            }
+        ]
+    },
+    "officeImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+}
