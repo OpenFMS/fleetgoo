@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
-import Hero from '@/components/Hero'; // Hero component is hidden/read-only, so we keep using it as is for the top section
+import Hero from '@/components/Hero';
+import SEO from '@/components/SEO';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { 
-  ArrowRight, Shield, Zap, TrendingUp, CheckCircle2, 
+import {
+  ArrowRight, Shield, Zap, TrendingUp, CheckCircle2,
   Settings, Award, Globe, Factory, Radio, Check
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -24,7 +25,7 @@ import { useFetchData } from '@/hooks/useFetchData';
 
 // Icon mapping for dynamic loading
 const iconMap = {
-  Shield, Zap, TrendingUp, CheckCircle2, 
+  Shield, Zap, TrendingUp, CheckCircle2,
   Settings, Award, Globe, Factory, Radio, Check
 };
 
@@ -36,7 +37,7 @@ const HomePage = ({ language }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       setIsSubmitting(false);
@@ -63,12 +64,17 @@ const HomePage = ({ language }) => {
 
   return (
     <>
+      <SEO
+        title={data.metaTitle || "Home"}
+        description={data.metaDesc || "Welcome to FleetGoo Horizons"}
+        language={language}
+      />
       <Hero language={language} />
 
       {/* 1. Value Proposition Section */}
       <section className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -89,7 +95,7 @@ const HomePage = ({ language }) => {
               }[index] || { bg: "bg-slate-100", text: "text-slate-600" };
 
               return (
-                <motion.div 
+                <motion.div
                   key={index}
                   whileHover={{ y: -10 }}
                   className="bg-slate-50 dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all"
@@ -114,7 +120,7 @@ const HomePage = ({ language }) => {
       {/* 2. Product Showcase Section */}
       <section className="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300" id="products">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -128,9 +134,9 @@ const HomePage = ({ language }) => {
           <Tabs defaultValue={data.featuredProducts.tabs[0]?.id} className="w-full max-w-5xl mx-auto">
             <TabsList className="grid w-full grid-cols-2 bg-slate-200 dark:bg-slate-900 border border-slate-300 dark:border-slate-800 mb-8 p-1 h-auto rounded-xl">
               {data.featuredProducts.tabs.map((tab) => (
-                <TabsTrigger 
+                <TabsTrigger
                   key={tab.id}
-                  value={tab.id} 
+                  value={tab.id}
                   className="data-[state=active]:bg-white dark:data-[state=active]:bg-blue-600 data-[state=active]:text-blue-700 dark:data-[state=active]:text-white text-slate-600 dark:text-gray-400 py-3 rounded-lg text-lg transition-all shadow-sm dark:shadow-none"
                 >
                   {tab.label}
@@ -142,9 +148,9 @@ const HomePage = ({ language }) => {
               <TabsContent key={tab.id} value={tab.id} className="mt-0">
                 <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-12 border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row gap-12 items-center shadow-lg dark:shadow-none">
                   <div className="w-full md:w-1/2">
-                    <img 
-                      src={tab.image} 
-                      alt={tab.title} 
+                    <img
+                      src={tab.image}
+                      alt={tab.title}
                       className="rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-blue-900/20 w-full object-cover h-[350px]"
                     />
                   </div>
@@ -153,7 +159,7 @@ const HomePage = ({ language }) => {
                     <p className="text-slate-600 dark:text-gray-400 text-lg">
                       {tab.description}
                     </p>
-                    
+
                     <div className="space-y-4">
                       <h4 className="text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-wider text-sm">Key Benefits</h4>
                       <ul className="space-y-3">
@@ -193,7 +199,7 @@ const HomePage = ({ language }) => {
             {data.whyUs.items.map((item, i) => {
               const Icon = iconMap[item.icon] || Settings;
               return (
-                <motion.div 
+                <motion.div
                   key={i}
                   whileHover={{ y: -5 }}
                   className="bg-slate-50 dark:bg-slate-950 p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all"
@@ -214,7 +220,7 @@ const HomePage = ({ language }) => {
           <div className="text-center mb-10">
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{data.socialProof.title}</h2>
           </div>
-          
+
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 items-center">
             {data.socialProof.stats.map((stat, i) => {
               const Icon = iconMap[stat.icon] || Award;
@@ -290,15 +296,15 @@ const HomePage = ({ language }) => {
                 <Textarea id="message" placeholder="Tell us about your fleet size and specific requirements..." className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500 min-h-[120px]" />
               </div>
 
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg h-12"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? 'Sending...' : data.leadMagnet.form.submitBtn}
                 {!isSubmitting && <ArrowRight className="ml-2 w-5 h-5" />}
               </Button>
-              
+
               <p className="text-center text-xs text-slate-500 dark:text-gray-500 mt-4">
                 {data.leadMagnet.form.privacyNote}
               </p>

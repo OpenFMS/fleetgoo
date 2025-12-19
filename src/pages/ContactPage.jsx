@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '@/components/SEO';
 import Contact from '@/components/Contact';
 import { useFetchData } from '@/hooks/useFetchData';
 
@@ -21,10 +21,12 @@ const ContactPage = ({ language }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{data.metaTitle}</title>
-        <meta name="description" content={data.metaDesc} />
-      </Helmet>
+      <SEO
+        title={data.metaTitle}
+        description={data.metaDesc}
+        language={language}
+        type="website"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
         <Contact data={data} language={language} />
       </div>

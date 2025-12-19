@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '@/components/SEO';
 import Software from '@/components/Software';
 import { useFetchData } from '@/hooks/useFetchData';
 
@@ -17,10 +17,12 @@ const SoftwarePage = ({ language }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{data.page.metaTitle}</title>
-        <meta name="description" content={data.page.metaDesc} />
-      </Helmet>
+      <SEO
+        title={data.page.metaTitle}
+        description={data.page.metaDesc}
+        language={language}
+        type="website"
+      />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <Software data={data} />
       </div>

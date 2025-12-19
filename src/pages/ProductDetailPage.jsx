@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { useFetchData } from '@/hooks/useFetchData';
 import { Button } from '@/components/ui/button';
@@ -38,10 +38,13 @@ const ProductDetailPage = ({ language }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{data.metaTitle || data.title}</title>
-        <meta name="description" content={data.metaDesc || data.fullDescription?.slice(0, 150)} />
-      </Helmet>
+      <SEO
+        title={data.metaTitle || data.title}
+        description={data.metaDesc || data.fullDescription?.slice(0, 150)}
+        language={language}
+        image={data.images && data.images.length > 0 ? data.images[0] : undefined}
+        type="product"
+      />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 pb-20">
 

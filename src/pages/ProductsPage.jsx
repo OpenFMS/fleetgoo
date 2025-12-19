@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import SEO from '@/components/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Layers, HelpCircle } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
@@ -32,10 +32,12 @@ const ProductsPage = ({ language }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{data.page.metaTitle}</title>
-        <meta name="description" content={data.page.metaDesc} />
-      </Helmet>
+      <SEO
+        title={data.page.metaTitle}
+        description={data.page.metaDesc}
+        language={language}
+        type="website"
+      />
       <div className="py-20 bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300">
         <div className="container mx-auto px-4">
 
