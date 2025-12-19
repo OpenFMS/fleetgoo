@@ -14,8 +14,8 @@ import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const ProductDetailPage = ({ language }) => {
-  const { productId } = useParams();
-  const { data, loading, error } = useFetchData(`/data/${language}/products/${productId}.json`);
+  const { id } = useParams();
+  const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`);
   const [activeImage, setActiveImage] = useState(0);
 
   if (loading) {
@@ -27,6 +27,10 @@ const ProductDetailPage = ({ language }) => {
       <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white gap-4">
         <h2 className="text-2xl font-bold text-red-500">Product Not Found</h2>
         <p className="text-slate-500">The product you are looking for does not exist or failed to load.</p>
+        <div className="p-4 bg-slate-200 dark:bg-slate-800 rounded text-xs font-mono text-left">
+          <p><strong>Attempted URL:</strong> {`/data/${language}/products/${id}.json`}</p>
+          <p><strong>Error:</strong> {error ? error.toString() : 'Data is null'}</p>
+        </div>
         <Link to={`/${language}/products`}>
           <Button variant="outline">Back to Products</Button>
         </Link>

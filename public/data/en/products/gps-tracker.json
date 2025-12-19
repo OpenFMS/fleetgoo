@@ -5,7 +5,13 @@
   "metaTitle": "Professional GPS Tracker | FleetGoo",
   "metaDesc": "Real-time 4G GPS tracking device with geo-fencing and anti-theft features.",
   "fullDescription": "Our advanced GPS Tracker provides real-time location tracking with global coverage. It features geo-fencing, speed alerts, and historical route playback. Ideal for fleet management and asset tracking. Built with industrial-grade components to withstand harsh environments.",
-  "images": "/images/products/d510-main.png",
+  "images": [
+    "/images/products/d510-main.png",
+    "",
+    "",
+    "",
+    ""
+  ],
   "features": [
     "Global 4G LTE/3G/2G coverage ensuring you never lose track of your assets.",
     "Advanced Geo-fencing capabilities with instant SMS/App alerts.",

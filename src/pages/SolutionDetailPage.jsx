@@ -12,8 +12,8 @@ import {
 import * as LucideIcons from 'lucide-react';
 
 const SolutionDetailPage = ({ language }) => {
-  const { solutionId } = useParams();
-  const { data, loading, error } = useFetchData(`/data/${language}/solutions/${solutionId}.json`);
+  const { id } = useParams();
+  const { data, loading, error } = useFetchData(`/data/${language}/solutions/${id}.json`);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading solution details...</div>;
