@@ -323,6 +323,19 @@ export default defineConfig({
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
 		react(),
+		{
+			name: 'watch-public-data',
+			configureServer(server) {
+				server.watcher.add(path.resolve(__dirname, 'public/data'));
+				server.watcher.on('change', (file) => {
+					if (file.includes('public/data')) {
+						server.ws.send({
+							type: 'full-reload',
+						});
+					}
+				});
+			},
+		},
 		addTransformIndexHtml,
 		Sitemap({
 			hostname: 'https://fleetgoo.com',

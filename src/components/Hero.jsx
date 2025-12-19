@@ -28,8 +28,9 @@ const translations = {
   },
 };
 
-const Hero = ({ language }) => {
-  const t = translations[language];
+const Hero = ({ language, data }) => {
+  // Graceful fallback if data is not yet loaded or passed
+  const t = data || translations[language];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -101,7 +102,7 @@ const Hero = ({ language }) => {
                 onClick={() => scrollToSection('products')}
                 className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-6 text-lg rounded-lg shadow-lg shadow-blue-200 dark:shadow-blue-500/20 transition-all hover:shadow-blue-400/40 hover:scale-105"
               >
-                {t.cta1}
+                {t.ctaPrimary || t.cta1}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
@@ -109,7 +110,7 @@ const Hero = ({ language }) => {
                 variant="outline"
                 className="bg-white/80 dark:bg-transparent border-2 border-blue-200 dark:border-blue-500 text-blue-700 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 px-8 py-6 text-lg rounded-lg transition-all hover:scale-105"
               >
-                {t.cta2}
+                {t.ctaSecondary || t.cta2}
               </Button>
             </div>
           </motion.div>

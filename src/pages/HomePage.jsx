@@ -69,7 +69,7 @@ const HomePage = ({ language }) => {
         description={data.metaDesc || "Welcome to FleetGoo Horizons"}
         language={language}
       />
-      <Hero language={language} />
+      <Hero language={language} data={data.hero} />
 
       {/* 1. Value Proposition Section */}
       <section className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
