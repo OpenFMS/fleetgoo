@@ -15,6 +15,7 @@ const SoftwarePage = lazy(() => import('@/pages/SoftwarePage'));
 // Admin Components
 const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
 const ContentEditor = lazy(() => import('@/pages/admin/ContentEditor'));
+const LanguageManager = lazy(() => import('@/pages/admin/LanguageManager'));
 
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-slate-950">
@@ -36,8 +37,9 @@ const App = () => {
         <Routes>
           {/* Admin Routes */}
           <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<div className="p-8 text-center text-slate-500">Select a file from the sidebar to start editing</div>} />
+            <Route index element={<div className="p-8 text-center text-slate-500">Select a file from the sidebar or manage languages</div>} />
             <Route path="editor" element={<ContentEditor />} />
+            <Route path="languages" element={<LanguageManager />} />
           </Route>
 
           {/* Public Routes */}

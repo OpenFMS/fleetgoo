@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button.jsx';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs.jsx';
+import { Textarea } from '@/components/ui/textarea.jsx';
 import { Code, LayoutTemplate } from 'lucide-react';
 import SchemaForm from './SchemaForm';
 import DataGrid from './DataGrid';
@@ -32,7 +32,7 @@ const SmartEditor = ({ data, onChange }) => {
     const isPageWithItems = !isCollection && data && typeof data === 'object' && 'items' in data && Array.isArray(data.items);
 
     return (
-        <div className="flex flex-col h-full space-y-4">
+        <div className="flex flex-col space-y-4">
             <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
                 <div className="text-sm font-medium text-slate-500">
                     {mode === 'visual' ? (
@@ -61,9 +61,9 @@ const SmartEditor = ({ data, onChange }) => {
                 </div>
             </div>
 
-            <div className="flex-1 overflow-auto">
+            <div className="">
                 {mode === 'raw' && (
-                    <div className="h-full flex flex-col">
+                    <div className="h-[600px] flex flex-col">
                         <Textarea
                             value={rawData}
                             onChange={handleRawChange}

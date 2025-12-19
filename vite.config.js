@@ -11,13 +11,14 @@ import fs from 'fs'; // Added fs import
 // Helper to recursively finding files
 function getFiles(dir, files = []) {
 	try {
+		if (!fs.existsSync(dir)) return [];
 		const fileList = fs.readdirSync(dir);
 		for (const file of fileList) {
 			const name = path.join(dir, file);
 			if (fs.statSync(name).isDirectory()) {
 				getFiles(name, files);
 			} else {
-				if (file.endsWith('.json')) {
+				if (!file.startsWith('.')) {
 					files.push(name);
 				}
 			}
@@ -26,6 +27,20 @@ function getFiles(dir, files = []) {
 		console.warn("Directory not found or inaccessible:", dir);
 	}
 	return files;
+}
+
+// Helper for recursive copy
+function copyRecursiveSync(src, dest) {
+	if (!fs.existsSync(src)) return;
+	const stats = fs.statSync(src);
+	if (stats.isDirectory()) {
+		if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+		fs.readdirSync(src).forEach((childItemName) => {
+			copyRecursiveSync(path.join(src, childItemName), path.join(dest, childItemName));
+		});
+	} else {
+		fs.copyFileSync(src, dest);
+	}
 }
 
 // Generate routes dynamically from JSON data
@@ -328,16 +343,152 @@ export default defineConfig({
 						const host = req.headers.host || 'localhost';
 						const url = new URL(req.url, `${protocol}://${host}`);
 
+						// --- CMS V2 API ---
+
+						// LIST LANGUAGES
+						if (url.pathname === '/api/admin/languages' && req.method === 'GET') {
+							try {
+								const dataDir = path.resolve(__dirname, 'public/data');
+								if (!fs.existsSync(dataDir)) {
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ languages: [] }));
+									return;
+								}
+								const entries = fs.readdirSync(dataDir, { withFileTypes: true });
+								const languages = entries
+									.filter(ent => ent.isDirectory())
+									.map(ent => ({
+										code: ent.name,
+										isMaster: ent.name === 'zh'
+									}));
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ languages }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// CREATE LANGUAGE
+						if (url.pathname === '/api/admin/languages' && req.method === 'POST') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { code } = JSON.parse(body);
+									if (!code) throw new Error("Language code is required");
+
+									const srcDir = path.resolve(__dirname, 'public/data/zh');
+									const destDir = path.resolve(__dirname, `public/data/${code}`);
+
+									if (fs.existsSync(destDir)) throw new Error(`Language '${code}' already exists`);
+									if (!fs.existsSync(srcDir)) throw new Error("Master language 'zh' does not exist");
+
+									copyRecursiveSync(srcDir, destDir);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true, message: `Created ${code}` }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// DELETE LANGUAGE
+						if (url.pathname === '/api/admin/languages' && req.method === 'DELETE') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { code } = JSON.parse(body);
+									if (!code) throw new Error("Language code is required");
+									if (code === 'zh') throw new Error("Cannot delete master language 'zh'");
+
+									const targetDir = path.resolve(__dirname, `public/data/${code}`);
+									if (!fs.existsSync(targetDir)) throw new Error("Language not found");
+
+									fs.rmSync(targetDir, { recursive: true, force: true });
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// GET MASTER CONTENT
+						if (url.pathname === '/api/admin/master-content' && req.method === 'GET') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							const masterPath = path.join(path.resolve(__dirname, 'public/data/zh'), fileParam);
+
+							try {
+								if (!fs.existsSync(masterPath)) {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'Master file not found' }));
+									return;
+								}
+								const content = fs.readFileSync(masterPath, 'utf-8');
+								res.setHeader('Content-Type', 'application/json');
+								res.end(content);
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// LIST IMAGES
+						if (url.pathname === '/api/admin/images' && req.method === 'GET') {
+							try {
+								const imagesDir = path.resolve(__dirname, 'public/images');
+								const allFiles = getFiles(imagesDir);
+								const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.svg', '.gif'];
+
+								const images = allFiles
+									.filter(f => imageExtensions.some(ext => f.toLowerCase().endsWith(ext)))
+									.map(f => {
+										const relativePath = path.relative(path.resolve(__dirname, 'public'), f);
+										return '/' + relativePath;
+									});
+
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ images }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
 						// 1. LIST FILES
 						if (url.pathname === '/api/admin/files' && req.method === 'GET') {
 							try {
-								const dataDir = path.resolve(__dirname, 'public/data');
+								const lang = url.searchParams.get('lang');
+								const dataDir = lang
+									? path.resolve(__dirname, `public/data/${lang}`)
+									: path.resolve(__dirname, 'public/data');
+
 								if (!fs.existsSync(dataDir)) {
 									res.setHeader('Content-Type', 'application/json');
 									res.end(JSON.stringify({ files: [] }));
 									return;
 								}
-								const files = getFiles(dataDir).map(f => path.relative(dataDir, f));
+								const files = getFiles(dataDir).map(f => path.relative(dataDir, f)).filter(f => f.endsWith('.json'));
 								res.setHeader('Content-Type', 'application/json');
 								res.end(JSON.stringify({ files }));
 								return;

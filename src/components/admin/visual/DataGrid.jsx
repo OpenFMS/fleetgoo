@@ -92,7 +92,13 @@ const DataGrid = ({ data = [], onChange, itemSchema }) => {
                                 <tr key={i} className="hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors">
                                     {columns.map(col => (
                                         <td key={col} className="px-4 py-3 max-w-[200px] truncate text-slate-700 dark:text-slate-300">
-                                            {typeof item[col] === 'object' ? '[Object]' : String(item[col] || '')}
+                                            {(col.toLowerCase().includes('image') || col.toLowerCase().includes('src') || col.toLowerCase().includes('icon')) && typeof item[col] === 'string' && (item[col].startsWith('/') || item[col].startsWith('http')) ? (
+                                                <div className="w-10 h-10 rounded border bg-slate-100 overflow-hidden flex-shrink-0">
+                                                    <img src={item[col]} alt="img" className="w-full h-full object-cover" onError={(e) => { e.target.style.display = 'none'; e.target.parentElement.innerText = item[col]; }} />
+                                                </div>
+                                            ) : (
+                                                typeof item[col] === 'object' ? '[Object]' : String(item[col] || '')
+                                            )}
                                         </td>
                                     ))}
                                     <td className="px-4 py-3 text-right">

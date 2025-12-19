@@ -1,10 +1,11 @@
 import React from 'react';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+import { Input } from '@/components/ui/input.jsx';
+import { Label } from '@/components/ui/label.jsx';
+import { Textarea } from '@/components/ui/textarea.jsx';
 import { cn } from '@/lib/utils';
 import { ChevronDown, ChevronRight, Image as ImageIcon } from 'lucide-react';
 import DataGrid from './DataGrid';
+import ImagePicker from './ImagePicker';
 
 // Helper to determine field type
 const getFieldType = (key, value) => {
@@ -115,19 +116,17 @@ const SchemaForm = ({ data, onChange, className, level = 0 }) => {
                     return (
                         <div key={key} className="space-y-1.5">
                             <Label className="capitalize">{key.replace(/([A-Z])/g, ' $1').trim()}</Label>
-                            <div className="flex gap-2">
-                                <Input
-                                    value={value}
-                                    onChange={e => handleChange(key, e.target.value)}
-                                    className="flex-1 font-mono text-xs"
-                                    placeholder="/images/..."
-                                />
-                                {value && (
-                                    <div className="w-10 h-10 rounded overflow-hidden border bg-slate-100 flex-shrink-0">
-                                        <img src={value} alt="preview" className="w-full h-full object-cover" onError={(e) => e.target.style.display = 'none'} />
-                                    </div>
-                                )}
-                            </div>
+
+                            <ImagePicker
+                                value={value}
+                                onChange={(val) => handleChange(key, val)}
+                            />
+
+                            {value && (
+                                <div className="mt-2 w-20 h-20 rounded overflow-hidden border bg-slate-100 flex-shrink-0">
+                                    <img src={value} alt="preview" className="w-full h-full object-cover" onError={(e) => e.target.style.display = 'none'} />
+                                </div>
+                            )}
                         </div>
                     );
                 }

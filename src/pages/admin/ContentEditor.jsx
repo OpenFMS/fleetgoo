@@ -1,49 +1,107 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Save, RefreshCw, AlertCircle } from 'lucide-react';
+import { Save, RefreshCw, AlertCircle, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import SmartEditor from '@/components/admin/visual/SmartEditor';
 
 const ContentEditor = () => {
     const [searchParams] = useSearchParams();
-    const file = searchParams.get('file');
+    const file = searchParams.get('file'); // e.g., "en/home.json"
+
+    // State for Target (Editable)
     const [content, setContent] = useState(null);
-    const [originalContent, setOriginalContent] = useState(null); // Keep original for validation
+    const [originalContent, setOriginalContent] = useState(null);
+
+    // State for Master (Reference)
+    const [masterContent, setMasterContent] = useState(null);
+
     const [loading, setLoading] = useState(false);
     const [saving, setSaving] = useState(false);
     const { toast } = useToast();
 
+    // Scroll Sync Refs
+    const masterScrollRef = useRef(null);
+    const targetScrollRef = useRef(null);
+    const activeScroller = useRef(null); // 'master' | 'target' | null
+
+    const handleMouseEnter = (side) => {
+        activeScroller.current = side;
+    };
+
+    const handleMouseLeave = () => {
+        activeScroller.current = null;
+    };
+
+    // Sync scrolling logic
+    const handleScroll = (sourceRef, targetRef, side) => {
+        if (activeScroller.current !== side) return;
+        if (!sourceRef.current || !targetRef.current) return;
+
+
+        const source = sourceRef.current;
+        const target = targetRef.current;
+
+        // Calculate percentage
+        const percentage = source.scrollTop / (source.scrollHeight - source.clientHeight);
+
+        // Apply to target
+        target.scrollTop = percentage * (target.scrollHeight - target.clientHeight);
+
+    };
+
+    // Derived info
+    const isMasterFile = file?.startsWith('zh/');
+    // const relativePath = file ? file.split('/').slice(1).join('/') : ''; 
+
     useEffect(() => {
         if (file) {
-            loadFile(file);
+            loadData(file);
         }
     }, [file]);
 
-    const loadFile = async (filePath) => {
+    const loadData = async (filePath) => {
         setLoading(true);
+        setContent(null);
+        setMasterContent(null);
+
         try {
-            const res = await fetch(`/api/admin/content?file=${encodeURIComponent(filePath)}`);
-            if (!res.ok) throw new Error('Failed to load file');
-            const text = await res.text();
+            // 1. Load Target Content
+            const resTarget = await fetch(`/api/admin/content?file=${encodeURIComponent(filePath)}`);
+            if (!resTarget.ok) throw new Error('Failed to load file');
+            const textTarget = await resTarget.text();
+
             try {
-                const json = JSON.parse(text);
-                setContent(json);
-                setOriginalContent(json);
+                const jsonTarget = JSON.parse(textTarget);
+                setContent(jsonTarget);
+                setOriginalContent(jsonTarget);
             } catch (e) {
-                console.error("Not valid JSON", e);
-                toast({
-                    variant: "destructive",
-                    title: "Parse Error",
-                    description: "File content is not valid JSON. Cannot use Visual Editor."
-                });
-                setContent(null);
-                setOriginalContent(null);
+                console.error("Target Invalid JSON", e);
+                // Allow user to see error but can't edit visually
+                toast({ variant: "destructive", title: "Target Invalid JSON", description: e.message });
+                setLoading(false);
+                return;
             }
+
+            // 2. Load Master Content (if not editing master)
+            if (!filePath.startsWith('zh/')) {
+                // relativePath extraction: "en/home.json" -> "home.json"
+                const rel = filePath.split('/').slice(1).join('/');
+                try {
+                    const resMaster = await fetch(`/api/admin/master-content?file=${encodeURIComponent(rel)}`);
+                    if (resMaster.ok) {
+                        const textMaster = await resMaster.text();
+                        setMasterContent(JSON.parse(textMaster));
+                    }
+                } catch (e) {
+                    console.warn("Could not load master content", e);
+                }
+            }
+
         } catch (error) {
             toast({
                 variant: "destructive",
-                title: "Error loading file",
+                title: "Error loading",
                 description: error.message
             });
         } finally {
@@ -51,39 +109,8 @@ const ContentEditor = () => {
         }
     };
 
-    const validateContent = (original, current) => {
-        if (!original || !current) return true;
-
-        // 1. Check if root is same type (array vs object)
-        if (Array.isArray(original) !== Array.isArray(current)) {
-            return `Root type mismatch (expected ${Array.isArray(original) ? 'Array' : 'Object'})`;
-        }
-
-        // 2. If object, check if critical root keys are missing
-        if (!Array.isArray(original) && typeof original === 'object') {
-            const originalKeys = Object.keys(original);
-            const currentKeys = Object.keys(current);
-
-            // Allow adding new keys, but warn if existing keys are removed
-            // Actually, for content file, keys usually shouldn't be removed
-            const missingKeys = originalKeys.filter(k => !currentKeys.includes(k));
-            if (missingKeys.length > 0) {
-                return `Missing critical keys: ${missingKeys.join(', ')}`;
-            }
-        }
-
-        return null; // No error
-    };
-
     const handleSave = async () => {
         if (!file) return;
-
-        // Validation
-        const validationError = validateContent(originalContent, content);
-        if (validationError) {
-            const confirmSave = window.confirm(`Validation Warning: ${validationError}.\n\nSaving this might break the site. Are you sure you want to proceed?`);
-            if (!confirmSave) return;
-        }
 
         setSaving(true);
         try {
@@ -95,20 +122,44 @@ const ContentEditor = () => {
 
             if (!res.ok) throw new Error('Failed to save');
 
-            setOriginalContent(content); // Update original after success
+            setOriginalContent(content);
             toast({
                 title: "Saved successfully",
-                description: `${file} has been updated. HMR should reflect changes soon.`
+                description: `${file} has been updated.`
             });
         } catch (error) {
             toast({
                 variant: "destructive",
-                title: "Error saving file",
+                title: "Error saving",
                 description: error.message
             });
         } finally {
             setSaving(false);
         }
+    };
+
+    // Helper to find missing keys
+    const getMissingKeys = (master, target) => {
+        if (!master || !target || typeof master !== 'object' || typeof target !== 'object') return [];
+        if (Array.isArray(master)) return []; // Arrays difficult to map by key 1:1 without ID
+
+        const targetKeys = Object.keys(target);
+        return Object.keys(master).filter(k => !targetKeys.includes(k));
+    };
+
+    const missingKeys = !isMasterFile ? getMissingKeys(masterContent, content) : [];
+
+    const handleSyncStructure = () => {
+        if (!masterContent) return;
+        const newContent = { ...content };
+        missingKeys.forEach(key => {
+            // Primitive copy of value structure (empty string or copy value)
+            const masterVal = masterContent[key];
+            if (typeof masterVal === 'string') newContent[key] = masterVal + " (TRANSLATE ME)";
+            else newContent[key] = masterVal; // Copy objects/arrays purely
+        });
+        setContent(newContent);
+        toast({ title: "Synced", description: `Added ${missingKeys.length} missing keys from Master.` });
     };
 
     if (!file) {
@@ -123,20 +174,34 @@ const ContentEditor = () => {
     }
 
     return (
-        <div className="max-w-5xl mx-auto space-y-6 h-[calc(100vh-8rem)] flex flex-col">
-            <div className="flex items-center justify-between">
+        <div className="h-[calc(100vh-8rem)] flex flex-col space-y-4">
+            {/* Header */}
+            <div className="flex items-center justify-between bg-white dark:bg-slate-900 p-4 rounded-xl border dark:border-slate-800 shadow-sm">
                 <div className="space-y-1">
-                    <h1 className="text-2xl font-bold dark:text-white">Editor</h1>
-                    <p className="text-sm text-slate-500 font-mono bg-slate-100 dark:bg-slate-900 px-2 py-1 rounded inline-block">
+                    <div className="flex items-center gap-2">
+                        <h1 className="text-xl font-bold dark:text-white">Editor</h1>
+                        {isMasterFile && <span className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">MASTER</span>}
+                    </div>
+                    <p className="text-xs text-slate-500 font-mono">
                         {file}
                     </p>
                 </div>
 
                 <div className="flex items-center gap-2">
+                    {missingKeys.length > 0 && (
+                        <div className="flex items-center gap-2 mr-4 text-amber-600 bg-amber-50 px-3 py-1 rounded-md text-sm border border-amber-200">
+                            <AlertTriangle className="w-4 h-4" />
+                            <span>Missing {missingKeys.length} keys</span>
+                            <Button size="sm" variant="ghost" className="h-6 text-amber-700 hover:bg-amber-100" onClick={handleSyncStructure}>
+                                Sync
+                            </Button>
+                        </div>
+                    )}
+
                     <Button
                         variant="outline"
                         size="sm"
-                        onClick={() => loadFile(file)}
+                        onClick={() => loadData(file)}
                         disabled={saving || loading}
                     >
                         <RefreshCw className={`w-4 h-4 mr-2 ${loading ? 'animate-spin' : ''}`} />
@@ -148,28 +213,75 @@ const ContentEditor = () => {
                         variant="default"
                     >
                         {saving ? <RefreshCw className="w-4 h-4 mr-2 animate-spin" /> : <Save className="w-4 h-4 mr-2" />}
-                        {saving ? 'Saving...' : 'Save Changes'}
+                        Save Changes
                     </Button>
                 </div>
             </div>
 
-            <div className="flex-1 relative border rounded-xl overflow-hidden shadow-sm dark:border-slate-800 bg-white dark:bg-slate-900 p-6">
-                {loading ? (
-                    <div className="absolute inset-0 flex items-center justify-center bg-white/80 dark:bg-slate-900/80 z-10">
-                        <RefreshCw className="w-8 h-8 animate-spin text-blue-500" />
-                    </div>
-                ) : content ? (
-                    <SmartEditor
-                        data={content}
-                        onChange={setContent}
-                    />
-                ) : (
-                    <div className="text-center text-slate-400 mt-20">
-                        {loading ? 'Loading...' : 'Unable to display editor for this content.'}
+            {/* Editor Area */}
+            <div className="flex-1 min-h-0 flex gap-4">
+                {/* Master Pane (Left) - Only if not master file */}
+                {!isMasterFile && (
+                    <div className="hidden lg:flex flex-1 flex-col min-w-0 bg-slate-50 dark:bg-slate-900/50 border dark:border-slate-800 rounded-xl overflow-hidden opacity-80 hover:opacity-100 transition-opacity">
+                        <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex justify-between items-center">
+                            <span className="font-bold text-sm text-slate-500 flex items-center gap-2">
+                                <span className="bg-slate-200 dark:bg-slate-700 px-1.5 rounded text-xs">ZH</span>
+                                Master Reference
+                            </span>
+                            <span className="text-xs text-slate-400">Read Only</span>
+                        </div>
+                        <div
+                            ref={masterScrollRef}
+                            onMouseEnter={() => handleMouseEnter('master')}
+                            onMouseLeave={handleMouseLeave}
+                            onScroll={() => handleScroll(masterScrollRef, targetScrollRef, 'master')}
+                            className="flex-1 overflow-y-auto p-4 custom-scrollbar"
+                        >
+                            {masterContent ? (
+                                <div className="pointer-events-none select-none grayscale-[0.5]">
+                                    <SmartEditor data={masterContent} mode="visual" readOnly />
+                                </div>
+                            ) : (
+                                <div className="flex items-center justify-center h-full text-slate-400 text-sm">
+                                    Loading Master...
+                                </div>
+                            )}
+                        </div>
                     </div>
                 )}
-            </div>
 
+                {/* Target Pane (Right) */}
+                <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900 border dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+                    <div className="bg-white dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700">
+                        <span className="font-bold text-sm text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                            <span className="uppercase bg-blue-50 dark:bg-blue-900/20 px-1.5 rounded text-xs">{file.split('/')[0]}</span>
+                            Target Content
+                        </span>
+                    </div>
+                    <div
+                        ref={targetScrollRef}
+                        onMouseEnter={() => handleMouseEnter('target')}
+                        onMouseLeave={handleMouseLeave}
+                        onScroll={() => handleScroll(targetScrollRef, masterScrollRef, 'target')}
+                        className="flex-1 overflow-y-auto p-4 relative"
+                    >
+                        {loading ? (
+                            <div className="absolute inset-0 flex items-center justify-center bg-white/80 dark:bg-slate-900/80 z-10">
+                                <RefreshCw className="w-8 h-8 animate-spin text-blue-500" />
+                            </div>
+                        ) : content ? (
+                            <SmartEditor
+                                data={content}
+                                onChange={setContent}
+                            />
+                        ) : (
+                            <div className="text-center text-slate-400 mt-20">
+                                {loading ? 'Loading...' : 'Unable to display editor.'}
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

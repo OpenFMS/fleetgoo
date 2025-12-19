@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Folder, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X } from 'lucide-react';
+import { Folder, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X, Globe } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
@@ -57,6 +57,18 @@ const AdminLayout = () => {
                     <Link to="/" className="flex items-center gap-2 font-bold text-xl">
                         <LayoutDashboard className="text-blue-600" />
                         <span>Admin</span>
+                    </Link>
+                </div>
+
+                <div className="px-4 py-4 space-y-1 border-b border-slate-200 dark:border-slate-800">
+                    <Link to="/admin/languages" className={cn(
+                        "flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors",
+                        location.pathname === '/admin/languages'
+                            ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+                            : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-gray-400"
+                    )}>
+                        <Globe className="w-4 h-4" />
+                        <span>Languages</span>
                     </Link>
                 </div>
 
