@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Folder, FolderOpen, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X, Globe, Trash2, PlusCircle } from 'lucide-react';
+import { Folder, FolderOpen, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X, Globe, Trash2, PlusCircle, PanelLeftClose, PanelLeft } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
@@ -46,23 +46,30 @@ const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile, onDelete }) 
 
     if (isFile) {
         return (
-            <div className="group flex items-center mb-0.5 pr-2">
+            <div className="relative group flex items-center mb-0.5 pr-2">
+                {/* Vertical Guide Line for nested items */}
+                {level > 0 && (
+                    <div
+                        className="absolute top-0 bottom-0 border-l border-slate-200 dark:border-slate-800"
+                        style={{ left: `${level * 16}px` }}
+                    />
+                )}
                 <Link
                     to={`/admin/editor?file=${encodeURIComponent(fullPath)}`}
                     className={cn(
-                        "flex-1 flex items-center gap-2 px-2 py-1.5 rounded-md text-sm transition-colors",
+                        "flex-1 flex items-center gap-2 px-2 py-1.5 rounded-md text-sm transition-colors relative z-10",
                         isActive
                             ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-medium"
                             : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400"
                     )}
-                    style={{ paddingLeft: `${(level + 1) * 12}px` }}
+                    style={{ paddingLeft: `${(level + 1) * 16}px`, marginLeft: level > 0 ? '4px' : '0' }}
                 >
                     <FileJson className="w-4 h-4 flex-shrink-0" />
                     <span className="truncate">{name}</span>
                 </Link>
                 <button
                     onClick={handleDelete}
-                    className="hidden group-hover:block p-1 text-slate-400 hover:text-red-500 transition-colors"
+                    className="hidden group-hover:block p-1 text-slate-400 hover:text-red-500 transition-colors absolute right-2 z-20"
                     title="Delete File"
                 >
                     <Trash2 className="w-3.5 h-3.5" />
@@ -72,14 +79,21 @@ const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile, onDelete }) 
     }
 
     return (
-        <div className="select-none">
+        <div className="select-none relative">
+            {/* Vertical Guide Line for nested items */}
+            {level > 0 && (
+                <div
+                    className="absolute top-0 bottom-0 border-l border-slate-200 dark:border-slate-800"
+                    style={{ left: `${level * 16}px` }}
+                />
+            )}
             <div
                 onClick={() => setIsOpen(!isOpen)}
                 className={cn(
-                    "flex items-center gap-2 px-2 py-1.5 rounded-md text-sm cursor-pointer transition-colors mb-0.5",
+                    "flex items-center gap-2 px-2 py-1.5 rounded-md text-sm cursor-pointer transition-colors mb-0.5 relative z-10",
                     "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200"
                 )}
-                style={{ paddingLeft: `${level * 12 + 8}px` }}
+                style={{ paddingLeft: `${level * 16 + 8}px`, marginLeft: level > 0 ? '4px' : '0' }}
             >
                 {isOpen ? <ChevronDown className="w-3.5 h-3.5 flex-shrink-0 text-slate-400" /> : <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-slate-400" />}
                 {isOpen ? <FolderOpen className="w-4 h-4 flex-shrink-0 text-blue-500" /> : <Folder className="w-4 h-4 flex-shrink-0 text-slate-400" />}
@@ -105,6 +119,7 @@ const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile, onDelete }) 
 };
 
 const AdminLayout = () => {
+    // ... (state defs) ...
     const [files, setFiles] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -113,6 +128,7 @@ const AdminLayout = () => {
     const navigate = useNavigate();
     const { toast } = useToast();
 
+    // ... (logic) ...
     // Extract current active file from URL query
     const searchParams = new URLSearchParams(location.search);
     const activeFile = searchParams.get('file');
@@ -250,21 +266,36 @@ const AdminLayout = () => {
                 </Button>
             </div>
 
+            {/* Desktop Sidebar Toggle (Floating if closed) */}
+            {!sidebarOpen && (
+                <div className="hidden lg:block fixed top-4 left-4 z-50">
+                    <Button variant="outline" size="icon" onClick={() => setSidebarOpen(true)} className="bg-white dark:bg-slate-900 shadow-md">
+                        <PanelLeft className="w-4 h-4" />
+                    </Button>
+                </div>
+            )}
+
             {/* Sidebar */}
             <aside
                 className={cn(
-                    "fixed inset-y-0 left-0 z-40 w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static flex flex-col",
-                    sidebarOpen ? "translate-x-0" : "-translate-x-full"
+                    "fixed inset-y-0 left-0 z-40 w-72 bg-white dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 transform transition-all duration-300 ease-in-out flex flex-col",
+                    sidebarOpen ? "translate-x-0 lg:w-72" : "-translate-x-full lg:translate-x-0 lg:w-0 lg:overflow-hidden lg:border-none"
                 )}
             >
-                <div className="p-6 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center">
+                <div className="p-6 border-b border-slate-200 dark:border-slate-800 flex justify-between items-center min-w-[18rem]">
                     <Link to="/" className="flex items-center gap-2 font-bold text-xl">
                         <LayoutDashboard className="text-blue-600" />
                         <span>Admin</span>
                     </Link>
+                    <Button variant="ghost" size="icon" onClick={() => setSidebarOpen(false)} className="hidden lg:flex" title="Collapse Sidebar">
+                        <PanelLeftClose className="w-4 h-4 text-slate-400" />
+                    </Button>
+                    <Button variant="ghost" size="icon" onClick={() => setSidebarOpen(false)} className="lg:hidden">
+                        <X className="w-4 h-4" />
+                    </Button>
                 </div>
 
-                <div className="px-4 py-4 space-y-2 border-b border-slate-200 dark:border-slate-800">
+                <div className="px-4 py-4 space-y-2 border-b border-slate-200 dark:border-slate-800 min-w-[18rem]">
                     <Button onClick={handleCreateFile} className="w-full justify-start gap-2" variant="outline" size="sm">
                         <PlusCircle className="w-4 h-4" />
                         New Page
@@ -280,7 +311,7 @@ const AdminLayout = () => {
                     </Link>
                 </div>
 
-                <div className="flex-1 overflow-y-auto p-2 space-y-1 custom-scrollbar">
+                <div className="flex-1 overflow-y-auto p-2 space-y-1 custom-scrollbar min-w-[18rem]">
                     {loading && <div className="text-sm text-slate-500 p-4">Loading file system...</div>}
                     {error && <div className="text-sm text-red-500 p-4">Error: {error}</div>}
 
@@ -297,7 +328,7 @@ const AdminLayout = () => {
                     ))}
                 </div>
 
-                <div className="p-4 border-t border-slate-200 dark:border-slate-800">
+                <div className="p-4 border-t border-slate-200 dark:border-slate-800 min-w-[18rem]">
                     <Button variant="ghost" className="w-full text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20" onClick={handleLogout}>
                         Logout
                     </Button>
@@ -308,7 +339,12 @@ const AdminLayout = () => {
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 overflow-x-hidden w-full p-4 lg:p-8 pt-16 lg:pt-8 bg-slate-50 dark:bg-slate-950">
+            <main
+                className={cn(
+                    "flex-1 overflow-x-hidden min-h-screen p-4 lg:p-8 pt-16 lg:pt-8 bg-slate-50 dark:bg-slate-950 transition-all duration-300 ease-in-out",
+                    sidebarOpen ? "lg:ml-72" : "lg:ml-0"
+                )}
+            >
                 <Outlet />
             </main>
         </div>

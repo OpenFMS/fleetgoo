@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Save, RefreshCw, AlertCircle, AlertTriangle } from 'lucide-react';
+import { Save, RefreshCw, AlertCircle, AlertTriangle, GripVertical } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
 import SmartEditor from '@/components/admin/visual/SmartEditor';
@@ -19,6 +19,11 @@ const ContentEditor = () => {
     const [loading, setLoading] = useState(false);
     const [saving, setSaving] = useState(false);
     const { toast } = useToast();
+
+    // Split Pane State
+    const [leftPanelWidth, setLeftPanelWidth] = useState(50); // percentage
+    const [isDragging, setIsDragging] = useState(false);
+    const containerRef = useRef(null);
 
     // Scroll Sync Refs
     const masterScrollRef = useRef(null);
@@ -49,6 +54,41 @@ const ContentEditor = () => {
         target.scrollTop = percentage * (target.scrollHeight - target.clientHeight);
 
     };
+
+    // Resize Handler Logic
+    const startResizing = (e) => {
+        setIsDragging(true);
+        e.preventDefault(); // Prevent text selection
+    };
+
+    const stopResizing = () => {
+        setIsDragging(false);
+    };
+
+    const resize = (e) => {
+        if (isDragging && containerRef.current) {
+            const containerRect = containerRef.current.getBoundingClientRect();
+            const newLeftWidth = ((e.clientX - containerRect.left) / containerRect.width) * 100;
+            // Limit between 20% and 80%
+            if (newLeftWidth > 20 && newLeftWidth < 80) {
+                setLeftPanelWidth(newLeftWidth);
+            }
+        }
+    };
+
+    useEffect(() => {
+        if (isDragging) {
+            window.addEventListener('mousemove', resize);
+            window.addEventListener('mouseup', stopResizing);
+        } else {
+            window.removeEventListener('mousemove', resize);
+            window.removeEventListener('mouseup', stopResizing);
+        }
+        return () => {
+            window.removeEventListener('mousemove', resize);
+            window.removeEventListener('mouseup', stopResizing);
+        };
+    }, [isDragging]);
 
     // Derived info
     const isMasterFile = file?.startsWith('zh/');
@@ -219,40 +259,55 @@ const ContentEditor = () => {
             </div>
 
             {/* Editor Area */}
-            <div className="flex-1 min-h-0 flex gap-4">
+            <div className="flex-1 min-h-0 flex overflow-hidden" ref={containerRef}>
                 {/* Master Pane (Left) - Only if not master file */}
                 {!isMasterFile && (
-                    <div className="hidden lg:flex flex-1 flex-col min-w-0 bg-slate-50 dark:bg-slate-900/50 border dark:border-slate-800 rounded-xl overflow-hidden opacity-80 hover:opacity-100 transition-opacity">
-                        <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex justify-between items-center">
-                            <span className="font-bold text-sm text-slate-500 flex items-center gap-2">
-                                <span className="bg-slate-200 dark:bg-slate-700 px-1.5 rounded text-xs">ZH</span>
-                                Master Reference
-                            </span>
-                            <span className="text-xs text-slate-400">Read Only</span>
-                        </div>
+                    <>
                         <div
-                            ref={masterScrollRef}
-                            onMouseEnter={() => handleMouseEnter('master')}
-                            onMouseLeave={handleMouseLeave}
-                            onScroll={() => handleScroll(masterScrollRef, targetScrollRef, 'master')}
-                            className="flex-1 overflow-y-auto p-4 custom-scrollbar"
+                            className="flex flex-col min-w-0 bg-slate-50 dark:bg-slate-900/50 border dark:border-slate-800 rounded-xl overflow-hidden opacity-80 hover:opacity-100 transition-opacity"
+                            style={{ width: `${leftPanelWidth}%` }}
                         >
-                            {masterContent ? (
-                                <div className="pointer-events-none select-none grayscale-[0.5]">
-                                    <SmartEditor data={masterContent} mode="visual" readOnly />
-                                </div>
-                            ) : (
-                                <div className="flex items-center justify-center h-full text-slate-400 text-sm">
-                                    Loading Master...
-                                </div>
-                            )}
+                            <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex justify-between items-center flex-shrink-0">
+                                <span className="font-bold text-sm text-slate-500 flex items-center gap-2">
+                                    <span className="bg-slate-200 dark:bg-slate-700 px-1.5 rounded text-xs">ZH</span>
+                                    Master Reference
+                                </span>
+                                <span className="text-xs text-slate-400">Read Only</span>
+                            </div>
+                            <div
+                                ref={masterScrollRef}
+                                onMouseEnter={() => handleMouseEnter('master')}
+                                onMouseLeave={handleMouseLeave}
+                                onScroll={() => handleScroll(masterScrollRef, targetScrollRef, 'master')}
+                                className="flex-1 overflow-y-auto p-4 custom-scrollbar"
+                            >
+                                {masterContent ? (
+                                    <div className="pointer-events-none select-none grayscale-[0.5]">
+                                        <SmartEditor data={masterContent} mode="visual" readOnly />
+                                    </div>
+                                ) : (
+                                    <div className="flex items-center justify-center h-full text-slate-400 text-sm">
+                                        Loading Master...
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                    </div>
+
+                        {/* Drag Handle */}
+                        <div
+                            className="w-4 flex items-center justify-center cursor-col-resize hover:bg-blue-50 dark:hover:bg-blue-900/20 active:bg-blue-100 transition-colors z-10 flex-shrink-0"
+                            onMouseDown={startResizing}
+                        >
+                            <div className="w-1 h-8 bg-slate-300 dark:bg-slate-700 rounded-full flex items-center justify-center">
+                                <GripVertical className="w-3 h-3 text-slate-500" />
+                            </div>
+                        </div>
+                    </>
                 )}
 
                 {/* Target Pane (Right) */}
                 <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900 border dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
-                    <div className="bg-white dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700">
+                    <div className="bg-white dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex-shrink-0">
                         <span className="font-bold text-sm text-blue-600 dark:text-blue-400 flex items-center gap-2">
                             <span className="uppercase bg-blue-50 dark:bg-blue-900/20 px-1.5 rounded text-xs">{file.split('/')[0]}</span>
                             Target Content
