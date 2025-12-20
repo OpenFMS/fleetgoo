@@ -488,6 +488,68 @@ export default defineConfig({
 							}
 						}
 
+						// UPLOAD IMAGE (Base64)
+						if (url.pathname === '/api/admin/upload-image' && req.method === 'POST') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { filename, content } = JSON.parse(body);
+									if (!filename || !content) throw new Error("Filename and content required");
+
+									// Remove header if present (e.g. "data:image/png;base64,")
+									const base64Data = content.replace(/^data:image\/\w+;base64,/, "");
+									const buffer = Buffer.from(base64Data, 'base64');
+
+									const imagesDir = path.resolve(__dirname, 'public/images');
+									if (!fs.existsSync(imagesDir)) fs.mkdirSync(imagesDir, { recursive: true });
+
+									const filePath = path.join(imagesDir, filename);
+									fs.writeFileSync(filePath, buffer);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true, path: '/images/' + filename }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// DELETE FILE
+						if (url.pathname === '/api/admin/files' && req.method === 'DELETE') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							const safePath = path.join(path.resolve(__dirname, 'public/data'), fileParam);
+							// Security check
+							if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+								res.statusCode = 403;
+								res.end(JSON.stringify({ error: 'Access denied' }));
+								return;
+							}
+
+							try {
+								if (fs.existsSync(safePath)) {
+									fs.unlinkSync(safePath);
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} else {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'File not found' }));
+								}
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+							}
+							return;
+						}
+
 						// 1. LIST FILES
 						if (url.pathname === '/api/admin/files' && req.method === 'GET') {
 							try {

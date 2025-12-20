@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Folder, FolderOpen, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X, Globe } from 'lucide-react';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Folder, FolderOpen, FileJson, Settings, LayoutDashboard, ChevronRight, ChevronDown, Menu, X, Globe, Trash2, PlusCircle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { useToast } from '@/components/ui/use-toast';
 
 // Helper to expand flat file list into tree structure
 const buildFileTree = (files) => {
@@ -20,7 +21,7 @@ const buildFileTree = (files) => {
     return root;
 };
 
-const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile }) => {
+const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile, onDelete }) => {
     const isFile = node === null;
     // Default open if level 0 (language root), otherwise closed by default
     const [isOpen, setIsOpen] = useState(level === 0 ? false : false);
@@ -35,21 +36,38 @@ const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile }) => {
         if (containsActive) setIsOpen(true);
     }, [containsActive, fullPath]);
 
+    const handleDelete = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (window.confirm(`Are you sure you want to delete ${fullPath}?`)) {
+            onDelete(fullPath);
+        }
+    };
+
     if (isFile) {
         return (
-            <Link
-                to={`/admin/editor?file=${encodeURIComponent(fullPath)}`}
-                className={cn(
-                    "flex items-center gap-2 px-2 py-1.5 rounded-md text-sm transition-colors mb-0.5",
-                    isActive
-                        ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-medium"
-                        : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400"
-                )}
-                style={{ paddingLeft: `${(level + 1) * 12}px` }}
-            >
-                <FileJson className="w-4 h-4 flex-shrink-0" />
-                <span className="truncate">{name}</span>
-            </Link>
+            <div className="group flex items-center mb-0.5 pr-2">
+                <Link
+                    to={`/admin/editor?file=${encodeURIComponent(fullPath)}`}
+                    className={cn(
+                        "flex-1 flex items-center gap-2 px-2 py-1.5 rounded-md text-sm transition-colors",
+                        isActive
+                            ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 font-medium"
+                            : "hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-400"
+                    )}
+                    style={{ paddingLeft: `${(level + 1) * 12}px` }}
+                >
+                    <FileJson className="w-4 h-4 flex-shrink-0" />
+                    <span className="truncate">{name}</span>
+                </Link>
+                <button
+                    onClick={handleDelete}
+                    className="hidden group-hover:block p-1 text-slate-400 hover:text-red-500 transition-colors"
+                    title="Delete File"
+                >
+                    <Trash2 className="w-3.5 h-3.5" />
+                </button>
+            </div>
         );
     }
 
@@ -77,6 +95,7 @@ const FileTreeItem = ({ name, node, pathStr, level = 0, activeFile }) => {
                             pathStr={fullPath}
                             level={level + 1}
                             activeFile={activeFile}
+                            onDelete={onDelete}
                         />
                     ))}
                 </div>
@@ -91,12 +110,15 @@ const AdminLayout = () => {
     const [error, setError] = useState(null);
     const [sidebarOpen, setSidebarOpen] = useState(true);
     const location = useLocation();
+    const navigate = useNavigate();
+    const { toast } = useToast();
 
     // Extract current active file from URL query
     const searchParams = new URLSearchParams(location.search);
     const activeFile = searchParams.get('file');
 
-    useEffect(() => {
+    const refreshFiles = () => {
+        setLoading(true);
         fetch('/api/admin/files')
             .then(res => {
                 if (!res.ok) throw new Error('Failed to fetch files');
@@ -111,9 +133,113 @@ const AdminLayout = () => {
                 setError(err.message);
                 setLoading(false);
             });
+    };
+
+    useEffect(() => {
+        refreshFiles();
     }, []);
 
+    const handleCreateFile = async () => {
+        const filePath = window.prompt("Enter file path (e.g. 'en/new-page.json'):");
+        if (!filePath) return;
+
+        if (!filePath.endsWith('.json')) {
+            toast({ variant: "destructive", title: "Invalid file", description: "File must end with .json" });
+            return;
+        }
+
+        try {
+            const res = await fetch('/api/admin/content', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ file: filePath, content: {} })
+            });
+            if (!res.ok) throw new Error("Failed to create file");
+
+            toast({ title: "Success", description: "File created" });
+            refreshFiles();
+            navigate(`/admin/editor?file=${encodeURIComponent(filePath)}`);
+        } catch (err) {
+            toast({ variant: "destructive", title: "Error", description: err.message });
+        }
+    };
+
+    const handleDeleteFile = async (filePath) => {
+        try {
+            const res = await fetch(`/api/admin/files?file=${encodeURIComponent(filePath)}`, {
+                method: 'DELETE'
+            });
+            if (!res.ok) throw new Error("Failed to delete file");
+
+            toast({ title: "Deleted", description: `Deleted ${filePath}` });
+            refreshFiles();
+            if (activeFile === filePath) {
+                navigate('/admin');
+            }
+        } catch (err) {
+            toast({ variant: "destructive", title: "Error", description: err.message });
+        }
+    };
+
     const fileTree = buildFileTree(files);
+
+    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [authLoading, setAuthLoading] = useState(true);
+
+    useEffect(() => {
+        const token = localStorage.getItem('fleetgoo_admin_token');
+        if (token === 'secure-token-123') {
+            setIsAuthenticated(true);
+        }
+        setAuthLoading(false);
+    }, []);
+
+    const handleLogin = (password) => {
+        if (password === 'admin123') { // Simple hardcoded password
+            localStorage.setItem('fleetgoo_admin_token', 'secure-token-123');
+            setIsAuthenticated(true);
+            toast({ title: "Welcome back", description: "Logged in successfully" });
+        } else {
+            toast({ variant: "destructive", title: "Access Denied", description: "Incorrect password" });
+        }
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem('fleetgoo_admin_token');
+        setIsAuthenticated(false);
+        setSidebarOpen(true);
+    };
+
+    if (authLoading) return null;
+
+    if (!isAuthenticated) {
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950">
+                <div className="w-full max-w-md p-8 bg-white dark:bg-slate-900 rounded-xl shadow-lg border border-slate-200 dark:border-slate-800">
+                    <div className="flex justify-center mb-8">
+                        <div className="p-3 bg-blue-100 dark:bg-blue-900/20 rounded-full">
+                            <LayoutDashboard className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                        </div>
+                    </div>
+                    <h1 className="text-2xl font-bold text-center mb-2">FleetGoo Admin</h1>
+                    <p className="text-slate-500 text-center mb-6">Enter password to continue</p>
+                    <form onSubmit={(e) => {
+                        e.preventDefault();
+                        handleLogin(e.target.password.value);
+                    }} className="space-y-4">
+                        <input
+                            type="password"
+                            name="password"
+                            className="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all"
+                            placeholder="Password"
+                            autoFocus
+                        />
+                        <Button type="submit" className="w-full">Login</Button>
+                    </form>
+                </div>
+            </div>
+        );
+    }
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex font-sans text-slate-900 dark:text-white">
@@ -138,7 +264,11 @@ const AdminLayout = () => {
                     </Link>
                 </div>
 
-                <div className="px-4 py-4 space-y-1 border-b border-slate-200 dark:border-slate-800">
+                <div className="px-4 py-4 space-y-2 border-b border-slate-200 dark:border-slate-800">
+                    <Button onClick={handleCreateFile} className="w-full justify-start gap-2" variant="outline" size="sm">
+                        <PlusCircle className="w-4 h-4" />
+                        New Page
+                    </Button>
                     <Link to="/admin/languages" className={cn(
                         "flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition-colors",
                         location.pathname === '/admin/languages'
@@ -162,12 +292,16 @@ const AdminLayout = () => {
                             pathStr=""
                             level={0}
                             activeFile={activeFile}
+                            onDelete={handleDeleteFile}
                         />
                     ))}
                 </div>
 
                 <div className="p-4 border-t border-slate-200 dark:border-slate-800">
-                    <div className="text-xs text-center text-slate-400">
+                    <Button variant="ghost" className="w-full text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20" onClick={handleLogout}>
+                        Logout
+                    </Button>
+                    <div className="text-xs text-center text-slate-400 mt-2">
                         Powered by Vite Middleware
                     </div>
                 </div>

@@ -4,7 +4,10 @@ import { Button } from '@/components/ui/button.jsx';
 import { Image as ImageIcon, Search } from 'lucide-react';
 import { Input } from '@/components/ui/input.jsx';
 
+import { useToast } from '@/components/ui/use-toast';
+
 const ImagePicker = ({ value, onChange, className }) => {
+    const { toast } = useToast();
     const [open, setOpen] = useState(false);
     const [images, setImages] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -48,17 +51,70 @@ const ImagePicker = ({ value, onChange, className }) => {
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl max-h-[80vh] flex flex-col">
                     <DialogHeader>
-                        <DialogTitle>Select Image</DialogTitle>
+                        <DialogTitle>Select or Upload Image</DialogTitle>
                     </DialogHeader>
 
-                    <div className="relative mb-4">
-                        <Search className="absolute left-2 top-2.5 h-4 w-4 text-slate-500" />
-                        <Input
-                            placeholder="Search images..."
-                            className="pl-8"
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                        />
+                    <div className="flex justify-between items-center mb-4">
+                        <div className="relative flex-1 max-w-sm">
+                            <Search className="absolute left-2 top-2.5 h-4 w-4 text-slate-500" />
+                            <Input
+                                placeholder="Search images..."
+                                className="pl-8"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                type="file"
+                                id="image-upload-input"
+                                className="hidden"
+                                accept="image/*"
+                                onChange={(e) => {
+                                    const file = e.target.files[0];
+                                    if (!file) return;
+
+                                    const reader = new FileReader();
+                                    reader.onload = async () => {
+                                        try {
+                                            const base64 = reader.result;
+                                            const res = await fetch('/api/admin/upload-image', {
+                                                method: 'POST',
+                                                headers: { 'Content-Type': 'application/json' },
+                                                body: JSON.stringify({
+                                                    filename: file.name,
+                                                    content: base64
+                                                })
+                                            });
+                                            const data = await res.json();
+                                            if (data.success) {
+                                                // Refresh images
+                                                setLoading(true);
+                                                fetch('/api/admin/images')
+                                                    .then(res => res.json())
+                                                    .then(list => {
+                                                        setImages(list.images || []);
+                                                        // Select the uploaded image
+                                                        onChange(data.path);
+                                                        setOpen(false);
+                                                        toast({ title: "Image Uploaded", description: data.path });
+                                                    })
+                                                    .finally(() => setLoading(false));
+                                            } else {
+                                                alert("Upload failed: " + data.error);
+                                            }
+                                        } catch (err) {
+                                            console.error("Upload error", err);
+                                            alert("Upload error");
+                                        }
+                                    };
+                                    reader.readAsDataURL(file);
+                                }}
+                            />
+                            <Button onClick={() => document.getElementById('image-upload-input').click()}>
+                                Upload New
+                            </Button>
+                        </div>
                     </div>
 
                     <div className="flex-1 overflow-y-auto min-h-[300px] p-1">

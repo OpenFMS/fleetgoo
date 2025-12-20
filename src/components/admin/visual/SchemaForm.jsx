@@ -3,7 +3,8 @@ import { Input } from '@/components/ui/input.jsx';
 import { Label } from '@/components/ui/label.jsx';
 import { Textarea } from '@/components/ui/textarea.jsx';
 import { cn } from '@/lib/utils';
-import { ChevronDown, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button.jsx';
+import { ChevronDown, ChevronRight, Image as ImageIcon, X } from 'lucide-react';
 import DataGrid from './DataGrid';
 import ImagePicker from './ImagePicker';
 
@@ -55,6 +56,64 @@ const SchemaForm = ({ data, onChange, className, level = 0 }) => {
                 }
 
                 if (type === 'array') {
+                    // Start: Custom Logic for Image Arrays
+                    const isImageArray = key.toLowerCase().includes('image') || (value.length > 0 && typeof value[0] === 'string' && value[0].startsWith('/images/'));
+
+                    if (isImageArray) {
+                        return (
+                            <div key={key} className="space-y-3 border border-slate-200 dark:border-slate-800 rounded-lg p-4 bg-slate-50 dark:bg-slate-900/10">
+                                <div className="flex justify-between items-center">
+                                    <Label className="uppercase text-xs text-slate-500 font-bold tracking-wider">{key} ({value.length})</Label>
+                                    <Button
+                                        variant="outline"
+                                        size="sm"
+                                        onClick={() => handleChange(key, [...value, ''])}
+                                        className="h-7 text-xs"
+                                    >
+                                        Add Image
+                                    </Button>
+                                </div>
+                                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                                    {value.map((imgUrl, idx) => (
+                                        <div key={idx} className="relative group border rounded-md overflow-hidden bg-white dark:bg-slate-800">
+                                            <div className="aspect-square bg-slate-100 flex items-center justify-center relative">
+                                                {imgUrl ? (
+                                                    <img src={imgUrl} alt={`Item ${idx}`} className="w-full h-full object-cover" />
+                                                ) : (
+                                                    <ImageIcon className="text-slate-300 w-8 h-8" />
+                                                )}
+                                                <button
+                                                    onClick={() => handleChange(key, value.filter((_, i) => i !== idx))}
+                                                    className="absolute top-1 right-1 bg-white/90 text-red-500 rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity shadow-sm hover:bg-red-50"
+                                                    title="Remove"
+                                                >
+                                                    <X className="w-3 h-3" />
+                                                </button>
+                                            </div>
+                                            <div className="p-2 border-t dark:border-slate-700">
+                                                <ImagePicker
+                                                    value={imgUrl}
+                                                    onChange={(newVal) => {
+                                                        const newValue = [...value];
+                                                        newValue[idx] = newVal;
+                                                        handleChange(key, newValue);
+                                                    }}
+                                                    className="w-full"
+                                                />
+                                            </div>
+                                        </div>
+                                    ))}
+                                    {value.length === 0 && (
+                                        <div className="col-span-full text-center text-slate-400 text-sm py-8 border-2 border-dashed border-slate-200 rounded-lg">
+                                            No images. Click "Add Image" to start.
+                                        </div>
+                                    )}
+                                </div>
+                            </div>
+                        );
+                    }
+                    // End: Custom Logic for Image Arrays
+
                     // For simple arrays of strings/numbers
                     if (value.length > 0 && typeof value[0] !== 'object') {
                         return (
