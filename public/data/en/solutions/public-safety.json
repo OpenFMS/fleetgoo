@@ -2,10 +2,9 @@
   "id": "public-safety",
   "categoryId": "industry",
   "title": "Public Safety Fleet Solutions",
-  "metaTitle": "Public Safety & Police Fleet Management System | FleetGoo",
+  "metaTitle": "Public Safety & Police Fleet Management System ",
   "metaDesc": "Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.",
   "image": "",
-  "color": "blue",
   "blocks": [
     {
       "type": "hero",
@@ -38,7 +37,7 @@
       "mediaType": "image",
       "url": "/images/company/company-main.png",
       "caption": "FleetGoo End-to-End Public Safety Architecture: From Vehicle Sensors to Cloud Command Center.",
-      "width": "container"
+      "width": "full"
     },
     {
       "type": "features",
@@ -129,6 +128,13 @@
       "title": "Ready to modernize your fleet?",
       "buttonText": "Get a Custom Quote",
       "link": "/en/contact"
+    },
+    {
+      "type": "media",
+      "mediaType": "video",
+      "url": "https://www.youtube.com/watch?v=0e3GPea1Tyg",
+      "caption": "现实版鱿鱼游戏，坚持到最后赢得456,000美元",
+      "width": "container"
     }
   ]
 }

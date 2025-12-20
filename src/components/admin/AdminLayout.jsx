@@ -231,7 +231,7 @@ const AdminLayout = () => {
                             <LayoutDashboard className="w-8 h-8 text-blue-600 dark:text-blue-400" />
                         </div>
                     </div>
-                    <h1 className="text-2xl font-bold text-center mb-2">FleetGoo Admin</h1>
+                    <h1 className="text-2xl font-bold text-center mb-2">FleetGoo WebSite Admin</h1>
                     <p className="text-slate-500 text-center mb-6">Enter password to continue</p>
                     <form onSubmit={(e) => {
                         e.preventDefault();
@@ -327,7 +327,7 @@ const AdminLayout = () => {
                         Logout
                     </Button>
                     <div className="text-xs text-center text-slate-400 mt-2">
-                        Powered by Vite Middleware
+                        Powered by Honsen.Wang
                     </div>
                 </div>
             </aside>

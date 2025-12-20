@@ -50,7 +50,8 @@ const BLOCK_TYPES = [
                 options: [
                     { label: 'Grid (3 Cols)', value: 'grid' },
                     { label: 'Alternating (Left/Right)', value: 'alternating' }
-                ]
+                ],
+                help: "Grid uses standard 3-column layout. Alternating swaps image/text side for each item."
             }
         }
     },
@@ -60,8 +61,16 @@ const BLOCK_TYPES = [
         icon: 'Image',
         default: { type: 'media', mediaType: 'image', url: '', caption: '', width: 'container' },
         fields: {
-            mediaType: { type: 'select', options: [{ label: 'Image', value: 'image' }, { label: 'Video', value: 'video' }] },
-            width: { type: 'select', options: [{ label: 'Container Width', value: 'container' }, { label: 'Full Width', value: 'full' }, { label: 'Narrow', value: 'narrow' }] }
+            mediaType: {
+                type: 'select',
+                options: [{ label: 'Image', value: 'image' }, { label: 'Video', value: 'video' }],
+                help: "Use 'Image' for static pictures, 'Video' for embedded players."
+            },
+            width: {
+                type: 'select',
+                options: [{ label: 'Container Width', value: 'container' }, { label: 'Full Width', value: 'full' }, { label: 'Narrow', value: 'narrow' }],
+                help: "Container: Standard width (recommended). Full: Edge-to-edge. Narrow: Small width for icons/diagrams."
+            }
         }
     },
     {
@@ -184,6 +193,7 @@ function BlockEditorField({ label, value = [], onChange }) {
                             <div className="p-4">
                                 <SchemaForm
                                     data={blockData}
+                                    blockType={block.type}
                                     onChange={(newData) => updateBlock(index, newData)}
                                     level={1}
                                 />
@@ -230,7 +240,15 @@ function BlockEditorField({ label, value = [], onChange }) {
     );
 };
 
-function SchemaForm({ data, onChange, className, level = 0 }) {
+// Helper to extract YouTube ID (duplicated for standalone usage)
+const getYoutubeId = (url) => {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+};
+
+function SchemaForm({ data, onChange, className, level = 0, blockType = null }) {
     if (!data || typeof data !== 'object') return null;
 
     const handleChange = (key, newValue) => {
@@ -241,14 +259,60 @@ function SchemaForm({ data, onChange, className, level = 0 }) {
     };
 
     // Determine if this object corresponds to a known block type configuration
-    const blockConfig = (typeof data.type === 'string')
-        ? BLOCK_TYPES.find(b => b.type === data.type)
+    // Use prop blockType if provided (priority), otherwise check data.type
+    const effectiveType = blockType || (typeof data.type === 'string' ? data.type : null);
+
+    const blockConfig = effectiveType
+        ? BLOCK_TYPES.find(b => b.type === effectiveType)
         : null;
 
     return (
         <div className={cn("space-y-4", className)}>
             {Object.entries(data).map(([key, value]) => {
                 const fieldConfig = blockConfig?.fields?.[key];
+
+                // Special handling for 'url' field in media blocks to show preview
+                if (key === 'url' && data.mediaType === 'video') {
+                    const youtubeId = getYoutubeId(value);
+                    return (
+                        <div key={key} className="space-y-1.5">
+                            <Label className="capitalize">{key}</Label>
+                            <Input
+                                value={value}
+                                onChange={e => handleChange(key, e.target.value)}
+                                placeholder="https://www.youtube.com/watch?v=..."
+                            />
+                            {fieldConfig?.help && <p className="text-[11px] text-slate-400">{fieldConfig.help}</p>}
+
+                            {/* Video Preview Area */}
+                            {value && (
+                                <div className="mt-2 rounded-lg overflow-hidden border bg-slate-100 dark:bg-slate-900 w-full max-w-sm">
+                                    {youtubeId ? (
+                                        <div className="relative aspect-video bg-black group cursor-pointer">
+                                            {/* Show Thumbnail by default for performance/stability */}
+                                            <img
+                                                src={`https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`}
+                                                alt="YouTube Thumbnail"
+                                                className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                                    <div className="w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-white border-b-[6px] border-b-transparent ml-1"></div>
+                                                </div>
+                                            </div>
+                                            <div className="absolute bottom-1 right-2 bg-black/70 text-white text-[10px] px-1 rounded">
+                                                YouTube Preview
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <video src={value} controls className="w-full max-h-48 bg-black" />
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    );
+                }
+
                 const type = getFieldType(key, value, fieldConfig);
 
                 // Skip specialized keys that strictly shouldn't be edited here if we are nested
@@ -386,6 +450,7 @@ function SchemaForm({ data, onChange, className, level = 0 }) {
                                 </select>
                                 <ChevronDown className="absolute right-3 top-2.5 w-4 h-4 text-slate-400 pointer-events-none" />
                             </div>
+                            {fieldConfig?.help && <p className="text-[11px] text-slate-400">{fieldConfig.help}</p>}
                         </div>
                     );
                 }
@@ -415,6 +480,7 @@ function SchemaForm({ data, onChange, className, level = 0 }) {
                                 onChange={e => handleChange(key, e.target.value)}
                                 className="resize-y min-h-[100px]"
                             />
+                            {fieldConfig?.help && <p className="text-[11px] text-slate-400">{fieldConfig.help}</p>}
                         </div>
                     );
                 }
@@ -447,6 +513,7 @@ function SchemaForm({ data, onChange, className, level = 0 }) {
                             value={value}
                             onChange={e => handleChange(key, type === 'number' ? parseFloat(e.target.value) : e.target.value)}
                         />
+                        {fieldConfig?.help && <p className="text-[11px] text-slate-400">{fieldConfig.help}</p>}
                     </div>
                 );
             })}

@@ -60,13 +60,72 @@ const PainPointsBlock = ({ data }) => {
 };
 
 /* --- 3. Media Block (Architecture) --- */
+/* --- Helper: Extract YouTube ID --- */
+const getYoutubeId = (url) => {
+    if (!url) return null;
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : null;
+};
+
+/* --- 3. Media Block (Architecture) --- */
 const MediaBlock = ({ data }) => {
+    const isVideo = data.mediaType === 'video';
+    const youtubeId = isVideo ? getYoutubeId(data.url) : null;
+    const [isPlaying, setIsPlaying] = React.useState(false);
+
     return (
         <div className="py-16 bg-slate-50 dark:bg-slate-900/50">
             <div className="container mx-auto px-4 text-center">
                 {data.url && (
-                    <div className={`relative rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 ${data.width === 'container' ? 'max-w-4xl mx-auto' : 'w-full'}`}>
-                        <img src={data.url} alt={data.caption} className="w-full h-auto" />
+                    <div className={`relative rounded-xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800 bg-black ${data.width === 'container' ? 'max-w-5xl mx-auto' : 'w-full'}`}>
+                        {isVideo ? (
+                            <div className="aspect-video w-full relative group">
+                                {youtubeId ? (
+                                    !isPlaying ? (
+                                        /* 1. Cover View (Click to Load) */
+                                        <button
+                                            onClick={() => setIsPlaying(true)}
+                                            className="absolute inset-0 w-full h-full block cursor-pointer group focus:outline-none"
+                                            aria-label="Play Video"
+                                        >
+                                            <img
+                                                src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
+                                                alt={data.caption || "Video Thumbnail"}
+                                                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
+                                            />
+                                            {/* Play Button Overlay */}
+                                            <div className="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-colors">
+                                                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-red-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                                                    <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white border-b-[10px] border-b-transparent ml-1"></div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    ) : (
+                                        /* 2. Active Player (Autoplay on Load) */
+                                        <iframe
+                                            className="absolute inset-0 w-full h-full"
+                                            src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1`}
+                                            title={data.caption || "Video Content"}
+                                            frameBorder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            referrerPolicy="strict-origin-when-cross-origin"
+                                            allowFullScreen
+                                        ></iframe>
+                                    )
+                                ) : (
+                                    <video
+                                        className="w-full h-full object-contain"
+                                        controls
+                                        src={data.url}
+                                    >
+                                        Your browser does not support the video tag.
+                                    </video>
+                                )}
+                            </div>
+                        ) : (
+                            <img src={data.url} alt={data.caption} className="w-full h-auto" />
+                        )}
                     </div>
                 )}
                 {data.caption && (
