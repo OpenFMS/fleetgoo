@@ -4,6 +4,7 @@ import { Folder, FolderOpen, FileJson, Settings, LayoutDashboard, ChevronRight, 
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/components/ui/use-toast';
+import CreatePageModal from './CreatePageModal';
 
 // Helper to expand flat file list into tree structure
 const buildFileTree = (files) => {
@@ -124,6 +125,7 @@ const AdminLayout = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [sidebarOpen, setSidebarOpen] = useState(true);
+    const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
     const { toast } = useToast();
@@ -155,24 +157,16 @@ const AdminLayout = () => {
         refreshFiles();
     }, []);
 
-    const handleCreateFile = async () => {
-        const filePath = window.prompt("Enter file path (e.g. 'en/new-page.json'):");
-        if (!filePath) return;
-
-        if (!filePath.endsWith('.json')) {
-            toast({ variant: "destructive", title: "Invalid file", description: "File must end with .json" });
-            return;
-        }
-
+    const handleCreatePage = async (filePath, content) => {
         try {
             const res = await fetch('/api/admin/content', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ file: filePath, content: {} })
+                body: JSON.stringify({ file: filePath, content })
             });
             if (!res.ok) throw new Error("Failed to create file");
 
-            toast({ title: "Success", description: "File created" });
+            toast({ title: "Success", description: "Page created successfully" });
             refreshFiles();
             navigate(`/admin/editor?file=${encodeURIComponent(filePath)}`);
         } catch (err) {
@@ -296,7 +290,7 @@ const AdminLayout = () => {
                 </div>
 
                 <div className="px-4 py-4 space-y-2 border-b border-slate-200 dark:border-slate-800 min-w-[18rem]">
-                    <Button onClick={handleCreateFile} className="w-full justify-start gap-2" variant="outline" size="sm">
+                    <Button onClick={() => setIsCreateModalOpen(true)} className="w-full justify-start gap-2" variant="outline" size="sm">
                         <PlusCircle className="w-4 h-4" />
                         New Page
                     </Button>
@@ -347,6 +341,13 @@ const AdminLayout = () => {
             >
                 <Outlet />
             </main>
+
+            <CreatePageModal
+                isOpen={isCreateModalOpen}
+                onClose={() => setIsCreateModalOpen(false)}
+                onCreate={handleCreatePage}
+                languages={Object.keys(fileTree).length > 0 ? Object.keys(fileTree) : ['en', 'zh', 'es']}
+            />
         </div>
     );
 };

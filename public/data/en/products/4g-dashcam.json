@@ -1,0 +1,53 @@
+{
+  "id": "4g-dashcam",
+  "categoryId": "generic",
+  "title": "4G  DashCam",
+  "metaTitle": "4G DashCam | FleetGoo",
+  "metaDesc": "4G DashCam is best AI  DashCam for Fleet.",
+  "fullDescription": "4G DashCam of D510 is the best AI DashCam for Fleet ",
+  "images": [
+    "/images/products/d510-main.png",
+    "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+    "/images/MyGhibli.png",
+    "/images/company/company-main.png"
+  ],
+  "features": [
+    "Feature 1",
+    "Feature 2",
+    "Feature 3",
+    "Feature 4",
+    "Feature 5",
+    "Feature 6"
+  ],
+  "parameters": [
+    {
+      "label": "Spec 1",
+      "value": "Value 1"
+    },
+    {
+      "label": "Space2",
+      "value": "Value2"
+    },
+    {
+      "label": "Space3",
+      "value": "Value3"
+    },
+    {
+      "label": "Space4",
+      "value": "Value4"
+    }
+  ],
+  "downloads": [
+    {
+      "id": "item-1766228333740",
+      "title": "Manual V2.0"
+    },
+    {
+      "id": "install-guaid",
+      "title": "Install Guaid V1.0"
+    }
+  ],
+  "packaging": "Standard Standard box",
+  "gradient": "from-blue-600 to-cyan-500",
+  "icon": "Box"
+}

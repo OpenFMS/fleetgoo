@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Save, RefreshCw, AlertCircle, AlertTriangle, GripVertical } from 'lucide-react';
+import { Save, RefreshCw, AlertCircle, AlertTriangle, GripVertical, Copy, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { useToast } from '@/components/ui/use-toast';
 import SmartEditor from '@/components/admin/visual/SmartEditor';
 
@@ -202,6 +203,37 @@ const ContentEditor = () => {
         toast({ title: "Synced", description: `Added ${missingKeys.length} missing keys from Master.` });
     };
 
+    const handleCloneToLang = async (targetLang) => {
+        if (!file) return;
+        const parts = file.split('/');
+        if (parts[0] === targetLang) return; // Ignore if same
+
+        const newPath = [targetLang, ...parts.slice(1)].join('/');
+
+        if (!window.confirm(`This will overwrite/create ${newPath} with the current content. Continue?`)) return;
+
+        try {
+            const res = await fetch('/api/admin/content', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ file: newPath, content })
+            });
+
+            if (!res.ok) throw new Error('Failed to clone');
+
+            toast({
+                title: "Cloned successfully",
+                description: `Content copied to ${newPath}`
+            });
+        } catch (error) {
+            toast({
+                variant: "destructive",
+                title: "Error cloning",
+                description: error.message
+            });
+        }
+    };
+
     if (!file) {
         return (
             <div className="flex h-full items-center justify-center text-slate-400">
@@ -237,6 +269,24 @@ const ContentEditor = () => {
                             </Button>
                         </div>
                     )}
+
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <Button variant="outline" size="sm" className="mr-2">
+                                <Copy className="w-4 h-4 mr-2" />
+                                Clone to...
+                                <ChevronDown className="w-3 h-3 ml-1 opacity-50" />
+                            </Button>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end">
+                            {['en', 'zh', 'es'].map(lang => (
+                                <DropdownMenuItem key={lang} onClick={() => handleCloneToLang(lang)} disabled={file.startsWith(lang + '/')}>
+                                    <Globe className="w-3 h-3 mr-2" />
+                                    {lang.toUpperCase()}
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenuContent>
+                    </DropdownMenu>
 
                     <Button
                         variant="outline"
