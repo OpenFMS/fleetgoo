@@ -1,11 +1,11 @@
-
 {
   "hero": {
     "title": "Inteligencia Vehicular Avanzada",
     "subtitle": "Transforme Su Flota con Hardware Inteligente y Software con IA",
     "description": "Rastreo GPS, dashcams 4G, sistemas MDVR y plataforma integral de gestión de flotas líder en la industria, confiada por empresas en todo el mundo.",
     "ctaPrimary": "Explorar Productos",
-    "ctaSecondary": "Contactar Ventas"
+    "ctaSecondary": "Contactar Ventas",
+    "image": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"
   },
   "valueProps": {
     "title": "Resolviendo sus Desafíos de Flota",
@@ -46,7 +46,11 @@
           "Transmisión de Video HD 1080p en Tiempo Real",
           "Grabación de Doble Cámara (Carretera y Cabina)"
         ],
-        "bestFor": ["Taxis", "Transporte Privado", "Entrega de Última Milla"]
+        "bestFor": [
+          "Taxis",
+          "Transporte Privado",
+          "Entrega de Última Milla"
+        ]
       },
       {
         "id": "d901",
@@ -59,7 +63,11 @@
           "Almacenamiento SSD 2TB + Respaldo en Tarjeta SD",
           "Diseño Impermeable IP67 y Anti-vibración"
         ],
-        "bestFor": ["Autobuses", "Camiones", "Construcción"]
+        "bestFor": [
+          "Autobuses",
+          "Camiones",
+          "Construcción"
+        ]
       }
     ]
   },

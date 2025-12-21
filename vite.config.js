@@ -45,7 +45,12 @@ function copyRecursiveSync(src, dest) {
 // Generate routes dynamically from JSON data
 const generateRoutes = () => {
 	const routes = [];
-	const languages = ['en', 'es', 'zh'];
+	const dataDir = path.resolve(__dirname, 'public/data');
+	const languages = fs.existsSync(dataDir)
+		? fs.readdirSync(dataDir, { withFileTypes: true })
+			.filter(ent => ent.isDirectory())
+			.map(ent => ent.name)
+		: ['en'];
 
 	languages.forEach(lang => {
 		// Base routes

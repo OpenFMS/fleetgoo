@@ -4,7 +4,7 @@ import SEO from '@/components/SEO';
 import About from '@/components/About';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const AboutPage = ({ language }) => {
+const AboutPage = ({ language, settings }) => {
   const { data, loading, error } = useFetchData(`/data/${language}/about.json`);
 
   if (loading) {
@@ -22,6 +22,7 @@ const AboutPage = ({ language }) => {
         description={data.page.metaDesc}
         language={language}
         type="website"
+        settings={settings}
       />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <About data={data} />

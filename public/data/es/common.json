@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "products": "Productos",
+        "software": "Software",
+        "solutions": "Soluciones",
+        "about": "Nosotros",
+        "contact": "Contacto"
+    },
+    "contactInfo": {
+        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "Proveedor líder de soluciones inteligentes de rastreo de vehículos y gestión de flotas.",
+        "sections": {
+            "products": {
+                "title": "Productos",
+                "links": [
+                    "Rastreador GPS",
+                    "Dashcam 4G",
+                    "Sistema MDVR",
+                    "Pantalla Inteligente"
+                ]
+            },
+            "solutions": {
+                "title": "Soluciones",
+                "links": [
+                    "Logística",
+                    "Construcción",
+                    "Entrega",
+                    "Corporativo"
+                ]
+            },
+            "company": {
+                "title": "Empresa",
+                "links": [
+                    "Nosotros",
+                    "Carreras",
+                    "Socios",
+                    "Blog"
+                ]
+            },
+            "support": {
+                "title": "Soporte",
+                "links": [
+                    "Documentación",
+                    "FAQ",
+                    "Contacto",
+                    "Descargas"
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. Todos los derechos reservados.",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio"
+    }
+}

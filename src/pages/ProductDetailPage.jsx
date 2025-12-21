@@ -13,7 +13,7 @@ import {
 import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const ProductDetailPage = ({ language }) => {
+const ProductDetailPage = ({ language, settings }) => {
   const { id } = useParams();
   const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`);
   const [activeImage, setActiveImage] = useState(0);
@@ -48,6 +48,7 @@ const ProductDetailPage = ({ language }) => {
         language={language}
         image={data.images && data.images.length > 0 ? data.images[0] : undefined}
         type="product"
+        settings={settings}
       />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 pb-20">

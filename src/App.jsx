@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate, useOutletContext } from 'react-router-dom';
 import Layout from '@/components/Layout';
+import { useFetchData } from '@/hooks/useFetchData';
 
 // Lazy loading components
 const HomePage = lazy(() => import('@/pages/HomePage'));
@@ -27,7 +28,16 @@ const LoadingFallback = () => (
 const PageWrapper = ({ Component }) => {
   const context = useOutletContext();
   const language = context ? context.language : 'en';
-  return <Component language={language} />;
+  const settings = context ? context.settings : null;
+  const commonData = context ? context.commonData : null;
+  return <Component language={language} settings={settings} commonData={commonData} />;
+};
+
+const LanguageRedirect = () => {
+  const { data: settings, loading } = useFetchData('/data/settings.json');
+  if (loading) return <LoadingFallback />;
+  const defaultLang = settings?.defaultLanguage || 'en';
+  return <Navigate to={`/${defaultLang}`} replace />;
 };
 
 const App = () => {
@@ -43,7 +53,7 @@ const App = () => {
           </Route>
 
           {/* Public Routes */}
-          <Route path="/" element={<Navigate to="/en" replace />} />
+          <Route path="/" element={<LanguageRedirect />} />
 
           <Route path="/:lang" element={<Layout />}>
             <Route index element={<PageWrapper Component={HomePage} />} />
@@ -58,7 +68,7 @@ const App = () => {
             <Route path="software" element={<PageWrapper Component={SoftwarePage} />} />
           </Route>
 
-          <Route path="*" element={<Navigate to="/en" replace />} />
+          <Route path="*" element={<LanguageRedirect />} />
         </Routes>
       </Suspense>
     </Router>

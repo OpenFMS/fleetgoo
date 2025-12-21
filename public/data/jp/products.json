@@ -1,0 +1,102 @@
+{
+    "page": {
+        "title": "我们的产品",
+        "subtitle": "用于完整车辆监控的尖端硬件解决方案",
+        "metaTitle": "车辆硬件产品 | GPS, 行车记录仪, MDVR",
+        "metaDesc": "探索我们的一系列专业车辆硬件，包括 GPS 追踪器、4G 行车记录仪、MDVR 系统和智能显示屏。",
+        "viewDetailsBtn": "查看详情"
+    },
+    "categories": [
+        {
+            "id": "all",
+            "label": "所有产品",
+            "icon": "Layers"
+        },
+        {
+            "id": "gps-tracker",
+            "label": "GPS追踪器",
+            "icon": "MapPin"
+        },
+        {
+            "id": "4g-dashcam",
+            "label": "4G行车记录仪",
+            "icon": "Camera"
+        },
+        {
+            "id": "4g-aicarbox",
+            "label": "4G AI车盒",
+            "icon": "MonitorPlay"
+        },
+        {
+            "id": "4g-camera",
+            "label": "4G摄像头",
+            "icon": "Camera"
+        },
+        {
+            "id": "oem-odm",
+            "label": "OEM & ODM",
+            "icon": "Wrench"
+        },
+        {
+            "id": "accessories",
+            "label": "配件",
+            "icon": "Cpu"
+        }
+    ],
+    "items": [
+        {
+            "id": "gps-tracker",
+            "categoryId": "gps-tracker",
+            "icon": "MapPin",
+            "title": "GPS追踪器",
+            "description": "具有全球覆盖、地理围栏和高级分析功能的实时位置追踪",
+            "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
+            "gradient": "from-blue-600 to-cyan-500"
+        },
+        {
+            "id": "4g-dashcam",
+            "categoryId": "4g-dashcam",
+            "icon": "Camera",
+            "title": "4G行车记录仪",
+            "description": "高清录制，具有实时流媒体、AI 驾驶员监控和云存储功能",
+            "image": "https://images.unsplash.com/photo-1697554471026-62151121d15c?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-cyan-600 to-blue-500"
+        },
+        {
+            "id": "mdvr-system",
+            "categoryId": "4g-aicarbox",
+            "icon": "MonitorPlay",
+            "title": "MDVR系统",
+            "description": "具有 4G 连接和远程访问功能的多通道数字录像机",
+            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-blue-700 to-indigo-600"
+        },
+        {
+            "id": "4g-ptz-camera",
+            "categoryId": "4g-camera",
+            "icon": "Camera",
+            "title": "4G PTZ摄像头",
+            "description": "用于远程站点监控的独立 4G 监控摄像头，具有平移-倾斜-变焦功能",
+            "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop",
+            "gradient": "from-indigo-600 to-purple-600"
+        },
+        {
+            "id": "oem-custom-solution",
+            "categoryId": "oem-odm",
+            "icon": "Cpu",
+            "title": "OEM定制解决方案",
+            "description": "针对您的特定车队需求量身定制的硬件设计和制造服务",
+            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+            "gradient": "from-slate-700 to-slate-600"
+        },
+        {
+            "id": "smart-display",
+            "categoryId": "accessories",
+            "icon": "Tv",
+            "title": "智能显示屏",
+            "description": "具有导航、警报和性能指标的交互式驾驶员显示屏",
+            "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop",
+            "gradient": "from-indigo-600 to-blue-700"
+        }
+    ]
+}

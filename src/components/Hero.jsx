@@ -127,7 +127,11 @@ const Hero = ({ language, data }) => {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="relative z-10"
               >
-                <img alt="Advanced GPS tracking device dashboard" className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20" src="https://images.unsplash.com/photo-1639060015191-9d83063eab2a" />
+                <img
+                  alt={t.title}
+                  className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20"
+                  src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
+                />
               </motion.div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-gradient-to-br from-blue-300/30 to-cyan-300/30 dark:from-blue-500/20 dark:to-cyan-500/20 rounded-full blur-3xl" />
             </div>

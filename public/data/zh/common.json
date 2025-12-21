@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "首页",
+        "products": "产品",
+        "software": "软件",
+        "solutions": "解决方案",
+        "about": "关于我们",
+        "contact": "联系"
+    },
+    "contactInfo": {
+        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "智能车辆追踪和车队管理解决方案的领先供应商。",
+        "sections": {
+            "products": {
+                "title": "产品",
+                "links": [
+                    "GPS追踪器",
+                    "4G行车记录仪",
+                    "MDVR系统",
+                    "智能显示屏"
+                ]
+            },
+            "solutions": {
+                "title": "解决方案",
+                "links": [
+                    "物流",
+                    "建筑",
+                    "配送",
+                    "企业"
+                ]
+            },
+            "company": {
+                "title": "公司",
+                "links": [
+                    "关于我们",
+                    "职业",
+                    "合作伙伴",
+                    "博客"
+                ]
+            },
+            "support": {
+                "title": "支持",
+                "links": [
+                    "文档",
+                    "常见问题",
+                    "联系",
+                    "下载"
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. 保留所有权利。",
+        "privacy": "隐私政策",
+        "terms": "服务条款"
+    }
+}

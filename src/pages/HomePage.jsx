@@ -29,7 +29,7 @@ const iconMap = {
   Settings, Award, Globe, Factory, Radio, Check
 };
 
-const HomePage = ({ language }) => {
+const HomePage = ({ language, settings }) => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { data, loading, error } = useFetchData(`/data/${language}/home.json`);
@@ -68,6 +68,7 @@ const HomePage = ({ language }) => {
         title={data.metaTitle || "Home"}
         description={data.metaDesc || "Welcome to FleetGoo Horizons"}
         language={language}
+        settings={settings}
       />
       <Hero language={language} data={data.hero} />
 

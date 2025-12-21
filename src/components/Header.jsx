@@ -7,45 +7,13 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
-const translations = {
-  en: {
-    home: 'Home',
-    products: 'Products',
-    solutions: 'Solutions',
-    software: 'Software',
-    about: 'About Us',
-    contact: 'Contact'
-  },
-  es: {
-    home: 'Inicio',
-    products: 'Productos',
-    solutions: 'Soluciones',
-    software: 'Software',
-    about: 'Nosotros',
-    contact: 'Contacto'
-  },
-  zh: {
-    home: '首页',
-    products: '产品',
-    solutions: '解决方案',
-    software: '软件',
-    about: '关于我们',
-    contact: '联系'
-  }
-};
-
-const languageNames = {
-  en: 'English',
-  es: 'Español',
-  zh: '中文'
-};
-
-const Header = ({ language }) => {
+const Header = ({ language, commonData, settings }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
-  const t = translations[language] || translations.en;
+  const t = commonData?.nav || {};
+  const languages = settings?.languages || [];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,14 +82,14 @@ const Header = ({ language }) => {
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 cursor-pointer">
               {/* Light Mode Logo */}
               <img
-                src="/images/brand/logo-light.webp"
-                alt="FleetGoo Official Logo"
+                src={settings?.branding?.logoLight || "/images/brand/logo-light.webp"}
+                alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
                 className="h-8 md:h-10 w-auto dark:hidden"
               />
               {/* Dark Mode Logo */}
               <img
-                src="/images/brand/logo-dark.png"
-                alt="FleetGoo Official Logo"
+                src={settings?.branding?.logoDark || "/images/brand/logo-dark.png"}
+                alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
                 className="h-8 md:h-10 w-auto hidden dark:block"
               />
             </motion.div>
@@ -150,13 +118,13 @@ const Header = ({ language }) => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
-                {Object.entries(languageNames).map(([code, name]) => (
+                {languages.map((lang) => (
                   <DropdownMenuItem
-                    key={code}
-                    onClick={() => changeLanguage(code)}
-                    className={`cursor-pointer ${language === code ? 'bg-blue-50 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' : 'text-slate-700 dark:text-gray-300'} hover:bg-slate-100 dark:hover:bg-blue-500/10 dark:hover:text-blue-400`}
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className={`cursor-pointer ${language === lang.code ? 'bg-blue-50 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' : 'text-slate-700 dark:text-gray-300'} hover:bg-slate-100 dark:hover:bg-blue-500/10 dark:hover:text-blue-400`}
                   >
-                    {name}
+                    {lang.label}
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>

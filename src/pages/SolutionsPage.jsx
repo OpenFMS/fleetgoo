@@ -12,7 +12,7 @@ import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const SolutionsPage = ({ language }) => {
+const SolutionsPage = ({ language, settings }) => {
   const { data, loading, error } = useFetchData(`/data/${language}/solutions.json`);
   const [activeCategory, setActiveCategory] = useState('all');
 
@@ -40,6 +40,7 @@ const SolutionsPage = ({ language }) => {
         description={data.page.metaDesc}
         language={language}
         type="website"
+        settings={settings}
       />
       <div className="py-20 bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300">
         <div className="container mx-auto px-4">

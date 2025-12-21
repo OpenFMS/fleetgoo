@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "software": "Software",
+        "solutions": "Solutions",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "contactInfo": {
+        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "Leading provider of intelligent vehicle tracking and fleet management solutions.",
+        "sections": {
+            "products": {
+                "title": "Products",
+                "links": [
+                    "GPS Tracker",
+                    "4G Dashcam",
+                    "MDVR System",
+                    "Smart Display"
+                ]
+            },
+            "solutions": {
+                "title": "Solutions",
+                "links": [
+                    "Logistics",
+                    "Construction",
+                    "Delivery",
+                    "Corporate"
+                ]
+            },
+            "company": {
+                "title": "Company",
+                "links": [
+                    "About Us",
+                    "Careers",
+                    "Partners",
+                    "Blog"
+                ]
+            },
+            "support": {
+                "title": "Support",
+                "links": [
+                    "Documentation",
+                    "FAQ",
+                    "Contact",
+                    "Downloads"
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}

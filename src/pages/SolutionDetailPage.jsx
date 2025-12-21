@@ -13,7 +13,7 @@ import * as LucideIcons from 'lucide-react';
 
 import BlockRenderer from '@/components/blocks/BlockRenderer';
 
-const SolutionDetailPage = ({ language }) => {
+const SolutionDetailPage = ({ language, settings }) => {
   const { id } = useParams();
   const { data, loading, error } = useFetchData(`/data/${language}/solutions/${id}.json`);
 
@@ -43,6 +43,7 @@ const SolutionDetailPage = ({ language }) => {
         language={language}
         image={data.image}
         type="article"
+        settings={settings}
       />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 pb-20">
