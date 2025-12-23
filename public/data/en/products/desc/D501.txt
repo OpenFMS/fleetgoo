@@ -1,0 +1,41 @@
+标题：D501 3 channel 1080P Dashcam AI
+
+描述：
+Designed for commercial vehicles (compliant with Chinese Ministry standards,ride-hailing,logistics),this Al dash cam integrates dual 1080P video,cloud storage, BeiDou positioning,Driver Monitoring System (DMS),and Advanced Driver Assistance System(ADAS)to enhance safety and fleet management efficiency
+
+核心功能
+HD Video：Dual 1080P H.265 encoding, TS stream format; front camera (123° FOV) + rear AHD camera (140° ultra-wide angle) with night vision
+Intelligent Safety DMS：Detects fatigue (yawning, eye-closing), smoking, calling, and distraction
+Intelligent Safety ADAS：Alerts for lane departure, forward collision, pedestrian detection
+Cloud Management：Critical video cloud storage, remote live streaming, snapshot capture, and route replay with geofencing
+Stable Power：9-36V wide voltage input, short-circuit/reverse polarity protection, self-recovery fuse
+Protocol Compliance：Supports JT/T 794/808/1076/1078 standards, remote configuration, and fault detection
+Extended Functions：In-vehicle WiFi hotspot, OTA updates, TTS voice alerts, parking vibration wake-up monitoring
+
+规格参数
+Operating：Linux 4.19
+CPU：Quad-core Cortex-A7 1.5GHz
+Memory：4Gb DDR+4Gb Nand-flash
+NPU：2.0 T
+Extended：1 TF card with a maximum support of 512GB
+Video：H265 encoding, TS stream recording, codec capability
+Audio：G711A encoding, support recording, voice broadcast
+Front camera：MIPI interface, supporting 2560x1440@30fps
+Rear camera：Two AHD ports, supporting 1080P@25fps
+Video data：1080P:25fps@4M main bitstream
+Communication：Communication
+SIM card：1, supported patch IC card, or external medium card (micro)
+WIFI：802.11b/g/n 2.4GHz with built-in antenna
+Sensor：Six-axis gyroscope
+Keys：2, body reset button, external SOS button
+MIC：1 highly sensitive microphone
+Speakers：Built-in 8Ω/1W
+Indicator ligh：Three indicator lights, respectively, indicating video, GPS
+Serial port：Optional, 1 way RS232 serial port
+GPIO：Supports up to three ways of IO
+Operating：500mA@12V
+Dormant current：20mA@12V
+
+
+
+

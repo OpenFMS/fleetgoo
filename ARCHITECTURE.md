@@ -1,7 +1,7 @@
-# FleetGoo Horizons - Technical Architecture
+# FleetGoo - Technical Architecture
 
 ## 1. Overview
-FleetGoo Horizons is built on a **Flat-File CMS** architecture, powered by **Vite** and **React**.
+FleetGoo is built on a **Flat-File CMS** architecture, powered by **Vite** and **React**.
 It differs from traditional dynamic CMSs (like WordPress or Strapi) by removing the database and backend API requirements for the production environment. Instead, it relies on the filesystem and Git for data management, resulting in a high-performance, secure, and low-maintenance static website.
 
 ## 2. Core Philosophy
@@ -72,6 +72,10 @@ graph TD
     *   **BlockRenderer**: The central component that iterates through the `blocks` JSON array and renders the corresponding React component.
     *   **Supported Blocks**: Hero, Media (Image/Video), Features, Stats, Pain Points, CTA, etc.
     *   **Video Support**: Native support for HTML5 video and privacy-enhanced YouTube embeds (`youtube-nocookie`) with "Lite Player" (click-to-load) optimization.
+    *   **Contact Form Integration**:
+        *   **Provider**: EmailJS (Serverless notification).
+        *   **Config**: `settings.json` controls UI messages (success/error texts).
+        *   **Security**: API Keys managed via `.env` (build-time injection).
 
 ### 4.4 Admin Visual Editor (v2)
 *   **Smart Schema Form**: `src/components/admin/visual/SchemaForm.jsx` automatically generates UI forms based on the data structure.

@@ -39,7 +39,7 @@ const HomePage = ({ language, settings }) => {
     <>
       <SEO
         title={data.metaTitle || "Home"}
-        description={data.metaDesc || "Welcome to FleetGoo Horizons"}
+        description={data.metaDesc || "Welcome to FleetGoo"}
         language={language}
         settings={settings}
       />

@@ -1,0 +1,60 @@
+# FleetGoo Horizons Site Index
+# Using this file, LLMs can discover the structure and content of the site.
+# Generated at: 2025-12-23T09:28:25.805Z
+
+- [Untitled Page](https://fleetgoo.com/en): No description available
+- [Untitled Page](https://fleetgoo.com/en/about-us): No description available
+- [Contact Us](https://fleetgoo.com/en/contact): Get in touch with our sales and support team for your vehicle tracking and fleet management needs.
+- [undefined](https://fleetgoo.com/en/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://fleetgoo.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://fleetgoo.com/en/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://fleetgoo.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://fleetgoo.com/en/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://fleetgoo.com/en/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://fleetgoo.com/en/products/oem-custom-solution): undefined
+- [Untitled Page](https://fleetgoo.com/en/software): No description available
+- [Cold Chain Monitoring](https://fleetgoo.com/en/solutions/cold-chain): undefined
+- [Public Safety Fleet Management](https://fleetgoo.com/en/solutions/public-safety): undefined
+- [Untitled Page](https://fleetgoo.com/es): No description available
+- [Untitled Page](https://fleetgoo.com/es/about-us): No description available
+- [Contáctenos - FleetGoo](https://fleetgoo.com/es/contact): Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.
+- [undefined](https://fleetgoo.com/es/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://fleetgoo.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://fleetgoo.com/es/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://fleetgoo.com/es/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://fleetgoo.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://fleetgoo.com/es/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://fleetgoo.com/es/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://fleetgoo.com/es/products/oem-custom-solution): undefined
+- [Untitled Page](https://fleetgoo.com/es/software): No description available
+- [Monitoreo de Cadena de Frío](https://fleetgoo.com/es/solutions/cold-chain): undefined
+- [Gestión de Flotas de Seguridad Pública](https://fleetgoo.com/es/solutions/public-safety): undefined
+- [Untitled Page](https://fleetgoo.com/jp): No description available
+- [Untitled Page](https://fleetgoo.com/jp/about-us): No description available
+- [お問い合わせ - FleetGoo](https://fleetgoo.com/jp/contact): 車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。
+- [undefined](https://fleetgoo.com/jp/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://fleetgoo.com/jp/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://fleetgoo.com/jp/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://fleetgoo.com/jp/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://fleetgoo.com/jp/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://fleetgoo.com/jp/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://fleetgoo.com/jp/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://fleetgoo.com/jp/products/oem-custom-solution): undefined
+- [Untitled Page](https://fleetgoo.com/jp/software): No description available
+- [コールドチェーン監視](https://fleetgoo.com/jp/solutions/cold-chain): undefined
+- [公共安全フリート管理](https://fleetgoo.com/jp/solutions/public-safety): undefined
+- [Untitled Page](https://fleetgoo.com/zh): No description available
+- [Untitled Page](https://fleetgoo.com/zh/about-us): No description available
+- [联系我们 - FleetGoo](https://fleetgoo.com/zh/contact): 联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。
+- [undefined](https://fleetgoo.com/zh/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://fleetgoo.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://fleetgoo.com/zh/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://fleetgoo.com/zh/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://fleetgoo.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://fleetgoo.com/zh/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://fleetgoo.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://fleetgoo.com/zh/products/oem-custom-solution): undefined
+- [Untitled Page](https://fleetgoo.com/zh/software): No description available
+- [冷链监控](https://fleetgoo.com/zh/solutions/cold-chain): undefined
+- [公共管理车队](https://fleetgoo.com/zh/solutions/public-safety): undefined

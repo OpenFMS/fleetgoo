@@ -1,0 +1,53 @@
+标题：D901 4-Channel Truck Video Recording All-in-One Device
+
+描述：Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring
+
+核心功能
+Multi-Channel Video：4-channel AHD video input, simultaneous recording in H.264 format (saved separately per channel)
+AI Detection & Alerts：Built-in AI algorithms for blind spot warnings, fuel theft prevention, and voice recognition
+Sentry Mode：Enhanced security monitoring mode
+Remote Monitoring：4G connectivity enables remote live view, playback, track viewing, electronic fence, fleet management
+Flexible Display：10.1-inch IPS touchscreen; default 4-screen display, supports switching to single-channel full screen; automatic view switching upon turn signal trigger
+Stable Power：12V-36V wide voltage input, compliant with automotive-grade surge, overload, over-voltage, under-voltage, and short-circuit protection circuits
+
+规格参数
+Product Form：4-channel monitoring all-in-one central control screen
+Display：10.1-inch / 1024600, MIPI interface IPS screen, 2.5D touchscreen, Chinese voice control
+Main Control：Yizhi SA230
+Memory：DDR3L 256MB
+Video Input：4-channel AHD high-definition video input
+Recording Mode：Starts recording automatically upon power-on, no missing seconds
+Recording Format：H.264 video, 4 channels saved separately
+Cyclic Recording：1 min / 2 min / 3 min (default)
+Time-Lapse Recording：Supported
+HDR：Supported
+Audio：Built-in microphone, supports recording (can be disabled via menu)
+On-Screen Display：Multiple languages (CN/EN/JP/RU/TH/VI, etc.), status bar (4G/WiFi/Positioning/Recording/Voice Control/Time-lapse/TF Card/Power/GPS Speed), default 4-screen display, supports single-screen full view
+Triggered Display：Automatically switches to corresponding camera view upon turn signal trigger; returns to 4-screen view after signal ends (delay configurable)
+Channel Settings：Supports independent preview mirroring, recording mirroring, and image flip per channel
+Playback：Local playback, 4G remote playback, storage card local playback
+Network：4G: Supports remote live view, track viewing, playback, electronic fence, fleet management, trip reports, alarm linkage, etc
+Positioning：GPS
+Operating Temp：-20℃ ~ +70℃
+Operating Current：0.7A ~ 1A (12V)
+Operating Voltage：12V ~ 36V wide voltage, with automotive-grade surge/overload/over-voltage/under-voltage/short-circuit protection
+External Storage：TF Card: CLASS10 U1, Min 16GB, Max 256GB supported; Video format: TS-MPEG2, Photo format: JPEG
+Typical Power Consumption：Approx. 10W (screen on, 4-channel recording)
+External Cameras x4：Image Sensor: 1052_MIPI 1/3 CMOS Sensor; Lens View: 150° ultra-wide-angle; Lens Specs: 2.5D glass lens
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

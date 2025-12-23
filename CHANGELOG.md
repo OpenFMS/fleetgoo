@@ -1,8 +1,22 @@
 # Changelog
 
-All notable changes to the FleetGoo Horizons project will be documented in this file.
+All notable changes to the FleetGoo project will be documented in this file.
 
-## [Unreleased / Dev] - 2025-12-21
+## [Dev] - 2025-12-23
+
+### Added
+- **Contact Form Backend**:
+    - Integrated **EmailJS** for serverless email notifications (replaced mock localStorage logic).
+    - Added configurable Success/Error messages in global `settings.json`.
+    - implemented secure credential management using `.env`.
+- **SEO / Tooling**:
+    - Added `tools/generate-llms.js` to automatically generate `llms.txt` for AI crawlers (ChatGPT/Perplexity).
+
+### Known Issues (TODO)
+- **Tooling**:
+    - `tools/generate-llms.js`: currently generates `undefined` values for some product titles/descriptions because of JSON field name mismatches. Needs to be updated to strictly map field names (e.g., `metaTitle` vs `title`) from the `public/data` schema.
+
+## [Dev] - 2025-12-21
 
 ### Added
 - **Admin Visual Editor 2.0**:
