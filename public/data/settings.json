@@ -56,5 +56,15 @@
         "officialName": "FleetGoo Technology",
         "phone": "+86 150-138-15400",
         "email": "sales@fleetgoo.com"
+    },
+    "contactForm": {
+        "successMessage": {
+            "title": "Message Sent!",
+            "description": "Thank you for your inquiry. Our team will contact you shortly."
+        },
+        "errorMessage": {
+            "title": "Submission Failed",
+            "description": "Something went wrong. Please try again later or contact us directly via email."
+        }
     }
 }

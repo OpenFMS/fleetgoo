@@ -29,7 +29,7 @@ const ContactPage = ({ language, settings }) => {
         settings={settings}
       />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
-        <Contact data={data} language={language} />
+        <Contact data={data} language={language} settings={settings} />
       </div>
     </>
   );

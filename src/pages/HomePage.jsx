@@ -239,6 +239,7 @@ const HomePage = ({ language, settings }) => {
                 submitBtn: data.leadMagnet.form.submitBtn,
                 privacyNote: data.leadMagnet.form.privacyNote
               }}
+              settings={settings}
             />
           </div>
         </div>

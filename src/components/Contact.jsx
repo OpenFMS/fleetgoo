@@ -6,7 +6,7 @@ import * as LucideIcons from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import ContactForm from '@/components/forms/ContactForm';
 
-const Contact = ({ data, language }) => {
+const Contact = ({ data, language, settings }) => {
   const { toast } = useToast();
 
   // Safety checks for data structure
@@ -36,7 +36,7 @@ const Contact = ({ data, language }) => {
             transition={{ duration: 0.6 }}
           >
             <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-xl dark:shadow-none">
-              <ContactForm language={language} labels={data?.form} />
+              <ContactForm language={language} labels={data?.form} settings={settings} />
             </div>
           </motion.div>
 

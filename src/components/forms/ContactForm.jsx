@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Send, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -24,7 +25,7 @@ const defaultLabels = {
     privacyNote: "We respect your privacy. Your information is safe with us."
 };
 
-const ContactForm = ({ labels = {}, language = 'en', className = "" }) => {
+const ContactForm = ({ labels = {}, language = 'en', className = "", settings = {} }) => {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -49,26 +50,52 @@ const ContactForm = ({ labels = {}, language = 'en', className = "" }) => {
         setFormData(prev => ({ ...prev, productInterest: value }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call and store in localStorage (Mock Backend)
-        setTimeout(() => {
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+        // Basic validation for env vars
+        if (!serviceID || !templateID || !publicKey) {
+            console.error("EmailJS credentials are missing in .env file");
+            toast({
+                title: "Configuration Error",
+                description: "Contact form is not properly configured. Please contact support.",
+                variant: "destructive"
+            });
+            setIsSubmitting(false);
+            return;
+        }
+
+        try {
+            // Prepare template parameters
+            // Ensure these keys match the variables in your EmailJS template (e.g., {{name}}, {{email}}, etc.)
+            const templateParams = {
+                ...formData,
+                timestamp: new Date().toLocaleString(),
+                language,
+                sourcePage: window.location.pathname,
+            };
+
+            await emailjs.send(serviceID, templateID, templateParams, publicKey);
+
+            toast({
+                title: settings?.contactForm?.successMessage?.title || "Message Sent!",
+                description: settings?.contactForm?.successMessage?.description || "Thank you for your inquiry. Our team will contact you shortly.",
+            });
+
+            // Store in localStorage as a backup log (optional)
             const inquiries = JSON.parse(localStorage.getItem('contactInquiries') || '[]');
             inquiries.push({
-                ...formData,
-                timestamp: new Date().toISOString(),
-                language,
-                sourcePage: window.location.pathname // Activity tracking
+                ...templateParams,
+                status: 'sent'
             });
             localStorage.setItem('contactInquiries', JSON.stringify(inquiries));
 
-            toast({
-                title: "Quote Request Sent!",
-                description: "Thank you for your inquiry. Our team will contact you shortly.",
-            });
-
+            // Reset form
             setFormData({
                 name: '',
                 email: '',
@@ -77,8 +104,16 @@ const ContactForm = ({ labels = {}, language = 'en', className = "" }) => {
                 productInterest: '',
                 message: '',
             });
+        } catch (error) {
+            console.error('EmailJS Error:', error);
+            toast({
+                title: settings?.contactForm?.errorMessage?.title || "Submission Failed",
+                description: settings?.contactForm?.errorMessage?.description || "Something went wrong. Please try again later or contact us directly via email.",
+                variant: "destructive"
+            });
+        } finally {
             setIsSubmitting(false);
-        }, 1000); // 1s delay simulation
+        }
     };
 
     return (
