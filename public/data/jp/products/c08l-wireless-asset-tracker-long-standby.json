@@ -1,0 +1,43 @@
+{
+    "id": "c08l-wireless-asset-tracker-long-standby",
+    "categoryId": "gps-tracker",
+    "title": "C08L 資産トラッカー",
+    "metaTitle": "C08L 長時間待機型GPSトラッカー | FleetGoo",
+    "metaDesc": "3年のバッテリー寿命を持つ超長時間待機型C08L 4G資産トラッカー、トレーラーやコンテナの追跡に最適。",
+    "fullDescription": "C08Lは、超長時間待機型バッテリーを備えた高度な資産トラッカーであり、コンテナ、トレーラー、建設機械などの非動力資産の追跡に最適です。ワイヤレス磁気設置により、複雑な配線なしで迅速に導入できます。",
+    "images": [
+        "/images/products/C08L-main.jpg"
+    ],
+    "features": [
+        "超長時間待機（最大3年）",
+        "即時設置のための強力な磁気マウント",
+        "過酷な屋外使用のためのIP67防水",
+        "電力を節約するための複数の動作モード",
+        "改ざん防止アラートセンサー"
+    ],
+    "parameters": [
+        {
+            "label": "ネットワーク",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "バッテリー",
+            "value": "大容量非充電式バッテリー"
+        },
+        {
+            "label": "取り付け",
+            "value": "強力マグネット / ネジ"
+        },
+        {
+            "label": "防水",
+            "value": "IP67"
+        },
+        {
+            "label": "動作温度",
+            "value": "-20℃ ~ +70℃"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x C08Lトラッカー, 1x 取り付けブラケット, 1x ユーザーガイド",
+    "icon": "MapPin"
+}

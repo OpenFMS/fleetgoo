@@ -1,0 +1,43 @@
+{
+    "id": "d901-smart-ai-camera-bsd-pedestrian",
+    "categoryId": "4g-camera",
+    "title": "D901 AIスマートカメラ",
+    "metaTitle": "D901 ハイエンドAIカメラ | FleetGoo",
+    "metaDesc": "商用フリート向けの最高級D901 AIカメラ、マルチチャンネル録画と高度なAI分析機能を搭載。",
+    "fullDescription": "D901は、AIセーフティカメラの頂点を表しています。マルチチャンネル録画と洗練されたAIアルゴリズムをサポートし、歩行者、サイクリスト、その他の道路上の危険をリアルタイムで識別します。最大限の視認性を必要とする大型トラックやバス向けに設計されています。",
+    "images": [
+        "/images/products/D901-main.jpg"
+    ],
+    "features": [
+        "マルチチャンネルビデオ入力サポート",
+        "AIによる死角検知（BSD）",
+        "歩行者検知の統合",
+        "24時間365日の監視のためのナイトビジョン機能",
+        "即時ビデオ証拠のための内蔵4G LTE"
+    ],
+    "parameters": [
+        {
+            "label": "ビデオ入力",
+            "value": "4-CH / 8-CH サポート"
+        },
+        {
+            "label": "解像度",
+            "value": "1080P / 720P"
+        },
+        {
+            "label": "AI機能",
+            "value": "BSD, ADAS, DMS, 歩行者"
+        },
+        {
+            "label": "インターフェース",
+            "value": "航空コネクタ"
+        },
+        {
+            "label": "電源",
+            "value": "9-36V ワイド入力"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D901メインユニット, ケーブルハーネス, 取り付けキット",
+    "icon": "Camera"
+}

@@ -1,0 +1,43 @@
+{
+    "id": "d501-4g-dashcam-dual-lens-cloud",
+    "categoryId": "4g-dashcam",
+    "title": "D501 4G DashCam",
+    "metaTitle": "D501 Dual-Lens 4G DashCam | FleetGoo",
+    "metaDesc": "Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.",
+    "fullDescription": "The D501 is a versatile 4G DashCam perfect for ride-sharing, taxis, and small fleets. It features dual-lens recording to capture both the road ahead and the cabin interior simultaneously. With cloud connectivity, it enables live video streaming and automatic event backup.",
+    "images": [
+        "/images/products/D501-main.jpg"
+    ],
+    "features": [
+        "Dual-Lens: Front 1080P + Inside 720P (Infrared)",
+        "Live Video Streaming via 4G",
+        "WiFi Hotspot for passengers",
+        "SOS Button for emergency alerts",
+        "Compact, unobtrusive design"
+    ],
+    "parameters": [
+        {
+            "label": "Front Camera",
+            "value": "1080P, 140° FOV"
+        },
+        {
+            "label": "Inside Camera",
+            "value": "720P, IR Night Vision"
+        },
+        {
+            "label": "Network",
+            "value": "4G LTE / WiFi"
+        },
+        {
+            "label": "GPS",
+            "value": "Built-in High Sensitivity"
+        },
+        {
+            "label": "Storage",
+            "value": "MicroSD up to 256GB"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D501 Dashcam, 1x Power Cable, 1x 3M Mount, 1x SOS Button",
+    "icon": "Video"
+}

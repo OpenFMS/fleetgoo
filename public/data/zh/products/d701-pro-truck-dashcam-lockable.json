@@ -1,0 +1,43 @@
+{
+    "id": "d701-pro-truck-dashcam-lockable",
+    "categoryId": "4g-dashcam",
+    "title": "D701 Pro行车记录仪",
+    "metaTitle": "D701专业车队记录仪 | FleetGoo",
+    "metaDesc": "专为物流和重型运输设计的坚固型D701 4G记录仪，具备防篡改数据安全保护。",
+    "fullDescription": "D701 Pro专为物流和重型运输的苛刻需求而打造。它配有可锁SD卡槽以确保数据安全，并支持额外的外部摄像头用于盲区监控。其坚固的设计确保了长途运输的可靠性。",
+    "images": [
+        "/images/products/D701-main.jpg"
+    ],
+    "features": [
+        "可锁存储槽，防止数据篡改",
+        "支持侧面/后方外部摄像头",
+        "包含轨迹回放的高级GPS追踪",
+        "驾驶员行为分析（急刹车/急加速）",
+        "宽电压范围，兼容卡车电压"
+    ],
+    "parameters": [
+        {
+            "label": "通道",
+            "value": "支持2路 / 4路"
+        },
+        {
+            "label": "主摄",
+            "value": "1080P全高清"
+        },
+        {
+            "label": "安全",
+            "value": "带钥匙锁槽"
+        },
+        {
+            "label": "电源",
+            "value": "9-36V DC"
+        },
+        {
+            "label": "连接",
+            "value": "4G LTE / WiFi / 蓝牙"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D701主机, 2x 钥匙, 1x 硬接线套件, 1x 外部摄像头(可选)",
+    "icon": "Video"
+}

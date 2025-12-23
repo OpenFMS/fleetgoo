@@ -1,0 +1,43 @@
+{
+    "id": "d901-smart-ai-camera-bsd-pedestrian",
+    "categoryId": "4g-camera",
+    "title": "D901 AI智能摄像头",
+    "metaTitle": "D901高端AI摄像头 | FleetGoo",
+    "metaDesc": "面向商业车队的顶级D901 AI摄像头，具备多通道录像和高级AI分析功能。",
+    "fullDescription": "D901代表了AI安全摄像头的巅峰。它支持多通道录像和复杂的AI算法，可实时识别行人、骑行者和其他道路危险。专为需要最大视野的重型卡车和公共汽车设计。",
+    "images": [
+        "/images/products/D901-main.jpg"
+    ],
+    "features": [
+        "多通道视频输入支持",
+        "盲区监测（BSD）AI功能",
+        "行人检测集成",
+        "夜视功能，支持7x24小时监控",
+        "内置4G LTE，支持即时视频取证"
+    ],
+    "parameters": [
+        {
+            "label": "视频输入",
+            "value": "支持4路 / 8路"
+        },
+        {
+            "label": "分辨率",
+            "value": "1080P / 720P"
+        },
+        {
+            "label": "AI功能",
+            "value": "BSD, ADAS, DMS, 行人检测"
+        },
+        {
+            "label": "接口",
+            "value": "航空接头"
+        },
+        {
+            "label": "电源",
+            "value": "9-36V宽压输入"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D901主机, 线束, 安装套件",
+    "icon": "Camera"
+}

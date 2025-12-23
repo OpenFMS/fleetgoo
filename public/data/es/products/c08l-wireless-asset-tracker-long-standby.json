@@ -1,0 +1,43 @@
+{
+    "id": "c08l-wireless-asset-tracker-long-standby",
+    "categoryId": "gps-tracker",
+    "title": "C08L Rastreador de Activos",
+    "metaTitle": "C08L Rastreador GPS de Larga Duración | FleetGoo",
+    "metaDesc": "Rastreador de activos 4G C08L con batería de ultra larga duración, ideal para rastreo de remolques y contenedores.",
+    "fullDescription": "El C08L es un rastreador de activos avanzado que cuenta con una batería de espera ultra larga, lo que lo hace perfecto para rastrear activos no motorizados como contenedores, remolques y equipos de construcción. Su instalación magnética inalámbrica permite un despliegue rápido sin cableado complejo.",
+    "images": [
+        "/images/products/C08L-main.jpg"
+    ],
+    "features": [
+        "Tiempo de espera ultra largo (hasta 3 años)",
+        "Montaje magnético fuerte para instalación instantánea",
+        "Impermeable IP67 para uso rudo en exteriores",
+        "Múltiples modos de trabajo para ahorrar energía",
+        "Sensor de alerta de manipulación"
+    ],
+    "parameters": [
+        {
+            "label": "Red",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "Batería",
+            "value": "Batería no recargable de alta capacidad"
+        },
+        {
+            "label": "Montaje",
+            "value": "Imán Fuerte / Tornillos"
+        },
+        {
+            "label": "Impermeable",
+            "value": "IP67"
+        },
+        {
+            "label": "Temp. de Trabajo",
+            "value": "-20℃ ~ +70℃"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x Rastreador C08L, 1x Soporte de Montaje, 1x Guía de Usuario",
+    "icon": "MapPin"
+}

@@ -1,0 +1,43 @@
+{
+    "id": "d401-ai-dashcam-adas-dms",
+    "categoryId": "4g-camera",
+    "title": "D401 Cámara IA",
+    "metaTitle": "D401 Cámara IA Inteligente | FleetGoo ADAS",
+    "metaDesc": "Cámara IA D401 con capacidades avanzadas de ADAS y DMS para seguridad proactiva de flotas.",
+    "fullDescription": "La D401 es una cámara IA inteligente diseñada para mejorar la seguridad de la flota. Cuenta con ADAS (Sistemas Avanzados de Asistencia al Conductor) integrado para detectar salidas de carril y colisiones frontales, junto con DMS (Sistema de Monitoreo del Conductor) para alertar contra fatiga y distracción.",
+    "images": [
+        "/images/products/D401-main.jpg"
+    ],
+    "features": [
+        "Detección de Objetos impulsada por IA",
+        "ADAS: FCW (Colisión Frontal), LDW (Salida de Carril)",
+        "DMS: Detección de Fatiga, Distracción, Fumar, Uso de Teléfono",
+        "Grabación de Video HD 1080P",
+        "Carga de eventos en tiempo real a la nube"
+    ],
+    "parameters": [
+        {
+            "label": "Resolución",
+            "value": "1080P Full HD"
+        },
+        {
+            "label": "Procesador IA",
+            "value": "NPU Integrada"
+        },
+        {
+            "label": "FOV",
+            "value": "Gran Angular 140°"
+        },
+        {
+            "label": "Almacenamiento",
+            "value": "Soporta Tarjeta SD hasta 256GB"
+        },
+        {
+            "label": "Conectividad",
+            "value": "4G / WiFi"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x Cámara D401, 1x Cable de Alimentación, 1x Soporte, 1x Manual de Usuario",
+    "icon": "Camera"
+}

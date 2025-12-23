@@ -1,0 +1,43 @@
+{
+    "id": "c08w-4g-gps-tracker-ip65-waterproof",
+    "categoryId": "gps-tracker",
+    "title": "C08W 4G GPS Tracker",
+    "metaTitle": "C08W Professional 4G GPS Tracker | FleetGoo",
+    "metaDesc": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
+    "fullDescription": "The C08W is a professional-grade 4G GPS tracker designed for comprehensive fleet management. It provides precise real-time positioning, allowing fleet managers to monitor vehicle locations instantly. Equipped with anti-theft features and robust connectivity, it ensures asset safety in various environments.",
+    "images": [
+        "/images/products/C08W-main.jpg"
+    ],
+    "features": [
+        "High-speed 4G LTE connectivity with 2G fallback",
+        "Real-time GPS/BDS positioning with <5m accuracy",
+        "Geo-fence alarms and Overspeed alerts",
+        "Remote fuel/power cut-off capability",
+        "Compact design with IP65 water resistance"
+    ],
+    "parameters": [
+        {
+            "label": "Network",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "Dimensions",
+            "value": "Standard Compact Size"
+        },
+        {
+            "label": "Positioning",
+            "value": "GPS + BDS + LBS"
+        },
+        {
+            "label": "Input Voltage",
+            "value": "9-90V DC"
+        },
+        {
+            "label": "Battery",
+            "value": "Built-in backup battery"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x C08W Unit, 1x Power Cable, 1x User Manual, 1x Relay (Optional)",
+    "icon": "MapPin"
+}

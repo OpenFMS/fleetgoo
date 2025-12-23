@@ -1,0 +1,43 @@
+{
+    "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+    "categoryId": "4g-aicarbox",
+    "title": "D604 AIカーボックス",
+    "metaTitle": "D604 MDVR AIボックス | FleetGoo",
+    "metaDesc": "集中フリートビデオ監視およびインテリジェントデータ処理のための強力なD604 AIカーボックスMDVR。",
+    "fullDescription": "D604 AIカーボックスは、車両監視の中枢ハブとして機能する強力なモバイルデジタルビデオレコーダー（MDVR）です。最大8チャンネルの高解像度ビデオ入力をサポートし、高度なAI処理を使用して道路状況とドライバーの行動をローカルで分析します。",
+    "images": [
+        "/images/products/D604-main.jpg"
+    ],
+    "features": [
+        "8チャンネルAHDビデオ入力サポート",
+        "高性能ニューラルプロセッシングユニット（NPU）",
+        "HDD/SSD + SDカードのデュアルストレージをサポートし、大容量を実現",
+        "燃料、温度、ドアセンサーとの統合",
+        "防振産業デザイン"
+    ],
+    "parameters": [
+        {
+            "label": "ビデオ入力",
+            "value": "AHD 4-CH / 8-CH"
+        },
+        {
+            "label": "ストレージ",
+            "value": "1x 2.5インチ HDD/SSD（最大 2TB）+ 1x SD"
+        },
+        {
+            "label": "プロセッサ",
+            "value": "オクタコアAIチップ"
+        },
+        {
+            "label": "接続性",
+            "value": "4G / 5G対応 / WiFi"
+        },
+        {
+            "label": "電源",
+            "value": "8-36V ISO7637準拠"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D604 MDVR, 1x 電源ハーネス, 1x I/Oケーブル, 1x GPSアンテナ, 1x 4Gアンテナ",
+    "icon": "Server"
+}

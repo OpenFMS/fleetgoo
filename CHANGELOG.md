@@ -32,6 +32,10 @@ All notable changes to the FleetGoo Horizons project will be documented in this 
     - Redesigned layout to a standard 2-column Ecommerce structure (Left: Images, Right: Info).
     - Optimized main image to 4:3 aspect ratio to reduce vertical scrolling.
     - Improved information hierarchy by moving "Product Overview" to the top of the details column.
+- **Content & Data**:
+    - **Real Product Data**: Populated product catalog with 7 real hardware products (GPS Trackers, Dashcams, AI Cameras, MDVR) replacing placeholders.
+    - **SEO Optimization**: Refactored product IDs and JSON filenames to use long-tail keyword slugs (e.g., `d501-4g-dashcam-dual-lens-cloud`) for better search engine ranking.
+    - **Multi-language Synchronization**: Automatically generated and translated product JSONs for Spanish (ES), Chinese (ZH), and Japanese (JP) locales.
 - **Admin**:
     - Refined `SchemaForm` smart detection logic to strictly identify image fields, fixing false positives for URL text fields.
 

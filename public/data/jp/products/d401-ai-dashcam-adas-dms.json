@@ -1,0 +1,43 @@
+{
+    "id": "d401-ai-dashcam-adas-dms",
+    "categoryId": "4g-camera",
+    "title": "D401 AIカメラ",
+    "metaTitle": "D401 インテリジェントAIカメラ | FleetGoo ADAS",
+    "metaDesc": "プロアクティブなフリート安全のための高度なADASおよびDMS機能を備えたD401 AIカメラ。",
+    "fullDescription": "D401は、フリートの安全性を向上させるために設計されたインテリジェントAIカメラです。車線逸脱や前方衝突を検知するADAS（先進運転支援システム）を内蔵し、疲労や注意散漫を警告するDMS（ドライバーモニタリングシステム）も備えています。",
+    "images": [
+        "/images/products/D401-main.jpg"
+    ],
+    "features": [
+        "AI搭載の物体検知",
+        "ADAS：FCW（前方衝突警告）、LDW（車線逸脱警告）",
+        "DMS：疲労、注意散漫、喫煙、携帯電話使用の検知",
+        "1080P HDビデオ録画",
+        "クラウドへのリアルタイムイベントアップロード"
+    ],
+    "parameters": [
+        {
+            "label": "解像度",
+            "value": "1080P フルHD"
+        },
+        {
+            "label": "AIプロセッサ",
+            "value": "内蔵NPU"
+        },
+        {
+            "label": "視野角",
+            "value": "140° 広角"
+        },
+        {
+            "label": "ストレージ",
+            "value": "最大256GB SDカード対応"
+        },
+        {
+            "label": "接続性",
+            "value": "4G / WiFi"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D401カメラ, 1x 電源ケーブル, 1x ブラケット, 1x ユーザーマニュアル",
+    "icon": "Camera"
+}

@@ -1,0 +1,43 @@
+{
+    "id": "c08l-wireless-asset-tracker-long-standby",
+    "categoryId": "gps-tracker",
+    "title": "C08L Asset Tracker",
+    "metaTitle": "C08L Long Standby GPS Tracker | FleetGoo",
+    "metaDesc": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
+    "fullDescription": "The C08L is an advanced asset tracker featuring an ultra-long standby battery, making it perfect for tracking non-powered assets like containers, trailers, and construction equipment. Its wireless magnetic installation allows for rapid deployment without complex wiring.",
+    "images": [
+        "/images/products/C08L-main.jpg"
+    ],
+    "features": [
+        "Ultra-long standby time (up to 3 years)",
+        "Strong magnetic mount for instant installation",
+        "IP67 Waterproof for harsh outdoor use",
+        "Multiple working modes to save power",
+        "Tamper alert sensor"
+    ],
+    "parameters": [
+        {
+            "label": "Network",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "Battery",
+            "value": "High-capacity non-rechargeable battery"
+        },
+        {
+            "label": "Mounting",
+            "value": "Strong Magnet / Screws"
+        },
+        {
+            "label": "Waterproof",
+            "value": "IP67"
+        },
+        {
+            "label": "Working Temp",
+            "value": "-20℃ ~ +70℃"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x C08L Tracker, 1x Mounting Bracket, 1x User Guide",
+    "icon": "MapPin"
+}

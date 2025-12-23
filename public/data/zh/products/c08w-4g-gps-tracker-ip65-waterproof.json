@@ -1,0 +1,43 @@
+{
+    "id": "c08w-4g-gps-tracker-ip65-waterproof",
+    "categoryId": "gps-tracker",
+    "title": "C08W 4G GPS定位器",
+    "metaTitle": "C08W 专业4G GPS定位器 | FleetGoo",
+    "metaDesc": "高精度4G GPS追踪设备C08W，提供实时位置监控和先进的车队分析功能。",
+    "fullDescription": "C08W是一款专为全面车队管理设计的专业级4G GPS定位器。它提供精准的实时定位，允许车队管理者即时监控车辆位置。配备防盗功能和强大的连接能力，确保各类环境下的资产安全。",
+    "images": [
+        "/images/products/C08W-main.jpg"
+    ],
+    "features": [
+        "高速4G LTE连接，支持2G回落",
+        "实时GPS/BDS定位，精度<5米",
+        "电子围栏报警和超速提醒",
+        "远程断油/断电功能",
+        "紧凑设计，IP65级防水"
+    ],
+    "parameters": [
+        {
+            "label": "网络",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "尺寸",
+            "value": "标准紧凑尺寸"
+        },
+        {
+            "label": "定位",
+            "value": "GPS + 北斗 + LBS"
+        },
+        {
+            "label": "输入电压",
+            "value": "9-90V DC"
+        },
+        {
+            "label": "电池",
+            "value": "内置备用电池"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x C08W主机, 1x 电源线, 1x 用户手册, 1x 继电器(可选)",
+    "icon": "MapPin"
+}

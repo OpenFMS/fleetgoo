@@ -1,0 +1,43 @@
+{
+    "id": "d701-pro-truck-dashcam-lockable",
+    "categoryId": "4g-dashcam",
+    "title": "D701 Pro 4G DashCam",
+    "metaTitle": "D701 Professional Fleet DashCam | FleetGoo",
+    "metaDesc": "Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
+    "fullDescription": "The D701 Pro is built for the demanding needs of logistics and heavy transport. It features a lockable SD card slot for data security and supports additional external cameras for blind spot monitoring. Its robust design ensures reliability on long hauls.",
+    "images": [
+        "/images/products/D701-main.jpg"
+    ],
+    "features": [
+        "Lockable storage slot to prevent data tampering",
+        "Support for external side/rear cameras",
+        "Advanced GPS tracking with route history",
+        "Driver behavior usage analysis (harsh braking/acceleration)",
+        "Wide voltage range for truck compatibility"
+    ],
+    "parameters": [
+        {
+            "label": "Channels",
+            "value": "2-CH / 4-CH Support"
+        },
+        {
+            "label": "Main Camera",
+            "value": "1080P Full HD"
+        },
+        {
+            "label": "Security",
+            "value": "Lockable Slot w/ Key"
+        },
+        {
+            "label": "Power",
+            "value": "9-36V DC"
+        },
+        {
+            "label": "Connectivity",
+            "value": "4G LTE / WiFi / Bluetooth"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D701 Unit, 2x Keys, 1x Hardwire Kit, 1x External Cam (Optional)",
+    "icon": "Video"
+}

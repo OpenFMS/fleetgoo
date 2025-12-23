@@ -1,0 +1,43 @@
+{
+    "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+    "categoryId": "4g-aicarbox",
+    "title": "D604 AI CarBox",
+    "metaTitle": "D604 MDVR AI Box | FleetGoo",
+    "metaDesc": "Powerful D604 AI CarBox MDVR for centralized fleet video surveillance and intelligent data processing.",
+    "fullDescription": "The D604 AI CarBox is a powerful Mobile Digital Video Recorder (MDVR) that serves as the central hub for vehicle surveillance. It supports up to 8 channels of high-definition video input and uses advanced AI processing to analyze road conditions and driver behavior locally.",
+    "images": [
+        "/images/products/D604-main.jpg"
+    ],
+    "features": [
+        "8-Channel AHD Video Input Support",
+        "High-performance Neural Processing Unit (NPU)",
+        "Supports HDD/SSD + SD Card dual storage for massive capacity",
+        "Integration with fuel, temperature, and door sensors",
+        "Anti-vibration industrial design"
+    ],
+    "parameters": [
+        {
+            "label": "Video Input",
+            "value": "4-CH / 8-CH AHD"
+        },
+        {
+            "label": "Storage",
+            "value": "1x 2.5'' HDD/SSD (up to 2TB) + 1x SD"
+        },
+        {
+            "label": "Processor",
+            "value": "Octa-core AI Chip"
+        },
+        {
+            "label": "Connectivity",
+            "value": "4G / 5G Ready / WiFi"
+        },
+        {
+            "label": "Power",
+            "value": "8-36V ISO7637 Compliant"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D604 MDVR, 1x Power Harness, 1x I/O Cable, 1x GPS Antenna, 1x 4G Antenna",
+    "icon": "Server"
+}

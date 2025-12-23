@@ -1,0 +1,43 @@
+{
+    "id": "d901-smart-ai-camera-bsd-pedestrian",
+    "categoryId": "4g-camera",
+    "title": "D901 Cámara Inteligente IA",
+    "metaTitle": "Cámara IA de Alta Gama D901 | FleetGoo",
+    "metaDesc": "Cámara IA D901 de primer nivel para flotas comerciales, con grabación multicanal y análisis IA avanzado.",
+    "fullDescription": "La D901 representa la cima de las Cámaras de Seguridad IA. Soporta grabación multicanal y algoritmos IA sofisticados para identificar peatones, ciclistas y otros peligros en la carretera en tiempo real. Diseñada para camiones pesados y autobuses que requieren máxima visibilidad.",
+    "images": [
+        "/images/products/D901-main.jpg"
+    ],
+    "features": [
+        "Soporte de entrada de video multicanal",
+        "Detección de Puntos Ciegos (BSD) con IA",
+        "Integración de Detección de Peatones",
+        "Capacidades de Visión Nocturna para monitoreo 24/7",
+        "4G LTE integrado para evidencia de video instantánea"
+    ],
+    "parameters": [
+        {
+            "label": "Entrada de Video",
+            "value": "Soporte 4-CH / 8-CH"
+        },
+        {
+            "label": "Resolución",
+            "value": "1080P / 720P"
+        },
+        {
+            "label": "Funciones IA",
+            "value": "BSD, ADAS, DMS, Peatón"
+        },
+        {
+            "label": "Interfaz",
+            "value": "Conectores de Aviación"
+        },
+        {
+            "label": "Energía",
+            "value": "Entrada Amplia 9-36V"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x Unidad Principal D901, Arnés de Cables, Kit de Instalación",
+    "icon": "Camera"
+}

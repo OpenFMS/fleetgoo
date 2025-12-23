@@ -45,32 +45,53 @@
   ],
   "items": [
     {
-      "id": "gps-tracker-ultra-long-standby",
+      "id": "c08w-4g-gps-tracker-ip65-waterproof",
       "categoryId": "gps-tracker",
-      "title": "4G GPS Tracker",
-      "description": "Real-time location tracking with global coverage, geofencing, and advanced analytics",
+      "title": "C08W 4G GPS Tracker",
+      "description": "Professional 4G real-time tracking device with fuel cut-off and IP65 protection.",
+      "image": "/images/products/C08W-main.jpg"
+    },
+    {
+      "id": "c08l-wireless-asset-tracker-long-standby",
+      "categoryId": "gps-tracker",
+      "title": "C08L Asset Tracker",
+      "description": "Ultra-long standby asset tracker with 3-year battery life and magnetic mount.",
       "image": "/images/products/C08L-main.jpg"
     },
     {
-      "id": "4g-dashcam",
+      "id": "d501-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "4G AI Dashcam",
-      "description": "High-definition recording with live streaming, AI driver monitoring, and cloud storage",
+      "title": "D501 4G DashCam",
+      "description": "Dual-lens cloud dashcam with live streaming and SOS alert function.",
       "image": "/images/products/D501-main.jpg"
     },
     {
-      "id": "mdvr-system",
-      "categoryId": "4g-aicarbox",
-      "title": "MDVR System",
-      "description": "Multi-channel digital video recorder with 4G connectivity and remote access",
-      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+      "id": "d701-pro-truck-dashcam-lockable",
+      "categoryId": "4g-dashcam",
+      "title": "D701 Pro DashCam",
+      "description": "Rugged fleet dashcam with lockable storage and external camera support.",
+      "image": "/images/products/D701-main.jpg"
     },
     {
-      "id": "4g-ptz-camera",
+      "id": "d401-ai-dashcam-adas-dms",
       "categoryId": "4g-camera",
-      "title": "4G PTZ Camera",
-      "description": "Standalone 4G surveillance camera with pan-tilt-zoom for remote site monitoring",
-      "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
+      "title": "D401 AI Camera",
+      "description": "Intelligent camera with built-in ADAS & DMS algorithms for driver safety.",
+      "image": "/images/products/D401-main.jpg"
+    },
+    {
+      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "categoryId": "4g-camera",
+      "title": "D901 AI Smart Camera",
+      "description": "Multi-channel AI camera system with Blind Spot and Pedestrian Detection.",
+      "image": "/images/products/D901-main.jpg"
+    },
+    {
+      "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+      "categoryId": "4g-aicarbox",
+      "title": "D604 AI CarBox",
+      "description": "8-Channel MDVR Hub with powerful AI processing for centralized surveillance.",
+      "image": "/images/products/D604-main.jpg"
     },
     {
       "id": "oem-custom-solution",
@@ -78,13 +99,6 @@
       "title": "OEM Custom Solution",
       "description": "Tailored hardware design and manufacturing services for your specific fleet needs",
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      "id": "smart-display",
-      "categoryId": "accessories",
-      "title": "Smart Display",
-      "description": "Interactive driver display with navigation, alerts, and performance metrics",
-      "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop"
     }
   ]
 }

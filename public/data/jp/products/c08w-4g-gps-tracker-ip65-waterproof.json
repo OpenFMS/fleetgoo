@@ -1,0 +1,43 @@
+{
+    "id": "c08w-4g-gps-tracker-ip65-waterproof",
+    "categoryId": "gps-tracker",
+    "title": "C08W 4G GPSトラッカー",
+    "metaTitle": "C08W プロフェッショナル4G GPSトラッカー | FleetGoo",
+    "metaDesc": "高精度のC08W 4G GPS追跡デバイスは、リアルタイムの位置監視と高度なフリート分析を提供します。",
+    "fullDescription": "C08Wは、包括的なフリート管理のために設計されたプロフェッショナルグレードの4G GPSトラッカーです。正確なリアルタイム測位を提供し、フリート管理者が車両の位置を即座に監視できるようにします。盗難防止機能と堅牢な接続性を備えており、さまざまな環境での資産の安全性を確保します。",
+    "images": [
+        "/images/products/C08W-main.jpg"
+    ],
+    "features": [
+        "2Gバックアップ付きの高速4G LTE接続",
+        "精度<5mのリアルタイムGPS/BDS測位",
+        "ジオフェンスアラームと速度超過アラート",
+        "リモート燃料/電源カットオフ機能",
+        "IP65防水のコンパクトデザイン"
+    ],
+    "parameters": [
+        {
+            "label": "ネットワーク",
+            "value": "4G LTE / GSM"
+        },
+        {
+            "label": "寸法",
+            "value": "標準コンパクトサイズ"
+        },
+        {
+            "label": "測位",
+            "value": "GPS + BDS + LBS"
+        },
+        {
+            "label": "入力電圧",
+            "value": "9-90V DC"
+        },
+        {
+            "label": "バッテリー",
+            "value": "内蔵バックアップバッテリー"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x C08W本体, 1x 電源ケーブル, 1x ユーザーマニュアル, 1x リレー（オプション）",
+    "icon": "MapPin"
+}

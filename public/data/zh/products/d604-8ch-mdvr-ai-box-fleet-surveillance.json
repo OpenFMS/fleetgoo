@@ -1,0 +1,43 @@
+{
+    "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+    "categoryId": "4g-aicarbox",
+    "title": "D604 AI智能盒子",
+    "metaTitle": "D604 MDVR AI盒子 | FleetGoo",
+    "metaDesc": "强大的D604 AI CarBox MDVR，用于集中式车队视频监控和智能数据处理。",
+    "fullDescription": "D604 AI CarBox是一款强大的移动数字视频录像机（MDVR），作为车辆监控的中枢神经。它支持多达8路高清视频输入，并利用先进的AI处理能力在本地分析路况和驾驶员行为。",
+    "images": [
+        "/images/products/D604-main.jpg"
+    ],
+    "features": [
+        "8通道AHD视频输入支持",
+        "高性能神经处理单元（NPU）",
+        "支持HDD/SSD + SD卡双存储，容量巨大",
+        "集成燃油、温度和车门传感器",
+        "抗震工业设计"
+    ],
+    "parameters": [
+        {
+            "label": "视频输入",
+            "value": "AHD 4路 / 8路"
+        },
+        {
+            "label": "存储",
+            "value": "1x 2.5'' HDD/SSD (最大2TB) + 1x SD"
+        },
+        {
+            "label": "处理器",
+            "value": "八核AI芯片"
+        },
+        {
+            "label": "连接",
+            "value": "4G / 5G Ready / WiFi"
+        },
+        {
+            "label": "电源",
+            "value": "8-36V ISO7637标准"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D604 MDVR, 1x 电源线束, 1x I/O线, 1x GPS天线, 1x 4G天线",
+    "icon": "Server"
+}

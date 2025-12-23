@@ -1,0 +1,43 @@
+{
+    "id": "d401-ai-dashcam-adas-dms",
+    "categoryId": "4g-camera",
+    "title": "D401 AI摄像头",
+    "metaTitle": "D401智能AI摄像头 | FleetGoo ADAS",
+    "metaDesc": "具备高级ADAS和DMS功能的D401 AI摄像头，实现主动式车队安全管理。",
+    "fullDescription": "D401是一款旨在提升车队安全的智能AI摄像头。它内置ADAS（高级驾驶辅助系统）以检测车道偏离和前向碰撞，同时配备DMS（驾驶员监控系统）以针对疲劳和分心驾驶发出警报。",
+    "images": [
+        "/images/products/D401-main.jpg"
+    ],
+    "features": [
+        "AI驱动的目标检测",
+        "ADAS：FCW（前向碰撞预警），LDW（车道偏离预警）",
+        "DMS：疲劳、分心、抽烟、打电话检测",
+        "1080P高清视频录制",
+        "实时事件上传至云端"
+    ],
+    "parameters": [
+        {
+            "label": "分辨率",
+            "value": "1080P全高清"
+        },
+        {
+            "label": "AI处理器",
+            "value": "内置NPU"
+        },
+        {
+            "label": "视场角",
+            "value": "140°广角"
+        },
+        {
+            "label": "存储",
+            "value": "支持高达256GB SD卡"
+        },
+        {
+            "label": "连接",
+            "value": "4G / WiFi"
+        }
+    ],
+    "downloads": [],
+    "packaging": "1x D401摄像头, 1x 电源线, 1x 支架, 1x 用户手册",
+    "icon": "Camera"
+}
