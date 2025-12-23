@@ -1,16 +1,16 @@
 {
     "page": {
         "metaTitle": "SaaS 车队管理平台 | FleetGoo",
-        "metaDesc": "强大的基于云的车队管理软件，具有高级分析、实时追踪和移动应用程序。"
+        "metaDesc": "功能强大的云端车队管理软件，提供高级分析、实时追踪和移动应用。"
     },
     "hero": {
-        "title": "SaaS 平台功能",
+        "title": "SaaS 平台特性",
         "subtitle": "具有强大分析功能的综合车队管理软件"
     },
     "features": [
         {
             "icon": "Cloud",
-            "title": "基于云的平台",
+            "title": "云端平台",
             "description": "通过我们安全的云基础设施，随时随地访问您的车队数据"
         },
         {
@@ -21,22 +21,22 @@
         {
             "icon": "Shield",
             "title": "企业级安全",
-            "description": "银行级加密、基于角色的访问和合规认证"
+            "description": "银行级加密、基于角色的访问控制和合规认证"
         },
         {
             "icon": "Smartphone",
             "title": "移动应用",
-            "description": "适用于驾驶员和管理者的 iOS 和 Android 应用，具有离线功能"
+            "description": "适用于司机和管理者的 iOS 和 Android 应用，支持离线功能"
         },
         {
             "icon": "Bell",
-            "title": "智能警报",
-            "description": "针对超速、地理围栏违规和维护的可定制通知"
+            "title": "智能报警",
+            "description": "针对超速、电子围栏违规和维护保养的可定制通知"
         },
         {
             "icon": "MapPinned",
             "title": "实时追踪",
-            "description": "具有路线历史和位置共享功能的实时 GPS 追踪"
+            "description": "带有轨迹回放和位置共享功能的实时 GPS 追踪"
         }
     ]
 }

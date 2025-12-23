@@ -1,27 +1,16 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import Hero from '@/components/Hero';
 import SEO from '@/components/SEO';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import {
-  ArrowRight, Shield, Zap, TrendingUp, CheckCircle2,
+  Shield, Zap, TrendingUp, CheckCircle2,
   Settings, Award, Globe, Factory, Radio, Check
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { useToast } from '@/components/ui/use-toast';
 import { useFetchData } from '@/hooks/useFetchData';
+import ContactForm from '@/components/forms/ContactForm';
 
 // Icon mapping for dynamic loading
 const iconMap = {
@@ -31,23 +20,7 @@ const iconMap = {
 
 const HomePage = ({ language, settings }) => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { data, loading, error } = useFetchData(`/data/${language}/home.json`);
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Quote Request Sent!",
-        description: "Thank you for your inquiry. Our team will contact you shortly.",
-      });
-      e.target.reset();
-    }, 1500);
-  };
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -254,62 +227,19 @@ const HomePage = ({ language, settings }) => {
               <p className="text-slate-600 dark:text-gray-400">{data.leadMagnet.subtitle}</p>
             </div>
 
-            <form onSubmit={handleFormSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.nameLabel} <span className="text-red-500">*</span></Label>
-                  <Input id="name" placeholder="John Doe" required className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.emailLabel} <span className="text-red-500">*</span></Label>
-                  <Input id="email" type="email" placeholder="john@company.com" required className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500" />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="company" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.companyLabel}</Label>
-                  <Input id="company" placeholder="Acme Logistics" className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.phoneLabel}</Label>
-                  <Input id="phone" placeholder="+1 (555) 000-0000" className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500" />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="product-interest" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.productInterestLabel}</Label>
-                <Select>
-                  <SelectTrigger className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white w-full">
-                    <SelectValue placeholder="Select a product..." />
-                  </SelectTrigger>
-                  <SelectContent className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white">
-                    <SelectItem value="d510">D510 AI Dashcam</SelectItem>
-                    <SelectItem value="d901">D901 MDVR System</SelectItem>
-                    <SelectItem value="platform">Software Platform</SelectItem>
-                    <SelectItem value="other">Other / General Inquiry</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-slate-700 dark:text-gray-300">{data.leadMagnet.form.messageLabel}</Label>
-                <Textarea id="message" placeholder="Tell us about your fleet size and specific requirements..." className="bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-gray-500 min-h-[120px]" />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg h-12"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending...' : data.leadMagnet.form.submitBtn}
-                {!isSubmitting && <ArrowRight className="ml-2 w-5 h-5" />}
-              </Button>
-
-              <p className="text-center text-xs text-slate-500 dark:text-gray-500 mt-4">
-                {data.leadMagnet.form.privacyNote}
-              </p>
-            </form>
+            <ContactForm
+              language={language}
+              labels={{
+                name: data.leadMagnet.form.nameLabel,
+                email: data.leadMagnet.form.emailLabel,
+                company: data.leadMagnet.form.companyLabel,
+                phone: data.leadMagnet.form.phoneLabel,
+                productInterest: data.leadMagnet.form.productInterestLabel,
+                message: data.leadMagnet.form.messageLabel,
+                submitBtn: data.leadMagnet.form.submitBtn,
+                privacyNote: data.leadMagnet.form.privacyNote
+              }}
+            />
           </div>
         </div>
       </section>

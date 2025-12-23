@@ -3,7 +3,7 @@
         "title": "Soluciones Industriales",
         "subtitle": "Estrategias de gestión de flotas especializadas para su sector",
         "metaTitle": "Soluciones Industriales | FleetGoo",
-        "metaDesc": "Explore nuestras soluciones de gestión de flotas adaptadas para Gobierno, Logística, Construcción y más.",
+        "metaDesc": "Explore nuestras soluciones de gestión de flotas a medida para Gobierno, Logística, Construcción y más.",
         "readMoreBtn": "Leer Caso de Estudio"
     },
     "categories": [
@@ -34,12 +34,12 @@
         },
         {
             "id": "rental",
-            "label": "Alquiler y Arrendamiento",
+            "label": "Alquiler y Leasing",
             "icon": "Key"
         },
         {
             "id": "taxi",
-            "label": "Taxi y Transporte Privado",
+            "label": "Taxi y Transporte",
             "icon": "Car"
         },
         {
@@ -59,7 +59,7 @@
             "categoryId": "government",
             "icon": "Building2",
             "title": "Gestión de Flotas de Seguridad Pública",
-            "summary": "Asegurando una respuesta rápida y responsabilidad para servicios de policía, bomberos y ambulancias con seguimiento en tiempo real.",
+            "summary": "Garantizando una respuesta rápida y rendición de cuentas para los servicios de policía, bomberos y ambulancias con seguimiento en tiempo real.",
             "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
             "color": "blue"
         },

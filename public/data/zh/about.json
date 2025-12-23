@@ -1,28 +1,28 @@
 {
     "page": {
         "metaTitle": "关于我们 | FleetGoo",
-        "metaDesc": "了解我们要通过创新的硬件和软件解决方案引领智能车队管理未来的使命。"
+        "metaDesc": "了解我们如何通过创新的硬件和软件解决方案，引领智能车队管理的未来。"
     },
     "hero": {
         "title": "关于 FleetGoo",
         "subtitle": "引领智能车队管理的未来",
-        "description": "凭借十多年的车辆追踪技术专长，我们为全球企业提供尖端的硬件和软件解决方案。我们的使命是通过实时洞察、高级分析和无与伦比的可靠性，为车队运营商赋能。"
+        "description": "凭借在车辆追踪技术领域十多年的专业经验，我们为全球企业提供尖端的硬件和软件解决方案。我们的使命是通过实时洞察、高级分析和无与伦比的可靠性，为车队运营商提供强大的支持。"
     },
     "stats": [
         {
-            "label": "活跃设备",
-            "value": "500K+"
+            "label": "在线设备",
+            "value": "700K+"
         },
         {
             "label": "服务国家",
-            "value": "85+"
+            "value": "100+"
         },
         {
             "label": "客户满意度",
-            "value": "98%"
+            "value": "99.99%"
         },
         {
-            "label": "运行时间保证",
+            "label": "正常运行时间",
             "value": "99.9%"
         }
     ],
@@ -30,22 +30,22 @@
         {
             "icon": "Award",
             "title": "行业卓越",
-            "description": "全球认可的获奖技术"
+            "description": "全球公认的获奖技术"
         },
         {
             "icon": "Users2",
             "title": "客户至上",
-            "description": "24/7 多语言支持和服务"
+            "description": "24/7 全天候多语言支持与服务"
         },
         {
             "icon": "Globe2",
-            "title": "全球覆盖",
-            "description": "服务于超过 85 个国家的客户"
+            "title": "全球布局",
+            "description": "服务覆盖超过85个国家的客户"
         },
         {
             "icon": "TrendingUp",
-            "title": "创新",
-            "description": "持续的研发和产品改进"
+            "title": "持续创新",
+            "description": "持续的研发投入与产品升级"
         }
     ]
 }

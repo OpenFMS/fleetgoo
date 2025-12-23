@@ -46,6 +46,10 @@ All notable changes to the FleetGoo Horizons project will be documented in this 
     - **Architecture**: Refactored admin logic into `useResizablePane` and `useScrollSync` custom hooks for better code reuse and maintainability.
     - **Backend API**: Updated file listing API to serve both JSON and Markdown files.
     - Refined `SchemaForm` smart detection logic to strictly identify image fields.
+- **Refactoring & Localization**:
+    - **Contact Form**: Abstracted form logic into a reusable `ContactForm` component, shared between Home and Contact pages.
+    - **Localization**: Synchronized content structure for `about.json`, `contact.json`, `home.json`, `software.json`, and `solutions.json` across all supported languages (ES, JP, ZH), using EN as the master.
+    - **Asset Organization**: Created `public/images/heros` directory for better image management and updated all references.
 
 ## [Initial Version] - 2025-12-19
 - Basic Flat-File CMS architecture using Vite Middleware.

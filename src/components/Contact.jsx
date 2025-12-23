@@ -1,77 +1,18 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Send, HelpCircle, ArrowRight } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/use-toast';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import ContactForm from '@/components/forms/ContactForm';
 
 const Contact = ({ data, language }) => {
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    phone: '',
-    productInterest: '',
-    message: '',
-  });
 
   // Safety checks for data structure
   const form = data?.form || {};
   const contactInfo = data?.contactInfo || {};
   const contactInfoItems = contactInfo.items || [];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Simulate API call and store in localStorage
-    const inquiries = JSON.parse(localStorage.getItem('contactInquiries') || '[]');
-    inquiries.push({
-      ...formData,
-      timestamp: new Date().toISOString(),
-      language,
-    });
-    localStorage.setItem('contactInquiries', JSON.stringify(inquiries));
-
-    toast({
-      title: "Quote Request Sent!",
-      description: "Thank you for your inquiry. Our team will contact you shortly.",
-    });
-
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      productInterest: '',
-      message: '',
-    });
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSelectChange = (value) => {
-    setFormData({
-      ...formData,
-      productInterest: value
-    });
-  };
 
   return (
     <div className="py-20 bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
@@ -94,99 +35,9 @@ const Contact = ({ data, language }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-xl dark:shadow-none">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name" className="text-slate-700 dark:text-gray-300">Name <span className="text-red-500">*</span></Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="John Doe"
-                    required
-                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-slate-700 dark:text-gray-300">Email <span className="text-red-500">*</span></Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="john@company.com"
-                    required
-                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="company" className="text-slate-700 dark:text-gray-300">Company</Label>
-                  <Input
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    placeholder="Acme Logistics"
-                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-slate-700 dark:text-gray-300">Phone</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="+1 (555) 000-0000"
-                    className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="product-interest" className="text-slate-700 dark:text-gray-300">Product Interest</Label>
-                <Select onValueChange={handleSelectChange} value={formData.productInterest}>
-                  <SelectTrigger className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white w-full">
-                    <SelectValue placeholder="Select a product..." />
-                  </SelectTrigger>
-                  <SelectContent className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white">
-                    <SelectItem value="d510">D510 AI Dashcam</SelectItem>
-                    <SelectItem value="d901">D901 MDVR System</SelectItem>
-                    <SelectItem value="platform">Software Platform</SelectItem>
-                    <SelectItem value="other">Other / General Inquiry</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message" className="text-slate-700 dark:text-gray-300">Message</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Tell us about your fleet size and specific requirements..."
-                  rows={6}
-                  className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-blue-500 resize-none"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg rounded-lg shadow-lg shadow-blue-500/20 transition-all hover:shadow-blue-500/40 hover:scale-105"
-              >
-                Send Message
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <p className="text-center text-xs text-slate-500 dark:text-gray-500 mt-4">
-                We respect your privacy. Your information is safe with us.
-              </p>
-            </form>
+            <div className="bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-xl dark:shadow-none">
+              <ContactForm language={language} labels={data?.form} />
+            </div>
           </motion.div>
 
           {/* Contact Info (Right Side) */}

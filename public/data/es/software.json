@@ -5,7 +5,7 @@
     },
     "hero": {
         "title": "Características de la Plataforma SaaS",
-        "subtitle": "Software integral de gestión de flotas con potentes análisis"
+        "subtitle": "Software integral de gestión de flotas con análisis potentes"
     },
     "features": [
         {
@@ -26,12 +26,12 @@
         {
             "icon": "Smartphone",
             "title": "Aplicaciones Móviles",
-            "description": "Aplicaciones iOS y Android para conductores y gerentes con capacidad fuera de línea"
+            "description": "Apps iOS y Android para conductores y gestores con capacidad offline"
         },
         {
             "icon": "Bell",
             "title": "Alertas Inteligentes",
-            "description": "Notificaciones personalizables para exceso de velocidad, violaciones de geocercas y mantenimiento"
+            "description": "Notificaciones personalizables por exceso de velocidad, violaciones de geocercas y mantenimiento"
         },
         {
             "icon": "MapPinned",

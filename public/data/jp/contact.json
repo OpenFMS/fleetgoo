@@ -1,39 +1,36 @@
 {
-  "metaTitle": "联系我们 | FleetGoo",
-  "metaDesc": "联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。",
-  "title": "取得联系",
-  "subtitle": "对我们的车辆追踪解决方案有疑问？我们随时为您提供帮助。",
+  "metaTitle": "お問い合わせ - FleetGoo",
+  "metaDesc": "車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。",
+  "title": "お問い合わせ",
+  "subtitle": "車両追跡ソリューションについてご質問がありますか？お気軽にお問い合わせください。",
   "form": {
-    "nameLabel": "全名",
-    "namePlaceholder": "张三",
-    "emailLabel": "电子邮件地址",
-    "emailPlaceholder": "zhangsan@company.com",
-    "companyLabel": "公司名称",
-    "companyPlaceholder": "某某物流",
-    "phoneLabel": "电话号码",
-    "phonePlaceholder": "+86 150-138-15400",
-    "messageLabel": "您的留言",
-    "messagePlaceholder": "告诉我们要关于您的车队管理需求...",
-    "submitButton": "发送消息",
-    "successTitle": "咨询提交成功！✅",
-    "successDesc": "感谢您的兴趣。我们的团队将在 24 小时内联系您。"
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "phone": "電話番号",
+    "productInterest": "ご興味のある製品",
+    "message": "メッセージ",
+    "submitBtn": "送信する",
+    "privacyNote": "私たちはあなたのプライバシーを尊重します。あなたの情報は安全に保護されます。",
+    "successTitle": "送信完了！ ✅",
+    "successDesc": "お問い合わせありがとうございます。担当者より24時間以内にご連絡いたします。"
   },
   "contactInfo": {
-    "title": "联系信息",
+    "title": "連絡先情報",
     "items": [
       {
         "icon": "MapPin",
-        "label": "总部",
-        "value": "中国广东省深圳市南海大道3027号创意大厦6楼"
+        "label": "本社所在地",
+        "value": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen"
       },
       {
         "icon": "Mail",
-        "label": "给我们发邮件",
+        "label": "メールアドレス",
         "value": "sales@fleetgoo.com"
       },
       {
         "icon": "Phone",
-        "label": "致电我们",
+        "label": "電話番号",
         "value": "+86 150-138-15400"
       }
     ]
