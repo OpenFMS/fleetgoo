@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, useOutletContext } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useOutletContext, useParams } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import { useFetchData } from '@/hooks/useFetchData';
 
@@ -12,6 +12,7 @@ const SolutionsPage = lazy(() => import('@/pages/SolutionsPage'));
 const SolutionDetailPage = lazy(() => import('@/pages/SolutionDetailPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const SoftwarePage = lazy(() => import('@/pages/SoftwarePage'));
+const LegalPage = lazy(() => import('@/pages/LegalPage'));
 
 // Admin Components
 const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
@@ -23,6 +24,18 @@ const LoadingFallback = () => (
     <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
+
+// Wrapper specifically for Legal Page to check valid docIds
+const LegalPageWrapper = () => {
+  const context = useOutletContext();
+  const { docId } = useParams(); // Start from v6, useParams works inside children too
+  // Only allow specific legal docs
+  const VALID_DOCS = ['privacy', 'terms'];
+  if (!VALID_DOCS.includes(docId)) {
+    return <Navigate to="/" replace />; // Or 404
+  }
+  return <LegalPage />;
+};
 
 // Helper component to pass language context to pages
 const PageWrapper = ({ Component }) => {
@@ -66,6 +79,7 @@ const App = () => {
 
             <Route path="contact" element={<PageWrapper Component={ContactPage} />} />
             <Route path="software" element={<PageWrapper Component={SoftwarePage} />} />
+            <Route path=":docId" element={<LegalPageWrapper />} />
           </Route>
 
           <Route path="*" element={<LanguageRedirect />} />

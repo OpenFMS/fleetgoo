@@ -9,12 +9,12 @@
             "label": "Español"
         },
         {
-            "code": "zh",
-            "label": "中文"
-        },
-        {
             "code": "jp",
             "label": "日本語"
+        },
+        {
+            "code": "zh",
+            "label": "中文"
         }
     ],
     "defaultLanguage": "en",

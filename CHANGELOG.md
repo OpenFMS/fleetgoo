@@ -36,6 +36,10 @@ All notable changes to the FleetGoo Horizons project will be documented in this 
     - **Real Product Data**: Populated product catalog with 7 real hardware products (GPS Trackers, Dashcams, AI Cameras, MDVR) replacing placeholders.
     - **SEO Optimization**: Refactored product IDs and JSON filenames to use long-tail keyword slugs (e.g., `d501-4g-dashcam-dual-lens-cloud`) for better search engine ranking.
     - **Multi-language Synchronization**: Automatically generated and translated product JSONs for Spanish (ES), Chinese (ZH), and Japanese (JP) locales.
+- **Legal Pages**:
+    - Implemented a unified Markdown-based legal document system (`react-markdown` + `@tailwindcss/typography`).
+    - Added standard English-only Privacy Policy and Terms of Service.
+    - Configured automatic multi-language fallback logic: all locales redirect legal links to the English version with a disclaimer.
 - **Admin**:
     - Refined `SchemaForm` smart detection logic to strictly identify image fields, fixing false positives for URL text fields.
 

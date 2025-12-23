@@ -5,7 +5,7 @@
     "description": "業界をリードするGPS追跡、4Gドライブレコーダー、MDVRシステム、および包括的なフリート管理プラットフォームで、世界中の企業から信頼されています。",
     "ctaPrimary": "製品を探索する",
     "ctaSecondary": "�業に連絡する",
-    "image": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"
+    "image": "/images/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
   },
   "valueProps": {
     "title": "最も難しいフリートの課題を解決します",
@@ -36,11 +36,11 @@
     "subtitle": "探索我们专为可靠性和性能设计的旗舰设备。",
     "tabs": [
       {
-        "id": "d510",
-        "label": "D510 - AI行车记录仪",
-        "title": "D510 智能4G行车记录仪",
+        "id": "d501",
+        "label": "D501 - AI行车记录仪",
+        "title": "D501 智能4G行车记录仪",
         "description": "终极一体化远程信息处理摄像机，内置AI处理器用于驾驶员行为分析。",
-        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "image": "/images/products/D501-main.jpg",
         "benefits": [
           "AI驱动的ADAS和DMS（疲劳/分心检测）",
           "实时1080p高清视频流",
@@ -57,7 +57,7 @@
         "label": "D901 - 坚固型MDVR",
         "title": "D901 8通道MDVR",
         "description": "专为重型应用和极端环境设计的军用级移动数字录像机。",
-        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "image": "/images/products/D901-main.jpg",
         "benefits": [
           "支持多达8个AHD摄像头",
           "2TB SSD存储 + SD卡备份",

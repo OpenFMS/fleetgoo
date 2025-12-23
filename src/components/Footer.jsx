@@ -75,10 +75,10 @@ const Footer = ({ language, commonData, settings }) => {
         <div className="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 dark:text-gray-400 text-sm">{t.copyright}</p>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+            <a href="/en/privacy" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
               {t.privacy}
             </a>
-            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+            <a href="/en/terms" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
               {t.terms}
             </a>
           </div>

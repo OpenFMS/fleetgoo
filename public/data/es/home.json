@@ -5,7 +5,7 @@
     "description": "Rastreo GPS, dashcams 4G, sistemas MDVR y plataforma integral de gestión de flotas líder en la industria, confiada por empresas en todo el mundo.",
     "ctaPrimary": "Explorar Productos",
     "ctaSecondary": "Contactar Ventas",
-    "image": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"
+    "image": "/images/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
   },
   "valueProps": {
     "title": "Resolviendo sus Desafíos de Flota",
@@ -36,11 +36,11 @@
     "subtitle": "Explore nuestros dispositivos insignia diseñados para fiabilidad y rendimiento.",
     "tabs": [
       {
-        "id": "d510",
-        "label": "D510 - Dashcam IA",
-        "title": "D510 Dashcam Inteligente 4G",
+        "id": "d501",
+        "label": "D501 - Dashcam IA",
+        "title": "D501 Dashcam Inteligente 4G",
         "description": "La cámara telemática todo en uno definitiva con procesador IA integrado para análisis de comportamiento del conductor.",
-        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "image": "/images/products/D501-main.jpg",
         "benefits": [
           "ADAS y DMS impulsados por IA (Fatiga/Distracción)",
           "Transmisión de Video HD 1080p en Tiempo Real",
@@ -57,7 +57,7 @@
         "label": "D901 - MDVR Robusto",
         "title": "D901 MDVR de 8 Canales",
         "description": "Grabador de video digital móvil de grado militar diseñado para aplicaciones pesadas y entornos extremos.",
-        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "image": "/images/products/D901-main.jpg",
         "benefits": [
           "Soporta hasta 8 Cámaras AHD",
           "Almacenamiento SSD 2TB + Respaldo en Tarjeta SD",
