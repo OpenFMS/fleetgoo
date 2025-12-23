@@ -567,7 +567,7 @@ export default defineConfig({
 									res.end(JSON.stringify({ files: [] }));
 									return;
 								}
-								const files = getFiles(dataDir).map(f => path.relative(dataDir, f)).filter(f => f.endsWith('.json'));
+								const files = getFiles(dataDir).map(f => path.relative(dataDir, f)).filter(f => f.endsWith('.json') || f.endsWith('.md'));
 								res.setHeader('Content-Type', 'application/json');
 								res.end(JSON.stringify({ files }));
 								return;

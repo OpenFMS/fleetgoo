@@ -1,14 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Save, RefreshCw, AlertCircle, AlertTriangle, GripVertical, Copy, Globe, ChevronDown } from 'lucide-react';
+import { Save, RefreshCw, AlertCircle, AlertTriangle, GripVertical, Copy, Globe, ChevronDown, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { useToast } from '@/components/ui/use-toast';
 import SmartEditor from '@/components/admin/visual/SmartEditor';
+import MarkdownEditor from '@/components/admin/visual/MarkdownEditor';
+import { useResizablePane } from '@/hooks/admin/useResizablePane';
+import { useScrollSync } from '@/hooks/admin/useScrollSync';
 
 const ContentEditor = () => {
     const [searchParams] = useSearchParams();
-    const file = searchParams.get('file'); // e.g., "en/home.json"
+    const file = searchParams.get('file'); // e.g., "en/home.json" or "en/legal/privacy.md"
 
     // State for Target (Editable)
     const [content, setContent] = useState(null);
@@ -21,78 +24,15 @@ const ContentEditor = () => {
     const [saving, setSaving] = useState(false);
     const { toast } = useToast();
 
-    // Split Pane State
-    const [leftPanelWidth, setLeftPanelWidth] = useState(50); // percentage
-    const [isDragging, setIsDragging] = useState(false);
-    const containerRef = useRef(null);
+    // 1. Resize Logic Hook
+    const { containerRef, leftPanelWidth, startResizing } = useResizablePane(50);
 
-    // Scroll Sync Refs
-    const masterScrollRef = useRef(null);
-    const targetScrollRef = useRef(null);
-    const activeScroller = useRef(null); // 'master' | 'target' | null
-
-    const handleMouseEnter = (side) => {
-        activeScroller.current = side;
-    };
-
-    const handleMouseLeave = () => {
-        activeScroller.current = null;
-    };
-
-    // Sync scrolling logic
-    const handleScroll = (sourceRef, targetRef, side) => {
-        if (activeScroller.current !== side) return;
-        if (!sourceRef.current || !targetRef.current) return;
-
-
-        const source = sourceRef.current;
-        const target = targetRef.current;
-
-        // Calculate percentage
-        const percentage = source.scrollTop / (source.scrollHeight - source.clientHeight);
-
-        // Apply to target
-        target.scrollTop = percentage * (target.scrollHeight - target.clientHeight);
-
-    };
-
-    // Resize Handler Logic
-    const startResizing = (e) => {
-        setIsDragging(true);
-        e.preventDefault(); // Prevent text selection
-    };
-
-    const stopResizing = () => {
-        setIsDragging(false);
-    };
-
-    const resize = (e) => {
-        if (isDragging && containerRef.current) {
-            const containerRect = containerRef.current.getBoundingClientRect();
-            const newLeftWidth = ((e.clientX - containerRect.left) / containerRect.width) * 100;
-            // Limit between 20% and 80%
-            if (newLeftWidth > 20 && newLeftWidth < 80) {
-                setLeftPanelWidth(newLeftWidth);
-            }
-        }
-    };
-
-    useEffect(() => {
-        if (isDragging) {
-            window.addEventListener('mousemove', resize);
-            window.addEventListener('mouseup', stopResizing);
-        } else {
-            window.removeEventListener('mousemove', resize);
-            window.removeEventListener('mouseup', stopResizing);
-        }
-        return () => {
-            window.removeEventListener('mousemove', resize);
-            window.removeEventListener('mouseup', stopResizing);
-        };
-    }, [isDragging]);
+    // 2. Scroll Sync Hook (Master on Left/Source, Target on Right/Target)
+    const { sourceRef: masterRef, targetRef: targetRef, handleScroll, handleMouseEnter, handleMouseLeave } = useScrollSync();
 
     // Derived info
     const isMasterFile = file?.startsWith('zh/');
+    const isMarkdown = file?.endsWith('.md');
     // const relativePath = file ? file.split('/').slice(1).join('/') : ''; 
 
     useEffect(() => {
@@ -112,21 +52,30 @@ const ContentEditor = () => {
             if (!resTarget.ok) throw new Error('Failed to load file');
             const textTarget = await resTarget.text();
 
-            try {
-                const jsonTarget = JSON.parse(textTarget);
-                setContent(jsonTarget);
-                setOriginalContent(jsonTarget);
-            } catch (e) {
-                console.error("Target Invalid JSON", e);
-                // Allow user to see error but can't edit visually
-                toast({ variant: "destructive", title: "Target Invalid JSON", description: e.message });
+            if (filePath.endsWith('.md')) {
+                // MARKDOWN MODE: No parsing
+                setContent(textTarget);
+                setOriginalContent(textTarget);
+                // Markdown usually doesn't have a "master" comparison flow like JSON keys
                 setLoading(false);
                 return;
+            } else {
+                // JSON MODE
+                try {
+                    const jsonTarget = JSON.parse(textTarget);
+                    setContent(jsonTarget);
+                    setOriginalContent(jsonTarget);
+                } catch (e) {
+                    console.error("Target Invalid JSON", e);
+                    toast({ variant: "destructive", title: "Target Invalid JSON", description: e.message });
+                    setLoading(false);
+                    return;
+                }
             }
 
-            // 2. Load Master Content (if not editing master)
-            if (!filePath.startsWith('zh/')) {
-                // relativePath extraction: "en/home.json" -> "home.json"
+            // 2. Load Master Content (if not editing master AND NOT MARKDOWN)
+            // Currently we don't support master-reference for Markdown
+            if (!filePath.startsWith('zh/') && !filePath.endsWith('.md')) {
                 const rel = filePath.split('/').slice(1).join('/');
                 try {
                     const resMaster = await fetch(`/api/admin/master-content?file=${encodeURIComponent(rel)}`);
@@ -155,6 +104,7 @@ const ContentEditor = () => {
 
         setSaving(true);
         try {
+            // content is either Object(JSON) or String(MD), backend handles both.
             const res = await fetch('/api/admin/content', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -188,7 +138,7 @@ const ContentEditor = () => {
         return Object.keys(master).filter(k => !targetKeys.includes(k));
     };
 
-    const missingKeys = !isMasterFile ? getMissingKeys(masterContent, content) : [];
+    const missingKeys = (!isMasterFile && !isMarkdown) ? getMissingKeys(masterContent, content) : [];
 
     const handleSyncStructure = () => {
         if (!masterContent) return;
@@ -252,7 +202,8 @@ const ContentEditor = () => {
                 <div className="space-y-1">
                     <div className="flex items-center gap-2">
                         <h1 className="text-xl font-bold dark:text-white">Editor</h1>
-                        {isMasterFile && <span className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">MASTER</span>}
+                        {isMarkdown && <span className="bg-purple-100 text-purple-800 text-xs px-2 py-0.5 rounded font-bold flex items-center gap-1"><FileText className="w-3 h-3" />Markdown</span>}
+                        {isMasterFile && !isMarkdown && <span className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded font-bold">MASTER</span>}
                     </div>
                     <p className="text-xs text-slate-500 font-mono">
                         {file}
@@ -279,7 +230,7 @@ const ContentEditor = () => {
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
-                            {['en', 'zh', 'es'].map(lang => (
+                            {['en', 'zh', 'es', 'jp'].map(lang => (
                                 <DropdownMenuItem key={lang} onClick={() => handleCloneToLang(lang)} disabled={file.startsWith(lang + '/')}>
                                     <Globe className="w-3 h-3 mr-2" />
                                     {lang.toUpperCase()}
@@ -309,83 +260,94 @@ const ContentEditor = () => {
             </div>
 
             {/* Editor Area */}
-            <div className="flex-1 min-h-0 flex overflow-hidden" ref={containerRef}>
-                {/* Master Pane (Left) - Only if not master file */}
-                {!isMasterFile && (
-                    <>
-                        <div
-                            className="flex flex-col min-w-0 bg-slate-50 dark:bg-slate-900/50 border dark:border-slate-800 rounded-xl overflow-hidden opacity-80 hover:opacity-100 transition-opacity"
-                            style={{ width: `${leftPanelWidth}%` }}
-                        >
-                            <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex justify-between items-center flex-shrink-0">
-                                <span className="font-bold text-sm text-slate-500 flex items-center gap-2">
-                                    <span className="bg-slate-200 dark:bg-slate-700 px-1.5 rounded text-xs">ZH</span>
-                                    Master Reference
+            <div className="flex-1 min-h-0 flex overflow-hidden rounded-xl border dark:border-slate-800 shadow-sm" ref={containerRef}>
+
+                {isMarkdown ? (
+                    /* MARKDOWN EDITOR MODE - Full Width */
+                    <div className="w-full h-full">
+                        <MarkdownEditor content={content} onChange={setContent} />
+                    </div>
+                ) : (
+                    /* JSON SCHEMA EDITOR MODE - Split Pane */
+                    <div className="w-full h-full flex">
+                        {/* Master Pane (Left) - Only if not master file */}
+                        {!isMasterFile && (
+                            <>
+                                <div
+                                    className="flex flex-col min-w-0 bg-slate-50 dark:bg-slate-900/50 border-r dark:border-slate-800 overflow-hidden opacity-80 hover:opacity-100 transition-opacity"
+                                    style={{ width: `${leftPanelWidth}%` }}
+                                >
+                                    <div className="bg-slate-100 dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex justify-between items-center flex-shrink-0">
+                                        <span className="font-bold text-sm text-slate-500 flex items-center gap-2">
+                                            <span className="bg-slate-200 dark:bg-slate-700 px-1.5 rounded text-xs">ZH</span>
+                                            Master Reference
+                                        </span>
+                                        <span className="text-xs text-slate-400">Read Only</span>
+                                    </div>
+                                    <div
+                                        ref={masterRef}
+                                        onMouseEnter={() => handleMouseEnter('source')}
+                                        onMouseLeave={handleMouseLeave}
+                                        onScroll={() => handleScroll(masterRef, targetRef, 'source')}
+                                        className="flex-1 overflow-y-auto p-4 custom-scrollbar"
+                                    >
+                                        {masterContent ? (
+                                            <div className="pointer-events-none select-none grayscale-[0.5]">
+                                                <SmartEditor data={masterContent} mode="visual" readOnly />
+                                            </div>
+                                        ) : (
+                                            <div className="flex items-center justify-center h-full text-slate-400 text-sm">
+                                                Loading Master...
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+
+                                {/* Drag Handle */}
+                                <div
+                                    className="w-4 flex items-center justify-center cursor-col-resize hover:bg-blue-50 dark:hover:bg-blue-900/20 active:bg-blue-100 transition-colors z-10 flex-shrink-0 bg-white dark:bg-slate-900 -ml-2"
+                                    onMouseDown={startResizing}
+                                >
+                                    <div className="w-1 h-8 bg-slate-300 dark:bg-slate-700 rounded-full flex items-center justify-center">
+                                        <GripVertical className="w-3 h-3 text-slate-500" />
+                                    </div>
+                                </div>
+                            </>
+                        )}
+
+                        {/* Target Pane (Right) */}
+                        <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900 overflow-hidden">
+                            <div className="bg-white dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex-shrink-0">
+                                <span className="font-bold text-sm text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                                    <span className="uppercase bg-blue-50 dark:bg-blue-900/20 px-1.5 rounded text-xs">{file.split('/')[0]}</span>
+                                    Target Content
                                 </span>
-                                <span className="text-xs text-slate-400">Read Only</span>
                             </div>
                             <div
-                                ref={masterScrollRef}
-                                onMouseEnter={() => handleMouseEnter('master')}
+                                ref={targetRef}
+                                onMouseEnter={() => handleMouseEnter('target')}
                                 onMouseLeave={handleMouseLeave}
-                                onScroll={() => handleScroll(masterScrollRef, targetScrollRef, 'master')}
-                                className="flex-1 overflow-y-auto p-4 custom-scrollbar"
+                                onScroll={() => handleScroll(targetRef, masterRef, 'target')}
+                                className="flex-1 overflow-y-auto p-4 relative"
                             >
-                                {masterContent ? (
-                                    <div className="pointer-events-none select-none grayscale-[0.5]">
-                                        <SmartEditor data={masterContent} mode="visual" readOnly />
+                                {loading ? (
+                                    <div className="absolute inset-0 flex items-center justify-center bg-white/80 dark:bg-slate-900/80 z-10">
+                                        <RefreshCw className="w-8 h-8 animate-spin text-blue-500" />
                                     </div>
+                                ) : content ? (
+                                    <SmartEditor
+                                        data={content}
+                                        onChange={setContent}
+                                    />
                                 ) : (
-                                    <div className="flex items-center justify-center h-full text-slate-400 text-sm">
-                                        Loading Master...
+                                    <div className="text-center text-slate-400 mt-20">
+                                        {loading ? 'Loading...' : 'Unable to display editor.'}
                                     </div>
                                 )}
                             </div>
                         </div>
-
-                        {/* Drag Handle */}
-                        <div
-                            className="w-4 flex items-center justify-center cursor-col-resize hover:bg-blue-50 dark:hover:bg-blue-900/20 active:bg-blue-100 transition-colors z-10 flex-shrink-0"
-                            onMouseDown={startResizing}
-                        >
-                            <div className="w-1 h-8 bg-slate-300 dark:bg-slate-700 rounded-full flex items-center justify-center">
-                                <GripVertical className="w-3 h-3 text-slate-500" />
-                            </div>
-                        </div>
-                    </>
+                    </div>
                 )}
-
-                {/* Target Pane (Right) */}
-                <div className="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900 border dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
-                    <div className="bg-white dark:bg-slate-800 px-4 py-2 border-b dark:border-slate-700 flex-shrink-0">
-                        <span className="font-bold text-sm text-blue-600 dark:text-blue-400 flex items-center gap-2">
-                            <span className="uppercase bg-blue-50 dark:bg-blue-900/20 px-1.5 rounded text-xs">{file.split('/')[0]}</span>
-                            Target Content
-                        </span>
-                    </div>
-                    <div
-                        ref={targetScrollRef}
-                        onMouseEnter={() => handleMouseEnter('target')}
-                        onMouseLeave={handleMouseLeave}
-                        onScroll={() => handleScroll(targetScrollRef, masterScrollRef, 'target')}
-                        className="flex-1 overflow-y-auto p-4 relative"
-                    >
-                        {loading ? (
-                            <div className="absolute inset-0 flex items-center justify-center bg-white/80 dark:bg-slate-900/80 z-10">
-                                <RefreshCw className="w-8 h-8 animate-spin text-blue-500" />
-                            </div>
-                        ) : content ? (
-                            <SmartEditor
-                                data={content}
-                                onChange={setContent}
-                            />
-                        ) : (
-                            <div className="text-center text-slate-400 mt-20">
-                                {loading ? 'Loading...' : 'Unable to display editor.'}
-                            </div>
-                        )}
-                    </div>
-                </div>
             </div>
         </div>
     );

@@ -40,8 +40,12 @@ All notable changes to the FleetGoo Horizons project will be documented in this 
     - Implemented a unified Markdown-based legal document system (`react-markdown` + `@tailwindcss/typography`).
     - Added standard English-only Privacy Policy and Terms of Service.
     - Configured automatic multi-language fallback logic: all locales redirect legal links to the English version with a disclaimer.
-- **Admin**:
-    - Refined `SchemaForm` smart detection logic to strictly identify image fields, fixing false positives for URL text fields.
+- **Admin CMS**:
+    - **Markdown Support**: Upgraded Content Editor to support `.md` files with a specialized Markdown Editor.
+    - **Visual Editor Features**: Added Split/Preview modes, resizable panes, and bi-directional scroll synchronization for Markdown editing.
+    - **Architecture**: Refactored admin logic into `useResizablePane` and `useScrollSync` custom hooks for better code reuse and maintainability.
+    - **Backend API**: Updated file listing API to serve both JSON and Markdown files.
+    - Refined `SchemaForm` smart detection logic to strictly identify image fields.
 
 ## [Initial Version] - 2025-12-19
 - Basic Flat-File CMS architecture using Vite Middleware.
