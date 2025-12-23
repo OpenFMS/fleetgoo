@@ -14,7 +14,8 @@ const getFieldType = (key, value, fieldConfig = null) => {
 
     const k = key.toLowerCase();
     // Smart Image Detection
-    if (k.endsWith('image') || k.endsWith('img') || k.endsWith('icon') || k.endsWith('logo') || k.includes('src') || k.includes('url')) return 'image';
+    // Smart Image Detection
+    if (k.endsWith('image') || k.endsWith('img') || k.endsWith('icon') || k.endsWith('logo') || k.endsWith('poster')) return 'image';
 
     if (value === null || value === undefined) return 'text';
     if (typeof value === 'boolean') return 'boolean';
@@ -70,7 +71,8 @@ const BLOCK_TYPES = [
                 type: 'select',
                 options: [{ label: 'Container Width', value: 'container' }, { label: 'Full Width', value: 'full' }, { label: 'Narrow', value: 'narrow' }],
                 help: "Container: Standard width (recommended). Full: Edge-to-edge. Narrow: Small width for icons/diagrams."
-            }
+            },
+            url: { type: 'image' }
         }
     },
     {

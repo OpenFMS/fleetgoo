@@ -19,9 +19,17 @@ const ProductCard = ({ product, index }) => {
       whileHover={{ y: -10 }}
       className="group bg-white dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden hover:shadow-xl dark:hover:border-blue-500/50 transition-all duration-300 h-full flex flex-col"
     >
-      <div className="relative h-48 overflow-hidden">
-        <img alt={product.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src={product.image} />
-        <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-10 dark:opacity-20 group-hover:opacity-20 dark:group-hover:opacity-30 transition-opacity`} />
+      <div className="relative aspect-square overflow-hidden bg-transparent">
+        <img
+          alt={product.title}
+          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+          src={product.image}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = 'https://placehold.co/600x400?text=No+Image';
+          }}
+        />
+        <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient || 'from-blue-500/10 to-purple-500/10'} opacity-10 dark:opacity-20 group-hover:opacity-20 dark:group-hover:opacity-30 transition-opacity`} />
       </div>
 
       <div className="p-6 flex flex-col flex-grow">

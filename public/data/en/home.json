@@ -5,7 +5,7 @@
     "description": "Industry-leading  4G Dashcam, GPS tracking, MDVR systems, and comprehensive fleet management platform trusted by businesses worldwide.",
     "ctaPrimary": "Explore Products",
     "ctaSecondary": "Contact Sales",
-    "image": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"
+    "image": "/images/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
   },
   "valueProps": {
     "title": "Solving Your Toughest Fleet Challenges",
@@ -40,7 +40,7 @@
         "label": "D501 - AI Dashcam",
         "title": "D501 Smart 4G Dashcam",
         "description": "The ultimate all-in-one telematics camera with built-in AI processor for driver behavior analysis.",
-        "image": "/images/products/d510-main.png",
+        "image": "/images/products/D501-main.jpg",
         "benefits": [
           "AI-powered ADAS & DMS (Fatigue/Distraction)",
           "Real-time 1080p HD Video Streaming",
@@ -57,7 +57,7 @@
         "label": "D901 - Rugged MDVR",
         "title": "D901 4-Channel MDVR",
         "description": "Military-grade mobile digital video recorder designed for heavy-duty applications and extreme environments.",
-        "image": "/images/products/d901-main.png",
+        "image": "/images/products/D901-main.jpg",
         "benefits": [
           "AI Detection fuel theft prevention, and voice recognition",
           "Supports up to 4 AHD Cameras",

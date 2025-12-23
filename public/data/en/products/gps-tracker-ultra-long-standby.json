@@ -1,15 +1,15 @@
 {
-  "id": "gps-tracker",
+  "id": "gps-tracker-ultra-long-standby",
   "categoryId": "gps-tracker",
   "title": "GPS Tracker",
   "metaTitle": "Professional GPS Tracker | FleetGoo",
   "metaDesc": "Real-time 4G GPS tracking device with geo-fencing and anti-theft features.",
   "fullDescription": "Our advanced GPS Tracker provides real-time location tracking with global coverage. It features geo-fencing, speed alerts, and historical route playback. Ideal for fleet management and asset tracking. Built with industrial-grade components to withstand harsh environments.",
   "images": [
-    "/images/MyGhibli.png",
-    "/images/MyGhibli.png",
-    "/images/MyGhibli.png",
-    "/images/MyGhibli.png"
+    "/images/products/C08W-main.png",
+    "/images/products/C08W-main.png",
+    "/images/products/C08W-main.png",
+    "/images/products/C08W-main.png"
   ],
   "features": [
     "Global 4G LTE/3G/2G coverage ensuring you never lose track of your assets.",

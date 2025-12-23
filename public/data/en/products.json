@@ -45,52 +45,46 @@
   ],
   "items": [
     {
-      "id": "gps-tracker",
+      "id": "gps-tracker-ultra-long-standby",
       "categoryId": "gps-tracker",
       "title": "4G GPS Tracker",
-      "description": "Real-time12 location tracking with global coverage, geofencing, and advanced analytics",
-      "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
-      "gradient": "from-blue-600 to-cyan-500"
+      "description": "Real-time location tracking with global coverage, geofencing, and advanced analytics",
+      "image": "/images/products/C08L-main.jpg"
     },
     {
       "id": "4g-dashcam",
       "categoryId": "4g-dashcam",
       "title": "4G AI Dashcam",
       "description": "High-definition recording with live streaming, AI driver monitoring, and cloud storage",
-      "image": "/images/products/d510-main.png",
-      "gradient": "from-cyan-600 to-blue-500"
+      "image": "/images/products/D501-main.jpg"
     },
     {
       "id": "mdvr-system",
       "categoryId": "4g-aicarbox",
       "title": "MDVR System",
       "description": "Multi-channel digital video recorder with 4G connectivity and remote access",
-      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-      "gradient": "from-blue-700 to-indigo-600"
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
     },
     {
       "id": "4g-ptz-camera",
       "categoryId": "4g-camera",
       "title": "4G PTZ Camera",
       "description": "Standalone 4G surveillance camera with pan-tilt-zoom for remote site monitoring",
-      "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop",
-      "gradient": "from-indigo-600 to-purple-600"
+      "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop"
     },
     {
       "id": "oem-custom-solution",
       "categoryId": "oem-odm",
       "title": "OEM Custom Solution",
       "description": "Tailored hardware design and manufacturing services for your specific fleet needs",
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-      "gradient": "from-slate-700 to-slate-600"
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
     },
     {
       "id": "smart-display",
       "categoryId": "accessories",
       "title": "Smart Display",
       "description": "Interactive driver display with navigation, alerts, and performance metrics",
-      "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop",
-      "gradient": "from-indigo-600 to-blue-700"
+      "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop"
     }
   ]
 }

@@ -23,6 +23,18 @@ All notable changes to the FleetGoo Horizons project will be documented in this 
 - Resolved YouTube iframe connection issues in local development environments.
 - Fixed `blockType` propagation bug in nested schema forms.
 
+### Refined (2025-12-23)
+- **Product Display**:
+    - Updated `ProductCard` to use `aspect-square` layout and `object-contain` sizing, optimizing display for standard manufacturer images (transparent background).
+    - Added image error handling with fallback placeholders.
+    - Removed legacy gradient data from product JSONs to enforce design system consistency.
+- **Product Details Page**:
+    - Redesigned layout to a standard 2-column Ecommerce structure (Left: Images, Right: Info).
+    - Optimized main image to 4:3 aspect ratio to reduce vertical scrolling.
+    - Improved information hierarchy by moving "Product Overview" to the top of the details column.
+- **Admin**:
+    - Refined `SchemaForm` smart detection logic to strictly identify image fields, fixing false positives for URL text fields.
+
 ## [Initial Version] - 2025-12-19
 - Basic Flat-File CMS architecture using Vite Middleware.
 - Core Admin Dashboard with basic text editing.
