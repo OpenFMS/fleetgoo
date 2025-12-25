@@ -9,7 +9,7 @@
       "type": "hero",
       "title": "The All-In-One Fleet Intelligence Platform",
       "subtitle": "Unify your operations with a complete ecosystem. From our powerful Cloud SaaS and intuitive Mobile Apps to flexible Open API integrations—we provide the infrastructure for smarter fleet decisions.",
-      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
       "ctaText": "Explore the Platform",
       "ctaLink": "/en/contact"
     },
@@ -51,11 +51,53 @@
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
-      "caption": "Unified Dashboard: Video, Map, and Data in One View",
-      "width": "container"
+      "type": "features",
+      "title": "Core Feature",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "Operations Dashboard",
+          "desc": "The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "Real-Time GPS Location",
+          "desc": "Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "Video Surveillance",
+          "desc": "It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "Remote Control",
+          "desc": "It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "Video & Track Playback",
+          "desc": "Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "Geo Fence",
+          "desc": "An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "Multi-platform integration",
+          "desc": "The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
     }
   ]
 }

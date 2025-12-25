@@ -5,12 +5,14 @@ import {
     Package, Users, Image as ImageIcon,
     Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, // Software page
     Award, Users2, Globe2, TrendingUp, // About page
-    Webhook // API feature
+    Webhook, // API feature
+    Eye, Smile // New About values
 } from 'lucide-react';
 
 const iconMap = {
     Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, CheckCircle2,
-    Award, Users2, Globe2, TrendingUp, Webhook
+    Award, Users2, Globe2, TrendingUp, Webhook,
+    Eye, Smile
 };
 import { Link } from 'react-router-dom';
 

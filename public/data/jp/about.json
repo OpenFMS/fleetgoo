@@ -7,7 +7,7 @@
       "type": "hero",
       "title": "FleetGooについて",
       "subtitle": "インテリジェントな車両管理の未来をリードします。車両追跡技術における10年以上の専門知識を持ち、世界中の企業に最先端のハードウェアとソフトウェアソリューションを提供しています。",
-      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/company/about-hero.png",
       "ctaText": "パートナーネットワークに参加",
       "ctaLink": "/jp/contact"
     },
@@ -16,20 +16,20 @@
       "background": "default",
       "items": [
         {
-          "label": "アクティブデバイス",
-          "value": "700K+"
+          "label": "設立",
+          "value": "2010"
         },
         {
-          "label": "サービス提供国",
+          "label": "知的財産",
+          "value": "320+"
+        },
+        {
+          "label": "特許",
           "value": "100+"
         },
         {
-          "label": "顧客満足度",
-          "value": "99.99%"
-        },
-        {
-          "label": "稼働率保証",
-          "value": "99.9%"
+          "label": "サービス提供国",
+          "value": "85+"
         }
       ]
     },
@@ -57,15 +57,49 @@
           "icon": "TrendingUp",
           "title": "イノベーション",
           "desc": "製品が市場トレンドを先取りし続けるための継続的な研究開発投資。"
+        },
+        {
+          "icon": "Eye",
+          "title": "私たちのビジョン",
+          "desc": "自動車デジタル化技術および運用サービスの主要プロバイダーになること。"
+        },
+        {
+          "icon": "Smile",
+          "title": "私たちのミッション",
+          "desc": "車載インターネット（IoV）をよりシンプルにし、カーライフをより良くする。"
         }
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      "caption": "複雑な車両管理の課題を解決するために協力する専任チーム。",
-      "width": "container"
+      "type": "features",
+      "title": "FleetGooの品質基準",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "厳選されたプレミアム部品",
+          "desc": "品質は源流から始まります。私たちはTier-1サプライヤーから厳密に調達を行い、厳格な受入品質管理（IQC）を実施して、再生品や偽造部品が生産ラインに入らないようにしています。",
+          "icon": "",
+          "image": "/images/company/strict-iqc-sourcing.jpeg"
+        },
+        {
+          "title": "精密工学と厳格な品質管理",
+          "desc": "私たちは単に組み立てるだけではありません。品質を設計します。すべてのPCBは、FleetGooデバイスになる前に、コンポーネントレベルの検査とテストを受けます。",
+          "icon": "Check",
+          "image": "/images/company/precision-engineering-rigorous-qc.jpeg"
+        },
+        {
+          "title": "AIアルゴリズムの較正",
+          "desc": "スマートな検知、信頼できるアラート。ADASとDMSのアルゴリズムを厳密に調整し、疲労、わき見、道路リスクの正確な認識を保証します。",
+          "icon": "",
+          "image": "/images/company/ai-algorithm-calibration.webp"
+        },
+        {
+          "title": "高負荷ビデオ処理",
+          "desc": "安定性が私たちの最優先事項です。当社のMDVRは、4/8チャンネル1080P入力による72時間の全負荷録画テストを受け、極度の負荷下でも揺るぎない安定性を保証します。",
+          "icon": "",
+          "image": "/images/company/multi-channel-stress-test.jpeg"
+        }
+      ]
     }
   ]
 }

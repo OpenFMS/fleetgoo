@@ -7,7 +7,7 @@
       "type": "hero",
       "title": "About FleetGoo",
       "subtitle": "Leading the future of intelligent fleet management. With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide.",
-      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/company/about-hero.png",
       "ctaText": "Join Our Partner Network",
       "ctaLink": "/en/contact"
     },
@@ -16,20 +16,20 @@
       "background": "default",
       "items": [
         {
-          "label": "Active Devices",
-          "value": "700K+"
+          "label": "Founded",
+          "value": "2010"
         },
         {
-          "label": "Countries Served",
+          "label": "Intellectual Property",
+          "value": "320+"
+        },
+        {
+          "label": "Patents",
           "value": "100+"
         },
         {
-          "label": "Customer Satisfaction",
-          "value": "99.99%"
-        },
-        {
-          "label": "Uptime Guarantee",
-          "value": "99.9%"
+          "label": "Countries Served",
+          "value": "85+"
         }
       ]
     },
@@ -57,15 +57,49 @@
           "icon": "TrendingUp",
           "title": "Innovation",
           "desc": "Continuous R&D investment ensuring our products stay ahead of market trends."
+        },
+        {
+          "icon": "Eye",
+          "title": "Our Vision",
+          "desc": "To be the leading provider of automotive digitalization technology and operational services."
+        },
+        {
+          "icon": "Smile",
+          "title": "Our Mission",
+          "desc": "Making the Internet of Vehicles simpler and car life better."
         }
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      "caption": "Our dedicated team working together to solve complex fleet challenges.",
-      "width": "container"
+      "type": "features",
+      "title": "The FleetGoo Standard",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "Premium Components Only",
+          "desc": "Quality starts at the source. We strictly source from Tier-1 suppliers and perform rigorous Incoming Quality Control (IQC) to ensure no refurbished or counterfeit parts ever enter our production line.",
+          "icon": "",
+          "image": "/images/company/strict-iqc-sourcing.jpeg"
+        },
+        {
+          "title": "Precision Engineering & Rigorous QC",
+          "desc": "We don't just assemble; we engineer quality. Every PCB undergoes component-level inspection and testing before it becomes a FleetGoo device.",
+          "icon": "Check",
+          "image": "/images/company/precision-engineering-rigorous-qc.jpeg"
+        },
+        {
+          "title": "AI Algorithm Calibration",
+          "desc": "Smart detection, reliable alerts. We rigorously calibrate our ADAS & DMS algorithms to ensure precise recognition of fatigue, distraction, and road risks.",
+          "icon": "",
+          "image": "/images/company/ai-algorithm-calibration.webp"
+        },
+        {
+          "title": "Heavy-duty Video Processing",
+          "desc": "Stability is our priority. Our MDVRs undergo 72-hour full-load recording tests with 4/8-channel 1080P input to ensure rock-solid stability even under extreme load.",
+          "icon": "",
+          "image": "/images/company/multi-channel-stress-test.jpeg"
+        }
+      ]
     }
   ]
 }

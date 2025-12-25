@@ -7,7 +7,7 @@
       "type": "hero",
       "title": "关于 FleetGoo",
       "subtitle": "引领智能车队管理的未来。凭借在车辆追踪技术领域十多年的专业经验，我们为全球企业提供尖端的软硬件解决方案。",
-      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/company/about-hero.png",
       "ctaText": "加入合作伙伴网络",
       "ctaLink": "/zh/contact"
     },
@@ -16,20 +16,20 @@
       "background": "default",
       "items": [
         {
-          "label": "在线设备",
-          "value": "700K+"
+          "label": "成立时间",
+          "value": "2010"
         },
         {
-          "label": "服务国家",
+          "label": "知识产权",
+          "value": "320+"
+        },
+        {
+          "label": "发明专利",
           "value": "100+"
         },
         {
-          "label": "客户满意度",
-          "value": "99.99%"
-        },
-        {
-          "label": "正常运行时间",
-          "value": "99.9%"
+          "label": "服务国家",
+          "value": "85+"
         }
       ]
     },
@@ -57,15 +57,49 @@
           "icon": "TrendingUp",
           "title": "持续创新",
           "desc": "持续的研发投入，确保我们的产品始终领先于市场趋势。"
+        },
+        {
+          "icon": "Eye",
+          "title": "企业愿景",
+          "desc": "领先的汽车数字化技术与运营服务提供商，致力于成为行业标杆。"
+        },
+        {
+          "icon": "Smile",
+          "title": "我们的使命",
+          "desc": "让车联网更简单，让车生活更美好。这是我们每天工作的动力源泉。"
         }
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
-      "caption": "我们需要专业的团队协同工作，解决复杂的车队挑战。",
-      "width": "container"
+      "type": "features",
+      "title": "FleetGoo 标准",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "只选用优质组件",
+          "desc": "质量源于源头。我们严格从一级供应商采购，并执行严格的来料质量控制(IQC)，确保没有翻新或假冒部件进入我们的生产线。",
+          "icon": "",
+          "image": "/images/company/strict-iqc-sourcing.jpeg"
+        },
+        {
+          "title": "精密工程与严格质控",
+          "desc": "我们不仅仅是组装；我们设计质量。每一块PCB在成为FleetGoo设备之前，都要经过组件级的检查和测试。",
+          "icon": "Check",
+          "image": "/images/company/precision-engineering-rigorous-qc.jpeg"
+        },
+        {
+          "title": "AI算法校准",
+          "desc": "智能检测，可靠警报。我们严格校准ADAS与DMS算法，确保对疲劳、分心和路况风险的精准识别。",
+          "icon": "",
+          "image": "/images/company/ai-algorithm-calibration.webp"
+        },
+        {
+          "title": "重载视频处理",
+          "desc": "稳定性是我们的首要任务。我们的MDVR经过72小时4/8路1080P全负载录像测试，确保即使在极高负载下也坚如磐石。",
+          "icon": "",
+          "image": "/images/company/multi-channel-stress-test.jpeg"
+        }
+      ]
     }
   ]
 }
