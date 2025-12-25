@@ -1,43 +1,71 @@
 {
-    "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
-    "categoryId": "4g-aicarbox",
-    "title": "D604 AI CarBox",
-    "metaTitle": "Caja IA MDVR D604 | FleetGoo",
-    "metaDesc": "Potente Caja IA MDVR D604 para vigilancia de video de flotas centralizada y procesamiento de datos inteligente.",
-    "fullDescription": "La D604 AI CarBox es un potente Grabador de Video Digital Móvil (MDVR) que sirve como el centro neurálgico para la vigilancia de vehículos. Soporta hasta 8 canales de entrada de video de alta definición y utiliza procesamiento IA avanzado para analizar las condiciones de la carretera y el comportamiento del conductor localmente.",
-    "images": [
-        "/images/products/D604-main.jpg"
-    ],
-    "features": [
-        "Soporte de Entrada de Video AHD de 8 Canales",
-        "Unidad de Procesamiento Neuronal (NPU) de alto rendimiento",
-        "Soporta almacenamiento dual HDD/SSD + Tarjeta SD para capacidad masiva",
-        "Integración con sensores de combustible, temperatura y puertas",
-        "Diseño industrial antivibración"
-    ],
-    "parameters": [
-        {
-            "label": "Entrada de Video",
-            "value": "AHD 4-CH / 8-CH"
-        },
-        {
-            "label": "Almacenamiento",
-            "value": "1x 2.5'' HDD/SSD (hasta 2TB) + 1x SD"
-        },
-        {
-            "label": "Procesador",
-            "value": "Chip IA Octa-core"
-        },
-        {
-            "label": "Conectividad",
-            "value": "Listo para 4G / 5G / WiFi"
-        },
-        {
-            "label": "Energía",
-            "value": "Compatible con 8-36V ISO7637"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x MDVR D604, 1x Arnés de Energía, 1x Cable I/O, 1x Antena GPS, 1x Antena 4G",
-    "icon": "Server"
+  "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+  "categoryId": "4g-aicarbox",
+  "title": "CarBox AI D604",
+  "metaTitle": "Caja AI MDVR D604 | FleetGoo",
+  "metaDesc": "Potente MDVR D604 AI CarBox para vigilancia de video de flotas centralizada.",
+  "fullDescription": "Diseñado para industrias no estandarizadas (viajes compartidos, logística, vehículos de construcción), soporta video HD de 4 canales, posicionamiento multimodo y sistemas de seguridad AI (DMS/ADAS/BSD). Cumple con los estándares ministeriales para aplicaciones versátiles.",
+  "images": [
+    "/images/products/D604-main.jpg"
+  ],
+  "features": [
+    "Video HD: Entrada 4x AHD 1080P/720P, codificación H.265/H.264, salida CVBS",
+    "Seguridad AI DMS: Reconocimiento facial, detección de fatiga/distracción/fumar/obstrucción",
+    "Seguridad AI ADAS: Colisión frontal, salida de carril, alertas de peatones",
+    "Seguridad AI BSD: Alertas de punto ciego izquierdo/derecho",
+    "Posicionamiento Preciso: GPS/BeiDou/Galileo multimodo (RTK opcional con precisión 0.02m)",
+    "Conectividad Global: Red múltiple 4G, WiFi/Bluetooth/Ethernet opcional",
+    "Control Flexible: 4 entradas/1 salida IO, 1x RS485 + 1x RS232, soporte sensor externo",
+    "Energía Estable: Entrada de voltaje amplio 9-36V, consumo <3W",
+    "Certificaciones: Cumple con estándares JT/T 808/794/1076/1078/905"
+  ],
+  "parameters": [
+    {
+      "label": "Sistema Operativo",
+      "value": "Linux 4.3"
+    },
+    {
+      "label": "Procesador",
+      "value": "Doble núcleo ARM CortexA7, 1.3GHz, 0.5TOPS"
+    },
+    {
+      "label": "Entrada de Video",
+      "value": "4 Canales AHD 1080P/720P"
+    },
+    {
+      "label": "Codificación",
+      "value": "H.265 / H.264"
+    },
+    {
+      "label": "Almacenamiento",
+      "value": "Tarjeta TF Simple/Doble (Max 512GB)"
+    },
+    {
+      "label": "Fuente de Energía",
+      "value": "9~36V Voltaje Amplio (Consumo <3W)"
+    },
+    {
+      "label": "Interfaces",
+      "value": "1x RS485, 1x RS232, 4x In / 1x Out IO, Salida CVBS"
+    },
+    {
+      "label": "Sensor",
+      "value": "Giroscopio de 3 ejes"
+    },
+    {
+      "label": "Temp. de Trabajo",
+      "value": "-20℃~70℃"
+    },
+    {
+      "label": "Dimensiones",
+      "value": "90mm x 90mm x 30mm"
+    },
+    {
+      "label": "Peso",
+      "value": "295g (Unidad Principal)"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D604, 1x Arnés de Energía, 1x Cable I/O, 1x Antena GPS/4G",
+  "icon": "Server"
 }

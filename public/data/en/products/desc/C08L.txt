@@ -1,9 +1,9 @@
-标题：C08L Wired Locator
+Title：C08L Wired Locator
 
-描述：
+Description：
 Designed for asset risk control,integrates GPS/BeiDou/ GLONASS triple-mode positioning with low power consumption,real-time monitoring,and remote control. Ideal for cargo tracking and vehicle security
 
-核心功能
+Features:
 Precision Positioning：Triple-mode (GPS/BeiDou/GLONASS) with <10m error; AGPS-assisted
 Low Power：Auto-sleep mode, vibration-triggered activation
 Security：Remote fuel/power cutoff, anti-tamper alerts, anti-fake base station detection
@@ -11,7 +11,7 @@ Robust Design：Anti-removal SIM slot, dual hardware/software protection, defect
 Customization：JT808 protocol compatibility, supports private customization
 Remote Management：OTA updates, SMS/APP configuration, real-time status analysis
 
-规格参数
+Parameters:
 Hardware Platform：LTE Cat. 1 Module
 Working Voltage：9-90V Wide Voltage
 Working Current：25mA@12V
@@ -30,8 +30,7 @@ Battery Composition：Industrial-grade Lithium Polymer Battery
 Battery Life：0.5 hours
 Communication Protocol：JT808 Protocol
 Weight：Bare Machine approx. 28g, with packaging accessories (extension cable and Velcro) approx. 74g
-Positioning：
-Timed tracking, angle-triggered upload, blind zone backup (max 300 logs)
+Positioning：Timed tracking, angle-triggered upload, blind zone backup (max 300 logs)
 Vehicle Status：Ignition on/off, power loss alert, low voltage alert, overspeed alert
 Security：Remote fuel cutoff, anti-tamper alarm, OTA updates
 Working Temperature Range：-25℃~+75℃

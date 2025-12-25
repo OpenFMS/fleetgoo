@@ -1,43 +1,55 @@
 {
-    "id": "d501-4g-dashcam-dual-lens-cloud",
-    "categoryId": "4g-dashcam",
-    "title": "D501 4Gドライブレコーダー",
-    "metaTitle": "D501 デュアルレンズ 4Gドライブレコーダー | FleetGoo",
-    "metaDesc": "デュアルレンズ録画（道路+車内）とクラウド接続を提供するコンパクトなD501 4Gドライブレコーダー。",
-    "fullDescription": "D501は、ライドシェア、タクシー、小規模フリートに最適な多機能4Gドライブレコーダーです。デュアルレンズ録画機能を備え、前方の道路と車内を同時にキャプチャします。クラウド接続により、ライブビデオストリーミングと自動イベントバックアップが可能です。",
-    "images": [
-        "/images/products/D501-main.jpg"
-    ],
-    "features": [
-        "デュアルレンズ：フロント1080P + 車内720P（赤外線）",
-        "4G経由のライブビデオストリーミング",
-        "乗客用WiFiホットスポット",
-        "緊急アラート用SOSボタン",
-        "コンパクトで目立たないデザイン"
-    ],
-    "parameters": [
-        {
-            "label": "フロントカメラ",
-            "value": "1080P, 140°視野角"
-        },
-        {
-            "label": "車内カメラ",
-            "value": "720P, 赤外線ナイトビジョン"
-        },
-        {
-            "label": "ネットワーク",
-            "value": "4G LTE / WiFi"
-        },
-        {
-            "label": "GPS",
-            "value": "内蔵高感度GPS"
-        },
-        {
-            "label": "ストレージ",
-            "value": "MicroSD 最大256GB"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D501ドライブレコーダー, 1x 電源ケーブル, 1x 3Mマウント, 1x SOSボタン",
-    "icon": "Video"
+  "id": "d501-4g-dashcam-dual-lens-cloud",
+  "categoryId": "4g-dashcam",
+  "title": "D501 4G ドライブレコーダー",
+  "metaTitle": "D501 デュアルレンズ 4G ドラレコ | FleetGoo",
+  "metaDesc": "デュアルレンズ録画（道路＋車内）とクラウド接続を提供するコンパクトなD501 4Gドライブレコーダー。",
+  "fullDescription": "コンパクトなシガーライター型4Gドライブレコーダーで、デュアルチャンネル録画（フロント1080P + 車内720P）を提供します。プラグアンドプレイでの設置、リモートライブ監視、WiFiホットスポット、インテリジェントな運転行動分析機能を備えています。",
+  "images": [
+    "/images/products/D501-main.jpg"
+  ],
+  "features": [
+    "デュアル録画：1080P (フロント120°) + 720P (車内90°) 同時録画",
+    "即時設置：シガーライターへのプラグアンドプレイ設計",
+    "リモート監視：ライブビデオ、GPS追跡、インターコム用の4G/WiFi接続",
+    "スマートアラート：SOS、衝突、ジオフェンス、速度超過アラーム",
+    "ドライバーの安全：急加速/急ブレーキ/急旋回の分析"
+  ],
+  "parameters": [
+    {
+      "label": "プロセッサー",
+      "value": "SL8521E Cortex-A53 デュアルコア 1.3GHz"
+    },
+    {
+      "label": "カメラ",
+      "value": "フロント 1080P + 車内 720P (IR)"
+    },
+    {
+      "label": "ネットワーク",
+      "value": "4G FDD-LTE / WCDMA / GSM"
+    },
+    {
+      "label": "接続性",
+      "value": "WiFi 802.11b/g/n (ホットスポット)"
+    },
+    {
+      "label": "測位",
+      "value": "GPS + BeiDou"
+    },
+    {
+      "label": "ストレージ",
+      "value": "TFカード (最大128GB)"
+    },
+    {
+      "label": "電源入力",
+      "value": "シガーライター経由 9V-30V"
+    },
+    {
+      "label": "センサー",
+      "value": "6軸ジャイロスコープ"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D501 ドラレコ, 1x ケーブル, 1x SOSボタン",
+  "icon": "Video"
 }

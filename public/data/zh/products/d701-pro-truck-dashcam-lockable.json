@@ -1,43 +1,66 @@
 {
-    "id": "d701-pro-truck-dashcam-lockable",
-    "categoryId": "4g-dashcam",
-    "title": "D701 Pro行车记录仪",
-    "metaTitle": "D701专业车队记录仪 | FleetGoo",
-    "metaDesc": "专为物流和重型运输设计的坚固型D701 4G记录仪，具备防篡改数据安全保护。",
-    "fullDescription": "D701 Pro专为物流和重型运输的苛刻需求而打造。它配有可锁SD卡槽以确保数据安全，并支持额外的外部摄像头用于盲区监控。其坚固的设计确保了长途运输的可靠性。",
-    "images": [
-        "/images/products/D701-main.jpg"
-    ],
-    "features": [
-        "可锁存储槽，防止数据篡改",
-        "支持侧面/后方外部摄像头",
-        "包含轨迹回放的高级GPS追踪",
-        "驾驶员行为分析（急刹车/急加速）",
-        "宽电压范围，兼容卡车电压"
-    ],
-    "parameters": [
-        {
-            "label": "通道",
-            "value": "支持2路 / 4路"
-        },
-        {
-            "label": "主摄",
-            "value": "1080P全高清"
-        },
-        {
-            "label": "安全",
-            "value": "带钥匙锁槽"
-        },
-        {
-            "label": "电源",
-            "value": "9-36V DC"
-        },
-        {
-            "label": "连接",
-            "value": "4G LTE / WiFi / 蓝牙"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D701主机, 2x 钥匙, 1x 硬接线套件, 1x 外部摄像头(可选)",
-    "icon": "Video"
+  "id": "d701-pro-truck-dashcam-lockable",
+  "categoryId": "4g-dashcam",
+  "title": "D701 Pro 4G 行车记录仪",
+  "metaTitle": "D701 专业车队行车记录仪 | FleetGoo",
+  "metaDesc": "坚固耐用的 D701 4G 行车记录仪，专为物流和重型运输设计，具有防篡改数据安全性。",
+  "fullDescription": "紧凑型粘贴式 AI 终端，具备双路 1080P 摄像头、全景车内监控、H.265 编码、可选 RTK 定位、DMS 和 ADAS。符合部标商用车安全管理标准。",
+  "images": [
+    "/images/products/D701-main.jpg"
+  ],
+  "features": [
+    "高清视频：双路 1080P 录制（可选3x720P），H.265/H.264 编码，红外增强车内摄像头",
+    "精准定位：GPS/北斗/GLONASS 多模（可选 RTK 或双频 RTK+DR）",
+    "智能安全 DMS：检测疲劳（闭眼/打哈欠）、吸烟、打电话、分心、遮挡",
+    "智能安全 ADAS：前向碰撞、车道偏离、行人检测预警",
+    "全球连接：4G CAT1（可选 CAT4），OTA 升级",
+    "稳定电源：9-36V 宽电压输入，短路保护，功耗 <2W",
+    "认证标准：符合 JT/T 794/808/1076/1078, JT/T905-2014",
+    "扩展功能：一键 SOS 报警，WiFi 调试 APP，电子围栏，远程配置"
+  ],
+  "parameters": [
+    {
+      "label": "系统/处理器",
+      "value": "Linux / CV1812H 双核 0.5TOPS"
+    },
+    {
+      "label": "内存",
+      "value": "256MB RAM / 8GB EMMC"
+    },
+    {
+      "label": "摄像头",
+      "value": "2x 内置 1080P (MIPI) + 1x 可选 720P (AHD)"
+    },
+    {
+      "label": "编码",
+      "value": "H.265 / H.264 (1080P/20fps)"
+    },
+    {
+      "label": "连接性",
+      "value": "4G CAT1/CAT4, 可选 WiFi/蓝牙"
+    },
+    {
+      "label": "电源",
+      "value": "9-36V DC (<2W 功耗)"
+    },
+    {
+      "label": "接口",
+      "value": "8针宝马头电源, SOS, Nano SIM, TF 卡 (最大 512GB), 3入/1出 IO"
+    },
+    {
+      "label": "工作温度",
+      "value": "-20℃ ~ +70℃"
+    },
+    {
+      "label": "尺寸",
+      "value": "80mm x 45mm x 30mm"
+    },
+    {
+      "label": "重量",
+      "value": "185g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D701 主机, 2x 钥匙, 1x 降压线, 1x 外部摄像头(选配)",
+  "icon": "Video"
 }

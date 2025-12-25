@@ -1,43 +1,64 @@
 {
-    "id": "c08l-wireless-asset-tracker-long-standby",
-    "categoryId": "gps-tracker",
-    "title": "C08L 资产追踪器",
-    "metaTitle": "C08L 长待机GPS定位器 | FleetGoo",
-    "metaDesc": "C08L 4G资产追踪器，拥有超长电池寿命，是拖车和集装箱追踪的理想选择。",
-    "fullDescription": "C08L是一款先进的资产追踪器，具有超长待机电池，非常适合追踪无动力资产，如集装箱、拖车和建筑设备。其无线磁吸安装方式允许快速部署，无需复杂布线。",
-    "images": [
-        "/images/products/C08L-main.jpg"
-    ],
-    "features": [
-        "超长待机时间（最长可达3年）",
-        "强力磁吸支架，安装即用",
-        "IP67防水，适应恶劣户外环境",
-        "多种工作模式以节省电量",
-        "防拆报警传感器"
-    ],
-    "parameters": [
-        {
-            "label": "网络",
-            "value": "4G LTE / GSM"
-        },
-        {
-            "label": "电池",
-            "value": "大容量不可充电电池"
-        },
-        {
-            "label": "安装",
-            "value": "强磁 / 螺丝"
-        },
-        {
-            "label": "防水等级",
-            "value": "IP67"
-        },
-        {
-            "label": "工作温度",
-            "value": "-20℃ ~ +70℃"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x C08L追踪器, 1x 安装支架, 1x 用户指南",
-    "icon": "MapPin"
+  "id": "c08l-wireless-asset-tracker-long-standby",
+  "categoryId": "gps-tracker",
+  "title": "C08L 资产追踪器",
+  "metaTitle": "C08L 超长待机 GPS 追踪器 | FleetGoo",
+  "metaDesc": "C08L 4G 资产追踪器，具有超长电池寿命，非常适合拖车和集装箱追踪。",
+  "fullDescription": "C08L 专为资产风控设计，集成了 GPS/北斗/GLONASS 三模定位，具有低功耗、实时监控和远程控制功能。它是可靠的货物追踪和车辆安防的理想解决方案，具有防拆卸保护和 OTA 远程管理功能的坚固设计。",
+  "images": [
+    "/images/products/C08L-main.jpg"
+  ],
+  "features": [
+    "精准定位：三模（GPS/北斗/GLONASS），误差<10m，支持AGPS",
+    "低功耗设计：自动休眠模式，振动唤醒",
+    "高级安防：远程断油/断电，防拆报警，防伪基站检测",
+    "坚固可靠：防拆 SIM 卡槽，软硬件双重保护，故障率 <3‰",
+    "支持定制：支持 JT808 协议及私有化定制",
+    "智能管理：OTA 升级，短信/APP 配置，实时状态分析"
+  ],
+  "parameters": [
+    {
+      "label": "硬件平台",
+      "value": "LTE Cat. 1 模组"
+    },
+    {
+      "label": "工作电压",
+      "value": "9-90V 宽电压"
+    },
+    {
+      "label": "工作电流",
+      "value": "25mA@12V"
+    },
+    {
+      "label": "定位方式",
+      "value": "卫星 + 基站 (误差 <10m)"
+    },
+    {
+      "label": "GPS 天线",
+      "value": "GPS/北斗双模陶瓷天线"
+    },
+    {
+      "label": "网络制式",
+      "value": "LTE-TDD:B34/38/39/40/41, FDD:B1/3/5/8"
+    },
+    {
+      "label": "冷/热启动",
+      "value": "2s / 8s"
+    },
+    {
+      "label": "电池",
+      "value": "55mAh/3.7V 工业级聚合物锂电池"
+    },
+    {
+      "label": "重量",
+      "value": "28g (设备) / 74g (总重)"
+    },
+    {
+      "label": "工作温度",
+      "value": "-25℃ ~ +75℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x C08L 主机, 1x 安装支架, 1x 用户说明书",
+  "icon": "MapPin"
 }

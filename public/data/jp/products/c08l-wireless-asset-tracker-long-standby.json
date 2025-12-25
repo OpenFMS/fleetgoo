@@ -1,43 +1,64 @@
 {
-    "id": "c08l-wireless-asset-tracker-long-standby",
-    "categoryId": "gps-tracker",
-    "title": "C08L 資産トラッカー",
-    "metaTitle": "C08L 長時間待機型GPSトラッカー | FleetGoo",
-    "metaDesc": "3年のバッテリー寿命を持つ超長時間待機型C08L 4G資産トラッカー、トレーラーやコンテナの追跡に最適。",
-    "fullDescription": "C08Lは、超長時間待機型バッテリーを備えた高度な資産トラッカーであり、コンテナ、トレーラー、建設機械などの非動力資産の追跡に最適です。ワイヤレス磁気設置により、複雑な配線なしで迅速に導入できます。",
-    "images": [
-        "/images/products/C08L-main.jpg"
-    ],
-    "features": [
-        "超長時間待機（最大3年）",
-        "即時設置のための強力な磁気マウント",
-        "過酷な屋外使用のためのIP67防水",
-        "電力を節約するための複数の動作モード",
-        "改ざん防止アラートセンサー"
-    ],
-    "parameters": [
-        {
-            "label": "ネットワーク",
-            "value": "4G LTE / GSM"
-        },
-        {
-            "label": "バッテリー",
-            "value": "大容量非充電式バッテリー"
-        },
-        {
-            "label": "取り付け",
-            "value": "強力マグネット / ネジ"
-        },
-        {
-            "label": "防水",
-            "value": "IP67"
-        },
-        {
-            "label": "動作温度",
-            "value": "-20℃ ~ +70℃"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x C08Lトラッカー, 1x 取り付けブラケット, 1x ユーザーガイド",
-    "icon": "MapPin"
+  "id": "c08l-wireless-asset-tracker-long-standby",
+  "categoryId": "gps-tracker",
+  "title": "C08L 資産トラッカー",
+  "metaTitle": "C08L 超長時間スタンバイGPSトラッカー | FleetGoo",
+  "metaDesc": "トレーラーやコンテナの追跡に最適な、超長バッテリー寿命を備えたC08L 4G資産トラッカー。",
+  "fullDescription": "資産のリスク管理用に設計されたC08Lは、GPS/BeiDou/GLONASSのトリプルモード測位と低消費電力、リアルタイム監視、リモート制御を統合しています。貨物の追跡や車両のセキュリティに理想的なソリューションであり、取り外し防止保護とOTAリモート管理機能を備えた堅牢な設計が特徴です。",
+  "images": [
+    "/images/products/C08L-main.jpg"
+  ],
+  "features": [
+    "高精度測位：トリプルモード（GPS/BeiDou/GLONASS）、誤差<10m、AGPS対応",
+    "低消費電力：自動スリープモード、振動検知による起動",
+    "高度なセキュリティ：リモート燃料/電源カット、改ざんアラート、偽基地局検知",
+    "堅牢な信頼性：取り外し防止SIMスロット、二重のハードウェア/ソフトウェア保護",
+    "カスタマイズ対応：JT808プロトコル対応、プライベートカスタマイズ可能",
+    "スマート管理：OTAアップデート、SMS/アプリ設定、リアルタイム状態分析"
+  ],
+  "parameters": [
+    {
+      "label": "ハードウェア",
+      "value": "LTE Cat. 1 モジュール"
+    },
+    {
+      "label": "動作電圧",
+      "value": "9-90V ワイド電圧"
+    },
+    {
+      "label": "動作電流",
+      "value": "25mA@12V"
+    },
+    {
+      "label": "測位方式",
+      "value": "衛星 + 基地局 (誤差 <10m)"
+    },
+    {
+      "label": "GPSアンテナ",
+      "value": "GPS/BDデュアルモードセラミック"
+    },
+    {
+      "label": "ネットワーク",
+      "value": "LTE-TDD/FDD 対応"
+    },
+    {
+      "label": "起動時間",
+      "value": "ホット 2s / コールド 8s"
+    },
+    {
+      "label": "バッテリー",
+      "value": "55mAh/3.7V 工業用リチウムポリマー"
+    },
+    {
+      "label": "重量",
+      "value": "28g (本体) / 74g (合計)"
+    },
+    {
+      "label": "動作温度",
+      "value": "-25℃ ~ +75℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x C08L 本体, 1x 取り付けブラケット, 1x ユーザーガイド",
+  "icon": "MapPin"
 }

@@ -15,6 +15,7 @@ All notable changes to the FleetGoo project will be documented in this file.
 ### Known Issues (TODO)
 - **Tooling**:
     - `tools/generate-llms.js`: currently generates `undefined` values for some product titles/descriptions because of JSON field name mismatches. Needs to be updated to strictly map field names (e.g., `metaTitle` vs `title`) from the `public/data` schema.
+    - **Localization**: Create a reusable, automated translation script (CLI tool) that connects to an LLM API to translate product JSONs from EN to other languages, replacing the manual one-off script.
 
 ## [Dev] - 2025-12-21
 

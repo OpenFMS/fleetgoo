@@ -1,43 +1,71 @@
 {
-    "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
-    "categoryId": "4g-aicarbox",
-    "title": "D604 AI智能盒子",
-    "metaTitle": "D604 MDVR AI盒子 | FleetGoo",
-    "metaDesc": "强大的D604 AI CarBox MDVR，用于集中式车队视频监控和智能数据处理。",
-    "fullDescription": "D604 AI CarBox是一款强大的移动数字视频录像机（MDVR），作为车辆监控的中枢神经。它支持多达8路高清视频输入，并利用先进的AI处理能力在本地分析路况和驾驶员行为。",
-    "images": [
-        "/images/products/D604-main.jpg"
-    ],
-    "features": [
-        "8通道AHD视频输入支持",
-        "高性能神经处理单元（NPU）",
-        "支持HDD/SSD + SD卡双存储，容量巨大",
-        "集成燃油、温度和车门传感器",
-        "抗震工业设计"
-    ],
-    "parameters": [
-        {
-            "label": "视频输入",
-            "value": "AHD 4路 / 8路"
-        },
-        {
-            "label": "存储",
-            "value": "1x 2.5'' HDD/SSD (最大2TB) + 1x SD"
-        },
-        {
-            "label": "处理器",
-            "value": "八核AI芯片"
-        },
-        {
-            "label": "连接",
-            "value": "4G / 5G Ready / WiFi"
-        },
-        {
-            "label": "电源",
-            "value": "8-36V ISO7637标准"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D604 MDVR, 1x 电源线束, 1x I/O线, 1x GPS天线, 1x 4G天线",
-    "icon": "Server"
+  "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+  "categoryId": "4g-aicarbox",
+  "title": "D604 AI 智能部标机",
+  "metaTitle": "D604 MDVR AI 盒子 | FleetGoo",
+  "metaDesc": "强大的 D604 AI 车载终端，用于集中式车队视频监控和智能数据处理。",
+  "fullDescription": "专为非标行业（网约车、物流、工程车）设计，支持 4 路高清视频、多模定位和 AI 安全系统（DMS/ADAS/BSD）。符合部标标准，应用广泛。",
+  "images": [
+    "/images/products/D604-main.jpg"
+  ],
+  "features": [
+    "高清视频：4路 AHD 1080P/720P 输入，H.265/H.264 编码，CVBS 输出",
+    "AI 安全 DMS：驾驶员人脸识别，疲劳/分心/吸烟/遮挡检测（需 DMS 摄像头）",
+    "AI 安全 ADAS：前向碰撞，车道偏离，行人预警（需前视摄像头）",
+    "AI 安全 BSD：左/右盲区预警（需 BSD 摄像头）",
+    "精准定位：GPS/北斗/Galileo 多模（可选 RTK 0.02m 精度）",
+    "全球连接：4G 全网通，可选 WiFi/蓝牙/以太网",
+    "灵活控制：4路输入/1路输出 IO，1x RS485 + 1x RS232，支持外部传感器",
+    "稳定电源：9-36V 宽电压输入，功耗 <3W",
+    "认证标准：符合 JT/T 808/794/1076/1078/905 标准"
+  ],
+  "parameters": [
+    {
+      "label": "操作系统",
+      "value": "Linux 4.3"
+    },
+    {
+      "label": "处理器",
+      "value": "双核 ARM CortexA7, 1.3GHz, 0.5TOPS 算力"
+    },
+    {
+      "label": "视频输入",
+      "value": "4路 AHD 1080P/720P"
+    },
+    {
+      "label": "编码",
+      "value": "H.265 / H.264"
+    },
+    {
+      "label": "存储",
+      "value": "单/双 TF 卡 (最大 512GB)"
+    },
+    {
+      "label": "电源",
+      "value": "9~36V 宽电压 (功耗 <3W)"
+    },
+    {
+      "label": "接口",
+      "value": "1x RS485, 1x RS232, 4入/1出 IO, CVBS 输出"
+    },
+    {
+      "label": "传感器",
+      "value": "3轴陀螺仪"
+    },
+    {
+      "label": "工作温度",
+      "value": "-20℃~70℃"
+    },
+    {
+      "label": "尺寸",
+      "value": "90mm x 90mm x 30mm"
+    },
+    {
+      "label": "重量",
+      "value": "295g (主机)"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D604 主机, 1x 电源束, 1x IO 线缆, 1x GPS 天线, 1x 4G 天线",
+  "icon": "Server"
 }

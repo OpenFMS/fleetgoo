@@ -1,43 +1,55 @@
 {
-    "id": "d501-4g-dashcam-dual-lens-cloud",
-    "categoryId": "4g-dashcam",
-    "title": "D501 4G行车记录仪",
-    "metaTitle": "D501双摄4G记录仪 | FleetGoo",
-    "metaDesc": "紧凑型D501 4G记录仪，提供双镜头录像（道路+车内）和云端连接功能。",
-    "fullDescription": "D501是一款多功能的4G行车记录仪，非常适合网约车、出租车和小型车队。它具有双镜头录像功能，可同时捕捉前方道路和车内情况。通过云连接，它支持实时视频流和自动事件备份。",
-    "images": [
-        "/images/products/D501-main.jpg"
-    ],
-    "features": [
-        "双镜头：前置1080P + 车内720P（红外夜视）",
-        "通过4G进行实时视频直播",
-        "为乘客提供WiFi热点",
-        "SOS紧急报警按钮",
-        "紧凑隐蔽的设计"
-    ],
-    "parameters": [
-        {
-            "label": "前置摄像头",
-            "value": "1080P, 140°视角"
-        },
-        {
-            "label": "车内摄像头",
-            "value": "720P, 红外夜视"
-        },
-        {
-            "label": "网络",
-            "value": "4G LTE / WiFi"
-        },
-        {
-            "label": "GPS",
-            "value": "内置高灵敏度GPS"
-        },
-        {
-            "label": "存储",
-            "value": "MicroSD卡最大支持256GB"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D501记录仪, 1x 电源线, 1x 3M支架, 1x SOS按钮",
-    "icon": "Video"
+  "id": "d501-4g-dashcam-dual-lens-cloud",
+  "categoryId": "4g-dashcam",
+  "title": "D501 4G 行车记录仪",
+  "metaTitle": "D501 双摄 4G 行车记录仪 | FleetGoo",
+  "metaDesc": "紧凑型 D501 4G 行车记录仪，提供双镜头录制（路况+车内）和云连接。",
+  "fullDescription": "紧凑型点烟器 4G 行车记录仪，提供双通道录制（前置 1080P + 车内 720P）。具有即插即用安装、远程实时监控、WiFi 热点和智能驾驶行为分析功能。",
+  "images": [
+    "/images/products/D501-main.jpg"
+  ],
+  "features": [
+    "双路录制：1080P (前置120°) + 720P (车内90°) 同步录制",
+    "快速安装：点烟器即插即用设计",
+    "远程监控：4G/WiFi 连接支持实时视频、GPS 追踪和对讲",
+    "智能报警：SOS、碰撞、围栏和超速报警",
+    "驾驶安全：急加速/急减速/急转弯分析"
+  ],
+  "parameters": [
+    {
+      "label": "处理器",
+      "value": "SL8521E Cortex-A53 双核 1.3GHz"
+    },
+    {
+      "label": "摄像头",
+      "value": "前置 1080P + 车内 720P (红外)"
+    },
+    {
+      "label": "网络",
+      "value": "4G FDD-LTE / WCDMA / GSM"
+    },
+    {
+      "label": "连接性",
+      "value": "WiFi 802.11b/g/n (热点)"
+    },
+    {
+      "label": "定位",
+      "value": "GPS + 北斗"
+    },
+    {
+      "label": "存储",
+      "value": "TF 卡 (最大 128GB)"
+    },
+    {
+      "label": "电源输入",
+      "value": "9V-30V 点烟器供电"
+    },
+    {
+      "label": "传感器",
+      "value": "6轴陀螺仪"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D501 记录仪, 1x 电源线, 1x 3M 支架, 1x SOS 按钮",
+  "icon": "Video"
 }

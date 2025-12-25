@@ -4,37 +4,60 @@
     "title": "D701 Pro 4G DashCam",
     "metaTitle": "D701 Professional Fleet DashCam | FleetGoo",
     "metaDesc": "Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
-    "fullDescription": "The D701 Pro is built for the demanding needs of logistics and heavy transport. It features a lockable SD card slot for data security and supports additional external cameras for blind spot monitoring. Its robust design ensures reliability on long hauls.",
+    "fullDescription": "A compact sticky AI terminal with dual 1080P cameras, panoramic cabin monitoring, H.265 encoding, optional RTK positioning, DMS, and ADAS. Compliant with Chinese Ministry standards for commercial vehicle safety and management.",
     "images": [
         "/images/products/D701-main.jpg"
     ],
     "features": [
-        "Lockable storage slot to prevent data tampering",
-        "Support for external side/rear cameras",
-        "Advanced GPS tracking with route history",
-        "Driver behavior usage analysis (harsh braking/acceleration)",
-        "Wide voltage range for truck compatibility"
+        "HD Video: Dual 1080P recording (optional 3x720P), H.265/H.264 encoding, IR-enhanced cabin camera",
+        "Precision Positioning: GPS/BeiDou/GLONASS multi-mode (optional RTK or dual-frequency RTK+DR)",
+        "Intelligent Safety DMS: Detects fatigue (eye-closing/yawning), smoking, calling, distraction, obstruction",
+        "Intelligent Safety ADAS: Alerts for forward collision, lane departure, pedestrian detection",
+        "Global Connectivity: 4G CAT1 (optional CAT4), OTA updates",
+        "Stable Power: 9-36V wide voltage input, short-circuit protection, <2W power consumption",
+        "Certifications: Compliant with JT/T 794/808/1076/1078, JT/T905-2014",
+        "Extended Functions: One-touch SOS alert, WiFi debug app, geofencing, remote configuration"
     ],
     "parameters": [
         {
-            "label": "Channels",
-            "value": "2-CH / 4-CH Support"
+            "label": "OS/Processor",
+            "value": "Linux / CV1812H Dual-core 0.5TOPS"
         },
         {
-            "label": "Main Camera",
-            "value": "1080P Full HD"
+            "label": "Memory",
+            "value": "256MB RAM / 8GB EMMC"
         },
         {
-            "label": "Security",
-            "value": "Lockable Slot w/ Key"
+            "label": "Cameras",
+            "value": "2x Internal 1080P (MIPI) + 1x Optional 720P (AHD)"
         },
         {
-            "label": "Power",
-            "value": "9-36V DC"
+            "label": "Encoding",
+            "value": "H.265 / H.264 (1080P/20fps)"
         },
         {
             "label": "Connectivity",
-            "value": "4G LTE / WiFi / Bluetooth"
+            "value": "4G CAT1/CAT4, Optional WiFi/Bluetooth"
+        },
+        {
+            "label": "Power Supply",
+            "value": "9-36V DC (<2W Consumption)"
+        },
+        {
+            "label": "Ports",
+            "value": "8-pin BMW Power, SOS, Nano SIM, TF Card (Max 512GB), 3x In/1x Out IO"
+        },
+        {
+            "label": "Operating Temp",
+            "value": "-20℃ ~ +70℃"
+        },
+        {
+            "label": "Dimensions",
+            "value": "80mm x 45mm x 30mm"
+        },
+        {
+            "label": "Weight",
+            "value": "185g"
         }
     ],
     "downloads": [],

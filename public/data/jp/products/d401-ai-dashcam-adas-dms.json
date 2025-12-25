@@ -1,43 +1,55 @@
 {
-    "id": "d401-ai-dashcam-adas-dms",
-    "categoryId": "4g-camera",
-    "title": "D401 AIカメラ",
-    "metaTitle": "D401 インテリジェントAIカメラ | FleetGoo ADAS",
-    "metaDesc": "プロアクティブなフリート安全のための高度なADASおよびDMS機能を備えたD401 AIカメラ。",
-    "fullDescription": "D401は、フリートの安全性を向上させるために設計されたインテリジェントAIカメラです。車線逸脱や前方衝突を検知するADAS（先進運転支援システム）を内蔵し、疲労や注意散漫を警告するDMS（ドライバーモニタリングシステム）も備えています。",
-    "images": [
-        "/images/products/D401-main.jpg"
-    ],
-    "features": [
-        "AI搭載の物体検知",
-        "ADAS：FCW（前方衝突警告）、LDW（車線逸脱警告）",
-        "DMS：疲労、注意散漫、喫煙、携帯電話使用の検知",
-        "1080P HDビデオ録画",
-        "クラウドへのリアルタイムイベントアップロード"
-    ],
-    "parameters": [
-        {
-            "label": "解像度",
-            "value": "1080P フルHD"
-        },
-        {
-            "label": "AIプロセッサ",
-            "value": "内蔵NPU"
-        },
-        {
-            "label": "視野角",
-            "value": "140° 広角"
-        },
-        {
-            "label": "ストレージ",
-            "value": "最大256GB SDカード対応"
-        },
-        {
-            "label": "接続性",
-            "value": "4G / WiFi"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D401カメラ, 1x 電源ケーブル, 1x ブラケット, 1x ユーザーマニュアル",
-    "icon": "Camera"
+  "id": "d401-ai-dashcam-adas-dms",
+  "categoryId": "4g-camera",
+  "title": "D401 AI カメラ",
+  "metaTitle": "D401 インテリジェント AI カメラ | FleetGoo ADAS",
+  "metaDesc": "プロアクティブなフリート安全のための高度なADASおよびDMS機能を備えたD401 AIカメラ。",
+  "fullDescription": "商用車向けの専用200万画素カメラで、疲労、脇見、電話使用、喫煙を検知するDMS（ドライバーモニタリングシステム）機能を搭載。100dB以上のダイナミックレンジにより、複雑な照明条件下でも鮮明な画像を提供します。",
+  "images": [
+    "/images/products/D401-main.jpg"
+  ],
+  "features": [
+    "HD映像：2MP CMOSセンサーによる1080P/720P解像度",
+    "AI安全機能：疲労、あくび、電話、喫煙、よそ見のDMS検知内蔵",
+    "鮮明な視覚：複雑な照明に対応する>100dBの広ダイナミックレンジ",
+    "柔軟な音声：オプションの高感度マイク内蔵 (<45dB)",
+    "堅牢な設計：-20°C〜70°Cの動作範囲を持つ車載グレードの信頼性"
+  ],
+  "parameters": [
+    {
+      "label": "イメージセンサー",
+      "value": "1/2.7\" 2MP CMOS"
+    },
+    {
+      "label": "解像度",
+      "value": "1080P / 720P / D1"
+    },
+    {
+      "label": "DMS機能",
+      "value": "疲労, 電話, 喫煙, 脇見"
+    },
+    {
+      "label": "最低照度",
+      "value": "0.1Lux (カラー) / 0Lux (IRオン)"
+    },
+    {
+      "label": "レンズ",
+      "value": "標準 3.6mm (6/8/12/16mm オプション)"
+    },
+    {
+      "label": "インターフェース",
+      "value": "4芯航空コネクタ / BMW"
+    },
+    {
+      "label": "電源入力",
+      "value": "DC 12V ±10%"
+    },
+    {
+      "label": "動作温度",
+      "value": "-20℃ ~ +70℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D401 カメラ, 1x 電源ケーブル, 1x ブラケット",
+  "icon": "Camera"
 }

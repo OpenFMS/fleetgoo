@@ -4,37 +4,49 @@
     "title": "D401 AI Camera",
     "metaTitle": "D401 Intelligent AI Camera | FleetGoo ADAS",
     "metaDesc": "D401 AI Camera with advanced ADAS and DMS capabilities for proactive fleet safety.",
-    "fullDescription": "The D401 is an intelligent AI camera designed to enhance fleet safety. It features built-in ADAS (Advanced Driver Assistance Systems) to detect lane departures and forward collisions, alongside DMS (Driver Monitoring System) to alert against fatigue and distraction.",
+    "fullDescription": "A specialized 2MP camera for commercial vehicles, featuring DMS (Driver Monitoring System) capabilities to detect fatigue, distraction, phone use, and smoking. Delivers clear images in complex lighting with >100dB dynamic range.",
     "images": [
         "/images/products/D401-main.jpg"
     ],
     "features": [
-        "AI-powered Object Detection",
-        "ADAS: FCW (Forward Collision), LDW (Lane Departure)",
-        "DMS: Fatigue, Distraction, Smoking, Phone usage detection",
-        "1080P HD Video Recording",
-        "Real-time event uploading to cloud"
+        "HD Imaging: 1080P/720P resolution with 2MP CMOS sensor",
+        "AI Safety: Built-in DMS detection for fatigue, yawning, phone use, smoking, and looking around",
+        "Visual Clarity: >100dB wide dynamic range for complex lighting conditions",
+        "Flexible Audio: Optional built-in highly sensitive microphone (<45dB)",
+        "Robust Design: Automotive-grade reliability with -20°C to 70°C working range"
     ],
     "parameters": [
         {
+            "label": "Image Sensor",
+            "value": "1/2.7\" 2MP CMOS"
+        },
+        {
             "label": "Resolution",
-            "value": "1080P Full HD"
+            "value": "1080P / 720P / D1"
         },
         {
-            "label": "AI Processor",
-            "value": "Built-in NPU"
+            "label": "DMS Functions",
+            "value": "Fatigue, Phone, Smoking, Distraction"
         },
         {
-            "label": "FOV",
-            "value": "140° Wide Angle"
+            "label": "Min Illumination",
+            "value": "0.1Lux (Color) / 0Lux (IR On)"
         },
         {
-            "label": "Storage",
-            "value": "Supports up to 256GB SD Card"
+            "label": "Lens",
+            "value": "Default 3.6mm (6/8/12/16mm optional)"
         },
         {
-            "label": "Connectivity",
-            "value": "4G / WiFi"
+            "label": "Interface",
+            "value": "4-core Aviation / BMW Head"
+        },
+        {
+            "label": "Power Input",
+            "value": "DC 12V ±10%"
+        },
+        {
+            "label": "Working Temp",
+            "value": "-20℃ ~ +70℃"
         }
     ],
     "downloads": [],

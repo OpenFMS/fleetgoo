@@ -4,37 +4,58 @@
   "title": "C08L Asset Tracker",
   "metaTitle": "C08L Long Standby GPS Tracker | FleetGoo",
   "metaDesc": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
-  "fullDescription": "The C08L is an advanced asset tracker featuring an ultra-long standby battery, making it perfect for tracking non-powered assets like containers, trailers, and construction equipment. Its wireless magnetic installation allows for rapid deployment without complex wiring.",
+  "fullDescription": "Designed for asset risk control, the C08L integrates GPS/BeiDou/GLONASS triple-mode positioning with low power consumption, real-time monitoring, and remote control capabilities. It is the ideal solution for reliable cargo tracking and vehicle security, featuring a robust design with anti-removal protection and OTA remote management.",
   "images": [
     "/images/products/C08L-main.jpg"
   ],
   "features": [
-    "Ultra-long standby time (up to 4 years)",
-    "Strong magnetic mount for instant installation",
-    "IP67 Waterproof for harsh outdoor use",
-    "Multiple working modes to save power",
-    "Tamper alert sensor"
+    "Precision Positioning: Triple-mode (GPS/BeiDou/GLONASS) with <10m error and AGPS support",
+    "Low Power Design: Auto-sleep mode with vibration-triggered activation",
+    "Advanced Security: Remote fuel/power cutoff, anti-tamper alerts, and anti-fake base station detection",
+    "Robust Reliability: Anti-removal SIM slot, dual hardware/software protection, defect rate <3‰",
+    "Customization Ready: Supports JT808 protocol and private customization",
+    "Smart Management: OTA updates, SMS/APP configuration, and real-time status analysis"
   ],
   "parameters": [
     {
-      "label": "Network",
-      "value": "4G LTE / GSM"
+      "label": "Hardware Platform",
+      "value": "LTE Cat. 1 Module"
+    },
+    {
+      "label": "Working Voltage",
+      "value": "9-90V Wide Voltage"
+    },
+    {
+      "label": "Working Current",
+      "value": "25mA@12V"
+    },
+    {
+      "label": "Positioning",
+      "value": "Satellite + Base Station (<10m error)"
+    },
+    {
+      "label": "GPS Antenna",
+      "value": "GPS/BD Dual-mode Ceramic"
+    },
+    {
+      "label": "Network Standard",
+      "value": "LTE-TDD:B34/38/39/40/41, FDD:B1/3/5/8"
+    },
+    {
+      "label": "Hot/Cold Start",
+      "value": "2s / 8s"
     },
     {
       "label": "Battery",
-      "value": "High-capacity non-rechargeable battery"
+      "value": "55mAh/3.7V Industrial Li-Polymer"
     },
     {
-      "label": "Mounting",
-      "value": "Strong Magnet / Screws"
-    },
-    {
-      "label": "Waterproof",
-      "value": "IP67"
+      "label": "Weight",
+      "value": "28g (Device) / 74g (Total)"
     },
     {
       "label": "Working Temp",
-      "value": "-20℃ ~ +70℃"
+      "value": "-25℃ ~ +75℃"
     }
   ],
   "downloads": [],

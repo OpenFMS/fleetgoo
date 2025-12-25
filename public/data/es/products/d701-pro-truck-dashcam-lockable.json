@@ -1,43 +1,66 @@
 {
-    "id": "d701-pro-truck-dashcam-lockable",
-    "categoryId": "4g-dashcam",
-    "title": "D701 DashCam Pro",
-    "metaTitle": "D701 DashCam Profesional para Flotas | FleetGoo",
-    "metaDesc": "Dashcam 4G D701 robusta diseñada para logística y transporte pesado, con seguridad de datos a prueba de manipulaciones.",
-    "fullDescription": "La D701 Pro está construida para las exigentes necesidades de logística y transporte pesado. Cuenta con una ranura para tarjeta SD bloqueable para seguridad de datos y admite cámaras externas adicionales para monitoreo de puntos ciegos. Su diseño robusto garantiza fiabilidad en trayectos largos.",
-    "images": [
-        "/images/products/D701-main.jpg"
-    ],
-    "features": [
-        "Ranura de almacenamiento bloqueable para prevenir manipulación",
-        "Soporte para cámaras externas laterales/traseras",
-        "Rastreo GPS avanzado con historial de rutas",
-        "Análisis de comportamiento del conductor (frenado/aceleración brusca)",
-        "Amplio rango de voltaje para compatibilidad con camiones"
-    ],
-    "parameters": [
-        {
-            "label": "Canales",
-            "value": "Soporte 2-CH / 4-CH"
-        },
-        {
-            "label": "Cámara Principal",
-            "value": "1080P Full HD"
-        },
-        {
-            "label": "Seguridad",
-            "value": "Ranura con Llave"
-        },
-        {
-            "label": "Energía",
-            "value": "9-36V DC"
-        },
-        {
-            "label": "Conectividad",
-            "value": "4G LTE / WiFi / Bluetooth"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x Unidad D701, 2x Llaves, 1x Kit de Cableado, 1x Cámara Externa (Opcional)",
-    "icon": "Video"
+  "id": "d701-pro-truck-dashcam-lockable",
+  "categoryId": "4g-dashcam",
+  "title": "DashCam 4G Pro D701",
+  "metaTitle": "DashCam Profesional para Flotas D701 | FleetGoo",
+  "metaDesc": "Dashcam 4G robusta D701 diseñada para logística y transporte pesado.",
+  "fullDescription": "Un terminal AI compacto adhesivo con cámaras duales 1080P, monitoreo panorámico de cabina, codificación H.265, posicionamiento RTK opcional, DMS y ADAS. Cumple con los estándares ministeriales chinos para la seguridad y gestión de vehículos comerciales.",
+  "images": [
+    "/images/products/D701-main.jpg"
+  ],
+  "features": [
+    "Video HD: Grabación dual 1080P, codificación H.265/H.264, cámara de cabina con IR",
+    "Posicionamiento Preciso: GPS/BeiDou/GLONASS multimodo (opcional RTK)",
+    "Seguridad Inteligente DMS: Detecta fatiga, fumar, llamadas, distracción",
+    "Seguridad Inteligente ADAS: Alertas de colisión frontal, salida de carril, peatones",
+    "Conectividad Global: 4G CAT1 (opcional CAT4), actualizaciones OTA",
+    "Energía Estable: Entrada 9-36V, protección contra cortocircuitos, consumo <2W",
+    "Certificaciones: Cumple con JT/T 794/808/1076/1078, JT/T905-2014",
+    "Funciones Extendidas: Alerta SOS un toque, app WiFi debug, geofencing"
+  ],
+  "parameters": [
+    {
+      "label": "SO/Procesador",
+      "value": "Linux / CV1812H Doble núcleo 0.5TOPS"
+    },
+    {
+      "label": "Memoria",
+      "value": "256MB RAM / 8GB EMMC"
+    },
+    {
+      "label": "Cámaras",
+      "value": "2x Internas 1080P (MIPI) + 1x Opcional 720P (AHD)"
+    },
+    {
+      "label": "Codificación",
+      "value": "H.265 / H.264 (1080P/20fps)"
+    },
+    {
+      "label": "Conectividad",
+      "value": "4G CAT1/CAT4, Opcional WiFi/Bluetooth"
+    },
+    {
+      "label": "Fuente de Energía",
+      "value": "9-36V DC (Consumo <2W)"
+    },
+    {
+      "label": "Puertos",
+      "value": "Energía BMW 8 pines, SOS, Nano SIM, TF Card"
+    },
+    {
+      "label": "Temp. Operativa",
+      "value": "-20℃ ~ +70℃"
+    },
+    {
+      "label": "Dimensiones",
+      "value": "80mm x 45mm x 30mm"
+    },
+    {
+      "label": "Peso",
+      "value": "185g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Unidad D701, 2x Llaves, 1x Kit Cableado, 1x Cámara Ext (Opcional)",
+  "icon": "Video"
 }
