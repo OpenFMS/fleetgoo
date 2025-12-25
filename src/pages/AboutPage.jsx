@@ -18,8 +18,8 @@ const AboutPage = ({ language, settings }) => {
   return (
     <>
       <SEO
-        title={data.page.metaTitle}
-        description={data.page.metaDesc}
+        title={data.metaTitle || data.page?.metaTitle}
+        description={data.metaDesc || data.page?.metaDesc}
         language={language}
         type="website"
         settings={settings}

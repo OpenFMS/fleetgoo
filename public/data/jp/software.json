@@ -1,42 +1,61 @@
 {
-  "page": {
-    "metaTitle": "SaaSフリート管理プラットフォーム",
-    "metaDesc": "高度な分析、リアルタイム追跡、モバイルアプリを備えた強力なクラウドベースのフリート管理ソフトウェア。"
-  },
-  "hero": {
-    "title": "SaaSプラットフォーム機能",
-    "subtitle": "強力な分析機能を備えた包括的なフリート管理ソフトウェア"
-  },
-  "features": [
+  "id": "software",
+  "categoryId": "product",
+  "title": "インテリジェント車両管理プラットフォーム",
+  "metaTitle": "インテリジェント車両管理プラットフォーム",
+  "metaDesc": "クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。",
+  "blocks": [
     {
-      "icon": "Cloud",
-      "title": "クラウドベースプラットフォーム",
-      "description": "安全なクラウドインフラストラクチャにより、いつでもどこでもフリートデータにアクセス可能"
+      "type": "hero",
+      "title": "オールインワン車両インテリジェンスプラットフォーム",
+      "subtitle": "完全なエコシステムで業務を統合します。強力なクラウドSaaSと直感的なモバイルアプリから、柔軟なオープンAPI連携まで、よりスマートな車両管理の意思決定のためのインフラを提供します。",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "プラットフォームを見る",
+      "ctaLink": "/jp/contact"
     },
     {
-      "icon": "BarChart3",
-      "title": "高度な分析",
-      "description": "リアルタイムの洞察、予知保全、パフォーマンスの最適化"
+      "type": "features",
+      "title": "プラットフォーム機能",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "クラウドSaaSポータル",
+          "desc": "ブラウザから車両状況の監視、ルート再生、ドライバー管理ができる集中コマンドセンター。"
+        },
+        {
+          "icon": "Smartphone",
+          "title": "モバイルエコシステム",
+          "desc": "iOSおよびAndroidネイティブアプリで、フリート管理者とドライバーが外出先でも常時接続。"
+        },
+        {
+          "icon": "Webhook",
+          "title": "オープンAPIエンジン",
+          "desc": "RESTful APIを通じて、車両データを既存のERP、CRM、またはカスタムアプリケーションとシームレスに統合。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "高度な分析",
+          "desc": "生データを実用的な洞察に変え、予知保全や燃料使用レポートを提供。"
+        },
+        {
+          "icon": "Shield",
+          "title": "エンタープライズセキュリティ",
+          "desc": "銀行レベルの暗号化（AES-256）、SSOサポート、きめ細かい役割ベースのアクセス制御（RBAC）。"
+        },
+        {
+          "icon": "MapPinned",
+          "title": "リアルタイムテレマティクス",
+          "desc": "1秒未満の更新頻度を持つ高精度GPS追跡とライブビデオストリーミングの統合。"
+        }
+      ]
     },
     {
-      "icon": "Shield",
-      "title": "エンタープライズセキュリティ",
-      "description": "銀行レベルの暗号化、ロールベースのアクセス、コンプライアンス認証"
-    },
-    {
-      "icon": "Smartphone",
-      "title": "モバイルアプリ",
-      "description": "オフライン機能を備えたドライバーおよび管理者向けのiOS/Androidアプリ"
-    },
-    {
-      "icon": "Bell",
-      "title": "スマートアラート",
-      "description": "速度超過、ジオフェンス違反、メンテナンスのカスタマイズ可能な通知"
-    },
-    {
-      "icon": "MapPinned",
-      "title": "ライブ追跡",
-      "description": "ルート履歴と位置共有を備えたリアルタイムGPS追跡"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "統合ダッシュボード：ビデオ、地図、データを一画面に表示",
+      "width": "container"
     }
   ]
 }

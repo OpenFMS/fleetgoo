@@ -2,9 +2,9 @@
     "nav": {
         "home": "Inicio",
         "products": "Productos",
-        "software": "Software",
+        "software": "Plataforma",
         "solutions": "Soluciones",
-        "about": "Nosotros",
+        "about": "Sobre Nosotros",
         "contact": "Contacto"
     },
     "contactInfo": {
@@ -13,15 +13,15 @@
         "phone": "+86 150-138-15400"
     },
     "footer": {
-        "companyDescription": "Proveedor líder de soluciones inteligentes de rastreo de vehículos y gestión de flotas.",
+        "companyDescription": "Proveedor líder de soluciones inteligentes de seguimiento de vehículos y gestión de flotas.",
         "sections": {
             "products": {
                 "title": "Productos",
                 "links": [
+                    "Plataforma de Gestión de Flotas",
                     "Rastreador GPS",
                     "Dashcam 4G",
-                    "Sistema MDVR",
-                    "Pantalla Inteligente"
+                    "Sistema MDVR"
                 ]
             },
             "solutions": {
@@ -29,14 +29,14 @@
                 "links": [
                     "Logística",
                     "Construcción",
-                    "Entrega",
+                    "Reparto",
                     "Corporativo"
                 ]
             },
             "company": {
-                "title": "Empresa",
+                "title": "Compañía",
                 "links": [
-                    "Nosotros",
+                    "Sobre Nosotros",
                     "Carreras",
                     "Socios",
                     "Blog"
@@ -46,7 +46,7 @@
                 "title": "Soporte",
                 "links": [
                     "Documentación",
-                    "FAQ",
+                    "Preguntas Frecuentes",
                     "Contacto",
                     "Descargas"
                 ]

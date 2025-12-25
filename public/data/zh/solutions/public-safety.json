@@ -1,66 +1,140 @@
 {
     "id": "public-safety",
-    "categoryId": "government",
-    "title": "公共安全车队管理",
-    "summary": "通过实时跟踪确保警察、消防和救护服务的快速响应和责任追究。",
-    "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
-    "color": "blue",
-    "overview": {
-        "title": "概述",
-        "content": "这种综合解决方案利用尖端 IoT 技术和数据分析来变革运营，提高安全标准并显著降低管理成本。"
-    },
-    "challenge": {
-        "title": "挑战",
-        "description": "在快速发展的公共安全领域，运营商面临着越来越大的压力，既要提高效率，又要保持严格的安全标准。",
-        "points": [
-            "运营低效",
-            "安全盲点",
-            "燃料成本上升",
-            "合规风险"
-        ]
-    },
-    "solution": {
-        "title": "我们的智能解决方案",
-        "description": "FleetGoo 通过将硬件传感器与基于云的管理平台集成，引入了一种整体方法。",
-        "features": [
-            {
-                "title": "实时遥测",
-                "description": "高频数据传输，确保位置、速度和状态始终是最新的。"
-            },
-            {
-                "title": "AI 驱动的洞察",
-                "description": "机器学习算法可以在故障发生前预测维护需求。"
-            },
-            {
-                "title": "自动化合规",
-                "description": "数字日志和自动报告，轻松满足监管要求。"
-            },
-            {
-                "title": "无缝集成",
-                "description": "开放 API 架构，允许与现有的 ERP 和人力资源软件轻松连接。"
-            }
-        ]
-    },
-    "results": {
-        "title": "关键结果",
-        "description": "实施我们解决方案的组织报告称，在部署的第一个季度内即有显著改善。",
-        "stats": [
-            {
-                "value": "35%",
-                "label": "成本降低"
-            },
-            {
-                "value": "99.9%",
-                "label": "运行时间"
-            },
-            {
-                "value": "2x",
-                "label": "效率"
-            }
-        ]
-    },
-    "meta": {
-        "author": "FleetGoo 团队",
-        "date": "2024年12月12日"
-    }
+    "categoryId": "industry",
+    "title": "公共安全车队解决方案",
+    "metaTitle": "公共安全与警用车辆管理系统",
+    "metaDesc": "利用AI行车记录仪、实时GPS追踪和取证级视频检索，提升应急响应速度并保障警员安全。",
+    "image": "",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "关键任务型车队智能",
+            "subtitle": "赋予指挥中心实时态势感知能力。从巡逻车到救护车，利用我们的AI驱动车队管理系统，确保分秒必争。",
+            "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+            "ctaText": "联系销售",
+            "ctaLink": "/zh/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "应急响应中的挑战",
+            "items": [
+                {
+                    "title": "缺乏实时可视性",
+                    "desc": "由于传统无线电调度的局限，指挥中心在关键事件期间往往无法掌握车辆的确切位置和状态。"
+                },
+                {
+                    "title": "视频证据管理",
+                    "desc": "从SD卡手动检索行车记录仪视频效率低下，容易导致数据丢失，且难以保证证据链的完整性。"
+                },
+                {
+                    "title": "警员与驾驶员安全",
+                    "desc": "高速追逐和长时间轮班增加了事故风险。如果没有ADAS/DMS辅助，微小的分心都可能导致严重碰撞。"
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/company/company-main.png",
+            "caption": "FleetGoo端到端公共安全架构：从车载传感器到云端指挥中心。",
+            "width": "full"
+        },
+        {
+            "type": "features",
+            "title": "核心能力",
+            "layout": "grid",
+            "items": [
+                {
+                    "title": "实时视频流",
+                    "desc": "通过4G LTE网络实时传输多达4路高清车载视频。让指挥中心即刻看到警员所见。"
+                },
+                {
+                    "title": "证据锁定",
+                    "desc": "当警报拉响或发生碰撞时，自动上传视频片段至云端，确保关键证据永不丢失。"
+                },
+                {
+                    "title": "精准GPS调度",
+                    "desc": "以亚米级精度识别距离事故最近的可用车辆，显著缩短响应时间。"
+                },
+                {
+                    "title": "驾驶行为分析",
+                    "desc": "监控急刹车、急转弯和超速等行为。利用数据培训警员进行更安全的紧急驾驶。"
+                },
+                {
+                    "title": "双向语音对讲",
+                    "desc": "实现调度中心与车舱之间的直接语音通信，独立于传统无线电频率，沟通更高效。"
+                },
+                {
+                    "title": "车辆健康监控",
+                    "desc": "连接车辆CAN总线(OBDII)，远程监控引擎健康状况、油量和电池状态，预防故障。"
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "value": "40%",
+                    "label": "更快的响应时间"
+                },
+                {
+                    "value": "99.9%",
+                    "label": "运行可靠性"
+                },
+                {
+                    "value": "-25%",
+                    "label": "事故率降低"
+                },
+                {
+                    "value": "24/7",
+                    "label": "全天候录制"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "方案亮点",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "AI防碰撞系统 (ADAS)",
+                    "desc": "我们先进的Mobileye兼容ADAS系统时刻扫描前方道路。它能实时警告驾驶员潜在的前向碰撞、车道偏离和行人风险，为他们争取宝贵的反应时间。",
+                    "image": "/images/products/d510-main.png"
+                },
+                {
+                    "title": "安全的证据链",
+                    "desc": "视频文件从采集的那一刻起即加水印并加密。我们的云平台保留严格的访问和下载审计日志，确保视频在法庭上的可采纳性。",
+                    "image": "/images/products/d901-main.png"
+                },
+                {
+                    "title": "6通道智能显示器",
+                    "desc": "高性能AI智能显示终端，支持盲区监测与全景影像，有效解决燃油盗窃和货物损失问题。",
+                    "image": "/images/products/d901-main.png"
+                }
+            ]
+        },
+        {
+            "type": "product_list",
+            "title": "推荐硬件配置",
+            "productIds": [
+                "mdvr-4ch",
+                "dsm-camera",
+                "body-cam"
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "准备好实现车队现代化了吗？",
+            "buttonText": "获取定制报价",
+            "link": "/zh/contact"
+        },
+        {
+            "type": "media",
+            "mediaType": "video",
+            "url": "https://www.youtube.com/watch?v=0e3GPea1Tyg",
+            "caption": "现实版鱿鱼游戏，坚持到最后赢得456,000美元",
+            "width": "container"
+        }
+    ]
 }

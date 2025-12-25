@@ -2,7 +2,7 @@
     "nav": {
         "home": "Home",
         "products": "Products",
-        "software": "Software",
+        "software": "Platform",
         "solutions": "Solutions",
         "about": "About Us",
         "contact": "Contact"
@@ -18,10 +18,10 @@
             "products": {
                 "title": "Products",
                 "links": [
+                    "Fleet Management Platform",
                     "GPS Tracker",
                     "4G Dashcam",
-                    "MDVR System",
-                    "Smart Display"
+                    "MDVR System"
                 ]
             },
             "solutions": {

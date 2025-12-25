@@ -1,66 +1,140 @@
 {
     "id": "public-safety",
-    "categoryId": "government",
-    "title": "公共安全车队管理",
-    "summary": "通过实时跟踪确保警察、消防和救护服务的快速响应和责任追究。",
-    "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
-    "color": "blue",
-    "overview": {
-        "title": "概述",
-        "content": "这种综合解决方案利用尖端 IoT 技术和数据分析来变革运营，提高安全标准并显著降低管理成本。"
-    },
-    "challenge": {
-        "title": "挑战",
-        "description": "在快速发展的公共安全领域，运营商面临着越来越大的压力，既要提高效率，又要保持严格的安全标准。",
-        "points": [
-            "运营低效",
-            "安全盲点",
-            "燃料成本上升",
-            "合规风险"
-        ]
-    },
-    "solution": {
-        "title": "我们的智能解决方案",
-        "description": "FleetGoo 通过将硬件传感器与基于云的管理平台集成，引入了一种整体方法。",
-        "features": [
-            {
-                "title": "实时遥测",
-                "description": "高频数据传输，确保位置、速度和状态始终是最新的。"
-            },
-            {
-                "title": "AI 驱动的洞察",
-                "description": "机器学习算法可以在故障发生前预测维护需求。"
-            },
-            {
-                "title": "自动化合规",
-                "description": "数字日志和自动报告，轻松满足监管要求。"
-            },
-            {
-                "title": "无缝集成",
-                "description": "开放 API 架构，允许与现有的 ERP 和人力资源软件轻松连接。"
-            }
-        ]
-    },
-    "results": {
-        "title": "关键结果",
-        "description": "实施我们解决方案的组织报告称，在部署的第一个季度内即有显著改善。",
-        "stats": [
-            {
-                "value": "35%",
-                "label": "成本降低"
-            },
-            {
-                "value": "99.9%",
-                "label": "运行时间"
-            },
-            {
-                "value": "2x",
-                "label": "效率"
-            }
-        ]
-    },
-    "meta": {
-        "author": "FleetGoo 团队",
-        "date": "2024年12月12日"
-    }
+    "categoryId": "industry",
+    "title": "公共安全車両ソリューション",
+    "metaTitle": "警察・公共安全向け車両管理システム",
+    "metaDesc": "AI搭載ドライブレコーダー、リアルタイムGPS追跡、証拠グレードのビデオ検索により、緊急対応時間を短縮し、警察官の安全を強化します。",
+    "image": "",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "ミッションクリティカルな車両インテリジェンス",
+            "subtitle": "指令センターにリアルタイムの状況認識能力を提供します。パトカーから救急車まで、AI駆動の車両管理システムで一分一秒を無駄にしません。",
+            "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+            "ctaText": "営業に問い合わせる",
+            "ctaLink": "/jp/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "緊急対応における課題",
+            "items": [
+                {
+                    "title": "リアルタイムの可視性の欠如",
+                    "desc": "従来の無線配車では、重大な事件の最中に指令センターが部隊の正確な位置や状況を把握できません。"
+                },
+                {
+                    "title": "ビデオ証拠管理",
+                    "desc": "SDカードからドライブレコーダーの映像を手動で回収するのは時間がかかり、データ紛失のリスクがあり、証拠保全の連鎖（Chain of Custody）が途切れてしまいます。"
+                },
+                {
+                    "title": "警察官とドライバーの安全",
+                    "desc": "高速追跡や長時間勤務は事故のリスクを高めます。ADAS/DMSがなければ、些細な不注意が重大な衝突につながる可能性があります。"
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/company/company-main.png",
+            "caption": "FleetGooのエンドツーエンド公共安全アーキテクチャ：車両センサーからクラウド指令センターまで。",
+            "width": "full"
+        },
+        {
+            "type": "features",
+            "title": "コア機能",
+            "layout": "grid",
+            "items": [
+                {
+                    "title": "ライブビデオストリーミング",
+                    "desc": "4G LTE経由で、あらゆる車両から最大4チャンネルのHDビデオをリアルタイムでストリーミング。現場の状況を即座に確認できます。"
+                },
+                {
+                    "title": "証拠ロック",
+                    "desc": "サイレンが作動した際にビデオクリップを自動的にクラウドへアップロードし、重要な証拠が決して失われないようにします。"
+                },
+                {
+                    "title": "高精度GPS配車",
+                    "desc": "サブメートル級の精度で事件現場に最も近い利用可能な車両を特定し、応答時間を大幅に短縮します。"
+                },
+                {
+                    "title": "運転行動分析",
+                    "desc": "急ブレーキ、急ハンドル、スピード違反を監視。データを使用して、より安全な緊急走行のためのトレーニングを行います。"
+                },
+                {
+                    "title": "双方向音声通話",
+                    "desc": "指令センターと車内間で、無線周波数に依存しない直接的な音声通信を実現します。"
+                },
+                {
+                    "title": "ヘルスモニタリング",
+                    "desc": "車両のCANバス（OBDII）に接続し、エンジンの状態、燃料レベル、バッテリー状態をリモートで監視します。"
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "value": "40%",
+                    "label": "応答時間の短縮"
+                },
+                {
+                    "value": "99.9%",
+                    "label": "稼働率の信頼性"
+                },
+                {
+                    "value": "-25%",
+                    "label": "事故率の削減"
+                },
+                {
+                    "value": "24/7",
+                    "label": "常時録画"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "ソリューションのハイライト",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "AI搭載衝突回避（ADAS）",
+                    "desc": "当社の高度なMobileye互換ADASシステムは前方の道路をスキャンします。前方衝突、車線逸脱、歩行者の可能性をリアルタイムでドライバーに警告し、反応するための貴重な秒数を提供します。",
+                    "image": "/images/products/d510-main.png"
+                },
+                {
+                    "title": "安全な証拠保全",
+                    "desc": "ビデオファイルは撮影された瞬間から透かしが入り、暗号化されます。当社のクラウドプラットフォームは、誰が映像にアクセスまたはダウンロードしたかの厳格な監査ログを保持し、法廷での証拠能力を保証します。",
+                    "image": "/images/products/d901-main.png"
+                },
+                {
+                    "title": "6チャンネルスマートディスプレイ",
+                    "desc": "高性能AIディスプレイ端末により、燃料盗難や貨物損失の問題を完璧に解決します。",
+                    "image": "/images/products/d901-main.png"
+                }
+            ]
+        },
+        {
+            "type": "product_list",
+            "title": "推奨ハードウェア構成",
+            "productIds": [
+                "mdvr-4ch",
+                "dsm-camera",
+                "body-cam"
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "フリートの近代化を始めませんか？",
+            "buttonText": "見積もりを依頼する",
+            "link": "/jp/contact"
+        },
+        {
+            "type": "media",
+            "mediaType": "video",
+            "url": "https://www.youtube.com/watch?v=0e3GPea1Tyg",
+            "caption": "リアル版イカゲーム、最後まで勝ち残って456,000ドルを獲得",
+            "width": "container"
+        }
+    ]
 }

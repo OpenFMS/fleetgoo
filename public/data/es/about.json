@@ -1,51 +1,71 @@
 {
-  "page": {
-    "metaTitle": "Sobre Nosotros",
-    "metaDesc": "Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software."
-  },
-  "hero": {
-    "title": "Sobre FleetGoo",
-    "subtitle": "Liderando el futuro de la gestión inteligente de flotas",
-    "description": "Con más de una década de experiencia en tecnología de rastreo de vehículos, ofrecemos soluciones de hardware y software de vanguardia a empresas de todo el mundo. Nuestra misión es empoderar a los operadores de flotas con información en tiempo real, análisis avanzados y una fiabilidad inigualable."
-  },
-  "stats": [
+  "id": "about",
+  "metaTitle": "Sobre Nosotros",
+  "metaDesc": "Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software.",
+  "blocks": [
     {
-      "label": "Dispositivos Activos",
-      "value": "700K+"
+      "type": "hero",
+      "title": "Sobre FleetGoo",
+      "subtitle": "Liderando el futuro de la gestión inteligente de flotas. Con más de una década de experiencia en tecnología de seguimiento de vehículos, ofrecemos soluciones de hardware y software de vanguardia a empresas de todo el mundo.",
+      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "Únase a Nuestra Red de Socios",
+      "ctaLink": "/es/contact"
     },
     {
-      "label": "Países Servidos",
-      "value": "100+"
+      "type": "stats",
+      "background": "default",
+      "items": [
+        {
+          "label": "Dispositivos Activos",
+          "value": "700K+"
+        },
+        {
+          "label": "Países Servidos",
+          "value": "100+"
+        },
+        {
+          "label": "Satisfacción del Cliente",
+          "value": "99.99%"
+        },
+        {
+          "label": "Garantía de Tiempo de Actividad",
+          "value": "99.9%"
+        }
+      ]
     },
     {
-      "label": "Satisfacción del Cliente",
-      "value": "99.99%"
+      "type": "features",
+      "title": "Nuestros Valores Fundamentales",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Award",
+          "title": "Excelencia en la Industria",
+          "desc": "Tecnología galardonada reconocida mundialmente por su innovación y confiabilidad."
+        },
+        {
+          "icon": "Users2",
+          "title": "El Cliente Primero",
+          "desc": "Soporte multilingüe 24/7 y un equipo de servicio dedicado comprometido con su éxito."
+        },
+        {
+          "icon": "Globe2",
+          "title": "Alcance Global",
+          "desc": "Sirviendo a clientes en más de 85 países con soluciones y soporte localizados."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Innovación",
+          "desc": "Inversión continua en I+D asegurando que nuestros productos se mantengan por delante de las tendencias del mercado."
+        }
+      ]
     },
     {
-      "label": "Garantía de Tiempo de Actividad",
-      "value": "99.9%"
-    }
-  ],
-  "values": [
-    {
-      "icon": "Award",
-      "title": "Excelencia Industrial",
-      "description": "Tecnología galardonada reconocida mundialmente"
-    },
-    {
-      "icon": "Users2",
-      "title": "Cliente Primero",
-      "description": "Soporte y servicio multilingüe 24/7"
-    },
-    {
-      "icon": "Globe2",
-      "title": "Alcance Global",
-      "description": "Sirviendo a clientes en más de 85 países"
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "Innovación",
-      "description": "I+D continuo y mejora de productos"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "caption": "Nuestro equipo dedicado trabajando juntos para resolver desafíos complejos de flotas.",
+      "width": "container"
     }
   ]
 }

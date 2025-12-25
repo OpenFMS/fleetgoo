@@ -1,54 +1,54 @@
 {
     "nav": {
         "home": "首页",
-        "products": "产品",
-        "software": "软件",
+        "products": "产品中心",
+        "software": "平台软件",
         "solutions": "解决方案",
         "about": "关于我们",
-        "contact": "联系"
+        "contact": "联系我们"
     },
     "contactInfo": {
-        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "address": "深圳市南山区南海大道3027号创意大厦6楼",
         "email": "sales@fleetgoo.com",
         "phone": "+86 150-138-15400"
     },
     "footer": {
-        "companyDescription": "智能车辆追踪和车队管理解决方案的领先供应商。",
+        "companyDescription": "智能车辆追踪和车队管理解决方案的领先提供商。",
         "sections": {
             "products": {
-                "title": "产品",
+                "title": "产品中心",
                 "links": [
+                    "车队管理平台",
                     "GPS追踪器",
                     "4G行车记录仪",
-                    "MDVR系统",
-                    "智能显示屏"
+                    "车载监控系统"
                 ]
             },
             "solutions": {
                 "title": "解决方案",
                 "links": [
-                    "物流",
-                    "建筑",
-                    "配送",
-                    "企业"
+                    "物流运输",
+                    "工程建设",
+                    "即时配送",
+                    "企业车队"
                 ]
             },
             "company": {
-                "title": "公司",
+                "title": "关于公司",
                 "links": [
                     "关于我们",
-                    "职业",
+                    "招贤纳士",
                     "合作伙伴",
-                    "博客"
+                    "博客动态"
                 ]
             },
             "support": {
-                "title": "支持",
+                "title": "客户支持",
                 "links": [
-                    "文档",
+                    "技术文档",
                     "常见问题",
-                    "联系",
-                    "下载"
+                    "联系我们",
+                    "下载中心"
                 ]
             }
         },

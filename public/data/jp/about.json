@@ -1,51 +1,71 @@
 {
-  "page": {
-    "metaTitle": "会社概要",
-    "metaDesc": "革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントなフリート管理の未来をリードする私たちの使命についてご紹介します。"
-  },
-  "hero": {
-    "title": "FleetGooについて",
-    "subtitle": "インテリジェントなフリート管理の未来をリードする",
-    "description": "車両追跡技術における10年以上の専門知識を活かし、世界中の企業に最先端のハードウェアおよびソフトウェアソリューションを提供しています。私たちの使命は、リアルタイムの洞察、高度な分析、そして比類のない信頼性でフリート運営者を支援することです。"
-  },
-  "stats": [
+  "id": "about",
+  "metaTitle": "会社概要",
+  "metaDesc": "革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントな車両管理の未来をリードする私たちの使命について。",
+  "blocks": [
     {
-      "label": "アクティブデバイス",
-      "value": "700K+"
+      "type": "hero",
+      "title": "FleetGooについて",
+      "subtitle": "インテリジェントな車両管理の未来をリードします。車両追跡技術における10年以上の専門知識を持ち、世界中の企業に最先端のハードウェアとソフトウェアソリューションを提供しています。",
+      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "パートナーネットワークに参加",
+      "ctaLink": "/jp/contact"
     },
     {
-      "label": "サービス提供国",
-      "value": "100+"
+      "type": "stats",
+      "background": "default",
+      "items": [
+        {
+          "label": "アクティブデバイス",
+          "value": "700K+"
+        },
+        {
+          "label": "サービス提供国",
+          "value": "100+"
+        },
+        {
+          "label": "顧客満足度",
+          "value": "99.99%"
+        },
+        {
+          "label": "稼働率保証",
+          "value": "99.9%"
+        }
+      ]
     },
     {
-      "label": "顧客満足度",
-      "value": "99.99%"
+      "type": "features",
+      "title": "私たちのコアバリュー",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Award",
+          "title": "業界の卓越性",
+          "desc": "革新性と信頼性で世界的に認められた受賞歴のある技術。"
+        },
+        {
+          "icon": "Users2",
+          "title": "顧客第一",
+          "desc": "24時間365日の多言語サポートと、お客様の成功にコミットする専任サービスチーム。"
+        },
+        {
+          "icon": "Globe2",
+          "title": "グローバル展開",
+          "desc": "85カ国以上のお客様に、ローカライズされたソリューションとサポートを提供。"
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "イノベーション",
+          "desc": "製品が市場トレンドを先取りし続けるための継続的な研究開発投資。"
+        }
+      ]
     },
     {
-      "label": "稼働率保証",
-      "value": "99.9%"
-    }
-  ],
-  "values": [
-    {
-      "icon": "Award",
-      "title": "業界での卓越性",
-      "description": "世界的に認められた受賞歴のある技術"
-    },
-    {
-      "icon": "Users2",
-      "title": "顧客第一",
-      "description": "24時間365日の多言語サポートとサービス"
-    },
-    {
-      "icon": "Globe2",
-      "title": "グローバル展開",
-      "description": "85カ国以上のお客様にサービスを提供"
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "イノベーション",
-      "description": "継続的な研究開発と製品強化"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "caption": "複雑な車両管理の課題を解決するために協力する専任チーム。",
+      "width": "container"
     }
   ]
 }

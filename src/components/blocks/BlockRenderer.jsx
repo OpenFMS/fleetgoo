@@ -1,6 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, AlertTriangle, LayoutTemplate, MapPin, Video, CheckCircle2, Package, Users, Image as ImageIcon } from 'lucide-react';
+import {
+    ArrowRight, AlertTriangle, LayoutTemplate, MapPin, Video, CheckCircle2,
+    Package, Users, Image as ImageIcon,
+    Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, // Software page
+    Award, Users2, Globe2, TrendingUp, // About page
+    Webhook // API feature
+} from 'lucide-react';
+
+const iconMap = {
+    Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, CheckCircle2,
+    Award, Users2, Globe2, TrendingUp, Webhook
+};
 import { Link } from 'react-router-dom';
 
 /* --- 1. Hero Block --- */
@@ -178,7 +189,10 @@ const FeatureGridBlock = ({ data }) => {
                     {data.items?.map((item, idx) => (
                         <div key={idx} className="bg-slate-50 dark:bg-slate-900 p-8 rounded-2xl border border-slate-100 dark:border-slate-800">
                             <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center text-blue-600 mb-6">
-                                <CheckCircle2 className="w-6 h-6" />
+                                {(() => {
+                                    const IconComponent = item.icon && iconMap[item.icon] ? iconMap[item.icon] : CheckCircle2;
+                                    return <IconComponent className="w-6 h-6" />;
+                                })()}
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">{item.title}</h3>
                             <p className="text-slate-600 dark:text-slate-400">{item.desc}</p>

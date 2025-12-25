@@ -1,42 +1,61 @@
 {
-  "page": {
-    "metaTitle": "Plataforma de Gestión de Flotas SaaS",
-    "metaDesc": "Potente software de gestión de flotas basado en la nube con análisis avanzados, seguimiento en tiempo real y aplicaciones móviles."
-  },
-  "hero": {
-    "title": "Características de la Plataforma SaaS",
-    "subtitle": "Software integral de gestión de flotas con análisis potentes"
-  },
-  "features": [
+  "id": "software",
+  "categoryId": "product",
+  "title": "Plataforma Inteligente de Gestión de Flotas",
+  "metaTitle": "Plataforma Inteligente de Gestión de Flotas",
+  "metaDesc": "Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.",
+  "blocks": [
     {
-      "icon": "Cloud",
-      "title": "Plataforma Basada en la Nube",
-      "description": "Acceda a los datos de su flota en cualquier momento y lugar con nuestra infraestructura segura en la nube"
+      "type": "hero",
+      "title": "La Plataforma de Inteligencia de Flotas Todo en Uno",
+      "subtitle": "Unifique sus operaciones con un ecosistema completo. Desde nuestro potente SaaS en la nube y aplicaciones móviles intuitivas hasta integraciones flexibles de API abierta: proporcionamos la infraestructura para decisiones de flota más inteligentes.",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "Explorar la Plataforma",
+      "ctaLink": "/es/contact"
     },
     {
-      "icon": "BarChart3",
-      "title": "Análisis Avanzados",
-      "description": "Información en tiempo real, mantenimiento predictivo y optimización del rendimiento"
+      "type": "features",
+      "title": "Capacidades de la Plataforma",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "Portal SaaS en la Nube",
+          "desc": "Centro de comando centralizado para monitorear el estado de la flota, reproducir rutas y gestionar conductores desde cualquier navegador."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Ecosistema Móvil",
+          "desc": "Aplicaciones nativas de iOS y Android que permiten a los gestores de flotas y conductores mantenerse conectados sobre la marcha."
+        },
+        {
+          "icon": "Webhook",
+          "title": "Motor de API Abierta",
+          "desc": "Integre perfectamente los datos de la flota con su ERP, CRM o aplicaciones personalizadas existentes a través de nuestra API RESTful."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Analítica Avanzada",
+          "desc": "Transforme los datos brutos en información procesable con mantenimiento predictivo e informes de uso de combustible."
+        },
+        {
+          "icon": "Shield",
+          "title": "Seguridad Empresarial",
+          "desc": "Cifrado de nivel bancario (AES-256), soporte SSO y control de acceso basado en roles (RBAC) granular."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Telemática en Tiempo Real",
+          "desc": "Seguimiento GPS de alta precisión con actualizaciones inferiores al segundo e integración de transmisión de video en vivo."
+        }
+      ]
     },
     {
-      "icon": "Shield",
-      "title": "Seguridad Empresarial",
-      "description": "Cifrado de nivel bancario, acceso basado en roles y certificaciones de cumplimiento"
-    },
-    {
-      "icon": "Smartphone",
-      "title": "Aplicaciones Móviles",
-      "description": "Apps iOS y Android para conductores y gestores con capacidad offline"
-    },
-    {
-      "icon": "Bell",
-      "title": "Alertas Inteligentes",
-      "description": "Notificaciones personalizables por exceso de velocidad, violaciones de geocercas y mantenimiento"
-    },
-    {
-      "icon": "MapPinned",
-      "title": "Seguimiento en Vivo",
-      "description": "Seguimiento GPS en tiempo real con historial de rutas y uso compartido de ubicación"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "Panel Unificado: Video, Mapa y Datos en una Vista",
+      "width": "container"
     }
   ]
 }

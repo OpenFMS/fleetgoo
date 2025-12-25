@@ -1,42 +1,61 @@
 {
-  "page": {
-    "metaTitle": "SaaS 车队管理平台",
-    "metaDesc": "功能强大的云端车队管理软件，提供高级分析、实时追踪和移动应用。"
-  },
-  "hero": {
-    "title": "SaaS 平台特性",
-    "subtitle": "具有强大分析功能的综合车队管理软件"
-  },
-  "features": [
+  "id": "software",
+  "categoryId": "product",
+  "title": "智能车队管理平台",
+  "metaTitle": "智能车队管理平台",
+  "metaDesc": "集成了云端SaaS、移动应用和开放API的企业级车队管理平台，提供全面的运营可视性。",
+  "blocks": [
     {
-      "icon": "Cloud",
-      "title": "云端平台",
-      "description": "通过我们安全的云基础设施，随时随地访问您的车队数据"
+      "type": "hero",
+      "title": "一体化车队智能平台",
+      "subtitle": "打造完整的运营生态系统。从强大的云SaaS和直观的移动应用，到灵活的开放API集成——我们为更明智的车队决策提供基础设施。",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "探索平台",
+      "ctaLink": "/zh/contact"
     },
     {
-      "icon": "BarChart3",
-      "title": "高级分析",
-      "description": "实时洞察、预测性维护和性能优化"
+      "type": "features",
+      "title": "平台核心能力",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "云端SaaS门户",
+          "desc": "集中式指挥中心，随时随地监控车队状态、回放轨迹并管理司机。"
+        },
+        {
+          "icon": "Smartphone",
+          "title": "移动生态系统",
+          "desc": "原生iOS和Android应用，通过移动端赋能车队管理者和司机保持实时互联。"
+        },
+        {
+          "icon": "Webhook",
+          "title": "开放API引擎",
+          "desc": "通过RESTful API将车队数据无缝集成到您现有的ERP、CRM或定制应用中。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "高级数据分析",
+          "desc": "将原始数据转化为可执行的洞察，提供预测性维护和燃油使用报告。"
+        },
+        {
+          "icon": "Shield",
+          "title": "企业级安全",
+          "desc": "银行级加密(AES-256)，支持SSO单点登录和细粒度的基于角色的访问控制(RBAC)。"
+        },
+        {
+          "icon": "MapPinned",
+          "title": "实时远程通信",
+          "desc": "亚秒级更新的高精度GPS追踪，集成实时视频流传输。"
+        }
+      ]
     },
     {
-      "icon": "Shield",
-      "title": "企业级安全",
-      "description": "银行级加密、基于角色的访问控制和合规认证"
-    },
-    {
-      "icon": "Smartphone",
-      "title": "移动应用",
-      "description": "适用于司机和管理者的 iOS 和 Android 应用，支持离线功能"
-    },
-    {
-      "icon": "Bell",
-      "title": "智能报警",
-      "description": "针对超速、电子围栏违规和维护保养的可定制通知"
-    },
-    {
-      "icon": "MapPinned",
-      "title": "实时追踪",
-      "description": "带有轨迹回放和位置共享功能的实时 GPS 追踪"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "统一控制面板：视频、地图和数据一览无余",
+      "width": "container"
     }
   ]
 }

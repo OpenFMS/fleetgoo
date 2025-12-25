@@ -1,42 +1,61 @@
 {
-  "page": {
-    "metaTitle": "SaaS Fleet Management Platform",
-    "metaDesc": "Powerful cloud-based fleet management software with advanced analytics, real-time tracking, and mobile apps."
-  },
-  "hero": {
-    "title": "SaaS Platform Features",
-    "subtitle": "Comprehensive fleet management software with powerful analytics"
-  },
-  "features": [
+  "id": "software",
+  "categoryId": "product",
+  "title": "Intelligent Fleet Management Platform",
+  "metaTitle": "Intelligent Fleet Management Platform",
+  "metaDesc": "Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.",
+  "blocks": [
     {
-      "icon": "Cloud",
-      "title": "Cloud-Based Platform",
-      "description": "Access your fleet data anytime, anywhere with our secure cloud infrastructure"
+      "type": "hero",
+      "title": "The All-In-One Fleet Intelligence Platform",
+      "subtitle": "Unify your operations with a complete ecosystem. From our powerful Cloud SaaS and intuitive Mobile Apps to flexible Open API integrations—we provide the infrastructure for smarter fleet decisions.",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "Explore the Platform",
+      "ctaLink": "/en/contact"
     },
     {
-      "icon": "BarChart3",
-      "title": "Advanced Analytics",
-      "description": "Real-time insights, predictive maintenance, and performance optimization"
+      "type": "features",
+      "title": "Platform Capabilities",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "Cloud SaaS Portal",
+          "desc": "Centralized command center to monitor fleet status, replay routes, and manage drivers from any browser."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile Ecosystem",
+          "desc": "Native iOS and Android apps empowering fleet managers and drivers to stay connected on the go."
+        },
+        {
+          "icon": "Webhook",
+          "title": "Open API Engine",
+          "desc": "Seamlessly integrate fleet data with your existing ERP, CRM, or custom applications via our RESTful API."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Advanced Analytics",
+          "desc": "Transform raw data into actionable insights with predictive maintenance and fuel usage reports."
+        },
+        {
+          "icon": "Shield",
+          "title": "Enterprise Security",
+          "desc": "Bank-level encryption (AES-256), SSO support, and granular role-based access control (RBAC)."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Real-Time Telematics",
+          "desc": "High-precision GPS tracking with sub-second updates and live video streaming integration."
+        }
+      ]
     },
     {
-      "icon": "Shield",
-      "title": "Enterprise Security",
-      "description": "Bank-level encryption, role-based access, and compliance certifications"
-    },
-    {
-      "icon": "Smartphone",
-      "title": "Mobile Apps",
-      "description": "iOS and Android apps for drivers and managers with offline capability"
-    },
-    {
-      "icon": "Bell",
-      "title": "Smart Alerts",
-      "description": "Customizable notifications for speeding, geofence violations, and maintenance"
-    },
-    {
-      "icon": "MapPinned",
-      "title": "Live Tracking",
-      "description": "Real-time GPS tracking with route history and location sharing"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "Unified Dashboard: Video, Map, and Data in One View",
+      "width": "container"
     }
   ]
 }

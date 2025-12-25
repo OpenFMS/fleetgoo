@@ -1,51 +1,71 @@
 {
-  "page": {
-    "metaTitle": "About Us",
-    "metaDesc": "Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions."
-  },
-  "hero": {
-    "title": "About FleetGoo",
-    "subtitle": "Leading the future of intelligent fleet management",
-    "description": "With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide. Our mission is to empower fleet operators with real-time insights, advanced analytics, and unparalleled reliability."
-  },
-  "stats": [
+  "id": "about",
+  "metaTitle": "About Us",
+  "metaDesc": "Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.",
+  "blocks": [
     {
-      "label": "Active Devices",
-      "value": "700K+"
+      "type": "hero",
+      "title": "About FleetGoo",
+      "subtitle": "Leading the future of intelligent fleet management. With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide.",
+      "backgroundImage": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "Join Our Partner Network",
+      "ctaLink": "/en/contact"
     },
     {
-      "label": "Countries Served",
-      "value": "100+"
+      "type": "stats",
+      "background": "default",
+      "items": [
+        {
+          "label": "Active Devices",
+          "value": "700K+"
+        },
+        {
+          "label": "Countries Served",
+          "value": "100+"
+        },
+        {
+          "label": "Customer Satisfaction",
+          "value": "99.99%"
+        },
+        {
+          "label": "Uptime Guarantee",
+          "value": "99.9%"
+        }
+      ]
     },
     {
-      "label": "Customer Satisfaction",
-      "value": "99.99%"
+      "type": "features",
+      "title": "Our Core Values",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Award",
+          "title": "Industry Excellence",
+          "desc": "Award-winning technology recognized globally for innovation and reliability."
+        },
+        {
+          "icon": "Users2",
+          "title": "Customer First",
+          "desc": "24/7 multilingual support and a dedicated service team committed to your success."
+        },
+        {
+          "icon": "Globe2",
+          "title": "Global Reach",
+          "desc": "Serving customers in over 85 countries with localized solutions and support."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Innovation",
+          "desc": "Continuous R&D investment ensuring our products stay ahead of market trends."
+        }
+      ]
     },
     {
-      "label": "Uptime Guarantee",
-      "value": "99.9%"
-    }
-  ],
-  "values": [
-    {
-      "icon": "Award",
-      "title": "Industry Excellence",
-      "description": "Award-winning technology recognized globally"
-    },
-    {
-      "icon": "Users2",
-      "title": "Customer First",
-      "description": "24/7 multilingual support and service"
-    },
-    {
-      "icon": "Globe2",
-      "title": "Global Reach",
-      "description": "Serving customers in over 85 countries"
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "Innovation",
-      "description": "Continuous R&D and product enhancement"
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "caption": "Our dedicated team working together to solve complex fleet challenges.",
+      "width": "container"
     }
   ]
 }

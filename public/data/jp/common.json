@@ -1,59 +1,59 @@
 {
-  "nav": {
-    "home": "ホーム",
-    "products": "製品",
-    "software": "ソフトウェア",
-    "solutions": "ソリューション",
-    "about": "私たちについて",
-    "contact": "連絡"
-  },
-  "languages": {
-    "en": "English",
-    "es": "Español",
-    "zh": "中文"
-  },
-  "footer": {
-    "companyDescription": "スマート車両追跡およびフリート管理ソリューションの主要サプライヤー。",
-    "sections": {
-      "products": {
-        "title": "製品",
-        "links": [
-          "GPS追踪器",
-          "4G行车记录仪",
-          "MDVR系统",
-          "智能显示屏"
-        ]
-      },
-      "solutions": {
-        "title": "ソリューション",
-        "links": [
-          "物流",
-          "建筑",
-          "配送",
-          "企业"
-        ]
-      },
-      "company": {
-        "title": "会社",
-        "links": [
-          "关于我们",
-          "职业",
-          "合作伙伴",
-          "博客"
-        ]
-      },
-      "support": {
-        "title": "サポート",
-        "links": [
-          "文档",
-          "常见问题",
-          "联系",
-          "下载"
-        ]
-      }
+    "nav": {
+        "home": "ホーム",
+        "products": "製品",
+        "software": "プラットフォーム",
+        "solutions": "ソリューション",
+        "about": "会社概要",
+        "contact": "お問い合わせ"
     },
-    "copyright": "2025 FleetGoo. すべての権利を保有します。",
-    "privacy": "プライバシーポリシー",
-    "terms": "利用規約"
-  }
+    "contactInfo": {
+        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "インテリジェントな車両追跡およびフリート管理ソリューションのリーディングプロバイダー。",
+        "sections": {
+            "products": {
+                "title": "製品",
+                "links": [
+                    "車両管理プラットフォーム",
+                    "GPSトラッカー",
+                    "4Gドライブレコーダー",
+                    "MDVRシステム"
+                ]
+            },
+            "solutions": {
+                "title": "ソリューション",
+                "links": [
+                    "物流",
+                    "建設",
+                    "配送",
+                    "法人車両"
+                ]
+            },
+            "company": {
+                "title": "会社情報",
+                "links": [
+                    "会社概要",
+                    "採用情報",
+                    "パートナー",
+                    "ブログ"
+                ]
+            },
+            "support": {
+                "title": "サポート",
+                "links": [
+                    "ドキュメント",
+                    "よくある質問",
+                    "お問い合わせ",
+                    "ダウンロード"
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. All rights reserved.",
+        "privacy": "プライバシーポリシー",
+        "terms": "利用規約"
+    }
 }
