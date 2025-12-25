@@ -65,6 +65,28 @@
         "errorMessage": {
             "title": "Submission Failed",
             "description": "Something went wrong. Please try again later or contact us directly via email."
-        }
+        },
+        "productOptions": [
+            {
+                "value": "d501",
+                "label": "D501 AI Dashcam"
+            },
+            {
+                "value": "d901",
+                "label": "D901 MDVR System"
+            },
+            {
+                "value": "c08l",
+                "label": "C08L Asset Tracker"
+            },
+            {
+                "value": "software",
+                "label": "Software Platform"
+            },
+            {
+                "value": "other",
+                "label": "Other / General Inquiry"
+            }
+        ]
     }
 }

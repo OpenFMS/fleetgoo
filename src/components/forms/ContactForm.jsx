@@ -182,10 +182,16 @@ const ContactForm = ({ labels = {}, language = 'en', className = "", settings = 
                         <SelectValue placeholder="Select a product..." />
                     </SelectTrigger>
                     <SelectContent className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white">
-                        <SelectItem value="d510">D510 AI Dashcam</SelectItem>
-                        <SelectItem value="d901">D901 MDVR System</SelectItem>
-                        <SelectItem value="platform">Software Platform</SelectItem>
-                        <SelectItem value="other">Other / General Inquiry</SelectItem>
+                        {(settings?.contactForm?.productOptions || [
+                            { value: "d501", label: "D501 AI Dashcam" },
+                            { value: "d901", label: "D901 MDVR System" },
+                            { value: "software", label: "Software Platform" },
+                            { value: "other", label: "Other / General Inquiry" }
+                        ]).map((option) => (
+                            <SelectItem key={option.value} value={option.value}>
+                                {option.label}
+                            </SelectItem>
+                        ))}
                     </SelectContent>
                 </Select>
             </div>
