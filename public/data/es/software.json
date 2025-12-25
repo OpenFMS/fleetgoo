@@ -1,42 +1,42 @@
 {
-    "page": {
-        "metaTitle": "Plataforma de Gestión de Flotas SaaS | FleetGoo",
-        "metaDesc": "Potente software de gestión de flotas basado en la nube con análisis avanzados, seguimiento en tiempo real y aplicaciones móviles."
+  "page": {
+    "metaTitle": "Plataforma de Gestión de Flotas SaaS",
+    "metaDesc": "Potente software de gestión de flotas basado en la nube con análisis avanzados, seguimiento en tiempo real y aplicaciones móviles."
+  },
+  "hero": {
+    "title": "Características de la Plataforma SaaS",
+    "subtitle": "Software integral de gestión de flotas con análisis potentes"
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "Plataforma Basada en la Nube",
+      "description": "Acceda a los datos de su flota en cualquier momento y lugar con nuestra infraestructura segura en la nube"
     },
-    "hero": {
-        "title": "Características de la Plataforma SaaS",
-        "subtitle": "Software integral de gestión de flotas con análisis potentes"
+    {
+      "icon": "BarChart3",
+      "title": "Análisis Avanzados",
+      "description": "Información en tiempo real, mantenimiento predictivo y optimización del rendimiento"
     },
-    "features": [
-        {
-            "icon": "Cloud",
-            "title": "Plataforma Basada en la Nube",
-            "description": "Acceda a los datos de su flota en cualquier momento y lugar con nuestra infraestructura segura en la nube"
-        },
-        {
-            "icon": "BarChart3",
-            "title": "Análisis Avanzados",
-            "description": "Información en tiempo real, mantenimiento predictivo y optimización del rendimiento"
-        },
-        {
-            "icon": "Shield",
-            "title": "Seguridad Empresarial",
-            "description": "Cifrado de nivel bancario, acceso basado en roles y certificaciones de cumplimiento"
-        },
-        {
-            "icon": "Smartphone",
-            "title": "Aplicaciones Móviles",
-            "description": "Apps iOS y Android para conductores y gestores con capacidad offline"
-        },
-        {
-            "icon": "Bell",
-            "title": "Alertas Inteligentes",
-            "description": "Notificaciones personalizables por exceso de velocidad, violaciones de geocercas y mantenimiento"
-        },
-        {
-            "icon": "MapPinned",
-            "title": "Seguimiento en Vivo",
-            "description": "Seguimiento GPS en tiempo real con historial de rutas y uso compartido de ubicación"
-        }
-    ]
+    {
+      "icon": "Shield",
+      "title": "Seguridad Empresarial",
+      "description": "Cifrado de nivel bancario, acceso basado en roles y certificaciones de cumplimiento"
+    },
+    {
+      "icon": "Smartphone",
+      "title": "Aplicaciones Móviles",
+      "description": "Apps iOS y Android para conductores y gestores con capacidad offline"
+    },
+    {
+      "icon": "Bell",
+      "title": "Alertas Inteligentes",
+      "description": "Notificaciones personalizables por exceso de velocidad, violaciones de geocercas y mantenimiento"
+    },
+    {
+      "icon": "MapPinned",
+      "title": "Seguimiento en Vivo",
+      "description": "Seguimiento GPS en tiempo real con historial de rutas y uso compartido de ubicación"
+    }
+  ]
 }

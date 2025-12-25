@@ -1,42 +1,42 @@
 {
-    "page": {
-        "metaTitle": "SaaSフリート管理プラットフォーム | FleetGoo",
-        "metaDesc": "高度な分析、リアルタイム追跡、モバイルアプリを備えた強力なクラウドベースのフリート管理ソフトウェア。"
+  "page": {
+    "metaTitle": "SaaSフリート管理プラットフォーム",
+    "metaDesc": "高度な分析、リアルタイム追跡、モバイルアプリを備えた強力なクラウドベースのフリート管理ソフトウェア。"
+  },
+  "hero": {
+    "title": "SaaSプラットフォーム機能",
+    "subtitle": "強力な分析機能を備えた包括的なフリート管理ソフトウェア"
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "クラウドベースプラットフォーム",
+      "description": "安全なクラウドインフラストラクチャにより、いつでもどこでもフリートデータにアクセス可能"
     },
-    "hero": {
-        "title": "SaaSプラットフォーム機能",
-        "subtitle": "強力な分析機能を備えた包括的なフリート管理ソフトウェア"
+    {
+      "icon": "BarChart3",
+      "title": "高度な分析",
+      "description": "リアルタイムの洞察、予知保全、パフォーマンスの最適化"
     },
-    "features": [
-        {
-            "icon": "Cloud",
-            "title": "クラウドベースプラットフォーム",
-            "description": "安全なクラウドインフラストラクチャにより、いつでもどこでもフリートデータにアクセス可能"
-        },
-        {
-            "icon": "BarChart3",
-            "title": "高度な分析",
-            "description": "リアルタイムの洞察、予知保全、パフォーマンスの最適化"
-        },
-        {
-            "icon": "Shield",
-            "title": "エンタープライズセキュリティ",
-            "description": "銀行レベルの暗号化、ロールベースのアクセス、コンプライアンス認証"
-        },
-        {
-            "icon": "Smartphone",
-            "title": "モバイルアプリ",
-            "description": "オフライン機能を備えたドライバーおよび管理者向けのiOS/Androidアプリ"
-        },
-        {
-            "icon": "Bell",
-            "title": "スマートアラート",
-            "description": "速度超過、ジオフェンス違反、メンテナンスのカスタマイズ可能な通知"
-        },
-        {
-            "icon": "MapPinned",
-            "title": "ライブ追跡",
-            "description": "ルート履歴と位置共有を備えたリアルタイムGPS追跡"
-        }
-    ]
+    {
+      "icon": "Shield",
+      "title": "エンタープライズセキュリティ",
+      "description": "銀行レベルの暗号化、ロールベースのアクセス、コンプライアンス認証"
+    },
+    {
+      "icon": "Smartphone",
+      "title": "モバイルアプリ",
+      "description": "オフライン機能を備えたドライバーおよび管理者向けのiOS/Androidアプリ"
+    },
+    {
+      "icon": "Bell",
+      "title": "スマートアラート",
+      "description": "速度超過、ジオフェンス違反、メンテナンスのカスタマイズ可能な通知"
+    },
+    {
+      "icon": "MapPinned",
+      "title": "ライブ追跡",
+      "description": "ルート履歴と位置共有を備えたリアルタイムGPS追跡"
+    }
+  ]
 }

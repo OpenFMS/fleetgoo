@@ -1,51 +1,51 @@
 {
-    "page": {
-        "metaTitle": "Sobre Nosotros | FleetGoo",
-        "metaDesc": "Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software."
+  "page": {
+    "metaTitle": "Sobre Nosotros",
+    "metaDesc": "Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software."
+  },
+  "hero": {
+    "title": "Sobre FleetGoo",
+    "subtitle": "Liderando el futuro de la gestión inteligente de flotas",
+    "description": "Con más de una década de experiencia en tecnología de rastreo de vehículos, ofrecemos soluciones de hardware y software de vanguardia a empresas de todo el mundo. Nuestra misión es empoderar a los operadores de flotas con información en tiempo real, análisis avanzados y una fiabilidad inigualable."
+  },
+  "stats": [
+    {
+      "label": "Dispositivos Activos",
+      "value": "700K+"
     },
-    "hero": {
-        "title": "Sobre FleetGoo",
-        "subtitle": "Liderando el futuro de la gestión inteligente de flotas",
-        "description": "Con más de una década de experiencia en tecnología de rastreo de vehículos, ofrecemos soluciones de hardware y software de vanguardia a empresas de todo el mundo. Nuestra misión es empoderar a los operadores de flotas con información en tiempo real, análisis avanzados y una fiabilidad inigualable."
+    {
+      "label": "Países Servidos",
+      "value": "100+"
     },
-    "stats": [
-        {
-            "label": "Dispositivos Activos",
-            "value": "700K+"
-        },
-        {
-            "label": "Países Servidos",
-            "value": "100+"
-        },
-        {
-            "label": "Satisfacción del Cliente",
-            "value": "99.99%"
-        },
-        {
-            "label": "Garantía de Tiempo de Actividad",
-            "value": "99.9%"
-        }
-    ],
-    "values": [
-        {
-            "icon": "Award",
-            "title": "Excelencia Industrial",
-            "description": "Tecnología galardonada reconocida mundialmente"
-        },
-        {
-            "icon": "Users2",
-            "title": "Cliente Primero",
-            "description": "Soporte y servicio multilingüe 24/7"
-        },
-        {
-            "icon": "Globe2",
-            "title": "Alcance Global",
-            "description": "Sirviendo a clientes en más de 85 países"
-        },
-        {
-            "icon": "TrendingUp",
-            "title": "Innovación",
-            "description": "I+D continuo y mejora de productos"
-        }
-    ]
+    {
+      "label": "Satisfacción del Cliente",
+      "value": "99.99%"
+    },
+    {
+      "label": "Garantía de Tiempo de Actividad",
+      "value": "99.9%"
+    }
+  ],
+  "values": [
+    {
+      "icon": "Award",
+      "title": "Excelencia Industrial",
+      "description": "Tecnología galardonada reconocida mundialmente"
+    },
+    {
+      "icon": "Users2",
+      "title": "Cliente Primero",
+      "description": "Soporte y servicio multilingüe 24/7"
+    },
+    {
+      "icon": "Globe2",
+      "title": "Alcance Global",
+      "description": "Sirviendo a clientes en más de 85 países"
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Innovación",
+      "description": "I+D continuo y mejora de productos"
+    }
+  ]
 }

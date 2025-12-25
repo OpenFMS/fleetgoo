@@ -1,64 +1,64 @@
 {
-    "id": "d901-smart-ai-camera-bsd-pedestrian",
-    "categoryId": "4g-camera",
-    "title": "D901 AI Smart Camera",
-    "metaTitle": "D901 High-End AI Camera | FleetGoo",
-    "metaDesc": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
-    "fullDescription": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
-    "images": [
-        "/images/products/D901-main.jpg"
-    ],
-    "features": [
-        "Multi-Channel Video: 4-channel AHD video input, simultaneous recording in H.264 format (saved separately per channel)",
-        "AI Detection & Alerts: Built-in AI algorithms for blind spot warnings, fuel theft prevention, and voice recognition",
-        "Sentry Mode: Enhanced security monitoring mode",
-        "Remote Monitoring: 4G connectivity enables remote live view, playback, track viewing, electronic fence, fleet management",
-        "Flexible Display: 10.1-inch IPS touchscreen; default 4-screen display, supports switching to single-channel full screen",
-        "Stable Power: 12V-36V wide voltage input, compliant with automotive-grade surge, overload, over-voltage, under-voltage, and short-circuit protection circuits"
-    ],
-    "parameters": [
-        {
-            "label": "Product Form",
-            "value": "4-channel monitoring all-in-one central control screen"
-        },
-        {
-            "label": "Display",
-            "value": "10.1-inch IPS (1024x600), 2.5D Touchscreen"
-        },
-        {
-            "label": "Processor/Mem",
-            "value": "Yizhi SA230 / DDR3L 256MB"
-        },
-        {
-            "label": "Video Input",
-            "value": "4-channel AHD"
-        },
-        {
-            "label": "Recording",
-            "value": "H.264, 4-CH separate storage, Cyclic, Time-lapse"
-        },
-        {
-            "label": "External Cameras",
-            "value": "4x 1/3 CMOS 150° Ultra-wide Angle"
-        },
-        {
-            "label": "Storage",
-            "value": "TF Card (Class10, Max 256GB)"
-        },
-        {
-            "label": "Power Supply",
-            "value": "12V-36V (Typ. 10W consumption)"
-        },
-        {
-            "label": "Network/Pos",
-            "value": "4G Remote Monitoring / GPS"
-        },
-        {
-            "label": "Working Temp",
-            "value": "-20℃ ~ +70℃"
-        }
-    ],
-    "downloads": [],
-    "packaging": "1x D901 Main Unit, Cable Harness, Installation Kit",
-    "icon": "Camera"
+  "id": "d901-smart-ai-camera-bsd-pedestrian",
+  "categoryId": "4g-camera",
+  "title": "D901 AI Smart Camera",
+  "metaTitle": "D901 High-End AI Camera",
+  "metaDesc": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
+  "fullDescription": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
+  "images": [
+    "/images/products/D901-main.jpg"
+  ],
+  "features": [
+    "Multi-Channel Video: 4-channel AHD video input, simultaneous recording in H.264 format (saved separately per channel)",
+    "AI Detection & Alerts: Built-in AI algorithms for blind spot warnings, fuel theft prevention, and voice recognition",
+    "Sentry Mode: Enhanced security monitoring mode",
+    "Remote Monitoring: 4G connectivity enables remote live view, playback, track viewing, electronic fence, fleet management",
+    "Flexible Display: 10.1-inch IPS touchscreen; default 4-screen display, supports switching to single-channel full screen",
+    "Stable Power: 12V-36V wide voltage input, compliant with automotive-grade surge, overload, over-voltage, under-voltage, and short-circuit protection circuits"
+  ],
+  "parameters": [
+    {
+      "label": "Product Form",
+      "value": "4-channel monitoring all-in-one central control screen"
+    },
+    {
+      "label": "Display",
+      "value": "10.1-inch IPS (1024x600), 2.5D Touchscreen"
+    },
+    {
+      "label": "Processor/Mem",
+      "value": "Yizhi SA230 / DDR3L 256MB"
+    },
+    {
+      "label": "Video Input",
+      "value": "4-channel AHD"
+    },
+    {
+      "label": "Recording",
+      "value": "H.264, 4-CH separate storage, Cyclic, Time-lapse"
+    },
+    {
+      "label": "External Cameras",
+      "value": "4x 1/3 CMOS 150° Ultra-wide Angle"
+    },
+    {
+      "label": "Storage",
+      "value": "TF Card (Class10, Max 256GB)"
+    },
+    {
+      "label": "Power Supply",
+      "value": "12V-36V (Typ. 10W consumption)"
+    },
+    {
+      "label": "Network/Pos",
+      "value": "4G Remote Monitoring / GPS"
+    },
+    {
+      "label": "Working Temp",
+      "value": "-20℃ ~ +70℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D901 Main Unit, Cable Harness, Installation Kit",
+  "icon": "Camera"
 }

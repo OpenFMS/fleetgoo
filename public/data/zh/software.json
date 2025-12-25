@@ -1,42 +1,42 @@
 {
-    "page": {
-        "metaTitle": "SaaS 车队管理平台 | FleetGoo",
-        "metaDesc": "功能强大的云端车队管理软件，提供高级分析、实时追踪和移动应用。"
+  "page": {
+    "metaTitle": "SaaS 车队管理平台",
+    "metaDesc": "功能强大的云端车队管理软件，提供高级分析、实时追踪和移动应用。"
+  },
+  "hero": {
+    "title": "SaaS 平台特性",
+    "subtitle": "具有强大分析功能的综合车队管理软件"
+  },
+  "features": [
+    {
+      "icon": "Cloud",
+      "title": "云端平台",
+      "description": "通过我们安全的云基础设施，随时随地访问您的车队数据"
     },
-    "hero": {
-        "title": "SaaS 平台特性",
-        "subtitle": "具有强大分析功能的综合车队管理软件"
+    {
+      "icon": "BarChart3",
+      "title": "高级分析",
+      "description": "实时洞察、预测性维护和性能优化"
     },
-    "features": [
-        {
-            "icon": "Cloud",
-            "title": "云端平台",
-            "description": "通过我们安全的云基础设施，随时随地访问您的车队数据"
-        },
-        {
-            "icon": "BarChart3",
-            "title": "高级分析",
-            "description": "实时洞察、预测性维护和性能优化"
-        },
-        {
-            "icon": "Shield",
-            "title": "企业级安全",
-            "description": "银行级加密、基于角色的访问控制和合规认证"
-        },
-        {
-            "icon": "Smartphone",
-            "title": "移动应用",
-            "description": "适用于司机和管理者的 iOS 和 Android 应用，支持离线功能"
-        },
-        {
-            "icon": "Bell",
-            "title": "智能报警",
-            "description": "针对超速、电子围栏违规和维护保养的可定制通知"
-        },
-        {
-            "icon": "MapPinned",
-            "title": "实时追踪",
-            "description": "带有轨迹回放和位置共享功能的实时 GPS 追踪"
-        }
-    ]
+    {
+      "icon": "Shield",
+      "title": "企业级安全",
+      "description": "银行级加密、基于角色的访问控制和合规认证"
+    },
+    {
+      "icon": "Smartphone",
+      "title": "移动应用",
+      "description": "适用于司机和管理者的 iOS 和 Android 应用，支持离线功能"
+    },
+    {
+      "icon": "Bell",
+      "title": "智能报警",
+      "description": "针对超速、电子围栏违规和维护保养的可定制通知"
+    },
+    {
+      "icon": "MapPinned",
+      "title": "实时追踪",
+      "description": "带有轨迹回放和位置共享功能的实时 GPS 追踪"
+    }
+  ]
 }
