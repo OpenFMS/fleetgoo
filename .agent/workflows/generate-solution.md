@@ -24,6 +24,15 @@ Before generating content, formulate an SEO strategy internally:
 2.  **Secondary Keywords**: Specific pain points.
 3.  **Meta Strategy**: Ensure `metaTitle` and `metaDesc` are front-loaded with these keywords.
 
+## Step 3.5: "Human-Touch" Writing Protocol
+**CRITICAL**: Apply these rules to eliminate "AI-like" tone:
+1.  **Ban Hollow Adjectives**: Do NOT use words like *seamless, revolutionary, cutting-edge, state-of-the-art, comprehensive landscape*.
+2.  **Focus on "Why", not "What"**:
+    *   *Bad*: "The D501 features dual 1080P cameras."
+    *   *Good*: "See exactly what happened before the accident with dual 1080P evidence."
+3.  **Be Blunt & Direct**: Speak directly to the Fleet Manager's fears (theft, accidents, lawsuits). Use short, punchy sentences.
+4.  **No "Adjective Stacking"**: Avoid "efficient, reliable, and robust solution". Pick one specific benefit and explain it.
+
 ## Step 4: Generate Content (JSON Structure)
 Construct a JSON object with the following blocks. **Ensure strict adherence to the existing schema.**
 
