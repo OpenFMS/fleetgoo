@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ language, commonData, settings }) => {
   const t = commonData?.footer || {};
@@ -57,16 +58,33 @@ const Footer = ({ language, commonData, settings }) => {
             <div key={index}>
               <span className="text-slate-900 dark:text-white font-semibold mb-4 block">{section.title}</span>
               <ul className="space-y-2">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <a
-                      href="#"
-                      className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {section.links.map((link, linkIndex) => {
+                  const label = typeof link === 'string' ? link : link.label;
+                  const url = typeof link === 'string' ? '#' : link.url;
+                  const isExternal = url.startsWith('http');
+
+                  return (
+                    <li key={linkIndex}>
+                      {isExternal ? (
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
+                        >
+                          {label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={url}
+                          className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
+                        >
+                          {label}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

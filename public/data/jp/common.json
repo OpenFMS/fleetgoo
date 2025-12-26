@@ -18,37 +18,85 @@
             "products": {
                 "title": "製品",
                 "links": [
-                    "車両管理プラットフォーム",
-                    "GPSトラッカー",
-                    "4Gドライブレコーダー",
-                    "MDVRシステム"
+                    {
+                        "label": "車両管理プラットフォーム",
+                        "url": "/jp/software"
+                    },
+                    {
+                        "label": "GPSトラッカー",
+                        "url": "/jp/products"
+                    },
+                    {
+                        "label": "4Gドライブレコーダー",
+                        "url": "/jp/products"
+                    },
+                    {
+                        "label": "MDVRシステム",
+                        "url": "/jp/products"
+                    }
                 ]
             },
             "solutions": {
                 "title": "ソリューション",
                 "links": [
-                    "物流",
-                    "建設",
-                    "配送",
-                    "法人車両"
+                    {
+                        "label": "物流",
+                        "url": "/jp/solutions/logistics"
+                    },
+                    {
+                        "label": "建設",
+                        "url": "/jp/solutions/construction"
+                    },
+                    {
+                        "label": "配送",
+                        "url": "/jp/solutions/delivery"
+                    },
+                    {
+                        "label": "法人車両",
+                        "url": "/jp/solutions/government"
+                    }
                 ]
             },
             "company": {
                 "title": "会社情報",
                 "links": [
-                    "会社概要",
-                    "採用情報",
-                    "パートナー",
-                    "ブログ"
+                    {
+                        "label": "会社概要",
+                        "url": "/jp/about"
+                    },
+                    {
+                        "label": "採用情報",
+                        "url": "/jp/contact"
+                    },
+                    {
+                        "label": "パートナー",
+                        "url": "/jp/contact"
+                    },
+                    {
+                        "label": "ブログ",
+                        "url": "/jp/blog"
+                    }
                 ]
             },
             "support": {
                 "title": "サポート",
                 "links": [
-                    "ドキュメント",
-                    "よくある質問",
-                    "お問い合わせ",
-                    "ダウンロード"
+                    {
+                        "label": "ドキュメント",
+                        "url": "#"
+                    },
+                    {
+                        "label": "よくある質問",
+                        "url": "#"
+                    },
+                    {
+                        "label": "お問い合わせ",
+                        "url": "/jp/contact"
+                    },
+                    {
+                        "label": "ダウンロード",
+                        "url": "#"
+                    }
                 ]
             }
         },

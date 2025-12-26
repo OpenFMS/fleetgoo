@@ -2,19 +2,23 @@
     "languages": [
         {
             "code": "en",
-            "label": "English"
+            "label": "English",
+            "flag": "🇺🇸"
         },
         {
             "code": "es",
-            "label": "Español"
+            "label": "Español",
+            "flag": "🇪🇸"
         },
         {
             "code": "jp",
-            "label": "日本語"
+            "label": "日本語",
+            "flag": "🇯🇵"
         },
         {
             "code": "zh",
-            "label": "中文"
+            "label": "中文",
+            "flag": "🇨🇳"
         }
     ],
     "defaultLanguage": "en",

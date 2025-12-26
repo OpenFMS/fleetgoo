@@ -55,7 +55,53 @@
       "mediaType": "image",
       "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
       "caption": "統合ダッシュボード：ビデオ、地図、データを一画面に表示",
-      "width": "container"
+      "width": "container",
+      "title": "[TODO] Core Feature",
+      "layout": "[TODO] alternating",
+      "items": [
+        {
+          "title": "[TODO] Operations Dashboard",
+          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "[TODO] Real-Time GPS Location",
+          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "[TODO] Video Surveillance",
+          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "[TODO] Remote Control",
+          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "[TODO] Video & Track Playback",
+          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "[TODO] Geo Fence",
+          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "[TODO] Multi-platform integration",
+          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
     }
   ]
 }

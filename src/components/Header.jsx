@@ -124,6 +124,7 @@ const Header = ({ language, commonData, settings }) => {
                     onClick={() => changeLanguage(lang.code)}
                     className={`cursor-pointer ${language === lang.code ? 'bg-blue-50 text-blue-600 dark:bg-blue-500/20 dark:text-blue-400' : 'text-slate-700 dark:text-gray-300'} hover:bg-slate-100 dark:hover:bg-blue-500/10 dark:hover:text-blue-400`}
                   >
+                    <span className="mr-2">{lang.flag}</span>
                     {lang.label}
                   </DropdownMenuItem>
                 ))}

@@ -18,37 +18,85 @@
             "products": {
                 "title": "产品中心",
                 "links": [
-                    "车队管理平台",
-                    "GPS追踪器",
-                    "4G行车记录仪",
-                    "车载监控系统"
+                    {
+                        "label": "车队管理平台",
+                        "url": "/zh/software"
+                    },
+                    {
+                        "label": "GPS追踪器",
+                        "url": "/zh/products"
+                    },
+                    {
+                        "label": "4G行车记录仪",
+                        "url": "/zh/products"
+                    },
+                    {
+                        "label": "车载监控系统",
+                        "url": "/zh/products"
+                    }
                 ]
             },
             "solutions": {
                 "title": "解决方案",
                 "links": [
-                    "物流运输",
-                    "工程建设",
-                    "即时配送",
-                    "企业车队"
+                    {
+                        "label": "物流运输",
+                        "url": "/zh/solutions/logistics"
+                    },
+                    {
+                        "label": "工程建设",
+                        "url": "/zh/solutions/construction"
+                    },
+                    {
+                        "label": "即时配送",
+                        "url": "/zh/solutions/delivery"
+                    },
+                    {
+                        "label": "企业车队",
+                        "url": "/zh/solutions/government"
+                    }
                 ]
             },
             "company": {
                 "title": "关于公司",
                 "links": [
-                    "关于我们",
-                    "招贤纳士",
-                    "合作伙伴",
-                    "博客动态"
+                    {
+                        "label": "关于我们",
+                        "url": "/zh/about"
+                    },
+                    {
+                        "label": "招贤纳士",
+                        "url": "/zh/contact"
+                    },
+                    {
+                        "label": "合作伙伴",
+                        "url": "/zh/contact"
+                    },
+                    {
+                        "label": "博客动态",
+                        "url": "/zh/blog"
+                    }
                 ]
             },
             "support": {
                 "title": "客户支持",
                 "links": [
-                    "技术文档",
-                    "常见问题",
-                    "联系我们",
-                    "下载中心"
+                    {
+                        "label": "技术文档",
+                        "url": "#"
+                    },
+                    {
+                        "label": "常见问题",
+                        "url": "#"
+                    },
+                    {
+                        "label": "联系我们",
+                        "url": "/zh/contact"
+                    },
+                    {
+                        "label": "下载中心",
+                        "url": "#"
+                    }
                 ]
             }
         },

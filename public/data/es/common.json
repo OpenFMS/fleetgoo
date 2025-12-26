@@ -18,37 +18,85 @@
             "products": {
                 "title": "Productos",
                 "links": [
-                    "Plataforma de Gestión de Flotas",
-                    "Rastreador GPS",
-                    "Dashcam 4G",
-                    "Sistema MDVR"
+                    {
+                        "label": "Plataforma de Gestión de Flotas",
+                        "url": "/es/software"
+                    },
+                    {
+                        "label": "Rastreador GPS",
+                        "url": "/es/products"
+                    },
+                    {
+                        "label": "Dashcam 4G",
+                        "url": "/es/products"
+                    },
+                    {
+                        "label": "Sistema MDVR",
+                        "url": "/es/products"
+                    }
                 ]
             },
             "solutions": {
                 "title": "Soluciones",
                 "links": [
-                    "Logística",
-                    "Construcción",
-                    "Reparto",
-                    "Corporativo"
+                    {
+                        "label": "Logística",
+                        "url": "/es/solutions/logistics"
+                    },
+                    {
+                        "label": "Construcción",
+                        "url": "/es/solutions/construction"
+                    },
+                    {
+                        "label": "Reparto",
+                        "url": "/es/solutions/delivery"
+                    },
+                    {
+                        "label": "Corporativo",
+                        "url": "/es/solutions/government"
+                    }
                 ]
             },
             "company": {
                 "title": "Compañía",
                 "links": [
-                    "Sobre Nosotros",
-                    "Carreras",
-                    "Socios",
-                    "Blog"
+                    {
+                        "label": "Sobre Nosotros",
+                        "url": "/es/about"
+                    },
+                    {
+                        "label": "Carreras",
+                        "url": "/es/contact"
+                    },
+                    {
+                        "label": "Socios",
+                        "url": "/es/contact"
+                    },
+                    {
+                        "label": "Blog",
+                        "url": "/es/blog"
+                    }
                 ]
             },
             "support": {
                 "title": "Soporte",
                 "links": [
-                    "Documentación",
-                    "Preguntas Frecuentes",
-                    "Contacto",
-                    "Descargas"
+                    {
+                        "label": "Documentación",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Preguntas Frecuentes",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Contacto",
+                        "url": "/es/contact"
+                    },
+                    {
+                        "label": "Descargas",
+                        "url": "#"
+                    }
                 ]
             }
         },

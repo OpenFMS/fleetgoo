@@ -33,11 +33,6 @@
       "icon": "Camera"
     },
     {
-      "id": "accessories",
-      "label": "Accessories",
-      "icon": "Cpu"
-    },
-    {
       "id": "oem-odm",
       "label": "OEM & ODM",
       "icon": "Wrench"

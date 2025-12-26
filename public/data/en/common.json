@@ -18,37 +18,85 @@
             "products": {
                 "title": "Products",
                 "links": [
-                    "Fleet Management Platform",
-                    "GPS Tracker",
-                    "4G Dashcam",
-                    "MDVR System"
+                    {
+                        "label": "Fleet Management Platform",
+                        "url": "/en/software"
+                    },
+                    {
+                        "label": "GPS Tracker",
+                        "url": "/en/products"
+                    },
+                    {
+                        "label": "4G Dashcam",
+                        "url": "/en/products"
+                    },
+                    {
+                        "label": "MDVR System",
+                        "url": "/en/products"
+                    }
                 ]
             },
             "solutions": {
                 "title": "Solutions",
                 "links": [
-                    "Logistics",
-                    "Construction",
-                    "Delivery",
-                    "Corporate"
+                    {
+                        "label": "Logistics",
+                        "url": "/en/solutions/logistics"
+                    },
+                    {
+                        "label": "Construction",
+                        "url": "/en/solutions/construction"
+                    },
+                    {
+                        "label": "Delivery",
+                        "url": "/en/solutions/delivery"
+                    },
+                    {
+                        "label": "Corporate",
+                        "url": "/en/solutions/government"
+                    }
                 ]
             },
             "company": {
                 "title": "Company",
                 "links": [
-                    "About Us",
-                    "Careers",
-                    "Partners",
-                    "Blog"
+                    {
+                        "label": "About Us",
+                        "url": "/en/about"
+                    },
+                    {
+                        "label": "Careers",
+                        "url": "/en/contact"
+                    },
+                    {
+                        "label": "Partners",
+                        "url": "/en/contact"
+                    },
+                    {
+                        "label": "Blog",
+                        "url": "/en/blog"
+                    }
                 ]
             },
             "support": {
                 "title": "Support",
                 "links": [
-                    "Documentation",
-                    "FAQ",
-                    "Contact",
-                    "Downloads"
+                    {
+                        "label": "Documentation",
+                        "url": "#"
+                    },
+                    {
+                        "label": "FAQ",
+                        "url": "#"
+                    },
+                    {
+                        "label": "Contact",
+                        "url": "/en/contact"
+                    },
+                    {
+                        "label": "Downloads",
+                        "url": "#"
+                    }
                 ]
             }
         },
