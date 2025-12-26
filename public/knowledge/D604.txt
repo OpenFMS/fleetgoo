@@ -1,0 +1,50 @@
+标题：D604 4 channel 1080P 720P MDVR
+
+描述
+Designed for non-standardized industries(ride-hailing, logistics,construction vehicles),supporting 4-channel HD video,multi-mode positioning,and Al safety systems (DMS/ADAS/BSD).Compliant with Chinese Ministry standards for versatile applications
+
+
+核心功能
+HD Video：4x AHD 1080P/720P input, H.265/H.264 encoding, CVBS output
+AI Safety DMS：Driver face recognition, fatigue/distraction/smoking/obstruction detection (requires DMS camera)
+AI Safety ADAS：Forward collision, lane departure, pedestrian alerts (requires front camera)
+AI Safety BSD：Left/right blind spot alerts (requires BSD camera)
+Precision Positioning：GPS/BeiDou/Galileo multi-mode (optional RTK with 0.02m accuracy)
+Global Connectivity：4G multi-network, optional WiFi/Bluetooth/Ethernet
+Flexible Control：4x input/1x output IO, 1x RS485 + 1x RS232, external sensor support
+Stable Power：9-36V wide voltage input, <3W power consumption
+Certifications：Compliant with JT/T 808/794/1076/1078/905 standards
+
+规格参数
+Operating System：Linux 4.3
+Processor：Dual-core ARM CortexA7, 1.3GHz, 0.5TOPS Computing Power
+Video Input：4 Channels AHD1080P/720P
+G sensor：Supports 3-axis Gyroscope
+Audio Encoding：G.711A
+Video Coding：Video Coding Compatible with H.265/H.264
+Type：Description
+Power Consumption：Less than 3W (Without External Devices)
+Working Voltage：Wide Voltage Design, Supports 9~36V
+Working Temperature：-20℃~70℃
+Storage Temperature：-40℃~85℃
+Dimensions：90mm90mm30mm (L×W×H)
+Weight：Net Weight of Main Unit is 295g
+WIFI：Optional, Supports 2.4G 802.11b/g/n
+Bluetooth：Optional, Supports Bluetooth 4.1
+4G：Supports 4G Full Netcom
+IO：4 Inputs/1 Output
+Video Output：1 Channel CVBS High-definition Output
+Serial Port：1 RS485 Interface + 1 RS232 Interface
+External G-mouse：High-precision Positioning: Bands: GPS/QZSS L1C/A8L5, BDS B1I/B1C&82a, GAL E1&E5a Single-point Positioning Accuracy (Horizontal): 1.0M CEP RTK Positioning Accuracy (Horizontal): 0.02M CEP Speed Measurement Accuracy: <0.05 Time to First Fix (TTFF): Cold Start 27S, Hot Start 1S, Assisted Start 3D Data Update Rate: 1HZ/5HZ
+SIM Card Slot：SIM Card*1
+TF Card Slot：Default Single TF Card, Single Card Supports up to 512GB, Optional Dual TF Configuration
+USB：USB*1
+Network Port：Optional
+
+
+
+
+
+
+
+

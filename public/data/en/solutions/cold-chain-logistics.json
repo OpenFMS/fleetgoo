@@ -1,0 +1,123 @@
+{
+    "id": "thailand-cold-chain",
+    "categoryId": "industry",
+    "title": "Thailand Cold Chain Logistics Solution",
+    "metaTitle": "Thailand Cold Chain Fleet Management | Real-time Temperature Monitoring",
+    "metaDesc": "End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "Secure Your Cold Chain in Southeast Asia",
+            "subtitle": "Combat heat and humidity with precision. Eliminate spoilage and guarantee freshness for Thai durian, seafood, and pharma logistics.",
+            "backgroundImage": "/images/solutions/cold-chain-hero.jpg",
+            "ctaText": "Get a Custom Quote",
+            "ctaLink": "/en/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "Challenges in SE Asia Cold Chain",
+            "items": [
+                {
+                    "title": "High Spoilage Rates",
+                    "desc": "Thailand's high ambient temperatures accelerate spoilage. A single cooling failure can ruin tons of export-grade durian or seafood."
+                },
+                {
+                    "title": "Lack of Traceability",
+                    "desc": "Traditional logistics lack granular data. Without proof of continuous cooling, exporters face rejected shipments and revenue loss."
+                },
+                {
+                    "title": "Temperature Data Fraud",
+                    "desc": "Manual logs are easily faked. Automated, tamper-proof digital records are essential for building trust with international buyers."
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop",
+            "caption": "Complete visibility from Bangkok to border crossings.",
+            "width": "container"
+        },
+        {
+            "type": "features",
+            "title": "Core Capabilities",
+            "layout": "grid",
+            "items": [
+                {
+                    "icon": "Thermometer",
+                    "title": "Live Temperature Monitoring",
+                    "desc": "Real-time alerts for temp/humidity spikes. Essential for maintaining the quality of sensitive tropical fruit exports."
+                },
+                {
+                    "icon": "Video",
+                    "title": "Visual Evidence Chain",
+                    "desc": "Synchronized video and GPS data provide undeniable proof of cargo integrity and handling procedures during loading/unloading."
+                },
+                {
+                    "icon": "Bell",
+                    "title": "Door Sensor Integration",
+                    "desc": "Detect unauthorized door openings instantly. Prevent 'cold air loss' events and theft during transit."
+                },
+                {
+                    "icon": "FileCheck",
+                    "title": "Automated Compliance",
+                    "desc": "Auto-generate digital temperature logs to meet strict export regulations (e.g., GAP, GMP) without manual paperwork."
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "cyan",
+            "items": [
+                {
+                    "label": "Spoilage Reduction",
+                    "value": "90%"
+                },
+                {
+                    "label": "Export Acceptance",
+                    "value": "99.9%"
+                },
+                {
+                    "label": "Fuel Theft Events",
+                    "value": "0"
+                },
+                {
+                    "label": "Temp Accuracy",
+                    "value": "±0.5°C"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "Hardware Highlights",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "D501 Intelligent AI Hub",
+                    "desc": "Quad-core processor with dual 1080P video streams, enabling simultaneous driver behavior monitoring and cargo surveillance.",
+                    "image": "/images/products/D501-main.jpg",
+                    "icon": "Cpu"
+                },
+                {
+                    "title": "Multi-Sensor Connectivity",
+                    "desc": "Supports external IO ports for connecting industrial-grade temperature, humidity, and magnetic door sensors directly to the cloud.",
+                    "image": "/images/products/D501-interfaces.jpg",
+                    "icon": "Webhook"
+                }
+            ]
+        },
+        {
+            "type": "product_list",
+            "title": "Recommended Hardware",
+            "productIds": [
+                "d501-4g-dashcam-dual-lens-cloud"
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "Optimize Your Thai Logistics Fleet",
+            "buttonText": "Request Solution Demo",
+            "link": "/en/contact"
+        }
+    ]
+}

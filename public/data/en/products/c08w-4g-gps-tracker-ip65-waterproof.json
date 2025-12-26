@@ -6,7 +6,10 @@
   "metaDesc": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
   "fullDescription": "Compact ultra-thin IP65 waterproof design, integrating high-sensitivity GPS/BeiDou/LBS positioning for real-time tracking. Features ACC detection, intelligent alarms (fence/speed/power), and a robust watchdog system for system stability. Ideal for car rental, logistics, private cars, and electric scooters.",
   "images": [
-    "/images/products/c08w-main.jpg"
+    "/images/products/C08W-main.jpg",
+    "/images/products/C08W-02.jpg",
+    "/images/products/C08W-03.jpg",
+    "/images/products/C08W-04.jpg"
   ],
   "features": [
     "Compact & Waterproof: 14mm thick ultra-thin design with IP65 rating",

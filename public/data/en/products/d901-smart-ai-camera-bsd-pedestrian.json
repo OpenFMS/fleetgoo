@@ -6,7 +6,10 @@
   "metaDesc": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
   "fullDescription": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
   "images": [
-    "/images/products/D901-main.jpg"
+    "/images/products/D901-main.jpg",
+    "/images/products/D901-02.jpg",
+    "/images/products/D901-03.jpg",
+    "/images/products/D901-04.jpg"
   ],
   "features": [
     "Multi-Channel Video: 4-channel AHD video input, simultaneous recording in H.264 format (saved separately per channel)",

@@ -6,7 +6,10 @@
   "metaDesc": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
   "fullDescription": "Designed for asset risk control, the C08L integrates GPS/BeiDou/GLONASS triple-mode positioning with low power consumption, real-time monitoring, and remote control capabilities. It is the ideal solution for reliable cargo tracking and vehicle security, featuring a robust design with anti-removal protection and OTA remote management.",
   "images": [
-    "/images/products/C08L-main.jpg"
+    "/images/products/C08L-main.jpg",
+    "/images/products/C08L-02.jpg",
+    "/images/products/C08L-03.jpg",
+    "/images/products/C08L-04.jpg"
   ],
   "features": [
     "Precision Positioning: Triple-mode (GPS/BeiDou/GLONASS) with <10m error and AGPS support",

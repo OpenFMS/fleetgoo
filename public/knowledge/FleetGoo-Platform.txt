@@ -1,0 +1,52 @@
+# FleetGoo Fleet Management Platform - Core Capabilities
+
+## Platform Overview
+- **Name**: FleetGoo Intelligent Fleet Management Platform
+- **Type**: Enterprise-grade SaaS + Mobile App Ecosystem
+- **Core Value**: Integrates real-time GPS tracking, video telematics, and AI safety analytics into a single unified dashboard.
+- **Accessibility**: Web Portal (Command Center), Mobile Apps (iOS/Android), and Open API.
+
+## Core Features (Operations Dashboard)
+- **Real-Time GPS Location**: 
+    - Obtain real-time vehicle location and status (speed, ignition, mileage, driving time) with sub-second latency.
+    - Visualize entire fleet on Google Maps/OpenStreetMap with clustered markers.
+- **Operations Dashboard**: 
+    - Comprehensive visualization of operations, safety scores, and data trends.
+    - At-a-glance metrics for fleet availability, utilization, and maintenance status.
+- **Video Surveillance (CMS)**: 
+    - Support for live streaming from up to 8 channels per vehicle simultaneously.
+    - Remote snapshot capture, two-way audio intercom, and PTZ control.
+    - View multiple vehicles in grid view (4/9/16 split screens).
+- **Video & Track Playback**: 
+    - Historical route replay with speed curves, stops, and alarm event markers.
+    - Synchronized video playback: Watch recorded footage alongside the vehicle's historical position on the map.
+    - Remote video download from device SD card/HDD to local system.
+- **Remote Control Command**: 
+    - Cut off engine/fuel remotely (for anti-theft).
+    - Remote parameter configuration (OTA updates) for devices.
+
+## AI Safety & Analytics (ADAS/DMS)
+- **Safety Reporting**: 
+    - Aggregated driver behavior scores based on harsh braking, rapid acceleration, and sharp turns.
+    - AI event categorization: Fatigue, Distraction, Phone Use, Smoking, Lane Departure, Forward Collision.
+- **Evidence Management**:
+    - Automatic upload of event clips (alarm videos) to the cloud.
+    - Evidence lock prevents critical footage from being overwritten.
+
+## Operational Control
+- **Geo-Fencing**: 
+    - Create custom polygon, circular, or route-based geofences.
+    - Trigger instant alerts via Email/SMS/App Push when vehicles enter or exit valid zones.
+- **Fuel Monitoring**:
+    - High-precision fuel level charts (requires ultrasonic/capacitive sensor).
+    - Abrupt fuel drop alerts (theft protection).
+- **Maintenance Module**:
+    - Scheduling based on mileage, engine hours, or time intervals.
+
+## Integration & Security
+- **Open API Engine**: RESTful API for seamless integration with ERP, TMS (Transport Management Systems), or insurance platforms.
+- **Security**: 
+    - Bank-level AES-256 encryption for data transit.
+    - Granular Role-Based Access Control (RBAC) – define permissions for Admins, Managers, and View-only users.
+    - SSO (Single Sign-On) support.
+- **Multi-Platform**: Seamless sync across Web, PC Client, and Mobile Apps (Manager & Driver versions).

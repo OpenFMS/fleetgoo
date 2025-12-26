@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite --host :: --port 3000",
     "build": "node tools/generate-llms.js || true && vite build",
-    "preview": "vite preview --host :: --port 3000"
+    "preview": "vite preview --host :: --port 3000",
+    "content:index": "node tools/update-index.cjs --type=all",
+    "content:sync": "node tools/i18n-sync.cjs",
+    "content:all": "npm run content:index && npm run content:sync"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
