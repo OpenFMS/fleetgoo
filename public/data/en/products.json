@@ -40,60 +40,68 @@
   ],
   "items": [
     {
-      "id": "c08w-4g-gps-tracker-ip65-waterproof",
-      "categoryId": "gps-tracker",
-      "title": "C08W 4G GPS Tracker",
-      "description": "Professional 4G real-time tracking device with fuel cut-off and IP65 protection.",
-      "image": "/images/products/C08W-main.jpg"
-    },
-    {
       "id": "c08l-wireless-asset-tracker-long-standby",
       "categoryId": "gps-tracker",
       "title": "C08L Asset Tracker",
-      "description": "Ultra-long standby asset tracker with 3-year battery life and magnetic mount.",
-      "image": "/images/products/C08L-main.jpg"
+      "description": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
+      "image": "/images/products/C08L-main.jpg",
+      "icon": "MapPin"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
-      "categoryId": "4g-dashcam",
-      "title": "D501 4G DashCam",
-      "description": "Dual-lens cloud dashcam with live streaming and SOS alert function.",
-      "image": "/images/products/D501-main.jpg"
-    },
-    {
-      "id": "d701-pro-truck-dashcam-lockable",
-      "categoryId": "4g-dashcam",
-      "title": "D701 Pro DashCam",
-      "description": "Rugged fleet dashcam with lockable storage and external camera support.",
-      "image": "/images/products/D701-main.jpg"
+      "id": "c08w-4g-gps-tracker-ip65-waterproof",
+      "categoryId": "gps-tracker",
+      "title": "C08W 4G GPS Tracker",
+      "description": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
+      "image": "/images/products/C08W-main.jpg",
+      "icon": "MapPin"
     },
     {
       "id": "d401-ai-dashcam-adas-dms",
       "categoryId": "4g-camera",
       "title": "D401 AI Camera",
-      "description": "Intelligent camera with built-in ADAS & DMS algorithms for driver safety.",
-      "image": "/images/products/D401-main.jpg"
+      "description": "D401 AI Camera with advanced ADAS and DMS capabilities for proactive fleet safety.",
+      "image": "/images/products/D401-main.jpg",
+      "icon": "Camera"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
-      "categoryId": "4g-camera",
-      "title": "D901 AI Smart Camera",
-      "description": "Multi-channel AI camera system with Blind Spot and Pedestrian Detection.",
-      "image": "/images/products/D901-main.jpg"
+      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "categoryId": "4g-dashcam",
+      "title": "D501 4G DashCam",
+      "description": "Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.",
+      "image": "/images/products/D501-main.jpg",
+      "icon": "Video"
     },
     {
       "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
       "categoryId": "4g-aicarbox",
       "title": "D604 AI CarBox",
-      "description": "8-Channel MDVR Hub with powerful AI processing for centralized surveillance.",
-      "image": "/images/products/D604-main.jpg"
+      "description": "Powerful D604 AI CarBox MDVR for centralized fleet video surveillance and intelligent data processing.",
+      "image": "/images/products/D604-main.jpg",
+      "icon": "Server"
+    },
+    {
+      "id": "d701-pro-truck-dashcam-lockable",
+      "categoryId": "4g-dashcam",
+      "title": "D701 Pro 4G DashCam",
+      "description": "Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
+      "image": "/images/products/D701-main.jpg",
+      "icon": "Video"
+    },
+    {
+      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "categoryId": "4g-camera",
+      "title": "D901 AI Smart Camera",
+      "description": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
+      "image": "/images/products/D901-main.jpg",
+      "icon": "Camera"
     },
     {
       "id": "oem-custom-solution",
       "categoryId": "oem-odm",
-      "title": "OEM Custom Solution",
-      "description": "Tailored hardware design and manufacturing services for your specific fleet needs",
-      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+      "title": "OEM & ODM Custom Solution",
+      "description": "Tailored hardware design and manufacturing services. We build custom GPS trackers, dashcams, and MDVRs to your specifications.",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+      "icon": "Wrench"
     }
   ]
 }

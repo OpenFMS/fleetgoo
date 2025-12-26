@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { useFetchData } from '@/hooks/useFetchData';
@@ -15,11 +15,27 @@ import { cn } from '@/lib/utils';
 
 const ProductDetailPage = ({ language, settings }) => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`);
   const [activeImage, setActiveImage] = useState(0);
 
+  useEffect(() => {
+    if (data?.redirectUrl) {
+      if (data.redirectUrl.startsWith('http')) {
+        window.location.href = data.redirectUrl;
+      } else {
+        navigate(`/${language}${data.redirectUrl}`, { replace: true });
+      }
+    }
+  }, [data, language, navigate]);
+
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading product details...</div>;
+  }
+
+  // If redirecting, show nothing or loading to prevent flash
+  if (data?.redirectUrl) {
+    return null;
   }
 
   if (error || !data) {

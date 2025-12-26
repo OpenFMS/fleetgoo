@@ -15,15 +15,6 @@
   ],
   "items": [
     {
-      "id": "thailand-cold-chain",
-      "categoryId": "industry",
-      "title": "Thailand Cold Chain Logistics Solution",
-      "summary": "End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.",
-      "image": "/images/solutions/cold-chain-hero.jpg",
-      "icon": "Layers",
-      "color": "blue"
-    },
-    {
       "id": "mexico-cross-border-logistics",
       "categoryId": "industry",
       "title": "Mexico Cross-Border Logistics Security",
@@ -39,6 +30,15 @@
       "summary": "Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.",
       "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
       "icon": "Building2",
+      "color": "blue"
+    },
+    {
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "Thailand Cold Chain Logistics Solution",
+      "summary": "End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.",
+      "image": "/images/solutions/cold-chain-hero.jpg",
+      "icon": "Layers",
       "color": "blue"
     }
   ]
