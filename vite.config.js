@@ -342,7 +342,7 @@ export default defineConfig({
 		},
 		addTransformIndexHtml,
 		Sitemap({
-			hostname: 'https://fleetgoo.com',
+			hostname: process.env.SITE_URL || 'https://www.fleetgpstrack.com',
 			dynamicRoutes: generateRoutes(),
 			changefreq: 'weekly',
 			priority: 1.0,

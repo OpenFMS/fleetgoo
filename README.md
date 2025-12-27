@@ -89,7 +89,29 @@ npm run preview
 *   **`public/images/solutions/`**: 存放解决方案相关图片。
 *   **`public/images/company/`**: 存放公司环境、团队照片等。
 
+## 🌍 Deployment & Configuration
 > **注意**: 在代码或 JSON 数据引用这些图片时，请使用绝对路径，例如 `/images/products/my-product.jpg`。
+
+### Vercel 部署
+
+本项目可以直接部署到 Vercel。对于静态站点，通常无需额外配置。但为了 SEO 和 Sitemap 生成正确，建议配置环境变量。
+
+**环境变量配置 (Environment Variables)**
+
+在 Vercel 后台 (Project Settings -> Environment Variables) 或本地构建时，请设置以下变量以覆盖默认域名 (`https://www.fleetgpstrack.com`)：
+
+| 变量名 (Variable Name) | 描述 (Description) | 示例 (Example) |
+| :--- | :--- | :--- |
+| `SITE_URL` | **后端/构建时使用**。用于生成 `sitemap.xml` 和 `llms.txt`。 | `https://staging.fleetgoo.com` |
+| `VITE_SITE_URL` | **前端/运行时使用**。用于 React 组件中的 Canonical URL、Meta Tags、JSON-LD。 | `https://staging.fleetgoo.com` |
+
+**示例: 自定义构建命令**
+
+```bash
+SITE_URL=https://custom-domain.com VITE_SITE_URL=https://custom-domain.com npm run build
+```
+
+通过这种方式，您可以灵活地部署到 Staging (测试环境) 或 Production (正式环境)，而无需修改代码文件。
 
 ## 🤝 贡献
 

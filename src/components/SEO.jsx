@@ -12,7 +12,7 @@ const SEO = ({
     settings
 }) => {
     const { pathname } = useLocation();
-    const siteUrl = settings?.seo?.siteUrl || 'https://fleetgoo.com';
+    const siteUrl = import.meta.env.VITE_SITE_URL || settings?.seo?.siteUrl || 'https://www.fleetgpstrack.com';
     const currentUrl = `${siteUrl}${pathname}`;
 
     const siteName = settings?.seo?.siteName || 'FleetGoo';

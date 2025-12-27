@@ -34,7 +34,8 @@ function main() {
 
   // Read global settings for site URL
   const settings = readJson(settingsPath);
-  const siteUrl = settings?.seo?.siteUrl || 'https://fleetgoo.com'; // Fallback
+  // Allow environment variable to override settings file
+  const siteUrl = process.env.SITE_URL || settings?.seo?.siteUrl || 'https://www.fleetgpstrack.com';
   const defaultLanguage = settings?.defaultLanguage || 'en';
 
   console.log(`🔍 Generating llms.txt from JSON data in: ${dataRoot}`);
