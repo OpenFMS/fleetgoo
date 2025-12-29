@@ -671,7 +671,7 @@ export default defineConfig({
 	},
 	build: {
 		sourcemap: true,
-		// cssCodeSplit: true,
+		cssCodeSplit: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
