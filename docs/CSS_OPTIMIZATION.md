@@ -7,14 +7,11 @@
 - Splits CSS by route/component for better caching
 - Reduces initial CSS load
 
-### 2. **Manual Chunk Splitting** ✅
-Configured manual chunks for better caching:
-- `lucide` - Lucide React icons (758KB → separate chunk)
-- `framer` - Framer Motion animations
-- `react-vendor` - React core libraries
-- `radix-ui` - Radix UI components
-- `admin` - Admin pages (lazy loaded)
-- `vendor` - Other third-party libraries
+### 2. **Manual Chunk Splitting** (Reverted for Stability)
+- *Previously:* Configured manual chunks for lucide, framer, etc.
+- *Current:* Simplified to standard vendor splitting to resolve blank page issues in production builds.
+- *Reason:* Aggressive chunking caused dependency loading errors in Vercel/Production builds.
+
 
 ### 3. **CSS Minification** ✅
 - Added `cssnano` to PostCSS pipeline

@@ -670,7 +670,7 @@ export default defineConfig({
 		},
 	},
 	build: {
-		cssCodeSplit: true,
+		// cssCodeSplit: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
@@ -680,30 +680,9 @@ export default defineConfig({
 			],
 			output: {
 				manualChunks(id) {
+					// Simple vendor chunking to ensure stability
 					if (id.includes('node_modules')) {
-						// IMPORTANT: Check lucide-react FIRST before checking 'react'
-						// because 'lucide-react' contains 'react' in its name
-						if (id.includes('lucide-react')) {
-							return 'lucide';
-						}
-						// Now check for React core packages
-						if (id.includes('/react/') ||
-							id.includes('/react-dom/') ||
-							id.includes('/react-router') ||
-							id.includes('/scheduler/')) {
-							return 'react-vendor';
-						}
-						if (id.includes('framer-motion')) {
-							return 'framer';
-						}
-						if (id.includes('@radix-ui')) {
-							return 'radix-ui';
-						}
 						return 'vendor';
-					}
-					// Split admin pages
-					if (id.includes('/src/pages/admin/') || id.includes('/src/components/admin/')) {
-						return 'admin';
 					}
 				}
 			}
