@@ -87,8 +87,8 @@ const Header = ({ language, commonData, settings }) => {
                 sizes="(max-width: 768px) 150px, 180px"
                 alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
                 className="h-8 md:h-10 w-auto dark:hidden"
-                width="180"
-                height="40"
+                width="262"
+                height="56"
               />
               {/* Dark Mode Logo */}
               <img
