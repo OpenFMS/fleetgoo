@@ -670,13 +670,48 @@ export default defineConfig({
 		},
 	},
 	build: {
+		cssCodeSplit: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
 				'@babel/traverse',
 				'@babel/generator',
 				'@babel/types'
-			]
+			],
+			output: {
+				manualChunks(id) {
+					// Split vendor chunks
+					if (id.includes('node_modules')) {
+						if (id.includes('lucide-react')) {
+							return 'lucide';
+						}
+						if (id.includes('framer-motion')) {
+							return 'framer';
+						}
+						if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+							return 'react-vendor';
+						}
+						if (id.includes('@radix-ui')) {
+							return 'radix-ui';
+						}
+						return 'vendor';
+					}
+					// Split admin pages
+					if (id.includes('/src/pages/admin/')) {
+						return 'admin';
+					}
+				}
+			}
+		},
+		minify: 'terser',
+		terserOptions: {
+			compress: {
+				drop_console: true,
+				drop_debugger: true
+			}
 		}
+	},
+	css: {
+		devSourcemap: false
 	}
 });

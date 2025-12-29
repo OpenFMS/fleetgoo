@@ -14,10 +14,11 @@ const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const SoftwarePage = lazy(() => import('@/pages/SoftwarePage'));
 const LegalPage = lazy(() => import('@/pages/LegalPage'));
 
-// Admin Components
-const AdminLayout = lazy(() => import('@/components/admin/AdminLayout'));
-const ContentEditor = lazy(() => import('@/pages/admin/ContentEditor'));
-const LanguageManager = lazy(() => import('@/pages/admin/LanguageManager'));
+// Admin Components - Only load in development
+const isDevelopment = import.meta.env.MODE === 'development';
+const AdminLayout = isDevelopment ? lazy(() => import('@/components/admin/AdminLayout')) : null;
+const ContentEditor = isDevelopment ? lazy(() => import('@/pages/admin/ContentEditor')) : null;
+const LanguageManager = isDevelopment ? lazy(() => import('@/pages/admin/LanguageManager')) : null;
 
 const LoadingFallback = () => (
   <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-slate-950">
@@ -58,12 +59,14 @@ const App = () => {
     <Router>
       <Suspense fallback={<LoadingFallback />}>
         <Routes>
-          {/* Admin Routes */}
-          <Route path="/admin" element={<AdminLayout />}>
-            <Route index element={<div className="p-8 text-center text-slate-500">Select a file from the sidebar or manage languages</div>} />
-            <Route path="editor" element={<ContentEditor />} />
-            <Route path="languages" element={<LanguageManager />} />
-          </Route>
+          {/* Admin Routes - Only in development */}
+          {isDevelopment && AdminLayout && (
+            <Route path="/admin" element={<AdminLayout />}>
+              <Route index element={<div className="p-8 text-center text-slate-500">Select a file from the sidebar or manage languages</div>} />
+              <Route path="editor" element={<ContentEditor />} />
+              <Route path="languages" element={<LanguageManager />} />
+            </Route>
+          )}
 
           {/* Public Routes */}
           <Route path="/" element={<LanguageRedirect />} />

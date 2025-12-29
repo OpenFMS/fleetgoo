@@ -1,61 +1,64 @@
 # FleetGoo Site Index
 # Using this file, LLMs can discover the structure and content of the site.
-# Generated at: 2025-12-27T12:58:40.649Z
+# Generated at: 2025-12-29T08:15:59.900Z
 
-- [Untitled Page](https://staging.fleetgoo.com/en): No description available
-- [About Us](https://staging.fleetgoo.com/en/about-us): Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.
-- [Contact Us](https://staging.fleetgoo.com/en/contact): Get in touch with our sales and support team for your vehicle tracking and fleet management needs.
-- [undefined](https://staging.fleetgoo.com/en/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://staging.fleetgoo.com/en/products/oem-custom-solution): undefined
-- [Intelligent Fleet Management Platform](https://staging.fleetgoo.com/en/software): Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.
-- [Mexico Cross-Border Logistics Security](https://staging.fleetgoo.com/en/solutions/mexico-cross-border-logistics): undefined
-- [Public Safety Fleet Solutions](https://staging.fleetgoo.com/en/solutions/public-safety): undefined
-- [Thailand Cold Chain Logistics Solution](https://staging.fleetgoo.com/en/solutions/thailand-cold-chain): undefined
-- [Untitled Page](https://staging.fleetgoo.com/es): No description available
-- [Sobre Nosotros](https://staging.fleetgoo.com/es/about-us): Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software.
-- [Contáctenos - FleetGoo](https://staging.fleetgoo.com/es/contact): Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.
-- [undefined](https://staging.fleetgoo.com/es/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://staging.fleetgoo.com/es/products/oem-custom-solution): undefined
-- [Plataforma Inteligente de Gestión de Flotas](https://staging.fleetgoo.com/es/software): Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.
-- [Monitoreo de Cadena de Frío](https://staging.fleetgoo.com/es/solutions/cold-chain): undefined
-- [Gestión de Flotas de Seguridad Pública](https://staging.fleetgoo.com/es/solutions/public-safety): undefined
-- [Untitled Page](https://staging.fleetgoo.com/jp): No description available
-- [会社概要](https://staging.fleetgoo.com/jp/about-us): 革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントな車両管理の未来をリードする私たちの使命について。
-- [お問い合わせ - FleetGoo](https://staging.fleetgoo.com/jp/contact): 車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。
-- [undefined](https://staging.fleetgoo.com/jp/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://staging.fleetgoo.com/jp/products/oem-custom-solution): undefined
-- [インテリジェント車両管理プラットフォーム](https://staging.fleetgoo.com/jp/software): クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。
-- [コールドチェーン監視](https://staging.fleetgoo.com/jp/solutions/cold-chain): undefined
-- [公共安全フリート管理](https://staging.fleetgoo.com/jp/solutions/public-safety): undefined
-- [Untitled Page](https://staging.fleetgoo.com/zh): No description available
-- [关于我们](https://staging.fleetgoo.com/zh/about-us): 了解我们的使命：通过创新的软硬件解决方案引领智能车队管理的未来。
-- [联系我们 - FleetGoo](https://staging.fleetgoo.com/zh/contact): 联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。
-- [undefined](https://staging.fleetgoo.com/zh/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://staging.fleetgoo.com/zh/products/oem-custom-solution): undefined
-- [智能车队管理平台](https://staging.fleetgoo.com/zh/software): 集成了云端SaaS、移动应用和开放API的企业级车队管理平台，提供全面的运营可视性。
-- [冷链监控](https://staging.fleetgoo.com/zh/solutions/cold-chain): undefined
-- [公共管理车队](https://staging.fleetgoo.com/zh/solutions/public-safety): undefined
+- [Untitled Page](https://www.fleetgpstrack.com/en): No description available
+- [About Us](https://www.fleetgpstrack.com/en/about-us): Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.
+- [Contact Us](https://www.fleetgpstrack.com/en/contact): Get in touch with our sales and support team for your vehicle tracking and fleet management needs.
+- [undefined](https://www.fleetgpstrack.com/en/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://www.fleetgpstrack.com/en/products/oem-custom-solution): undefined
+- [Intelligent Fleet Management Platform](https://www.fleetgpstrack.com/en/software): Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.
+- [Mexico Cross-Border Logistics Security](https://www.fleetgpstrack.com/en/solutions/mexico-cross-border-logistics): undefined
+- [Public Safety Fleet Solutions](https://www.fleetgpstrack.com/en/solutions/public-safety): undefined
+- [Thailand Cold Chain Logistics Solution](https://www.fleetgpstrack.com/en/solutions/thailand-cold-chain): undefined
+- [Untitled Page](https://www.fleetgpstrack.com/es): No description available
+- [Sobre Nosotros](https://www.fleetgpstrack.com/es/about-us): Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software.
+- [Contáctenos - FleetGoo](https://www.fleetgpstrack.com/es/contact): Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.
+- [undefined](https://www.fleetgpstrack.com/es/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://www.fleetgpstrack.com/es/products/oem-custom-solution): undefined
+- [Plataforma Inteligente de Gestión de Flotas](https://www.fleetgpstrack.com/es/software): Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.
+- [Seguridad Logística Transfronteriza México](https://www.fleetgpstrack.com/es/solutions/mexico-cross-border-logistics): undefined
+- [Soluciones de Flota para Seguridad Pública](https://www.fleetgpstrack.com/es/solutions/public-safety): undefined
+- [Solución Logística de Cadena de Frío Tailandia](https://www.fleetgpstrack.com/es/solutions/thailand-cold-chain): undefined
+- [Untitled Page](https://www.fleetgpstrack.com/jp): No description available
+- [会社概要](https://www.fleetgpstrack.com/jp/about-us): 革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントな車両管理の未来をリードする私たちの使命について。
+- [お問い合わせ - FleetGoo](https://www.fleetgpstrack.com/jp/contact): 車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。
+- [undefined](https://www.fleetgpstrack.com/jp/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://www.fleetgpstrack.com/jp/products/oem-custom-solution): undefined
+- [インテリジェント車両管理プラットフォーム](https://www.fleetgpstrack.com/jp/software): クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。
+- [メキシコ国境越え物流セキュリティ](https://www.fleetgpstrack.com/jp/solutions/mexico-cross-border-logistics): undefined
+- [公共安全フリートソリューション](https://www.fleetgpstrack.com/jp/solutions/public-safety): undefined
+- [タイコールドチェーン物流ソリューション](https://www.fleetgpstrack.com/jp/solutions/thailand-cold-chain): undefined
+- [Untitled Page](https://www.fleetgpstrack.com/zh): No description available
+- [关于我们](https://www.fleetgpstrack.com/zh/about-us): 了解我们的使命：通过创新的软硬件解决方案引领智能车队管理的未来。
+- [联系我们 - FleetGoo](https://www.fleetgpstrack.com/zh/contact): 联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。
+- [undefined](https://www.fleetgpstrack.com/zh/products/c08l-wireless-asset-tracker-long-standby): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/d401-ai-dashcam-adas-dms): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/d501-4g-dashcam-dual-lens-cloud): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/d701-pro-truck-dashcam-lockable): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): undefined
+- [undefined](https://www.fleetgpstrack.com/zh/products/oem-custom-solution): undefined
+- [智能车队管理平台](https://www.fleetgpstrack.com/zh/software): 集成了云端SaaS、移动应用和开放API的企业级车队管理平台，提供全面的运营可视性。
+- [墨西哥跨境物流安全](https://www.fleetgpstrack.com/zh/solutions/mexico-cross-border-logistics): undefined
+- [公共安全车队解决方案](https://www.fleetgpstrack.com/zh/solutions/public-safety): undefined
+- [泰国冷链物流解决方案](https://www.fleetgpstrack.com/zh/solutions/thailand-cold-chain): undefined
