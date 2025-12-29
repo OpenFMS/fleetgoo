@@ -122,20 +122,13 @@ const HomePage = ({ language, settings }) => {
               <TabsContent key={tab.id} value={tab.id} className="mt-0">
                 <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 md:p-12 border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row gap-12 items-center shadow-lg dark:shadow-none">
                   <div className="w-full md:w-1/2">
-                    <picture>
-                      <source
-                        srcSet={tab.image.replace(/(\.[^.]+)$/, '.webp')}
-                        type="image/webp"
-                      />
-                      <img
-                        src={tab.image}
-                        alt={tab.title}
-                        className="rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-blue-900/20 w-full object-cover h-[350px]"
-                        loading="lazy"
-                        width="800"
-                        height="800"
-                      />
-                    </picture>
+                    <img
+                      src={tab.image}
+                      srcSet={`${tab.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w, ${tab.image} 1200w`}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      alt={tab.title}
+                      className="rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-blue-900/20 w-full object-cover h-[350px]"
+                    />
                   </div>
                   <div className="w-full md:w-1/2 space-y-6">
                     <h3 className="text-3xl font-bold text-slate-900 dark:text-white">{tab.title}</h3>

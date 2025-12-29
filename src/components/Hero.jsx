@@ -122,31 +122,17 @@ const Hero = ({ language, data }) => {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="relative z-10"
               >
-                <picture>
-                  {t.image && (
-                    <>
-                      <source
-                        srcSet={`${t.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w`}
-                        media="(max-width: 640px)"
-                        type="image/webp"
-                      />
-                      <source
-                        srcSet={`${t.image.replace(/(\.[^.]+)$/, '.webp')} 800w`}
-                        media="(min-width: 641px)"
-                        type="image/webp"
-                      />
-                    </>
-                  )}
-                  <img
-                    alt={t.title}
-                    className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20 w-full h-auto"
-                    src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
-                    width="800"
-                    height="339"
-                    loading="eager"
-                    fetchpriority="high"
-                  />
-                </picture>
+                <img
+                  alt={t.title}
+                  className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20"
+                  src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
+                  width="1584"
+                  height="672"
+                  srcSet={t.image ? `${t.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w, ${t.image} 1584w` : undefined}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="eager"
+                  fetchpriority="high"
+                />
               </motion.div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-gradient-to-br from-blue-300/30 to-cyan-300/30 dark:from-blue-500/20 dark:to-cyan-500/20 rounded-full blur-3xl" />
             </div>
