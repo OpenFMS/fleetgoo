@@ -131,6 +131,12 @@ const Hero = ({ language, data }) => {
                   alt={t.title}
                   className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20"
                   src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
+                  srcSet={t.image ? `${t.image.replace(/(\.[^.]+)$/, '-mobile$1')} 800w, ${t.image} 1584w` : undefined}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  width="1584"
+                  height="672"
+                  loading="eager"
+                  fetchpriority="high"
                 />
               </motion.div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-gradient-to-br from-blue-300/30 to-cyan-300/30 dark:from-blue-500/20 dark:to-cyan-500/20 rounded-full blur-3xl" />

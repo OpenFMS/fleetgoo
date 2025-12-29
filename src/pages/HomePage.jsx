@@ -124,6 +124,8 @@ const HomePage = ({ language, settings }) => {
                   <div className="w-full md:w-1/2">
                     <img
                       src={tab.image}
+                      srcSet={`${tab.image.replace(/(\.[^.]+)$/, '-mobile$1')} 800w, ${tab.image} 1200w`}
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       alt={tab.title}
                       className="rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-blue-900/20 w-full object-cover h-[350px]"
                     />
