@@ -39,7 +39,7 @@
         "id": "d501",
         "label": "D501 - AI行车记录仪",
         "title": "D501 智能4G行车记录仪",
-        "description": "内置AI处理器用于驾驶员行为分析的终极多合一远程监控摄像头。",
+        "description": "专为商用车辆设计，包括符合中国交通运输部标准（如网约车和物流）的车辆，这款AI行车记录仪集成了双1080P视频、云存储、北斗定位、驾驶员监控系统（DMS）和高级驾驶辅助系统（ADAS），以提高安全性和车队管理效率。",
         "image": "/images/products/D501-main.jpg",
         "benefits": [
           "AI驱动的ADAS和DMS（疲劳/分心）",
@@ -54,9 +54,9 @@
       },
       {
         "id": "d901",
-        "label": "D901 - 坚固型MDVR",
+        "label": "D901 - 4通道MDVR",
         "title": "D901 4通道MDVR",
-        "description": "专为重型应用和极端环境设计的军工级移动数字视频录像机。",
+        "description": "紧凑型一体化设备，配备中央控制屏幕，用于货运和物流监控。支持4通道AHD视频输入、AI盲区警告、哨兵模式、防燃油盗窃警报、AI语音识别和4G远程监控。",
         "image": "/images/products/D901-main.jpg",
         "benefits": [
           "AI检测，防止燃油盗窃和语音识别",

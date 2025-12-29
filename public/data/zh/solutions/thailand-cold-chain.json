@@ -1,0 +1,120 @@
+{
+    "id": "thailand-cold-chain",
+    "categoryId": "industry",
+    "title": "泰国冷链物流解决方案",
+    "metaTitle": "泰国冷链车队管理 | 实时温度监控",
+    "metaDesc": "为泰国市场提供端到端的冷链可视性。通过GPS跟踪和视频监控防止食品变质并确保温度合规。",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "在东南亚保护您的冷链",
+            "subtitle": "精确对抗高温和湿度。消除变质并保证泰国榴莲、海鲜和医药物流的新鲜度。",
+            "backgroundImage": "/images/solutions/cold-chain-hero.jpg",
+            "ctaText": "获取定制报价",
+            "ctaLink": "/zh/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "东南亚冷链中的挑战",
+            "items": [
+                {
+                    "title": "高变质率",
+                    "desc": "泰国的高环境温度加速变质。单次冷却故障可能会毁掉数吨出口级榴莲或海鲜。"
+                },
+                {
+                    "title": "缺乏可追溯性",
+                    "desc": "传统物流缺乏细粒度数据。没有持续冷却的证明，出口商面临被拒绝的货物和收入损失。"
+                },
+                {
+                    "title": "温度数据欺诈",
+                    "desc": "手动日志很容易伪造。自动化、防篡改的数字记录对于与国际买家建立信任至关重要。"
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/solutions/cold-chain-saas.jpeg",
+            "caption": "从曼谷到边境口岸的完整可视性。",
+            "width": "container"
+        },
+        {
+            "type": "features",
+            "title": "核心功能",
+            "layout": "grid",
+            "items": [
+                {
+                    "icon": "Thermometer",
+                    "title": "实时温度监控",
+                    "desc": "温度/湿度峰值的实时警报。对于维持敏感热带水果出口的质量至关重要。"
+                },
+                {
+                    "icon": "Video",
+                    "title": "视觉证据链",
+                    "desc": "同步的视频和GPS数据提供货物完整性和装卸过程中处理程序的无可辩驳的证据。"
+                },
+                {
+                    "icon": "Bell",
+                    "title": "门传感器集成",
+                    "desc": "即时检测未经授权的开门。防止运输过程中的"冷空气损失"事件和盗窃。"
+                },
+                {
+                    "icon": "FileCheck",
+                    "title": "自动合规",
+                    "desc": "自动生成数字温度日志以满足严格的出口法规（例如GAP、GMP），无需手动文书工作。"
+                },
+                {
+                    "icon": "Route",
+                    "title": "冷链路线优化",
+                    "desc": "AI驱动的路线规划最小化运输时间和燃料消耗，降低制冷成本，同时确保准时交付到港口和配送中心。"
+                },
+                {
+                    "icon": "MapPin",
+                    "title": "多站点验证",
+                    "desc": "在每个装卸点捕获带时间戳的GPS坐标和视频证据，为高价值货物创建不间断的监管链。"
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "label": "变质减少",
+                    "value": "90%"
+                },
+                {
+                    "label": "出口接受度",
+                    "value": "99.9%"
+                },
+                {
+                    "label": "燃料盗窃事件",
+                    "value": "0"
+                },
+                {
+                    "label": "温度精度",
+                    "value": "±0.5°C"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "硬件亮点",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "D501智能AI中枢",
+                    "desc": "四核处理器配备双1080P视频流，可同时进行司机行为监控和货物监控。",
+                    "image": "/images/products/D501-main.jpg",
+                    "icon": "Cpu"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "优化您的泰国物流车队",
+            "buttonText": "申请解决方案演示",
+            "link": "/zh/contact"
+        }
+    ]
+}

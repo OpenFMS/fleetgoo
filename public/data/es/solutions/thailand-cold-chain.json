@@ -1,0 +1,120 @@
+{
+    "id": "thailand-cold-chain",
+    "categoryId": "industry",
+    "title": "Solución Logística de Cadena de Frío Tailandia",
+    "metaTitle": "Gestión de Flotas de Cadena de Frío Tailandia | Monitoreo de Temperatura en Tiempo Real",
+    "metaDesc": "Visibilidad integral de cadena de frío para el mercado tailandés. Prevenga deterioro de alimentos y asegure cumplimiento de temperatura con rastreo GPS y monitoreo de video.",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "Asegure Su Cadena de Frío en el Sudeste Asiático",
+            "subtitle": "Combata el calor y la humedad con precisión. Elimine el deterioro y garantice la frescura para la logística de durian tailandés, mariscos y productos farmacéuticos.",
+            "backgroundImage": "/images/solutions/cold-chain-hero.jpg",
+            "ctaText": "Obtener Cotización Personalizada",
+            "ctaLink": "/es/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "Desafíos en la Cadena de Frío del Sudeste Asiático",
+            "items": [
+                {
+                    "title": "Altas Tasas de Deterioro",
+                    "desc": "Las altas temperaturas ambientes de Tailandia aceleran el deterioro. Una sola falla de enfriamiento puede arruinar toneladas de durian o mariscos de grado de exportación."
+                },
+                {
+                    "title": "Falta de Trazabilidad",
+                    "desc": "La logística tradicional carece de datos granulares. Sin prueba de enfriamiento continuo, los exportadores enfrentan envíos rechazados y pérdida de ingresos."
+                },
+                {
+                    "title": "Fraude de Datos de Temperatura",
+                    "desc": "Los registros manuales son fácilmente falsificados. Los registros digitales automatizados e inviolables son esenciales para generar confianza con compradores internacionales."
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/solutions/cold-chain-saas.jpeg",
+            "caption": "Visibilidad completa desde Bangkok hasta cruces fronterizos.",
+            "width": "container"
+        },
+        {
+            "type": "features",
+            "title": "Capacidades Principales",
+            "layout": "grid",
+            "items": [
+                {
+                    "icon": "Thermometer",
+                    "title": "Monitoreo de Temperatura en Vivo",
+                    "desc": "Alertas en tiempo real para picos de temperatura/humedad. Esencial para mantener la calidad de las exportaciones de frutas tropicales sensibles."
+                },
+                {
+                    "icon": "Video",
+                    "title": "Cadena de Evidencia Visual",
+                    "desc": "Los datos de video y GPS sincronizados proporcionan prueba innegable de la integridad de la carga y los procedimientos de manipulación durante la carga/descarga."
+                },
+                {
+                    "icon": "Bell",
+                    "title": "Integración de Sensor de Puerta",
+                    "desc": "Detecte aperturas de puertas no autorizadas instantáneamente. Prevenga eventos de 'pérdida de aire frío' y robo durante el tránsito."
+                },
+                {
+                    "icon": "FileCheck",
+                    "title": "Cumplimiento Automatizado",
+                    "desc": "Genere automáticamente registros digitales de temperatura para cumplir con regulaciones de exportación estrictas (por ejemplo, GAP, GMP) sin papeleo manual."
+                },
+                {
+                    "icon": "Route",
+                    "title": "Optimización de Ruta para Cadena de Frío",
+                    "desc": "El enrutamiento impulsado por IA minimiza el tiempo de tránsito y el consumo de combustible, reduciendo los costos de refrigeración mientras asegura la entrega a tiempo a puertos y centros de distribución."
+                },
+                {
+                    "icon": "MapPin",
+                    "title": "Verificación de Múltiples Paradas",
+                    "desc": "Capture coordenadas GPS con marca de tiempo y evidencia en video en cada punto de carga/descarga, creando una cadena de custodia ininterrumpida para carga de alto valor."
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "label": "Reducción de Deterioro",
+                    "value": "90%"
+                },
+                {
+                    "label": "Aceptación de Exportación",
+                    "value": "99.9%"
+                },
+                {
+                    "label": "Eventos de Robo de Combustible",
+                    "value": "0"
+                },
+                {
+                    "label": "Precisión de Temperatura",
+                    "value": "±0.5°C"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "Aspectos Destacados del Hardware",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "D501 Centro AI Inteligente",
+                    "desc": "Procesador de cuatro núcleos con transmisiones de video dual de 1080P, permitiendo monitoreo simultáneo del comportamiento del conductor y vigilancia de carga.",
+                    "image": "/images/products/D501-main.jpg",
+                    "icon": "Cpu"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "Optimice Su Flota Logística Tailandesa",
+            "buttonText": "Solicitar Demo de Solución",
+            "link": "/es/contact"
+        }
+    ]
+}

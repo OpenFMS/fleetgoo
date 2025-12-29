@@ -91,13 +91,13 @@
           "title": "AI Algorithm Calibration",
           "desc": "Smart detection, reliable alerts. We rigorously calibrate our ADAS & DMS algorithms to ensure precise recognition of fatigue, distraction, and road risks.",
           "icon": "",
-          "image": "/images/company/ai-algorithm-calibration.webp"
+          "image": "/images/company/ai-algorithm-calibration.jpg"
         },
         {
           "title": "Heavy-duty Video Processing",
           "desc": "Stability is our priority. Our MDVRs undergo 72-hour full-load recording tests with 4/8-channel 1080P input to ensure rock-solid stability even under extreme load.",
           "icon": "",
-          "image": "/images/company/multi-channel-stress-test.jpeg"
+          "image": "/images/company/multi-channel-stress-test.jpg"
         }
       ]
     }

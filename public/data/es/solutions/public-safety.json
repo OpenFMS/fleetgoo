@@ -1,72 +1,65 @@
 {
     "id": "public-safety",
     "categoryId": "industry",
-    "title": "Soluciones para Flotas de Seguridad Pública",
-    "metaTitle": "Sistema de Gestión de Flotas Policiales y de Seguridad Pública",
-    "metaDesc": "Mejore los tiempos de respuesta ante emergencias y la seguridad de los oficiales con cámaras de tablero impulsadas por IA, seguimiento GPS en tiempo real y recuperación de video de grado probatorio.",
+    "title": "Soluciones de Flota para Seguridad Pública",
+    "metaTitle": "Sistema de Gestión de Flotas de Seguridad Pública y Policía",
+    "metaDesc": "Mejore los tiempos de respuesta de emergencia y la seguridad de los oficiales con dashcams con IA, rastreo GPS en tiempo real y recuperación de video de grado evidencial.",
     "image": "",
     "blocks": [
         {
             "type": "hero",
             "title": "Inteligencia de Flota de Misión Crítica",
-            "subtitle": "Potencie su centro de comando con conciencia situacional en tiempo real. Desde patrullas hasta ambulancias, asegure que cada segundo cuente con nuestro sistema de gestión de flotas impulsado por IA.",
+            "subtitle": "Empodere su centro de comando con conciencia situacional en tiempo real. Desde patrullas hasta ambulancias, asegure que cada segundo cuente con nuestro sistema de gestión de flotas impulsado por IA.",
             "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
             "ctaText": "Contactar Ventas",
             "ctaLink": "/es/contact"
         },
         {
             "type": "pain_points",
-            "title": "Desafíos en la Respuesta a Emergencias",
+            "title": "Desafíos en Respuesta de Emergencia",
             "items": [
                 {
                     "title": "Falta de Visibilidad en Tiempo Real",
-                    "desc": "El despacho por radio tradicional deja a los centros de comando ciegos ante la ubicación exacta y el estado de las unidades durante incidentes críticos."
+                    "desc": "El despacho tradicional por radio deja a los centros de comando ciegos a la ubicación exacta y el estado de las unidades durante incidentes críticos."
                 },
                 {
                     "title": "Gestión de Evidencia en Video",
-                    "desc": "Recuperar manualmente las grabaciones de las tarjetas SD es lento, propenso a la pérdida de datos y rompe la cadena de custodia."
+                    "desc": "Recuperar metraje de dashcam manualmente de tarjetas SD es lento, propenso a pérdida de datos y rompe la cadena de custodia."
                 },
                 {
-                    "title": "Seguridad del Oficial y del Conductor",
-                    "desc": "Las persecuciones a alta velocidad y los turnos largos aumentan los riesgos de accidentes. Sin ADAS/DMS, pequeñas distracciones pueden llevar a colisiones mayores."
+                    "title": "Seguridad de Oficiales y Conductores",
+                    "desc": "Las persecuciones a alta velocidad y los turnos largos aumentan los riesgos de accidentes. Sin ADAS/DMS, las distracciones menores pueden llevar a colisiones mayores."
                 }
             ]
         },
         {
-            "type": "media",
-            "mediaType": "image",
-            "url": "/images/company/company-main.png",
-            "caption": "Arquitectura de Seguridad Pública de Extremo a Extremo de FleetGoo: Desde Sensores de Vehículos hasta el Centro de Comando en la Nube.",
-            "width": "full"
-        },
-        {
             "type": "features",
-            "title": "Capacidades Centrales",
+            "title": "Capacidades Principales",
             "layout": "grid",
             "items": [
                 {
                     "title": "Transmisión de Video en Vivo",
-                    "desc": "Transmita hasta 4 canales de video HD desde cualquier vehículo en tiempo real a través de 4G LTE. Vea lo que ven sus oficiales al instante."
+                    "desc": "Transmita hasta 4 canales de video HD desde cualquier vehículo en tiempo real a través de 4G LTE. Vea lo que sus oficiales ven instantáneamente."
                 },
                 {
                     "title": "Bloqueo de Evidencia",
-                    "desc": "Suba automáticamente clips de video a la nube cuando se activan las sirenas, asegurando que la evidencia crítica nunca se pierda."
+                    "desc": "Cargue automáticamente clips de video a la nube cuando se activan las sirenas, asegurando que la evidencia crítica nunca se pierda."
                 },
                 {
                     "title": "Despacho GPS de Precisión",
                     "desc": "Identifique la unidad disponible más cercana a un incidente con precisión submétrica para reducir significativamente los tiempos de respuesta."
                 },
                 {
-                    "title": "Análisis del Comportamiento del Conductor",
-                    "desc": "Monitoree frenadas bruscas, giros y exceso de velocidad. Utilice los datos para entrenar a los oficiales en una conducción de emergencia más segura."
+                    "title": "Análisis de Comportamiento del Conductor",
+                    "desc": "Monitoree frenado brusco, giros cerrados y exceso de velocidad. Use datos para capacitar a oficiales para una conducción de emergencia más segura."
                 },
                 {
                     "title": "Audio Bidireccional",
-                    "desc": "Comunicación por voz directa entre el despacho y la cabina del vehículo, independiente de las frecuencias de radio."
+                    "desc": "Comunicación de voz directa entre el despacho y la cabina del vehículo, independiente de las frecuencias de radio."
                 },
                 {
                     "title": "Monitoreo de Salud",
-                    "desc": "Conéctese al bus CAN del vehículo (OBDII) para monitorear la salud del motor, los niveles de combustible y el estado de la batería de forma remota."
+                    "desc": "Conéctese al bus CAN del vehículo (OBDII) para monitorear la salud del motor, niveles de combustible y estado de la batería de forma remota."
                 }
             ]
         },
@@ -99,42 +92,26 @@
             "items": [
                 {
                     "title": "Prevención de Colisiones con IA (ADAS)",
-                    "desc": "Nuestro avanzado sistema ADAS compatible con Mobileye escanea el camino por delante. Advierte a los conductores sobre posibles colisiones frontales, salidas de carril y peatones en tiempo real.",
-                    "image": "/images/products/d510-main.png"
+                    "desc": "Nuestro avanzado sistema ADAS compatible con Mobileye escanea el camino por delante. Advierte a los conductores de posibles colisiones frontales, salidas de carril y peatones en tiempo real, dándoles segundos preciosos para reaccionar.",
+                    "image": "/images/products/platform/vehicle-video-surveillance.png"
                 },
                 {
                     "title": "Cadena de Custodia Segura",
-                    "desc": "Los archivos de video tienen marca de agua y están encriptados desde el momento de la captura. Nuestra plataforma en la nube mantiene un registro de auditoría estricto de quién accedió o descargó las grabaciones.",
-                    "image": "/images/products/d901-main.png"
+                    "desc": "Los archivos de video están marcados con agua y encriptados desde el momento de la captura. Nuestra plataforma en la nube mantiene un registro de auditoría estricto de quién accedió o descargó el metraje, asegurando la admisibilidad en la corte.",
+                    "image": "/images/products/platform/vehicle-track-video-play.png"
                 },
                 {
-                    "title": "Pantalla Inteligente de 6 Canales",
-                    "desc": "Terminal de visualización con IA de alto rendimiento, que resuelve perfectamente problemas de robo de combustible y carga.",
-                    "image": "/images/products/d901-main.png"
+                    "title": "Seguridad Total de Activos: Proteja Su Flota para el Futuro",
+                    "desc": "Detenga el Robo Antes de que Comience. Nuestra avanzada Pantalla de 10\" y Sistema de Cámara BSD de 4 Canales dan a su flota visión inteligente de 360°, previniendo activamente la pérdida de carga y combustible. Mejore la seguridad y eficiencia con conciencia en tiempo real, protegiendo cada viaje y cada gota.",
+                    "image": "/images/products/D901-main.jpg"
                 }
-            ]
-        },
-        {
-            "type": "product_list",
-            "title": "Configuración de Hardware Recomendada",
-            "productIds": [
-                "mdvr-4ch",
-                "dsm-camera",
-                "body-cam"
             ]
         },
         {
             "type": "cta",
             "title": "¿Listo para modernizar su flota?",
-            "buttonText": "Obtener una Cotización Personalizada",
+            "buttonText": "Obtener Cotización Personalizada",
             "link": "/es/contact"
-        },
-        {
-            "type": "media",
-            "mediaType": "video",
-            "url": "https://www.youtube.com/watch?v=0e3GPea1Tyg",
-            "caption": "Juego del Calamar en la vida real, persiste hasta el final para ganar $456,000",
-            "width": "container"
         }
     ]
 }

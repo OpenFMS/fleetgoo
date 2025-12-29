@@ -8,18 +8,18 @@
         "contact": "お問い合わせ"
     },
     "contactInfo": {
-        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "address": "中国深圳市南山区南海大道3027号創意ビル6階",
         "email": "sales@fleetgoo.com",
         "phone": "+86 150-138-15400"
     },
     "footer": {
-        "companyDescription": "インテリジェントな車両追跡およびフリート管理ソリューションのリーディングプロバイダー。",
+        "companyDescription": "インテリジェント車両追跡およびフリート管理ソリューションの大手プロバイダー。",
         "sections": {
             "products": {
                 "title": "製品",
                 "links": [
                     {
-                        "label": "車両管理プラットフォーム",
+                        "label": "FleetGooプラットフォーム",
                         "url": "/jp/software"
                     },
                     {
@@ -40,20 +40,16 @@
                 "title": "ソリューション",
                 "links": [
                     {
-                        "label": "物流",
-                        "url": "/jp/solutions/logistics"
+                        "label": "国境を越えた物流",
+                        "url": "/jp/solutions/mexico-cross-border-logistics"
                     },
                     {
-                        "label": "建設",
-                        "url": "/jp/solutions/construction"
+                        "label": "公共交通",
+                        "url": "/jp/solutions/public-safety"
                     },
                     {
-                        "label": "配送",
-                        "url": "/jp/solutions/delivery"
-                    },
-                    {
-                        "label": "法人車両",
-                        "url": "/jp/solutions/government"
+                        "label": "コールドチェーン",
+                        "url": "/jp/solutions/thailand-cold-chain"
                     }
                 ]
             },
@@ -65,16 +61,8 @@
                         "url": "/jp/about"
                     },
                     {
-                        "label": "採用情報",
+                        "label": "お問い合わせ",
                         "url": "/jp/contact"
-                    },
-                    {
-                        "label": "パートナー",
-                        "url": "/jp/contact"
-                    },
-                    {
-                        "label": "ブログ",
-                        "url": "/jp/blog"
                     }
                 ]
             },
@@ -83,24 +71,12 @@
                 "links": [
                     {
                         "label": "ドキュメント",
-                        "url": "#"
-                    },
-                    {
-                        "label": "よくある質問",
-                        "url": "#"
-                    },
-                    {
-                        "label": "お問い合わせ",
-                        "url": "/jp/contact"
-                    },
-                    {
-                        "label": "ダウンロード",
-                        "url": "#"
+                        "url": "https://docs.fleetgoo.com"
                     }
                 ]
             }
         },
-        "copyright": "2025 FleetGoo. All rights reserved.",
+        "copyright": "2025 FleetGoo. 無断転載を禁じます。",
         "privacy": "プライバシーポリシー",
         "terms": "利用規約"
     }

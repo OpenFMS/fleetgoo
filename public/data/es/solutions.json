@@ -1,9 +1,9 @@
 {
   "page": {
-    "title": "Soluciones Industriales",
-    "subtitle": "Estrategias de gestión de flotas especializadas para su sector",
-    "metaTitle": "Soluciones Industriales",
-    "metaDesc": "Explore nuestras soluciones de gestión de flotas a medida para Gobierno, Logística, Construcción y más.",
+    "title": "Soluciones por Industria",
+    "subtitle": "Estrategias especializadas de gestión de flotas para su sector",
+    "metaTitle": "Soluciones por Industria",
+    "metaDesc": "Explore nuestras soluciones personalizadas de gestión de flotas para Gobierno, Logística, Construcción y más.",
     "readMoreBtn": "Leer Caso de Estudio"
   },
   "categories": [
@@ -11,66 +11,35 @@
       "id": "all",
       "label": "Todas las Soluciones",
       "icon": "Layers"
-    },
-    {
-      "id": "government",
-      "label": "Gobierno",
-      "icon": "Building2"
-    },
-    {
-      "id": "insurance",
-      "label": "Seguros",
-      "icon": "ShieldCheck"
-    },
-    {
-      "id": "logistics",
-      "label": "Logística y Entrega",
-      "icon": "Truck"
-    },
-    {
-      "id": "micromobility",
-      "label": "Micro-Movilidad",
-      "icon": "Bike"
-    },
-    {
-      "id": "rental",
-      "label": "Alquiler y Leasing",
-      "icon": "Key"
-    },
-    {
-      "id": "taxi",
-      "label": "Taxi y Transporte",
-      "icon": "Car"
-    },
-    {
-      "id": "asset",
-      "label": "Gestión de Activos",
-      "icon": "Database"
-    },
-    {
-      "id": "construction",
-      "label": "Construcción y Minería",
-      "icon": "HardHat"
     }
   ],
   "items": [
     {
+      "id": "mexico-cross-border-logistics",
+      "categoryId": "industry",
+      "title": "Seguridad Logística Transfronteriza México",
+      "summary": "Asegure su flota transfronteriza en México con vigilancia AI en tiempo real. Prevenga robo de carga, garantice seguridad del conductor y simplifique reclamos de seguros.",
+      "image": "/images/solutions/mexico-logistics.jpeg",
+      "icon": "ShieldAlert",
+      "color": "red"
+    },
+    {
       "id": "public-safety",
-      "categoryId": "government",
+      "categoryId": "industry",
+      "title": "Soluciones de Flota para Seguridad Pública",
+      "summary": "Mejore los tiempos de respuesta de emergencia y la seguridad de los oficiales con dashcams con IA, rastreo GPS en tiempo real y recuperación de video de grado evidencial.",
+      "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
       "icon": "Building2",
-      "title": "Gestión de Flotas de Seguridad Pública",
-      "summary": "Garantizando una respuesta rápida y rendición de cuentas para los servicios de policía, bomberos y ambulancias con seguimiento en tiempo real.",
-      "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
       "color": "blue"
     },
     {
-      "id": "cold-chain",
-      "categoryId": "logistics",
-      "icon": "Truck",
-      "title": "Monitoreo de Cadena de Frío",
-      "summary": "Seguimiento en tiempo real de temperatura y humedad para el transporte de mercancías perecederas para garantizar el cumplimiento.",
-      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
-      "color": "cyan"
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "Solución Logística de Cadena de Frío Tailandia",
+      "summary": "Visibilidad integral de cadena de frío para el mercado tailandés. Prevenga deterioro de alimentos y asegure cumplimiento de temperatura con rastreo GPS y monitoreo de video.",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
+      "icon": "Layers",
+      "color": "blue"
     }
   ]
 }

@@ -11,8 +11,17 @@ All notable changes to the FleetGoo project will be documented in this file.
     - implemented secure credential management using `.env`.
 - **SEO / Tooling**:
     - Added `tools/generate-llms.js` to automatically generate `llms.txt` for AI crawlers (ChatGPT/Perplexity).
+    - **Image Optimization Check**: Added `tools/check-image-sizes.js` to validate image file sizes before build.
+        - Scans `public/images` recursively for images larger than 1MB.
+        - Provides detailed statistics and optimization recommendations.
+        - Integrated into `prebuild` workflow to prevent oversized images from being deployed.
+        - Can be run independently with `npm run check:images`.
+    - Created comprehensive `tools/README.md` documentation for all utility scripts.
+
 
 ### Known Issues (TODO)
+- **Admin Interface**:
+    - **Stats Block Background Selector**: The background field in Stats blocks may not correctly save selected values (Blue/White/Gray) to the JSON file. The `getFieldType()` function in `SchemaForm.jsx` has a potential conflict where fields containing "background" in the name are auto-detected as `color` type (line 26), which may override the explicit `select` type configuration defined in `BLOCK_TYPES` (line 84). Needs investigation to confirm if `fieldConfig` is properly passed and prioritized.
 - **Tooling**:
     - `tools/generate-llms.js`: currently generates `undefined` values for some product titles/descriptions because of JSON field name mismatches. Needs to be updated to strictly map field names (e.g., `metaTitle` vs `title`) from the `public/data` schema.
     - **Localization**: Create a reusable, automated translation script (CLI tool) that connects to an LLM API to translate product JSONs from EN to other languages, replacing the manual one-off script.

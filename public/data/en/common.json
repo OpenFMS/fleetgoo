@@ -19,7 +19,7 @@
                 "title": "Products",
                 "links": [
                     {
-                        "label": "Fleet Management Platform",
+                        "label": "FleetGoo Platform",
                         "url": "/en/software"
                     },
                     {
@@ -40,20 +40,16 @@
                 "title": "Solutions",
                 "links": [
                     {
-                        "label": "Logistics",
-                        "url": "/en/solutions/logistics"
+                        "label": "Cross-border Logistics",
+                        "url": "/en/solutions/mexico-cross-border-logistics"
                     },
                     {
-                        "label": "Construction",
-                        "url": "/en/solutions/construction"
+                        "label": "Public Transport",
+                        "url": "/en/solutions/public-safety"
                     },
                     {
-                        "label": "Delivery",
-                        "url": "/en/solutions/delivery"
-                    },
-                    {
-                        "label": "Corporate",
-                        "url": "/en/solutions/government"
+                        "label": "Cold Chain",
+                        "url": "/en/solutions/thailand-cold-chain"
                     }
                 ]
             },
@@ -65,16 +61,8 @@
                         "url": "/en/about"
                     },
                     {
-                        "label": "Careers",
+                        "label": "Contact Us",
                         "url": "/en/contact"
-                    },
-                    {
-                        "label": "Partners",
-                        "url": "/en/contact"
-                    },
-                    {
-                        "label": "Blog",
-                        "url": "/en/blog"
                     }
                 ]
             },
@@ -83,19 +71,7 @@
                 "links": [
                     {
                         "label": "Documentation",
-                        "url": "#"
-                    },
-                    {
-                        "label": "FAQ",
-                        "url": "#"
-                    },
-                    {
-                        "label": "Contact",
-                        "url": "/en/contact"
-                    },
-                    {
-                        "label": "Downloads",
-                        "url": "#"
+                        "url": "https://docs.fleetgoo.com"
                     }
                 ]
             }

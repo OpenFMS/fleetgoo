@@ -1,8 +1,8 @@
 {
     "nav": {
         "home": "首页",
-        "products": "产品中心",
-        "software": "平台软件",
+        "products": "产品",
+        "software": "平台",
         "solutions": "解决方案",
         "about": "关于我们",
         "contact": "联系我们"
@@ -13,17 +13,17 @@
         "phone": "+86 150-138-15400"
     },
     "footer": {
-        "companyDescription": "智能车辆追踪和车队管理解决方案的领先提供商。",
+        "companyDescription": "领先的智能车辆跟踪和车队管理解决方案提供商。",
         "sections": {
             "products": {
-                "title": "产品中心",
+                "title": "产品",
                 "links": [
                     {
-                        "label": "车队管理平台",
+                        "label": "FleetGoo平台",
                         "url": "/zh/software"
                     },
                     {
-                        "label": "GPS追踪器",
+                        "label": "GPS定位器",
                         "url": "/zh/products"
                     },
                     {
@@ -31,7 +31,7 @@
                         "url": "/zh/products"
                     },
                     {
-                        "label": "车载监控系统",
+                        "label": "MDVR系统",
                         "url": "/zh/products"
                     }
                 ]
@@ -40,67 +40,43 @@
                 "title": "解决方案",
                 "links": [
                     {
-                        "label": "物流运输",
-                        "url": "/zh/solutions/logistics"
+                        "label": "跨境物流",
+                        "url": "/zh/solutions/mexico-cross-border-logistics"
                     },
                     {
-                        "label": "工程建设",
-                        "url": "/zh/solutions/construction"
+                        "label": "公共交通",
+                        "url": "/zh/solutions/public-safety"
                     },
                     {
-                        "label": "即时配送",
-                        "url": "/zh/solutions/delivery"
-                    },
-                    {
-                        "label": "企业车队",
-                        "url": "/zh/solutions/government"
+                        "label": "冷链物流",
+                        "url": "/zh/solutions/thailand-cold-chain"
                     }
                 ]
             },
             "company": {
-                "title": "关于公司",
+                "title": "公司",
                 "links": [
                     {
                         "label": "关于我们",
                         "url": "/zh/about"
                     },
                     {
-                        "label": "招贤纳士",
+                        "label": "联系我们",
                         "url": "/zh/contact"
-                    },
-                    {
-                        "label": "合作伙伴",
-                        "url": "/zh/contact"
-                    },
-                    {
-                        "label": "博客动态",
-                        "url": "/zh/blog"
                     }
                 ]
             },
             "support": {
-                "title": "客户支持",
+                "title": "支持",
                 "links": [
                     {
-                        "label": "技术文档",
-                        "url": "#"
-                    },
-                    {
-                        "label": "常见问题",
-                        "url": "#"
-                    },
-                    {
-                        "label": "联系我们",
-                        "url": "/zh/contact"
-                    },
-                    {
-                        "label": "下载中心",
-                        "url": "#"
+                        "label": "文档中心",
+                        "url": "https://docs.fleetgoo.com"
                     }
                 ]
             }
         },
-        "copyright": "2025 FleetGoo. 保留所有权利。",
+        "copyright": "2025 FleetGoo. 版权所有。",
         "privacy": "隐私政策",
         "terms": "服务条款"
     }

@@ -4,22 +4,22 @@
         "products": "Productos",
         "software": "Plataforma",
         "solutions": "Soluciones",
-        "about": "Sobre Nosotros",
+        "about": "Nosotros",
         "contact": "Contacto"
     },
     "contactInfo": {
-        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "address": "Piso 6, Edificio Chuangyi, No. 3027 Nanhai Road, Distrito Nanshan, Shenzhen",
         "email": "sales@fleetgoo.com",
         "phone": "+86 150-138-15400"
     },
     "footer": {
-        "companyDescription": "Proveedor líder de soluciones inteligentes de seguimiento de vehículos y gestión de flotas.",
+        "companyDescription": "Proveedor líder de soluciones inteligentes de rastreo vehicular y gestión de flotas.",
         "sections": {
             "products": {
                 "title": "Productos",
                 "links": [
                     {
-                        "label": "Plataforma de Gestión de Flotas",
+                        "label": "Plataforma FleetGoo",
                         "url": "/es/software"
                     },
                     {
@@ -40,41 +40,29 @@
                 "title": "Soluciones",
                 "links": [
                     {
-                        "label": "Logística",
-                        "url": "/es/solutions/logistics"
+                        "label": "Logística Transfronteriza",
+                        "url": "/es/solutions/mexico-cross-border-logistics"
                     },
                     {
-                        "label": "Construcción",
-                        "url": "/es/solutions/construction"
+                        "label": "Transporte Público",
+                        "url": "/es/solutions/public-safety"
                     },
                     {
-                        "label": "Reparto",
-                        "url": "/es/solutions/delivery"
-                    },
-                    {
-                        "label": "Corporativo",
-                        "url": "/es/solutions/government"
+                        "label": "Cadena de Frío",
+                        "url": "/es/solutions/thailand-cold-chain"
                     }
                 ]
             },
             "company": {
-                "title": "Compañía",
+                "title": "Empresa",
                 "links": [
                     {
-                        "label": "Sobre Nosotros",
+                        "label": "Nosotros",
                         "url": "/es/about"
                     },
                     {
-                        "label": "Carreras",
+                        "label": "Contáctenos",
                         "url": "/es/contact"
-                    },
-                    {
-                        "label": "Socios",
-                        "url": "/es/contact"
-                    },
-                    {
-                        "label": "Blog",
-                        "url": "/es/blog"
                     }
                 ]
             },
@@ -83,19 +71,7 @@
                 "links": [
                     {
                         "label": "Documentación",
-                        "url": "#"
-                    },
-                    {
-                        "label": "Preguntas Frecuentes",
-                        "url": "#"
-                    },
-                    {
-                        "label": "Contacto",
-                        "url": "/es/contact"
-                    },
-                    {
-                        "label": "Descargas",
-                        "url": "#"
+                        "url": "https://docs.fleetgoo.com"
                     }
                 ]
             }

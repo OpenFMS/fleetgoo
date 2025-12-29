@@ -19,7 +19,7 @@
       "categoryId": "industry",
       "title": "Mexico Cross-Border Logistics Security",
       "summary": "Secure your cross-border fleet in Mexico with real-time AI surveillance. Prevent cargo theft, ensure driver safety, and simplify insurance claims.",
-      "image": "/images/solutions/mexico-logistics.jpg",
+      "image": "/images/solutions/mexico-logistics.jpeg",
       "icon": "ShieldAlert",
       "color": "red"
     },
@@ -37,7 +37,7 @@
       "categoryId": "industry",
       "title": "Thailand Cold Chain Logistics Solution",
       "summary": "End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.",
-      "image": "/images/solutions/cold-chain-hero.jpg",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
       "icon": "Layers",
       "color": "blue"
     }

@@ -33,13 +33,6 @@
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "/images/company/company-main.png",
-      "caption": "FleetGoo End-to-End Public Safety Architecture: From Vehicle Sensors to Cloud Command Center.",
-      "width": "full"
-    },
-    {
       "type": "features",
       "title": "Core Capabilities",
       "layout": "grid",
@@ -100,27 +93,18 @@
         {
           "title": "AI-Powered Collision Avoidance (ADAS)",
           "desc": "Our advanced Mobileye-compatible ADAS system scans the road ahead. It warns drivers of potential forward collisions, lane departures, and pedestrians in real-time, giving them precious seconds to react.",
-          "image": "/images/products/d510-main.png"
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
           "title": "Secure Chain of Custody",
           "desc": "Video files are watermarked and encrypted from the moment of capture. Our cloud platform maintains a strict audit log of who accessed or downloaded footage, ensuring admissibility in court.",
-          "image": "/images/products/d901-main.png"
+          "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
-          "title": "6-CH Display ",
-          "desc": "非常NB的AI 显示器，完美解决偷油、偷货的问题",
-          "image": "/images/products/d901-main.png"
+          "title": "Total Asset Security: Future-Proof Your Fleet",
+          "desc": "Stop Theft Before It Starts. Our advanced 10\" Display and 4-Channel BSD Camera System give your fleet 360° intelligent vision, actively preventing cargo and fuel loss. Enhance security and efficiency with real-time awareness, protecting every journey and every drop.",
+          "image": "/images/products/D901-main.jpg"
         }
-      ]
-    },
-    {
-      "type": "product_list",
-      "title": "Recommended Hardware Configuration",
-      "productIds": [
-        "mdvr-4ch",
-        "dsm-camera",
-        "body-cam"
       ]
     },
     {
@@ -128,13 +112,6 @@
       "title": "Ready to modernize your fleet?",
       "buttonText": "Get a Custom Quote",
       "link": "/en/contact"
-    },
-    {
-      "type": "media",
-      "mediaType": "video",
-      "url": "https://www.youtube.com/watch?v=0e3GPea1Tyg",
-      "caption": "现实版鱿鱼游戏，坚持到最后赢得456,000美元",
-      "width": "container"
     }
   ]
 }
