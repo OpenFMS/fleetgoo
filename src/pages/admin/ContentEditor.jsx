@@ -230,7 +230,7 @@ const ContentEditor = () => {
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
-                            {['en', 'zh', 'es', 'jp'].map(lang => (
+                            {['en', 'zh', 'es', 'ja'].map(lang => (
                                 <DropdownMenuItem key={lang} onClick={() => handleCloneToLang(lang)} disabled={file.startsWith(lang + '/')}>
                                     <Globe className="w-3 h-3 mr-2" />
                                     {lang.toUpperCase()}

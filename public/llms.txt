@@ -1,6 +1,6 @@
 # FleetGoo Site Index
 # Using this file, LLMs can discover the structure and content of the site.
-# Generated at: 2025-12-29T09:02:04.619Z
+# Generated at: 2025-12-29T09:45:41.336Z
 
 - [Untitled Page](https://www.fleetgpstrack.com/en): No description available
 - [About Us](https://www.fleetgpstrack.com/en/about-us): Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.

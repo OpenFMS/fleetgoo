@@ -79,10 +79,10 @@ const HomePage = ({ language, settings }) => {
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">{item.title}</h3>
                   <p className="text-slate-600 dark:text-gray-400 leading-relaxed mb-4">
-                    <strong className="text-red-600 dark:text-red-300">Pain:</strong> {item.pain}
+                    <strong className="text-red-700 dark:text-red-300">Pain:</strong> {item.pain}
                   </p>
                   <p className="text-slate-600 dark:text-gray-300">
-                    <strong className="text-green-600 dark:text-green-400">Solution:</strong> {item.solution}
+                    <strong className="text-green-700 dark:text-green-400">Solution:</strong> {item.solution}
                   </p>
                 </motion.div>
               );
@@ -124,7 +124,7 @@ const HomePage = ({ language, settings }) => {
                   <div className="w-full md:w-1/2">
                     <img
                       src={tab.image}
-                      srcSet={`${tab.image.replace(/(\.[^.]+)$/, '-mobile$1')} 800w, ${tab.image} 1200w`}
+                      srcSet={`${tab.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w, ${tab.image} 1200w`}
                       sizes="(max-width: 768px) 100vw, 50vw"
                       alt={tab.title}
                       className="rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-blue-900/20 w-full object-cover h-[350px]"
@@ -181,7 +181,7 @@ const HomePage = ({ language, settings }) => {
                   className="bg-slate-50 dark:bg-slate-950 p-6 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-blue-400 dark:hover:border-blue-500/50 hover:shadow-lg dark:hover:shadow-none transition-all"
                 >
                   <Icon className="w-10 h-10 text-blue-600 dark:text-blue-500 mb-4" />
-                  <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{item.title}</h4>
+                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">{item.title}</h3>
                   <p className="text-slate-600 dark:text-gray-400 text-sm">{item.description}</p>
                 </motion.div>
               );

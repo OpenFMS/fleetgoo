@@ -20,19 +20,19 @@
                 "links": [
                     {
                         "label": "FleetGooプラットフォーム",
-                        "url": "/jp/software"
+                        "url": "/ja/software"
                     },
                     {
                         "label": "GPSトラッカー",
-                        "url": "/jp/products"
+                        "url": "/ja/products"
                     },
                     {
                         "label": "4Gドライブレコーダー",
-                        "url": "/jp/products"
+                        "url": "/ja/products"
                     },
                     {
                         "label": "MDVRシステム",
-                        "url": "/jp/products"
+                        "url": "/ja/products"
                     }
                 ]
             },
@@ -41,15 +41,15 @@
                 "links": [
                     {
                         "label": "国境を越えた物流",
-                        "url": "/jp/solutions/mexico-cross-border-logistics"
+                        "url": "/ja/solutions/mexico-cross-border-logistics"
                     },
                     {
                         "label": "公共交通",
-                        "url": "/jp/solutions/public-safety"
+                        "url": "/ja/solutions/public-safety"
                     },
                     {
                         "label": "コールドチェーン",
-                        "url": "/jp/solutions/thailand-cold-chain"
+                        "url": "/ja/solutions/thailand-cold-chain"
                     }
                 ]
             },
@@ -58,11 +58,11 @@
                 "links": [
                     {
                         "label": "会社概要",
-                        "url": "/jp/about"
+                        "url": "/ja/about-us"
                     },
                     {
                         "label": "お問い合わせ",
-                        "url": "/jp/contact"
+                        "url": "/ja/contact"
                     }
                 ]
             },

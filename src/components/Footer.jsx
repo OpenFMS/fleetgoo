@@ -11,7 +11,8 @@ const Footer = ({ language, commonData, settings }) => {
   const iconMap = { Facebook, Twitter, Linkedin, Instagram, Youtube };
   const socialLinks = settings?.socialLinks?.map(link => ({
     icon: iconMap[link.platform],
-    href: link.url
+    href: link.url,
+    platform: link.platform
   })).filter(link => link.icon) || [];
 
   return (
@@ -44,6 +45,7 @@ const Footer = ({ language, commonData, settings }) => {
                   <motion.a
                     key={index}
                     href={social.href}
+                    aria-label={social.platform}
                     whileHover={{ scale: 1.1, y: -2 }}
                     className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors"
                   >

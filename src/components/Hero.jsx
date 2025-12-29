@@ -131,10 +131,10 @@ const Hero = ({ language, data }) => {
                   alt={t.title}
                   className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20"
                   src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
-                  srcSet={t.image ? `${t.image.replace(/(\.[^.]+)$/, '-mobile$1')} 800w, ${t.image} 1584w` : undefined}
-                  sizes="(max-width: 768px) 100vw, 50vw"
                   width="1584"
                   height="672"
+                  srcSet={t.image ? `${t.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w, ${t.image} 1584w` : undefined}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   loading="eager"
                   fetchpriority="high"
                 />

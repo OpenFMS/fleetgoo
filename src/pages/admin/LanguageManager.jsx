@@ -112,13 +112,13 @@ const LanguageManager = () => {
             <Card>
                 <CardHeader>
                     <CardTitle>Add New Language</CardTitle>
-                    <CardDescription>Enter a language code (e.g. 'fr', 'de', 'jp') to initialize a new translation.</CardDescription>
+                    <CardDescription>Enter a language code (e.g. 'fr', 'de', 'ja') to initialize a new translation.</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <form onSubmit={handleCreate} className="flex gap-4">
                         <div className="flex-1 max-w-sm">
                             <Input
-                                placeholder="Language Code (e.g. jp)"
+                                placeholder="Language Code (e.g. ja)"
                                 value={newLangCode}
                                 onChange={e => setNewLangCode(e.target.value)}
                                 maxLength={5}

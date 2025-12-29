@@ -213,7 +213,7 @@ window.fetch = function(...args) {
 					const responseClone = response.clone();
 					const errorFromRes = await responseClone.text();
 					const requestUrl = response.url;
-					console.error(\`Fetch error from \${requestUrl}: \${errorFromRes}\`);
+					// console.error(\`Fetch error from \${requestUrl}: \${errorFromRes}\`);
 			}
 
 			return response;
@@ -670,6 +670,7 @@ export default defineConfig({
 		},
 	},
 	build: {
+		sourcemap: true,
 		// cssCodeSplit: true,
 		rollupOptions: {
 			external: [
@@ -680,7 +681,34 @@ export default defineConfig({
 			],
 			output: {
 				manualChunks(id) {
-					// Simple vendor chunking to ensure stability
+					// 1. Core React (Critical for startup, keep it separate and first)
+					if (id.includes('/node_modules/react/') ||
+						id.includes('/node_modules/react-dom/') ||
+						id.includes('/node_modules/scheduler/')) {
+						return 'react-vendor';
+					}
+
+					// 2. Routing (Critical)
+					if (id.includes('/node_modules/react-router') ||
+						id.includes('/node_modules/@remix-run')) {
+						return 'router-vendor';
+					}
+
+					// 3. UI Animations (Heavy, load later)
+					if (id.includes('/node_modules/framer-motion/')) {
+						return 'motion-vendor';
+					}
+
+					// 4. UI Components & Icons (Radix, Lucide, etc.)
+					if (id.includes('/node_modules/@radix-ui/') ||
+						id.includes('/node_modules/lucide-react/') ||
+						id.includes('/node_modules/class-variance-authority/') ||
+						id.includes('/node_modules/clsx/') ||
+						id.includes('/node_modules/tailwind-merge/')) {
+						return 'ui-vendor';
+					}
+
+					// 5. Catch-all for other node_modules
 					if (id.includes('node_modules')) {
 						return 'vendor';
 					}

@@ -178,7 +178,7 @@ const ContactForm = ({ labels = {}, language = 'en', className = "", settings = 
             <div className="space-y-2">
                 <Label htmlFor="product-interest" className="text-slate-700 dark:text-gray-300">{ui.productInterest}</Label>
                 <Select onValueChange={handleSelectChange} value={formData.productInterest}>
-                    <SelectTrigger className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white w-full">
+                    <SelectTrigger aria-label={ui.productInterest} className="bg-slate-50 dark:bg-slate-900 border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white w-full">
                         <SelectValue placeholder="Select a product..." />
                     </SelectTrigger>
                     <SelectContent className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white">

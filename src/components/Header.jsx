@@ -82,9 +82,13 @@ const Header = ({ language, commonData, settings }) => {
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 cursor-pointer">
               {/* Light Mode Logo */}
               <img
-                src={settings?.branding?.logoLight || "/images/brand/logo-light.webp"}
+                src={settings?.branding?.logoLight ? settings.branding.logoLight.replace('.webp', '-sm.webp') : "/images/brand/logo-light-sm.webp"}
+                srcSet={`${settings?.branding?.logoLight ? settings.branding.logoLight.replace('.webp', '-sm.webp') : "/images/brand/logo-light-sm.webp"} 300w, ${settings?.branding?.logoLight || "/images/brand/logo-light.webp"} 935w`}
+                sizes="(max-width: 768px) 150px, 180px"
                 alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
                 className="h-8 md:h-10 w-auto dark:hidden"
+                width="180"
+                height="40"
               />
               {/* Dark Mode Logo */}
               <img
@@ -113,7 +117,7 @@ const Header = ({ language, commonData, settings }) => {
 
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon" className="hover:bg-slate-100 dark:hover:bg-blue-500/10 text-slate-700 dark:text-white dark:hover:text-blue-400">
+                <Button variant="ghost" size="icon" aria-label="Select language" className="hover:bg-slate-100 dark:hover:bg-blue-500/10 text-slate-700 dark:text-white dark:hover:text-blue-400">
                   <Globe className="w-5 h-5" />
                 </Button>
               </DropdownMenuTrigger>
@@ -132,7 +136,7 @@ const Header = ({ language, commonData, settings }) => {
             </DropdownMenu>
 
             {/* Mobile Menu Toggle */}
-            <Button variant="ghost" size="icon" className="md:hidden text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:text-blue-400 dark:hover:bg-blue-500/10" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            <Button variant="ghost" size="icon" aria-label="Toggle mobile menu" className="md:hidden text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:text-blue-400 dark:hover:bg-blue-500/10" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </Button>
           </div>
