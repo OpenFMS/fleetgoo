@@ -91,13 +91,13 @@
           "title": "AI算法校准",
           "desc": "智能检测，可靠警报。我们严格校准ADAS与DMS算法，确保对疲劳、分心和路况风险的精准识别。",
           "icon": "",
-          "image": "/images/company/ai-algorithm-calibration.webp"
+          "image": "/images/company/ai-algorithm-calibration.jpg"
         },
         {
           "title": "重载视频处理",
           "desc": "稳定性是我们的首要任务。我们的MDVR经过72小时4/8路1080P全负载录像测试，确保即使在极高负载下也坚如磐石。",
           "icon": "",
-          "image": "/images/company/multi-channel-stress-test.jpeg"
+          "image": "/images/company/multi-channel-stress-test.jpg"
         }
       ]
     }

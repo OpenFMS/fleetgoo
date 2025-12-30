@@ -9,9 +9,9 @@
       "type": "hero",
       "title": "オールインワン車両インテリジェンスプラットフォーム",
       "subtitle": "完全なエコシステムで業務を統合します。強力なクラウドSaaSと直感的なモバイルアプリから、柔軟なオープンAPI連携まで、よりスマートな車両管理の意思決定のためのインフラを提供します。",
-      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
       "ctaText": "プラットフォームを見る",
-      "ctaLink": "/jp/contact"
+      "ctaLink": "/ja/contact"
     },
     {
       "type": "features",
@@ -51,53 +51,49 @@
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
-      "caption": "統合ダッシュボード：ビデオ、地図、データを一画面に表示",
-      "width": "container",
-      "title": "[TODO] Core Feature",
-      "layout": "[TODO] alternating",
+      "type": "features",
+      "title": "コア機能",
+      "layout": "alternating",
       "items": [
         {
-          "title": "[TODO] Operations Dashboard",
-          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
-          "icon": "[TODO] Check",
+          "title": "オペレーションダッシュボード",
+          "desc": "オペレーション、安全性、データに関する3つの主要レポートにより、管理者は商用車フリートの動向と傾向をより包括的かつ正確に把握できます。",
+          "icon": "Check",
           "image": "/images/products/platform/Dashboard.png"
         },
         {
-          "title": "[TODO] Real-Time GPS Location",
-          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
-          "icon": "[TODO] Check",
+          "title": "リアルタイムGPS位置情報",
+          "desc": "デバイスを通じて、速度、車両状態、走行距離、運転時間などの車両情報とリアルタイムの車両位置を取得します。",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-gps-real-monitor.png"
         },
         {
-          "title": "[TODO] Video Surveillance",
-          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
-          "icon": "[TODO] Check",
+          "title": "ビデオ監視",
+          "desc": "リアルタイムの車両監視ビデオを再生でき、複数の車両の同時閲覧、キャプチャ、パラメータ設定をサポートします。",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
-          "title": "[TODO] Remote Control",
-          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
-          "icon": "[TODO] Check",
+          "title": "リモートコントロール",
+          "desc": "車両に対するリモートキャプチャ、インターホン、PTZ制御、パラメータ設定などの操作を実行できます。",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-remote-control.png"
         },
         {
-          "title": "[TODO] Video & Track Playback",
-          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
-          "icon": "[TODO] Check",
+          "title": "ビデオ＆軌跡再生",
+          "desc": "過去の車両ルート軌跡（停止地点、アラーム、速度曲線など）を照会可能。特定期間のビデオデータの再生やローカルへのダウンロードもサポートします。",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
-          "title": "[TODO] Geo Fence",
-          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
-          "icon": "[TODO] Check",
+          "title": "ジオフェンス",
+          "desc": "電子フェンスゾーンを設定でき、車両がゾーンに出入りするたびにアラートが送信されます。",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-geoface.png"
         },
         {
-          "title": "[TODO] Multi-platform integration",
-          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "title": "マルチプラットフォーム統合",
+          "desc": "このプラットフォームは、Web、PC、ミニプログラム、モバイルアプリなど、複数の端末間の相互接続をサポートします。",
           "icon": "",
           "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
         }

@@ -9,7 +9,7 @@
       "type": "hero",
       "title": "La Plataforma de Inteligencia de Flotas Todo en Uno",
       "subtitle": "Unifique sus operaciones con un ecosistema completo. Desde nuestro potente SaaS en la nube y aplicaciones móviles intuitivas hasta integraciones flexibles de API abierta: proporcionamos la infraestructura para decisiones de flota más inteligentes.",
-      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
       "ctaText": "Explorar la Plataforma",
       "ctaLink": "/es/contact"
     },
@@ -51,53 +51,49 @@
       ]
     },
     {
-      "type": "media",
-      "mediaType": "image",
-      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
-      "caption": "Panel Unificado: Video, Mapa y Datos en una Vista",
-      "width": "container",
-      "title": "[TODO] Core Feature",
-      "layout": "[TODO] alternating",
+      "type": "features",
+      "title": "Funcionalidades Principales",
+      "layout": "alternating",
       "items": [
         {
-          "title": "[TODO] Operations Dashboard",
-          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
-          "icon": "[TODO] Check",
+          "title": "Tablero de Operaciones",
+          "desc": "Los tres informes principales sobre operaciones, seguridad y datos permiten a la gerencia tener una comprensión más completa y precisa de la dinámica y las tendencias de la flota de vehículos comerciales.",
+          "icon": "Check",
           "image": "/images/products/platform/Dashboard.png"
         },
         {
-          "title": "[TODO] Real-Time GPS Location",
-          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
-          "icon": "[TODO] Check",
+          "title": "Ubicación GPS en Tiempo Real",
+          "desc": "Obtenga la ubicación del vehículo en tiempo real y la información del vehículo, incluida la velocidad, el estado, el kilometraje y el tiempo de conducción a través del dispositivo.",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-gps-real-monitor.png"
         },
         {
-          "title": "[TODO] Video Surveillance",
-          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
-          "icon": "[TODO] Check",
+          "title": "Videovigilancia",
+          "desc": "Reproduzca videos de monitoreo de vehículos en tiempo real y soporte la navegación simultánea, captura y configuración de parámetros de video de múltiples vehículos.",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
-          "title": "[TODO] Remote Control",
-          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
-          "icon": "[TODO] Check",
+          "title": "Control Remoto",
+          "desc": "Realice capturas remotas, intercomunicador, control PTZ, configuración de parámetros y otras operaciones en el vehículo.",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-remote-control.png"
         },
         {
-          "title": "[TODO] Video & Track Playback",
-          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
-          "icon": "[TODO] Check",
+          "title": "Reproducción de Video y Seguimiento",
+          "desc": "Consulte la trayectoria de la ruta histórica de cada vehículo, mostrando paradas, alarmas y curvas de velocidad; reproduzca datos de video históricos y descárguelos al sistema local.",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
-          "title": "[TODO] Geo Fence",
-          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
-          "icon": "[TODO] Check",
+          "title": "Geo Cerca",
+          "desc": "Configure zonas de cerca electrónica y reciba alertas cada vez que un vehículo entre o salga de la zona.",
+          "icon": "Check",
           "image": "/images/products/platform/vehicle-geoface.png"
         },
         {
-          "title": "[TODO] Multi-platform integration",
-          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "title": "Integración multiplataforma",
+          "desc": "La plataforma admite la interconectividad a través de múltiples terminales, incluidos web, PC, mini programas y aplicaciones móviles.",
           "icon": "",
           "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
         }

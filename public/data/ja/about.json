@@ -91,13 +91,13 @@
           "title": "AIアルゴリズムの較正",
           "desc": "スマートな検知、信頼できるアラート。ADASとDMSのアルゴリズムを厳密に調整し、疲労、わき見、道路リスクの正確な認識を保証します。",
           "icon": "",
-          "image": "/images/company/ai-algorithm-calibration.webp"
+          "image": "/images/company/ai-algorithm-calibration.jpg"
         },
         {
           "title": "高負荷ビデオ処理",
           "desc": "安定性が私たちの最優先事項です。当社のMDVRは、4/8チャンネル1080P入力による72時間の全負荷録画テストを受け、極度の負荷下でも揺るぎない安定性を保証します。",
           "icon": "",
-          "image": "/images/company/multi-channel-stress-test.jpeg"
+          "image": "/images/company/multi-channel-stress-test.jpg"
         }
       ]
     }
