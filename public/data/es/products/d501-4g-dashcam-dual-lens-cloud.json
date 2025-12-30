@@ -1,0 +1,55 @@
+{
+  "id": "d501-4g-dashcam-dual-lens-cloud",
+  "categoryId": "4g-dashcam",
+  "title": "DashCam 4G D501",
+  "metaTitle": "DashCam 4G de Doble Lente D501",
+  "metaDesc": "Dashcam compacta D501 4G que ofrece grabación de doble lente (carretera + cabina) y conectividad en la nube.",
+  "fullDescription": "Dashcam compacta 4G para encendedor de cigarrillos que ofrece grabación de doble canal (frontal 1080P + interior 720P). Cuenta con instalación plug-and-play, monitoreo remoto en vivo, punto de acceso WiFi y análisis inteligente del comportamiento de conducción.",
+  "images": [
+    "/images/products/D501-main.jpg"
+  ],
+  "features": [
+    "Grabación Dual: 1080P (frente 120°) + 720P (interior 90°) grabación simultánea",
+    "Instalación Instantánea: Diseño plug-and-play para encendedor",
+    "Monitoreo Remoto: Conectividad 4G/WiFi para video en vivo, rastreo GPS e intercomunicador",
+    "Alertas Inteligentes: SOS, colisión, geocerca y alarmas de exceso de velocidad",
+    "Seguridad del Conductor: Análisis de aceleración/frenado/giro brusco"
+  ],
+  "parameters": [
+    {
+      "label": "Procesador",
+      "value": "SL8521E Cortex-A53 Doble núcleo 1.3GHz"
+    },
+    {
+      "label": "Cámaras",
+      "value": "Frontal 1080P + Interior 720P (IR)"
+    },
+    {
+      "label": "Red",
+      "value": "4G FDD-LTE / WCDMA / GSM"
+    },
+    {
+      "label": "Conectividad",
+      "value": "WiFi 802.11b/g/n (Hotspot)"
+    },
+    {
+      "label": "Posicionamiento",
+      "value": "GPS + BeiDou"
+    },
+    {
+      "label": "Almacenamiento",
+      "value": "Tarjeta TF (Max 128GB)"
+    },
+    {
+      "label": "Entrada de Energía",
+      "value": "9V-30V vía Encendedor"
+    },
+    {
+      "label": "Sensores",
+      "value": "Giroscopio de 6 ejes"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Dashcam D501, 1x Cable, 1x Montaje 3M, 1x Botón SOS",
+  "icon": "Video"
+}

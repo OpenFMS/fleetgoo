@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "title": "高度な車両インテリジェンス",
+    "subtitle": "スマートハードウェアとAI搭載ソフトウェアでフリートを変革",
+    "description": "業界をリードする4Gドライブレコーダー、GPS追跡、MDVRシステム、そして世界中の企業に信頼されている包括的なフリート管理プラットフォーム。",
+    "ctaPrimary": "製品を見る",
+    "ctaSecondary": "営業に問い合わせる",
+    "image": "/images/heros/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
+  },
+  "valueProps": {
+    "title": "最も困難なフリートの課題を解決",
+    "subtitle": "運用データを行動可能なインテリジェンスに変えます。",
+    "items": [
+      {
+        "icon": "Shield",
+        "title": "安全上の死角を排除",
+        "pain": "事故率の上昇と責任の不明確さ。",
+        "solution": "当社のADAS＆DMSドライブレコーダーは、疲労や危険をリアルタイムで検知し、未然に事故を防ぎます。"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "運用コストの削減",
+        "pain": "高い燃料消費と不正使用。",
+        "solution": "ルートを最適化し、アイドリングを監視する精密な追跡により、燃料コストを最大20％削減します。"
+      },
+      {
+        "icon": "Zap",
+        "title": "資産利用率の最大化",
+        "pain": "資産の場所不明とダウンタイム。",
+        "solution": "すべての車両や重機の完全な可視性を得て、常に稼働していることを確認します。"
+      }
+    ]
+  },
+  "featuredProducts": {
+    "title": "注目のハードウェア",
+    "subtitle": "信頼性とパフォーマンスのために設計された主力デバイスをご覧ください。",
+    "tabs": [
+      {
+        "id": "d501",
+        "label": "D501 - AIドラレコ",
+        "title": "D501 スマート4Gドライブレコーダー",
+        "description": "中国交通運輸部の基準（ライドシェアや物流など）に準拠した商用車両向けに設計されたこのAIドライブレコーダーは、デュアル1080Pビデオ、クラウドストレージ、北斗測位、ドライバー監視システム（DMS）、および先進運転支援システム（ADAS）を統合し、安全性とフリート管理効率を向上させます。",
+        "image": "/images/products/D501-main.jpg",
+        "benefits": [
+          "AI搭載ADAS＆DMS（疲労/脇見運転）",
+          "リアルタイム1080p HDビデオストリーミング",
+          "JT 808/1078標準プロトコル対応"
+        ],
+        "bestFor": [
+          "タクシー",
+          "ライドシェア",
+          "ラストワンマイル配送"
+        ]
+      },
+      {
+        "id": "d901",
+        "label": "D901 - 4CH MDVR",
+        "title": "D901 4チャンネルMDVR",
+        "description": "貨物および物流監視用の中央制御画面を備えたコンパクトなオールインワンデバイス。4チャンネルAHDビデオ入力、AI死角警告、セントリーモード、燃料盗難防止アラート、AI音声認識、4Gリモート監視をサポートします。",
+        "image": "/images/products/D901-main.jpg",
+        "benefits": [
+          "AI検知、燃料盗難防止、音声認識",
+          "最大4台のAHDカメラをサポート",
+          "IP67防水＆防振設計"
+        ],
+        "bestFor": [
+          "バス",
+          "トラック",
+          "建設"
+        ]
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "FleetGooを選ぶ理由",
+    "items": [
+      {
+        "icon": "Settings",
+        "title": "高度なエンジニアリング",
+        "description": "データ使用量を40％削減する独自のビデオ圧縮技術。"
+      },
+      {
+        "icon": "Globe",
+        "title": "グローバル接続",
+        "description": "国境を越えたシームレスなカバレッジを保証するマルチネットワークIoT SIM。"
+      },
+      {
+        "icon": "Shield",
+        "title": "エンタープライズセキュリティ",
+        "description": "エンドツーエンドの暗号化とGDPR準拠のクラウドインフラストラクチャ。"
+      },
+      {
+        "icon": "CheckCircle2",
+        "title": "99.9%の稼働率",
+        "description": "データへの常時アクセスを保証する冗長サーバーアーキテクチャ。"
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "業界リーダーからの信頼",
+    "stats": [
+      {
+        "icon": "Award",
+        "label": "15年以上のIoT経験",
+        "color": "yellow"
+      },
+      {
+        "icon": "Factory",
+        "label": "OEM/ODMサービス",
+        "color": "blue"
+      },
+      {
+        "icon": "Check",
+        "label": "CE/FCC認証",
+        "color": "green"
+      },
+      {
+        "icon": "Radio",
+        "label": "自社R&D",
+        "color": "purple"
+      }
+    ]
+  },
+  "leadMagnet": {
+    "title": "フリートのカスタム見積もりを取得",
+    "subtitle": "以下のフォームにご記入ください。フリートの専門家が最適なソリューションをご提案します。",
+    "form": {
+      "nameLabel": "お名前",
+      "emailLabel": "仕事用メール",
+      "companyLabel": "会社名",
+      "phoneLabel": "WhatsApp / 電話番号",
+      "productInterestLabel": "ご興味のある製品",
+      "messageLabel": "メッセージ",
+      "submitBtn": "問い合わせを送信",
+      "privacyNote": "私たちはあなたのプライバシーを尊重します。データは安全であり、第三者と共有されることはありません。"
+    }
+  }
+}

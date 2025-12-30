@@ -2,181 +2,139 @@
 
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const CLEAN_CONTENT_REGEX = {
-  comments: /\/\*[\s\S]*?\*\/|\/\/.*$/gm,
-  templateLiterals: /`[\s\S]*?`/g,
-  strings: /'[^']*'|"[^"]*"/g,
-  jsxExpressions: /\{.*?\}/g,
-  htmlEntities: {
-    quot: /&quot;/g,
-    amp: /&amp;/g,
-    lt: /&lt;/g,
-    gt: /&gt;/g,
-    apos: /&apos;/g
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Helper to read JSON safely
+const readJson = (filePath) => {
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (e) {
+    console.warn(`Failed to read JSON at ${filePath}:`, e.message);
+    return null;
   }
 };
 
-const EXTRACTION_REGEX = {
-  route: /<Route\s+[^>]*>/g,
-  path: /path=["']([^"']+)["']/,
-  element: /element=\{<(\w+)[^}]*\/?\s*>\}/,
-  helmet: /<Helmet[^>]*?>([\s\S]*?)<\/Helmet>/i,
-  helmetTest: /<Helmet[\s\S]*?<\/Helmet>/i,
-  title: /<title[^>]*?>\s*(.*?)\s*<\/title>/i,
-  description: /<meta\s+name=["']description["']\s+content=["'](.*?)["']/i
+// Helper to walk directories
+const getLanguageDirs = (dataRoot) => {
+  if (!fs.existsSync(dataRoot)) return [];
+  return fs.readdirSync(dataRoot, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name);
 };
 
-function cleanContent(content) {
-  return content
-    .replace(CLEAN_CONTENT_REGEX.comments, '')
-    .replace(CLEAN_CONTENT_REGEX.templateLiterals, '""')
-    .replace(CLEAN_CONTENT_REGEX.strings, '""');
-}
+function main() {
+  const projectRoot = path.resolve(__dirname, '..');
+  const dataRoot = path.join(projectRoot, 'public', 'data');
+  const settingsPath = path.join(dataRoot, 'settings.json');
 
-function cleanText(text) {
-  if (!text) return text;
-  
-  return text
-    .replace(CLEAN_CONTENT_REGEX.jsxExpressions, '')
-    .replace(CLEAN_CONTENT_REGEX.htmlEntities.quot, '"')
-    .replace(CLEAN_CONTENT_REGEX.htmlEntities.amp, '&')
-    .replace(CLEAN_CONTENT_REGEX.htmlEntities.lt, '<')
-    .replace(CLEAN_CONTENT_REGEX.htmlEntities.gt, '>')
-    .replace(CLEAN_CONTENT_REGEX.htmlEntities.apos, "'")
-    .trim();
-}
+  // Read global settings for site URL
+  const settings = readJson(settingsPath);
+  // Allow environment variable to override settings file
+  const siteUrl = process.env.SITE_URL || settings?.seo?.siteUrl || 'https://www.fleetgpstrack.com';
+  const defaultLanguage = settings?.defaultLanguage || 'en';
 
-function extractRoutes(appJsxPath) {
-  if (!fs.existsSync(appJsxPath)) return new Map();
+  console.log(`🔍 Generating llms.txt from JSON data in: ${dataRoot}`);
+  console.log(`🌐 Site URL: ${siteUrl}`);
 
-  try {
-    const content = fs.readFileSync(appJsxPath, 'utf8');
-    const routes = new Map();
-    const routeMatches = [...content.matchAll(EXTRACTION_REGEX.route)];
-    
-    for (const match of routeMatches) {
-      const routeTag = match[0];
-      const pathMatch = routeTag.match(EXTRACTION_REGEX.path);
-      const elementMatch = routeTag.match(EXTRACTION_REGEX.element);
-      const isIndex = routeTag.includes('index');
-      
-      if (elementMatch) {
-        const componentName = elementMatch[1];
-        let routePath;
-        
-        if (isIndex) {
-          routePath = '/';
-        } else if (pathMatch) {
-          routePath = pathMatch[1].startsWith('/') ? pathMatch[1] : `/${pathMatch[1]}`;
-        }
-        
-        routes.set(componentName, routePath);
+  const pages = [];
+  const languages = getLanguageDirs(dataRoot);
+
+  for (const lang of languages) {
+    const langDir = path.join(dataRoot, lang);
+
+    // 1. Process Static Pages (Home, Contact, About)
+    // Mapping: filename.json -> url_slug
+    const staticMap = {
+      'home.json': '', // root
+      'contact.json': 'contact',
+      'about.json': 'about-us',
+      'software.json': 'software'
+    };
+
+    for (const [file, slug] of Object.entries(staticMap)) {
+      const jsonPath = path.join(langDir, file);
+      const data = readJson(jsonPath);
+
+      if (data) {
+        // Determine URL: hide /en prefix if it's the default language (optional convention),
+        // but usually consistent URL structure is better. Let's stick to /lang/slug
+        // Or if your site logic is / for default lang.
+        // Assuming /lang/slug for now as per vite.config.js logic
+
+        const urlPath = slug ? `/${lang}/${slug}` : `/${lang}`;
+
+        pages.push({
+          title: data.metaTitle || data.title || 'Untitled Page',
+          description: data.metaDesc || data.subtitle || 'No description available',
+          url: `${siteUrl}${urlPath}`,
+          lang
+        });
       }
     }
 
-    return routes;
-  } catch (error) {
-    return new Map();
-  }
-}
+    // 2. Process Products (products.json)
+    const productsPath = path.join(langDir, 'products.json');
+    const productsData = readJson(productsPath);
+    if (productsData?.items) {
+      for (const item of productsData.items) {
+        pages.push({
+          title: item.metaTitle || item.name,
+          description: item.metaDesc || item.shortDesc,
+          url: `${siteUrl}/${lang}/products/${item.id}`,
+          lang
+        });
+      }
+    }
 
-function findReactFiles(dir) {
-  return fs.readdirSync(dir).map(item => path.join(dir, item));
-}
-
-function extractHelmetData(content, filePath, routes) {
-  const cleanedContent = cleanContent(content);
-  
-  if (!EXTRACTION_REGEX.helmetTest.test(cleanedContent)) {
-    return null;
-  }
-  
-  const helmetMatch = content.match(EXTRACTION_REGEX.helmet);
-  if (!helmetMatch) return null;
-  
-  const helmetContent = helmetMatch[1];
-  const titleMatch = helmetContent.match(EXTRACTION_REGEX.title);
-  const descMatch = helmetContent.match(EXTRACTION_REGEX.description);
-  
-  const title = cleanText(titleMatch?.[1]);
-  const description = cleanText(descMatch?.[1]);
-  
-  const fileName = path.basename(filePath, path.extname(filePath));
-  const url = routes.length && routes.has(fileName) 
-    ? routes.get(fileName) 
-    : generateFallbackUrl(fileName);
-  
-  return {
-    url,
-    title: title || 'Untitled Page',
-    description: description || 'No description available'
-  };
-}
-
-function generateFallbackUrl(fileName) {
-  const cleanName = fileName.replace(/Page$/, '').toLowerCase();
-  return cleanName === 'app' ? '/' : `/${cleanName}`;
-}
-
-function generateLlmsTxt(pages) {
-  const sortedPages = pages.sort((a, b) => a.title.localeCompare(b.title));
-  const pageEntries = sortedPages.map(page => 
-    `- [${page.title}](${page.url}): ${page.description}`
-  ).join('\n');
-  
-  return `## Pages\n${pageEntries}`;
-}
-
-function ensureDirectoryExists(dirPath) {
-  if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true });
-  }
-}
-
-function processPageFile(filePath, routes) {
-  try {
-    const content = fs.readFileSync(filePath, 'utf8');
-    return extractHelmetData(content, filePath, routes);
-  } catch (error) {
-    console.error(`❌ Error processing ${filePath}:`, error.message);
-    return null;
-  }
-}
-
-function main() {
-  const pagesDir = path.join(process.cwd(), 'src', 'pages');
-  const appJsxPath = path.join(process.cwd(), 'src', 'App.jsx');
-
-  let pages = [];
-  
-  if (!fs.existsSync(pagesDir)) {
-    pages.push(processPageFile(appJsxPath, []))
-    pages = pages.filter(Boolean);
-  } else {
-    const routes = extractRoutes(appJsxPath);
-    const reactFiles = findReactFiles(pagesDir);
-
-    pages = reactFiles
-      .map(filePath => processPageFile(filePath, routes))
-      .filter(Boolean);
+    // 3. Process Solutions (solutions.json)
+    const solutionsPath = path.join(langDir, 'solutions.json');
+    const solutionsData = readJson(solutionsPath);
+    if (solutionsData?.items) {
+      for (const item of solutionsData.items) {
+        pages.push({
+          title: item.metaTitle || item.title,
+          description: item.metaDesc || item.subtitle,
+          url: `${siteUrl}/${lang}/solutions/${item.id}`,
+          lang
+        });
+      }
+    }
   }
 
   if (pages.length === 0) {
-    console.error('❌ No pages with Helmet components found!');
-    process.exit(1);
+    console.warn('⚠️ No pages found. Check your public/data directory structure.');
+    return;
   }
 
+  // Sort pages: Default language first, then by URL
+  pages.sort((a, b) => {
+    if (a.lang === defaultLanguage && b.lang !== defaultLanguage) return -1;
+    if (a.lang !== defaultLanguage && b.lang === defaultLanguage) return 1;
+    return a.url.localeCompare(b.url);
+  });
 
-  const llmsTxtContent = generateLlmsTxt(pages);
-  const outputPath = path.join(process.cwd(), 'public', 'llms.txt');
-  
-  ensureDirectoryExists(path.dirname(outputPath));
-  fs.writeFileSync(outputPath, llmsTxtContent, 'utf8');
+  // Generate llms.txt content
+  const header = `# FleetGoo Site Index
+# Using this file, LLMs can discover the structure and content of the site.
+# Generated at: ${new Date().toISOString()}
+
+`;
+
+  const content = pages.map(p => `- [${p.title}](${p.url}): ${p.description}`).join('\n');
+
+  const outputPath = path.join(projectRoot, 'public', 'llms.txt');
+  fs.writeFileSync(outputPath, header + content, 'utf8');
+
+  console.log(`✅ Successfully generated llms.txt with ${pages.length} pages.`);
 }
 
+// Check if running directly
 const isMainModule = import.meta.url === `file://${process.argv[1]}`;
-
 if (isMainModule) {
   main();
 }

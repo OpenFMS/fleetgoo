@@ -1,0 +1,104 @@
+{
+    "page": {
+        "title": "製品紹介",
+        "subtitle": "完全な車両監視のための最先端ハードウェアソリューション",
+        "metaTitle": "車両用ハードウェア製品 | AIドライブレコーダー, MDVR, GPSトラッカー",
+        "metaDesc": "GPSトラッカー、4Gドライブレコーダー、MDVRシステムなど、プロフェッショナルな車両用ハードウェアをご覧ください。",
+        "viewDetailsBtn": "詳細を見る"
+    },
+    "categories": [
+        {
+            "id": "all",
+            "label": "すべて",
+            "icon": "Layers"
+        },
+        {
+            "id": "gps-tracker",
+            "label": "GPSトラッカー",
+            "icon": "MapPin"
+        },
+        {
+            "id": "4g-dashcam",
+            "label": "4Gドライブレコーダー",
+            "icon": "Camera"
+        },
+        {
+            "id": "4g-aicarbox",
+            "label": "AIカーボックス",
+            "icon": "MonitorPlay"
+        },
+        {
+            "id": "4g-camera",
+            "label": "AIカメラ",
+            "icon": "Camera"
+        },
+        {
+            "id": "accessories",
+            "label": "アクセサリー",
+            "icon": "Cpu"
+        },
+        {
+            "id": "oem-odm",
+            "label": "OEM・ODM",
+            "icon": "Wrench"
+        }
+    ],
+    "items": [
+        {
+            "id": "c08w-4g-gps-tracker-ip65-waterproof",
+            "categoryId": "gps-tracker",
+            "title": "C08W 4G GPSトラッカー",
+            "description": "燃料カット機能とIP65保護を備えたプロフェッショナルな4Gリアルタイム追跡デバイス。",
+            "image": "/images/products/C08W-main.jpg"
+        },
+        {
+            "id": "c08l-wireless-asset-tracker-long-standby",
+            "categoryId": "gps-tracker",
+            "title": "C08L 資産トラッカー",
+            "description": "3年のバッテリー寿命と磁気マウントを備えた超長時間待機型資産トラッカー。",
+            "image": "/images/products/C08L-main.jpg"
+        },
+        {
+            "id": "d501-4g-dashcam-dual-lens-cloud",
+            "categoryId": "4g-dashcam",
+            "title": "D501 4Gドライブレコーダー",
+            "description": "ライブストリーミングとSOSアラート機能を備えたデュアルレンズクラウドドライブレコーダー。",
+            "image": "/images/products/D501-main.jpg"
+        },
+        {
+            "id": "d701-pro-truck-dashcam-lockable",
+            "categoryId": "4g-dashcam",
+            "title": "D701 Pro ドライブレコーダー",
+            "description": "ロック可能なストレージと外部カメラサポートを備えた頑丈なフリート用ドライブレコーダー。",
+            "image": "/images/products/D701-main.jpg"
+        },
+        {
+            "id": "d401-ai-dashcam-adas-dms",
+            "categoryId": "4g-camera",
+            "title": "D401 AIカメラ",
+            "description": "ドライバーの安全を確保するためのADAS＆DMSアルゴリズムを内蔵したインテリジェントカメラ。",
+            "image": "/images/products/D401-main.jpg"
+        },
+        {
+            "id": "d901-smart-ai-camera-bsd-pedestrian",
+            "categoryId": "4g-camera",
+            "title": "D901 AIスマートカメラ",
+            "description": "死角検知（BSD）と歩行者検知機能を備えたマルチチャンネルAIカメラシステム。",
+            "image": "/images/products/D901-main.jpg"
+        },
+        {
+            "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+            "categoryId": "4g-aicarbox",
+            "title": "D604 AIカーボックス",
+            "description": "集中監視のための強力なAI処理を備えた8チャンネルMDVRハブ。",
+            "image": "/images/products/D604-main.jpg"
+        },
+        {
+            "id": "oem-custom-solution",
+            "categoryId": "oem-odm",
+            "title": "OEMカスタムソリューション",
+            "description": "お客様の特定のフリートニーズに合わせたハードウェア設計および製造サービス",
+            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+        }
+    ]
+}

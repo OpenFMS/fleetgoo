@@ -1,0 +1,96 @@
+{
+    "languages": [
+        {
+            "code": "en",
+            "label": "English",
+            "flag": "🇺🇸"
+        },
+        {
+            "code": "es",
+            "label": "Español",
+            "flag": "🇪🇸"
+        },
+        {
+            "code": "ja",
+            "label": "日本語",
+            "flag": "🇯🇵"
+        },
+        {
+            "code": "zh",
+            "label": "中文",
+            "flag": "🇨🇳"
+        }
+    ],
+    "defaultLanguage": "en",
+    "branding": {
+        "logoLight": "/images/brand/logo-light.webp",
+        "logoDark": "/images/brand/logo-dark.png",
+        "favicon": "/images/favicons/favicon.ico"
+    },
+    "socialLinks": [
+        {
+            "platform": "Facebook",
+            "url": "https://www.facebook.com/people/Mapgoo/61581872645799/"
+        },
+        {
+            "platform": "Linkedin",
+            "url": "https://www.linkedin.com/company/fleetgoo"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/mapgoosales"
+        },
+        {
+            "platform": "Youtube",
+            "url": "https://www.youtube.com/@mapgoosales"
+        }
+    ],
+    "analytics": {
+        "gtag": "G-QDNPB4LXK5"
+    },
+    "seo": {
+        "siteName": "FleetGoo",
+        "siteUrl": "https://www.fleetgpstrack.com",
+        "titleSeparator": "|",
+        "defaultTitle": "Advanced Fleet Management Solutions",
+        "defaultDescription": "Leading provider of AI-powered fleet management solutions, 4G AI dashcams, MDVR, GPS tracking, and fleet management software for commercial vehicles.",
+        "twitterHandle": "@FleetGoo"
+    },
+    "organization": {
+        "officialName": "FleetGoo Technology",
+        "phone": "+86 150-138-15400",
+        "email": "sales@fleetgoo.com"
+    },
+    "contactForm": {
+        "successMessage": {
+            "title": "Message Sent!",
+            "description": "Thank you for your inquiry. Our team will contact you shortly."
+        },
+        "errorMessage": {
+            "title": "Submission Failed",
+            "description": "Something went wrong. Please try again later or contact us directly via email."
+        },
+        "productOptions": [
+            {
+                "value": "d501",
+                "label": "D501 AI Dashcam"
+            },
+            {
+                "value": "d901",
+                "label": "D901 MDVR System"
+            },
+            {
+                "value": "c08l",
+                "label": "C08L Asset Tracker"
+            },
+            {
+                "value": "software",
+                "label": "Software Platform"
+            },
+            {
+                "value": "other",
+                "label": "Other / General Inquiry"
+            }
+        ]
+    }
+}

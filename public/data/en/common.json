@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "Home",
+        "products": "Products",
+        "software": "Platform",
+        "solutions": "Solutions",
+        "about": "About Us",
+        "contact": "Contact"
+    },
+    "contactInfo": {
+        "address": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "Leading provider of intelligent vehicle tracking and fleet management solutions.",
+        "sections": {
+            "products": {
+                "title": "Products",
+                "links": [
+                    {
+                        "label": "FleetGoo Platform",
+                        "url": "/en/software"
+                    },
+                    {
+                        "label": "GPS Tracker",
+                        "url": "/en/products"
+                    },
+                    {
+                        "label": "4G Dashcam",
+                        "url": "/en/products"
+                    },
+                    {
+                        "label": "MDVR System",
+                        "url": "/en/products"
+                    }
+                ]
+            },
+            "solutions": {
+                "title": "Solutions",
+                "links": [
+                    {
+                        "label": "Cross-border Logistics",
+                        "url": "/en/solutions/mexico-cross-border-logistics"
+                    },
+                    {
+                        "label": "Public Transport",
+                        "url": "/en/solutions/public-safety"
+                    },
+                    {
+                        "label": "Cold Chain",
+                        "url": "/en/solutions/thailand-cold-chain"
+                    }
+                ]
+            },
+            "company": {
+                "title": "Company",
+                "links": [
+                    {
+                        "label": "About Us",
+                        "url": "/en/about-us"
+                    },
+                    {
+                        "label": "Contact Us",
+                        "url": "/en/contact"
+                    }
+                ]
+            },
+            "support": {
+                "title": "Support",
+                "links": [
+                    {
+                        "label": "Documentation",
+                        "url": "https://docs.fleetgoo.com"
+                    }
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service"
+    }
+}

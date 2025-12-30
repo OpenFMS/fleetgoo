@@ -1,41 +1,45 @@
-
 {
   "page": {
     "title": "Industry Solutions",
     "subtitle": "Specialized fleet management strategies for your sector",
-    "metaTitle": "Industry Solutions | FleetGoo",
+    "metaTitle": "Industry Solutions",
     "metaDesc": "Explore our tailored fleet management solutions for Government, Logistics, Construction, and more.",
     "readMoreBtn": "Read Case Study"
   },
   "categories": [
-    { "id": "all", "label": "All Solutions", "icon": "Layers" },
-    { "id": "government", "label": "Government", "icon": "Building2" },
-    { "id": "insurance", "label": "Insurance", "icon": "ShieldCheck" },
-    { "id": "logistics", "label": "Logistics & Delivery", "icon": "Truck" },
-    { "id": "micromobility", "label": "Micro-Mobility", "icon": "Bike" },
-    { "id": "rental", "label": "Rental & Leasing", "icon": "Key" },
-    { "id": "taxi", "label": "Taxi & Ride-Hailing", "icon": "Car" },
-    { "id": "asset", "label": "Asset Management", "icon": "Database" },
-    { "id": "construction", "label": "Construction & Mining", "icon": "HardHat" }
+    {
+      "id": "all",
+      "label": "All Solutions",
+      "icon": "Layers"
+    }
   ],
   "items": [
     {
+      "id": "mexico-cross-border-logistics",
+      "categoryId": "industry",
+      "title": "Mexico Cross-Border Logistics Security",
+      "summary": "Secure your cross-border fleet in Mexico with real-time AI surveillance. Prevent cargo theft, ensure driver safety, and simplify insurance claims.",
+      "image": "/images/solutions/mexico-logistics.jpeg",
+      "icon": "ShieldAlert",
+      "color": "red"
+    },
+    {
       "id": "public-safety",
-      "categoryId": "government",
+      "categoryId": "industry",
+      "title": "Public Safety Fleet Solutions",
+      "summary": "Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.",
+      "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
       "icon": "Building2",
-      "title": "Public Safety Fleet Management",
-      "summary": "Ensuring rapid response and accountability for police, fire, and ambulance services with real-time tracking.",
-      "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
       "color": "blue"
     },
     {
-      "id": "cold-chain",
-      "categoryId": "logistics",
-      "icon": "Truck",
-      "title": "Cold Chain Monitoring",
-      "summary": "Real-time temperature and humidity tracking for perishable goods transport to ensure compliance.",
-      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
-      "color": "cyan"
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "Thailand Cold Chain Logistics Solution",
+      "summary": "End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
+      "icon": "Layers",
+      "color": "blue"
     }
   ]
 }

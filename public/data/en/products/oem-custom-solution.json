@@ -1,0 +1,21 @@
+{
+    "id": "oem-custom-solution",
+    "categoryId": "oem-odm",
+    "title": "OEM & ODM Custom Solution",
+    "metaTitle": "Custom Fleet Hardware Solutions | OEM & ODM Services",
+    "metaDesc": "Tailored hardware design and manufacturing services. We build custom GPS trackers, dashcams, and MDVRs to your specifications.",
+    "fullDescription": "We provide end-to-end custom hardware development services, from PCB design and mold tooling to firmware customization and logo branding. Contact us to build your own fleet management device.",
+    "icon": "Wrench",
+    "redirectUrl": "/contact",
+    "images": [
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "features": [
+        "Custom PCB Design",
+        "Mold Tooling & Enclosure Design",
+        "Firmware Customization",
+        "Protocol Integration",
+        "Logo & Packaging Branding"
+    ],
+    "parameters": []
+}

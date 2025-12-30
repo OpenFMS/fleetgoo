@@ -4,7 +4,7 @@ import SEO from '@/components/SEO';
 import Contact from '@/components/Contact';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const ContactPage = ({ language }) => {
+const ContactPage = ({ language, settings }) => {
   const { data, loading, error } = useFetchData(`/data/${language}/contact.json`);
 
   if (loading) {
@@ -26,9 +26,10 @@ const ContactPage = ({ language }) => {
         description={data.metaDesc}
         language={language}
         type="website"
+        settings={settings}
       />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
-        <Contact data={data} language={language} />
+        <Contact data={data} language={language} settings={settings} />
       </div>
     </>
   );

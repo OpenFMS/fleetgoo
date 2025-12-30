@@ -1,0 +1,66 @@
+{
+  "id": "d701-pro-truck-dashcam-lockable",
+  "categoryId": "4g-dashcam",
+  "title": "D701 Pro 4G ドラレコ",
+  "metaTitle": "D701 プロフェッショナル フリート ドラレコ",
+  "metaDesc": "物流や大型輸送向けに設計された堅牢なD701 4Gドライブレコーダー。改ざん防止データセキュリティ機能を搭載。",
+  "fullDescription": "デュアル1080Pカメラ、パノラマ車内監視、H.265エンコード、オプションのRTK測位、DMS、ADASを備えたコンパクトな貼り付け型AI端末。商用車の安全性と管理に関する省庁基準に準拠しています。",
+  "images": [
+    "/images/products/D701-main.jpg"
+  ],
+  "features": [
+    "HDビデオ：デュアル1080P録画（オプション3x720P）、H.265/H.264、IR強化車内カメラ",
+    "高精度測位：GPS/北斗/GLONASS マルチモード（オプションRTKまたは2周波RTK+DR）",
+    "インテリジェント安全DMS：疲労（閉眼/あくび）、喫煙、通話、脇見、遮蔽を検知",
+    "インテリジェント安全ADAS：前方衝突、車線逸脱、歩行者検知の警報",
+    "グローバル接続：4G CAT1（オプションCAT4）、OTAアップデート",
+    "安定電源：9-36V入力、短絡保護、消費電力<2W",
+    "認証：JT/T 794/808/1076/1078, JT/T905-2014 準拠",
+    "拡張機能：ワンタッチSOSアラート、WiFiデバッグアプリ、ジオフェンシング"
+  ],
+  "parameters": [
+    {
+      "label": "OS/プロセッサー",
+      "value": "Linux / CV1812H デュアルコア 0.5TOPS"
+    },
+    {
+      "label": "メモリ",
+      "value": "256MB RAM / 8GB EMMC"
+    },
+    {
+      "label": "カメラ",
+      "value": "2x 内部 1080P (MIPI) + 1x オプション 720P (AHD)"
+    },
+    {
+      "label": "エンコード",
+      "value": "H.265 / H.264 (1080P/20fps)"
+    },
+    {
+      "label": "接続性",
+      "value": "4G CAT1/CAT4, オプション WiFi/Bluetooth"
+    },
+    {
+      "label": "電源",
+      "value": "9-36V DC (消費 <2W)"
+    },
+    {
+      "label": "ポート",
+      "value": "8ピンBMW電源, SOS, Nano SIM, TFカード"
+    },
+    {
+      "label": "動作温度",
+      "value": "-20℃ ~ +70℃"
+    },
+    {
+      "label": "寸法",
+      "value": "80mm x 45mm x 30mm"
+    },
+    {
+      "label": "重量",
+      "value": "185g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D701 本体, 2x 鍵, 1x 配線キット, 1x オプションカメラ",
+  "icon": "Video"
+}

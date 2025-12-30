@@ -1,0 +1,59 @@
+{
+  "id": "c08w-4g-gps-tracker-ip65-waterproof",
+  "categoryId": "gps-tracker",
+  "title": "Rastreador GPS 4G C08W",
+  "metaTitle": "Rastreador GPS 4G Profesional C08W",
+  "metaDesc": "Dispositivo de rastreo GPS 4G de alta precisión C08W que ofrece monitoreo de ubicación en tiempo real.",
+  "fullDescription": "Diseño compacto ultra delgado e impermeable IP65, integrando posicionamiento de alta sensibilidad GPS/BeiDou/LBS para seguimiento en tiempo real. Cuenta con detección ACC, alarmas inteligentes (geocerca/velocidad/energía) y un sistema robusto de watchdog para estabilidad. Ideal para alquiler de coches, logística, vehículos privados y scooters eléctricos.",
+  "images": [
+    "/images/products/c08w-main.jpg"
+  ],
+  "features": [
+    "Compacto e Impermeable: Diseño ultra delgado de 14mm con clasificación IP65",
+    "Posicionamiento Preciso: Rastreo de triple modo GPS/BeiDou/LBS",
+    "Alertas Inteligentes: Entrada/salida de cerca, exceso de velocidad, corte de energía y vibración",
+    "Estabilidad Robusta: Función de watchdog incorporada con recuperación automática de fallos",
+    "Aplicación Versátil: Adecuado para vehículos de 9-90V incluyendo camiones logísticos, coches de alquiler y scooters"
+  ],
+  "parameters": [
+    {
+      "label": "Red",
+      "value": "GSM/GPRS (850/900/1800/1900MHz)"
+    },
+    {
+      "label": "Voltaje de Trabajo",
+      "value": "9-90V DC"
+    },
+    {
+      "label": "Corriente de Trabajo",
+      "value": "12V/30mA (Promedio)"
+    },
+    {
+      "label": "Posicionamiento",
+      "value": "GPS/BeiDou (Error <5m)"
+    },
+    {
+      "label": "Tiempo de Arranque",
+      "value": "Frío 32s / Caliente 1s"
+    },
+    {
+      "label": "Sensibilidad",
+      "value": "Rastreo -162dBm / Captura -148dBm"
+    },
+    {
+      "label": "Batería",
+      "value": "Polímero de Litio incorporada 100mAh/3.7V"
+    },
+    {
+      "label": "Dimensiones",
+      "value": "78mm x 26mm x 14mm"
+    },
+    {
+      "label": "Peso",
+      "value": "26.5g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Unidad C08W, 1x Cable de Alimentación, 1x Manual, 1x Relé (Opcional)",
+  "icon": "MapPin"
+}

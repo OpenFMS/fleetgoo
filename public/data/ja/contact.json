@@ -1,0 +1,39 @@
+{
+  "metaTitle": "お問い合わせ - FleetGoo",
+  "metaDesc": "車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。",
+  "title": "お問い合わせ",
+  "subtitle": "車両追跡ソリューションについてご質問がありますか？お気軽にお問い合わせください。",
+  "form": {
+    "name": "お名前",
+    "email": "メールアドレス",
+    "company": "会社名",
+    "phone": "電話番号",
+    "productInterest": "ご興味のある製品",
+    "message": "メッセージ",
+    "submitBtn": "送信する",
+    "privacyNote": "私たちはあなたのプライバシーを尊重します。あなたの情報は安全に保護されます。",
+    "successTitle": "送信完了！ ✅",
+    "successDesc": "お問い合わせありがとうございます。担当者より24時間以内にご連絡いたします。"
+  },
+  "contactInfo": {
+    "title": "連絡先情報",
+    "items": [
+      {
+        "icon": "MapPin",
+        "label": "本社所在地",
+        "value": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen"
+      },
+      {
+        "icon": "Mail",
+        "label": "メールアドレス",
+        "value": "sales@fleetgoo.com"
+      },
+      {
+        "icon": "Phone",
+        "label": "電話番号",
+        "value": "+86 150-138-15400"
+      }
+    ]
+  },
+  "officeImage": "/images/company/company-main.png"
+}

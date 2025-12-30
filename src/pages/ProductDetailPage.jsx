@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { useFetchData } from '@/hooks/useFetchData';
@@ -13,13 +13,29 @@ import {
 import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const ProductDetailPage = ({ language }) => {
-  const { productId } = useParams();
-  const { data, loading, error } = useFetchData(`/data/${language}/products/${productId}.json`);
+const ProductDetailPage = ({ language, settings }) => {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`);
   const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    if (data?.redirectUrl) {
+      if (data.redirectUrl.startsWith('http')) {
+        window.location.href = data.redirectUrl;
+      } else {
+        navigate(`/${language}${data.redirectUrl}`, { replace: true });
+      }
+    }
+  }, [data, language, navigate]);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading product details...</div>;
+  }
+
+  // If redirecting, show nothing or loading to prevent flash
+  if (data?.redirectUrl) {
+    return null;
   }
 
   if (error || !data) {
@@ -27,6 +43,10 @@ const ProductDetailPage = ({ language }) => {
       <div className="min-h-screen flex flex-col items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white gap-4">
         <h2 className="text-2xl font-bold text-red-500">Product Not Found</h2>
         <p className="text-slate-500">The product you are looking for does not exist or failed to load.</p>
+        <div className="p-4 bg-slate-200 dark:bg-slate-800 rounded text-xs font-mono text-left">
+          <p><strong>Attempted URL:</strong> {`/data/${language}/products/${id}.json`}</p>
+          <p><strong>Error:</strong> {error ? error.toString() : 'Data is null'}</p>
+        </div>
         <Link to={`/${language}/products`}>
           <Button variant="outline">Back to Products</Button>
         </Link>
@@ -44,6 +64,7 @@ const ProductDetailPage = ({ language }) => {
         language={language}
         image={data.images && data.images.length > 0 ? data.images[0] : undefined}
         type="product"
+        settings={settings}
       />
 
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300 pb-20">
@@ -88,21 +109,21 @@ const ProductDetailPage = ({ language }) => {
         </div>
 
         <div className="container mx-auto px-4 mt-8">
-          <div className="grid lg:grid-cols-12 gap-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
 
             {/* Left Column: Images */}
-            <div className="lg:col-span-7 space-y-6">
+            <div className="space-y-6">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm"
               >
-                <div className="aspect-video relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+                <div className="aspect-[4/3] relative overflow-hidden bg-transparent p-4">
                   {data.images && data.images[activeImage] ? (
                     <img
                       src={data.images[activeImage]}
                       alt={`${data.title} view ${activeImage + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-slate-400">No Image Available</div>
@@ -111,38 +132,38 @@ const ProductDetailPage = ({ language }) => {
               </motion.div>
 
               {data.images && data.images.length > 1 && (
-                <div className="grid grid-cols-4 sm:grid-cols-5 gap-3">
+                <div className="grid grid-cols-5 gap-3">
                   {data.images.map((img, idx) => (
                     <button
                       key={idx}
                       onClick={() => setActiveImage(idx)}
                       className={cn(
-                        "aspect-square rounded-xl overflow-hidden border-2 transition-all",
+                        "aspect-square rounded-lg overflow-hidden border-2 transition-all bg-white dark:bg-slate-900",
                         activeImage === idx
                           ? "border-blue-500 shadow-md ring-2 ring-blue-500/20"
-                          : "border-transparent hover:border-slate-300 dark:hover:border-slate-700 opacity-70 hover:opacity-100"
+                          : "border-slate-100 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 opacity-80 hover:opacity-100"
                       )}
                     >
-                      <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover" />
+                      <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
               )}
+            </div>
 
-              {/* Description Section */}
-              <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Product Overview</h3>
+            {/* Right Column: Specs & Info */}
+            <div className="space-y-8">
+
+              {/* Product Overview (Moved here) */}
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Product Overview</h3>
                 <p className="text-slate-600 dark:text-gray-300 leading-relaxed text-lg">
                   {data.fullDescription}
                 </p>
               </div>
-            </div>
-
-            {/* Right Column: Specs & Info */}
-            <div className="lg:col-span-5 space-y-6">
 
               {/* Features List */}
-              <div className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+              <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-6 border border-slate-200 dark:border-slate-800">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
                   <Zap className="w-5 h-5 text-yellow-500" />
                   Key Features
@@ -159,13 +180,13 @@ const ProductDetailPage = ({ language }) => {
 
               {/* Tabs for Details */}
               <Tabs defaultValue="specs" className="w-full">
-                <TabsList className="grid w-full grid-cols-2 bg-slate-200 dark:bg-slate-800 p-1 rounded-xl">
+                <TabsList className="grid w-full grid-cols-2 bg-slate-100 dark:bg-slate-800 p-1 rounded-xl">
                   <TabsTrigger value="specs">Specifications</TabsTrigger>
                   <TabsTrigger value="downloads">Downloads</TabsTrigger>
                 </TabsList>
 
-                <TabsContent value="specs" className="mt-4">
-                  <div className="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800">
+                <TabsContent value="specs" className="mt-6">
+                  <div className="bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
                     <table className="w-full text-sm text-left">
                       <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
                         {data.parameters && data.parameters.map((param, idx) => (
@@ -183,7 +204,7 @@ const ProductDetailPage = ({ language }) => {
                   </div>
                 </TabsContent>
 
-                <TabsContent value="downloads" className="mt-4 space-y-3">
+                <TabsContent value="downloads" className="mt-6 space-y-3">
                   {data.downloads && data.downloads.map((file, idx) => (
                     <div key={idx} className="flex items-center justify-between p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl hover:border-blue-400 dark:hover:border-blue-500 transition-colors group cursor-pointer">
                       <div className="flex items-center gap-3">
@@ -205,7 +226,7 @@ const ProductDetailPage = ({ language }) => {
               </Tabs>
 
               {/* Packaging Info */}
-              <div className="bg-slate-100 dark:bg-slate-800/50 rounded-2xl p-5 flex items-start gap-4 border border-slate-200 dark:border-slate-800">
+              <div className="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-5 flex items-start gap-4 border border-slate-200 dark:border-slate-800">
                 <Package className="w-6 h-6 text-slate-400 shrink-0" />
                 <div>
                   <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-1">In The Box</h4>

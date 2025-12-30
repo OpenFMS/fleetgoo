@@ -1,51 +1,105 @@
 {
-    "page": {
-        "metaTitle": "关于我们 | FleetGoo",
-        "metaDesc": "了解我们要通过创新的硬件和软件解决方案引领智能车队管理未来的使命。"
+  "id": "about",
+  "metaTitle": "关于我们",
+  "metaDesc": "了解我们的使命：通过创新的软硬件解决方案引领智能车队管理的未来。",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "关于 FleetGoo",
+      "subtitle": "引领智能车队管理的未来。凭借在车辆追踪技术领域十多年的专业经验，我们为全球企业提供尖端的软硬件解决方案。",
+      "backgroundImage": "/images/company/about-hero.png",
+      "ctaText": "加入合作伙伴网络",
+      "ctaLink": "/zh/contact"
     },
-    "hero": {
-        "title": "关于 FleetGoo",
-        "subtitle": "引领智能车队管理的未来",
-        "description": "凭借十多年的车辆追踪技术专长，我们为全球企业提供尖端的硬件和软件解决方案。我们的使命是通过实时洞察、高级分析和无与伦比的可靠性，为车队运营商赋能。"
+    {
+      "type": "stats",
+      "background": "default",
+      "items": [
+        {
+          "label": "成立时间",
+          "value": "2010"
+        },
+        {
+          "label": "知识产权",
+          "value": "320+"
+        },
+        {
+          "label": "发明专利",
+          "value": "100+"
+        },
+        {
+          "label": "服务国家",
+          "value": "85+"
+        }
+      ]
     },
-    "stats": [
+    {
+      "type": "features",
+      "title": "核心价值观",
+      "layout": "grid",
+      "items": [
         {
-            "label": "活跃设备",
-            "value": "500K+"
+          "icon": "Award",
+          "title": "行业卓越",
+          "desc": "因创新和可靠性而获得全球认可的获奖技术。"
         },
         {
-            "label": "服务国家",
-            "value": "85+"
+          "icon": "Users2",
+          "title": "客户至上",
+          "desc": "全天候多语言支持，致力于您成功的专业服务团队。"
         },
         {
-            "label": "客户满意度",
-            "value": "98%"
+          "icon": "Globe2",
+          "title": "全球覆盖",
+          "desc": "为超过85个国家的客户提供本地化解决方案和支持。"
         },
         {
-            "label": "运行时间保证",
-            "value": "99.9%"
+          "icon": "TrendingUp",
+          "title": "持续创新",
+          "desc": "持续的研发投入，确保我们的产品始终领先于市场趋势。"
+        },
+        {
+          "icon": "Eye",
+          "title": "企业愿景",
+          "desc": "领先的汽车数字化技术与运营服务提供商，致力于成为行业标杆。"
+        },
+        {
+          "icon": "Smile",
+          "title": "我们的使命",
+          "desc": "让车联网更简单，让车生活更美好。这是我们每天工作的动力源泉。"
         }
-    ],
-    "values": [
+      ]
+    },
+    {
+      "type": "features",
+      "title": "FleetGoo 标准",
+      "layout": "alternating",
+      "items": [
         {
-            "icon": "Award",
-            "title": "行业卓越",
-            "description": "全球认可的获奖技术"
+          "title": "只选用优质组件",
+          "desc": "质量源于源头。我们严格从一级供应商采购，并执行严格的来料质量控制(IQC)，确保没有翻新或假冒部件进入我们的生产线。",
+          "icon": "",
+          "image": "/images/company/strict-iqc-sourcing.jpeg"
         },
         {
-            "icon": "Users2",
-            "title": "客户至上",
-            "description": "24/7 多语言支持和服务"
+          "title": "精密工程与严格质控",
+          "desc": "我们不仅仅是组装；我们设计质量。每一块PCB在成为FleetGoo设备之前，都要经过组件级的检查和测试。",
+          "icon": "Check",
+          "image": "/images/company/precision-engineering-rigorous-qc.jpeg"
         },
         {
-            "icon": "Globe2",
-            "title": "全球覆盖",
-            "description": "服务于超过 85 个国家的客户"
+          "title": "AI算法校准",
+          "desc": "智能检测，可靠警报。我们严格校准ADAS与DMS算法，确保对疲劳、分心和路况风险的精准识别。",
+          "icon": "",
+          "image": "/images/company/ai-algorithm-calibration.webp"
         },
         {
-            "icon": "TrendingUp",
-            "title": "创新",
-            "description": "持续的研发和产品改进"
+          "title": "重载视频处理",
+          "desc": "稳定性是我们的首要任务。我们的MDVR经过72小时4/8路1080P全负载录像测试，确保即使在极高负载下也坚如磐石。",
+          "icon": "",
+          "image": "/images/company/multi-channel-stress-test.jpeg"
         }
-    ]
+      ]
+    }
+  ]
 }

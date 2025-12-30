@@ -1,0 +1,55 @@
+{
+  "id": "d401-ai-dashcam-adas-dms",
+  "categoryId": "4g-camera",
+  "title": "Cámara AI D401",
+  "metaTitle": "Cámara AI Inteligente D401 | FleetGoo ADAS",
+  "metaDesc": "Cámara AI D401 con capacidades avanzadas de ADAS y DMS para la seguridad proactiva de flotas.",
+  "fullDescription": "Una cámara especializada de 2MP para vehículos comerciales, con capacidades DMS (Sistema de Monitoreo del Conductor) para detectar fatiga, distracción, uso del teléfono y fumar. Ofrece imágenes claras en iluminación compleja con un rango dinámico >100dB.",
+  "images": [
+    "/images/products/D401-main.jpg"
+  ],
+  "features": [
+    "Imagen HD: Resolución 1080P/720P con sensor CMOS de 2MP",
+    "Seguridad AI: Detección DMS incorporada para fatiga, bostezos, uso del teléfono, fumar y distracción",
+    "Claridad Visual: Rango dinámico amplio >100dB para condiciones de iluminación complejas",
+    "Audio Flexible: Micrófono opcional de alta sensibilidad integrado (<45dB)",
+    "Diseño Robusto: Confiabilidad de grado automotriz con rango de trabajo de -20°C a 70°C"
+  ],
+  "parameters": [
+    {
+      "label": "Sensor de Imagen",
+      "value": "1/2.7\" 2MP CMOS"
+    },
+    {
+      "label": "Resolución",
+      "value": "1080P / 720P / D1"
+    },
+    {
+      "label": "Funciones DMS",
+      "value": "Fatiga, Teléfono, Fumar, Distracción"
+    },
+    {
+      "label": "Iluminación Mín",
+      "value": "0.1Lux (Color) / 0Lux (IR Encendido)"
+    },
+    {
+      "label": "Lente",
+      "value": "Predeterminado 3.6mm (6/8/12/16mm opcional)"
+    },
+    {
+      "label": "Interfaz",
+      "value": "Cabeza de Aviación de 4 núcleos / BMW"
+    },
+    {
+      "label": "Entrada de Energía",
+      "value": "DC 12V ±10%"
+    },
+    {
+      "label": "Temp. de Trabajo",
+      "value": "-20℃ ~ +70℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Cámara D401, 1x Cable de Energía, 1x Soporte, 1x Manual",
+  "icon": "Camera"
+}

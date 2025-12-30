@@ -1,66 +1,117 @@
 {
     "id": "public-safety",
-    "categoryId": "government",
-    "title": "公共安全车队管理",
-    "summary": "通过实时跟踪确保警察、消防和救护服务的快速响应和责任追究。",
-    "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
-    "color": "blue",
-    "overview": {
-        "title": "概述",
-        "content": "这种综合解决方案利用尖端 IoT 技术和数据分析来变革运营，提高安全标准并显著降低管理成本。"
-    },
-    "challenge": {
-        "title": "挑战",
-        "description": "在快速发展的公共安全领域，运营商面临着越来越大的压力，既要提高效率，又要保持严格的安全标准。",
-        "points": [
-            "运营低效",
-            "安全盲点",
-            "燃料成本上升",
-            "合规风险"
-        ]
-    },
-    "solution": {
-        "title": "我们的智能解决方案",
-        "description": "FleetGoo 通过将硬件传感器与基于云的管理平台集成，引入了一种整体方法。",
-        "features": [
-            {
-                "title": "实时遥测",
-                "description": "高频数据传输，确保位置、速度和状态始终是最新的。"
-            },
-            {
-                "title": "AI 驱动的洞察",
-                "description": "机器学习算法可以在故障发生前预测维护需求。"
-            },
-            {
-                "title": "自动化合规",
-                "description": "数字日志和自动报告，轻松满足监管要求。"
-            },
-            {
-                "title": "无缝集成",
-                "description": "开放 API 架构，允许与现有的 ERP 和人力资源软件轻松连接。"
-            }
-        ]
-    },
-    "results": {
-        "title": "关键结果",
-        "description": "实施我们解决方案的组织报告称，在部署的第一个季度内即有显著改善。",
-        "stats": [
-            {
-                "value": "35%",
-                "label": "成本降低"
-            },
-            {
-                "value": "99.9%",
-                "label": "运行时间"
-            },
-            {
-                "value": "2x",
-                "label": "效率"
-            }
-        ]
-    },
-    "meta": {
-        "author": "FleetGoo 团队",
-        "date": "2024年12月12日"
-    }
+    "categoryId": "industry",
+    "title": "公共安全车队解决方案",
+    "metaTitle": "公共安全与警察车队管理系统",
+    "metaDesc": "通过AI驱动的行车记录仪、实时GPS跟踪和证据级视频检索，提高应急响应时间和警员安全。",
+    "image": "",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "关键任务车队智能",
+            "subtitle": "通过实时态势感知增强您的指挥中心。从巡逻车到救护车，确保每一秒都很重要，使用我们的AI驱动车队管理系统。",
+            "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+            "ctaText": "联系销售",
+            "ctaLink": "/zh/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "应急响应中的挑战",
+            "items": [
+                {
+                    "title": "缺乏实时可视性",
+                    "desc": "传统的无线电调度使指挥中心在关键事件期间看不到单位的确切位置和状态。"
+                },
+                {
+                    "title": "视频证据管理",
+                    "desc": "从SD卡手动检索行车记录仪录像速度慢，容易丢失数据，并破坏证据链。"
+                },
+                {
+                    "title": "警员和司机安全",
+                    "desc": "高速追逐和长时间轮班增加了事故风险。没有ADAS/DMS，轻微的分心可能导致重大碰撞。"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "核心功能",
+            "layout": "grid",
+            "items": [
+                {
+                    "title": "实时视频流",
+                    "desc": "通过4G LTE从任何车辆实时流式传输最多4个高清视频频道。即时查看您的警员所看到的内容。"
+                },
+                {
+                    "title": "证据锁定",
+                    "desc": "当警报器激活时，自动将视频片段上传到云端，确保关键证据永不丢失。"
+                },
+                {
+                    "title": "精确GPS调度",
+                    "desc": "以亚米精度识别距离事件最近的可用单位，显著减少响应时间。"
+                },
+                {
+                    "title": "司机行为分析",
+                    "desc": "监控急刹车、急转弯和超速。使用数据培训警员进行更安全的紧急驾驶。"
+                },
+                {
+                    "title": "双向音频",
+                    "desc": "调度与车辆驾驶室之间的直接语音通信，独立于无线电频率。"
+                },
+                {
+                    "title": "健康监控",
+                    "desc": "连接到车辆CAN总线（OBDII）以远程监控发动机健康、燃油水平和电池状态。"
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "value": "40%",
+                    "label": "更快的响应时间"
+                },
+                {
+                    "value": "99.9%",
+                    "label": "正常运行时间可靠性"
+                },
+                {
+                    "value": "-25%",
+                    "label": "事故率降低"
+                },
+                {
+                    "value": "24/7",
+                    "label": "持续录制"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "解决方案亮点",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "AI驱动的碰撞避免（ADAS）",
+                    "desc": "我们先进的Mobileye兼容ADAS系统扫描前方道路。它实时警告司机潜在的前方碰撞、车道偏离和行人，给他们宝贵的几秒钟来反应。",
+                    "image": "/images/products/platform/vehicle-video-surveillance.png"
+                },
+                {
+                    "title": "安全的证据链",
+                    "desc": "视频文件从捕获时刻起就被加水印和加密。我们的云平台维护严格的审计日志，记录谁访问或下载了录像，确保在法庭上的可采性。",
+                    "image": "/images/products/platform/vehicle-track-video-play.png"
+                },
+                {
+                    "title": "全面资产安全：为您的车队做好未来准备",
+                    "desc": "在盗窃开始之前阻止它。我们先进的10英寸显示屏和4通道BSD摄像系统为您的车队提供360°智能视野，主动防止货物和燃料损失。通过实时感知提高安全性和效率，保护每一次旅程和每一滴燃料。",
+                    "image": "/images/products/D901-main.jpg"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "准备好现代化您的车队了吗？",
+            "buttonText": "获取定制报价",
+            "link": "/zh/contact"
+        }
+    ]
 }

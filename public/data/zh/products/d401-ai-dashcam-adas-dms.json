@@ -1,0 +1,55 @@
+{
+  "id": "d401-ai-dashcam-adas-dms",
+  "categoryId": "4g-camera",
+  "title": "D401 AI 智能摄像头",
+  "metaTitle": "D401 智能 AI 摄像头 | FleetGoo ADAS",
+  "metaDesc": "具有高级 ADAS 和 DMS 功能的 D401 AI 摄像头，用于主动车队安全。",
+  "fullDescription": "专为商用车设计的 200 万像素摄像头，具有 DMS（驾驶员监控系统）功能，可检测疲劳、分心、打电话和吸烟。在复杂光照条件下通过 >100dB 宽动态范围提供清晰图像。",
+  "images": [
+    "/images/products/D401-main.jpg"
+  ],
+  "features": [
+    "高清成像：1080P/720P 分辨率，2MP CMOS 传感器",
+    "AI 安全：内置 DMS 检测疲劳、打哈欠、打电话、吸烟和左顾右盼",
+    "视觉清晰：>100dB 宽动态范围，适应复杂光照",
+    "灵活音频：可选内置高灵敏度麦克风 (<45dB)",
+    "坚固设计：车载级可靠性，-20°C 至 70°C 工作范围"
+  ],
+  "parameters": [
+    {
+      "label": "图像传感器",
+      "value": "1/2.7\" 2MP CMOS"
+    },
+    {
+      "label": "分辨率",
+      "value": "1080P / 720P / D1"
+    },
+    {
+      "label": "DMS 功能",
+      "value": "疲劳, 电话, 吸烟, 分心"
+    },
+    {
+      "label": "最低照度",
+      "value": "0.1Lux (彩色) / 0Lux (红外开启)"
+    },
+    {
+      "label": "镜头",
+      "value": "默认 3.6mm (6/8/12/16mm 可选)"
+    },
+    {
+      "label": "接口",
+      "value": "4芯航空头 / 宝马头"
+    },
+    {
+      "label": "电源输入",
+      "value": "DC 12V ±10%"
+    },
+    {
+      "label": "工作温度",
+      "value": "-20℃ ~ +70℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D401 摄像头, 1x 电源线, 1x 支架, 1x 用户手册",
+  "icon": "Camera"
+}

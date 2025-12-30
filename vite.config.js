@@ -2,15 +2,55 @@ import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
 import Sitemap from 'vite-plugin-sitemap';
-import inlineEditPlugin from './plugins/visual-editor/vite-plugin-react-inline-editor.js';
-import editModeDevPlugin from './plugins/visual-editor/vite-plugin-edit-mode.js';
+
 import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-restoration.js';
 import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-mode.js';
+import fs from 'fs'; // Added fs import
+
+// Helper to recursively finding files
+function getFiles(dir, files = []) {
+	try {
+		if (!fs.existsSync(dir)) return [];
+		const fileList = fs.readdirSync(dir);
+		for (const file of fileList) {
+			const name = path.join(dir, file);
+			if (fs.statSync(name).isDirectory()) {
+				getFiles(name, files);
+			} else {
+				if (!file.startsWith('.')) {
+					files.push(name);
+				}
+			}
+		}
+	} catch (e) {
+		console.warn("Directory not found or inaccessible:", dir);
+	}
+	return files;
+}
+
+// Helper for recursive copy
+function copyRecursiveSync(src, dest) {
+	if (!fs.existsSync(src)) return;
+	const stats = fs.statSync(src);
+	if (stats.isDirectory()) {
+		if (!fs.existsSync(dest)) fs.mkdirSync(dest, { recursive: true });
+		fs.readdirSync(src).forEach((childItemName) => {
+			copyRecursiveSync(path.join(src, childItemName), path.join(dest, childItemName));
+		});
+	} else {
+		fs.copyFileSync(src, dest);
+	}
+}
 
 // Generate routes dynamically from JSON data
 const generateRoutes = () => {
 	const routes = [];
-	const languages = ['en', 'es', 'zh'];
+	const dataDir = path.resolve(__dirname, 'public/data');
+	const languages = fs.existsSync(dataDir)
+		? fs.readdirSync(dataDir, { withFileTypes: true })
+			.filter(ent => ent.isDirectory())
+			.map(ent => ent.name)
+		: ['en'];
 
 	languages.forEach(lang => {
 		// Base routes
@@ -173,7 +213,7 @@ window.fetch = function(...args) {
 					const responseClone = response.clone();
 					const errorFromRes = await responseClone.text();
 					const requestUrl = response.url;
-					console.error(\`Fetch error from \${requestUrl}: \${errorFromRes}\`);
+					// console.error(\`Fetch error from \${requestUrl}: \${errorFromRes}\`);
 			}
 
 			return response;
@@ -285,16 +325,336 @@ logger.error = (msg, options) => {
 export default defineConfig({
 	customLogger: logger,
 	plugins: [
-		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
+		...(isDev ? [iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
 		react(),
+		{
+			name: 'watch-public-data',
+			configureServer(server) {
+				server.watcher.add(path.resolve(__dirname, 'public/data'));
+				server.watcher.on('change', (file) => {
+					if (file.includes('public/data')) {
+						server.ws.send({
+							type: 'full-reload',
+						});
+					}
+				});
+			},
+		},
 		addTransformIndexHtml,
 		Sitemap({
-			hostname: 'https://fleetgoo.com',
+			hostname: process.env.SITE_URL || 'https://www.fleetgpstrack.com',
 			dynamicRoutes: generateRoutes(),
 			changefreq: 'weekly',
 			priority: 1.0,
 			readable: true
-		})
+		}),
+		{
+			name: 'admin-fs-api',
+			configureServer(server) {
+				server.middlewares.use((req, res, next) => {
+					// Basic middleware to match /api/admin
+					if (req.url && req.url.startsWith('/api/admin')) {
+						// Manually parse the URL to handle query params
+						// Note: in generic middleware, req.url is the full path from the root
+						const protocol = req.socket.encrypted ? 'https' : 'http';
+						const host = req.headers.host || 'localhost';
+						const url = new URL(req.url, `${protocol}://${host}`);
+
+						// --- CMS V2 API ---
+
+						// LIST LANGUAGES
+						if (url.pathname === '/api/admin/languages' && req.method === 'GET') {
+							try {
+								const dataDir = path.resolve(__dirname, 'public/data');
+								if (!fs.existsSync(dataDir)) {
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ languages: [] }));
+									return;
+								}
+								const entries = fs.readdirSync(dataDir, { withFileTypes: true });
+								const languages = entries
+									.filter(ent => ent.isDirectory())
+									.map(ent => ({
+										code: ent.name,
+										isMaster: ent.name === 'zh'
+									}));
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ languages }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// CREATE LANGUAGE
+						if (url.pathname === '/api/admin/languages' && req.method === 'POST') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { code } = JSON.parse(body);
+									if (!code) throw new Error("Language code is required");
+
+									const srcDir = path.resolve(__dirname, 'public/data/zh');
+									const destDir = path.resolve(__dirname, `public/data/${code}`);
+
+									if (fs.existsSync(destDir)) throw new Error(`Language '${code}' already exists`);
+									if (!fs.existsSync(srcDir)) throw new Error("Master language 'zh' does not exist");
+
+									copyRecursiveSync(srcDir, destDir);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true, message: `Created ${code}` }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// DELETE LANGUAGE
+						if (url.pathname === '/api/admin/languages' && req.method === 'DELETE') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { code } = JSON.parse(body);
+									if (!code) throw new Error("Language code is required");
+									if (code === 'zh') throw new Error("Cannot delete master language 'zh'");
+
+									const targetDir = path.resolve(__dirname, `public/data/${code}`);
+									if (!fs.existsSync(targetDir)) throw new Error("Language not found");
+
+									fs.rmSync(targetDir, { recursive: true, force: true });
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// GET MASTER CONTENT
+						if (url.pathname === '/api/admin/master-content' && req.method === 'GET') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							const masterPath = path.join(path.resolve(__dirname, 'public/data/zh'), fileParam);
+
+							try {
+								if (!fs.existsSync(masterPath)) {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'Master file not found' }));
+									return;
+								}
+								const content = fs.readFileSync(masterPath, 'utf-8');
+								res.setHeader('Content-Type', 'application/json');
+								res.end(content);
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// LIST IMAGES
+						if (url.pathname === '/api/admin/images' && req.method === 'GET') {
+							try {
+								const imagesDir = path.resolve(__dirname, 'public/images');
+								const allFiles = getFiles(imagesDir);
+								const imageExtensions = ['.jpg', '.jpeg', '.png', '.webp', '.svg', '.gif'];
+
+								const images = allFiles
+									.filter(f => imageExtensions.some(ext => f.toLowerCase().endsWith(ext)))
+									.map(f => {
+										const relativePath = path.relative(path.resolve(__dirname, 'public'), f);
+										return '/' + relativePath;
+									});
+
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ images }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// UPLOAD IMAGE (Base64)
+						if (url.pathname === '/api/admin/upload-image' && req.method === 'POST') {
+							let body = '';
+							req.on('data', chunk => body += chunk);
+							req.on('end', () => {
+								try {
+									const { filename, content } = JSON.parse(body);
+									if (!filename || !content) throw new Error("Filename and content required");
+
+									// Remove header if present (e.g. "data:image/png;base64,")
+									const base64Data = content.replace(/^data:image\/\w+;base64,/, "");
+									const buffer = Buffer.from(base64Data, 'base64');
+
+									const imagesDir = path.resolve(__dirname, 'public/images');
+									if (!fs.existsSync(imagesDir)) fs.mkdirSync(imagesDir, { recursive: true });
+
+									const filePath = path.join(imagesDir, filename);
+									fs.writeFileSync(filePath, buffer);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true, path: '/images/' + filename }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+
+						// DELETE FILE
+						if (url.pathname === '/api/admin/files' && req.method === 'DELETE') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							const safePath = path.join(path.resolve(__dirname, 'public/data'), fileParam);
+							// Security check
+							if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+								res.statusCode = 403;
+								res.end(JSON.stringify({ error: 'Access denied' }));
+								return;
+							}
+
+							try {
+								if (fs.existsSync(safePath)) {
+									fs.unlinkSync(safePath);
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} else {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'File not found' }));
+								}
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+							}
+							return;
+						}
+
+						// 1. LIST FILES
+						if (url.pathname === '/api/admin/files' && req.method === 'GET') {
+							try {
+								const lang = url.searchParams.get('lang');
+								const dataDir = lang
+									? path.resolve(__dirname, `public/data/${lang}`)
+									: path.resolve(__dirname, 'public/data');
+
+								if (!fs.existsSync(dataDir)) {
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ files: [] }));
+									return;
+								}
+								const files = getFiles(dataDir).map(f => path.relative(dataDir, f)).filter(f => f.endsWith('.json') || f.endsWith('.md'));
+								res.setHeader('Content-Type', 'application/json');
+								res.end(JSON.stringify({ files }));
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// 2. READ FILE
+						if (url.pathname === '/api/admin/content' && req.method === 'GET') {
+							const fileParam = url.searchParams.get('file');
+							if (!fileParam) {
+								res.statusCode = 400;
+								res.end(JSON.stringify({ error: 'Missing file parameter' }));
+								return;
+							}
+
+							// Security check: only allow files inside public/data
+							const safePath = path.join(path.resolve(__dirname, 'public/data'), fileParam);
+							if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+								res.statusCode = 403;
+								res.end(JSON.stringify({ error: 'Access denied' }));
+								return;
+							}
+
+							try {
+								if (!fs.existsSync(safePath)) {
+									res.statusCode = 404;
+									res.end(JSON.stringify({ error: 'File not found' }));
+									return;
+								}
+								const content = fs.readFileSync(safePath, 'utf-8');
+								res.setHeader('Content-Type', 'application/json');
+								res.end(content);
+								return;
+							} catch (err) {
+								res.statusCode = 500;
+								res.end(JSON.stringify({ error: err.message }));
+								return;
+							}
+						}
+
+						// 3. WRITE FILE
+						if (url.pathname === '/api/admin/content' && req.method === 'POST') {
+							// Basic body parsing
+							let body = '';
+							req.on('data', chunk => {
+								body += chunk.toString();
+							});
+							req.on('end', () => {
+								try {
+									const { file, content } = JSON.parse(body);
+									if (!file || !content) {
+										res.statusCode = 400;
+										res.end(JSON.stringify({ error: 'Missing file or content' }));
+										return;
+									}
+
+									// Security check
+									const safePath = path.join(path.resolve(__dirname, 'public/data'), file);
+									if (!safePath.startsWith(path.resolve(__dirname, 'public/data'))) {
+										res.statusCode = 403;
+										res.end(JSON.stringify({ error: 'Access denied' }));
+										return;
+									}
+
+									// Write formatted JSON
+									const jsonString = typeof content === 'string' ? content : JSON.stringify(content, null, 2);
+									fs.writeFileSync(safePath, jsonString);
+
+									res.setHeader('Content-Type', 'application/json');
+									res.end(JSON.stringify({ success: true }));
+								} catch (err) {
+									res.statusCode = 500;
+									res.end(JSON.stringify({ error: err.message }));
+								}
+							});
+							return;
+						}
+					}
+
+					next();
+				});
+			}
+		}
 	],
 	server: {
 		cors: true,
@@ -310,13 +670,60 @@ export default defineConfig({
 		},
 	},
 	build: {
+		sourcemap: true,
+		cssCodeSplit: true,
 		rollupOptions: {
 			external: [
 				'@babel/parser',
 				'@babel/traverse',
 				'@babel/generator',
 				'@babel/types'
-			]
+			],
+			output: {
+				manualChunks(id) {
+					// 1. Core React (Critical for startup, keep it separate and first)
+					if (id.includes('/node_modules/react/') ||
+						id.includes('/node_modules/react-dom/') ||
+						id.includes('/node_modules/scheduler/')) {
+						return 'react-vendor';
+					}
+
+					// 2. Routing (Critical)
+					if (id.includes('/node_modules/react-router') ||
+						id.includes('/node_modules/@remix-run')) {
+						return 'router-vendor';
+					}
+
+					// 3. UI Animations (Heavy, load later)
+					if (id.includes('/node_modules/framer-motion/')) {
+						return 'motion-vendor';
+					}
+
+					// 4. UI Components & Icons (Radix, Lucide, etc.)
+					if (id.includes('/node_modules/@radix-ui/') ||
+						id.includes('/node_modules/lucide-react/') ||
+						id.includes('/node_modules/class-variance-authority/') ||
+						id.includes('/node_modules/clsx/') ||
+						id.includes('/node_modules/tailwind-merge/')) {
+						return 'ui-vendor';
+					}
+
+					// 5. Catch-all for other node_modules
+					if (id.includes('node_modules')) {
+						return 'vendor';
+					}
+				}
+			}
+		},
+		minify: 'terser',
+		terserOptions: {
+			compress: {
+				drop_console: true,
+				drop_debugger: true
+			}
 		}
+	},
+	css: {
+		devSourcemap: false
 	}
 });

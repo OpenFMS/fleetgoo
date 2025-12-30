@@ -1,10 +1,11 @@
 {
   "hero": {
-    "title": "Advanced Vehicle Intelligence",
-    "subtitle": "Transform Your Fleet with Smart Hardware & AI-Powered Software",
-    "description": "Industry-leading GPS tracking, 4G dashcams, MDVR systems, and comprehensive fleet management platform trusted by businesses worldwide.",
+    "title": "Commercial Fleet Hardware: Dashcam, GPS & MDVR Systems ",
+    "subtitle": "Transform Your Fleet Operations with Advanced AI-Powered Intelligence.",
+    "description": "Empower your commercial fleet with our intelligent 4G Dashcams, precise GPS tracking, and robust MDVR systems. Achieve superior safety, efficiency, and real-time visibility through smart hardware, integrated into a powerful management platform.",
     "ctaPrimary": "Explore Products",
-    "ctaSecondary": "Contact Sales"
+    "ctaSecondary": "Contact Sales",
+    "image": "/images/heros/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
   },
   "valueProps": {
     "title": "Solving Your Toughest Fleet Challenges",
@@ -38,8 +39,8 @@
         "id": "d501",
         "label": "D501 - AI Dashcam",
         "title": "D501 Smart 4G Dashcam",
-        "description": "The ultimate all-in-one telematics camera with built-in AI processor for driver behavior analysis.",
-        "image": "images/products/d510-main.png",
+        "description": "Designed for commercial vehicles, including those compliant with Chinese Ministry of Transport standards (such as for ride-hailing and logistics), this AI dash cam integrates dual 1080P video, cloud storage, BeiDou positioning, Driver Monitoring System (DMS), and Advanced Driver Assistance System (ADAS) to enhance safety and fleet management efficiency.",
+        "image": "/images/products/D501-main.jpg",
         "benefits": [
           "AI-powered ADAS & DMS (Fatigue/Distraction)",
           "Real-time 1080p HD Video Streaming",
@@ -53,10 +54,10 @@
       },
       {
         "id": "d901",
-        "label": "D901 - Rugged MDVR",
+        "label": "D901 - 4CH MDVR",
         "title": "D901 4-Channel MDVR",
-        "description": "Military-grade mobile digital video recorder designed for heavy-duty applications and extreme environments.",
-        "image": "images/products/d901-main.png",
+        "description": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
+        "image": "/images/products/D901-main.jpg",
         "benefits": [
           "AI Detection fuel theft prevention, and voice recognition",
           "Supports up to 4 AHD Cameras",

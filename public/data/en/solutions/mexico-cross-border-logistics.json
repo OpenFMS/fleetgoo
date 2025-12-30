@@ -1,0 +1,138 @@
+{
+  "id": "mexico-cross-border-logistics",
+  "categoryId": "industry",
+  "title": "Mexico Cross-Border Logistics Security",
+  "metaTitle": "Mexico Cargo Security Solution | Anti-Theft AI MDVR System",
+  "metaDesc": "Secure your cross-border fleet in Mexico with real-time AI surveillance. Prevent cargo theft, ensure driver safety, and simplify insurance claims.",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "Fortify Your Fleet Against Cargo Theft",
+      "subtitle": "Navigate Mexico's high-risk routes with confidence. Our AI-powered MDVR system provides 24/7 visibility and instant alerts to stop theft before it happens.",
+      "backgroundImage": "/images/solutions/mexico-logistics.jpg",
+      "ctaText": "Protect Your Cargo",
+      "ctaLink": "/en/contact"
+    },
+    {
+      "type": "pain_points",
+      "title": "Security Challenges in Mexico Logistics",
+      "items": [
+        {
+          "title": "Rest Stop Cargo Theft",
+          "desc": "Freight trucks are highly vulnerable to organized theft during mandatory rest breaks or overnight stops in unsecure areas."
+        },
+        {
+          "title": "Driver Safety Threats",
+          "desc": "Drivers face violent hijackings and assaults. Without a discreet SOS system, they cannot safely call for immediate assistance."
+        },
+        {
+          "title": "High-Risk Driving Behaviors",
+          "desc": "Fatigue and distraction on monotonous cross-border routes increase the risk of severe rollovers and collision accidents."
+        },
+        {
+          "title": "Lack of Liability Evidence",
+          "desc": "In the event of theft or an accident, missing video evidence leads to rejected insurance claims and lengthy legal disputes."
+        },
+        {
+          "title": "Fuel Siphoning Risk",
+          "desc": "Fuel theft is rampant on long-haul routes. Unmonitored fuel tanks lead to significant operational losses and delays."
+        },
+        {
+          "title": "Delayed Incident Response",
+          "desc": "Without real-time alerts, fleet managers often learn about hijackings hours too late to coordinate with local police."
+        }
+      ]
+    },
+    {
+      "type": "media",
+      "mediaType": "image",
+      "url": "/images/solutions/mexico-logistics.jpeg",
+      "caption": "Real-time AI monitoring for secure cross-border operations.",
+      "width": "container"
+    },
+    {
+      "type": "features",
+      "title": "Core Security Capabilities",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Video",
+          "title": "Real-Time AI Surveillance",
+          "desc": "Detect unauthorized access to cargo or fuel tanks instantly. AI cameras trigger local sirens and stream video to HQ immediately."
+        },
+        {
+          "icon": "Bell",
+          "title": "Covert SOS Alarm",
+          "desc": "A hidden panic button allows drivers to silently alert the command center during a hijacking without notifying the assailants."
+        },
+        {
+          "icon": "Shield",
+          "title": "Cloud Evidence Lock",
+          "desc": "Critical event footage (collisions, SOS) is automatically uploaded and locked in the cloud, ensuring it cannot be tampered with."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Remote Immobilization",
+          "desc": "Safely cut off the engine remotely via the dashboard if a vehicle is confirmed stolen, preventing it from crossing the border."
+        },
+        {
+          "icon": "Eye",
+          "title": "Driver Behavior Monitoring",
+          "desc": "AI-powered DMS detects fatigue and phone use, issuing real-time voice alerts to keep drivers focused on dangerous routes."
+        },
+        {
+          "icon": "Fuel",
+          "title": "Fuel Theft Detection",
+          "desc": "Monitor fuel levels in real-time. Abrupt drops trigger instant alarms to prevent siphoning during rest stops."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "background": "blue",
+      "items": [
+        {
+          "label": "Theft Prevention",
+          "value": "99%"
+        },
+        {
+          "label": "Response Time",
+          "value": "<10s"
+        },
+        {
+          "label": "Accident Reduction",
+          "value": "40%"
+        },
+        {
+          "label": "Insurance Approval",
+          "value": "Fast"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "Hardware Highlights",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "D604 4-Channel AI MDVR",
+          "desc": "Supports 4 HD cameras for 360° situational awareness. Built-in AI processor enables real-time intrusion detection for cargo and fuel security.",
+          "image": "/images/products/D604-main.jpg",
+          "icon": "Server"
+        },
+        {
+          "title": "AI Driver Guardian (ADAS/DMS)",
+          "desc": "Proactively warns drivers of fatigue, distraction, and phone use. Preventing accidents before they occur on long, monotonous highways.",
+          "image": "/images/products/platform/vehicle-video-surveillance.png",
+          "icon": "Eye"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Secure Your Routes in Mexico",
+      "buttonText": "Request Security Demo",
+      "link": "/en/contact"
+    }
+  ]
+}

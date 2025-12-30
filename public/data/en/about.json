@@ -1,51 +1,105 @@
 {
-  "page": {
-    "metaTitle": "About Us | FleetGoo",
-    "metaDesc": "Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions."
-  },
-  "hero": {
-    "title": "About FleetGoo",
-    "subtitle": "Leading the future of intelligent fleet management",
-    "description": "With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide. Our mission is to empower fleet operators with real-time insights, advanced analytics, and unparalleled reliability."
-  },
-  "stats": [
+  "id": "about",
+  "metaTitle": "About Us",
+  "metaDesc": "Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.",
+  "blocks": [
     {
-      "label": "Active Devices",
-      "value": "500K+"
+      "type": "hero",
+      "title": "About FleetGoo",
+      "subtitle": "Leading the future of intelligent fleet management. With over a decade of expertise in vehicle tracking technology, we provide cutting-edge hardware and software solutions to businesses worldwide.",
+      "backgroundImage": "/images/company/about-hero.png",
+      "ctaText": "Join Our Partner Network",
+      "ctaLink": "/en/contact"
     },
     {
-      "label": "Countries Served",
-      "value": "85+"
+      "type": "stats",
+      "background": "default",
+      "items": [
+        {
+          "label": "Founded",
+          "value": "2010"
+        },
+        {
+          "label": "Intellectual Property",
+          "value": "320+"
+        },
+        {
+          "label": "Patents",
+          "value": "100+"
+        },
+        {
+          "label": "Countries Served",
+          "value": "85+"
+        }
+      ]
     },
     {
-      "label": "Customer Satisfaction",
-      "value": "98%"
+      "type": "features",
+      "title": "Our Core Values",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Award",
+          "title": "Industry Excellence",
+          "desc": "Award-winning technology recognized globally for innovation and reliability."
+        },
+        {
+          "icon": "Users2",
+          "title": "Customer First",
+          "desc": "24/7 multilingual support and a dedicated service team committed to your success."
+        },
+        {
+          "icon": "Globe2",
+          "title": "Global Reach",
+          "desc": "Serving customers in over 85 countries with localized solutions and support."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Innovation",
+          "desc": "Continuous R&D investment ensuring our products stay ahead of market trends."
+        },
+        {
+          "icon": "Eye",
+          "title": "Our Vision",
+          "desc": "To be the leading provider of automotive digitalization technology and operational services."
+        },
+        {
+          "icon": "Smile",
+          "title": "Our Mission",
+          "desc": "Making the Internet of Vehicles simpler and car life better."
+        }
+      ]
     },
     {
-      "label": "Uptime Guarantee",
-      "value": "99.9%"
-    }
-  ],
-  "values": [
-    {
-      "icon": "Award",
-      "title": "Industry Excellence",
-      "description": "Award-winning technology recognized globally"
-    },
-    {
-      "icon": "Users2",
-      "title": "Customer First",
-      "description": "24/7 multilingual support and service"
-    },
-    {
-      "icon": "Globe2",
-      "title": "Global Reach",
-      "description": "Serving customers in over 85 countries"
-    },
-    {
-      "icon": "TrendingUp",
-      "title": "Innovation",
-      "description": "Continuous R&D and product enhancement"
+      "type": "features",
+      "title": "The FleetGoo Standard",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "Premium Components Only",
+          "desc": "Quality starts at the source. We strictly source from Tier-1 suppliers and perform rigorous Incoming Quality Control (IQC) to ensure no refurbished or counterfeit parts ever enter our production line.",
+          "icon": "",
+          "image": "/images/company/strict-iqc-sourcing.jpeg"
+        },
+        {
+          "title": "Precision Engineering & Rigorous QC",
+          "desc": "We don't just assemble; we engineer quality. Every PCB undergoes component-level inspection and testing before it becomes a FleetGoo device.",
+          "icon": "Check",
+          "image": "/images/company/precision-engineering-rigorous-qc.jpeg"
+        },
+        {
+          "title": "AI Algorithm Calibration",
+          "desc": "Smart detection, reliable alerts. We rigorously calibrate our ADAS & DMS algorithms to ensure precise recognition of fatigue, distraction, and road risks.",
+          "icon": "",
+          "image": "/images/company/ai-algorithm-calibration.jpg"
+        },
+        {
+          "title": "Heavy-duty Video Processing",
+          "desc": "Stability is our priority. Our MDVRs undergo 72-hour full-load recording tests with 4/8-channel 1080P input to ensure rock-solid stability even under extreme load.",
+          "icon": "",
+          "image": "/images/company/multi-channel-stress-test.jpg"
+        }
+      ]
     }
   ]
 }

@@ -1,76 +1,45 @@
 {
-    "page": {
-        "title": "行业解决方案",
-        "subtitle": "为您所在行业量身定制的车队管理策略",
-        "metaTitle": "行业解决方案 | FleetGoo",
-        "metaDesc": "探索我们为政府、物流、建筑等行业量身定制的车队管理解决方案。",
-        "readMoreBtn": "阅读案例研究"
+  "page": {
+    "title": "行业解决方案",
+    "subtitle": "针对您所在行业的专业车队管理策略",
+    "metaTitle": "行业解决方案",
+    "metaDesc": "探索我们为政府、物流、建设等行业量身定制的车队管理解决方案。",
+    "readMoreBtn": "阅读案例研究"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "所有解决方案",
+      "icon": "Layers"
+    }
+  ],
+  "items": [
+    {
+      "id": "mexico-cross-border-logistics",
+      "categoryId": "industry",
+      "title": "墨西哥跨境物流安全",
+      "summary": "通过实时AI监控保护您在墨西哥的跨境车队。防止货物盗窃，确保司机安全，简化保险理赔。",
+      "image": "/images/solutions/mexico-logistics.jpeg",
+      "icon": "ShieldAlert",
+      "color": "red"
     },
-    "categories": [
-        {
-            "id": "all",
-            "label": "所有解决方案",
-            "icon": "Layers"
-        },
-        {
-            "id": "government",
-            "label": "政府",
-            "icon": "Building2"
-        },
-        {
-            "id": "insurance",
-            "label": "保险",
-            "icon": "ShieldCheck"
-        },
-        {
-            "id": "logistics",
-            "label": "物流与配送",
-            "icon": "Truck"
-        },
-        {
-            "id": "micromobility",
-            "label": "微出行",
-            "icon": "Bike"
-        },
-        {
-            "id": "rental",
-            "label": "租赁",
-            "icon": "Key"
-        },
-        {
-            "id": "taxi",
-            "label": "出租车与网约车",
-            "icon": "Car"
-        },
-        {
-            "id": "asset",
-            "label": "资产管理",
-            "icon": "Database"
-        },
-        {
-            "id": "construction",
-            "label": "建筑与采矿",
-            "icon": "HardHat"
-        }
-    ],
-    "items": [
-        {
-            "id": "public-safety",
-            "categoryId": "government",
-            "icon": "Building2",
-            "title": "公共安全车队管理",
-            "summary": "通过实时跟踪确保警察、消防和救护服务的快速响应和责任追究。",
-            "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
-            "color": "blue"
-        },
-        {
-            "id": "cold-chain",
-            "categoryId": "logistics",
-            "icon": "Truck",
-            "title": "冷链监控",
-            "summary": "易腐货物运输的温湿度实时跟踪，以确保合规性。",
-            "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
-            "color": "cyan"
-        }
-    ]
+    {
+      "id": "public-safety",
+      "categoryId": "industry",
+      "title": "公共安全车队解决方案",
+      "summary": "通过AI驱动的行车记录仪、实时GPS跟踪和证据级视频检索，提高应急响应时间和警员安全。",
+      "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+      "icon": "Building2",
+      "color": "blue"
+    },
+    {
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "泰国冷链物流解决方案",
+      "summary": "为泰国市场提供端到端的冷链可视性。通过GPS跟踪和视频监控防止食品变质并确保温度合规。",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
+      "icon": "Layers",
+      "color": "blue"
+    }
+  ]
 }

@@ -33,11 +33,6 @@
       "icon": "Camera"
     },
     {
-      "id": "accessories",
-      "label": "Accessories",
-      "icon": "Cpu"
-    },
-    {
       "id": "oem-odm",
       "label": "OEM & ODM",
       "icon": "Wrench"
@@ -45,52 +40,68 @@
   ],
   "items": [
     {
-      "id": "gps-tracker",
+      "id": "c08l-wireless-asset-tracker-long-standby",
       "categoryId": "gps-tracker",
-      "title": "GPS Tracker",
-      "description": "Real-time12 location tracking with global coverage, geofencing, and advanced analytics",
-      "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
-      "gradient": "from-blue-600 to-cyan-500"
+      "title": "C08L Asset Tracker",
+      "description": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
+      "image": "/images/products/C08L-main.jpg",
+      "icon": "MapPin"
     },
     {
-      "id": "4g-dashcam",
-      "categoryId": "4g-dashcam",
-      "title": "4G Dashcam",
-      "description": "High-definition recording with live streaming, AI driver monitoring, and cloud storage",
-      "image": "https://images.unsplash.com/photo-1697554471026-62151121d15c?q=80&w=2070&auto=format&fit=crop",
-      "gradient": "from-cyan-600 to-blue-500"
+      "id": "c08w-4g-gps-tracker-ip65-waterproof",
+      "categoryId": "gps-tracker",
+      "title": "C08W 4G GPS Tracker",
+      "description": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
+      "image": "/images/products/C08W-main.jpg",
+      "icon": "MapPin"
     },
     {
-      "id": "mdvr-system",
-      "categoryId": "4g-aicarbox",
-      "title": "MDVR System",
-      "description": "Multi-channel digital video recorder with 4G connectivity and remote access",
-      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-      "gradient": "from-blue-700 to-indigo-600"
-    },
-    {
-      "id": "4g-ptz-camera",
+      "id": "d401-ai-dashcam-adas-dms",
       "categoryId": "4g-camera",
-      "title": "4G PTZ Camera",
-      "description": "Standalone 4G surveillance camera with pan-tilt-zoom for remote site monitoring",
-      "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop",
-      "gradient": "from-indigo-600 to-purple-600"
+      "title": "D401 AI Camera",
+      "description": "D401 AI Camera with advanced ADAS and DMS capabilities for proactive fleet safety.",
+      "image": "/images/products/D401-main.jpg",
+      "icon": "Camera"
+    },
+    {
+      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "categoryId": "4g-dashcam",
+      "title": "D501 4G DashCam",
+      "description": "Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.",
+      "image": "/images/products/D501-main.jpg",
+      "icon": "Video"
+    },
+    {
+      "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+      "categoryId": "4g-aicarbox",
+      "title": "D604 AI CarBox",
+      "description": "Powerful D604 AI CarBox MDVR for centralized fleet video surveillance and intelligent data processing.",
+      "image": "/images/products/D604-main.jpg",
+      "icon": "Server"
+    },
+    {
+      "id": "d701-pro-truck-dashcam-lockable",
+      "categoryId": "4g-dashcam",
+      "title": "D701 Pro 4G DashCam",
+      "description": "Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
+      "image": "/images/products/D701-main.jpg",
+      "icon": "Video"
+    },
+    {
+      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "categoryId": "4g-camera",
+      "title": "D901 AI Smart Camera",
+      "description": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
+      "image": "/images/products/D901-main.jpg",
+      "icon": "Camera"
     },
     {
       "id": "oem-custom-solution",
       "categoryId": "oem-odm",
-      "title": "OEM Custom Solution",
-      "description": "Tailored hardware design and manufacturing services for your specific fleet needs",
+      "title": "OEM & ODM Custom Solution",
+      "description": "Tailored hardware design and manufacturing services. We build custom GPS trackers, dashcams, and MDVRs to your specifications.",
       "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-      "gradient": "from-slate-700 to-slate-600"
-    },
-    {
-      "id": "smart-display",
-      "categoryId": "accessories",
-      "title": "Smart Display",
-      "description": "Interactive driver display with navigation, alerts, and performance metrics",
-      "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop",
-      "gradient": "from-indigo-600 to-blue-700"
+      "icon": "Wrench"
     }
   ]
 }

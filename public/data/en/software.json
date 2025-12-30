@@ -1,42 +1,103 @@
 {
-  "page": {
-    "metaTitle": "SaaS Fleet Management Platform | FleetGoo",
-    "metaDesc": "Powerful cloud-based fleet management software with advanced analytics, real-time tracking, and mobile apps."
-  },
-  "hero": {
-    "title": "SaaS Platform Features",
-    "subtitle": "Comprehensive fleet management software with powerful analytics"
-  },
-  "features": [
+  "id": "software",
+  "categoryId": "product",
+  "title": "Intelligent Fleet Management Platform",
+  "metaTitle": "Intelligent Fleet Management Platform",
+  "metaDesc": "Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.",
+  "blocks": [
     {
-      "icon": "Cloud",
-      "title": "Cloud-Based Platform",
-      "description": "Access your fleet data anytime, anywhere with our secure cloud infrastructure"
+      "type": "hero",
+      "title": "The All-In-One Fleet Intelligence Platform",
+      "subtitle": "Unify your operations with a complete ecosystem. From our powerful Cloud SaaS and intuitive Mobile Apps to flexible Open API integrations—we provide the infrastructure for smarter fleet decisions.",
+      "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
+      "ctaText": "Explore the Platform",
+      "ctaLink": "/en/contact"
     },
     {
-      "icon": "BarChart3",
-      "title": "Advanced Analytics",
-      "description": "Real-time insights, predictive maintenance, and performance optimization"
+      "type": "features",
+      "title": "Platform Capabilities",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "Cloud SaaS Portal",
+          "desc": "Centralized command center to monitor fleet status, replay routes, and manage drivers from any browser."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Mobile Ecosystem",
+          "desc": "Native iOS and Android apps empowering fleet managers and drivers to stay connected on the go."
+        },
+        {
+          "icon": "Webhook",
+          "title": "Open API Engine",
+          "desc": "Seamlessly integrate fleet data with your existing ERP, CRM, or custom applications via our RESTful API."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Advanced Analytics",
+          "desc": "Transform raw data into actionable insights with predictive maintenance and fuel usage reports."
+        },
+        {
+          "icon": "Shield",
+          "title": "Enterprise Security",
+          "desc": "Bank-level encryption (AES-256), SSO support, and granular role-based access control (RBAC)."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Real-Time Telematics",
+          "desc": "High-precision GPS tracking with sub-second updates and live video streaming integration."
+        }
+      ]
     },
     {
-      "icon": "Shield",
-      "title": "Enterprise Security",
-      "description": "Bank-level encryption, role-based access, and compliance certifications"
-    },
-    {
-      "icon": "Smartphone",
-      "title": "Mobile Apps",
-      "description": "iOS and Android apps for drivers and managers with offline capability"
-    },
-    {
-      "icon": "Bell",
-      "title": "Smart Alerts",
-      "description": "Customizable notifications for speeding, geofence violations, and maintenance"
-    },
-    {
-      "icon": "MapPinned",
-      "title": "Live Tracking",
-      "description": "Real-time GPS tracking with route history and location sharing"
+      "type": "features",
+      "title": "Core Feature",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "Operations Dashboard",
+          "desc": "The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "Real-Time GPS Location",
+          "desc": "Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "Video Surveillance",
+          "desc": "It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "Remote Control",
+          "desc": "It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "Video & Track Playback",
+          "desc": "Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "Geo Fence",
+          "desc": "An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "Multi-platform integration",
+          "desc": "The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
     }
   ]
 }

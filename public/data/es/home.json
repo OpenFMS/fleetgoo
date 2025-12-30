@@ -1,65 +1,73 @@
-
 {
   "hero": {
     "title": "Inteligencia Vehicular Avanzada",
-    "subtitle": "Transforme Su Flota con Hardware Inteligente y Software con IA",
-    "description": "Rastreo GPS, dashcams 4G, sistemas MDVR y plataforma integral de gestión de flotas líder en la industria, confiada por empresas en todo el mundo.",
+    "subtitle": "Transforme su flota con hardware inteligente y software impulsado por IA",
+    "description": "Dashcam 4G líder en la industria, rastreo GPS, sistemas MDVR y una plataforma integral de gestión de flotas en la que confían empresas de todo el mundo.",
     "ctaPrimary": "Explorar Productos",
-    "ctaSecondary": "Contactar Ventas"
+    "ctaSecondary": "Contactar Ventas",
+    "image": "/images/heros/FleetGoo-Advanced-Vehicl-Intelligence.jpeg"
   },
   "valueProps": {
-    "title": "Resolviendo sus Desafíos de Flota",
-    "subtitle": "Convertimos datos operativos en inteligencia accionable.",
+    "title": "Resolviendo sus Desafíos de Flota más Difíciles",
+    "subtitle": "Convertimos los datos operativos en inteligencia procesable.",
     "items": [
       {
         "icon": "Shield",
-        "title": "Elimine Puntos Ciegos de Seguridad",
-        "pain": "Aumento de tasas de accidentes y responsabilidad poco clara.",
+        "title": "Elimine los Puntos Ciegos de Seguridad",
+        "pain": "Tasas de accidentes en aumento y responsabilidad poco clara.",
         "solution": "Nuestras dashcams ADAS y DMS detectan fatiga y peligros en tiempo real, previniendo accidentes antes de que ocurran."
       },
       {
         "icon": "TrendingUp",
-        "title": "Reduzca Costos Operativos",
+        "title": "Reduzca los Costos Operativos",
         "pain": "Alto consumo de combustible y uso no autorizado.",
-        "solution": "Optimice rutas y monitoree el ralentí con seguimiento de precisión para reducir costos de combustible hasta un 20%."
+        "solution": "Optimice rutas y monitoree el ralentí con un seguimiento preciso para reducir los costos de combustible hasta en un 20%."
       },
       {
         "icon": "Zap",
         "title": "Maximice la Utilización de Activos",
         "pain": "Ubicaciones de activos desconocidas y tiempo de inactividad.",
-        "solution": "Obtenga visibilidad total sobre cada vehículo y maquinaria pesada para asegurar que siempre trabajen para usted."
+        "solution": "Obtenga visibilidad total sobre cada vehículo y máquina pesada para asegurarse de que siempre estén trabajando para usted."
       }
     ]
   },
   "featuredProducts": {
     "title": "Hardware Destacado",
-    "subtitle": "Explore nuestros dispositivos insignia diseñados para fiabilidad y rendimiento.",
+    "subtitle": "Explore nuestros dispositivos insignia diseñados para confiabilidad y rendimiento.",
     "tabs": [
       {
-        "id": "d510",
-        "label": "D510 - Dashcam IA",
-        "title": "D510 Dashcam Inteligente 4G",
-        "description": "La cámara telemática todo en uno definitiva con procesador IA integrado para análisis de comportamiento del conductor.",
-        "image": "https://images.unsplash.com/photo-1629813567633-8a30e719485e?q=80&w=2070&auto=format&fit=crop",
+        "id": "d501",
+        "label": "D501 - Dashcam IA",
+        "title": "D501 Dashcam 4G Inteligente",
+        "description": "Diseñada para vehículos comerciales, incluidos aquellos que cumplen con los estándares del Ministerio de Transporte de China (como para transporte de pasajeros y logística), esta dashcam IA integra video dual 1080P, almacenamiento en la nube, posicionamiento BeiDou, Sistema de Monitoreo del Conductor (DMS) y Sistema Avanzado de Asistencia al Conductor (ADAS) para mejorar la seguridad y eficiencia de la gestión de flotas.",
+        "image": "/images/products/D501-main.jpg",
         "benefits": [
           "ADAS y DMS impulsados por IA (Fatiga/Distracción)",
-          "Transmisión de Video HD 1080p en Tiempo Real",
-          "Grabación de Doble Cámara (Carretera y Cabina)"
+          "Transmisión de video HD 1080p en tiempo real",
+          "Soporta protocolo estándar JT 808/1078"
         ],
-        "bestFor": ["Taxis", "Transporte Privado", "Entrega de Última Milla"]
+        "bestFor": [
+          "Taxis",
+          "Ride-hailing",
+          "Entrega de última milla"
+        ]
       },
       {
         "id": "d901",
-        "label": "D901 - MDVR Robusto",
-        "title": "D901 MDVR de 8 Canales",
-        "description": "Grabador de video digital móvil de grado militar diseñado para aplicaciones pesadas y entornos extremos.",
-        "image": "https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=2070&auto=format&fit=crop",
+        "label": "D901 - MDVR 4CH",
+        "title": "D901 MDVR de 4 Canales",
+        "description": "Dispositivo compacto todo en uno con pantalla de control central para monitoreo de carga y logística. Soporta entrada de video AHD de 4 canales, advertencias de punto ciego IA, modo centinela, alertas de prevención de robo de combustible, reconocimiento de voz IA y monitoreo remoto 4G.",
+        "image": "/images/products/D901-main.jpg",
         "benefits": [
-          "Soporta hasta 8 Cámaras AHD",
-          "Almacenamiento SSD 2TB + Respaldo en Tarjeta SD",
-          "Diseño Impermeable IP67 y Anti-vibración"
+          "Detección IA, prevención de robo de combustible y reconocimiento de voz",
+          "Soporta hasta 4 cámaras AHD",
+          "Diseño impermeable IP67 y antivibración"
         ],
-        "bestFor": ["Autobuses", "Camiones", "Construcción"]
+        "bestFor": [
+          "Autobuses",
+          "Camiones",
+          "Construcción"
+        ]
       }
     ]
   },
@@ -74,7 +82,7 @@
       {
         "icon": "Globe",
         "title": "Conectividad Global",
-        "description": "SIMs IoT multi-red que aseguran cobertura sin interrupciones a través de fronteras."
+        "description": "SIMs IoT multi-red que garantizan una cobertura perfecta a través de las fronteras."
       },
       {
         "icon": "Shield",
@@ -83,8 +91,8 @@
       },
       {
         "icon": "CheckCircle2",
-        "title": "99.9% Tiempo de Actividad",
-        "description": "Arquitectura de servidor redundante que asegura que sus datos siempre sean accesibles."
+        "title": "99.9% de Tiempo de Actividad",
+        "description": "Arquitectura de servidor redundante que garantiza que sus datos estén siempre accesibles."
       }
     ]
   },
@@ -115,16 +123,16 @@
   },
   "leadMagnet": {
     "title": "Obtenga una Cotización Personalizada",
-    "subtitle": "Complete el formulario a continuación y uno de nuestros expertos en flotas se pondrá en contacto con una solución a medida.",
+    "subtitle": "Complete el formulario a continuación y uno de nuestros expertos en flotas se comunicará con una solución a medida.",
     "form": {
       "nameLabel": "Nombre Completo",
-      "emailLabel": "Correo Laboral",
+      "emailLabel": "Correo de Trabajo",
       "companyLabel": "Nombre de la Empresa",
       "phoneLabel": "WhatsApp / Teléfono",
-      "productInterestLabel": "Interés del Producto",
+      "productInterestLabel": "Interés en el Producto",
       "messageLabel": "Mensaje",
       "submitBtn": "Enviar Consulta",
-      "privacyNote": "Respetamos su privacidad. Sus datos están seguros y nunca se compartirán con terceros."
+      "privacyNote": "Respetamos su privacidad. Sus datos están seguros y nunca serán compartidos con terceros."
     }
   }
 }

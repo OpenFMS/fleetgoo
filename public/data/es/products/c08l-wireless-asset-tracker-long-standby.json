@@ -1,0 +1,64 @@
+{
+  "id": "c08l-wireless-asset-tracker-long-standby",
+  "categoryId": "gps-tracker",
+  "title": "Rastreador de Activos C08L",
+  "metaTitle": "Rastreador GPS C08L de Larga Duración",
+  "metaDesc": "Rastreador de activos 4G C08L con batería de ultra larga duración, ideal para remolques y contenedores.",
+  "fullDescription": "Diseñado para el control de riesgos de activos, el C08L integra posicionamiento de modo triple GPS/BeiDou/GLONASS con bajo consumo de energía, monitoreo en tiempo real y control remoto. Es la solución ideal para el seguimiento confiable de carga y la seguridad de vehículos, con un diseño robusto, protección contra remoción y gestión remota OTA.",
+  "images": [
+    "/images/products/C08L-main.jpg"
+  ],
+  "features": [
+    "Posicionamiento Preciso: Triple modo (GPS/BeiDou/GLONASS) con error <10m y soporte AGPS",
+    "Diseño de Bajo Consumo: Modo de auto-suspensión con activación por vibración",
+    "Seguridad Avanzada: Corte remoto de combustible/energía, alertas de manipulación y detección de estaciones base falsas",
+    "Confiabilidad Robusta: Ranura SIM anti-remoción, doble protección hardware/software, tasa de defectos <3‰",
+    "Personalizable: Soporta protocolo JT808 y personalización privada",
+    "Gestión Inteligente: Actualizaciones OTA, configuración por SMS/APP y análisis de estado en tiempo real"
+  ],
+  "parameters": [
+    {
+      "label": "Plataforma de Hardware",
+      "value": "Módulo LTE Cat. 1"
+    },
+    {
+      "label": "Voltaje de Trabajo",
+      "value": "Voltaje amplio 9-90V"
+    },
+    {
+      "label": "Corriente de Trabajo",
+      "value": "25mA@12V"
+    },
+    {
+      "label": "Posicionamiento",
+      "value": "Satélite + Estación Base (Error <10m)"
+    },
+    {
+      "label": "Antena GPS",
+      "value": "Cerámica de doble modo GPS/BD"
+    },
+    {
+      "label": "Estándar de Red",
+      "value": "LTE-TDD:B34/38/39/40/41, FDD:B1/3/5/8"
+    },
+    {
+      "label": "Arranque Frío/Caliente",
+      "value": "2s / 8s"
+    },
+    {
+      "label": "Batería",
+      "value": "Polímero de Litio Industrial 55mAh/3.7V"
+    },
+    {
+      "label": "Peso",
+      "value": "28g (Dispositivo) / 74g (Total)"
+    },
+    {
+      "label": "Temp. de Trabajo",
+      "value": "-25℃ ~ +75℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Unidad C08L, 1x Soporte de Montaje, 1x Guía del Usuario",
+  "icon": "MapPin"
+}

@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "ホーム",
+        "products": "製品",
+        "software": "プラットフォーム",
+        "solutions": "ソリューション",
+        "about": "会社概要",
+        "contact": "お問い合わせ"
+    },
+    "contactInfo": {
+        "address": "中国深圳市南山区南海大道3027号創意ビル6階",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "インテリジェント車両追跡およびフリート管理ソリューションの大手プロバイダー。",
+        "sections": {
+            "products": {
+                "title": "製品",
+                "links": [
+                    {
+                        "label": "FleetGooプラットフォーム",
+                        "url": "/ja/software"
+                    },
+                    {
+                        "label": "GPSトラッカー",
+                        "url": "/ja/products"
+                    },
+                    {
+                        "label": "4Gドライブレコーダー",
+                        "url": "/ja/products"
+                    },
+                    {
+                        "label": "MDVRシステム",
+                        "url": "/ja/products"
+                    }
+                ]
+            },
+            "solutions": {
+                "title": "ソリューション",
+                "links": [
+                    {
+                        "label": "国境を越えた物流",
+                        "url": "/ja/solutions/mexico-cross-border-logistics"
+                    },
+                    {
+                        "label": "公共交通",
+                        "url": "/ja/solutions/public-safety"
+                    },
+                    {
+                        "label": "コールドチェーン",
+                        "url": "/ja/solutions/thailand-cold-chain"
+                    }
+                ]
+            },
+            "company": {
+                "title": "会社情報",
+                "links": [
+                    {
+                        "label": "会社概要",
+                        "url": "/ja/about-us"
+                    },
+                    {
+                        "label": "お問い合わせ",
+                        "url": "/ja/contact"
+                    }
+                ]
+            },
+            "support": {
+                "title": "サポート",
+                "links": [
+                    {
+                        "label": "ドキュメント",
+                        "url": "https://docs.fleetgoo.com"
+                    }
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. 無断転載を禁じます。",
+        "privacy": "プライバシーポリシー",
+        "terms": "利用規約"
+    }
+}

@@ -1,15 +1,15 @@
 {
     "page": {
         "title": "Nuestros Productos",
-        "subtitle": "Soluciones de hardware de vanguardia para monitoreo vehicular completo",
-        "metaTitle": "Productos de Hardware Vehicular | GPS, Dashcams, MDVR",
+        "subtitle": "Soluciones de hardware de vanguardia para el monitoreo completo de vehículos",
+        "metaTitle": "Productos de Hardware para Vehículos | Dashcams IA, MDVR, Rastreadores GPS",
         "metaDesc": "Explore nuestra gama de hardware profesional para vehículos, incluyendo rastreadores GPS, dashcams 4G, sistemas MDVR y pantallas inteligentes.",
         "viewDetailsBtn": "Ver Detalles"
     },
     "categories": [
         {
             "id": "all",
-            "label": "Todos los Productos",
+            "label": "Todos",
             "icon": "Layers"
         },
         {
@@ -24,79 +24,81 @@
         },
         {
             "id": "4g-aicarbox",
-            "label": "AICarBox 4G",
+            "label": "AI CarBox",
             "icon": "MonitorPlay"
         },
         {
             "id": "4g-camera",
-            "label": "Cámara 4G",
+            "label": "Cámara IA",
             "icon": "Camera"
-        },
-        {
-            "id": "oem-odm",
-            "label": "OEM y ODM",
-            "icon": "Wrench"
         },
         {
             "id": "accessories",
             "label": "Accesorios",
             "icon": "Cpu"
+        },
+        {
+            "id": "oem-odm",
+            "label": "OEM y ODM",
+            "icon": "Wrench"
         }
     ],
     "items": [
         {
-            "id": "gps-tracker",
+            "id": "c08w-4g-gps-tracker-ip65-waterproof",
             "categoryId": "gps-tracker",
-            "icon": "MapPin",
-            "title": "Rastreador GPS",
-            "description": "Seguimiento de ubicación en tiempo real con cobertura global, geocercas y análisis avanzado",
-            "image": "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
-            "gradient": "from-blue-600 to-cyan-500"
+            "title": "C08W Rastreador GPS 4G",
+            "description": "Dispositivo de rastreo en tiempo real profesional 4G con corte de combustible y protección IP65.",
+            "image": "/images/products/C08W-main.jpg"
         },
         {
-            "id": "4g-dashcam",
+            "id": "c08l-wireless-asset-tracker-long-standby",
+            "categoryId": "gps-tracker",
+            "title": "C08L Rastreador de Activos",
+            "description": "Rastreador de activos de larga duración con batería de 3 años y montaje magnético.",
+            "image": "/images/products/C08L-main.jpg"
+        },
+        {
+            "id": "d501-4g-dashcam-dual-lens-cloud",
             "categoryId": "4g-dashcam",
-            "icon": "Camera",
-            "title": "Dashcam 4G",
-            "description": "Grabación de alta definición con transmisión en vivo, monitoreo de conductor por IA y almacenamiento en la nube",
-            "image": "https://images.unsplash.com/photo-1697554471026-62151121d15c?q=80&w=2070&auto=format&fit=crop",
-            "gradient": "from-cyan-600 to-blue-500"
+            "title": "D501 DashCam 4G",
+            "description": "Dashcam en la nube de doble lente con transmisión en vivo y función de alerta SOS.",
+            "image": "/images/products/D501-main.jpg"
         },
         {
-            "id": "mdvr-system",
-            "categoryId": "4g-aicarbox",
-            "icon": "MonitorPlay",
-            "title": "Sistema MDVR",
-            "description": "Grabadora de video digital multicanal con conectividad 4G y acceso remoto",
-            "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-            "gradient": "from-blue-700 to-indigo-600"
+            "id": "d701-pro-truck-dashcam-lockable",
+            "categoryId": "4g-dashcam",
+            "title": "D701 DashCam Pro",
+            "description": "Dashcam robusta para flotas con almacenamiento bloqueable y soporte para cámara externa.",
+            "image": "/images/products/D701-main.jpg"
         },
         {
-            "id": "4g-ptz-camera",
+            "id": "d401-ai-dashcam-adas-dms",
             "categoryId": "4g-camera",
-            "icon": "Camera",
-            "title": "Cámara PTZ 4G",
-            "description": "Cámara de vigilancia 4G independiente con pan-tilt-zoom para monitoreo de sitios remotos",
-            "image": "https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop",
-            "gradient": "from-indigo-600 to-purple-600"
+            "title": "D401 Cámara IA",
+            "description": "Cámara inteligente con algoritmos integrados ADAS y DMS para la seguridad del conductor.",
+            "image": "/images/products/D401-main.jpg"
+        },
+        {
+            "id": "d901-smart-ai-camera-bsd-pedestrian",
+            "categoryId": "4g-camera",
+            "title": "D901 Cámara Inteligente IA",
+            "description": "Sistema de cámara IA multicanal con detección de puntos ciegos y peatones.",
+            "image": "/images/products/D901-main.jpg"
+        },
+        {
+            "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+            "categoryId": "4g-aicarbox",
+            "title": "D604 AI CarBox",
+            "description": "Hub MDVR de 8 canales con potente procesamiento de IA para vigilancia centralizada.",
+            "image": "/images/products/D604-main.jpg"
         },
         {
             "id": "oem-custom-solution",
             "categoryId": "oem-odm",
-            "icon": "Cpu",
             "title": "Solución Personalizada OEM",
-            "description": "Servicios de diseño y fabricación de hardware a medida para sus necesidades específicas de flota",
-            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-            "gradient": "from-slate-700 to-slate-600"
-        },
-        {
-            "id": "smart-display",
-            "categoryId": "accessories",
-            "icon": "Tv",
-            "title": "Pantalla Inteligente",
-            "description": "Pantalla interactiva del conductor con navegación, alertas y métricas de rendimiento",
-            "image": "https://images.unsplash.com/photo-1520692795328-3e4210d7206b?q=80&w=1974&auto=format&fit=crop",
-            "gradient": "from-indigo-600 to-blue-700"
+            "description": "Diseño de hardware y servicios de fabricación a medida para necesidades específicas de flotas",
+            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
         }
     ]
 }

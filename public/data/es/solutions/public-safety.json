@@ -1,66 +1,117 @@
 {
     "id": "public-safety",
-    "categoryId": "government",
-    "title": "Gestión de Flotas de Seguridad Pública",
-    "summary": "Asegurando una respuesta rápida y responsabilidad para servicios de policía, bomberos y ambulancias con seguimiento en tiempo real.",
-    "image": "https://images.unsplash.com/photo-1596525737525-4b13ee35bb73?q=80&w=2070&auto=format&fit=crop",
-    "color": "blue",
-    "overview": {
-        "title": "Descripción General",
-        "content": "Esta solución integral aprovecha la tecnología IoT de vanguardia y el análisis de datos para transformar las operaciones, mejorar los estándares de seguridad y reducir significativamente los costos generales."
-    },
-    "challenge": {
-        "title": "El Desafío",
-        "description": "En el panorama rápidamente cambiante de la seguridad pública, los operadores enfrentan una presión creciente para mejorar la eficiencia mientras mantienen estrictos estándares de seguridad.",
-        "points": [
-            "Ineficiencia Operativa",
-            "Puntos Ciegos de Seguridad",
-            "Aumento de Costos de Combustible",
-            "Riesgos de Cumplimiento"
-        ]
-    },
-    "solution": {
-        "title": "Nuestra Solución Inteligente",
-        "description": "FleetGoo introduce un enfoque holístico integrando sensores de hardware con una plataforma de gestión basada en la nube.",
-        "features": [
-            {
-                "title": "Telemetría en tiempo real",
-                "description": "Transmisión de datos de alta frecuencia asegurando que la ubicación, velocidad y estado estén siempre actualizados."
-            },
-            {
-                "title": "Información impulsada por IA",
-                "description": "Algoritmos de aprendizaje automático que predicen las necesidades de mantenimiento antes de que ocurran averías."
-            },
-            {
-                "title": "Cumplimiento Automatizado",
-                "description": "Libros de registro digitales e informes automatizados para satisfacer los requisitos regulatorios sin esfuerzo."
-            },
-            {
-                "title": "Integración Perfecta",
-                "description": "Arquitectura API abierta que permite una fácil conexión con el software ERP y de RR.HH. existente."
-            }
-        ]
-    },
-    "results": {
-        "title": "Resultados Clave",
-        "description": "Las organizaciones que implementan nuestra solución han reportado mejoras significativas dentro del primer trimestre de implementación.",
-        "stats": [
-            {
-                "value": "35%",
-                "label": "Reducción de Costos"
-            },
-            {
-                "value": "99.9%",
-                "label": "Tiempo de Actividad"
-            },
-            {
-                "value": "2x",
-                "label": "Eficiencia"
-            }
-        ]
-    },
-    "meta": {
-        "author": "Equipo FleetGoo",
-        "date": "12 de Dic, 2024"
-    }
+    "categoryId": "industry",
+    "title": "Soluciones de Flota para Seguridad Pública",
+    "metaTitle": "Sistema de Gestión de Flotas de Seguridad Pública y Policía",
+    "metaDesc": "Mejore los tiempos de respuesta de emergencia y la seguridad de los oficiales con dashcams con IA, rastreo GPS en tiempo real y recuperación de video de grado evidencial.",
+    "image": "",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "Inteligencia de Flota de Misión Crítica",
+            "subtitle": "Empodere su centro de comando con conciencia situacional en tiempo real. Desde patrullas hasta ambulancias, asegure que cada segundo cuente con nuestro sistema de gestión de flotas impulsado por IA.",
+            "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+            "ctaText": "Contactar Ventas",
+            "ctaLink": "/es/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "Desafíos en Respuesta de Emergencia",
+            "items": [
+                {
+                    "title": "Falta de Visibilidad en Tiempo Real",
+                    "desc": "El despacho tradicional por radio deja a los centros de comando ciegos a la ubicación exacta y el estado de las unidades durante incidentes críticos."
+                },
+                {
+                    "title": "Gestión de Evidencia en Video",
+                    "desc": "Recuperar metraje de dashcam manualmente de tarjetas SD es lento, propenso a pérdida de datos y rompe la cadena de custodia."
+                },
+                {
+                    "title": "Seguridad de Oficiales y Conductores",
+                    "desc": "Las persecuciones a alta velocidad y los turnos largos aumentan los riesgos de accidentes. Sin ADAS/DMS, las distracciones menores pueden llevar a colisiones mayores."
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "Capacidades Principales",
+            "layout": "grid",
+            "items": [
+                {
+                    "title": "Transmisión de Video en Vivo",
+                    "desc": "Transmita hasta 4 canales de video HD desde cualquier vehículo en tiempo real a través de 4G LTE. Vea lo que sus oficiales ven instantáneamente."
+                },
+                {
+                    "title": "Bloqueo de Evidencia",
+                    "desc": "Cargue automáticamente clips de video a la nube cuando se activan las sirenas, asegurando que la evidencia crítica nunca se pierda."
+                },
+                {
+                    "title": "Despacho GPS de Precisión",
+                    "desc": "Identifique la unidad disponible más cercana a un incidente con precisión submétrica para reducir significativamente los tiempos de respuesta."
+                },
+                {
+                    "title": "Análisis de Comportamiento del Conductor",
+                    "desc": "Monitoree frenado brusco, giros cerrados y exceso de velocidad. Use datos para capacitar a oficiales para una conducción de emergencia más segura."
+                },
+                {
+                    "title": "Audio Bidireccional",
+                    "desc": "Comunicación de voz directa entre el despacho y la cabina del vehículo, independiente de las frecuencias de radio."
+                },
+                {
+                    "title": "Monitoreo de Salud",
+                    "desc": "Conéctese al bus CAN del vehículo (OBDII) para monitorear la salud del motor, niveles de combustible y estado de la batería de forma remota."
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "value": "40%",
+                    "label": "Tiempo de Respuesta Más Rápido"
+                },
+                {
+                    "value": "99.9%",
+                    "label": "Confiabilidad de Tiempo de Actividad"
+                },
+                {
+                    "value": "-25%",
+                    "label": "Reducción de Tasa de Accidentes"
+                },
+                {
+                    "value": "24/7",
+                    "label": "Grabación Continua"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "Aspectos Destacados de la Solución",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "Prevención de Colisiones con IA (ADAS)",
+                    "desc": "Nuestro avanzado sistema ADAS compatible con Mobileye escanea el camino por delante. Advierte a los conductores de posibles colisiones frontales, salidas de carril y peatones en tiempo real, dándoles segundos preciosos para reaccionar.",
+                    "image": "/images/products/platform/vehicle-video-surveillance.png"
+                },
+                {
+                    "title": "Cadena de Custodia Segura",
+                    "desc": "Los archivos de video están marcados con agua y encriptados desde el momento de la captura. Nuestra plataforma en la nube mantiene un registro de auditoría estricto de quién accedió o descargó el metraje, asegurando la admisibilidad en la corte.",
+                    "image": "/images/products/platform/vehicle-track-video-play.png"
+                },
+                {
+                    "title": "Seguridad Total de Activos: Proteja Su Flota para el Futuro",
+                    "desc": "Detenga el Robo Antes de que Comience. Nuestra avanzada Pantalla de 10\" y Sistema de Cámara BSD de 4 Canales dan a su flota visión inteligente de 360°, previniendo activamente la pérdida de carga y combustible. Mejore la seguridad y eficiencia con conciencia en tiempo real, protegiendo cada viaje y cada gota.",
+                    "image": "/images/products/D901-main.jpg"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "¿Listo para modernizar su flota?",
+            "buttonText": "Obtener Cotización Personalizada",
+            "link": "/es/contact"
+        }
+    ]
 }

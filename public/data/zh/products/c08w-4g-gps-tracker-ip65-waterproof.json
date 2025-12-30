@@ -1,0 +1,59 @@
+{
+  "id": "c08w-4g-gps-tracker-ip65-waterproof",
+  "categoryId": "gps-tracker",
+  "title": "C08W 4G GPS 追踪器",
+  "metaTitle": "C08W以此专业 4G GPS 追踪器",
+  "metaDesc": "高精度 C08W 4G GPS 追踪设备，提供实时位置监控和高级车队分析。",
+  "fullDescription": "紧凑型超薄 IP65 防水设计，集成高灵敏度 GPS/北斗/LBS 定位，实现实时追踪。具有 ACC 检测、智能报警（围栏/超速/断电）以及用于系统稳定的看门狗功能。非常适合汽车租赁、物流、私家车和电动滑板车。",
+  "images": [
+    "/images/products/c08w-main.jpg"
+  ],
+  "features": [
+    "紧凑防水：14mm 超薄设计，IP65 防护等级",
+    "精准定位：GPS/北斗/LBS 三模追踪",
+    "智能报警：围栏进出、超速、断电及振动报警",
+    "稳健可靠：内置看门狗功能，死机自动恢复",
+    "广泛应用：适用于 9-90V 车辆，包括物流卡车、租赁车和滑板车"
+  ],
+  "parameters": [
+    {
+      "label": "网络",
+      "value": "GSM/GPRS (850/900/1800/1900MHz)"
+    },
+    {
+      "label": "工作电压",
+      "value": "9-90V DC"
+    },
+    {
+      "label": "工作电流",
+      "value": "12V/30mA (平均)"
+    },
+    {
+      "label": "定位",
+      "value": "GPS/北斗 (误差 <5m)"
+    },
+    {
+      "label": "启动时间",
+      "value": "冷启动 32s / 热启动 1s"
+    },
+    {
+      "label": "灵敏度",
+      "value": "追踪 -162dBm / 捕获 -148dBm"
+    },
+    {
+      "label": "电池",
+      "value": "内置 100mAh/3.7V 聚合物锂电池"
+    },
+    {
+      "label": "尺寸",
+      "value": "78mm x 26mm x 14mm"
+    },
+    {
+      "label": "重量",
+      "value": "26.5g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x C08W 主机, 1x 电源线, 1x 用户手册, 1x 继电器(选配)",
+  "icon": "MapPin"
+}

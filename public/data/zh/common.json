@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "首页",
+        "products": "产品",
+        "software": "平台",
+        "solutions": "解决方案",
+        "about": "关于我们",
+        "contact": "联系我们"
+    },
+    "contactInfo": {
+        "address": "深圳市南山区南海大道3027号创意大厦6楼",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "领先的智能车辆跟踪和车队管理解决方案提供商。",
+        "sections": {
+            "products": {
+                "title": "产品",
+                "links": [
+                    {
+                        "label": "FleetGoo平台",
+                        "url": "/zh/software"
+                    },
+                    {
+                        "label": "GPS定位器",
+                        "url": "/zh/products"
+                    },
+                    {
+                        "label": "4G行车记录仪",
+                        "url": "/zh/products"
+                    },
+                    {
+                        "label": "MDVR系统",
+                        "url": "/zh/products"
+                    }
+                ]
+            },
+            "solutions": {
+                "title": "解决方案",
+                "links": [
+                    {
+                        "label": "跨境物流",
+                        "url": "/zh/solutions/mexico-cross-border-logistics"
+                    },
+                    {
+                        "label": "公共交通",
+                        "url": "/zh/solutions/public-safety"
+                    },
+                    {
+                        "label": "冷链物流",
+                        "url": "/zh/solutions/thailand-cold-chain"
+                    }
+                ]
+            },
+            "company": {
+                "title": "公司",
+                "links": [
+                    {
+                        "label": "关于我们",
+                        "url": "/zh/about-us"
+                    },
+                    {
+                        "label": "联系我们",
+                        "url": "/zh/contact"
+                    }
+                ]
+            },
+            "support": {
+                "title": "支持",
+                "links": [
+                    {
+                        "label": "文档中心",
+                        "url": "https://docs.fleetgoo.com"
+                    }
+                ]
+            }
+        },
+        "copyright": "2025 FleetGoo. 版权所有。",
+        "privacy": "隐私政策",
+        "terms": "服务条款"
+    }
+}

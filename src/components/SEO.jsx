@@ -8,32 +8,33 @@ const SEO = ({
     description,
     image,
     type = 'website',
-    language
+    language,
+    settings
 }) => {
     const { pathname } = useLocation();
-    const siteUrl = 'https://fleetgoo.com'; // Replace with actual domain
+    const siteUrl = import.meta.env.VITE_SITE_URL || settings?.seo?.siteUrl || 'https://www.fleetgpstrack.com';
     const currentUrl = `${siteUrl}${pathname}`;
 
+    const siteName = settings?.seo?.siteName || 'FleetGoo';
+    const separator = settings?.seo?.titleSeparator || '|';
+    const siteLanguages = settings?.languages?.map(l => l.code) || ['en', 'es', 'zh'];
+
     // Construct language-specific URLs for hreflang
-    // Assuming path format is /:lang/...
     const pathParts = pathname.split('/').filter(Boolean);
     const currentLang = language || (pathParts.length > 0 ? pathParts[0] : 'en');
-
-    // Base path without language prefix (e.g. products/gps-tracker)
     const purePath = pathParts.slice(1).join('/');
 
-    const languages = ['en', 'es', 'zh'];
-
-    // Default meta values if not provided
+    // Default meta values from settings
     const defaults = {
-        title: 'FleetGoo - Advanced Fleet Management Solutions',
-        description: 'Leading provider of AI-powered fleet management solutions, 4G AI dashcams, MDVR,GPS tracking, and fleet management software for commercial vehicles.',
-        image: `${siteUrl}/images/brand/logo-light.webp` // Updated from default
+        title: `${siteName} - ${settings?.seo?.defaultTitle || 'Advanced Fleet Management Solutions'}`,
+        description: settings?.seo?.defaultDescription || 'Leading provider of AI-powered fleet management solutions.',
+        image: `${siteUrl}${settings?.branding?.logoLight || '/images/brand/logo-light.webp'}`
     };
 
-    const metaTitle = title ? `${title} | FleetGoo` : defaults.title;
+    const metaTitle = title ? `${title} ${separator} ${siteName}` : defaults.title;
     const metaDesc = description || defaults.description;
     const metaImage = image || defaults.image;
+    const twitterHandle = settings?.seo?.twitterHandle;
 
     // Structured Data (JSON-LD) Generation
     let schemaData = null;
@@ -42,7 +43,7 @@ const SEO = ({
         schemaData = {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "FleetGoo Horizons",
+            "name": siteName,
             "url": siteUrl,
             "potentialAction": {
                 "@type": "SearchAction",
@@ -59,7 +60,7 @@ const SEO = ({
             "description": metaDesc,
             "brand": {
                 "@type": "Brand",
-                "name": "FleetGoo"
+                "name": siteName
             }
         };
     } else if (type === 'article') {
@@ -70,37 +71,36 @@ const SEO = ({
             "image": metaImage,
             "author": {
                 "@type": "Organization",
-                "name": "FleetGoo"
+                "name": siteName
             },
             "publisher": {
                 "@type": "Organization",
-                "name": "FleetGoo",
+                "name": siteName,
                 "logo": {
                     "@type": "ImageObject",
-                    "url": `${siteUrl}/images/brand/logo-light.webp`
+                    "url": `${siteUrl}${settings?.branding?.logoLight || '/images/brand/logo-light.webp'}`
                 }
             },
             "description": metaDesc
         };
-    } else if (type === 'organization') { // For Home or Contact page
+    } else if (type === 'organization') {
         schemaData = {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "FleetGoo",
+            "name": settings?.organization?.officialName || siteName,
             "url": siteUrl,
-            "logo": `${siteUrl}/images/brand/logo-light.webp`,
-            "sameAs": [
-                "https://www.facebook.com/fleetgoo",
-                "https://twitter.com/fleetgoo",
-                "https://www.linkedin.com/company/fleetgoo"
-            ],
+            "logo": `${siteUrl}${settings?.branding?.logoLight || '/images/brand/logo-light.webp'}`,
+            "sameAs": settings?.socialLinks?.map(s => s.url) || [],
             "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-800-555-5555",
-                "contactType": "customer service"
+                "telephone": settings?.organization?.phone || "+86 150-138-15400",
+                "contactType": "customer service",
+                "email": settings?.organization?.email
             }
         };
     }
+
+    const gtag = settings?.analytics?.gtag;
 
     return (
         <Helmet>
@@ -109,6 +109,22 @@ const SEO = ({
             <title>{metaTitle}</title>
             <meta name="description" content={metaDesc} />
             <link rel="canonical" href={currentUrl} />
+            <link rel="icon" href={settings?.branding?.favicon || "/favicon.ico"} />
+
+            {/* Google Analytics - GTag */}
+            {gtag && (
+                <script async src={`https://www.googletagmanager.com/gtag/js?id=${gtag}`}></script>
+            )}
+            {gtag && (
+                <script>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', '${gtag}');
+                    `}
+                </script>
+            )}
 
             {/* Open Graph / Social Media */}
             <meta property="og:url" content={currentUrl} />
@@ -116,16 +132,17 @@ const SEO = ({
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDesc} />
             <meta property="og:image" content={metaImage} />
-            <meta property="og:site_name" content="FleetGoo Horizons" />
+            <meta property="og:site_name" content={siteName} />
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
+            {twitterHandle && <meta name="twitter:site" content={twitterHandle} />}
             <meta name="twitter:title" content={metaTitle} />
             <meta name="twitter:description" content={metaDesc} />
             <meta name="twitter:image" content={metaImage} />
 
             {/* Hreflang Tags for SEO */}
-            {languages.map(lang => (
+            {siteLanguages.map(lang => (
                 <link
                     key={lang}
                     rel="alternate"
@@ -136,7 +153,7 @@ const SEO = ({
             <link
                 rel="alternate"
                 hreflang="x-default"
-                href={`${siteUrl}/en/${purePath}`}
+                href={`${siteUrl}/${settings?.defaultLanguage || 'en'}/${purePath}`}
             />
 
             {/* Structured Data (JSON-LD) */}

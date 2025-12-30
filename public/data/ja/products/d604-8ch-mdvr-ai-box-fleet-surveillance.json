@@ -1,0 +1,71 @@
+{
+  "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+  "categoryId": "4g-aicarbox",
+  "title": "D604 AI カーボックス",
+  "metaTitle": "D604 MDVR AI Box",
+  "metaDesc": "集中型フリートビデオ監視とインテリジェントデータ処理のための強力なD604 AI CarBox MDVR。",
+  "fullDescription": "非標準化業界（ライドシェア、物流、建設車両）向けに設計され、4チャンネルHDビデオ、マルチモード測位、AI安全システム（DMS/ADAS/BSD）をサポート。多目的用途向けの省庁基準に準拠しています。",
+  "images": [
+    "/images/products/D604-main.jpg"
+  ],
+  "features": [
+    "HDビデオ：4x AHD 1080P/720P 入力、H.265/H.264 エンコード、CVBS 出力",
+    "AI安全DMS：ドライバー顔認識、疲労/脇見/喫煙/遮蔽検知（DMSカメラが必要）",
+    "AI安全ADAS：前方衝突、車線逸脱、歩行者警報（フロントカメラが必要）",
+    "AI安全BSD：左右の死角警報（BSDカメラが必要）",
+    "高精度測位：GPS/北斗/ガリレオ マルチモード（オプションで0.02m精度のRTK）",
+    "グローバル接続：4Gマルチネットワーク、オプションのWiFi/Bluetooth/Ethernet",
+    "柔軟な制御：4入力/1出力IO、1x RS485 + 1x RS232、外部センサー対応",
+    "安定電源：9-36Vワイド電圧入力、消費電力<3W",
+    "認証：JT/T 808/794/1076/1078/905 規格準拠"
+  ],
+  "parameters": [
+    {
+      "label": "OS",
+      "value": "Linux 4.3"
+    },
+    {
+      "label": "プロセッサー",
+      "value": "デュアルコア ARM CortexA7, 1.3GHz, 0.5TOPS"
+    },
+    {
+      "label": "ビデオ入力",
+      "value": "4チャンネル AHD 1080P/720P"
+    },
+    {
+      "label": "エンコード",
+      "value": "H.265 / H.264"
+    },
+    {
+      "label": "ストレージ",
+      "value": "シングル/デュアル TFカード (最大512GB)"
+    },
+    {
+      "label": "電源",
+      "value": "9~36V ワイド電圧 (消費 <3W)"
+    },
+    {
+      "label": "インターフェース",
+      "value": "1x RS485, 1x RS232, 4入/1出 IO, CVBS出力"
+    },
+    {
+      "label": "センサー",
+      "value": "3軸ジャイロスコープ"
+    },
+    {
+      "label": "動作温度",
+      "value": "-20℃~70℃"
+    },
+    {
+      "label": "寸法",
+      "value": "90mm x 90mm x 30mm"
+    },
+    {
+      "label": "重量",
+      "value": "295g (本体)"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D604 本体, 1x 電源ハーネス, 1x I/Oケーブル, アンテナ",
+  "icon": "Server"
+}

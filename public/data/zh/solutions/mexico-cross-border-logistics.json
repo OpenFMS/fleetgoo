@@ -1,0 +1,138 @@
+{
+    "id": "mexico-cross-border-logistics",
+    "categoryId": "industry",
+    "title": "墨西哥跨境物流安全",
+    "metaTitle": "墨西哥货物安全解决方案 | 防盗AI MDVR系统",
+    "metaDesc": "通过实时AI监控保护您在墨西哥的跨境车队。防止货物盗窃，确保司机安全，简化保险理赔。",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "加强您的车队防范货物盗窃",
+            "subtitle": "自信地驾驭墨西哥的高风险路线。我们的AI驱动MDVR系统提供24/7可视性和即时警报，在盗窃发生前阻止它。",
+            "backgroundImage": "/images/solutions/mexico-logistics.jpg",
+            "ctaText": "保护您的货物",
+            "ctaLink": "/zh/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "墨西哥物流中的安全挑战",
+            "items": [
+                {
+                    "title": "休息站货物盗窃",
+                    "desc": "货运卡车在强制休息时间或在不安全区域的夜间停车期间极易受到有组织盗窃的威胁。"
+                },
+                {
+                    "title": "司机安全威胁",
+                    "desc": "司机面临暴力劫持和袭击。没有隐蔽的SOS系统，他们无法安全地请求即时援助。"
+                },
+                {
+                    "title": "高风险驾驶行为",
+                    "desc": "单调的跨境路线上的疲劳和分心增加了严重翻车和碰撞事故的风险。"
+                },
+                {
+                    "title": "缺乏责任证据",
+                    "desc": "在盗窃或事故的情况下，缺少视频证据会导致保险索赔被拒绝和漫长的法律纠纷。"
+                },
+                {
+                    "title": "燃料虹吸风险",
+                    "desc": "长途路线上燃料盗窃猖獗。未监控的燃料箱导致重大运营损失和延误。"
+                },
+                {
+                    "title": "事件响应延迟",
+                    "desc": "没有实时警报，车队经理通常在劫持发生数小时后才得知，无法及时与当地警方协调。"
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/solutions/mexico-logistics.jpeg",
+            "caption": "安全跨境运营的实时AI监控。",
+            "width": "container"
+        },
+        {
+            "type": "features",
+            "title": "核心安全功能",
+            "layout": "grid",
+            "items": [
+                {
+                    "icon": "Video",
+                    "title": "实时AI监控",
+                    "desc": "即时检测对货物或燃料箱的未经授权访问。AI摄像头触发本地警报并立即将视频流传输到总部。"
+                },
+                {
+                    "icon": "Bell",
+                    "title": "隐蔽SOS警报",
+                    "desc": "隐藏的紧急按钮允许司机在劫持期间静默地向指挥中心发出警报，而不通知袭击者。"
+                },
+                {
+                    "icon": "Shield",
+                    "title": "云端证据锁定",
+                    "desc": "关键事件录像（碰撞、SOS）自动上传并锁定在云端，确保无法被篡改。"
+                },
+                {
+                    "icon": "MapPinned",
+                    "title": "远程固定",
+                    "desc": "如果确认车辆被盗，可通过仪表板远程安全地切断发动机，防止其越过边境。"
+                },
+                {
+                    "icon": "Eye",
+                    "title": "司机行为监控",
+                    "desc": "AI驱动的DMS检测疲劳和手机使用，发出实时语音警报以保持司机在危险路线上的专注。"
+                },
+                {
+                    "icon": "Fuel",
+                    "title": "燃料盗窃检测",
+                    "desc": "实时监控燃料水平。突然下降触发即时警报，以防止休息期间的虹吸。"
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "label": "盗窃预防",
+                    "value": "99%"
+                },
+                {
+                    "label": "响应时间",
+                    "value": "<10秒"
+                },
+                {
+                    "label": "事故减少",
+                    "value": "40%"
+                },
+                {
+                    "label": "保险批准",
+                    "value": "快速"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "硬件亮点",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "D604 4通道AI MDVR",
+                    "desc": "支持4个高清摄像头实现360°态势感知。内置AI处理器可实现货物和燃料安全的实时入侵检测。",
+                    "image": "/images/products/D604-main.jpg",
+                    "icon": "Server"
+                },
+                {
+                    "title": "AI司机守护者（ADAS/DMS）",
+                    "desc": "主动警告司机疲劳、分心和手机使用。在长而单调的高速公路上防止事故发生。",
+                    "image": "/images/products/platform/vehicle-video-surveillance.png",
+                    "icon": "Eye"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "保护您在墨西哥的路线",
+            "buttonText": "申请安全演示",
+            "link": "/zh/contact"
+        }
+    ]
+}

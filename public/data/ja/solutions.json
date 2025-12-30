@@ -1,0 +1,45 @@
+{
+  "page": {
+    "title": "業界別ソリューション",
+    "subtitle": "お客様の業界に特化したフリート管理戦略",
+    "metaTitle": "業界別ソリューション",
+    "metaDesc": "政府、物流、建設などに向けたカスタマイズされたフリート管理ソリューションをご覧ください。",
+    "readMoreBtn": "事例を読む"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "すべてのソリューション",
+      "icon": "Layers"
+    }
+  ],
+  "items": [
+    {
+      "id": "mexico-cross-border-logistics",
+      "categoryId": "industry",
+      "title": "メキシコ国境越え物流セキュリティ",
+      "summary": "リアルタイムAI監視でメキシコの国境越えフリートを保護。貨物盗難を防止し、ドライバーの安全を確保し、保険請求を簡素化します。",
+      "image": "/images/solutions/mexico-logistics.jpeg",
+      "icon": "ShieldAlert",
+      "color": "red"
+    },
+    {
+      "id": "public-safety",
+      "categoryId": "industry",
+      "title": "公共安全フリートソリューション",
+      "summary": "AI搭載ドライブレコーダー、リアルタイムGPS追跡、証拠グレードのビデオ検索で、緊急対応時間と警察官の安全性を向上させます。",
+      "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+      "icon": "Building2",
+      "color": "blue"
+    },
+    {
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "タイコールドチェーン物流ソリューション",
+      "summary": "タイ市場向けのエンドツーエンドのコールドチェーン可視性。GPS追跡とビデオ監視で食品の腐敗を防ぎ、温度コンプライアンスを確保します。",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
+      "icon": "Layers",
+      "color": "blue"
+    }
+  ]
+}

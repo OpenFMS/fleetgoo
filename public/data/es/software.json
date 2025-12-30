@@ -1,42 +1,107 @@
 {
-    "page": {
-        "metaTitle": "Plataforma de Gestión de Flotas SaaS | FleetGoo",
-        "metaDesc": "Potente software de gestión de flotas basado en la nube con análisis avanzados, seguimiento en tiempo real y aplicaciones móviles."
+  "id": "software",
+  "categoryId": "product",
+  "title": "Plataforma Inteligente de Gestión de Flotas",
+  "metaTitle": "Plataforma Inteligente de Gestión de Flotas",
+  "metaDesc": "Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "La Plataforma de Inteligencia de Flotas Todo en Uno",
+      "subtitle": "Unifique sus operaciones con un ecosistema completo. Desde nuestro potente SaaS en la nube y aplicaciones móviles intuitivas hasta integraciones flexibles de API abierta: proporcionamos la infraestructura para decisiones de flota más inteligentes.",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "Explorar la Plataforma",
+      "ctaLink": "/es/contact"
     },
-    "hero": {
-        "title": "Características de la Plataforma SaaS",
-        "subtitle": "Software integral de gestión de flotas con potentes análisis"
-    },
-    "features": [
+    {
+      "type": "features",
+      "title": "Capacidades de la Plataforma",
+      "layout": "grid",
+      "items": [
         {
-            "icon": "Cloud",
-            "title": "Plataforma Basada en la Nube",
-            "description": "Acceda a los datos de su flota en cualquier momento y lugar con nuestra infraestructura segura en la nube"
+          "icon": "Cloud",
+          "title": "Portal SaaS en la Nube",
+          "desc": "Centro de comando centralizado para monitorear el estado de la flota, reproducir rutas y gestionar conductores desde cualquier navegador."
         },
         {
-            "icon": "BarChart3",
-            "title": "Análisis Avanzados",
-            "description": "Información en tiempo real, mantenimiento predictivo y optimización del rendimiento"
+          "icon": "Smartphone",
+          "title": "Ecosistema Móvil",
+          "desc": "Aplicaciones nativas de iOS y Android que permiten a los gestores de flotas y conductores mantenerse conectados sobre la marcha."
         },
         {
-            "icon": "Shield",
-            "title": "Seguridad Empresarial",
-            "description": "Cifrado de nivel bancario, acceso basado en roles y certificaciones de cumplimiento"
+          "icon": "Webhook",
+          "title": "Motor de API Abierta",
+          "desc": "Integre perfectamente los datos de la flota con su ERP, CRM o aplicaciones personalizadas existentes a través de nuestra API RESTful."
         },
         {
-            "icon": "Smartphone",
-            "title": "Aplicaciones Móviles",
-            "description": "Aplicaciones iOS y Android para conductores y gerentes con capacidad fuera de línea"
+          "icon": "BarChart3",
+          "title": "Analítica Avanzada",
+          "desc": "Transforme los datos brutos en información procesable con mantenimiento predictivo e informes de uso de combustible."
         },
         {
-            "icon": "Bell",
-            "title": "Alertas Inteligentes",
-            "description": "Notificaciones personalizables para exceso de velocidad, violaciones de geocercas y mantenimiento"
+          "icon": "Shield",
+          "title": "Seguridad Empresarial",
+          "desc": "Cifrado de nivel bancario (AES-256), soporte SSO y control de acceso basado en roles (RBAC) granular."
         },
         {
-            "icon": "MapPinned",
-            "title": "Seguimiento en Vivo",
-            "description": "Seguimiento GPS en tiempo real con historial de rutas y uso compartido de ubicación"
+          "icon": "MapPinned",
+          "title": "Telemática en Tiempo Real",
+          "desc": "Seguimiento GPS de alta precisión con actualizaciones inferiores al segundo e integración de transmisión de video en vivo."
         }
-    ]
+      ]
+    },
+    {
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "Panel Unificado: Video, Mapa y Datos en una Vista",
+      "width": "container",
+      "title": "[TODO] Core Feature",
+      "layout": "[TODO] alternating",
+      "items": [
+        {
+          "title": "[TODO] Operations Dashboard",
+          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "[TODO] Real-Time GPS Location",
+          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "[TODO] Video Surveillance",
+          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "[TODO] Remote Control",
+          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "[TODO] Video & Track Playback",
+          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "[TODO] Geo Fence",
+          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "[TODO] Multi-platform integration",
+          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
+    }
+  ]
 }

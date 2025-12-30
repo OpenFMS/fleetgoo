@@ -16,30 +16,32 @@ const ScrollToTop = () => {
     return null;
 };
 
+import { useFetchData } from '@/hooks/useFetchData';
+
 const Layout = () => {
     const { lang } = useParams();
-    const validLanguages = ['en', 'es', 'zh'];
+    const { data: settings } = useFetchData('/data/settings.json');
+    const { data: commonData, loading } = useFetchData(lang ? `/data/${lang}/common.json` : null);
+
+    const validLanguages = settings?.languages?.map(l => l.code) || ['en', 'es', 'zh'];
 
     // If lang is not valid, redirect to 'en'
-    // Note: This check might happen before rendering current content, 
-    // but usually generic 404 is better or explicit redirect.
-    // For simplicity, if we are in this component, the route matched /:lang
-    // so let's validate it.
-    if (!validLanguages.includes(lang)) {
-        return <Navigate to="/en" replace />;
+    if (settings && !validLanguages.includes(lang)) {
+        return <Navigate to={`/${settings.defaultLanguage || 'en'}`} replace />;
     }
+
+    if (loading || !settings) return null;
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col transition-colors duration-300">
             <ScrollToTop />
-            {/* Header now takes lang directly. setLanguage will be handled by navigation in Header */}
-            <Header language={lang} />
+            <Header language={lang} commonData={commonData} settings={settings} />
 
             <main className="flex-grow pt-20">
-                <Outlet context={{ language: lang }} />
+                <Outlet context={{ language: lang, commonData, settings }} />
             </main>
 
-            <Footer language={lang} />
+            <Footer language={lang} commonData={commonData} settings={settings} />
             <Toaster />
         </div>
     );

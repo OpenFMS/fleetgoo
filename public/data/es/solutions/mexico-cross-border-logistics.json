@@ -1,0 +1,138 @@
+{
+    "id": "mexico-cross-border-logistics",
+    "categoryId": "industry",
+    "title": "Seguridad Logística Transfronteriza México",
+    "metaTitle": "Solución de Seguridad de Carga México | Sistema MDVR AI Anti-Robo",
+    "metaDesc": "Asegure su flota transfronteriza en México con vigilancia AI en tiempo real. Prevenga robo de carga, garantice seguridad del conductor y simplifique reclamos de seguros.",
+    "blocks": [
+        {
+            "type": "hero",
+            "title": "Fortalezca Su Flota Contra el Robo de Carga",
+            "subtitle": "Navegue las rutas de alto riesgo de México con confianza. Nuestro sistema MDVR con IA proporciona visibilidad 24/7 y alertas instantáneas para detener el robo antes de que ocurra.",
+            "backgroundImage": "/images/solutions/mexico-logistics.jpg",
+            "ctaText": "Proteja Su Carga",
+            "ctaLink": "/es/contact"
+        },
+        {
+            "type": "pain_points",
+            "title": "Desafíos de Seguridad en Logística Mexicana",
+            "items": [
+                {
+                    "title": "Robo de Carga en Paradas",
+                    "desc": "Los camiones de carga son altamente vulnerables al robo organizado durante descansos obligatorios o paradas nocturnas en áreas inseguras."
+                },
+                {
+                    "title": "Amenazas a la Seguridad del Conductor",
+                    "desc": "Los conductores enfrentan secuestros violentos y asaltos. Sin un sistema SOS discreto, no pueden pedir asistencia inmediata de forma segura."
+                },
+                {
+                    "title": "Comportamientos de Conducción de Alto Riesgo",
+                    "desc": "La fatiga y distracción en rutas transfronterizas monótonas aumentan el riesgo de vuelcos severos y accidentes de colisión."
+                },
+                {
+                    "title": "Falta de Evidencia de Responsabilidad",
+                    "desc": "En caso de robo o accidente, la falta de evidencia en video conduce a reclamos de seguro rechazados y disputas legales prolongadas."
+                },
+                {
+                    "title": "Riesgo de Sifón de Combustible",
+                    "desc": "El robo de combustible es rampante en rutas de larga distancia. Los tanques de combustible no monitoreados conducen a pérdidas operacionales significativas y retrasos."
+                },
+                {
+                    "title": "Respuesta Retrasada a Incidentes",
+                    "desc": "Sin alertas en tiempo real, los gerentes de flotas a menudo se enteran de los secuestros horas demasiado tarde para coordinar con la policía local."
+                }
+            ]
+        },
+        {
+            "type": "media",
+            "mediaType": "image",
+            "url": "/images/solutions/mexico-logistics.jpeg",
+            "caption": "Monitoreo AI en tiempo real para operaciones transfronterizas seguras.",
+            "width": "container"
+        },
+        {
+            "type": "features",
+            "title": "Capacidades de Seguridad Principales",
+            "layout": "grid",
+            "items": [
+                {
+                    "icon": "Video",
+                    "title": "Vigilancia AI en Tiempo Real",
+                    "desc": "Detecte acceso no autorizado a carga o tanques de combustible instantáneamente. Las cámaras AI activan sirenas locales y transmiten video a la central inmediatamente."
+                },
+                {
+                    "icon": "Bell",
+                    "title": "Alarma SOS Encubierta",
+                    "desc": "Un botón de pánico oculto permite a los conductores alertar silenciosamente al centro de comando durante un secuestro sin notificar a los asaltantes."
+                },
+                {
+                    "icon": "Shield",
+                    "title": "Bloqueo de Evidencia en la Nube",
+                    "desc": "El metraje de eventos críticos (colisiones, SOS) se carga automáticamente y se bloquea en la nube, asegurando que no pueda ser manipulado."
+                },
+                {
+                    "icon": "MapPinned",
+                    "title": "Inmovilización Remota",
+                    "desc": "Corte el motor de forma segura de forma remota a través del panel si se confirma que un vehículo fue robado, evitando que cruce la frontera."
+                },
+                {
+                    "icon": "Eye",
+                    "title": "Monitoreo de Comportamiento del Conductor",
+                    "desc": "El DMS con IA detecta fatiga y uso de teléfono, emitiendo alertas de voz en tiempo real para mantener a los conductores enfocados en rutas peligrosas."
+                },
+                {
+                    "icon": "Fuel",
+                    "title": "Detección de Robo de Combustible",
+                    "desc": "Monitoree los niveles de combustible en tiempo real. Las caídas abruptas activan alarmas instantáneas para prevenir el sifón durante las paradas de descanso."
+                }
+            ]
+        },
+        {
+            "type": "stats",
+            "background": "blue",
+            "items": [
+                {
+                    "label": "Prevención de Robo",
+                    "value": "99%"
+                },
+                {
+                    "label": "Tiempo de Respuesta",
+                    "value": "<10s"
+                },
+                {
+                    "label": "Reducción de Accidentes",
+                    "value": "40%"
+                },
+                {
+                    "label": "Aprobación de Seguros",
+                    "value": "Rápida"
+                }
+            ]
+        },
+        {
+            "type": "features",
+            "title": "Aspectos Destacados del Hardware",
+            "layout": "alternating",
+            "items": [
+                {
+                    "title": "D604 MDVR AI de 4 Canales",
+                    "desc": "Soporta 4 cámaras HD para conciencia situacional de 360°. El procesador AI integrado permite detección de intrusión en tiempo real para seguridad de carga y combustible.",
+                    "image": "/images/products/D604-main.jpg",
+                    "icon": "Server"
+                },
+                {
+                    "title": "Guardián del Conductor AI (ADAS/DMS)",
+                    "desc": "Advierte proactivamente a los conductores sobre fatiga, distracción y uso de teléfono. Previniendo accidentes antes de que ocurran en autopistas largas y monótonas.",
+                    "image": "/images/products/platform/vehicle-video-surveillance.png",
+                    "icon": "Eye"
+                }
+            ]
+        },
+        {
+            "type": "cta",
+            "title": "Asegure Sus Rutas en México",
+            "buttonText": "Solicitar Demo de Seguridad",
+            "link": "/es/contact"
+        }
+    ]
+}

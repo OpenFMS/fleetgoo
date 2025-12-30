@@ -1,0 +1,107 @@
+{
+  "id": "software",
+  "categoryId": "product",
+  "title": "インテリジェント車両管理プラットフォーム",
+  "metaTitle": "インテリジェント車両管理プラットフォーム",
+  "metaDesc": "クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "オールインワン車両インテリジェンスプラットフォーム",
+      "subtitle": "完全なエコシステムで業務を統合します。強力なクラウドSaaSと直感的なモバイルアプリから、柔軟なオープンAPI連携まで、よりスマートな車両管理の意思決定のためのインフラを提供します。",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "プラットフォームを見る",
+      "ctaLink": "/jp/contact"
+    },
+    {
+      "type": "features",
+      "title": "プラットフォーム機能",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Cloud",
+          "title": "クラウドSaaSポータル",
+          "desc": "ブラウザから車両状況の監視、ルート再生、ドライバー管理ができる集中コマンドセンター。"
+        },
+        {
+          "icon": "Smartphone",
+          "title": "モバイルエコシステム",
+          "desc": "iOSおよびAndroidネイティブアプリで、フリート管理者とドライバーが外出先でも常時接続。"
+        },
+        {
+          "icon": "Webhook",
+          "title": "オープンAPIエンジン",
+          "desc": "RESTful APIを通じて、車両データを既存のERP、CRM、またはカスタムアプリケーションとシームレスに統合。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "高度な分析",
+          "desc": "生データを実用的な洞察に変え、予知保全や燃料使用レポートを提供。"
+        },
+        {
+          "icon": "Shield",
+          "title": "エンタープライズセキュリティ",
+          "desc": "銀行レベルの暗号化（AES-256）、SSOサポート、きめ細かい役割ベースのアクセス制御（RBAC）。"
+        },
+        {
+          "icon": "MapPinned",
+          "title": "リアルタイムテレマティクス",
+          "desc": "1秒未満の更新頻度を持つ高精度GPS追跡とライブビデオストリーミングの統合。"
+        }
+      ]
+    },
+    {
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "統合ダッシュボード：ビデオ、地図、データを一画面に表示",
+      "width": "container",
+      "title": "[TODO] Core Feature",
+      "layout": "[TODO] alternating",
+      "items": [
+        {
+          "title": "[TODO] Operations Dashboard",
+          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "[TODO] Real-Time GPS Location",
+          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "[TODO] Video Surveillance",
+          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "[TODO] Remote Control",
+          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "[TODO] Video & Track Playback",
+          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "[TODO] Geo Fence",
+          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "[TODO] Multi-platform integration",
+          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
+    }
+  ]
+}

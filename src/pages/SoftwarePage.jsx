@@ -4,7 +4,7 @@ import SEO from '@/components/SEO';
 import Software from '@/components/Software';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const SoftwarePage = ({ language }) => {
+const SoftwarePage = ({ language, settings }) => {
   const { data, loading, error } = useFetchData(`/data/${language}/software.json`);
 
   if (loading) {
@@ -18,10 +18,11 @@ const SoftwarePage = ({ language }) => {
   return (
     <>
       <SEO
-        title={data.page.metaTitle}
-        description={data.page.metaDesc}
+        title={data.metaTitle || data.page?.metaTitle}
+        description={data.metaDesc || data.page?.metaDesc}
         language={language}
         type="website"
+        settings={settings}
       />
       <div className="min-h-screen bg-slate-50 dark:bg-slate-950 transition-colors duration-300">
         <Software data={data} />

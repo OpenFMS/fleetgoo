@@ -1,0 +1,64 @@
+{
+  "id": "d901-smart-ai-camera-bsd-pedestrian",
+  "categoryId": "4g-camera",
+  "title": "D901 AI 智能一体机",
+  "metaTitle": "D901 高端 AI 摄像头",
+  "metaDesc": "用于商业车队的顶级 D901 AI 摄像头，具有多通道录制和高级 AI 分析功能。",
+  "fullDescription": "紧凑型中控屏一体机，用于货运和物流监控。支持 4 路 AHD 视频输入，AI 盲区预警，哨兵模式，防偷油报警，AI 语音识别和 4G 远程监控。",
+  "images": [
+    "/images/products/D901-main.jpg"
+  ],
+  "features": [
+    "多路视频：4路 AHD 视频输入，H.264 格式同步录制（分路存储）",
+    "AI 检测与报警：内置 AI 算法，支持盲区预警、防偷油和语音识别",
+    "哨兵模式：增强型安防监控模式",
+    "远程监控：4G 连接支持远程直播、回放、轨迹查看、电子围栏、车队管理",
+    "灵活显示：10.1英寸 IPS 触摸屏；默认四分屏，支持切换单路全屏",
+    "稳定电源：12V-36V 宽电压输入，符合车载级浪涌、过载、过压、欠压和短路保护标准"
+  ],
+  "parameters": [
+    {
+      "label": "产品形态",
+      "value": "4路监控一体化中控屏"
+    },
+    {
+      "label": "显示屏",
+      "value": "10.1英寸 IPS (1024x600), 2.5D 触摸屏"
+    },
+    {
+      "label": "处理器/内存",
+      "value": "亿智 SA230 / DDR3L 256MB"
+    },
+    {
+      "label": "视频输入",
+      "value": "4路 AHD"
+    },
+    {
+      "label": "录制",
+      "value": "H.264, 4路独立存储, 循环录像, 缩时录像"
+    },
+    {
+      "label": "外部摄像头",
+      "value": "4x 1/3 CMOS 150° 超广角"
+    },
+    {
+      "label": "存储",
+      "value": "TF 卡 (Class10, 最大 256GB)"
+    },
+    {
+      "label": "电源",
+      "value": "12V-36V (典型功耗 10W)"
+    },
+    {
+      "label": "网络/定位",
+      "value": "4G 远程监控 / GPS"
+    },
+    {
+      "label": "工作温度",
+      "value": "-20℃ ~ +70℃"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D901 主机, 线束, 安装套件",
+  "icon": "Camera"
+}

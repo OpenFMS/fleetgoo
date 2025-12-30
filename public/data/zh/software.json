@@ -1,42 +1,107 @@
 {
-    "page": {
-        "metaTitle": "SaaS 车队管理平台 | FleetGoo",
-        "metaDesc": "强大的基于云的车队管理软件，具有高级分析、实时追踪和移动应用程序。"
+  "id": "software",
+  "categoryId": "product",
+  "title": "智能车队管理平台",
+  "metaTitle": "智能车队管理平台",
+  "metaDesc": "集成了云端SaaS、移动应用和开放API的企业级车队管理平台，提供全面的运营可视性。",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "一体化车队智能平台",
+      "subtitle": "打造完整的运营生态系统。从强大的云SaaS和直观的移动应用，到灵活的开放API集成——我们为更明智的车队决策提供基础设施。",
+      "backgroundImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      "ctaText": "探索平台",
+      "ctaLink": "/zh/contact"
     },
-    "hero": {
-        "title": "SaaS 平台功能",
-        "subtitle": "具有强大分析功能的综合车队管理软件"
-    },
-    "features": [
+    {
+      "type": "features",
+      "title": "平台核心能力",
+      "layout": "grid",
+      "items": [
         {
-            "icon": "Cloud",
-            "title": "基于云的平台",
-            "description": "通过我们安全的云基础设施，随时随地访问您的车队数据"
+          "icon": "Cloud",
+          "title": "云端SaaS门户",
+          "desc": "集中式指挥中心，随时随地监控车队状态、回放轨迹并管理司机。"
         },
         {
-            "icon": "BarChart3",
-            "title": "高级分析",
-            "description": "实时洞察、预测性维护和性能优化"
+          "icon": "Smartphone",
+          "title": "移动生态系统",
+          "desc": "原生iOS和Android应用，通过移动端赋能车队管理者和司机保持实时互联。"
         },
         {
-            "icon": "Shield",
-            "title": "企业级安全",
-            "description": "银行级加密、基于角色的访问和合规认证"
+          "icon": "Webhook",
+          "title": "开放API引擎",
+          "desc": "通过RESTful API将车队数据无缝集成到您现有的ERP、CRM或定制应用中。"
         },
         {
-            "icon": "Smartphone",
-            "title": "移动应用",
-            "description": "适用于驾驶员和管理者的 iOS 和 Android 应用，具有离线功能"
+          "icon": "BarChart3",
+          "title": "高级数据分析",
+          "desc": "将原始数据转化为可执行的洞察，提供预测性维护和燃油使用报告。"
         },
         {
-            "icon": "Bell",
-            "title": "智能警报",
-            "description": "针对超速、地理围栏违规和维护的可定制通知"
+          "icon": "Shield",
+          "title": "企业级安全",
+          "desc": "银行级加密(AES-256)，支持SSO单点登录和细粒度的基于角色的访问控制(RBAC)。"
         },
         {
-            "icon": "MapPinned",
-            "title": "实时追踪",
-            "description": "具有路线历史和位置共享功能的实时 GPS 追踪"
+          "icon": "MapPinned",
+          "title": "实时远程通信",
+          "desc": "亚秒级更新的高精度GPS追踪，集成实时视频流传输。"
         }
-    ]
+      ]
+    },
+    {
+      "type": "media",
+      "mediaType": "image",
+      "url": "https://images.unsplash.com/photo-1639060015191-9d83063eab2a",
+      "caption": "统一控制面板：视频、地图和数据一览无余",
+      "width": "container",
+      "title": "[TODO] Core Feature",
+      "layout": "[TODO] alternating",
+      "items": [
+        {
+          "title": "[TODO] Operations Dashboard",
+          "desc": "[TODO] The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/Dashboard.png"
+        },
+        {
+          "title": "[TODO] Real-Time GPS Location",
+          "desc": "[TODO] Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-gps-real-monitor.png"
+        },
+        {
+          "title": "[TODO] Video Surveillance",
+          "desc": "[TODO] It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "[TODO] Remote Control",
+          "desc": "[TODO] It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-remote-control.png"
+        },
+        {
+          "title": "[TODO] Video & Track Playback",
+          "desc": "[TODO] Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "[TODO] Geo Fence",
+          "desc": "[TODO] An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
+          "icon": "[TODO] Check",
+          "image": "/images/products/platform/vehicle-geoface.png"
+        },
+        {
+          "title": "[TODO] Multi-platform integration",
+          "desc": "[TODO] The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
+          "icon": "",
+          "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
+        }
+      ]
+    }
+  ]
 }

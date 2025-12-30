@@ -1,113 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const translations = {
-  en: {
-    products: 'Products',
-    gpsTracker: 'GPS Tracker',
-    dashcam: '4G Dashcam',
-    mdvr: 'MDVR System',
-    display: 'Smart Display',
-    solutions: 'Solutions',
-    logistics: 'Logistics',
-    construction: 'Construction',
-    delivery: 'Delivery',
-    corporate: 'Corporate',
-    company: 'Company',
-    about: 'About Us',
-    careers: 'Careers',
-    partners: 'Partners',
-    blog: 'Blog',
-    support: 'Support',
-    documentation: 'Documentation',
-    faq: 'FAQ',
-    contact: 'Contact',
-    downloads: 'Downloads',
-    copyright: '2025 FleetGoo. All rights reserved.',
-    privacy: 'Privacy Policy',
-    terms: 'Terms of Service',
-  },
-  es: {
-    products: 'Productos',
-    gpsTracker: 'Rastreador GPS',
-    dashcam: 'Dashcam 4G',
-    mdvr: 'Sistema MDVR',
-    display: 'Pantalla Inteligente',
-    solutions: 'Soluciones',
-    logistics: 'Logística',
-    construction: 'Construcción',
-    delivery: 'Entrega',
-    corporate: 'Corporativo',
-    company: 'Empresa',
-    about: 'Nosotros',
-    careers: 'Carreras',
-    partners: 'Socios',
-    blog: 'Blog',
-    support: 'Soporte',
-    documentation: 'Documentación',
-    faq: 'FAQ',
-    contact: 'Contacto',
-    downloads: 'Descargas',
-    copyright: '2025 FleetGoo. Todos los derechos reservados.',
-    privacy: 'Política de Privacidad',
-    terms: 'Términos de Servicio',
-  },
-  zh: {
-    products: '产品',
-    gpsTracker: 'GPS追踪器',
-    dashcam: '4G行车记录仪',
-    mdvr: 'MDVR系统',
-    display: '智能显示屏',
-    solutions: '解决方案',
-    logistics: '物流',
-    construction: '建筑',
-    delivery: '配送',
-    corporate: '企业',
-    company: '公司',
-    about: '关于我们',
-    careers: '职业',
-    partners: '合作伙伴',
-    blog: '博客',
-    support: '支持',
-    documentation: '文档',
-    faq: '常见问题',
-    contact: '联系',
-    downloads: '下载',
-    copyright: '2025 FleetGoo. 保留所有权利。',
-    privacy: '隐私政策',
-    terms: '服务条款',
-  },
-};
+const Footer = ({ language, commonData, settings }) => {
+  const t = commonData?.footer || {};
 
-const Footer = ({ language }) => {
-  const t = translations[language];
+  const footerSections = t.sections ? Object.values(t.sections) : [];
 
-  const footerSections = [
-    {
-      title: t.products,
-      links: [t.gpsTracker, t.dashcam, t.mdvr, t.display],
-    },
-    {
-      title: t.solutions,
-      links: [t.logistics, t.construction, t.delivery, t.corporate],
-    },
-    {
-      title: t.company,
-      links: [t.about, t.careers, t.partners, t.blog],
-    },
-    {
-      title: t.support,
-      links: [t.documentation, t.faq, t.contact, t.downloads],
-    },
-  ];
-
-  const socialLinks = [
-    { icon: Facebook, href: 'https://www.facebook.com/people/Mapgoo/61581872645799/' },
-    // { icon: Twitter, href: '#' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/company/fleetgoo' },
-    { icon: Instagram, href: 'https://www.instagram.com/mapgoosales' },
-  ];
+  const iconMap = { Facebook, Twitter, Linkedin, Instagram, Youtube };
+  const socialLinks = settings?.socialLinks?.map(link => ({
+    icon: iconMap[link.platform],
+    href: link.url,
+    platform: link.platform
+  })).filter(link => link.icon) || [];
 
   return (
     <footer className="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
@@ -118,11 +24,19 @@ const Footer = ({ language }) => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 mb-4"
             >
-              <img src="/images/brand/logo-light.webp" alt="FleetGoo Logo" className="h-8 w-auto dark:hidden" />
-              <img src="/images/brand/logo-dark.png" alt="FleetGoo Logo" className="h-8 w-auto hidden dark:block" />
+              <img
+                src={settings?.branding?.logoLight || "/images/brand/logo-light.webp"}
+                alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
+                className="h-8 w-auto dark:hidden"
+              />
+              <img
+                src={settings?.branding?.logoDark || "/images/brand/logo-dark.png"}
+                alt={`${settings?.seo?.siteName || 'FleetGoo'} Logo`}
+                className="h-8 w-auto hidden dark:block"
+              />
             </motion.div>
             <p className="text-slate-600 dark:text-gray-400 text-sm mb-4">
-              Leading provider of intelligent vehicle tracking and fleet management solutions.
+              {t.companyDescription}
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social, index) => {
@@ -131,6 +45,7 @@ const Footer = ({ language }) => {
                   <motion.a
                     key={index}
                     href={social.href}
+                    aria-label={social.platform}
                     whileHover={{ scale: 1.1, y: -2 }}
                     className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors"
                   >
@@ -145,16 +60,33 @@ const Footer = ({ language }) => {
             <div key={index}>
               <span className="text-slate-900 dark:text-white font-semibold mb-4 block">{section.title}</span>
               <ul className="space-y-2">
-                {section.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <a
-                      href="#"
-                      className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
+                {section.links.map((link, linkIndex) => {
+                  const label = typeof link === 'string' ? link : link.label;
+                  const url = typeof link === 'string' ? '#' : link.url;
+                  const isExternal = url.startsWith('http');
+
+                  return (
+                    <li key={linkIndex}>
+                      {isExternal ? (
+                        <a
+                          href={url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
+                        >
+                          {label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={url}
+                          className="text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
+                        >
+                          {label}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -163,10 +95,10 @@ const Footer = ({ language }) => {
         <div className="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 dark:text-gray-400 text-sm">{t.copyright}</p>
           <div className="flex gap-6">
-            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+            <a href="/en/privacy" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
               {t.privacy}
             </a>
-            <a href="#" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
+            <a href="/en/terms" className="text-slate-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors">
               {t.terms}
             </a>
           </div>

@@ -28,8 +28,9 @@ const translations = {
   },
 };
 
-const Hero = ({ language }) => {
-  const t = translations[language];
+const Hero = ({ language, data }) => {
+  // Graceful fallback if data is not yet loaded or passed
+  const t = data || translations[language];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -70,12 +71,7 @@ const Hero = ({ language }) => {
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-6"
-          >
+          <div className="space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -101,7 +97,7 @@ const Hero = ({ language }) => {
                 onClick={() => scrollToSection('products')}
                 className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-6 text-lg rounded-lg shadow-lg shadow-blue-200 dark:shadow-blue-500/20 transition-all hover:shadow-blue-400/40 hover:scale-105"
               >
-                {t.cta1}
+                {t.ctaPrimary || t.cta1}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               <Button
@@ -109,10 +105,10 @@ const Hero = ({ language }) => {
                 variant="outline"
                 className="bg-white/80 dark:bg-transparent border-2 border-blue-200 dark:border-blue-500 text-blue-700 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 px-8 py-6 text-lg rounded-lg transition-all hover:scale-105"
               >
-                {t.cta2}
+                {t.ctaSecondary || t.cta2}
               </Button>
             </div>
-          </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -126,7 +122,17 @@ const Hero = ({ language }) => {
                 transition={{ duration: 4, repeat: Infinity }}
                 className="relative z-10"
               >
-                <img alt="Advanced GPS tracking device dashboard" className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20" src="https://images.unsplash.com/photo-1639060015191-9d83063eab2a" />
+                <img
+                  alt={t.title}
+                  className="rounded-2xl shadow-2xl shadow-slate-200 dark:shadow-blue-500/20"
+                  src={t.image || "https://images.unsplash.com/photo-1639060015191-9d83063eab2a"}
+                  width="1584"
+                  height="672"
+                  srcSet={t.image ? `${t.image.replace(/(\.[^.]+)$/, '-mobile.webp')} 640w, ${t.image} 1584w` : undefined}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="eager"
+                  fetchpriority="high"
+                />
               </motion.div>
               <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-gradient-to-br from-blue-300/30 to-cyan-300/30 dark:from-blue-500/20 dark:to-cyan-500/20 rounded-full blur-3xl" />
             </div>

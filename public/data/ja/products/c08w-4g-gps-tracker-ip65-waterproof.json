@@ -1,0 +1,59 @@
+{
+  "id": "c08w-4g-gps-tracker-ip65-waterproof",
+  "categoryId": "gps-tracker",
+  "title": "C08W 4G GPSトラッカー",
+  "metaTitle": "C08W プロフェッショナル 4G GPSトラッカー",
+  "metaDesc": "リアルタイムの位置監視と高度なフリート分析を提供する高精度C08W 4G GPS追跡デバイス。",
+  "fullDescription": "コンパクトな超薄型IP65防水設計で、高感度GPS/BeiDou/LBS測位を統合し、リアルタイム追跡を実現。ACC検知、インテリジェントアラーム（フェンス/速度/電源）、およびシステムの安定性のための堅牢なウォッチドッグ機能を備えています。レンタカー、物流、自家用車、電動スクーターに最適です。",
+  "images": [
+    "/images/products/c08w-main.jpg"
+  ],
+  "features": [
+    "コンパクト＆防水：IP65定格の14mm超薄型設計",
+    "高精度測位：GPS/BeiDou/LBSトリプルモード追跡",
+    "スマートアラート：フェンス出入り、スピード違反、停電、振動アラーム",
+    "堅牢な安定性：クラッシュからの自動復旧機能を備えたウォッチドッグ内蔵",
+    "多用途：物流トラック、レンタカー、スクーターなど9-90V車両に対応"
+  ],
+  "parameters": [
+    {
+      "label": "ネットワーク",
+      "value": "GSM/GPRS (850/900/1800/1900MHz)"
+    },
+    {
+      "label": "動作電圧",
+      "value": "9-90V DC"
+    },
+    {
+      "label": "動作電流",
+      "value": "12V/30mA (平均)"
+    },
+    {
+      "label": "測位",
+      "value": "GPS/BeiDou (誤差 <5m)"
+    },
+    {
+      "label": "起動時間",
+      "value": "コールド 32s / ホット 1s"
+    },
+    {
+      "label": "感度",
+      "value": "追跡 -162dBm / 捕捉 -148dBm"
+    },
+    {
+      "label": "バッテリー",
+      "value": "内蔵 100mAh/3.7V リチウムポリマー"
+    },
+    {
+      "label": "寸法",
+      "value": "78mm x 26mm x 14mm"
+    },
+    {
+      "label": "重量",
+      "value": "26.5g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x C08W 本体, 1x 電源ケーブル, 1x リレー(オプション)",
+  "icon": "MapPin"
+}

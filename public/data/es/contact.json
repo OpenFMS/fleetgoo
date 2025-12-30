@@ -1,22 +1,19 @@
 {
-    "metaTitle": "Contáctenos | FleetGoo",
+    "metaTitle": "Contáctenos - FleetGoo",
     "metaDesc": "Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.",
-    "title": "Póngase en Contacto",
+    "title": "Contáctenos",
     "subtitle": "¿Tiene preguntas sobre nuestras soluciones de seguimiento de vehículos? Estamos aquí para ayudar.",
     "form": {
-        "nameLabel": "Nombre Completo",
-        "namePlaceholder": "Juan Pérez",
-        "emailLabel": "Dirección de Correo Electrónico",
-        "emailPlaceholder": "juan@empresa.com",
-        "companyLabel": "Nombre de la Empresa",
-        "companyPlaceholder": "Logística Acme",
-        "phoneLabel": "Número de Teléfono",
-        "phonePlaceholder": "+1 (555) 000-0000",
-        "messageLabel": "Su Mensaje",
-        "messagePlaceholder": "Cuéntenos sobre sus necesidades de gestión de flotas...",
-        "submitButton": "Enviar Mensaje",
+        "name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "company": "Nombre de la Empresa",
+        "phone": "Número de Teléfono",
+        "productInterest": "Producto de Interés",
+        "message": "Su Mensaje",
+        "submitBtn": "Enviar Mensaje",
+        "privacyNote": "Respetamos su privacidad. Su información está segura con nosotros.",
         "successTitle": "¡Consulta Enviada con Éxito! ✅",
-        "successDesc": "Gracias por su interés. Nuestro equipo se pondrá en contacto con usted dentro de las 24 horas."
+        "successDesc": "Gracias por su interés. Nuestro equipo se pondrá en contacto con usted en un plazo de 24 horas."
     },
     "contactInfo": {
         "title": "Información de Contacto",
@@ -24,19 +21,19 @@
             {
                 "icon": "MapPin",
                 "label": "Sede Central",
-                "value": "123 Innovation Drive, Tech City, TC 90210"
+                "value": "6th Floor, Chuangyi Building, No. 3027 Nanhai Road, Nanshan District, Shenzhen"
             },
             {
                 "icon": "Mail",
-                "label": "Envíenos un Correo",
-                "value": "sales@vehicletechpro.com"
+                "label": "Correo Electrónico",
+                "value": "sales@fleetgoo.com"
             },
             {
                 "icon": "Phone",
                 "label": "Llámenos",
-                "value": "+1 (800) 123-4567"
+                "value": "+86 150-138-15400"
             }
         ]
     },
-    "officeImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80"
+    "officeImage": "/images/company/company-main.png"
 }

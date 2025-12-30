@@ -1,74 +1,74 @@
 {
-    "id": "gps-tracker",
-    "categoryId": "gps-tracker",
-    "title": "Rastreador GPS",
-    "metaTitle": "Rastreador GPS Profesional | FleetGoo",
-    "metaDesc": "Dispositivo de rastreo GPS 4G en tiempo real con geovallado y funciones antirrobo.",
-    "fullDescription": "Nuestro avanzado Rastreador GPS proporciona seguimiento de ubicación en tiempo real con cobertura global. Cuenta con geovallado, alertas de velocidad y reproducción histórica de rutas. Ideal para gestión de flotas y seguimiento de activos. Construido con componentes de grado industrial para soportar entornos hostiles.",
-    "images": [
-        "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1516245834210-c4c14278733f?q=80&w=2069&auto=format&fit=crop"
-    ],
-    "features": [
-        "Cobertura global 4G LTE/3G/2G asegurando que nunca pierda el rastro de sus activos.",
-        "Capacidades avanzadas de geovallado con alertas instantáneas por SMS/App.",
-        "Carcasa impermeable IP65 de grado industrial para condiciones climáticas adversas.",
-        "Funcionalidad de corte remoto del motor para prevención de robos.",
-        "Entrada de voltaje amplio de 9-36V haciéndolo compatible con motocicletas, automóviles y camiones."
-    ],
-    "parameters": [
-        {
-            "label": "Red",
-            "value": "4G LTE / 3G WCDMA / 2G GSM"
-        },
-        {
-            "label": "Dimensiones",
-            "value": "80mm x 40mm x 15mm"
-        },
-        {
-            "label": "Peso",
-            "value": "45g"
-        },
-        {
-            "label": "Posicionamiento",
-            "value": "GPS + BDS + LBS"
-        },
-        {
-            "label": "Voltaje de Trabajo",
-            "value": "9-36V DC"
-        },
-        {
-            "label": "Batería",
-            "value": "Batería de respaldo Li-ion de 150mAh"
-        },
-        {
-            "label": "Impermeable",
-            "value": "IP65"
-        }
-    ],
-    "downloads": [
-        {
-            "title": "Ficha Técnica GPS",
-            "type": "PDF",
-            "size": "2.2 MB",
-            "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
-        },
-        {
-            "title": "Manual V2.0",
-            "type": "PDF",
-            "size": "4.4 MB",
-            "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
-        },
-        {
-            "title": "Guía",
-            "type": "PDF",
-            "size": "0.8 MB",
-            "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
-        }
-    ],
-    "packaging": "Caja de grado industrial que contiene: 1x Unidad GPS, 1x Cable de Alimentación (4 pines), 1x Manual de Usuario, 1x Adhesivo 3M, 1x Relé (Opcional).",
-    "gradient": "from-blue-600 to-cyan-500",
-    "icon": "MapPin"
+  "id": "gps-tracker",
+  "categoryId": "gps-tracker",
+  "title": "Rastreador GPS",
+  "metaTitle": "Rastreador GPS Profesional",
+  "metaDesc": "Dispositivo de rastreo GPS 4G en tiempo real con geovallado y funciones antirrobo.",
+  "fullDescription": "Nuestro avanzado Rastreador GPS proporciona seguimiento de ubicación en tiempo real con cobertura global. Cuenta con geovallado, alertas de velocidad y reproducción histórica de rutas. Ideal para gestión de flotas y seguimiento de activos. Construido con componentes de grado industrial para soportar entornos hostiles.",
+  "images": [
+    "https://images.unsplash.com/photo-1547496613-4e19f78d6932?q=80&w=2074&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1516245834210-c4c14278733f?q=80&w=2069&auto=format&fit=crop"
+  ],
+  "features": [
+    "Cobertura global 4G LTE/3G/2G asegurando que nunca pierda el rastro de sus activos.",
+    "Capacidades avanzadas de geovallado con alertas instantáneas por SMS/App.",
+    "Carcasa impermeable IP65 de grado industrial para condiciones climáticas adversas.",
+    "Funcionalidad de corte remoto del motor para prevención de robos.",
+    "Entrada de voltaje amplio de 9-36V haciéndolo compatible con motocicletas, automóviles y camiones."
+  ],
+  "parameters": [
+    {
+      "label": "Red",
+      "value": "4G LTE / 3G WCDMA / 2G GSM"
+    },
+    {
+      "label": "Dimensiones",
+      "value": "80mm x 40mm x 15mm"
+    },
+    {
+      "label": "Peso",
+      "value": "45g"
+    },
+    {
+      "label": "Posicionamiento",
+      "value": "GPS + BDS + LBS"
+    },
+    {
+      "label": "Voltaje de Trabajo",
+      "value": "9-36V DC"
+    },
+    {
+      "label": "Batería",
+      "value": "Batería de respaldo Li-ion de 150mAh"
+    },
+    {
+      "label": "Impermeable",
+      "value": "IP65"
+    }
+  ],
+  "downloads": [
+    {
+      "title": "Ficha Técnica GPS",
+      "type": "PDF",
+      "size": "2.2 MB",
+      "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
+    },
+    {
+      "title": "Manual V2.0",
+      "type": "PDF",
+      "size": "4.4 MB",
+      "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
+    },
+    {
+      "title": "Guía",
+      "type": "PDF",
+      "size": "0.8 MB",
+      "url": "http://edit.mapgoo.net/App/Upload/adv/20251205/f46657d34aecc85fbc6037bf6d19c268.png"
+    }
+  ],
+  "packaging": "Caja de grado industrial que contiene: 1x Unidad GPS, 1x Cable de Alimentación (4 pines), 1x Manual de Usuario, 1x Adhesivo 3M, 1x Relé (Opcional).",
+  "gradient": "from-blue-600 to-cyan-500",
+  "icon": "MapPin"
 }
