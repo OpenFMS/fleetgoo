@@ -40,6 +40,7 @@ const HomePage = ({ language, settings }) => {
       <SEO
         title={data.metaTitle || "Home"}
         description={data.metaDesc || "Welcome to FleetGoo"}
+        keywords={data.keywords}
         language={language}
         settings={settings}
       />

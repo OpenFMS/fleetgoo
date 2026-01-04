@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Globe, Menu, X } from 'lucide-react';
+import { Globe, Menu, X, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -113,6 +113,16 @@ const Header = ({ language, commonData, settings }) => {
           </div>
 
           <div className="flex items-center gap-2">
+            <a
+              href="https://saas.fleetgoo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-blue-500/10 dark:hover:text-blue-400 transition-colors"
+              aria-label="Go to SaaS Platform"
+              title="Go to SaaS Platform"
+            >
+              <LayoutDashboard className="w-5 h-5" />
+            </a>
             <ThemeToggle />
 
             <DropdownMenu>

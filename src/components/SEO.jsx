@@ -8,6 +8,7 @@ const SEO = ({
     description,
     image,
     type = 'website',
+    keywords,
     language,
     settings
 }) => {
@@ -108,6 +109,7 @@ const SEO = ({
             <html lang={currentLang} />
             <title>{metaTitle}</title>
             <meta name="description" content={metaDesc} />
+            {keywords && <meta name="keywords" content={keywords} />}
             <link rel="canonical" href={currentUrl} />
             <link rel="icon" href={settings?.branding?.favicon || "/favicon.ico"} />
 
