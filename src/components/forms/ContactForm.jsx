@@ -82,6 +82,14 @@ const ContactForm = ({ labels = {}, language = 'en', className = "", settings = 
 
             await emailjs.send(serviceID, templateID, templateParams, publicKey);
 
+            // GTM Event
+            if (window.dataLayer) {
+                window.dataLayer.push({
+                    'event': 'form_submission',
+                    'formLocation': window.location.pathname
+                });
+            }
+
             toast({
                 title: settings?.contactForm?.successMessage?.title || "Message Sent!",
                 description: settings?.contactForm?.successMessage?.description || "Thank you for your inquiry. Our team will contact you shortly.",
