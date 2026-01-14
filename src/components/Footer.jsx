@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = ({ language, commonData, settings }) => {
@@ -38,7 +38,36 @@ const Footer = ({ language, commonData, settings }) => {
             <p className="text-slate-600 dark:text-gray-400 text-sm mb-4">
               {t.companyDescription}
             </p>
-            <div className="flex gap-3">
+
+            <div className="flex gap-3 flex-wrap">
+              {/* Contact Icons (Email & WhatsApp) */}
+              {settings?.organization?.email && (
+                <motion.a
+                  href={`mailto:${settings.organization.email}`}
+                  aria-label="Email Us"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors"
+                  title={settings.organization.email}
+                >
+                  <Mail className="w-5 h-5" />
+                </motion.a>
+              )}
+
+              {settings?.organization?.phone && (
+                <motion.a
+                  href={`https://wa.me/${settings.organization.phone.replace(/[^0-9]/g, '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  whileHover={{ scale: 1.1, y: -2 }}
+                  className="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-slate-700 transition-colors"
+                  title={`WhatsApp: ${settings.organization.phone}`}
+                >
+                  <MessageCircle className="w-5 h-5" />
+                </motion.a>
+              )}
+
+              {/* Existing Social Links */}
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
