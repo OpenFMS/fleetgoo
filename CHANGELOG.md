@@ -2,6 +2,54 @@
 
 All notable changes to the FleetGoo project will be documented in this file.
 
+## [Major] - 2026-03-30 - Admin CMS 后台管理与 Astro Content Collections 集成
+
+### 重大架构更新 (Architecture)
+- **Astro Content Collection 集成**：
+    - 正式将博客内容从旧版 JSON 数据模式迁移至 **Astro Content Collections** 架构 (`src/content/blog`)。支持多语言子目录管理 (`en`, `zh`, `es`, `ja`)。
+    - 实现了 Frontmatter 严格模式校验，确保全站文章元数据（`title`, `perex`, `publishedAt` 等）的一致性，极大提升内容扩展性。
+- **全新 Admin 后台管理系统**：
+    - 开发了基于 Vite Middleware 的服务端 API 插件 (`src/lib/admin-api-plugin.js`)，实现了对本地文件系统（JSON, Markdown）的无损读写、图片上传、多语言管理。
+    - 新增 `src/pages/admin/[...slug].astro` 作为 Admin 入口，完美复用了 React 端的 `SchemaForm` 和 `Editor` UI，实现可视化后台。
+    - **安全与稳定性设计**：
+        - 实现了 Markdown 手动转义补丁，自动修复 `![]()` 或 `[]()` 等会导致 Astro 构建崩溃的空语法。
+        - 修复了 Vite 路由中因 `?.md` URL 参数被误判为 ESM 模块加载而导致的 ENOENT 404 错误。
+
+### 修复与优化 (Fixed & Improved)
+- **多语言底层逻辑对齐**：
+    - 同步了 `public/data` 下的所有语言包（ZH, EN, ES, JA），修复了部分产品 JSON 在迁移过程中出现的非转义双引号问题及字段缺失。
+- **构建脚本增强**：
+    - 更新了 `package.json` 中的 `scripts`，确保预览环境可以直接访问到 `/admin/` 路径，简化联调流程。
+
+## [Major] - 2026-03-29 - React SPA 全面迁移至 Astro SSG 架构
+
+### 重大架构更新 (Architecture)
+- **底层框架替换**：将项目的构建与路由系统从 Vite + React SPA（单页应用）全面重构为 **Astro SSG（静态站点生成器）**。保留了绝大部分既有 React UI 代码，但将其转换为 Astro 的 "Islands" 进行挂载。
+- **全站静态化 (SEO 极致优化)**：
+    - 将以往在客户端渲染的所有核心页面抽离成了独立的物理多语言路由：
+        - `/[lang]/index.astro` (首页)
+        - `/[lang]/about-us.astro` (关于我们)
+        - `/[lang]/contact.astro` (联系我们)
+        - `/[lang]/software.astro` (软件支持)
+        - `/[lang]/products/index.astro` (产品列表)
+        - `/[lang]/products/[id].astro` (海量产品详情页自动批量生成)
+        - `/[lang]/solutions/index.astro` (解决方案列表)
+        - `/[lang]/solutions/[id].astro` (解决方案详情页)
+        - `/[lang]/[docId].astro` (多语言法务文件，如 Privacy / Terms)
+    - 页面现在直接在服务器端/打包时生成完整的 HTML，对搜索引擎爬虫完全透明友好，极大提升外贸业务转化率 ("能转化" 要求)。
+- **路由无痛迁移垫片**：
+    - 开发并注入了全局钩子 `react-router-shim.jsx`。在摒弃了旧版 `react-router-dom` 库后，通过此垫片成功拦截了原有 UI 组件中的所有的 `<Link>`, `useNavigate`, `useParams`, `useOutletContext` 等路由请求，将它们平滑降级为浏览器原生行为，从而实现了老代码的零侵入迁移。
+- **根目录自动重定向**：新增了 `src/pages/index.astro`，用于捕获访问根目录 `/` 的流量，并根据 `settings.json` 中的 `defaultLanguage` 配置进行毫秒级的 SSR 重定向，修复了根目录的 404 缺陷。
+
+### 修复与优化 (Fixed & Improved)
+- **SEO `<head>` 管理重构**：
+    - 彻底剥离了遗留的 `react-helmet-async` (CommonJS 规范)。将 `<title>` 和 `<meta>` 等标签管理权限彻底交还给 Astro 原生头部渲染机制。彻底解决了因缺少上下文 Provider 而导致的 SSR 时发生 `Cannot read properties of undefined (reading 'add')` 的页面崩溃致命错误。
+- **暗黑主题切换完美兼容机制 (防 FOUC 闪烁)**：
+    - 给独立的组件 `ThemeToggle.jsx` 单独封装了小范围的 `ThemeProvider` 上下文。
+    - 在 Astro 的总布局 `Layout.astro` 的 `<head>` 里以 `is:inline` 方式注入了同步系统明暗偏好与 localStorage 的渲染前置嗅探脚本，终结了静态生成的网站页面在刷新时会「先出刺眼白底再转黑」的问题。
+- **缺失数据自动化同步**：
+    - 编写了跨语言数据对齐脚本 (`syncImages.cjs`)，一键将 EN 环境下的多张商品展示大图同步并补全覆盖到了 `zh`, `es`, `ja` 的同名产品库 JSON 结构中。修复了除英文外其他语言详情页下只显示首图残缺的问题。
+
 ## [Dev] - 2025-12-23
 
 ### Added

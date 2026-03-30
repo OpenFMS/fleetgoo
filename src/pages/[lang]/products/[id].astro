@@ -1,0 +1,66 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Layout from '../../../layouts/Layout.astro';
+import ProductDetailPage from '../../../views/ProductDetailPage.jsx';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve(process.cwd(), 'public/data');
+  if (!fs.existsSync(dataDir)) return [];
+  
+  const items = fs.readdirSync(dataDir, { withFileTypes: true });
+  const languages = items.filter(item => item.isDirectory()).map(item => item.name);
+  
+  const paths = [];
+
+  for (const lang of languages) {
+    const productsPath = path.join(dataDir, lang, 'products.json');
+    if (fs.existsSync(productsPath)) {
+      try {
+        const prodData = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
+        if (prodData && prodData.items) {
+          for (const item of prodData.items) {
+             paths.push({
+                params: { lang, id: item.id },
+                props: { lang, id: item.id }
+             });
+          }
+        }
+      } catch (e) {
+        console.error(`Could not read products for lang ${lang}:`, e);
+      }
+    }
+  }
+  
+  return paths;
+}
+
+const { lang, id } = Astro.props;
+
+const readJson = (filePath) => {
+  try {
+    const fullPath = path.resolve(process.cwd(), 'public', filePath);
+    if (fs.existsSync(fullPath)) {
+      return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
+    }
+  } catch (e) {
+    console.error(`Error reading static file: ${filePath}`, e);
+  }
+  return null;
+};
+
+const settings = readJson('data/settings.json') || {};
+const commonData = readJson(`data/${lang}/common.json`) || {};
+const productData = readJson(`data/${lang}/products/${id}.json`) || {};
+const pageTitle = productData?.metaTitle || productData?.title || "Product Details";
+---
+
+<Layout title={pageTitle} language={lang} settings={settings} commonData={commonData}>
+  <ProductDetailPage 
+    client:load 
+    language={lang} 
+    settings={settings} 
+    id={id}
+    productData={productData} 
+  />
+</Layout>

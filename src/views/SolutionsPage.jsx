@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import SEO from '@/components/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/react-router-shim.jsx';
 import {
   Building2, ShieldCheck, Truck, Bike, Car, Key,
   Database, HardHat, ChevronRight, Layers, ArrowRight,
@@ -12,8 +12,8 @@ import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const SolutionsPage = ({ language, settings }) => {
-  const { data, loading, error } = useFetchData(`/data/${language}/solutions.json`);
+const SolutionsPage = ({ language, settings, solutionsData }) => {
+  const { data, loading, error } = useFetchData(`/data/${language}/solutions.json`, solutionsData);
   const [activeCategory, setActiveCategory] = useState('all');
 
   // Reset category when language changes

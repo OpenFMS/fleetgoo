@@ -4,8 +4,8 @@ import SEO from '@/components/SEO';
 import Software from '@/components/Software';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const SoftwarePage = ({ language, settings }) => {
-  const { data, loading, error } = useFetchData(`/data/${language}/software.json`);
+const SoftwarePage = ({ language, settings, softwareData }) => {
+  const { data, loading, error } = useFetchData(`/data/${language}/software.json`, softwareData);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading...</div>;

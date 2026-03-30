@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Menu, X, LayoutDashboard } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from '@/lib/react-router-shim.jsx';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
@@ -55,6 +55,10 @@ const Header = ({ language, commonData, settings }) => {
     id: 'about',
     label: t.about,
     path: `/${language}/about-us`
+  }, {
+    id: 'blog',
+    label: t.blog || 'Blog',
+    path: `/${language}/blog`
   }, {
     id: 'contact',
     label: t.contact,

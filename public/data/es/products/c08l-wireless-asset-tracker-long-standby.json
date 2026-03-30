@@ -6,7 +6,10 @@
   "metaDesc": "Rastreador de activos 4G C08L con batería de ultra larga duración, ideal para remolques y contenedores.",
   "fullDescription": "Diseñado para el control de riesgos de activos, el C08L integra posicionamiento de modo triple GPS/BeiDou/GLONASS con bajo consumo de energía, monitoreo en tiempo real y control remoto. Es la solución ideal para el seguimiento confiable de carga y la seguridad de vehículos, con un diseño robusto, protección contra remoción y gestión remota OTA.",
   "images": [
-    "/images/products/C08L-main.jpg"
+    "/images/products/C08L-main.jpg",
+    "/images/products/C08L-02.jpg",
+    "/images/products/C08L-03.jpg",
+    "/images/products/C08L-04.jpg"
   ],
   "features": [
     "Posicionamiento Preciso: Triple modo (GPS/BeiDou/GLONASS) con error <10m y soporte AGPS",

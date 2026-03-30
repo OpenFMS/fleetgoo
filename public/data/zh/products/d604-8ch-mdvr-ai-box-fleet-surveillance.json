@@ -6,7 +6,8 @@
   "metaDesc": "强大的 D604 AI 车载终端，用于集中式车队视频监控和智能数据处理。",
   "fullDescription": "专为非标行业（网约车、物流、工程车）设计，支持 4 路高清视频、多模定位和 AI 安全系统（DMS/ADAS/BSD）。符合部标标准，应用广泛。",
   "images": [
-    "/images/products/D604-main.jpg"
+    "/images/products/D604-main.jpg",
+    "/images/products/D604-02.jpg"
   ],
   "features": [
     "高清视频：4路 AHD 1080P/720P 输入，H.265/H.264 编码，CVBS 输出",

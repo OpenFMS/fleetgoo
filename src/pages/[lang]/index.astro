@@ -1,0 +1,52 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Layout from '../../layouts/Layout.astro';
+import HomePage from '../../views/HomePage.jsx';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve(process.cwd(), 'public/data');
+  const items = fs.readdirSync(dataDir, { withFileTypes: true });
+  const languages = items.filter(item => item.isDirectory()).map(item => item.name);
+  
+  return languages.map(lang => {
+    return {
+      params: { lang },
+      props: { lang }
+    };
+  });
+}
+
+const { lang } = Astro.props;
+
+// Fetch Static Data at Build Time
+const readJson = (filePath) => {
+  try {
+    const fullPath = path.resolve(process.cwd(), 'public', filePath);
+    if (fs.existsSync(fullPath)) {
+      return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
+    }
+  } catch (e) {
+    console.error(`Error reading static file: ${filePath}`, e);
+  }
+  return null;
+};
+
+const settings = readJson('data/settings.json');
+const commonData = readJson(`data/${lang}/common.json`);
+const homeData = readJson(`data/${lang}/home.json`);
+
+// In case the data isn't ready, provide empty defaults
+const safeSettings = settings || {};
+const safeCommon = commonData || {};
+const safeHome = homeData || {};
+---
+
+<Layout title={safeHome.metaTitle || "Home"} language={lang} settings={safeSettings} commonData={safeCommon}>
+  <HomePage 
+    client:load 
+    language={lang} 
+    settings={safeSettings} 
+    homeData={safeHome} 
+  />
+</Layout>

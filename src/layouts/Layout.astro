@@ -1,0 +1,52 @@
+---
+import '@/index.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { Toaster } from '@/components/ui/toaster';
+
+const { title, language = 'en', settings = {}, commonData = {} } = Astro.props;
+---
+
+<!doctype html>
+<html lang={language} class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+        <script is:inline>
+            // React ThemeProvider sync (prevent FOUC)
+            const getThemePreference = () => {
+                if (typeof localStorage !== 'undefined' && localStorage.getItem('vite-ui-theme')) {
+                    return localStorage.getItem('vite-ui-theme');
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+            const isDark = getThemePreference() === 'dark' || (getThemePreference() === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        </script>
+	</head>
+	<body class="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col transition-colors duration-300 font-sans antialiased">
+		
+        {/* Top site header */}
+        <Header client:load language={language} commonData={commonData} settings={settings} />
+
+        {/* Main page content injected from slot */}
+		<main class="flex-grow pt-20">
+		    <slot />
+        </main>
+
+        {/* Bottom site footer */}
+        <Footer client:visible language={language} commonData={commonData} settings={settings} />
+        
+        {/* Global Toast notifications */}
+        <Toaster client:load />
+
+	</body>
+</html>

@@ -18,9 +18,9 @@ const iconMap = {
   Settings, Award, Globe, Factory, Radio, Check
 };
 
-const HomePage = ({ language, settings }) => {
+const HomePage = ({ language, settings, homeData }) => {
   const { toast } = useToast();
-  const { data, loading, error } = useFetchData(`/data/${language}/home.json`);
+  const { data, loading, error } = useFetchData(`/data/${language}/home.json`, homeData);
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },

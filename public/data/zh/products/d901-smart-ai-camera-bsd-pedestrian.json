@@ -6,7 +6,10 @@
   "metaDesc": "用于商业车队的顶级 D901 AI 摄像头，具有多通道录制和高级 AI 分析功能。",
   "fullDescription": "紧凑型中控屏一体机，用于货运和物流监控。支持 4 路 AHD 视频输入，AI 盲区预警，哨兵模式，防偷油报警，AI 语音识别和 4G 远程监控。",
   "images": [
-    "/images/products/D901-main.jpg"
+    "/images/products/D901-main.jpg",
+    "/images/products/D901-02.jpg",
+    "/images/products/D901-03.jpg",
+    "/images/products/D901-04.jpg"
   ],
   "features": [
     "多路视频：4路 AHD 视频输入，H.264 格式同步录制（分路存储）",

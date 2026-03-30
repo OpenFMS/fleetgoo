@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/react-router-shim.jsx';
 import ProductCard from '@/components/ProductCard';
 import { productsData } from '@/pages/ProductsPage';
 

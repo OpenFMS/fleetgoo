@@ -1,0 +1,21 @@
+---
+import fs from 'fs';
+import path from 'path';
+
+// 读取本地的 settings.json，获取默认语言
+let defaultLang = 'en';
+try {
+  const settingsPath = path.resolve(process.cwd(), 'public/data/settings.json');
+  if (fs.existsSync(settingsPath)) {
+    const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf-8'));
+    if (settings.defaultLanguage) {
+      defaultLang = settings.defaultLanguage;
+    }
+  }
+} catch (e) {
+  console.error("Could not read settings.json for redirect", e);
+}
+
+// 在构建期生成重定向的 HTML (等价于原有 React 路由的 LanguageRedirect)
+return Astro.redirect(`/${defaultLang}`);
+---

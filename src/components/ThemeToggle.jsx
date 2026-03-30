@@ -8,9 +8,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { useTheme } from '@/components/ThemeProvider';
+import { ThemeProvider, useTheme } from '@/components/ThemeProvider';
 
-export function ThemeToggle() {
+function ThemeToggleInner() {
   const { setTheme } = useTheme();
 
   return (
@@ -22,7 +22,7 @@ export function ThemeToggle() {
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800">
+      <DropdownMenuContent align="end" className="bg-white dark:bg-slate-900 border-slate-200 dark:border-slate-800 z-50">
         <DropdownMenuItem onClick={() => setTheme("light")} className="cursor-pointer text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
           Light
         </DropdownMenuItem>
@@ -34,5 +34,13 @@ export function ThemeToggle() {
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
+  );
+}
+
+export function ThemeToggle() {
+  return (
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <ThemeToggleInner />
+    </ThemeProvider>
   );
 }

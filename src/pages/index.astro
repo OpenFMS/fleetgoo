@@ -1,0 +1,18 @@
+---
+import fs from 'fs';
+import path from 'path';
+
+let defaultLang = 'en';
+try {
+  const settingsPath = path.resolve(process.cwd(), 'public/data/settings.json');
+  if (fs.existsSync(settingsPath)) {
+    const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf8'));
+    defaultLang = settings.defaultLanguage || 'en';
+  }
+} catch (e) {
+  // Ignore
+}
+
+// Redirect to the default language page
+return Astro.redirect(`/${defaultLang}`);
+---

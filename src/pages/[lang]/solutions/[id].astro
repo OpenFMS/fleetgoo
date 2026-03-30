@@ -1,0 +1,66 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Layout from '../../../layouts/Layout.astro';
+import SolutionDetailPage from '../../../views/SolutionDetailPage.jsx';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve(process.cwd(), 'public/data');
+  if (!fs.existsSync(dataDir)) return [];
+  
+  const items = fs.readdirSync(dataDir, { withFileTypes: true });
+  const languages = items.filter(item => item.isDirectory()).map(item => item.name);
+  
+  const paths = [];
+
+  for (const lang of languages) {
+    const solutionsPath = path.join(dataDir, lang, 'solutions.json');
+    if (fs.existsSync(solutionsPath)) {
+      try {
+        const solData = JSON.parse(fs.readFileSync(solutionsPath, 'utf8'));
+        if (solData && solData.items) {
+          for (const item of solData.items) {
+             paths.push({
+                params: { lang, id: item.id },
+                props: { lang, id: item.id }
+             });
+          }
+        }
+      } catch (e) {
+        console.error(`Could not read solutions for lang ${lang}:`, e);
+      }
+    }
+  }
+  
+  return paths;
+}
+
+const { lang, id } = Astro.props;
+
+const readJson = (filePath) => {
+  try {
+    const fullPath = path.resolve(process.cwd(), 'public', filePath);
+    if (fs.existsSync(fullPath)) {
+      return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
+    }
+  } catch (e) {
+    console.error(`Error reading static file: ${filePath}`, e);
+  }
+  return null;
+};
+
+const settings = readJson('data/settings.json') || {};
+const commonData = readJson(`data/${lang}/common.json`) || {};
+const solutionData = readJson(`data/${lang}/solutions/${id}.json`) || {};
+const pageTitle = solutionData?.metaTitle || solutionData?.title || "Solution Details";
+---
+
+<Layout title={pageTitle} language={lang} settings={settings} commonData={commonData}>
+  <SolutionDetailPage 
+    client:load 
+    language={lang} 
+    settings={settings} 
+    id={id}
+    solutionData={solutionData} 
+  />
+</Layout>

@@ -4,8 +4,8 @@ import SEO from '@/components/SEO';
 import Contact from '@/components/Contact';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const ContactPage = ({ language, settings }) => {
-  const { data, loading, error } = useFetchData(`/data/${language}/contact.json`);
+const ContactPage = ({ language, settings, contactData }) => {
+  const { data, loading, error } = useFetchData(`/data/${language}/contact.json`, contactData);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading contact information...</div>;

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from '@/lib/react-router-shim.jsx';
 import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { useFetchData } from '@/hooks/useFetchData';
@@ -13,9 +13,10 @@ import * as LucideIcons from 'lucide-react';
 
 import BlockRenderer from '@/components/blocks/BlockRenderer';
 
-const SolutionDetailPage = ({ language, settings }) => {
-  const { id } = useParams();
-  const { data, loading, error } = useFetchData(`/data/${language}/solutions/${id}.json`);
+const SolutionDetailPage = ({ language, settings, id: propId, solutionData }) => {
+  const params = useParams();
+  const id = propId || params.id;
+  const { data, loading, error } = useFetchData(`/data/${language}/solutions/${id}.json`, solutionData);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white">Loading solution details...</div>;

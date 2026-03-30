@@ -1,0 +1,48 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Layout from '../../layouts/Layout.astro';
+import AboutPage from '../../views/AboutPage.jsx';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve(process.cwd(), 'public/data');
+  if (!fs.existsSync(dataDir)) return [];
+  const items = fs.readdirSync(dataDir, { withFileTypes: true });
+  const languages = items.filter(item => item.isDirectory()).map(item => item.name);
+  
+  return languages.map(lang => {
+    return {
+      params: { lang },
+      props: { lang }
+    };
+  });
+}
+
+const { lang } = Astro.props;
+
+const readJson = (filePath) => {
+  try {
+    const fullPath = path.resolve(process.cwd(), 'public', filePath);
+    if (fs.existsSync(fullPath)) {
+      return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
+    }
+  } catch (e) {
+    console.error(`Error reading static file: ${filePath}`, e);
+  }
+  return null;
+};
+
+const settings = readJson('data/settings.json') || {};
+const commonData = readJson(`data/${lang}/common.json`) || {};
+const aboutData = readJson(`data/${lang}/about.json`) || {};
+const pageTitle = aboutData?.metaTitle || aboutData?.page?.metaTitle || "About Us";
+---
+
+<Layout title={pageTitle} language={lang} settings={settings} commonData={commonData}>
+  <AboutPage 
+    client:load 
+    language={lang} 
+    settings={settings} 
+    aboutData={aboutData} 
+  />
+</Layout>

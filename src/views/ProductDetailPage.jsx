@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, Link, useNavigate } from '@/lib/react-router-shim.jsx';
 import SEO from '@/components/SEO';
 import { motion } from 'framer-motion';
 import { useFetchData } from '@/hooks/useFetchData';
@@ -13,10 +13,11 @@ import {
 import * as LucideIcons from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const ProductDetailPage = ({ language, settings }) => {
-  const { id } = useParams();
+const ProductDetailPage = ({ language, settings, id: propId, productData }) => {
+  const params = useParams();
+  const id = propId || params.id;
   const navigate = useNavigate();
-  const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`);
+  const { data, loading, error } = useFetchData(`/data/${language}/products/${id}.json`, productData);
   const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => {

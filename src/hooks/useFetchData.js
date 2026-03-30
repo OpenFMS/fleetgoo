@@ -1,13 +1,26 @@
 
 import { useState, useEffect } from 'react';
 
-export const useFetchData = (url) => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+export const useFetchData = (url, initialData = null) => {
+  const [data, setData] = useState(initialData);
+  const [loading, setLoading] = useState(!initialData);
   const [error, setError] = useState(null);
+
+  // Re-sync if initialData changes or url changes but we want to reset
+  useEffect(() => {
+    if (initialData) {
+      setData(initialData);
+      setLoading(false);
+      setError(null);
+    }
+  }, [initialData]);
 
   useEffect(() => {
     const fetchData = async () => {
+      // Skip if we already have initialData for this initial run
+      // unless we want to forcefully refetch
+      if (initialData) return;
+      
       try {
         setLoading(true);
         // Add a timestamp to prevent caching issues during development
@@ -27,10 +40,10 @@ export const useFetchData = (url) => {
       }
     };
 
-    if (url) {
+    if (url && !initialData) {
       fetchData();
     }
-  }, [url]);
+  }, [url, initialData]);
 
   return { data, loading, error };
 };

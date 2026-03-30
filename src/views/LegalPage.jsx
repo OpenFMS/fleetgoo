@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams } from '@/lib/react-router-shim.jsx';
 import ReactMarkdown from 'react-markdown';
 import { motion } from 'framer-motion';
 
-const LegalPage = () => {
-    const { lang, docId } = useParams();
-    const [content, setContent] = useState('');
-    const [loading, setLoading] = useState(true);
+const LegalPage = ({ language, settings, docId: propDocId, markdownContent }) => {
+    const { lang, docId: paramDocId } = useParams();
+    const docId = propDocId || paramDocId;
+    const [content, setContent] = useState(markdownContent || '');
+    const [loading, setLoading] = useState(!markdownContent);
 
     // Legal documents are English only by policy
     const LEGAL_DOC_PATH = `/data/en/legal/${docId}.md`;
 
     useEffect(() => {
         const fetchDoc = async () => {
+            if (markdownContent) return;
             try {
                 setLoading(true);
                 const response = await fetch(LEGAL_DOC_PATH);

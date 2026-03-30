@@ -6,7 +6,10 @@
   "metaDesc": "具有高级 ADAS 和 DMS 功能的 D401 AI 摄像头，用于主动车队安全。",
   "fullDescription": "专为商用车设计的 200 万像素摄像头，具有 DMS（驾驶员监控系统）功能，可检测疲劳、分心、打电话和吸烟。在复杂光照条件下通过 >100dB 宽动态范围提供清晰图像。",
   "images": [
-    "/images/products/D401-main.jpg"
+    "/images/products/D401-main.jpg",
+    "/images/products/D401-02.jpg",
+    "/images/products/D401-03.jpg",
+    "/images/products/D401-04.jpg"
   ],
   "features": [
     "高清成像：1080P/720P 分辨率，2MP CMOS 传感器",

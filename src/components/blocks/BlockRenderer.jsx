@@ -14,7 +14,7 @@ const iconMap = {
     Award, Users2, Globe2, TrendingUp, Webhook,
     Eye, Smile
 };
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/react-router-shim.jsx';
 
 /* --- 1. Hero Block --- */
 const HeroBlock = ({ data }) => {

@@ -1,0 +1,63 @@
+---
+import fs from 'fs';
+import path from 'path';
+import Layout from '../../layouts/Layout.astro';
+import LegalPage from '../../views/LegalPage.jsx';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve(process.cwd(), 'public/data');
+  if (!fs.existsSync(dataDir)) return [];
+  const items = fs.readdirSync(dataDir, { withFileTypes: true });
+  const languages = items.filter(item => item.isDirectory()).map(item => item.name);
+  
+  const VALID_DOCS = ['privacy', 'terms'];
+  const paths = [];
+
+  for (const lang of languages) {
+    for (const doc of VALID_DOCS) {
+      paths.push({
+        params: { lang, docId: doc },
+        props: { lang, docId: doc }
+      });
+    }
+  }
+  return paths;
+}
+
+const { lang, docId } = Astro.props;
+
+// Settings reading
+let settings = {};
+let commonData = {};
+try {
+  const settingsPath = path.resolve(process.cwd(), 'public/data/settings.json');
+  if (fs.existsSync(settingsPath)) settings = JSON.parse(fs.readFileSync(settingsPath, 'utf8'));
+  const commonPath = path.resolve(process.cwd(), `public/data/${lang}/common.json`);
+  if (fs.existsSync(commonPath)) commonData = JSON.parse(fs.readFileSync(commonPath, 'utf8'));
+} catch(e) {}
+
+// Read Markdown content (Legal docs are EN only)
+let markdownContent = null;
+try {
+  const docPath = path.resolve(process.cwd(), `public/data/en/legal/${docId}.md`);
+  if (fs.existsSync(docPath)) {
+    markdownContent = fs.readFileSync(docPath, 'utf8');
+  } else {
+    markdownContent = "# Document Not Found\nWe are sorry, but the requested legal document could not be loaded.";
+  }
+} catch(e) {
+  markdownContent = "# Error\nFailed to load document during build.";
+}
+
+const pageTitle = docId === 'privacy' ? 'Privacy Policy' : 'Terms of Service';
+---
+
+<Layout title={pageTitle} language={lang} settings={settings} commonData={commonData}>
+  <LegalPage 
+    client:load 
+    language={lang} 
+    settings={settings} 
+    docId={docId}
+    markdownContent={markdownContent} 
+  />
+</Layout>

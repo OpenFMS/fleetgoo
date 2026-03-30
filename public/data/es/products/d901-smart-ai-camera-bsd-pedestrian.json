@@ -6,7 +6,10 @@
   "metaDesc": "Cámara AI D901 de primer nivel para flotas comerciales, con grabación multicanal.",
   "fullDescription": "Dispositivo todo en uno compacto con pantalla de control central para monitoreo de carga y logística. Soporta entrada de video AHD de 4 canales, alertas de punto ciego AI, modo centinela, prevención de robo de combustible, reconocimiento de voz AI y monitoreo remoto 4G.",
   "images": [
-    "/images/products/D901-main.jpg"
+    "/images/products/D901-main.jpg",
+    "/images/products/D901-02.jpg",
+    "/images/products/D901-03.jpg",
+    "/images/products/D901-04.jpg"
   ],
   "features": [
     "Video Multicanal: Entrada AHD 4 canales, grabación simultánea H.264 (guardado separado)",

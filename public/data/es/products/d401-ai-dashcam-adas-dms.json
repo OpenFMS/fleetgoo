@@ -6,7 +6,10 @@
   "metaDesc": "Cámara AI D401 con capacidades avanzadas de ADAS y DMS para la seguridad proactiva de flotas.",
   "fullDescription": "Una cámara especializada de 2MP para vehículos comerciales, con capacidades DMS (Sistema de Monitoreo del Conductor) para detectar fatiga, distracción, uso del teléfono y fumar. Ofrece imágenes claras en iluminación compleja con un rango dinámico >100dB.",
   "images": [
-    "/images/products/D401-main.jpg"
+    "/images/products/D401-main.jpg",
+    "/images/products/D401-02.jpg",
+    "/images/products/D401-03.jpg",
+    "/images/products/D401-04.jpg"
   ],
   "features": [
     "Imagen HD: Resolución 1080P/720P con sensor CMOS de 2MP",

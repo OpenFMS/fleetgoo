@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from '@/lib/react-router-shim.jsx';
 
 const SEO = ({
     title,
@@ -104,29 +103,13 @@ const SEO = ({
     const gtag = settings?.analytics?.gtag;
 
     return (
-        <Helmet>
+        <>
             {/* Standard Meta Tags */}
-            <html lang={currentLang} />
             <title>{metaTitle}</title>
             <meta name="description" content={metaDesc} />
             {keywords && <meta name="keywords" content={keywords} />}
             <link rel="canonical" href={currentUrl} />
             <link rel="icon" href={settings?.branding?.favicon || "/favicon.ico"} />
-
-            {/* Google Analytics - GTag */}
-            {gtag && (
-                <script async src={`https://www.googletagmanager.com/gtag/js?id=${gtag}`}></script>
-            )}
-            {gtag && (
-                <script>
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', '${gtag}');
-                    `}
-                </script>
-            )}
 
             {/* Open Graph / Social Media */}
             <meta property="og:url" content={currentUrl} />
@@ -134,7 +117,7 @@ const SEO = ({
             <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDesc} />
             <meta property="og:image" content={metaImage} />
-            <meta property="og:site_name" content={siteName} />
+            {siteName && <meta property="og:site_name" content={siteName} />}
 
             {/* Twitter Card */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -160,11 +143,11 @@ const SEO = ({
 
             {/* Structured Data (JSON-LD) */}
             {schemaData && (
-                <script type="application/ld+json">
-                    {JSON.stringify(schemaData)}
-                </script>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
             )}
-        </Helmet>
+            
+            {/* Analytics injected natively via Astro if needed, but omitted here to prevent React hydration errors inside head */}
+        </>
     );
 };
 

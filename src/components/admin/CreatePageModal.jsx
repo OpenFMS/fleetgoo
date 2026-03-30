@@ -4,11 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Folder, FileJson, LayoutTemplate, Package } from 'lucide-react';
+import { Folder, FileJson, LayoutTemplate, Package, FileText } from 'lucide-react';
 
 const PAGE_TYPES = [
     { id: 'product', label: 'Product Page', icon: Package, folder: 'products' },
     { id: 'solution', label: 'Solution Page', icon: LayoutTemplate, folder: 'solutions' },
+    { id: 'blog', label: 'Blog Post', icon: FileText, folder: 'blog' },
     { id: 'blank', label: 'Blank JSON', icon: FileJson, folder: '' },
 ];
 
@@ -55,6 +56,20 @@ const TEMPLATES = {
             }
         ]
     }),
+    blog: (filename) => {
+        const today = new Date().toISOString().split('T')[0];
+        return `---
+title: "New Blog Post"
+description: "A short description of this post"
+pubDate: ${today}
+author: "Admin"
+tags: ["fleet"]
+image: "/images/blog/placeholder.jpg"
+---
+
+Start writing your markdown content here...
+`;
+    },
     blank: () => ({})
 };
 
@@ -79,6 +94,10 @@ const CreatePageModal = ({ isOpen, onClose, onCreate, languages = ['en', 'zh', '
                 finalPath = `${language}/${finalPath}`;
             }
             content = {};
+        } else if (pageType === 'blog') {
+            const safeName = fileName.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+            finalPath = `${language}/blog/${safeName}.md`;
+            content = TEMPLATES['blog'](safeName);
         } else {
             const safeName = fileName.toLowerCase().replace(/[^a-z0-9-]/g, '-');
             finalPath = `${language}/${selectedType.folder}/${safeName}.json`;
@@ -153,12 +172,12 @@ const CreatePageModal = ({ isOpen, onClose, onCreate, languages = ['en', 'zh', '
                                         value={pageType === 'blank' ? customPath : fileName}
                                         onChange={e => pageType === 'blank' ? setCustomPath(e.target.value) : setFileName(e.target.value)}
                                         placeholder={pageType === 'blank' ? 'e.g., custom/page.json' : 'e.g., public-safety'}
-                                        className={pageType !== 'blank' ? 'rounded-l-none' : ''}
+                                        className={pageType !== 'blank' ? 'rounded-none' : ''}
                                         required
                                     />
                                     {pageType !== 'blank' && (
                                         <div className="px-3 py-2 bg-slate-100 dark:bg-slate-800 border border-l-0 border-slate-300 dark:border-slate-700 rounded-r-md text-sm text-slate-500">
-                                            .json
+                                            {pageType === 'blog' ? '.md' : '.json'}
                                         </div>
                                     )}
                                 </div>

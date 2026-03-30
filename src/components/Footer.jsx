@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube, Mail, Phone, MessageCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/react-router-shim.jsx';
 
 const Footer = ({ language, commonData, settings }) => {
   const t = commonData?.footer || {};

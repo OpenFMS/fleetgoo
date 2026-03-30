@@ -4,13 +4,13 @@ import SEO from '@/components/SEO';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Layers, HelpCircle } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/lib/react-router-shim.jsx';
 import ProductCard from '@/components/ProductCard';
 import { cn } from '@/lib/utils';
 import { useFetchData } from '@/hooks/useFetchData';
 
-const ProductsPage = ({ language, settings }) => {
-  const { data, loading, error } = useFetchData(`/data/${language}/products.json`);
+const ProductsPage = ({ language, settings, productsData }) => {
+  const { data, loading, error } = useFetchData(`/data/${language}/products.json`, productsData);
   const [activeCategory, setActiveCategory] = useState('all');
 
   // Reset category when language changes to avoid stale states
