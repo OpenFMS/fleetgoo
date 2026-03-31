@@ -2,6 +2,50 @@
 
 All notable changes to the FleetGoo project will be documented in this file.
 
+## [Dev] - 2026-03-31 - 技术 SEO 基础设施全面修复与根路径重定向优化
+
+### 技术 SEO 修复 (Technical SEO Fixes)
+- **robots.txt 创建**：新增 `public/robots.txt` 文件，允许所有爬虫抓取，阻止 Admin 后台路径，声明 Sitemap 位置。
+- **sitemap.xml 自动生成**：
+    - 开发 Astro 原生生成脚本 `tools/generate-sitemap.cjs`，替代不兼容的 vite-plugin-sitemap。
+    - 集成到 `postbuild` 流程，每次构建后自动生成包含 101 个 URL 的 sitemap.xml。
+    - 覆盖 4 种语言的所有核心页面：首页、产品列表、产品详情、解决方案、博客文章、法律文件。
+- **结构化数据 (Schema.org JSON-LD) 全面部署**：
+    - **Organization Schema**：注入全站 Layout，包含公司名称、Logo、联系方式、社交媒体链接、成立日期。
+    - **WebSite Schema**：支持站内搜索动作 (SearchAction)，帮助 Google 理解网站结构。
+    - **Product Schema**：为所有产品详情页添加完整产品信息，包括名称、描述、图片、品牌、制造商、特性、技术参数。
+
+### 根路径重定向优化 (Root Path Redirects)
+- **问题修复**：解决爬虫/用户访问 `fleetgoo.com/products` 等无语言前缀路径时出现 404 的问题。
+- **新增重定向页面**：
+    - `src/pages/products.astro` → 重定向到 `/en/products`
+    - `src/pages/about-us.astro` → 重定向到 `/en/about-us`
+    - `src/pages/contact.astro` → 重定向到 `/en/contact`
+    - `src/pages/software.astro` → 重定向到 `/en/software`
+    - `src/pages/solutions.astro` → 重定向到 `/en/solutions`
+    - `src/pages/blog.astro` → 重定向到 `/en/blog`
+- **SEO 优化设计**：
+    - 使用 Astro 服务端 `Astro.redirect()` 实现 302 临时重定向。
+    - 添加 `<meta name="robots" content="noindex">` 防止重定向页面被索引。
+    - 添加 `<link rel="canonical">` 指向目标语言页面，集中 SEO 权重。
+    - 包含 HTTP meta refresh 和可点击链接，确保用户体验流畅。
+
+### 构建配置优化 (Build Configuration)
+- **清理废弃依赖**：移除 `vite-plugin-sitemap` 及其相关配置代码。
+- **新增 npm 脚本**：`postbuild` 钩子自动运行 sitemap 生成脚本。
+- **构建输出验证**：确认 `dist/` 目录包含 `robots.txt`、`sitemap.xml` (101 个 URL) 及所有重定向页面。
+
+### SEO 健康度提升 (SEO Health Improvement)
+| 指标 | 修复前 | 修复后 |
+|------|--------|--------|
+| robots.txt | ❌ 404 | ✅ 正常 |
+| sitemap.xml | ❌ 404 | ✅ 101 个 URL |
+| Organization Schema | ❌ 缺失 | ✅ 已部署 |
+| Product Schema | ❌ 缺失 | ✅ 已部署 (8 产品 × 4 语言) |
+| 根路径 404 | ❌ 6 个核心路径 | ✅ 全部重定向 |
+
+---
+
 ## [Major] - 2026-03-31 - SEO 优化与高品质多语言博客内容矩阵发布
 
 ### SEO 与用户体验增强 (SEO & UX)

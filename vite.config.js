@@ -1,7 +1,6 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
-import Sitemap from 'vite-plugin-sitemap';
 
 import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-restoration.js';
 import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-mode.js';
@@ -41,59 +40,6 @@ function copyRecursiveSync(src, dest) {
 		fs.copyFileSync(src, dest);
 	}
 }
-
-// Generate routes dynamically from JSON data
-const generateRoutes = () => {
-	const routes = [];
-	const dataDir = path.resolve(__dirname, 'public/data');
-	const languages = fs.existsSync(dataDir)
-		? fs.readdirSync(dataDir, { withFileTypes: true })
-			.filter(ent => ent.isDirectory())
-			.map(ent => ent.name)
-		: ['en'];
-
-	languages.forEach(lang => {
-		// Base routes
-		routes.push(`/${lang}`);
-		routes.push(`/${lang}/products`);
-		routes.push(`/${lang}/solutions`);
-		routes.push(`/${lang}/software`);
-		routes.push(`/${lang}/about-us`);
-		routes.push(`/${lang}/contact`);
-
-		// Products
-		try {
-			const productsPath = path.resolve(__dirname, `public/data/${lang}/products.json`);
-			if (fs.existsSync(productsPath)) {
-				const productsData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
-				if (productsData.items) {
-					productsData.items.forEach(item => {
-						routes.push(`/${lang}/products/${item.id}`);
-					});
-				}
-			}
-		} catch (e) {
-			console.warn(`Warning: Could not load products for ${lang}`, e.message);
-		}
-
-		// Solutions
-		try {
-			const solutionsPath = path.resolve(__dirname, `public/data/${lang}/solutions.json`);
-			if (fs.existsSync(solutionsPath)) {
-				const solutionsData = JSON.parse(fs.readFileSync(solutionsPath, 'utf-8'));
-				if (solutionsData.items) {
-					solutionsData.items.forEach(item => {
-						routes.push(`/${lang}/solutions/${item.id}`);
-					});
-				}
-			}
-		} catch (e) {
-			console.warn(`Warning: Could not load solutions for ${lang}`, e.message);
-		}
-	});
-
-	return routes;
-};
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -341,13 +287,6 @@ export default defineConfig({
 			},
 		},
 		addTransformIndexHtml,
-		Sitemap({
-			hostname: process.env.SITE_URL || 'https://www.fleetgpstrack.com',
-			dynamicRoutes: generateRoutes(),
-			changefreq: 'weekly',
-			priority: 1.0,
-			readable: true
-		}),
 		{
 			name: 'admin-fs-api',
 			configureServer(server) {

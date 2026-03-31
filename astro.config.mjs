@@ -5,6 +5,7 @@ import path from 'path';
 import adminFsApiPlugin from './src/lib/admin-api-plugin.js';
 
 export default defineConfig({
+  site: 'https://www.fleetgoo.com',
   integrations: [
     react(),
     tailwind({

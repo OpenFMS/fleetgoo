@@ -1,0 +1,11 @@
+# FleetGoo.com Robots.txt
+# https://www.fleetgoo.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow admin routes in production (security)
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://www.fleetgoo.com/sitemap.xml

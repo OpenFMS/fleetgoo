@@ -53,9 +53,37 @@ const settings = readJson('data/settings.json') || {};
 const commonData = readJson(`data/${lang}/common.json`) || {};
 const productData = readJson(`data/${lang}/products/${id}.json`) || {};
 const pageTitle = productData?.metaTitle || productData?.title || "Product Details";
+
+// Generate Product Schema (JSON-LD)
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": productData?.title || "",
+  "description": productData?.metaDesc || productData?.fullDescription || "",
+  "image": productData?.images?.map(img => `${settings.seo?.siteUrl || 'https://www.fleetgoo.com'}${img}`) || [],
+  "brand": {
+    "@type": "Brand",
+    "name": settings.seo?.siteName || "FleetGoo"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": settings.organization?.officialName || "FleetGoo Technology",
+    "url": settings.seo?.siteUrl || "https://www.fleetgoo.com"
+  },
+  "category": productData?.categoryId ? `Fleet Hardware > ${productData.categoryId}` : "Fleet Hardware",
+  "features": productData?.features || [],
+  "additionalProperty": productData?.parameters?.map(param => ({
+    "@type": "PropertyValue",
+    "name": param.label,
+    "value": param.value
+  })) || []
+};
 ---
 
 <Layout title={pageTitle} language={lang} settings={settings} commonData={commonData}>
+  {/* Product Schema (JSON-LD) */}
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  
   <ProductDetailPage 
     client:load 
     language={lang} 

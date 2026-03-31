@@ -16,6 +16,34 @@ const { title, language = 'en', settings = {}, commonData = {} } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 
+        {/* Organization Schema (JSON-LD) */}
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": settings.seo?.siteName || "FleetGoo",
+          "url": settings.seo?.siteUrl || "https://www.fleetgoo.com",
+          "logo": `${settings.seo?.siteUrl || 'https://www.fleetgoo.com'}${settings.branding?.logoLight || '/images/brand/logo-light.webp'}`,
+          "description": settings.seo?.defaultDescription || "Leading provider of AI-powered fleet management solutions, 4G AI dashcams, MDVR, GPS tracking, and fleet management software for commercial vehicles.",
+          "telephone": settings.organization?.phone || "+86 150-138-15400",
+          "email": settings.organization?.email || "sales@fleetgoo.com",
+          "sameAs": settings.socialLinks?.map(link => link.url) || [],
+          "foundingDate": "2010"
+        })} />
+
+        {/* WebSite Schema (JSON-LD) */}
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": settings.seo?.siteName || "FleetGoo",
+          "url": settings.seo?.siteUrl || "https://www.fleetgoo.com",
+          "inLanguage": language,
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": `${settings.seo?.siteUrl || 'https://www.fleetgoo.com'}/?s={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        })} />
+
         <script is:inline>
             // React ThemeProvider sync (prevent FOUC)
             const getThemePreference = () => {
