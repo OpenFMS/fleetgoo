@@ -3,11 +3,17 @@ import '@/index.css';
 import AdminEntry from '../../components/admin/AdminEntry.jsx';
 
 export function getStaticPaths() {
-  return [
-    { params: { slug: undefined } }, // Matches /admin
-    { params: { slug: 'editor' } },  // Matches /admin/editor
-    { params: { slug: 'languages' } } // Matches /admin/languages
-  ];
+	// SECURITY: Entirely exclude admin routes from the production build.
+	// This ensures that /admin directory doesn't even exist in the 'dist' folder.
+	if (import.meta.env.PROD) {
+		return [];
+	}
+
+	return [
+		{ params: { slug: undefined } }, // Matches /admin
+		{ params: { slug: 'editor' } },  // Matches /admin/editor
+		{ params: { slug: 'languages' } } // Matches /admin/languages
+	];
 }
 ---
 

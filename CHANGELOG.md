@@ -2,6 +2,21 @@
 
 All notable changes to the FleetGoo project will be documented in this file.
 
+## [Dev] - 2026-03-31 - Admin 后台架构安全加固与生产环境隔离
+
+### 安全与架构优化 (Security & Architecture)
+- **生产环境物理隔离 (Route Exclusion)**：
+    - 修改了 `src/pages/admin/[...slug].astro` 的路由生成逻辑。
+    - 通过环境感知（`import.meta.env.PROD`），在生产环境构建阶段禁用了所有 Admin 相关路径的生成。
+    - **效果**：部署到 Vercel 后的生产包（`dist`）不再包含任何管理后台源码，物理层面杜绝了后台暴露风险。
+- **服务端 API 双层保险 (Defense in Depth)**：
+    - 在 `src/lib/admin-api-plugin.js` 中增加了生产环境校验（`isProd`）。
+    - 针对所有试图在非本地开发环境下进行的写操作（`POST`/`DELETE`/`PUT`）进行强制拦截。
+    - **效果**：即便路由入口被意外复原，底层的本地文件系统 API 依然处于锁死状态。
+- **配置与表单模块优化**：
+    - 规范化了客户端环境变量前缀（从 `VITE_` 变更为 `PUBLIC_`）。
+    - 修复了 Astro 客户端 Island 无法正确读取 EmailJS 凭证的问题，验证通过了全静态化环境下的在线询盘功能。
+
 ## [Major] - 2026-03-30 - Admin CMS 后台管理与 Astro Content Collections 集成
 
 ### 重大架构更新 (Architecture)

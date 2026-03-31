@@ -54,9 +54,9 @@ const ContactForm = ({ labels = {}, language = 'en', className = "", settings = 
         e.preventDefault();
         setIsSubmitting(true);
 
-        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-        const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+        const serviceID = import.meta.env.PUBLIC_EMAILJS_SERVICE_ID;
+        const templateID = import.meta.env.PUBLIC_EMAILJS_TEMPLATE_ID;
+        const publicKey = import.meta.env.PUBLIC_EMAILJS_PUBLIC_KEY;
 
         // Basic validation for env vars
         if (!serviceID || !templateID || !publicKey) {

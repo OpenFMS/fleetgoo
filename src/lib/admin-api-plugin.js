@@ -37,6 +37,9 @@ function copyRecursiveSync(src, dest) {
 }
 
 export default function adminFsApiPlugin() {
+	// Security: Check if we are in a production/deployed environment
+	const isProd = process.env.NODE_ENV === 'production' || !!process.env.VERCEL;
+
 	function resolveFilePath(fileParam, rootDir) {
 		const parts = fileParam.split('/');
 		if (parts.length >= 2 && parts[1] === 'blog') {
@@ -69,6 +72,19 @@ export default function adminFsApiPlugin() {
 
 				// Basic middleware to match /api/admin
 				if (req.url && req.url.startsWith('/api/admin')) {
+					// --- Environment Safety Lock ---
+					// Disable all mutating operations (POST, DELETE, etc.) in non-local environments
+					if (isProd && req.method !== 'GET') {
+						console.warn(`[Admin Security] Blocked ${req.method} request to ${req.url} in production.`);
+						res.statusCode = 403;
+						res.setHeader('Content-Type', 'application/json');
+						res.end(JSON.stringify({ 
+							error: 'Permission Denied', 
+							message: 'Content management is only allowed in local development environment.' 
+						}));
+						return;
+					}
+
 					// Manually parse the URL to handle query params
 					const protocol = req.socket?.encrypted ? 'https' : 'http';
 					const host = req.headers.host || 'localhost';
