@@ -109,7 +109,7 @@ const SEO = ({
             <meta name="description" content={metaDesc} />
             {keywords && <meta name="keywords" content={keywords} />}
             <link rel="canonical" href={currentUrl} />
-            <link rel="icon" href={settings?.branding?.favicon || "/favicon.ico"} />
+            <link rel="icon" href={settings?.branding?.favicon || "/images/favicons/favicon.ico"} />
 
             {/* Open Graph / Social Media */}
             <meta property="og:url" content={currentUrl} />
