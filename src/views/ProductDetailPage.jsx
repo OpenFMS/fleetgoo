@@ -145,7 +145,7 @@ const ProductDetailPage = ({ language, settings, id: propId, productData }) => {
                           : "border-slate-100 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-700 opacity-80 hover:opacity-100"
                       )}
                     >
-                      <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-contain p-1" />
+                      <img src={img} alt={`${data.title} - View ${idx + 1}`} className="w-full h-full object-contain p-1" />
                     </button>
                   ))}
                 </div>
@@ -157,7 +157,7 @@ const ProductDetailPage = ({ language, settings, id: propId, productData }) => {
 
               {/* Product Overview (Moved here) */}
               <div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Product Overview</h3>
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-3">Product Overview</h2>
                 <p className="text-slate-600 dark:text-gray-300 leading-relaxed text-lg">
                   {data.fullDescription}
                 </p>
@@ -165,10 +165,10 @@ const ProductDetailPage = ({ language, settings, id: propId, productData }) => {
 
               {/* Features List */}
               <div className="bg-slate-50 dark:bg-slate-900/50 rounded-xl p-6 border border-slate-200 dark:border-slate-800">
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
                   <Zap className="w-5 h-5 text-yellow-500" />
                   Key Features
-                </h3>
+                </h2>
                 <ul className="space-y-3">
                   {data.features && data.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start gap-3">
@@ -230,7 +230,7 @@ const ProductDetailPage = ({ language, settings, id: propId, productData }) => {
               <div className="bg-slate-50 dark:bg-slate-800/30 rounded-xl p-5 flex items-start gap-4 border border-slate-200 dark:border-slate-800">
                 <Package className="w-6 h-6 text-slate-400 shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-slate-900 dark:text-white text-sm mb-1">In The Box</h4>
+                  <h3 className="font-semibold text-slate-900 dark:text-white text-sm mb-1">In The Box</h3>
                   <p className="text-slate-600 dark:text-gray-400 text-sm leading-relaxed">
                     {data.packaging}
                   </p>

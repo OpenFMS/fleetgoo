@@ -23,7 +23,7 @@ const HeroBlock = ({ data }) => {
             {data.backgroundImage && (
                 <img
                     src={data.backgroundImage}
-                    alt=""
+                    alt={data.title}
                     className="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
                 />
             )}
@@ -104,7 +104,7 @@ const MediaBlock = ({ data }) => {
                                         >
                                             <img
                                                 src={`https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`}
-                                                alt={data.caption || "Video Thumbnail"}
+                                                alt={data.caption || `${data.title} Video Thumbnail`}
                                                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                                             />
                                             {/* Play Button Overlay */}
@@ -137,7 +137,7 @@ const MediaBlock = ({ data }) => {
                                 )}
                             </div>
                         ) : (
-                            <img src={data.url} alt={data.caption} className="w-full h-auto" />
+                            <img src={data.url} alt={data.caption || data.title} className="w-full h-auto" />
                         )}
                     </div>
                 )}
