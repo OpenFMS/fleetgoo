@@ -79,5 +79,10 @@
         "copyright": "2025 FleetGoo. Todos los derechos reservados.",
         "privacy": "Política de Privacidad",
         "terms": "Términos de Servicio"
+    },
+    "blog": {
+        "title": "Blog y Recursos",
+        "subtitle": "Perspectivas de la industria y últimas noticias",
+        "readMore": "Leer más"
     }
 }

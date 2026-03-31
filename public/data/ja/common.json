@@ -79,5 +79,10 @@
         "copyright": "2025 FleetGoo. 無断転載を禁じます。",
         "privacy": "プライバシーポリシー",
         "terms": "利用規約"
+    },
+    "blog": {
+        "title": "ブログとリソース",
+        "subtitle": "業界のインサイトと最新ニュース",
+        "readMore": "続きを読む"
     }
 }

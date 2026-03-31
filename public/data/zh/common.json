@@ -79,5 +79,10 @@
         "copyright": "2025 FleetGoo. 版权所有。",
         "privacy": "隐私政策",
         "terms": "服务条款"
+    },
+    "blog": {
+        "title": "博客与资源",
+        "subtitle": "行业洞察与第一手资讯",
+        "readMore": "阅读全文"
     }
 }

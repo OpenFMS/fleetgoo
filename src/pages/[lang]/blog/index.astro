@@ -40,8 +40,17 @@ const readJson = (filePath) => {
 const settings = readJson('data/settings.json') || {};
 const commonData = readJson(`data/${lang}/common.json`) || {};
 
-const pageTitle = lang === 'zh' ? '博客与资源' : 'Blog & Resources';
-const pageSubtitle = lang === 'zh' ? '行业洞察与第一手资讯' : 'Industry Insights and Latest News';
+const pageTitle = commonData.blog?.title || 'Blog & Resources';
+const pageSubtitle = commonData.blog?.subtitle || 'Industry Insights and Latest News';
+const readMoreText = commonData.blog?.readMore || 'Read More';
+
+// Localized date options
+const dateLocale = {
+  zh: 'zh-CN',
+  es: 'es-ES',
+  ja: 'ja-JP',
+  en: 'en-US'
+}[lang] || 'en-US';
 ---
 
 <Layout title={`${pageTitle} | FleetGoo`} language={lang} settings={settings} commonData={commonData}>
@@ -85,7 +94,7 @@ const pageSubtitle = lang === 'zh' ? '行业洞察与第一手资讯' : 'Industr
                     <div class="flex items-center gap-1.5">
                       <CalendarIcon className="w-4 h-4" />
                       <time datetime={post.data.pubDate.toISOString()}>
-                        {post.data.pubDate.toLocaleDateString(lang === 'zh' ? 'zh-CN' : 'en-US', {
+                        {post.data.pubDate.toLocaleDateString(dateLocale, {
                           year: 'numeric', month: 'short', day: 'numeric'
                         })}
                       </time>
@@ -107,7 +116,7 @@ const pageSubtitle = lang === 'zh' ? '行业洞察与第一手资讯' : 'Industr
                   </p>
                   
                   <div class="mt-auto flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 group-hover:gap-3 transition-all">
-                    {lang === 'zh' ? '阅读全文' : 'Read More'}
+                    {readMoreText}
                     <ArrowRightIcon className="w-4 h-4" />
                   </div>
                 </div>

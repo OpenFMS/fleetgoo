@@ -2,6 +2,24 @@
 
 All notable changes to the FleetGoo project will be documented in this file.
 
+## [Major] - 2026-03-31 - SEO 优化与高品质多语言博客内容矩阵发布
+
+### SEO 与用户体验增强 (SEO & UX)
+- **首页 TDK 优化**：将英文首页 `metaTitle` 升级为高意向关键词组合：`AI Fleet Dashcam & GPS Tracker Solutions | FleetGoo`。
+- **语义化标题重构**：修复了产品详情页跳过 H2 的问题，建立了严格的 `H1 > H2 > H3` 层级结构。
+- **图片 SEO 深度优化**：
+    - 为产品详情页缩略图增加了基于产品名称的动态 `alt` 描述，告别无意义的 "Thumbnail 0"。
+    - 为 Hero 和 Media 等全站 Block 增加了标题降级 (`fallback`) 的 `alt` 逻辑。
+
+### 博客内容体系全面上线 (Blog Content Matrix)
+- **全语种内容矩阵**：
+    - 初始化了 5 篇深度长文（涵盖选购指南、事故预防、ADAS 技术、墨西哥安全及冷链监控）。
+    - 同步发布了 **EN / ZH / ES / JA** 四个语言版本，共计 **20 篇** 生产级文章。
+- **AI 定制视觉稿**：利用高保真 AI 生成技术为 5 篇核心内容定制了 16:9 的专业科技风封面图，并归档至 `public/images/blog/`。
+- **博客架构国际化 (i18n)**：
+    - 重构了 `src/pages/[lang]/blog/index.astro`，实现文案从 `common.json` 动态读取。
+    - 自定义了多语言日期格式化逻辑（CN/ES/JP/US），提升了不同国别用户的交互体验。
+
 ## [Dev] - 2026-03-31 - Admin 后台架构安全加固与生产环境隔离
 
 ### 安全与架构优化 (Security & Architecture)
