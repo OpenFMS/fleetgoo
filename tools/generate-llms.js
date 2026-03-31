@@ -83,8 +83,8 @@ function main() {
     if (productsData?.items) {
       for (const item of productsData.items) {
         pages.push({
-          title: item.metaTitle || item.name,
-          description: item.metaDesc || item.shortDesc,
+          title: item.metaTitle || item.title || 'Untitled Product',
+          description: item.metaDesc || item.description || 'No description available',
           url: `${siteUrl}/${lang}/products/${item.id}`,
           lang
         });
@@ -97,8 +97,8 @@ function main() {
     if (solutionsData?.items) {
       for (const item of solutionsData.items) {
         pages.push({
-          title: item.metaTitle || item.title,
-          description: item.metaDesc || item.subtitle,
+          title: item.metaTitle || item.title || 'Untitled Solution',
+          description: item.metaDesc || item.summary || item.subtitle || 'No description available',
           url: `${siteUrl}/${lang}/solutions/${item.id}`,
           lang
         });

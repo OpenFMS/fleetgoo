@@ -1,0 +1,52 @@
+{
+  "name": "FleetGoo",
+  "description": "AI Fleet Dashcam & GPS Tracker Solutions | Leading provider of AI-powered fleet management solutions, 4G AI dashcams, MDVR, GPS tracking, and fleet management software for commercial vehicles.",
+  "url": "https://www.fleetgoo.com",
+  "logo": "https://www.fleetgoo.com/images/brand/logo-light.webp",
+  "language": "en",
+  "languages": ["en", "zh", "es", "ja"],
+  "creator": {
+    "name": "FleetGoo Technology",
+    "email": "sales@fleetgoo.com",
+    "phone": "+86 150-138-15400"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/fleetgoo",
+    "facebook": "https://www.facebook.com/people/Mapgoo/61581872645799/",
+    "youtube": "https://www.youtube.com/@mapgoosales",
+    "instagram": "https://www.instagram.com/mapgoosales"
+  },
+  "business": {
+    "type": "B2B",
+    "industry": "Fleet Telematics & Vehicle Hardware",
+    "founded": "2010",
+    "location": "Shenzhen, China",
+    "serves": "Global"
+  },
+  "products": [
+    "4G Dashcams",
+    "GPS Trackers",
+    "MDVR Systems",
+    "AI Cameras",
+    "Fleet Management Software"
+  ],
+  "key_features": [
+    "AI-powered ADAS & DMS",
+    "Real-time 4G connectivity",
+    "Cloud-based fleet management",
+    "OEM/ODM customization",
+    "CE/FCC certified"
+  ],
+  "target_audience": [
+    "Fleet managers",
+    "Logistics companies",
+    "Public transport operators",
+    "Construction fleet owners",
+    "Security service providers"
+  ],
+  "content_policy": {
+    "llm_training": "allowed",
+    "commercial_use": "allowed_with_attribution",
+    "data_extraction": "allowed_for_indexing"
+  }
+}

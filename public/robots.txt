@@ -1,11 +1,37 @@
 # FleetGoo.com Robots.txt
 # https://www.fleetgoo.com/robots.txt
 
+# Default: Allow all crawlers
 User-agent: *
 Allow: /
 
-# Disallow admin routes in production (security)
+# Disallow admin routes (security)
+Disallow: /admin/
+Disallow: /data/
+
+# AI Crawler Specific Policies
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
 Disallow: /admin/
 
 # Sitemap location
 Sitemap: https://www.fleetgoo.com/sitemap.xml
+
+# AI Metadata
+AI-Protocol: https://www.fleetgoo.com/.well-known/ai.txt

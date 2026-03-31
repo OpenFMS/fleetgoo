@@ -1,64 +1,64 @@
 # FleetGoo Site Index
 # Using this file, LLMs can discover the structure and content of the site.
-# Generated at: 2026-03-30T14:25:29.934Z
+# Generated at: 2026-03-31T08:25:10.877Z
 
-- [Commercial Fleet Management & Video Telematics Solutions](https://www.fleetgoo.com/en): FleetGoo provides advanced 4G Dashcams, MDVR systems, and GPS tracking for commercial fleets. Enhance safety and efficiency with our AI-powered IoT solutions.
+- [AI Fleet Dashcam & GPS Tracker Solutions | FleetGoo](https://www.fleetgoo.com/en): FleetGoo provides advanced 4G Dashcams, MDVR systems, and GPS tracking for commercial fleets. Enhance safety and efficiency with our AI-powered IoT solutions.
 - [About Us](https://www.fleetgoo.com/en/about-us): Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.
 - [Contact Us](https://www.fleetgoo.com/en/contact): Get in touch with our sales and support team for your vehicle tracking and fleet management needs.
-- [undefined](https://www.fleetgoo.com/en/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://www.fleetgoo.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://www.fleetgoo.com/en/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://www.fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://www.fleetgoo.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://www.fleetgoo.com/en/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://www.fleetgoo.com/en/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://www.fleetgoo.com/en/products/oem-custom-solution): undefined
+- [C08L Asset Tracker](https://www.fleetgoo.com/en/products/c08l-wireless-asset-tracker-long-standby): C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.
+- [C08W 4G GPS Tracker](https://www.fleetgoo.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.
+- [D401 AI Camera](https://www.fleetgoo.com/en/products/d401-ai-dashcam-adas-dms): D401 AI Camera with advanced ADAS and DMS capabilities for proactive fleet safety.
+- [D501 4G DashCam](https://www.fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud): Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.
+- [D604 AI CarBox](https://www.fleetgoo.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): Powerful D604 AI CarBox MDVR for centralized fleet video surveillance and intelligent data processing.
+- [D701 Pro 4G DashCam](https://www.fleetgoo.com/en/products/d701-pro-truck-dashcam-lockable): Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.
+- [D901 AI Smart Camera](https://www.fleetgoo.com/en/products/d901-smart-ai-camera-bsd-pedestrian): Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.
+- [OEM & ODM Custom Solution](https://www.fleetgoo.com/en/products/oem-custom-solution): Tailored hardware design and manufacturing services. We build custom GPS trackers, dashcams, and MDVRs to your specifications.
 - [Intelligent Fleet Management Platform](https://www.fleetgoo.com/en/software): Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.
-- [Mexico Cross-Border Logistics Security](https://www.fleetgoo.com/en/solutions/mexico-cross-border-logistics): undefined
-- [Public Safety Fleet Solutions](https://www.fleetgoo.com/en/solutions/public-safety): undefined
-- [Thailand Cold Chain Logistics Solution](https://www.fleetgoo.com/en/solutions/thailand-cold-chain): undefined
+- [Mexico Cross-Border Logistics Security](https://www.fleetgoo.com/en/solutions/mexico-cross-border-logistics): Secure your cross-border fleet in Mexico with real-time AI surveillance. Prevent cargo theft, ensure driver safety, and simplify insurance claims.
+- [Public Safety Fleet Solutions](https://www.fleetgoo.com/en/solutions/public-safety): Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.
+- [Thailand Cold Chain Logistics Solution](https://www.fleetgoo.com/en/solutions/thailand-cold-chain): End-to-end cold chain visibility for the Thai market. Prevent food spoilage and ensure temperature compliance with GPS tracking and video monitoring.
 - [Gestión de Flotas Comerciales y Soluciones de Video Telemática](https://www.fleetgoo.com/es): FleetGoo ofrece Dashcams 4G avanzadas, sistemas MDVR y rastreo GPS para flotas comerciales. Mejore la seguridad y eficiencia con nuestras soluciones IoT impulsadas por IA.
 - [Sobre Nosotros](https://www.fleetgoo.com/es/about-us): Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software.
 - [Contáctenos - FleetGoo](https://www.fleetgoo.com/es/contact): Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.
-- [undefined](https://www.fleetgoo.com/es/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://www.fleetgoo.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://www.fleetgoo.com/es/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://www.fleetgoo.com/es/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://www.fleetgoo.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://www.fleetgoo.com/es/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://www.fleetgoo.com/es/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://www.fleetgoo.com/es/products/oem-custom-solution): undefined
+- [C08L Rastreador de Activos](https://www.fleetgoo.com/es/products/c08l-wireless-asset-tracker-long-standby): Rastreador de activos de larga duración con batería de 3 años y montaje magnético.
+- [C08W Rastreador GPS 4G](https://www.fleetgoo.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): Dispositivo de rastreo en tiempo real profesional 4G con corte de combustible y protección IP65.
+- [D401 Cámara IA](https://www.fleetgoo.com/es/products/d401-ai-dashcam-adas-dms): Cámara inteligente con algoritmos integrados ADAS y DMS para la seguridad del conductor.
+- [D501 DashCam 4G](https://www.fleetgoo.com/es/products/d501-4g-dashcam-dual-lens-cloud): Dashcam en la nube de doble lente con transmisión en vivo y función de alerta SOS.
+- [D604 AI CarBox](https://www.fleetgoo.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): Hub MDVR de 8 canales con potente procesamiento de IA para vigilancia centralizada.
+- [D701 DashCam Pro](https://www.fleetgoo.com/es/products/d701-pro-truck-dashcam-lockable): Dashcam robusta para flotas con almacenamiento bloqueable y soporte para cámara externa.
+- [D901 Cámara Inteligente IA](https://www.fleetgoo.com/es/products/d901-smart-ai-camera-bsd-pedestrian): Sistema de cámara IA multicanal con detección de puntos ciegos y peatones.
+- [Solución Personalizada OEM](https://www.fleetgoo.com/es/products/oem-custom-solution): Diseño de hardware y servicios de fabricación a medida para necesidades específicas de flotas
 - [Plataforma Inteligente de Gestión de Flotas](https://www.fleetgoo.com/es/software): Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.
-- [Seguridad Logística Transfronteriza México](https://www.fleetgoo.com/es/solutions/mexico-cross-border-logistics): undefined
-- [Soluciones de Flota para Seguridad Pública](https://www.fleetgoo.com/es/solutions/public-safety): undefined
-- [Solución Logística de Cadena de Frío Tailandia](https://www.fleetgoo.com/es/solutions/thailand-cold-chain): undefined
+- [Seguridad Logística Transfronteriza México](https://www.fleetgoo.com/es/solutions/mexico-cross-border-logistics): Asegure su flota transfronteriza en México con vigilancia AI en tiempo real. Prevenga robo de carga, garantice seguridad del conductor y simplifique reclamos de seguros.
+- [Soluciones de Flota para Seguridad Pública](https://www.fleetgoo.com/es/solutions/public-safety): Mejore los tiempos de respuesta de emergencia y la seguridad de los oficiales con dashcams con IA, rastreo GPS en tiempo real y recuperación de video de grado evidencial.
+- [Solución Logística de Cadena de Frío Tailandia](https://www.fleetgoo.com/es/solutions/thailand-cold-chain): Visibilidad integral de cadena de frío para el mercado tailandés. Prevenga deterioro de alimentos y asegure cumplimiento de temperatura con rastreo GPS y monitoreo de video.
 - [商用車フリート管理＆ビデオテレマティクスソリューション](https://www.fleetgoo.com/ja): FleetGooは、商用車フリート向けの高度な4Gドライブレコーダー、MDVRシステム、GPS追跡を提供します。AI搭載のIoTソリューションで安全性と効率を向上させます。
 - [会社概要](https://www.fleetgoo.com/ja/about-us): 革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントな車両管理の未来をリードする私たちの使命について。
 - [お問い合わせ - FleetGoo](https://www.fleetgoo.com/ja/contact): 車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。
-- [undefined](https://www.fleetgoo.com/ja/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://www.fleetgoo.com/ja/products/oem-custom-solution): undefined
+- [C08L 資産トラッカー](https://www.fleetgoo.com/ja/products/c08l-wireless-asset-tracker-long-standby): 3年のバッテリー寿命と磁気マウントを備えた超長時間待機型資産トラッカー。
+- [C08W 4G GPSトラッカー](https://www.fleetgoo.com/ja/products/c08w-4g-gps-tracker-ip65-waterproof): 燃料カット機能とIP65保護を備えたプロフェッショナルな4Gリアルタイム追跡デバイス。
+- [D401 AIカメラ](https://www.fleetgoo.com/ja/products/d401-ai-dashcam-adas-dms): ドライバーの安全を確保するためのADAS＆DMSアルゴリズムを内蔵したインテリジェントカメラ。
+- [D501 4Gドライブレコーダー](https://www.fleetgoo.com/ja/products/d501-4g-dashcam-dual-lens-cloud): ライブストリーミングとSOSアラート機能を備えたデュアルレンズクラウドドライブレコーダー。
+- [D604 AIカーボックス](https://www.fleetgoo.com/ja/products/d604-8ch-mdvr-ai-box-fleet-surveillance): 集中監視のための強力なAI処理を備えた8チャンネルMDVRハブ。
+- [D701 Pro ドライブレコーダー](https://www.fleetgoo.com/ja/products/d701-pro-truck-dashcam-lockable): ロック可能なストレージと外部カメラサポートを備えた頑丈なフリート用ドライブレコーダー。
+- [D901 AIスマートカメラ](https://www.fleetgoo.com/ja/products/d901-smart-ai-camera-bsd-pedestrian): 死角検知（BSD）と歩行者検知機能を備えたマルチチャンネルAIカメラシステム。
+- [OEMカスタムソリューション](https://www.fleetgoo.com/ja/products/oem-custom-solution): お客様の特定のフリートニーズに合わせたハードウェア設計および製造サービス
 - [インテリジェント車両管理プラットフォーム](https://www.fleetgoo.com/ja/software): クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。
-- [メキシコ国境越え物流セキュリティ](https://www.fleetgoo.com/ja/solutions/mexico-cross-border-logistics): undefined
-- [公共安全フリートソリューション](https://www.fleetgoo.com/ja/solutions/public-safety): undefined
-- [タイコールドチェーン物流ソリューション](https://www.fleetgoo.com/ja/solutions/thailand-cold-chain): undefined
+- [メキシコ国境越え物流セキュリティ](https://www.fleetgoo.com/ja/solutions/mexico-cross-border-logistics): リアルタイムAI監視でメキシコの国境越えフリートを保護。貨物盗難を防止し、ドライバーの安全を確保し、保険請求を簡素化します。
+- [公共安全フリートソリューション](https://www.fleetgoo.com/ja/solutions/public-safety): AI搭載ドライブレコーダー、リアルタイムGPS追跡、証拠グレードのビデオ検索で、緊急対応時間と警察官の安全性を向上させます。
+- [タイコールドチェーン物流ソリューション](https://www.fleetgoo.com/ja/solutions/thailand-cold-chain): タイ市場向けのエンドツーエンドのコールドチェーン可視性。GPS追跡とビデオ監視で食品の腐敗を防ぎ、温度コンプライアンスを確保します。
 - [商用车队管理与视频远程通信解决方案](https://www.fleetgoo.com/zh): FleetGoo提供先进的商用车队4G行车记录仪、MDVR系统和GPS追踪服务。通过我们的人工智能IoT解决方案提升安全性和效率。
 - [关于我们](https://www.fleetgoo.com/zh/about-us): 了解我们的使命：通过创新的软硬件解决方案引领智能车队管理的未来。
 - [联系我们 - FleetGoo](https://www.fleetgoo.com/zh/contact): 联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。
-- [undefined](https://www.fleetgoo.com/zh/products/c08l-wireless-asset-tracker-long-standby): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/d401-ai-dashcam-adas-dms): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/d501-4g-dashcam-dual-lens-cloud): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/d701-pro-truck-dashcam-lockable): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): undefined
-- [undefined](https://www.fleetgoo.com/zh/products/oem-custom-solution): undefined
+- [C08L 资产追踪器](https://www.fleetgoo.com/zh/products/c08l-wireless-asset-tracker-long-standby): 超长待机资产追踪器，拥有3年电池寿命与免安装磁吸设计。
+- [C08W 4G GPS定位器](https://www.fleetgoo.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): 专业级4G实时追踪设备，支持远程断油电与IP65级防护。
+- [D401 AI智能摄像头](https://www.fleetgoo.com/zh/products/d401-ai-dashcam-adas-dms): 内置ADAS与DMS算法的智能摄像头，全方位保障驾驶安全。
+- [D501 4G云记录仪](https://www.fleetgoo.com/zh/products/d501-4g-dashcam-dual-lens-cloud): 双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。
+- [D604 AI智能盒子](https://www.fleetgoo.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): 8通道MDVR中枢，搭载强大AI算力，实现集中化视频监控。
+- [D701 Pro 货车记录仪](https://www.fleetgoo.com/zh/products/d701-pro-truck-dashcam-lockable): 坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。
+- [D901 AI旗舰摄像头](https://www.fleetgoo.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): 多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。
+- [OEM定制化方案](https://www.fleetgoo.com/zh/products/oem-custom-solution): 为您特定的车队需求量身定制硬件设计与制造服务
 - [智能车队管理平台](https://www.fleetgoo.com/zh/software): 集成云端SaaS、移动应用和开放API的企业级车队管理平台，实现全面的运营可视化。
-- [墨西哥跨境物流安全](https://www.fleetgoo.com/zh/solutions/mexico-cross-border-logistics): undefined
-- [公共安全车队解决方案](https://www.fleetgoo.com/zh/solutions/public-safety): undefined
-- [泰国冷链物流解决方案](https://www.fleetgoo.com/zh/solutions/thailand-cold-chain): undefined
+- [墨西哥跨境物流安全](https://www.fleetgoo.com/zh/solutions/mexico-cross-border-logistics): 通过实时AI监控保护您在墨西哥的跨境车队。防止货物盗窃，确保司机安全，简化保险理赔。
+- [公共安全车队解决方案](https://www.fleetgoo.com/zh/solutions/public-safety): 通过AI驱动的行车记录仪、实时GPS跟踪和证据级视频检索，提高应急响应时间和警员安全。
+- [泰国冷链物流解决方案](https://www.fleetgoo.com/zh/solutions/thailand-cold-chain): 为泰国市场提供端到端的冷链可视性。通过GPS跟踪和视频监控防止食品变质并确保温度合规。

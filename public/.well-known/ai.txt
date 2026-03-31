@@ -1,0 +1,27 @@
+# AI Permissions File
+# https://github.com/robots-txt-protocol/ai-permissions
+
+# Default: Allow all AI crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and sensitive areas
+Disallow: /admin/
+Disallow: /data/
+
+# Specific AI crawler policies
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin/
+
+User-agent: anthropic-ai
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
