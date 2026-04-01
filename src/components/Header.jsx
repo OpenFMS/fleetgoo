@@ -40,6 +40,10 @@ const Header = ({ language, commonData, settings }) => {
     label: t.home,
     path: `/${language}`
   }, {
+    id: 'software',
+    label: t.software,
+    path: `/${language}/software`
+  }, {
     id: 'products',
     label: t.products,
     path: `/${language}/products`
@@ -48,17 +52,13 @@ const Header = ({ language, commonData, settings }) => {
     label: t.solutions,
     path: `/${language}/solutions`
   }, {
-    id: 'software',
-    label: t.software,
-    path: `/${language}/software`
+    id: 'blog',
+    label: t.blog || 'Insights',
+    path: `/${language}/blog`
   }, {
     id: 'about',
     label: t.about,
     path: `/${language}/about-us`
-  }, {
-    id: 'blog',
-    label: t.blog || 'Blog',
-    path: `/${language}/blog`
   }, {
     id: 'contact',
     label: t.contact,

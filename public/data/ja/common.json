@@ -1,9 +1,10 @@
 {
     "nav": {
         "home": "ホーム",
-        "products": "製品",
         "software": "プラットフォーム",
+        "products": "製品",
         "solutions": "ソリューション",
+        "blog": "インサイト",
         "about": "会社概要",
         "contact": "お問い合わせ"
     },

@@ -1,9 +1,10 @@
 {
     "nav": {
         "home": "Inicio",
-        "products": "Productos",
         "software": "Plataforma",
+        "products": "Productos",
         "solutions": "Soluciones",
+        "blog": "Insights",
         "about": "Nosotros",
         "contact": "Contacto"
     },

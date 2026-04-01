@@ -1,9 +1,10 @@
 {
     "nav": {
         "home": "首页",
-        "products": "产品",
         "software": "平台",
+        "products": "产品",
         "solutions": "解决方案",
+        "blog": "洞察",
         "about": "关于我们",
         "contact": "联系我们"
     },

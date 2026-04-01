@@ -1,9 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "products": "Products",
     "software": "Platform",
+    "products": "Products",
     "solutions": "Solutions",
+    "blog": "Insights",
     "about": "About Us",
     "contact": "Contact"
   },
