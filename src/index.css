@@ -66,11 +66,26 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      'Sarabun', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Thai language optimization */
+  [lang="th"] {
+    font-family: 'Sarabun', 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    word-break: break-word;
+    line-break: loose;
+  }
+  
+  [lang="th"] button,
+  [lang="th"] .btn,
+  [lang="th"] a {
+    font-size: 15px;
   }
 }
 

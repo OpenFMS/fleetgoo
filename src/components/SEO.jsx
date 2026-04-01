@@ -131,13 +131,13 @@ const SEO = ({
                 <link
                     key={lang}
                     rel="alternate"
-                    hreflang={lang}
+                    hrefLang={lang}
                     href={`${siteUrl}/${lang}/${purePath}`}
                 />
             ))}
             <link
                 rel="alternate"
-                hreflang="x-default"
+                hrefLang="x-default"
                 href={`${siteUrl}/${settings?.defaultLanguage || 'en'}/${purePath}`}
             />
 

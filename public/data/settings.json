@@ -16,6 +16,11 @@
             "flag": "🇯🇵"
         },
         {
+            "code": "th",
+            "label": "ไทย",
+            "flag": "🇹🇭"
+        },
+        {
             "code": "zh",
             "label": "中文",
             "flag": "🇨🇳"
