@@ -1,0 +1,89 @@
+{
+    "nav": {
+        "home": "หน้าแรก",
+        "software": "แพลตฟอร์ม",
+        "products": "ผลิตภัณฑ์",
+        "solutions": "โซลูชัน",
+        "blog": "อินไซต์",
+        "about": "เกี่ยวกับเรา",
+        "contact": "ติดต่อเรา"
+    },
+    "contactInfo": {
+        "address": "ชั้น 6 อาคาร Chuangyi เลขที่ 3027 ถนนหนานไห่ เขตหนานซาน เซินเจิ้น",
+        "email": "sales@fleetgoo.com",
+        "phone": "+86 150-138-15400"
+    },
+    "footer": {
+        "companyDescription": "ผู้ให้บริการชั้นนำด้านโซลูชันการติดตามยานพาหนะและจัดการฟลีตอัจฉริยะ",
+        "sections": {
+            "products": {
+                "title": "ผลิตภัณฑ์",
+                "links": [
+                    {
+                        "label": "แพลตฟอร์ม FleetGoo",
+                        "url": "/th/software"
+                    },
+                    {
+                        "label": "GPS Tracker",
+                        "url": "/th/products"
+                    },
+                    {
+                        "label": "4G Dashcam",
+                        "url": "/th/products"
+                    },
+                    {
+                        "label": "MDVR System",
+                        "url": "/th/products"
+                    }
+                ]
+            },
+            "solutions": {
+                "title": "โซลูชัน",
+                "links": [
+                    {
+                        "label": "โลจิสติกส์ข้ามพรมแดน",
+                        "url": "/th/solutions/mexico-cross-border-logistics"
+                    },
+                    {
+                        "label": "การขนส่งสาธารณะ",
+                        "url": "/th/solutions/public-safety"
+                    },
+                    {
+                        "label": "โซ่ความเย็น",
+                        "url": "/th/solutions/thailand-cold-chain"
+                    }
+                ]
+            },
+            "company": {
+                "title": "บริษัท",
+                "links": [
+                    {
+                        "label": "เกี่ยวกับเรา",
+                        "url": "/th/about-us"
+                    },
+                    {
+                        "label": "ติดต่อเรา",
+                        "url": "/th/contact"
+                    }
+                ]
+            },
+            "support": {
+                "title": "สนับสนุน",
+                "links": [
+                    {
+                        "label": "เอกสาร",
+                        "url": "https://docs.fleetgoo.com"
+                    }
+                ]
+            }
+        },
+        "copyright": "2026 FleetGoo สงวนลิขสิทธิ์",
+        "privacy": "นโยบายความเป็นส่วนตัว",
+        "terms": "ข้อกำหนดการให้บริการ"
+    },
+    "blog": {
+        "title": "บล็อกและทรัพยากร",
+        "subtitle": "อินไซต์อุตสาหกรรมและข่าวสารล่าสุด",
+        "readMore": "อ่านเพิ่มเติม"
+    }
+}

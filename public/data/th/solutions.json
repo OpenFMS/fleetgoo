@@ -1,0 +1,45 @@
+{
+  "page": {
+    "title": "โซลูชันอุตสาหกรรม",
+    "subtitle": "กลยุทธ์การจัดการฟลีตเฉพาะทางสำหรับภาคส่วนของคุณ",
+    "metaTitle": "โซลูชันอุตสาหกรรม",
+    "metaDesc": "สำรวจโซลูชันการจัดการฟลีตที่ปรับแต่งสำหรับรัฐบาล โลจิสติกส์ การก่อสร้าง และอื่นๆ",
+    "readMoreBtn": "อ่านกรณีศึกษา"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "โซลูชันทั้งหมด",
+      "icon": "Layers"
+    }
+  ],
+  "items": [
+    {
+      "id": "mexico-cross-border-logistics",
+      "categoryId": "industry",
+      "title": "ความปลอดภัยโลจิสติกส์ข้ามพรมแดนเม็กซิโก",
+      "summary": "รักษาความปลอดภัยฟลีตข้ามพรมแดนของคุณในเม็กซิโกด้วยการตรวจสอบ AI แบบเรียลไทม์ ป้องกันการโจรกรรมสินค้า รับประกันความปลอดภัยผู้ขับขี่ และทำให้การเรียกร้องประกันง่ายขึ้น",
+      "image": "/images/solutions/mexico-logistics.jpeg",
+      "icon": "ShieldAlert",
+      "color": "red"
+    },
+    {
+      "id": "public-safety",
+      "categoryId": "industry",
+      "title": "โซลูชันฟลีตความปลอดภัยสาธารณะ",
+      "summary": "เพิ่มเวลาตอบสนองเหตุฉุกเฉินและความปลอดภัยของเจ้าหน้าที่ด้วย dashcam ที่ขับเคลื่อนด้วย AI การติดตาม GPS แบบเรียลไทม์ และการดึงวิดีโอระดับหลักฐาน",
+      "image": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+      "icon": "Building2",
+      "color": "blue"
+    },
+    {
+      "id": "thailand-cold-chain",
+      "categoryId": "industry",
+      "title": "โซลูชันโลจิสติกส์โซ่ความเย็นไทย",
+      "summary": "การมองเห็นโซ่ความเย็นแบบครบวงจรสำหรับตลาดไทย ป้องกันอาหารเสียและรับประกันการปฏิบัติตามอุณหภูมิด้วยการติดตาม GPS และการตรวจสอบวิดีโอ",
+      "image": "/images/solutions/cold-chain-herojpeg.jpeg",
+      "icon": "Layers",
+      "color": "blue"
+    }
+  ]
+}

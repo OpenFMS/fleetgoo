@@ -1,0 +1,77 @@
+{
+  "metaTitle": "ติดต่อ FleetGoo | โซลูชันการจัดการฟลีต",
+  "metaDesc": "ติดต่อทีมขายและสนับสนุนของเราสำหรับความต้องการการติดตามยานพาหนะและการจัดการฟลีตของคุณ",
+  "page": {
+    "title": "ติดต่อเรา",
+    "subtitle": "เราพร้อมช่วยเหลือคุณ",
+    "description": "มีคำถามเกี่ยวกับผลิตภัณฑ์หรือโซลูชันของเรา? ติดต่อเราวันนี้ และทีมผู้เชี่ยวชาญของเราจะตอบกลับคุณโดยเร็วที่สุด"
+  },
+  "contactForm": {
+    "title": "ส่งคำถาม",
+    "description": "กรอกแบบฟอร์มด้านล่าง และเราจะติดต่อกลับภายใน 24 ชั่วโมง",
+    "nameLabel": "ชื่อเต็ม",
+    "emailLabel": "อีเมลที่ทำงาน",
+    "companyLabel": "ชื่อบริษัท",
+    "phoneLabel": "WhatsApp / โทรศัพท์",
+    "productLabel": "ผลิตภัณฑ์ที่สนใจ",
+    "messageLabel": "ข้อความ",
+    "submitBtn": "ส่งคำถาม",
+    "privacyNote": "เราเคารพความเป็นส่วนตัวของคุณ ข้อมูลของคุณปลอดภัย",
+    "selectProduct": "เลือกผลิตภัณฑ์"
+  },
+  "contactInfo": {
+    "title": "ข้อมูลการติดต่อ",
+    "items": [
+      {
+        "icon": "Mail",
+        "label": "อีเมล",
+        "value": "sales@fleetgoo.com",
+        "href": "mailto:sales@fleetgoo.com"
+      },
+      {
+        "icon": "Phone",
+        "label": "โทรศัพท์",
+        "value": "+86 150-138-15400",
+        "href": "tel:+8615013815400"
+      },
+      {
+        "icon": "MapPin",
+        "label": "ที่อยู่",
+        "value": "ชั้น 6 อาคาร Chuangyi เลขที่ 3027 ถนนหนานไห่ เขตหนานซาน เซินเจิ้น",
+        "href": "#"
+      },
+      {
+        "icon": "Clock",
+        "label": "เวลาทำการ",
+        "value": "จันทร์ - ศุกร์ 9:00 - 18:00 (เวลาจีน)",
+        "href": "#"
+      }
+    ]
+  },
+  "socialMedia": {
+    "title": "ติดตามเรา",
+    "description": "ติดตามเราบนโซเชียลมีเดียเพื่อข่าวสารและอัปเดตล่าสุด",
+    "items": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/company/fleetgoo",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Facebook",
+        "url": "https://www.facebook.com/people/Mapgoo/61581872645799/",
+        "icon": "Facebook"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/@mapgoosales",
+        "icon": "Youtube"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/mapgoosales",
+        "icon": "Instagram"
+      }
+    ]
+  }
+}

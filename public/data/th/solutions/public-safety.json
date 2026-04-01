@@ -1,0 +1,117 @@
+{
+  "id": "public-safety",
+  "categoryId": "industry",
+  "title": "Public Safety Fleet Solutions",
+  "metaTitle": "Public Safety & Police Fleet Management System ",
+  "metaDesc": "Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.",
+  "image": "",
+  "blocks": [
+    {
+      "type": "hero",
+      "title": "Mission-Critical Fleet Intelligence",
+      "subtitle": "Empower your command center with real-time situational awareness. From patrol cars to ambulances, ensure every second counts with our AI-driven fleet management system.",
+      "backgroundImage": "/images/solutions/fleet-telematics-system-with-heavy-vehicle.png",
+      "ctaText": "Contact Sales",
+      "ctaLink": "/en/contact"
+    },
+    {
+      "type": "pain_points",
+      "title": "Challenges in Emergency Response",
+      "items": [
+        {
+          "title": "Lack of Real-time Visibility",
+          "desc": "Traditional radio dispatching leaves command centers blind to the exact location and status of units during critical incidents."
+        },
+        {
+          "title": "Video Evidence Management",
+          "desc": "Retrieving dashcam footage manually from SD cards is slow, prone to data loss, and breaks the chain of custody."
+        },
+        {
+          "title": "Officer & Driver Safety",
+          "desc": "High-speed pursuits and long shifts increase accident risks. Without ADAS/DMS, minor distractions can lead to major collisions."
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "Core Capabilities",
+      "layout": "grid",
+      "items": [
+        {
+          "title": "Live Video Streaming",
+          "desc": "Stream up to 4 channels of HD video from any vehicle in real-time over 4G LTE. See what your officers see instantly."
+        },
+        {
+          "title": "Evidence Locking",
+          "desc": "Automatically upload video clips to the cloud when sirens are activated, ensuring critical evidence is never lost."
+        },
+        {
+          "title": "Precision GPS Dispatch",
+          "desc": "Identify the nearest available unit to an incident with sub-meter accuracy to significantly reduce response times."
+        },
+        {
+          "title": "Driver Behavior Analysis",
+          "desc": "Monitor harsh braking, cornering, and speeding. Use data to train officers for safer emergency driving."
+        },
+        {
+          "title": "Two-Way Audio",
+          "desc": "Direct voice communication between dispatch and the vehicle cabin, independent of radio frequencies."
+        },
+        {
+          "title": "Health Monitoring",
+          "desc": "Connect to vehicle CAN bus (OBDII) to monitor engine health, fuel levels, and battery status remotely."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "background": "blue",
+      "items": [
+        {
+          "value": "40%",
+          "label": "Faster Response Time"
+        },
+        {
+          "value": "99.9%",
+          "label": "Uptime Reliability"
+        },
+        {
+          "value": "-25%",
+          "label": "Accident Rate Reduction"
+        },
+        {
+          "value": "24/7",
+          "label": "Continuous Recording"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "Solution Highlights",
+      "layout": "alternating",
+      "items": [
+        {
+          "title": "AI-Powered Collision Avoidance (ADAS)",
+          "desc": "Our advanced Mobileye-compatible ADAS system scans the road ahead. It warns drivers of potential forward collisions, lane departures, and pedestrians in real-time, giving them precious seconds to react.",
+          "image": "/images/products/platform/vehicle-video-surveillance.png"
+        },
+        {
+          "title": "Secure Chain of Custody",
+          "desc": "Video files are watermarked and encrypted from the moment of capture. Our cloud platform maintains a strict audit log of who accessed or downloaded footage, ensuring admissibility in court.",
+          "image": "/images/products/platform/vehicle-track-video-play.png"
+        },
+        {
+          "title": "Total Asset Security: Future-Proof Your Fleet",
+          "desc": "Stop Theft Before It Starts. Our advanced 10\" Display and 4-Channel BSD Camera System give your fleet 360° intelligent vision, actively preventing cargo and fuel loss. Enhance security and efficiency with real-time awareness, protecting every journey and every drop.",
+          "image": "/images/products/D901-main.jpg"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to modernize your fleet?",
+      "buttonText": "Get a Custom Quote",
+      "link": "/en/contact"
+    }
+  ]
+}

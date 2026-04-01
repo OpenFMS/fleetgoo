@@ -1,0 +1,62 @@
+{
+  "id": "c08w-4g-gps-tracker-ip65-waterproof",
+  "categoryId": "gps-tracker",
+  "title": "C08W 4G GPS Tracker",
+  "metaTitle": "C08W Professional 4G GPS Tracker",
+  "metaDesc": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
+  "fullDescription": "Compact ultra-thin IP65 waterproof design, integrating high-sensitivity GPS/BeiDou/LBS positioning for real-time tracking. Features ACC detection, intelligent alarms (fence/speed/power), and a robust watchdog system for system stability. Ideal for car rental, logistics, private cars, and electric scooters.",
+  "images": [
+    "/images/products/C08W-main.jpg",
+    "/images/products/C08W-02.jpg",
+    "/images/products/C08W-03.jpg",
+    "/images/products/C08W-04.jpg"
+  ],
+  "features": [
+    "Compact & Waterproof: 14mm thick ultra-thin design with IP65 rating",
+    "Precision Positioning: GPS/BeiDou/LBS triple-mode tracking",
+    "Intelligent Alerts: Fence entry/exit, speeding, power outage, and vibration alarms",
+    "Robust Stability: Built-in watchdog functionality with auto-recovery from crashes",
+    "Versatile Application: Suitable for 9-90V vehicles including logistics trucks, rental cars, and scooters"
+  ],
+  "parameters": [
+    {
+      "label": "Network",
+      "value": "GSM/GPRS (850/900/1800/1900MHz)"
+    },
+    {
+      "label": "Working Voltage",
+      "value": "9-90V DC"
+    },
+    {
+      "label": "Working Current",
+      "value": "12V/30mA (Avg)"
+    },
+    {
+      "label": "Positioning",
+      "value": "GPS/BeiDou (<5m error)"
+    },
+    {
+      "label": "Start Time",
+      "value": "Cold 32s / Hot 1s"
+    },
+    {
+      "label": "Sensitivity",
+      "value": "Tracking -162dBm / Capture -148dBm"
+    },
+    {
+      "label": "Battery",
+      "value": "Built-in 100mAh/3.7V Li-polymer"
+    },
+    {
+      "label": "Dimensions",
+      "value": "78mm x 26mm x 14mm"
+    },
+    {
+      "label": "Weight",
+      "value": "26.5g"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x C08W Unit, 1x Power Cable, 1x User Manual, 1x Relay (Optional)",
+  "icon": "MapPin"
+}

@@ -1,0 +1,107 @@
+{
+  "page": {
+    "title": "ผลิตภัณฑ์ของเรา",
+    "subtitle": "โซลูชันฮาร์ดแวร์ขั้นสูงสำหรับการติดตามยานพาหนะ",
+    "metaTitle": "ผลิตภัณฑ์ฮาร์ดแวร์สำหรับฟลีต | Dashcams AI, MDVR, GPS Trackers",
+    "metaDesc": "สำรวจฮาร์ดแวร์ของเรา รวมถึง GPS tracker, Dashcam 4G, ระบบ MDVR และหน้าจออัจฉริยะ",
+    "viewDetailsBtn": "ดูรายละเอียด"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "ผลิตภัณฑ์ทั้งหมด",
+      "icon": "Layers"
+    },
+    {
+      "id": "gps-tracker",
+      "label": "GPS Tracker",
+      "icon": "MapPin"
+    },
+    {
+      "id": "4g-dashcam",
+      "label": "4G DashCam",
+      "icon": "Camera"
+    },
+    {
+      "id": "4g-aicarbox",
+      "label": "AI CarBox",
+      "icon": "MonitorPlay"
+    },
+    {
+      "id": "4g-camera",
+      "label": "AI Camera",
+      "icon": "Camera"
+    },
+    {
+      "id": "oem-odm",
+      "label": "OEM & ODM",
+      "icon": "Wrench"
+    }
+  ],
+  "items": [
+    {
+      "id": "c08l-wireless-asset-tracker-long-standby",
+      "categoryId": "gps-tracker",
+      "title": "C08L Asset Tracker",
+      "description": "C08L 4G Asset Tracker พร้อมแบตเตอรี่อายุการใช้งานยาวนาน เหมาะสำหรับรถพ่วงและตู้คอนเทนเนอร์",
+      "image": "/images/products/C08L-main.jpg",
+      "icon": "MapPin"
+    },
+    {
+      "id": "c08w-4g-gps-tracker-ip65-waterproof",
+      "categoryId": "gps-tracker",
+      "title": "C08W 4G GPS Tracker",
+      "description": "อุปกรณ์ติดตาม GPS 4G ความแม่นยำสูง พร้อมการติดตามตำแหน่งแบบเรียลไทม์และการวิเคราะห์ฟลีตขั้นสูง",
+      "image": "/images/products/C08W-main.jpg",
+      "icon": "MapPin"
+    },
+    {
+      "id": "d401-ai-dashcam-adas-dms",
+      "categoryId": "4g-camera",
+      "title": "D401 AI Camera",
+      "description": "กล้องอัจฉริยะพร้อมอัลกอริทึม ADAS และ DMS ในตัว เพื่อความปลอดภัยเชิงรุกของผู้ขับขี่",
+      "image": "/images/products/D401-main.jpg",
+      "icon": "Camera"
+    },
+    {
+      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "categoryId": "4g-dashcam",
+      "title": "D501 4G DashCam",
+      "description": "Dashcam 4G ขนาดกะทัดรัดพร้อมการบันทึกสองเลนส์ (ถนน + ภายในรถ) และการเชื่อมต่อคลาวด์",
+      "image": "/images/products/D501-main.jpg",
+      "icon": "Camera"
+    },
+    {
+      "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+      "categoryId": "4g-aicarbox",
+      "title": "D604 AI CarBox",
+      "description": "MDVR AI CarBox ที่ทรงพลังสำหรับการตรวจสอบวิดีโอฟลีตแบบรวมศูนย์และการประมวลผลข้อมูลอัจฉริยะ",
+      "image": "/images/products/D604-main.jpg",
+      "icon": "MonitorPlay"
+    },
+    {
+      "id": "d701-pro-truck-dashcam-lockable",
+      "categoryId": "4g-dashcam",
+      "title": "D701 Pro 4G DashCam",
+      "description": "Dashcam 4G ที่ทนทานสำหรับโลจิสติกส์และการขนส่งหนัก พร้อมความปลอดภัยข้อมูลแบบล็อคได้",
+      "image": "/images/products/D701-main.jpg",
+      "icon": "Camera"
+    },
+    {
+      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "categoryId": "4g-camera",
+      "title": "D901 AI Smart Camera",
+      "description": "กล้อง AI ระดับสูงสำหรับฟลีตพาณิชย์ พร้อมการบันทึกหลายช่องสัญญาณและการวิเคราะห์ AI ขั้นสูง",
+      "image": "/images/products/D901-main.jpg",
+      "icon": "Camera"
+    },
+    {
+      "id": "oem-custom-solution",
+      "categoryId": "oem-odm",
+      "title": "OEM & ODM Custom Solution",
+      "description": "บริการออกแบบฮาร์ดแวร์และการผลิตตามสั่ง เราสร้าง GPS tracker, dashcam และ MDVR ตามข้อกำหนดของคุณ",
+      "image": "/images/products/OEM-main.jpg",
+      "icon": "Wrench"
+    }
+  ]
+}
