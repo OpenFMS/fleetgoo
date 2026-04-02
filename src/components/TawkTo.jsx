@@ -4,15 +4,18 @@ import { useEffect } from 'react';
  * Tawk.to Live Chat Component
  * 
  * Usage: Import and add to Layout.astro or any page
+ * Must use client:load directive in Astro
  * 
  * @see https://www.tawk.to/
  */
 export default function TawkTo() {
   useEffect(() => {
+    // Skip if window is not available (SSR)
+    if (typeof window === 'undefined') return;
+
     // Initialize Tawk.to API
-    const Tawk_API = (window as any).Tawk_API || {};
-    (window as any).Tawk_API = Tawk_API;
-    (window as any).Tawk_LoadStart = new Date();
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_LoadStart = new Date();
 
     // Load Tawk.to script
     const script = document.createElement('script');
