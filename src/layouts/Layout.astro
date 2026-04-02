@@ -2,6 +2,7 @@
 import '@/index.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import TawkTo from '@/components/TawkTo';
 import { Toaster } from '@/components/ui/toaster';
 
 const { title, language = 'en', settings = {}, commonData = {} } = Astro.props;
@@ -82,6 +83,9 @@ const { title, language = 'en', settings = {}, commonData = {} } = Astro.props;
         
         {/* Global Toast notifications */}
         <Toaster client:load />
+
+        {/* Tawk.to Live Chat */}
+        <TawkTo client:load />
 
 	</body>
 </html>
