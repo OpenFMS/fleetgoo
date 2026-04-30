@@ -56,6 +56,23 @@
         ]
       },
       {
+        "id": "d601",
+        "label": "D601 - 6-Channel Terminal",
+        "title": "D601 4G 6-Channel Dual-SIM Smart Vehicle Terminal",
+        "description": "Professional-grade 4G intelligent vehicle video terminal supporting 6-channel AHD HD video recording and 1-channel IPC network camera (optional). Built-in NPU with 3.0T computing power supports DMS driver behavior analysis, ADAS advanced driving assistance, and BSD blind spot detection. Compliant with JT/T794/808/1076/1078 protocols.",
+        "image": "/images/products/D601-main.png",
+        "benefits": [
+          "6-channel AHD + 1-channel IPC synchronous recording",
+          "NPU 3.0T for DMS/ADAS/BSD intelligent systems",
+          "2 TF card slots, up to 512GB per slot"
+        ],
+        "bestFor": [
+          "Passenger & Hazardous Transport",
+          "Ride-hailing Fleets",
+          "Logistics & Transportation"
+        ]
+      },
+      {
         "id": "d901",
         "label": "D901 - 4CH MDVR",
         "title": "D901 4-Channel MDVR",

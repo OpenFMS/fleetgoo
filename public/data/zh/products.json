@@ -94,6 +94,13 @@
             "image": "/images/products/D604-main.jpg"
         },
         {
+            "id": "d601-6ch-ai-dashcam-terminal",
+            "categoryId": "4g-aicarbox",
+            "title": "D601 4G 6 通道双卡智能车载终端",
+            "description": "支持 6 路 AHD+1 路 IPC 视频输入，4G 全网通/5G 可选，DMS/ADAS/BSD 智能驾驶辅助系统。",
+            "image": "/images/products/D601-main.png"
+        },
+        {
             "id": "oem-custom-solution",
             "categoryId": "oem-odm",
             "title": "OEM定制化方案",

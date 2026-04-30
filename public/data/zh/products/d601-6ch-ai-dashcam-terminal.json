@@ -1,0 +1,111 @@
+{
+  "id": "d601-6ch-ai-dashcam-terminal",
+  "categoryId": "4g-aicarbox",
+  "title": "D601 4G 6 通道双卡智能车载终端",
+  "metaTitle": "D601 4G 6 通道双卡智能车载终端 | 多路视频监控",
+  "metaDesc": "D601 智能车载终端支持外拉 6 路 AHD+1 路 IPC 摄像头，4G 全网通/5G 可选，GPS/北斗双模定位，DMS/ADAS/BSD 智能驾驶辅助系统。",
+  "fullDescription": "D601 是一款专业级 4G 智能车载视频终端，支持六路 AHD 高清视频录制和一路 IPC 网络摄像头（可选）。采用 H.265 高效视频编码，支持 4G 全网通/5G（可选）、GPS/北斗/GLONASS 多模定位及 RTK 高精定位（可选）。内置 NPU 3.0T 算力，支持 DMS 驾驶行为分析、ADAS 辅助驾驶和 BSD 盲区检测系统。符合 JT/T794/808/1076/1078 等部标协议，支持 OTA 远程升级，宽电压 9-36V 输入，具备完善的电路保护功能。",
+  "images": [
+    "/images/products/D601-main.png",
+    "/images/products/D601-02.png",
+    "/images/products/D601-03.png",
+    "/images/products/D601-04.jpg"
+  ],
+  "features": [
+    "多路视频：支持外拉 6 路 AHD+1 路 IPC（可选），六路视频同步录制",
+    "高清画质：H.265/H.264编码，超清画质录制",
+    "AI算力：NPU3.0T 算力强劲",
+    "通用协议：符合 JT/T794/808/1076/1078 等协议标准",
+    "双卡存储：2 路 TF 卡座，每路最大支持 512GB",
+    "网络通信：支持 4G 全网通/5G（可选），WiFi 2.4G 802.11b/g/n",
+    "多模定位：GPS/北斗/GLONASS 多模定位，支持 RTK 高精定位（可选）",
+    "智能驾驶：支持 DMS/ADAS/BSD 智能驾驶辅助系统",
+    "接口丰富：4路 IO 输入，1路485 1路232，支持RJ45 ",
+    "宽压输入：9-36V 宽电压设计，具备欠压/短路/反接保护"
+  ],
+  "parameters": [
+    {
+      "label": "操作系统",
+      "value": "Linux 系统"
+    },
+    {
+      "label": "处理器",
+      "value": "RV1126B Quad A53 1.5GHz"
+    },
+    {
+      "label": "内存",
+      "value": "512MB + 512MB"
+    },
+    {
+      "label": "NPU 算力",
+      "value": "3.0T"
+    },
+    {
+      "label": "摄像头输入",
+      "value": "外拉 6 路 AHD + 1 路 IPC（可选）"
+    },
+    {
+      "label": "视频编码",
+      "value": "H.265/H.264"
+    },
+    {
+      "label": "音频编码",
+      "value": "G.711A, AAC"
+    },
+    {
+      "label": "G-sensor",
+      "value": "内置 6 轴陀螺仪"
+    },
+    {
+      "label": "存储",
+      "value": "2 路 TF 卡座，每路最大 512GB"
+    },
+    {
+      "label": "4G 网络",
+      "value": "4G 全网通（默认 CAT4，可选 5G）"
+    },
+    {
+      "label": "WiFi",
+      "value": "2.4G 802.11b/g/n"
+    },
+    {
+      "label": "定位系统",
+      "value": "GPS/北斗/GLONASS，支持 RTK 高精定位（可选）"
+    },
+    {
+      "label": "IO 接口",
+      "value": "4 路输入，2 路输出"
+    },
+    {
+      "label": "串口",
+      "value": "1 路 RS485, 1 路 RS232"
+    },
+    {
+      "label": "CAN 接口",
+      "value": "1 路 CAN FD（兼容 CAN）"
+    },
+    {
+      "label": "其他接口",
+      "value": "SOS、AVOUT、RJ45、MIC、喇叭接口"
+    },
+    {
+      "label": "电源输入",
+      "value": "DC 9-36V 宽电压"
+    },
+    {
+      "label": "工作温度",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "储存温度",
+      "value": "-30℃ ~ 85℃"
+    },
+    {
+      "label": "工作湿度",
+      "value": "10% ~ 95% RH"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x D601 主机，1x SIM卡托，1x 电源线，1x 4G 天线，1x GPS 天线，1x 配件包",
+  "icon": "Video"
+}

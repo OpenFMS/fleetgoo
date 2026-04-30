@@ -56,6 +56,23 @@
         ]
       },
       {
+        "id": "d601",
+        "label": "D601 - Terminal 6 Canales",
+        "title": "D601 Terminal Inteligente Vehicular 4G 6 Canales Dual SIM",
+        "description": "Terminal de video inteligente 4G de grado profesional que soporta grabación de video HD de 6 canales AHD y 1 canal de cámara de red IPC (opcional). NPU integrada con 3.0T de potencia de computación que soporta análisis de comportamiento del conductor DMS, asistencia de conducción avanzada ADAS y detección de puntos ciegos BSD.",
+        "image": "/images/products/D601-main.png",
+        "benefits": [
+          "Grabación sincrónica 6 canales AHD + 1 canal IPC",
+          "NPU 3.0T para sistemas inteligentes DMS/ADAS/BSD",
+          "2 ranuras TF, hasta 512GB por ranura"
+        ],
+        "bestFor": [
+          "Transporte de Pasajeros y Peligrosos",
+          "Flotas de Ride-hailing",
+          "Logística y Transporte"
+        ]
+      },
+      {
         "id": "d901",
         "label": "D901 - MDVR 4CH",
         "title": "D901 MDVR de 4 Canales",

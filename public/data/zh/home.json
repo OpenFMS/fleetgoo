@@ -56,6 +56,23 @@
         ]
       },
       {
+        "id": "d601",
+        "label": "D601 - 6 通道智能终端",
+        "title": "D601 4G 6 通道双卡智能车载终端",
+        "description": "专业级 4G 智能车载视频终端，支持 6 路 AHD 高清视频录制和 1 路 IPC 网络摄像头（可选）。内置 NPU 3.0T 算力，支持 DMS 驾驶行为分析、ADAS 辅助驾驶和 BSD 盲区检测系统。符合 JT/T794/808/1076/1078 等部标协议。",
+        "image": "/images/products/D601-main.png",
+        "benefits": [
+          "6 路 AHD+1 路 IPC 多路视频同步录制",
+          "NPU 3.0T 算力支持 DMS/ADAS/BSD",
+          "2 路 TF 卡座，每路最大 512GB"
+        ],
+        "bestFor": [
+          "两客一危",
+          "网约车车队",
+          "物流运输"
+        ]
+      },
+      {
         "id": "d901",
         "label": "D901 - 4通道MDVR",
         "title": "D901 4通道MDVR",

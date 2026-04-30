@@ -80,6 +80,14 @@
       "icon": "MonitorPlay"
     },
     {
+      "id": "d601-6ch-ai-dashcam-terminal",
+      "categoryId": "4g-aicarbox",
+      "title": "D601 Terminal 4G 6 ช่อง",
+      "description": "Terminal มืออาชีพ 6 ช่อง AHD + 1 ช่อง IPC พร้อม 4G全网通/5G, ระบบอัจฉริยะ DMS/ADAS/BSD",
+      "image": "/images/products/D601-main.png",
+      "icon": "Server"
+    },
+    {
       "id": "d701-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
       "title": "D701 Pro 4G DashCam",

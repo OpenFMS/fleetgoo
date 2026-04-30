@@ -1,0 +1,110 @@
+{
+  "id": "d601-6ch-ai-dashcam-terminal",
+  "categoryId": "4g-aicarbox",
+  "title": "D601 Terminal Inteligente Vehicular 4G 6 Canales Dual SIM",
+  "metaTitle": "D601 Terminal de Video AI 4G 6 Canales | Vigilancia de Video Multicanal",
+  "metaDesc": "La terminal inteligente D601 soporta 6 canales AHD + 1 canal IPC, 4G全网通/5G opcional, posicionamiento GPS/Beidou, sistemas de asistencia de conducción inteligente DMS/ADAS/BSD.",
+  "fullDescription": "El D601 es una terminal de video inteligente 4G de grado profesional que soporta grabación de video HD de 6 canales AHD y 1 canal de cámara de red IPC (opcional). Cuenta con codificación de video eficiente H.265, 4G全网通/5G (opcional), posicionamiento multimodo GPS/Beidou/GLONASS con posicionamiento de alta precisión RTK (opcional). NPU integrada con 3.0T de potencia de computación que soporta análisis de comportamiento del conductor DMS, asistencia de conducción avanzada ADAS y detección de puntos ciegos BSD. Cumple con los protocolos ministeriales JT/T794/808/1076/1078, soporta actualizaciones remotas OTA, entrada de voltaje amplio 9-36V con protección completa del circuito.",
+  "images": [
+    "/images/products/D601-main.png",
+    "/images/products/D601-02.png",
+    "/images/products/D601-03.png",
+    "/images/products/D601-04.jpg"
+  ],
+  "features": [
+    "Video Multicanal: Soporta 6 canales AHD + 1 canal IPC (opcional), grabación sincrónica de 6 canales",
+    "Calidad HD: Codificación H.265/H.264 para grabación de video ultra clara",
+    "Protocolo Ministerial: Cumple con estándares JT/T794/808/1076/1078",
+    "Dual SIM: 2 ranuras para tarjeta TF, hasta 512GB por ranura",
+    "Comunicación de Red: 4G全网通/5G (opcional), WiFi 2.4G 802.11b/g/n",
+    "Posicionamiento Multimodo: GPS/Beidou/GLONASS con posicionamiento de alta precisión RTK (opcional)",
+    "Conducción Inteligente: Sistemas de asistencia de conducción inteligente DMS/ADAS/BSD",
+    "Alarma de Un Botón: Botón de alarma de emergencia SOS",
+    "Entrada de Voltio Amplio: Diseño 9-36V con protección de subtensión/cortocircuito/conexión inversa"
+  ],
+  "parameters": [
+    {
+      "label": "Sistema Operativo",
+      "value": "Linux"
+    },
+    {
+      "label": "Procesador",
+      "value": "RV1126B Quad A53 1.5GHz"
+    },
+    {
+      "label": "Memoria",
+      "value": "512MB + 512MB"
+    },
+    {
+      "label": "Potencia de Computación NPU",
+      "value": "3.0T"
+    },
+    {
+      "label": "Entrada de Cámara",
+      "value": "6 canales AHD + 1 canal IPC (opcional)"
+    },
+    {
+      "label": "Codificación de Video",
+      "value": "H.265/H.264"
+    },
+    {
+      "label": "Codificación de Audio",
+      "value": "G.711A, AAC"
+    },
+    {
+      "label": "G-sensor",
+      "value": "Giroscopio de 6 ejes integrado"
+    },
+    {
+      "label": "Almacenamiento",
+      "value": "2 ranuras para tarjeta TF, hasta 512GB por ranura"
+    },
+    {
+      "label": "Red 4G",
+      "value": "4G全网通 (CAT4 predeterminado, 5G opcional)"
+    },
+    {
+      "label": "WiFi",
+      "value": "2.4G 802.11b/g/n"
+    },
+    {
+      "label": "Sistema de Posicionamiento",
+      "value": "GPS/Beidou/GLONASS, posicionamiento de alta precisión RTK (opcional)"
+    },
+    {
+      "label": "Interfaz IO",
+      "value": "4 entradas, 2 salidas"
+    },
+    {
+      "label": "Puerto Serial",
+      "value": "1x RS485, 1x RS232"
+    },
+    {
+      "label": "Interfaz CAN",
+      "value": "1x CAN FD (compatible con CAN)"
+    },
+    {
+      "label": "Otras Interfaces",
+      "value": "SOS, AVOUT, RJ45, MIC, Altavoz"
+    },
+    {
+      "label": "Entrada de Alimentación",
+      "value": "DC 9-36V voltio amplio"
+    },
+    {
+      "label": "Temperatura de Operación",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Temperatura de Almacenamiento",
+      "value": "-30℃ ~ 85℃"
+    },
+    {
+      "label": "Humedad de Operación",
+      "value": "10% ~ 95% RH"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Unidad Principal D601, 1x Cámara Externa (opcional), 1x Cable de Alimentación, 1x Botón SOS, 1x Antena 4G, 1x Antena GPS, 1x Kit de Accesorios",
+  "icon": "Video"
+}
