@@ -1,15 +1,15 @@
 {
-  "id": "d601-6ch-ai-dashcam-terminal",
+  "id": "d606-6ch-ai-dashcam-terminal",
   "categoryId": "4g-aicarbox",
-  "title": "D601 4G 6 通道双卡智能车载终端",
-  "metaTitle": "D601 4G 6 通道双卡智能车载终端 | 多路视频监控",
-  "metaDesc": "D601 智能车载终端支持外拉 6 路 AHD+1 路 IPC 摄像头，4G 全网通/5G 可选，GPS/北斗双模定位，DMS/ADAS/BSD 智能驾驶辅助系统。",
-  "fullDescription": "D601 是一款专业级 4G 智能车载视频终端，支持六路 AHD 高清视频录制和一路 IPC 网络摄像头（可选）。采用 H.265 高效视频编码，支持 4G 全网通/5G（可选）、GPS/北斗/GLONASS 多模定位及 RTK 高精定位（可选）。内置 NPU 3.0T 算力，支持 DMS 驾驶行为分析、ADAS 辅助驾驶和 BSD 盲区检测系统。符合 JT/T794/808/1076/1078 等部标协议，支持 OTA 远程升级，宽电压 9-36V 输入，具备完善的电路保护功能。",
+  "title": "D606 4G 6 通道双卡智能车载终端",
+  "metaTitle": "D606 4G 6 通道双卡智能车载终端 | 多路视频监控",
+  "metaDesc": "D606 智能车载终端支持外拉 6 路 AHD+1 路 IPC 摄像头，4G 全网通/5G 可选，GPS/北斗双模定位，DMS/ADAS/BSD 智能驾驶辅助系统。",
+  "fullDescription": "D606 是一款专业级 4G 智能车载视频终端，支持六路 AHD 高清视频录制和一路 IPC 网络摄像头（可选）。采用 H.265 高效视频编码，支持 4G 全网通/5G（可选）、GPS/北斗/GLONASS 多模定位及 RTK 高精定位（可选）。内置 NPU 3.0T 算力，支持 DMS 驾驶行为分析、ADAS 辅助驾驶和 BSD 盲区检测系统。符合 JT/T794/808/1076/1078 等部标协议，支持 OTA 远程升级，宽电压 9-36V 输入，具备完善的电路保护功能。",
   "images": [
-    "/images/products/D601-main.png",
-    "/images/products/D601-02.png",
-    "/images/products/D601-03.png",
-    "/images/products/D601-04.jpg"
+    "/images/products/D606-main.png",
+    "/images/products/D606-02.png",
+    "/images/products/D606-03.png",
+    "/images/products/D606-04.jpg"
   ],
   "features": [
     "多路视频：支持外拉 6 路 AHD+1 路 IPC（可选），六路视频同步录制",
@@ -106,6 +106,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x D601 主机，1x SIM卡托，1x 电源线，1x 4G 天线，1x GPS 天线，1x 配件包",
+  "packaging": "1x D606 主机，1x SIM卡托，1x 电源线，1x 4G 天线，1x GPS 天线，1x 配件包",
   "icon": "Video"
 }

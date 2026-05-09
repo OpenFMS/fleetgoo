@@ -1,15 +1,15 @@
 {
-  "id": "d601-6ch-ai-dashcam-terminal",
+  "id": "d606-6ch-ai-dashcam-terminal",
   "categoryId": "4g-aicarbox",
-  "title": "D601 4G 6-Channel Dual-SIM Smart Vehicle Terminal",
-  "metaTitle": "D601 4G 6-Channel AI Dashcam Terminal | Multi-Channel Video Surveillance",
-  "metaDesc": "D601 smart vehicle terminal supports 6-channel AHD + 1-channel IPC cameras, 4G全网通/5G optional, GPS/Beidou dual-mode positioning, DMS/ADAS/BSD intelligent driving assistance systems.",
-  "fullDescription": "The D601 is a professional-grade 4G intelligent vehicle video terminal supporting 6-channel AHD HD video recording and 1-channel IPC network camera (optional). Featuring H.265 efficient video encoding, 4G/5G (optional), GPS/Beidou/GLONASS multi-mode positioning with RTK high-precision positioning (optional). Built-in NPU with 3.0T computing power supports DMS driver behavior analysis, ADAS advanced driving assistance, and BSD blind spot detection. Compliant with JT/T794/808/1076/1078 ministerial protocols, supports OTA remote upgrades, 9-36V wide voltage input with comprehensive circuit protection.",
+  "title": "D606 4G 6-Channel Dual-SIM Smart Vehicle Terminal",
+  "metaTitle": "D606 4G 6-Channel AI Dashcam Terminal | Multi-Channel Video Surveillance",
+  "metaDesc": "D606 smart vehicle terminal supports 6-channel AHD + 1-channel IPC cameras, 4G/5G optional, GPS/Beidou dual-mode positioning, DMS/ADAS/BSD intelligent driving assistance systems.",
+  "fullDescription": "The D606 is a professional-grade 4G intelligent vehicle video terminal supporting 6-channel AHD HD video recording and 1-channel IPC network camera (optional). Featuring H.265 efficient video encoding, 4G/5G (optional), GPS/Beidou/GLONASS multi-mode positioning with RTK high-precision positioning (optional). Built-in NPU with 3.0T computing power supports DMS driver behavior analysis, ADAS advanced driving assistance, and BSD blind spot detection. Compliant with JT/T794/808/1076/1078 ministerial protocols, supports OTA remote upgrades, 9-36V wide voltage input with comprehensive circuit protection.",
   "images": [
-    "/images/products/D601-main.png",
-    "/images/products/D601-02.png",
-    "/images/products/D601-03.png",
-    "/images/products/D601-04.jpg"
+    "/images/products/D606-main.png",
+    "/images/products/D606-02.png",
+    "/images/products/D606-03.png",
+    "/images/products/D606-04.jpg"
   ],
   "features": [
     "Multi-channel Video: Supports 6-channel AHD + 1-channel IPC (optional), 6-channel synchronous recording",
@@ -105,6 +105,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x D601 Main Unit, 1, 1xSIM, 1x Power Cable,  1x 4G Antenna, 1x GPS Antenna, 1x Accessory Kit",
+  "packaging": "1x D606 Main Unit, 1, 1xSIM, 1x Power Cable,  1x 4G Antenna, 1x GPS Antenna, 1x Accessory Kit",
   "icon": "Video"
 }

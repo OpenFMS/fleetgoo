@@ -1,13 +1,13 @@
 # 新产品上架工作流程
 
 **创建日期**: 2026-04-30  
-**产品型号**: D601（首个参考案例）
+**产品型号**: D606（首个参考案例）
 
 ---
 
 ## 📋 任务概述
 
-将新产品（以 D601 为例）上架到网站，支持多语言展示，并归类到正确的产品类别。
+将新产品（以 D606 为例）上架到网站，支持多语言展示，并归类到正确的产品类别。
 
 ---
 
@@ -19,7 +19,7 @@
 |------|------|------|
 | 产品规格书 | XLS/XLSX（中文） | 提取产品参数、功能特性 |
 | 产品图片 | PNG/JPG（3-5 张） | 产品展示 |
-| 产品名称 | 文本 | 如"D601 4G 6 通道双卡智能车载终端" |
+| 产品名称 | 文本 | 如"D606 4G 6 通道双卡智能车载终端" |
 
 ---
 
@@ -69,10 +69,10 @@ for row in ws.iter_rows():
 将图片从临时目录复制到项目图片目录，并重命名：
 
 ```bash
-cp tmp/D601-主图.png       public/images/products/D601-main.png
-cp tmp/D601-不同角度.png   public/images/products/D601-02.png
-cp tmp/D601-主机 + 配件.png public/images/products/D601-03.png
-cp tmp/D601-应用场景.jpg   public/images/products/D601-04.jpg
+cp tmp/D606-主图.png       public/images/products/D606-main.png
+cp tmp/D606-不同角度.png   public/images/products/D606-02.png
+cp tmp/D606-主机 + 配件.png public/images/products/D606-03.png
+cp tmp/D606-应用场景.jpg   public/images/products/D606-04.jpg
 ```
 
 **命名规则**: `{型号}-{序号}.{ext}`，主图使用 `main`。
@@ -88,17 +88,17 @@ cp tmp/D601-应用场景.jpg   public/images/products/D601-04.jpg
 **JSON 结构**:
 ```json
 {
-  "id": "d601-6ch-ai-dashcam-terminal",
+  "id": "d606-6ch-ai-dashcam-terminal",
   "categoryId": "4g-aicarbox",
-  "title": "D601 4G 6 通道双卡智能车载终端",
-  "metaTitle": "D601 4G 6 通道双卡智能车载终端 | 多路视频监控",
+  "title": "D606 4G 6 通道双卡智能车载终端",
+  "metaTitle": "D606 4G 6 通道双卡智能车载终端 | 多路视频监控",
   "metaDesc": "简短描述（SEO）",
   "fullDescription": "完整产品描述",
   "images": [
-    "/images/products/D601-main.png",
-    "/images/products/D601-02.png",
-    "/images/products/D601-03.png",
-    "/images/products/D601-04.jpg"
+    "/images/products/D606-main.png",
+    "/images/products/D606-02.png",
+    "/images/products/D606-03.png",
+    "/images/products/D606-04.jpg"
   ],
   "features": [
     "特性 1",
@@ -129,11 +129,11 @@ cp tmp/D601-应用场景.jpg   public/images/products/D601-04.jpg
 |-------------|----------|----------|
 | `gps-tracker` | GPS 定位器 | C08W, C08L |
 | `4g-dashcam` | 4G 行车记录仪 | D501, D701 |
-| `4g-aicarbox` | AI 智能主机 | D604, **D601** |
+| `4g-aicarbox` | AI 智能主机 | D604, **D606** |
 | `4g-camera` | AI 摄像头 | D401, D901 |
 | `oem-odm` | OEM/ODM 定制 | 定制服务 |
 
-**D601 归类**: `4g-aicarbox`（与 D604 同类）
+**D606 归类**: `4g-aicarbox`（与 D604 同类）
 
 ---
 
@@ -145,11 +145,11 @@ cp tmp/D601-应用场景.jpg   public/images/products/D601-04.jpg
 
 ```json
 {
-  "id": "d601-6ch-ai-dashcam-terminal",
+  "id": "d606-6ch-ai-dashcam-terminal",
   "categoryId": "4g-aicarbox",
-  "title": "D601 4G 6 通道双卡智能车载终端",
+  "title": "D606 4G 6 通道双卡智能车载终端",
   "description": "支持 6 路 AHD+1 路 IPC 视频输入，4G 全网通/5G 可选，DMS/ADAS/BSD 智能驾驶辅助系统。",
-  "image": "/images/products/D601-main.png"
+  "image": "/images/products/D606-main.png"
 }
 ```
 
@@ -163,15 +163,15 @@ with open('public/data/zh/products.json', 'r', encoding='utf-8') as f:
 d604_index = next(i for i, item in enumerate(data['items']) 
                   if item['id'] == 'd604-8ch-mdvr-ai-box-fleet-surveillance')
 
-d601_item = {
-    "id": "d601-6ch-ai-dashcam-terminal",
+d606_item = {
+    "id": "d606-6ch-ai-dashcam-terminal",
     "categoryId": "4g-aicarbox",
-    "title": "D601 4G 6 通道双卡智能车载终端",
+    "title": "D606 4G 6 通道双卡智能车载终端",
     "description": "支持 6 路 AHD+1 路 IPC 视频输入...",
-    "image": "/images/products/D601-main.png"
+    "image": "/images/products/D606-main.png"
 }
 
-data['items'].insert(d604_index + 1, d601_item)
+data['items'].insert(d604_index + 1, d606_item)
 
 with open('public/data/zh/products.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
@@ -192,14 +192,14 @@ with open('public/data/zh/products.json', 'w', encoding='utf-8') as f:
 
 **验证命令**:
 ```bash
-# 检查 D601 是否在所有 products.json 中
-grep -l "d601-6ch-ai-dashcam-terminal" public/data/*/products.json
+# 检查 D606 是否在所有 products.json 中
+grep -l "d606-6ch-ai-dashcam-terminal" public/data/*/products.json
 
 # 检查 categoryId 是否一致
-grep '"categoryId"' public/data/*/products/d601-6ch-ai-dashcam-terminal.json
+grep '"categoryId"' public/data/*/products/d606-6ch-ai-dashcam-terminal.json
 
 # 检查图片文件
-ls -la public/images/products/D601*
+ls -la public/images/products/D606*
 ```
 
 ---
@@ -226,9 +226,9 @@ ls -la public/images/products/D601*
 **命令示例**:
 ```bash
 npm run add-product \
-  --specs=tmp/D601-规格书.xlsx \
-  --images=tmp/D601-images/ \
-  --name="D601 4G 6 通道双卡智能车载终端" \
+  --specs=tmp/D606-规格书.xlsx \
+  --images=tmp/D606-images/ \
+  --name="D606 4G 6 通道双卡智能车载终端" \
   --category="4g-aicarbox"
 ```
 
@@ -236,7 +236,7 @@ npm run add-product \
 
 ## 📝 参考文件
 
-- D601 产品详情：`public/data/zh/products/d601-6ch-ai-dashcam-terminal.json`
+- D606 产品详情：`public/data/zh/products/d606-6ch-ai-dashcam-terminal.json`
 - D604 产品详情（同类参考）：`public/data/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance.json`
 - 产品列表页：`public/data/zh/products.json`
 
@@ -246,4 +246,4 @@ npm run add-product \
 
 | 日期 | 操作 | 产品 | 备注 |
 |------|------|------|------|
-| 2026-04-30 | 新增 | D601 | 首个参考案例，归类到 `4g-aicarbox` |
+| 2026-04-30 | 新增 | D606 | 首个参考案例，归类到 `4g-aicarbox` |

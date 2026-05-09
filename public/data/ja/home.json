@@ -56,11 +56,11 @@
         ]
       },
       {
-        "id": "d601",
-        "label": "D601 - 6 チャンネルターミナル",
-        "title": "D601 4G 6 チャンネルデュアル SIM スマート車載ターミナル",
+        "id": "d606",
+        "label": "D606 - 6 チャンネルターミナル",
+        "title": "D606 4G 6 チャンネルデュアル SIM スマート車載ターミナル",
         "description": "6 チャンネル AHD HD ビデオ録画と 1 チャンネル IPC ネットワークカメラ（オプション）をサポートするプロフェッショナルグレードの 4G 智能車載ビデオターミナル。内蔵 NPU は 3.0T の演算能力を持ち、DMS 運転手行動分析、ADAS 先進運転支援、BSD ブラインドスポット検出をサポートします。",
-        "image": "/images/products/D601-main.png",
+        "image": "/images/products/D606-main.png",
         "benefits": [
           "6 チャンネル AHD + 1 チャンネル IPC 同期録画",
           "DMS/ADAS/BSD 智能システム用 NPU 3.0T",

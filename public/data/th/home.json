@@ -56,11 +56,11 @@
         ]
       },
       {
-        "id": "d601",
-        "label": "D601 - Terminal 6 ช่อง",
-        "title": "D601.Terminal อัจฉริยะยานยนต์ 4G 6 ช่อง Dual SIM",
+        "id": "d606",
+        "label": "D606 - Terminal 6 ช่อง",
+        "title": "D606.Terminal อัจฉริยะยานยนต์ 4G 6 ช่อง Dual SIM",
         "description": "Terminal วิดีโออัจฉริยะยานยนต์ 4G ระดับมืออาชีพที่รองรับการบันทึกวิดีโอ HD 6 ช่อง AHD และกล้องเครือข่าย IPC 1 ช่อง (ตัวเลือก) NPU ในตัวที่มีพลังการคำนวณ 3.0T รองรับระบบวิเคราะห์พฤติกรรมผู้ขับขี่ DMS, ระบบช่วยเหลือการขับขี่ขั้นสูง ADAS และระบบตรวจจับจุดบอด BSD",
-        "image": "/images/products/D601-main.png",
+        "image": "/images/products/D606-main.png",
         "benefits": [
           "การบันทึกแบบซิงโครนัส 6 ช่อง AHD + 1 ช่อง IPC",
           "NPU 3.0T สำหรับระบบอัจฉริยะ DMS/ADAS/BSD",

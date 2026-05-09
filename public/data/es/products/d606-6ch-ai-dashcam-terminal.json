@@ -1,22 +1,22 @@
 {
-  "id": "d601-6ch-ai-dashcam-terminal",
+  "id": "d606-6ch-ai-dashcam-terminal",
   "categoryId": "4g-aicarbox",
-  "title": "D601 Terminal Inteligente Vehicular 4G 6 Canales Dual SIM",
-  "metaTitle": "D601 Terminal de Video AI 4G 6 Canales | Vigilancia de Video Multicanal",
-  "metaDesc": "La terminal inteligente D601 soporta 6 canales AHD + 1 canal IPC, 4G全网通/5G opcional, posicionamiento GPS/Beidou, sistemas de asistencia de conducción inteligente DMS/ADAS/BSD.",
-  "fullDescription": "El D601 es una terminal de video inteligente 4G de grado profesional que soporta grabación de video HD de 6 canales AHD y 1 canal de cámara de red IPC (opcional). Cuenta con codificación de video eficiente H.265, 4G全网通/5G (opcional), posicionamiento multimodo GPS/Beidou/GLONASS con posicionamiento de alta precisión RTK (opcional). NPU integrada con 3.0T de potencia de computación que soporta análisis de comportamiento del conductor DMS, asistencia de conducción avanzada ADAS y detección de puntos ciegos BSD. Cumple con los protocolos ministeriales JT/T794/808/1076/1078, soporta actualizaciones remotas OTA, entrada de voltaje amplio 9-36V con protección completa del circuito.",
+  "title": "D606 Terminal Inteligente Vehicular 4G 6 Canales Dual SIM",
+  "metaTitle": "D606 Terminal de Video AI 4G 6 Canales | Vigilancia de Video Multicanal",
+  "metaDesc": "La terminal inteligente D606 soporta 6 canales AHD + 1 canal IPC, 4G/5G opcional, posicionamiento GPS/Beidou, sistemas de asistencia de conducción inteligente DMS/ADAS/BSD.",
+  "fullDescription": "El D606 es una terminal de video inteligente 4G de grado profesional que soporta grabación de video HD de 6 canales AHD y 1 canal de cámara de red IPC (opcional). Cuenta con codificación de video eficiente H.265, 4G/5G (opcional), posicionamiento multimodo GPS/Beidou/GLONASS con posicionamiento de alta precisión RTK (opcional). NPU integrada con 3.0T de potencia de computación que soporta análisis de comportamiento del conductor DMS, asistencia de conducción avanzada ADAS y detección de puntos ciegos BSD. Cumple con los protocolos ministeriales JT/T794/808/1076/1078, soporta actualizaciones remotas OTA, entrada de voltaje amplio 9-36V con protección completa del circuito.",
   "images": [
-    "/images/products/D601-main.png",
-    "/images/products/D601-02.png",
-    "/images/products/D601-03.png",
-    "/images/products/D601-04.jpg"
+    "/images/products/D606-main.png",
+    "/images/products/D606-02.png",
+    "/images/products/D606-03.png",
+    "/images/products/D606-04.jpg"
   ],
   "features": [
     "Video Multicanal: Soporta 6 canales AHD + 1 canal IPC (opcional), grabación sincrónica de 6 canales",
     "Calidad HD: Codificación H.265/H.264 para grabación de video ultra clara",
     "Protocolo Ministerial: Cumple con estándares JT/T794/808/1076/1078",
     "Dual SIM: 2 ranuras para tarjeta TF, hasta 512GB por ranura",
-    "Comunicación de Red: 4G全网通/5G (opcional), WiFi 2.4G 802.11b/g/n",
+    "Comunicación de Red: 4G/5G (opcional), WiFi 2.4G 802.11b/g/n",
     "Posicionamiento Multimodo: GPS/Beidou/GLONASS con posicionamiento de alta precisión RTK (opcional)",
     "Conducción Inteligente: Sistemas de asistencia de conducción inteligente DMS/ADAS/BSD",
     "Alarma de Un Botón: Botón de alarma de emergencia SOS",
@@ -61,7 +61,7 @@
     },
     {
       "label": "Red 4G",
-      "value": "4G全网通 (CAT4 predeterminado, 5G opcional)"
+      "value": "4G (CAT4 predeterminado, 5G opcional)"
     },
     {
       "label": "WiFi",
@@ -105,6 +105,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x Unidad Principal D601, 1x Cámara Externa (opcional), 1x Cable de Alimentación, 1x Botón SOS, 1x Antena 4G, 1x Antena GPS, 1x Kit de Accesorios",
+  "packaging": "1x Unidad Principal D606, 1x Cámara Externa (opcional), 1x Cable de Alimentación, 1x Botón SOS, 1x Antena 4G, 1x Antena GPS, 1x Kit de Accesorios",
   "icon": "Video"
 }
