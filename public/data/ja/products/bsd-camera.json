@@ -1,0 +1,89 @@
+{
+  "id": "bsd-camera",
+  "categoryId": "accessories",
+  "title": "BSDカメラ",
+  "metaTitle": "BSDカメラ - 補助製品",
+  "metaDesc": "BSDカメラ の仕様と製品詳細",
+  "fullDescription": "BSDカメラ は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/bsd-camera.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "カメラタイプ",
+      "value": "Outdoor Waterproof Full-Color BSD Camera"
+    },
+    {
+      "label": "ケーブルコネクター",
+      "value": "Standard Aviation Connector"
+    },
+    {
+      "label": "チップ",
+      "value": "1/2.9＂，GC2053"
+    },
+    {
+      "label": "フレームレート",
+      "value": "25fps"
+    },
+    {
+      "label": "有効画素数",
+      "value": "1920*1080P"
+    },
+    {
+      "label": "カメラ角度",
+      "value": "Vertical Angle: 50°, Horizontal Angle: 100°, Diagonal Angle: 135°"
+    },
+    {
+      "label": "走査方式",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "同期方式",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "解像度",
+      "value": "1080P"
+    },
+    {
+      "label": "ビデオ出力モード",
+      "value": "AHD Analog HD"
+    },
+    {
+      "label": "画像モード",
+      "value": "Day/Night Full Color"
+    },
+    {
+      "label": "ホワイトバランス",
+      "value": "Auto"
+    },
+    {
+      "label": "露出",
+      "value": "Auto"
+    },
+    {
+      "label": "電源電圧",
+      "value": "DC12V"
+    },
+    {
+      "label": "動作温度・湿度",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    },
+    {
+      "label": "防水等級",
+      "value": "IP67 Water Protection Rating Standard"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x BSDカメラ",
+  "icon": "Cpu"
+}

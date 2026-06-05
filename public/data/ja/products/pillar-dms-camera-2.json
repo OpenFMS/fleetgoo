@@ -1,0 +1,93 @@
+{
+  "id": "pillar-dms-camera-2",
+  "categoryId": "accessories",
+  "title": "支柱型DMSカメラ - 2",
+  "metaTitle": "支柱型DMSカメラ - 2 - 補助製品",
+  "metaDesc": "支柱型DMSカメラ - 2 の仕様と製品詳細",
+  "fullDescription": "支柱型DMSカメラ - 2 は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/pillar-dms-camera-2.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "カメラタイプ",
+      "value": "Pillar Type DMS Camera"
+    },
+    {
+      "label": "ケーブルコネクター",
+      "value": "Standard Aviation Plug"
+    },
+    {
+      "label": "焦点距離",
+      "value": "6mm"
+    },
+    {
+      "label": "絞り",
+      "value": "F2.1"
+    },
+    {
+      "label": "フレームレート",
+      "value": "25fps"
+    },
+    {
+      "label": "解像度",
+      "value": "1280*720P"
+    },
+    {
+      "label": "ビデオフォーマット",
+      "value": "Default to PAL System"
+    },
+    {
+      "label": "視野角",
+      "value": "D=69° H=56° V=32°"
+    },
+    {
+      "label": "画像モード",
+      "value": "Black & White"
+    },
+    {
+      "label": "ダイナミックレンジ",
+      "value": "83dB"
+    },
+    {
+      "label": "信号対雑音比",
+      "value": "41dB"
+    },
+    {
+      "label": "レンズ",
+      "value": "1G3P"
+    },
+    {
+      "label": "電流",
+      "value": "70mA"
+    },
+    {
+      "label": "電源電圧",
+      "value": "DC12V"
+    },
+    {
+      "label": "消費電力",
+      "value": "0.84W"
+    },
+    {
+      "label": "動作温度・湿度",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-25℃ ~ 80℃"
+    },
+    {
+      "label": "Standard Cable Length",
+      "value": "2450mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x 支柱型DMSカメラ - 2",
+  "icon": "Cpu"
+}

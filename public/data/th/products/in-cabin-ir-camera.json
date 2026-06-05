@@ -1,0 +1,89 @@
+{
+  "id": "in-cabin-ir-camera",
+  "categoryId": "accessories",
+  "title": "กล้องอินฟราเรดในห้องโดยสาร",
+  "metaTitle": "กล้องอินฟราเรดในห้องโดยสาร - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "กล้องอินฟราเรดในห้องโดยสาร ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "กล้องอินฟราเรดในห้องโดยสาร เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/in-cabin-ir-camera.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ประเภทกล้อง",
+      "value": "In-Cabin IR Camera"
+    },
+    {
+      "label": "ตัวเชื่อมต่อเคเบิล",
+      "value": "Standard BMW Connector"
+    },
+    {
+      "label": "ชิป",
+      "value": "1/3＂,GC2083"
+    },
+    {
+      "label": "อัตราเฟรม",
+      "value": "25fps"
+    },
+    {
+      "label": "พิกเซลที่มีประสิทธิภาพ",
+      "value": "1920*1080P"
+    },
+    {
+      "label": "มุมกล้อง",
+      "value": "Vertical Angle: 60°, Horizontal Angle: 105°, Diagonal Angle: 130°"
+    },
+    {
+      "label": "ระบบสแกน",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "วิธีการซิงโครไนซ์",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "ความละเอียด",
+      "value": "1080P"
+    },
+    {
+      "label": "โหมดเอาต์พุตวิดีโอ",
+      "value": "AHD Analog HD"
+    },
+    {
+      "label": "โหมดภาพ",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "การเปิดรับแสง",
+      "value": "Auto"
+    },
+    {
+      "label": "เลนส์",
+      "value": "2G2P"
+    },
+    {
+      "label": "ตัวกรอง IR",
+      "value": "940 IR"
+    },
+    {
+      "label": "แรงดันจ่ายไฟ",
+      "value": "DC5V"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการทำงาน",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการจัดเก็บ",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x กล้องอินฟราเรดในห้องโดยสาร",
+  "icon": "Cpu"
+}

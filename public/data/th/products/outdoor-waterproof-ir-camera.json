@@ -1,0 +1,93 @@
+{
+  "id": "outdoor-waterproof-ir-camera",
+  "categoryId": "accessories",
+  "title": "กล้องอินฟราเรดกันน้ำภายนอก",
+  "metaTitle": "กล้องอินฟราเรดกันน้ำภายนอก - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "กล้องอินฟราเรดกันน้ำภายนอก ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "กล้องอินฟราเรดกันน้ำภายนอก เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/outdoor-waterproof-ir-camera.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ประเภทกล้อง",
+      "value": "Outdoor Waterproof IR Camera"
+    },
+    {
+      "label": "ตัวเชื่อมต่อเคเบิล",
+      "value": "Standard Waterproof Aviation Connector"
+    },
+    {
+      "label": "ชิป",
+      "value": "1/2.9＂GC2053"
+    },
+    {
+      "label": "อัตราเฟรม",
+      "value": "25fps"
+    },
+    {
+      "label": "พิกเซลที่มีประสิทธิภาพ",
+      "value": "Selectable 1080P and 720P"
+    },
+    {
+      "label": "มุมกล้อง",
+      "value": "Vertical Angle: 69°, Horizontal Angle: 102°, Diagonal Angle: 135°"
+    },
+    {
+      "label": "ระบบสแกน",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "วิธีการซิงโครไนซ์",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "ความละเอียด",
+      "value": "1080p"
+    },
+    {
+      "label": "โหมดเอาต์พุตวิดีโอ",
+      "value": "Analog HD AHD Signal"
+    },
+    {
+      "label": "โหมดภาพ",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "บาลานซ์ขาว",
+      "value": "Auto"
+    },
+    {
+      "label": "การเปิดรับแสง",
+      "value": "Auto"
+    },
+    {
+      "label": "เลนส์",
+      "value": "2G2P"
+    },
+    {
+      "label": "แรงดันจ่ายไฟ",
+      "value": "DC12V"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการทำงาน",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการจัดเก็บ",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    },
+    {
+      "label": "ระดับกันน้ำ",
+      "value": "IP67 Water Protection Rating Standard"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x กล้องอินฟราเรดกันน้ำภายนอก",
+  "icon": "Cpu"
+}

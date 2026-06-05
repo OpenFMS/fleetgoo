@@ -1,0 +1,89 @@
+{
+  "id": "ultrasonic-oil-sensor",
+  "categoryId": "accessories",
+  "title": "เซ็นเซอร์น้ำมันอัลตราโซนิก",
+  "metaTitle": "เซ็นเซอร์น้ำมันอัลตราโซนิก - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "เซ็นเซอร์น้ำมันอัลตราโซนิก ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "เซ็นเซอร์น้ำมันอัลตราโซนิก เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/ultrasonic-oil-sensor.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ประเภทเซ็นเซอร์",
+      "value": "Ultrasonic Level Sensor"
+    },
+    {
+      "label": "แรงดันขาเข้า",
+      "value": "DC9~36V"
+    },
+    {
+      "label": "กระแสไฟฟ้าในการทำงาน",
+      "value": "≦30mA"
+    },
+    {
+      "label": "ระดับกันระเบิด",
+      "value": "Intrinsic Safety Exia II CT6"
+    },
+    {
+      "label": "ช่วงการวัด",
+      "value": "50~1000/2000mm"
+    },
+    {
+      "label": "ความแม่นยำในการวัด",
+      "value": "≤0.5%FS"
+    },
+    {
+      "label": "ความละเอียด",
+      "value": "0.1mm"
+    },
+    {
+      "label": "มุมการวัด",
+      "value": "0~5°"
+    },
+    {
+      "label": "อินเตอร์เฟซการสื่อสาร",
+      "value": "RS232 / RS485 (Optional)"
+    },
+    {
+      "label": "อัตราการสื่อสาร",
+      "value": "9600 (Adjustable)"
+    },
+    {
+      "label": "การกำหนดลำดับสาย",
+      "value": "Black-Ground Wire; Red-Positive Pole; Yellow-TX/B; Green-RX/A"
+    },
+    {
+      "label": "อุณหภูมิในการจัดเก็บ",
+      "value": "–45℃ ~80℃"
+    },
+    {
+      "label": "Operating Temperature",
+      "value": "–40℃ ~75℃"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการจัดเก็บ",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Product Dimensions",
+      "value": "41*18mm"
+    },
+    {
+      "label": "ความยาวสาย",
+      "value": "Default 1 meter, extension cables available as needed"
+    },
+    {
+      "label": "หมายเหตุ",
+      "value": ""
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x เซ็นเซอร์น้ำมันอัลตราโซนิก",
+  "icon": "Cpu"
+}

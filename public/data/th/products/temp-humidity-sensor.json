@@ -1,0 +1,65 @@
+{
+  "id": "temp-humidity-sensor",
+  "categoryId": "accessories",
+  "title": "ตัวรับค่าอุณหภูมิและความชื้น",
+  "metaTitle": "ตัวรับค่าอุณหภูมิและความชื้น - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "ตัวรับค่าอุณหภูมิและความชื้น ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "ตัวรับค่าอุณหภูมิและความชื้น เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/temp-humidity-sensor.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ชื่อสินค้า",
+      "value": "Temperature and Humidity Collector"
+    },
+    {
+      "label": "แรงดันในการทำงาน",
+      "value": "DC5V±0.5V"
+    },
+    {
+      "label": "กระแสไฟฟ้าในการทำงาน",
+      "value": "8-15mA (Full Load 15mA)"
+    },
+    {
+      "label": "วิธีการสื่อสาร",
+      "value": "Output connects to host RS232, 9600bps, 8, 1"
+    },
+    {
+      "label": "ช่วงการวัดอุณหภูมิ",
+      "value": "-50℃ ~ +105℃"
+    },
+    {
+      "label": "ช่วงการวัดความชื้น",
+      "value": "0-99.9%RH"
+    },
+    {
+      "label": "ช่วงเวลาการรวบรวมข้อมูล",
+      "value": "Once every 5 seconds"
+    },
+    {
+      "label": "ส่งข้อมูลไปยังโฮสต์",
+      "value": "Once every 30 seconds"
+    },
+    {
+      "label": "จำนวนช่องทางของเซ็นเซอร์ที่รองรับ",
+      "value": "2-channel digital 485 temperature and humidity integrated sensors / 485 single temperature sensors"
+    },
+    {
+      "label": "ช่วงอุณหภูมิแวดล้อมที่อนุญาต",
+      "value": "-45°~+70°"
+    },
+    {
+      "label": "ความยาวสาย",
+      "value": "Default 2 meters, extension cables available as needed"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x ตัวรับค่าอุณหภูมิและความชื้น",
+  "icon": "Cpu"
+}

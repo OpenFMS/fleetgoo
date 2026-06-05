@@ -1,0 +1,93 @@
+{
+  "id": "pillar-dms-camera-2",
+  "categoryId": "accessories",
+  "title": "กล้อง DMS แบบตั้งเสา - 2",
+  "metaTitle": "กล้อง DMS แบบตั้งเสา - 2 - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "กล้อง DMS แบบตั้งเสา - 2 ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "กล้อง DMS แบบตั้งเสา - 2 เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/pillar-dms-camera-2.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ประเภทกล้อง",
+      "value": "Pillar Type DMS Camera"
+    },
+    {
+      "label": "ตัวเชื่อมต่อเคเบิล",
+      "value": "Standard Aviation Plug"
+    },
+    {
+      "label": "ระยะโฟกัส",
+      "value": "6mm"
+    },
+    {
+      "label": "รูรับแสง",
+      "value": "F2.1"
+    },
+    {
+      "label": "อัตราเฟรม",
+      "value": "25fps"
+    },
+    {
+      "label": "ความละเอียด",
+      "value": "1280*720P"
+    },
+    {
+      "label": "รูปแบบวิดีโอ",
+      "value": "Default to PAL System"
+    },
+    {
+      "label": "มุมมอง",
+      "value": "D=69° H=56° V=32°"
+    },
+    {
+      "label": "โหมดภาพ",
+      "value": "Black & White"
+    },
+    {
+      "label": "ช่วงไดนามิก",
+      "value": "83dB"
+    },
+    {
+      "label": "อัตราส่วนสัญญาณต่อเสียงรบกวน",
+      "value": "41dB"
+    },
+    {
+      "label": "เลนส์",
+      "value": "1G3P"
+    },
+    {
+      "label": "กระแสไฟฟ้า",
+      "value": "70mA"
+    },
+    {
+      "label": "แรงดันจ่ายไฟ",
+      "value": "DC12V"
+    },
+    {
+      "label": "การใช้พลังงาน",
+      "value": "0.84W"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการทำงาน",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "อุณหภูมิและความชื้นในการจัดเก็บ",
+      "value": "-25℃ ~ 80℃"
+    },
+    {
+      "label": "Standard Cable Length",
+      "value": "2450mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x กล้อง DMS แบบตั้งเสา - 2",
+  "icon": "Cpu"
+}

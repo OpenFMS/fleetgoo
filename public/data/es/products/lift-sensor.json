@@ -1,0 +1,65 @@
+{
+  "id": "lift-sensor",
+  "categoryId": "accessories",
+  "title": "Sensor de Elevación Sellado",
+  "metaTitle": "Sensor de Elevación Sellado - Accesorio de Producto",
+  "metaDesc": "Sensor de Elevación Sellado especificaciones y detalles del producto",
+  "fullDescription": "Sensor de Elevación Sellado es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/lift-sensor.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Sensor",
+      "value": "Lift Sealed Sensor"
+    },
+    {
+      "label": "Nombre del Producto",
+      "value": "YS-JS-168"
+    },
+    {
+      "label": "Voltaje de Entrada",
+      "value": "9~36V"
+    },
+    {
+      "label": "Voltaje de Salida",
+      "value": "9~36V"
+    },
+    {
+      "label": "Distancia de Detección",
+      "value": "4cm"
+    },
+    {
+      "label": "Peso",
+      "value": "150g"
+    },
+    {
+      "label": "Material",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "Modo de Trabajo",
+      "value": "Hall Switch"
+    },
+    {
+      "label": "Clasificación de Impermeabilidad",
+      "value": "IP67"
+    },
+    {
+      "label": "Definición de Secuencia de Cables",
+      "value": "Red-Negative Wire; Red-Positive Pole; Yellow-Signal Output Wire; Green-Signal Output Wire"
+    },
+    {
+      "label": "Longitud del Cable",
+      "value": "Default 1 meter, extension cables available as needed"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Sensor de Elevación Sellado",
+  "icon": "Cpu"
+}

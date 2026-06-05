@@ -1,0 +1,89 @@
+{
+  "id": "ultrasonic-oil-sensor",
+  "categoryId": "accessories",
+  "title": "Sensor Ultrasónico de Aceite",
+  "metaTitle": "Sensor Ultrasónico de Aceite - Accesorio de Producto",
+  "metaDesc": "Sensor Ultrasónico de Aceite especificaciones y detalles del producto",
+  "fullDescription": "Sensor Ultrasónico de Aceite es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/ultrasonic-oil-sensor.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Sensor",
+      "value": "Ultrasonic Level Sensor"
+    },
+    {
+      "label": "Voltaje de Entrada",
+      "value": "DC9~36V"
+    },
+    {
+      "label": "Corriente de Operación",
+      "value": "≦30mA"
+    },
+    {
+      "label": "Clasificación a Prueba de Explosiones",
+      "value": "Intrinsic Safety Exia II CT6"
+    },
+    {
+      "label": "Rango de Medición",
+      "value": "50~1000/2000mm"
+    },
+    {
+      "label": "Precisión de Medición",
+      "value": "≤0.5%FS"
+    },
+    {
+      "label": "Resolución",
+      "value": "0.1mm"
+    },
+    {
+      "label": "Ángulo de Medición",
+      "value": "0~5°"
+    },
+    {
+      "label": "Interfaz de Comunicación",
+      "value": "RS232 / RS485 (Optional)"
+    },
+    {
+      "label": "Tasa de Comunicación",
+      "value": "9600 (Adjustable)"
+    },
+    {
+      "label": "Definición de Secuencia de Cables",
+      "value": "Black-Ground Wire; Red-Positive Pole; Yellow-TX/B; Green-RX/A"
+    },
+    {
+      "label": "Temperatura de Almacenamiento",
+      "value": "–45℃ ~80℃"
+    },
+    {
+      "label": "Operating Temperature",
+      "value": "–40℃ ~75℃"
+    },
+    {
+      "label": "Temperatura y Humedad de Almacenamiento",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Product Dimensions",
+      "value": "41*18mm"
+    },
+    {
+      "label": "Longitud del Cable",
+      "value": "Default 1 meter, extension cables available as needed"
+    },
+    {
+      "label": "Notas",
+      "value": ""
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Sensor Ultrasónico de Aceite",
+  "icon": "Cpu"
+}

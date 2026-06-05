@@ -2,9 +2,9 @@
   "id": "d901-smart-ai-camera-bsd-pedestrian",
   "categoryId": "4g-camera",
   "title": "D901 AI Smart Camera",
-  "metaTitle": "D901 High-End AI Camera",
-  "metaDesc": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
-  "fullDescription": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
+  "metaTitle": "D901 AI Smart Camera - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "D901 AI Smart Camera ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "D901 AI Smart Camera เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
   "images": [
     "/images/products/D901-main.jpg",
     "/images/products/D901-02.jpg",
@@ -12,12 +12,9 @@
     "/images/products/D901-04.jpg"
   ],
   "features": [
-    "Multi-Channel Video: 4-channel AHD video input, simultaneous recording in H.264 format (saved separately per channel)",
-    "AI Detection & Alerts: Built-in AI algorithms for blind spot warnings, fuel theft prevention, and voice recognition",
-    "Sentry Mode: Enhanced security monitoring mode",
-    "Remote Monitoring: 4G connectivity enables remote live view, playback, track viewing, electronic fence, fleet management",
-    "Flexible Display: 10.1-inch IPS touchscreen; default 4-screen display, supports switching to single-channel full screen",
-    "Stable Power: 12V-36V wide voltage input, compliant with automotive-grade surge, overload, over-voltage, under-voltage, and short-circuit protection circuits"
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
   ],
   "parameters": [
     {
@@ -62,6 +59,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x D901 Main Unit, Cable Harness, Installation Kit",
+  "packaging": "1x D901 AI Smart Camera",
   "icon": "Camera"
 }

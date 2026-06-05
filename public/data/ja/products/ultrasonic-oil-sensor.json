@@ -1,0 +1,89 @@
+{
+  "id": "ultrasonic-oil-sensor",
+  "categoryId": "accessories",
+  "title": "超音波オイルセンサー",
+  "metaTitle": "超音波オイルセンサー - 補助製品",
+  "metaDesc": "超音波オイルセンサー の仕様と製品詳細",
+  "fullDescription": "超音波オイルセンサー は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/ultrasonic-oil-sensor.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "センサータイプ",
+      "value": "Ultrasonic Level Sensor"
+    },
+    {
+      "label": "入力電圧",
+      "value": "DC9~36V"
+    },
+    {
+      "label": "動作電流",
+      "value": "≦30mA"
+    },
+    {
+      "label": "防爆等級",
+      "value": "Intrinsic Safety Exia II CT6"
+    },
+    {
+      "label": "測定範囲",
+      "value": "50~1000/2000mm"
+    },
+    {
+      "label": "測定精度",
+      "value": "≤0.5%FS"
+    },
+    {
+      "label": "解像度",
+      "value": "0.1mm"
+    },
+    {
+      "label": "測定角度",
+      "value": "0~5°"
+    },
+    {
+      "label": "通信インターフェース",
+      "value": "RS232 / RS485 (Optional)"
+    },
+    {
+      "label": "通信速度",
+      "value": "9600 (Adjustable)"
+    },
+    {
+      "label": "配線順序定義",
+      "value": "Black-Ground Wire; Red-Positive Pole; Yellow-TX/B; Green-RX/A"
+    },
+    {
+      "label": "保管温度",
+      "value": "–45℃ ~80℃"
+    },
+    {
+      "label": "Operating Temperature",
+      "value": "–40℃ ~75℃"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Product Dimensions",
+      "value": "41*18mm"
+    },
+    {
+      "label": "配線長",
+      "value": "Default 1 meter, extension cables available as needed"
+    },
+    {
+      "label": "備考",
+      "value": ""
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x 超音波オイルセンサー",
+  "icon": "Cpu"
+}

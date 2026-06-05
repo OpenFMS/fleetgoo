@@ -1,0 +1,65 @@
+{
+  "id": "lift-sensor",
+  "categoryId": "accessories",
+  "title": "เซ็นเซอร์ลิฟต์ปิดผนึก",
+  "metaTitle": "เซ็นเซอร์ลิฟต์ปิดผนึก - ผลิตภัณฑ์อุปกรณ์เสริม",
+  "metaDesc": "เซ็นเซอร์ลิฟต์ปิดผนึก ข้อมูลจำเพาะและรายละเอียดผลิตภัณฑ์",
+  "fullDescription": "เซ็นเซอร์ลิฟต์ปิดผนึก เป็นอุปกรณ์เสริมคุณภาพสูงที่ออกแบบมาเพื่อระบบการจัดการรถกอง",
+  "images": [
+    "/images/accessories/lift-sensor.png"
+  ],
+  "features": [
+    "อุปกรณ์เสริมคุณภาพสูงที่มั่นใจในระบบดำเนินงานอย่างเสถียร",
+    "ติดตั้งและบำรุงรักษาง่าย",
+    "ความเข้ากันได้สูง เหมาะกับอุปกรณ์หลายชนิด"
+  ],
+  "parameters": [
+    {
+      "label": "ประเภทเซ็นเซอร์",
+      "value": "Lift Sealed Sensor"
+    },
+    {
+      "label": "ชื่อสินค้า",
+      "value": "YS-JS-168"
+    },
+    {
+      "label": "แรงดันขาเข้า",
+      "value": "9~36V"
+    },
+    {
+      "label": "แรงดันขาออก",
+      "value": "9~36V"
+    },
+    {
+      "label": "ระยะการตรวจจับ",
+      "value": "4cm"
+    },
+    {
+      "label": "น้ำหนัก",
+      "value": "150g"
+    },
+    {
+      "label": "วัสดุ",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "โหมดการทำงาน",
+      "value": "Hall Switch"
+    },
+    {
+      "label": "ระดับกันน้ำ",
+      "value": "IP67"
+    },
+    {
+      "label": "การกำหนดลำดับสาย",
+      "value": "Red-Negative Wire; Red-Positive Pole; Yellow-Signal Output Wire; Green-Signal Output Wire"
+    },
+    {
+      "label": "ความยาวสาย",
+      "value": "Default 1 meter, extension cables available as needed"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x เซ็นเซอร์ลิฟต์ปิดผนึก",
+  "icon": "Cpu"
+}

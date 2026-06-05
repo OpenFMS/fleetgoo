@@ -1,0 +1,101 @@
+{
+  "id": "adas-camera",
+  "categoryId": "accessories",
+  "title": "Cámara ADAS",
+  "metaTitle": "Cámara ADAS - Accesorio de Producto",
+  "metaDesc": "Cámara ADAS especificaciones y detalles del producto",
+  "fullDescription": "Cámara ADAS es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/adas-camera.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Cámara",
+      "value": "Adhesive ADAS Camera"
+    },
+    {
+      "label": "Conector de Cable",
+      "value": "Standard Aviation Plug"
+    },
+    {
+      "label": "Longitud Focal",
+      "value": "6mm"
+    },
+    {
+      "label": "Apertura",
+      "value": "F2.5"
+    },
+    {
+      "label": "Velocidad de Fotogramas",
+      "value": "25fps"
+    },
+    {
+      "label": "Resolución",
+      "value": "1280*720P"
+    },
+    {
+      "label": "Formato de Video",
+      "value": "Default to PAL System"
+    },
+    {
+      "label": "Campo de Visión",
+      "value": "H=58°"
+    },
+    {
+      "label": "Distancia de Enfoque",
+      "value": "5 meters"
+    },
+    {
+      "label": "Estándar de Resolución",
+      "value": "Center: 500LW/PH Surrounding: 350LW/PH"
+    },
+    {
+      "label": "Distorsión Óptica",
+      "value": "<-6.7%"
+    },
+    {
+      "label": "Recubrimiento IR Cut",
+      "value": "TBD"
+    },
+    {
+      "label": "Modo de Salida de Video",
+      "value": "Analog HD AHD Signal"
+    },
+    {
+      "label": "Modo de Imagen",
+      "value": "Color"
+    },
+    {
+      "label": "Rango Dinámico",
+      "value": "83dB"
+    },
+    {
+      "label": "Lente",
+      "value": "1G3P"
+    },
+    {
+      "label": "Voltaje de Suministro de Energía",
+      "value": "DC12V"
+    },
+    {
+      "label": "Temperatura y Humedad de Operación",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Temperatura y Humedad de Almacenamiento",
+      "value": "-25℃ ~ 80℃"
+    },
+    {
+      "label": "Longitud del Cable Aéreo",
+      "value": "2900mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Cámara ADAS",
+  "icon": "Cpu"
+}

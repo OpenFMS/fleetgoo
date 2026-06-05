@@ -1,0 +1,65 @@
+{
+  "id": "lift-sensor",
+  "categoryId": "accessories",
+  "title": "リフト密封センサー",
+  "metaTitle": "リフト密封センサー - 補助製品",
+  "metaDesc": "リフト密封センサー の仕様と製品詳細",
+  "fullDescription": "リフト密封センサー は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/lift-sensor.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "センサータイプ",
+      "value": "Lift Sealed Sensor"
+    },
+    {
+      "label": "商品名",
+      "value": "YS-JS-168"
+    },
+    {
+      "label": "入力電圧",
+      "value": "9~36V"
+    },
+    {
+      "label": "出力電圧",
+      "value": "9~36V"
+    },
+    {
+      "label": "検知距離",
+      "value": "4cm"
+    },
+    {
+      "label": "重量",
+      "value": "150g"
+    },
+    {
+      "label": "素材",
+      "value": "Zinc Alloy"
+    },
+    {
+      "label": "動作モード",
+      "value": "Hall Switch"
+    },
+    {
+      "label": "防水等級",
+      "value": "IP67"
+    },
+    {
+      "label": "配線順序定義",
+      "value": "Red-Negative Wire; Red-Positive Pole; Yellow-Signal Output Wire; Green-Signal Output Wire"
+    },
+    {
+      "label": "配線長",
+      "value": "Default 1 meter, extension cables available as needed"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x リフト密封センサー",
+  "icon": "Cpu"
+}

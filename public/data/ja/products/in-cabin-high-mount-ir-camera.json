@@ -1,0 +1,93 @@
+{
+  "id": "in-cabin-high-mount-ir-camera",
+  "categoryId": "accessories",
+  "title": "キャビン内高位置マウント赤外線カメラ",
+  "metaTitle": "キャビン内高位置マウント赤外線カメラ - 補助製品",
+  "metaDesc": "キャビン内高位置マウント赤外線カメラ の仕様と製品詳細",
+  "fullDescription": "キャビン内高位置マウント赤外線カメラ は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/in-cabin-high-mount-ir-camera.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "カメラタイプ",
+      "value": "In-Cabin High-Mount IR Camera"
+    },
+    {
+      "label": "ケーブルコネクター",
+      "value": "Standard BMW Connector"
+    },
+    {
+      "label": "チップ",
+      "value": "100W CMOS Sensor"
+    },
+    {
+      "label": "フレームレート",
+      "value": "25fps"
+    },
+    {
+      "label": "有効画素数",
+      "value": "1280*720P"
+    },
+    {
+      "label": "カメラ角度",
+      "value": "Vertical Angle: 56°, Horizontal Angle: 113°, Diagonal Angle: 144°"
+    },
+    {
+      "label": "走査方式",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "同期方式",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "解像度",
+      "value": "720P"
+    },
+    {
+      "label": "ビデオ出力モード",
+      "value": "AHD Analog HD"
+    },
+    {
+      "label": "画像モード",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "ホワイトバランス",
+      "value": "Auto"
+    },
+    {
+      "label": "露出",
+      "value": "Auto"
+    },
+    {
+      "label": "レンズ",
+      "value": "4G"
+    },
+    {
+      "label": "IRフィルター",
+      "value": "940 IR"
+    },
+    {
+      "label": "電源電圧",
+      "value": "DC5V"
+    },
+    {
+      "label": "動作温度・湿度",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x キャビン内高位置マウント赤外線カメラ",
+  "icon": "Cpu"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "in-cabin-high-mount-ir-camera",
+  "categoryId": "accessories",
+  "title": "Cámara IR de Montaje Alto en Cabina",
+  "metaTitle": "Cámara IR de Montaje Alto en Cabina - Accesorio de Producto",
+  "metaDesc": "Cámara IR de Montaje Alto en Cabina especificaciones y detalles del producto",
+  "fullDescription": "Cámara IR de Montaje Alto en Cabina es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/in-cabin-high-mount-ir-camera.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Cámara",
+      "value": "In-Cabin High-Mount IR Camera"
+    },
+    {
+      "label": "Conector de Cable",
+      "value": "Standard BMW Connector"
+    },
+    {
+      "label": "Chip",
+      "value": "100W CMOS Sensor"
+    },
+    {
+      "label": "Velocidad de Fotogramas",
+      "value": "25fps"
+    },
+    {
+      "label": "Píxeles Efectivos",
+      "value": "1280*720P"
+    },
+    {
+      "label": "Ángulo de la Cámara",
+      "value": "Vertical Angle: 56°, Horizontal Angle: 113°, Diagonal Angle: 144°"
+    },
+    {
+      "label": "Sistema de Escaneo",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "Método de Sincronización",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "Resolución",
+      "value": "720P"
+    },
+    {
+      "label": "Modo de Salida de Video",
+      "value": "AHD Analog HD"
+    },
+    {
+      "label": "Modo de Imagen",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "Balance de Blancos",
+      "value": "Auto"
+    },
+    {
+      "label": "Exposición",
+      "value": "Auto"
+    },
+    {
+      "label": "Lente",
+      "value": "4G"
+    },
+    {
+      "label": "Filtro IR",
+      "value": "940 IR"
+    },
+    {
+      "label": "Voltaje de Suministro de Energía",
+      "value": "DC5V"
+    },
+    {
+      "label": "Temperatura y Humedad de Operación",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "Temperatura y Humedad de Almacenamiento",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Cámara IR de Montaje Alto en Cabina",
+  "icon": "Cpu"
+}

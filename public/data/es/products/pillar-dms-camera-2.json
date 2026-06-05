@@ -1,0 +1,93 @@
+{
+  "id": "pillar-dms-camera-2",
+  "categoryId": "accessories",
+  "title": "Cámara DMS Tipo Pilar - 2",
+  "metaTitle": "Cámara DMS Tipo Pilar - 2 - Accesorio de Producto",
+  "metaDesc": "Cámara DMS Tipo Pilar - 2 especificaciones y detalles del producto",
+  "fullDescription": "Cámara DMS Tipo Pilar - 2 es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/pillar-dms-camera-2.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Cámara",
+      "value": "Pillar Type DMS Camera"
+    },
+    {
+      "label": "Conector de Cable",
+      "value": "Standard Aviation Plug"
+    },
+    {
+      "label": "Longitud Focal",
+      "value": "6mm"
+    },
+    {
+      "label": "Apertura",
+      "value": "F2.1"
+    },
+    {
+      "label": "Velocidad de Fotogramas",
+      "value": "25fps"
+    },
+    {
+      "label": "Resolución",
+      "value": "1280*720P"
+    },
+    {
+      "label": "Formato de Video",
+      "value": "Default to PAL System"
+    },
+    {
+      "label": "Campo de Visión",
+      "value": "D=69° H=56° V=32°"
+    },
+    {
+      "label": "Modo de Imagen",
+      "value": "Black & White"
+    },
+    {
+      "label": "Rango Dinámico",
+      "value": "83dB"
+    },
+    {
+      "label": "Relación Señal-Ruido",
+      "value": "41dB"
+    },
+    {
+      "label": "Lente",
+      "value": "1G3P"
+    },
+    {
+      "label": "Corriente",
+      "value": "70mA"
+    },
+    {
+      "label": "Voltaje de Suministro de Energía",
+      "value": "DC12V"
+    },
+    {
+      "label": "Consumo de Energía",
+      "value": "0.84W"
+    },
+    {
+      "label": "Temperatura y Humedad de Operación",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "Temperatura y Humedad de Almacenamiento",
+      "value": "-25℃ ~ 80℃"
+    },
+    {
+      "label": "Standard Cable Length",
+      "value": "2450mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Cámara DMS Tipo Pilar - 2",
+  "icon": "Cpu"
+}

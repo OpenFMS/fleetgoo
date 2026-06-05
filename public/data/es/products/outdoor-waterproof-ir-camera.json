@@ -1,0 +1,93 @@
+{
+  "id": "outdoor-waterproof-ir-camera",
+  "categoryId": "accessories",
+  "title": "Cámara IR Impermeable Exterior",
+  "metaTitle": "Cámara IR Impermeable Exterior - Accesorio de Producto",
+  "metaDesc": "Cámara IR Impermeable Exterior especificaciones y detalles del producto",
+  "fullDescription": "Cámara IR Impermeable Exterior es un accesorio de alta calidad diseñado para sistemas de gestión de flotas.",
+  "images": [
+    "/images/accessories/outdoor-waterproof-ir-camera.png"
+  ],
+  "features": [
+    "Accesorio de alta calidad que garantiza operación estable del sistema",
+    "Fácil instalación y mantenimiento",
+    "Fuerte compatibilidad, compatible con múltiples dispositivos"
+  ],
+  "parameters": [
+    {
+      "label": "Tipo de Cámara",
+      "value": "Outdoor Waterproof IR Camera"
+    },
+    {
+      "label": "Conector de Cable",
+      "value": "Standard Waterproof Aviation Connector"
+    },
+    {
+      "label": "Chip",
+      "value": "1/2.9＂GC2053"
+    },
+    {
+      "label": "Velocidad de Fotogramas",
+      "value": "25fps"
+    },
+    {
+      "label": "Píxeles Efectivos",
+      "value": "Selectable 1080P and 720P"
+    },
+    {
+      "label": "Ángulo de la Cámara",
+      "value": "Vertical Angle: 69°, Horizontal Angle: 102°, Diagonal Angle: 135°"
+    },
+    {
+      "label": "Sistema de Escaneo",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "Método de Sincronización",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "Resolución",
+      "value": "1080p"
+    },
+    {
+      "label": "Modo de Salida de Video",
+      "value": "Analog HD AHD Signal"
+    },
+    {
+      "label": "Modo de Imagen",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "Balance de Blancos",
+      "value": "Auto"
+    },
+    {
+      "label": "Exposición",
+      "value": "Auto"
+    },
+    {
+      "label": "Lente",
+      "value": "2G2P"
+    },
+    {
+      "label": "Voltaje de Suministro de Energía",
+      "value": "DC12V"
+    },
+    {
+      "label": "Temperatura y Humedad de Operación",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "Temperatura y Humedad de Almacenamiento",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    },
+    {
+      "label": "Clasificación de Impermeabilidad",
+      "value": "IP67 Water Protection Rating Standard"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Cámara IR Impermeable Exterior",
+  "icon": "Cpu"
+}

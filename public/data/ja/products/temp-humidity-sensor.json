@@ -1,0 +1,65 @@
+{
+  "id": "temp-humidity-sensor",
+  "categoryId": "accessories",
+  "title": "温湿度センサー",
+  "metaTitle": "温湿度センサー - 補助製品",
+  "metaDesc": "温湿度センサー の仕様と製品詳細",
+  "fullDescription": "温湿度センサー は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/temp-humidity-sensor.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "商品名",
+      "value": "Temperature and Humidity Collector"
+    },
+    {
+      "label": "動作電圧",
+      "value": "DC5V±0.5V"
+    },
+    {
+      "label": "動作電流",
+      "value": "8-15mA (Full Load 15mA)"
+    },
+    {
+      "label": "通信方式",
+      "value": "Output connects to host RS232, 9600bps, 8, 1"
+    },
+    {
+      "label": "温度測定範囲",
+      "value": "-50℃ ~ +105℃"
+    },
+    {
+      "label": "湿度測定範囲",
+      "value": "0-99.9%RH"
+    },
+    {
+      "label": "データ収集間隔",
+      "value": "Once every 5 seconds"
+    },
+    {
+      "label": "ホストへデータ送信",
+      "value": "Once every 30 seconds"
+    },
+    {
+      "label": "対応センサーチャンネル数",
+      "value": "2-channel digital 485 temperature and humidity integrated sensors / 485 single temperature sensors"
+    },
+    {
+      "label": "許容環境温度範囲",
+      "value": "-45°~+70°"
+    },
+    {
+      "label": "配線長",
+      "value": "Default 2 meters, extension cables available as needed"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x 温湿度センサー",
+  "icon": "Cpu"
+}

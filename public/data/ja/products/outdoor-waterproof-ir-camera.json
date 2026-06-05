@@ -1,0 +1,93 @@
+{
+  "id": "outdoor-waterproof-ir-camera",
+  "categoryId": "accessories",
+  "title": "屋外防水赤外線カメラ",
+  "metaTitle": "屋外防水赤外線カメラ - 補助製品",
+  "metaDesc": "屋外防水赤外線カメラ の仕様と製品詳細",
+  "fullDescription": "屋外防水赤外線カメラ は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/outdoor-waterproof-ir-camera.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "カメラタイプ",
+      "value": "Outdoor Waterproof IR Camera"
+    },
+    {
+      "label": "ケーブルコネクター",
+      "value": "Standard Waterproof Aviation Connector"
+    },
+    {
+      "label": "チップ",
+      "value": "1/2.9＂GC2053"
+    },
+    {
+      "label": "フレームレート",
+      "value": "25fps"
+    },
+    {
+      "label": "有効画素数",
+      "value": "Selectable 1080P and 720P"
+    },
+    {
+      "label": "カメラ角度",
+      "value": "Vertical Angle: 69°, Horizontal Angle: 102°, Diagonal Angle: 135°"
+    },
+    {
+      "label": "走査方式",
+      "value": "Progressive Scan"
+    },
+    {
+      "label": "同期方式",
+      "value": "Internal Sync"
+    },
+    {
+      "label": "解像度",
+      "value": "1080p"
+    },
+    {
+      "label": "ビデオ出力モード",
+      "value": "Analog HD AHD Signal"
+    },
+    {
+      "label": "画像モード",
+      "value": "Automatically switches between color and black/white based on light conditions"
+    },
+    {
+      "label": "ホワイトバランス",
+      "value": "Auto"
+    },
+    {
+      "label": "露出",
+      "value": "Auto"
+    },
+    {
+      "label": "レンズ",
+      "value": "2G2P"
+    },
+    {
+      "label": "電源電圧",
+      "value": "DC12V"
+    },
+    {
+      "label": "動作温度・湿度",
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
+    },
+    {
+      "label": "防水等級",
+      "value": "IP67 Water Protection Rating Standard"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x 屋外防水赤外線カメラ",
+  "icon": "Cpu"
+}

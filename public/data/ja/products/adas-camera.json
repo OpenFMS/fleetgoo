@@ -1,0 +1,101 @@
+{
+  "id": "adas-camera",
+  "categoryId": "accessories",
+  "title": "ADASカメラ",
+  "metaTitle": "ADASカメラ - 補助製品",
+  "metaDesc": "ADASカメラ の仕様と製品詳細",
+  "fullDescription": "ADASカメラ は、フリート管理システム用に設計された高品質アクセサリーです。",
+  "images": [
+    "/images/accessories/adas-camera.png"
+  ],
+  "features": [
+    "高品質アクセサリーでシステムの安定稼働を確保",
+    "簡単な設置とメンテナンス",
+    "高い互換性、複数デバイスに対応"
+  ],
+  "parameters": [
+    {
+      "label": "カメラタイプ",
+      "value": "Adhesive ADAS Camera"
+    },
+    {
+      "label": "ケーブルコネクター",
+      "value": "Standard Aviation Plug"
+    },
+    {
+      "label": "焦点距離",
+      "value": "6mm"
+    },
+    {
+      "label": "絞り",
+      "value": "F2.5"
+    },
+    {
+      "label": "フレームレート",
+      "value": "25fps"
+    },
+    {
+      "label": "解像度",
+      "value": "1280*720P"
+    },
+    {
+      "label": "ビデオフォーマット",
+      "value": "Default to PAL System"
+    },
+    {
+      "label": "視野角",
+      "value": "H=58°"
+    },
+    {
+      "label": "焦点距離",
+      "value": "5 meters"
+    },
+    {
+      "label": "解像度標準",
+      "value": "Center: 500LW/PH Surrounding: 350LW/PH"
+    },
+    {
+      "label": "光学歪み",
+      "value": "<-6.7%"
+    },
+    {
+      "label": "IRカットコーティング",
+      "value": "TBD"
+    },
+    {
+      "label": "ビデオ出力モード",
+      "value": "Analog HD AHD Signal"
+    },
+    {
+      "label": "画像モード",
+      "value": "Color"
+    },
+    {
+      "label": "ダイナミックレンジ",
+      "value": "83dB"
+    },
+    {
+      "label": "レンズ",
+      "value": "1G3P"
+    },
+    {
+      "label": "電源電圧",
+      "value": "DC12V"
+    },
+    {
+      "label": "動作温度・湿度",
+      "value": "-20℃ ~ 70℃"
+    },
+    {
+      "label": "保存温度・湿度",
+      "value": "-25℃ ~ 80℃"
+    },
+    {
+      "label": "航空機ケーブル長",
+      "value": "2900mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x ADASカメラ",
+  "icon": "Cpu"
+}
