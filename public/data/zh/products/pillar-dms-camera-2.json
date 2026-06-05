@@ -1,0 +1,91 @@
+{
+  "id": "pillar-dms-camera-2",
+  "categoryId": "accessories",
+  "title": "配件-立柱型DMS摄像头-2",
+  "metaTitle": "配件-立柱型DMS摄像头-2 - 配件产品",
+  "metaDesc": "配件-立柱型DMS摄像头-2规格参数和产品详情",
+  "fullDescription": "配件-立柱型DMS摄像头-2是专为车队管理系统设计的高品质配件。",
+  "image": "/images/accessories/pillar-dms-camera-2.png",
+  "features": [
+    "高品质配件，确保系统稳定运行",
+    "易于安装和维护",
+    "兼容性强，适配多种设备"
+  ],
+  "parameters": [
+    {
+      "label": "摄像头形态",
+      "value": "立柱型DMS摄像头"
+    },
+    {
+      "label": "线材接口",
+      "value": "标准航空头"
+    },
+    {
+      "label": "焦距",
+      "value": "6mm"
+    },
+    {
+      "label": "光圈",
+      "value": "F2.1"
+    },
+    {
+      "label": "帧率",
+      "value": "25fps"
+    },
+    {
+      "label": "分辨率",
+      "value": "1280*720P"
+    },
+    {
+      "label": "视频格式",
+      "value": "默认为PAL制"
+    },
+    {
+      "label": "视场角",
+      "value": "D=69° H=56° V=32°"
+    },
+    {
+      "label": "图像模式",
+      "value": "黑白"
+    },
+    {
+      "label": "动态范围",
+      "value": "83dB"
+    },
+    {
+      "label": "信噪比",
+      "value": "41dB"
+    },
+    {
+      "label": "镜头",
+      "value": "1G3P"
+    },
+    {
+      "label": "电流",
+      "value": "70mA"
+    },
+    {
+      "label": "电源电压",
+      "value": "DC12V"
+    },
+    {
+      "label": "功耗",
+      "value": "0.84W"
+    },
+    {
+      "label": "工作温 &湿度",
+      "value": "–20℃ ~70℃"
+    },
+    {
+      "label": "存储温度& 湿度",
+      "value": "–25℃ ~80℃"
+    },
+    {
+      "label": "标配线材长度",
+      "value": "2450mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x 配件-立柱型DMS摄像头-2",
+  "icon": "Cpu"
+}
