@@ -23,7 +23,7 @@
       "value": "标准航空头防水接口"
     },
     {
-      "label": "芯片",
+      "label": "Chip",
       "value": "1/2.9＂"
     },
     {
@@ -31,20 +31,20 @@
       "value": "25fps"
     },
     {
-      "label": "有效像素",
+      "label": "Effective Pixels",
       "value": "1280*720P"
     },
     {
-      "label": "摄像头角度",
+      "label": "Camera Angle",
       "value": "垂直角度：50°，水平角度：70°"
     },
     {
-      "label": "扫描系统",
-      "value": "逐行扫描"
+      "label": "Scanning System",
+      "value": "Progressive Scan"
     },
     {
-      "label": "同步方式",
-      "value": "内同步"
+      "label": "Synchronization Method",
+      "value": "Internal Sync"
     },
     {
       "label": "Resolution",
@@ -59,19 +59,19 @@
       "value": "黑白"
     },
     {
-      "label": "白平衡",
-      "value": "自动"
+      "label": "White Balance",
+      "value": "Auto"
     },
     {
-      "label": "曝光",
-      "value": "自动"
+      "label": "Exposure",
+      "value": "Auto"
     },
     {
       "label": "Lens",
       "value": "2G2P"
     },
     {
-      "label": "IR 滤光片",
+      "label": "IR Filter",
       "value": "940 IR"
     },
     {
@@ -80,11 +80,11 @@
     },
     {
       "label": "Operating Temperature & Humidity",
-      "value": "–20℃ ~70℃, 湿度最大85%"
+      "value": "-20℃ ~ 70℃, Humidity up to 85%"
     },
     {
       "label": "Storage Temperature & Humidity",
-      "value": "–25℃ ~80℃, 湿度最大85%"
+      "value": "-25℃ ~ 80℃, Humidity up to 85%"
     }
   ],
   "downloads": [],
