@@ -1,0 +1,93 @@
+{
+  "id": "pillar-dms-camera-2",
+  "categoryId": "accessories",
+  "title": "Pillar Type DMS Camera - 2",
+  "metaTitle": "Pillar Type DMS Camera - 2 - Accessory Product",
+  "metaDesc": "Pillar Type DMS Camera - 2 specifications and product details",
+  "fullDescription": "Pillar Type DMS Camera - 2 is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/pillar-dms-camera-2.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "Camera Type",
+      "value": "立柱型DMS摄像头"
+    },
+    {
+      "label": "Cable Connector",
+      "value": "标准航空头"
+    },
+    {
+      "label": "Focal Length",
+      "value": "6mm"
+    },
+    {
+      "label": "Aperture",
+      "value": "F2.1"
+    },
+    {
+      "label": "Frame Rate",
+      "value": "25fps"
+    },
+    {
+      "label": "Resolution",
+      "value": "1280*720P"
+    },
+    {
+      "label": "Video Format",
+      "value": "默认为PAL制"
+    },
+    {
+      "label": "Field of View",
+      "value": "D=69° H=56° V=32°"
+    },
+    {
+      "label": "Image Mode",
+      "value": "黑白"
+    },
+    {
+      "label": "Dynamic Range",
+      "value": "83dB"
+    },
+    {
+      "label": "信噪比",
+      "value": "41dB"
+    },
+    {
+      "label": "Lens",
+      "value": "1G3P"
+    },
+    {
+      "label": "电流",
+      "value": "70mA"
+    },
+    {
+      "label": "Power Supply Voltage",
+      "value": "DC12V"
+    },
+    {
+      "label": "功耗",
+      "value": "0.84W"
+    },
+    {
+      "label": "工作温 &湿度",
+      "value": "–20℃ ~70℃"
+    },
+    {
+      "label": "存储温度& 湿度",
+      "value": "–25℃ ~80℃"
+    },
+    {
+      "label": "标配线材长度",
+      "value": "2450mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Pillar Type DMS Camera - 2",
+  "icon": "Cpu"
+}

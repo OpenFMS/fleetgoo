@@ -1,0 +1,89 @@
+{
+  "id": "ultrasonic-oil-sensor",
+  "categoryId": "accessories",
+  "title": "Ultrasonic Oil Sensor",
+  "metaTitle": "Ultrasonic Oil Sensor - Accessory Product",
+  "metaDesc": "Ultrasonic Oil Sensor specifications and product details",
+  "fullDescription": "Ultrasonic Oil Sensor is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/ultrasonic-oil-sensor.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "传感器类型",
+      "value": "超声波液位传感器"
+    },
+    {
+      "label": "输入电压",
+      "value": "DC9～36V"
+    },
+    {
+      "label": "工作电流",
+      "value": "≦30mA"
+    },
+    {
+      "label": "防爆等级",
+      "value": "本安 Exia II CT6"
+    },
+    {
+      "label": "测量范围",
+      "value": "50～1000/2000mm"
+    },
+    {
+      "label": "测量精度",
+      "value": "≤0.5%FS"
+    },
+    {
+      "label": "Resolution",
+      "value": "0.1mm"
+    },
+    {
+      "label": "测量角度",
+      "value": "0～5°"
+    },
+    {
+      "label": "通讯接口",
+      "value": "RS232 / RS485 （可选）"
+    },
+    {
+      "label": "通讯速率",
+      "value": "9600（可调）"
+    },
+    {
+      "label": "线序定义",
+      "value": "黑色-地线； 红色-正极； 黄色-TX/B； 绿色-RX/A"
+    },
+    {
+      "label": "存贮温度",
+      "value": "–45℃ ~80℃"
+    },
+    {
+      "label": "工作温度",
+      "value": "–40℃ ~75℃"
+    },
+    {
+      "label": "Storage Temperature & Humidity",
+      "value": "–20℃ ~70℃"
+    },
+    {
+      "label": "产品尺寸",
+      "value": "41*18mm"
+    },
+    {
+      "label": "线长",
+      "value": "默认1米，可根据实际情况加延长线"
+    },
+    {
+      "label": "备注",
+      "value": ""
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Ultrasonic Oil Sensor",
+  "icon": "Cpu"
+}

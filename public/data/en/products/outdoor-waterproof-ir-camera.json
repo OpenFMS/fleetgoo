@@ -1,0 +1,93 @@
+{
+  "id": "outdoor-waterproof-ir-camera",
+  "categoryId": "accessories",
+  "title": "Outdoor Waterproof IR Camera",
+  "metaTitle": "Outdoor Waterproof IR Camera - Accessory Product",
+  "metaDesc": "Outdoor Waterproof IR Camera specifications and product details",
+  "fullDescription": "Outdoor Waterproof IR Camera is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/outdoor-waterproof-ir-camera.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "Camera Type",
+      "value": "车外防水红外摄像头"
+    },
+    {
+      "label": "Cable Connector",
+      "value": "标准航空头防水接口"
+    },
+    {
+      "label": "芯片",
+      "value": "1/2.9＂GC2053"
+    },
+    {
+      "label": "Frame Rate",
+      "value": "25fps"
+    },
+    {
+      "label": "有效像素",
+      "value": "可选1080P和720P"
+    },
+    {
+      "label": "摄像头角度",
+      "value": "垂直角度：69°，水平角度：102°，对角角度：135°"
+    },
+    {
+      "label": "扫描系统",
+      "value": "逐行扫描"
+    },
+    {
+      "label": "同步方式",
+      "value": "内同步"
+    },
+    {
+      "label": "Resolution",
+      "value": "1080p"
+    },
+    {
+      "label": "Video Output Mode",
+      "value": "模拟高清AHD信号"
+    },
+    {
+      "label": "Image Mode",
+      "value": "根据光线变化自动切换彩色或黑白画面"
+    },
+    {
+      "label": "白平衡",
+      "value": "自动"
+    },
+    {
+      "label": "曝光",
+      "value": "自动"
+    },
+    {
+      "label": "Lens",
+      "value": "2G2P"
+    },
+    {
+      "label": "Power Supply Voltage",
+      "value": "DC12V"
+    },
+    {
+      "label": "Operating Temperature & Humidity",
+      "value": "–20℃ ~70℃, 湿度最大85%"
+    },
+    {
+      "label": "Storage Temperature & Humidity",
+      "value": "–25℃ ~80℃, 湿度最大85%"
+    },
+    {
+      "label": "防水等级",
+      "value": "IP67防水等级标准"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Outdoor Waterproof IR Camera",
+  "icon": "Cpu"
+}

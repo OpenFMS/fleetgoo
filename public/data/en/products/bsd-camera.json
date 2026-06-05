@@ -1,0 +1,89 @@
+{
+  "id": "bsd-camera",
+  "categoryId": "accessories",
+  "title": "BSD Camera",
+  "metaTitle": "BSD Camera - Accessory Product",
+  "metaDesc": "BSD Camera specifications and product details",
+  "fullDescription": "BSD Camera is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/bsd-camera.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "Camera Type",
+      "value": "车外防水全彩BSD摄像头"
+    },
+    {
+      "label": "Cable Connector",
+      "value": "标准航空头接口"
+    },
+    {
+      "label": "芯片",
+      "value": "1/2.9＂，GC2053"
+    },
+    {
+      "label": "Frame Rate",
+      "value": "25fps"
+    },
+    {
+      "label": "有效像素",
+      "value": "1920*1080P"
+    },
+    {
+      "label": "摄像头角度",
+      "value": "垂直角度：50°，水平角度：100°，对角角度：135°"
+    },
+    {
+      "label": "扫描系统",
+      "value": "逐行扫描"
+    },
+    {
+      "label": "同步方式",
+      "value": "内同步"
+    },
+    {
+      "label": "Resolution",
+      "value": "1080P"
+    },
+    {
+      "label": "Video Output Mode",
+      "value": "AHD模拟高清"
+    },
+    {
+      "label": "Image Mode",
+      "value": "昼夜全彩"
+    },
+    {
+      "label": "白平衡",
+      "value": "自动"
+    },
+    {
+      "label": "曝光",
+      "value": "自动"
+    },
+    {
+      "label": "Power Supply Voltage",
+      "value": "DC12V"
+    },
+    {
+      "label": "Operating Temperature & Humidity",
+      "value": "–20℃ ~70℃, 湿度最大85%"
+    },
+    {
+      "label": "Storage Temperature & Humidity",
+      "value": "–25℃ ~80℃, 湿度最大85%"
+    },
+    {
+      "label": "防水等级",
+      "value": "IP67防水等级标准"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x BSD Camera",
+  "icon": "Cpu"
+}

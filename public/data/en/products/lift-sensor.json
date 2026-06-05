@@ -1,0 +1,65 @@
+{
+  "id": "lift-sensor",
+  "categoryId": "accessories",
+  "title": "Lift Sealed Sensor",
+  "metaTitle": "Lift Sealed Sensor - Accessory Product",
+  "metaDesc": "Lift Sealed Sensor specifications and product details",
+  "fullDescription": "Lift Sealed Sensor is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/lift-sensor.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "传感器类型",
+      "value": "举升密闭传感器"
+    },
+    {
+      "label": "产品名称",
+      "value": "YS-JS-168"
+    },
+    {
+      "label": "输入电压",
+      "value": "9~36V"
+    },
+    {
+      "label": "输出电压",
+      "value": "9~36V"
+    },
+    {
+      "label": "检测距离",
+      "value": "4cm"
+    },
+    {
+      "label": "重量",
+      "value": "150g"
+    },
+    {
+      "label": "材质",
+      "value": "锌合金"
+    },
+    {
+      "label": "工作模式",
+      "value": "霍尔开关"
+    },
+    {
+      "label": "防水等级",
+      "value": "IP67"
+    },
+    {
+      "label": "线序定义",
+      "value": "红色-负线； 红色-正极； 黄色-信号输出线； 绿色-信号输出线"
+    },
+    {
+      "label": "线长",
+      "value": "默认1米，可根据实际情况加延长线"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Lift Sealed Sensor",
+  "icon": "Cpu"
+}

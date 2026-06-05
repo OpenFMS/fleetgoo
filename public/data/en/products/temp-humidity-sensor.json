@@ -1,0 +1,65 @@
+{
+  "id": "temp-humidity-sensor",
+  "categoryId": "accessories",
+  "title": "Temperature and Humidity Collector",
+  "metaTitle": "Temperature and Humidity Collector - Accessory Product",
+  "metaDesc": "Temperature and Humidity Collector specifications and product details",
+  "fullDescription": "Temperature and Humidity Collector is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/temp-humidity-sensor.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "产品名称",
+      "value": "温湿度采集器"
+    },
+    {
+      "label": "工作电压",
+      "value": "DC5V±0.5V"
+    },
+    {
+      "label": "工作电流",
+      "value": "8-15mA(满负荷 15MA)"
+    },
+    {
+      "label": "通讯方式",
+      "value": "输出对接主机 RS232，9600bps，8，1"
+    },
+    {
+      "label": "温度测量范围",
+      "value": "-50℃ ～ +105℃"
+    },
+    {
+      "label": "湿度测量范围",
+      "value": "0-99.9%RH"
+    },
+    {
+      "label": "数据采集间隔",
+      "value": "5 秒一次"
+    },
+    {
+      "label": "对主机发数据",
+      "value": "30 秒一次"
+    },
+    {
+      "label": "支持传感器路数",
+      "value": "2路数字式 485 温湿度一体化传感器/485 单温度传感器"
+    },
+    {
+      "label": "环境温度允许范围",
+      "value": "-45°~+70°"
+    },
+    {
+      "label": "线长",
+      "value": "默认2米，可根据实际情况加延长线"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x Temperature and Humidity Collector",
+  "icon": "Cpu"
+}

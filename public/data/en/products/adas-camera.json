@@ -1,0 +1,101 @@
+{
+  "id": "adas-camera",
+  "categoryId": "accessories",
+  "title": "ADAS Camera",
+  "metaTitle": "ADAS Camera - Accessory Product",
+  "metaDesc": "ADAS Camera specifications and product details",
+  "fullDescription": "ADAS Camera is a high-quality accessory designed for fleet management systems.",
+  "images": [
+    "/images/accessories/adas-camera.png"
+  ],
+  "features": [
+    "High-quality accessory ensuring stable system operation",
+    "Easy installation and maintenance",
+    "Strong compatibility, compatible with multiple devices"
+  ],
+  "parameters": [
+    {
+      "label": "Camera Type",
+      "value": "粘贴式ADAS摄像头"
+    },
+    {
+      "label": "Cable Connector",
+      "value": "标准航空头"
+    },
+    {
+      "label": "Focal Length",
+      "value": "6mm"
+    },
+    {
+      "label": "Aperture",
+      "value": "F2.5"
+    },
+    {
+      "label": "Frame Rate",
+      "value": "25fps"
+    },
+    {
+      "label": "Resolution",
+      "value": "1280*720P"
+    },
+    {
+      "label": "Video Format",
+      "value": "默认为PAL制"
+    },
+    {
+      "label": "Field of View",
+      "value": "H=58°"
+    },
+    {
+      "label": "Focus Distance",
+      "value": "5米"
+    },
+    {
+      "label": "Resolution Standard",
+      "value": "中心：500LW/PH 四周：350LW/PH"
+    },
+    {
+      "label": "Optical Distortion",
+      "value": "<-6.7%"
+    },
+    {
+      "label": "IR Cut coating",
+      "value": "TBD"
+    },
+    {
+      "label": "Video Output Mode",
+      "value": "模拟高清AHD信号"
+    },
+    {
+      "label": "Image Mode",
+      "value": "彩色"
+    },
+    {
+      "label": "Dynamic Range",
+      "value": "83dB"
+    },
+    {
+      "label": "Lens",
+      "value": "1G3P"
+    },
+    {
+      "label": "Power Supply Voltage",
+      "value": "DC12V"
+    },
+    {
+      "label": "Operating Temperature & Humidity",
+      "value": "–20℃ ~70℃"
+    },
+    {
+      "label": "Storage Temperature & Humidity",
+      "value": "–25℃ ~80℃"
+    },
+    {
+      "label": "Aircraft Cable Length",
+      "value": "2900mm"
+    }
+  ],
+  "downloads": [],
+  "packaging": "1x ADAS Camera",
+  "icon": "Cpu"
+}
