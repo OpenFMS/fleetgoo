@@ -1,111 +1,188 @@
 {
-    "page": {
-        "title": "我们的产品",
-        "subtitle": "提供全方位的车辆监控与智能硬件解决方案",
-        "metaTitle": "车载硬件产品 | AI行车记录仪, MDVR, GPS定位器",
-        "metaDesc": "探索我们的专业车载硬件系列，包括GPS定位器、4G行车记录仪、MDVR系统和智能显示屏。",
-        "viewDetailsBtn": "查看详情"
+  "page": {
+    "title": "我们的产品",
+    "subtitle": "提供全方位的车辆监控与智能硬件解决方案",
+    "metaTitle": "车载硬件产品 | AI行车记录仪, MDVR, GPS定位器",
+    "metaDesc": "探索我们的专业车载硬件系列，包括GPS定位器、4G行车记录仪、MDVR系统和智能显示屏。",
+    "viewDetailsBtn": "查看详情"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "全部",
+      "icon": "Layers"
     },
-    "categories": [
-        {
-            "id": "all",
-            "label": "全部",
-            "icon": "Layers"
-        },
-        {
-            "id": "gps-tracker",
-            "label": "GPS定位器",
-            "icon": "MapPin"
-        },
-        {
-            "id": "4g-dashcam",
-            "label": "4G行车记录仪",
-            "icon": "Camera"
-        },
-        {
-            "id": "4g-aicarbox",
-            "label": "AI智能主机",
-            "icon": "MonitorPlay"
-        },
-        {
-            "id": "4g-camera",
-            "label": "AI摄像头",
-            "icon": "Camera"
-        },
-        {
-            "id": "accessories",
-            "label": "配件",
-            "icon": "Cpu"
-        },
-        {
-            "id": "oem-odm",
-            "label": "OEM/ODM定制",
-            "icon": "Wrench"
-        }
-    ],
-    "items": [
-        {
-            "id": "c08w-4g-gps-tracker-ip65-waterproof",
-            "categoryId": "gps-tracker",
-            "title": "C08W 4G GPS定位器",
-            "description": "专业级4G实时追踪设备，支持远程断油电与IP65级防护。",
-            "image": "/images/products/C08W-main.jpg"
-        },
-        {
-            "id": "c08l-wireless-asset-tracker-long-standby",
-            "categoryId": "gps-tracker",
-            "title": "C08L 资产追踪器",
-            "description": "超长待机资产追踪器，拥有3年电池寿命与免安装磁吸设计。",
-            "image": "/images/products/C08L-main.jpg"
-        },
-        {
-            "id": "d501-4g-dashcam-dual-lens-cloud",
-            "categoryId": "4g-dashcam",
-            "title": "D501 4G云记录仪",
-            "description": "双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。",
-            "image": "/images/products/D501-main.jpg"
-        },
-        {
-            "id": "d701-pro-truck-dashcam-lockable",
-            "categoryId": "4g-dashcam",
-            "title": "D701 Pro 货车记录仪",
-            "description": "坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。",
-            "image": "/images/products/D701-main.jpg"
-        },
-        {
-            "id": "d401-ai-dashcam-adas-dms",
-            "categoryId": "4g-camera",
-            "title": "D401 AI智能摄像头",
-            "description": "内置ADAS与DMS算法的智能摄像头，全方位保障驾驶安全。",
-            "image": "/images/products/D401-main.jpg"
-        },
-        {
-            "id": "d901-smart-ai-camera-bsd-pedestrian",
-            "categoryId": "4g-camera",
-            "title": "D901 AI旗舰摄像头",
-            "description": "多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。",
-            "image": "/images/products/D901-main.jpg"
-        },
-        {
-            "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
-            "categoryId": "4g-aicarbox",
-            "title": "D604 AI智能盒子",
-            "description": "8通道MDVR中枢，搭载强大AI算力，实现集中化视频监控。",
-            "image": "/images/products/D604-main.jpg"
-        },
-        {
-            "id": "d606-6ch-ai-dashcam-terminal",
-            "categoryId": "4g-aicarbox",
-            "title": "D606 4G 6 通道双卡智能车载终端",
-            "description": "支持 6 路 AHD+1 路 IPC 视频输入，4G 全网通/5G 可选，DMS/ADAS/BSD 智能驾驶辅助系统。",
-            "image": "/images/products/D606-main.png"
-        },
-        {
-            "id": "oem-custom-solution",
-            "categoryId": "oem-odm",
-            "title": "OEM定制化方案",
-            "description": "为您特定的车队需求量身定制硬件设计与制造服务",
-            "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
-        }
-    ]
+    {
+      "id": "gps-tracker",
+      "label": "GPS定位器",
+      "icon": "MapPin"
+    },
+    {
+      "id": "4g-dashcam",
+      "label": "4G行车记录仪",
+      "icon": "Camera"
+    },
+    {
+      "id": "4g-aicarbox",
+      "label": "AI智能主机",
+      "icon": "MonitorPlay"
+    },
+    {
+      "id": "4g-camera",
+      "label": "AI摄像头",
+      "icon": "Camera"
+    },
+    {
+      "id": "accessories",
+      "label": "配件",
+      "icon": "Cpu"
+    },
+    {
+      "id": "oem-odm",
+      "label": "OEM/ODM定制",
+      "icon": "Wrench"
+    }
+  ],
+  "items": [
+    {
+      "id": "c08w-4g-gps-tracker-ip65-waterproof",
+      "categoryId": "gps-tracker",
+      "title": "C08W 4G GPS定位器",
+      "description": "专业级4G实时追踪设备，支持远程断油电与IP65级防护。",
+      "image": "/images/products/C08W-main.jpg"
+    },
+    {
+      "id": "c08l-wireless-asset-tracker-long-standby",
+      "categoryId": "gps-tracker",
+      "title": "C08L 资产追踪器",
+      "description": "超长待机资产追踪器，拥有3年电池寿命与免安装磁吸设计。",
+      "image": "/images/products/C08L-main.jpg"
+    },
+    {
+      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "categoryId": "4g-dashcam",
+      "title": "D501 4G云记录仪",
+      "description": "双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。",
+      "image": "/images/products/D501-main.jpg"
+    },
+    {
+      "id": "d701-pro-truck-dashcam-lockable",
+      "categoryId": "4g-dashcam",
+      "title": "D701 Pro 货车记录仪",
+      "description": "坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。",
+      "image": "/images/products/D701-main.jpg"
+    },
+    {
+      "id": "d401-ai-dashcam-adas-dms",
+      "categoryId": "4g-camera",
+      "title": "D401 AI智能摄像头",
+      "description": "内置ADAS与DMS算法的智能摄像头，全方位保障驾驶安全。",
+      "image": "/images/products/D401-main.jpg"
+    },
+    {
+      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "categoryId": "4g-camera",
+      "title": "D901 AI旗舰摄像头",
+      "description": "多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。",
+      "image": "/images/products/D901-main.jpg"
+    },
+    {
+      "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
+      "categoryId": "4g-aicarbox",
+      "title": "D604 AI智能盒子",
+      "description": "8通道MDVR中枢，搭载强大AI算力，实现集中化视频监控。",
+      "image": "/images/products/D604-main.jpg"
+    },
+    {
+      "id": "d606-6ch-ai-dashcam-terminal",
+      "categoryId": "4g-aicarbox",
+      "title": "D606 4G 6 通道双卡智能车载终端",
+      "description": "支持 6 路 AHD+1 路 IPC 视频输入，4G 全网通/5G 可选，DMS/ADAS/BSD 智能驾驶辅助系统。",
+      "image": "/images/products/D606-main.png"
+    },
+    {
+      "id": "oem-custom-solution",
+      "categoryId": "oem-odm",
+      "title": "OEM定制化方案",
+      "description": "为您特定的车队需求量身定制硬件设计与制造服务",
+      "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
+      "id": "adas-camera",
+      "categoryId": "accessories",
+      "title": "配件-ADAS摄像头",
+      "description": "粘贴式ADAS摄像头，焦距6mm，分辨率1280*720P",
+      "image": "/images/accessories/adas-camera.png"
+    },
+    {
+      "id": "bsd-camera",
+      "categoryId": "accessories",
+      "title": "配件-BSD摄像头",
+      "description": "BSD摄像头，用于盲点监测系统",
+      "image": "/images/accessories/bsd-camera.png"
+    },
+    {
+      "id": "lift-sensor",
+      "categoryId": "accessories",
+      "title": "配件-举升密闭传感器",
+      "description": "举升密闭传感器，用于车辆举升系统",
+      "image": "/images/accessories/lift-sensor.png"
+    },
+    {
+      "id": "temp-humidity-sensor",
+      "categoryId": "accessories",
+      "title": "配件-温湿度采集器",
+      "description": "温湿度采集器，监测车内环境",
+      "image": "/images/accessories/temp-humidity-sensor.png"
+    },
+    {
+      "id": "pillar-dms-camera-1",
+      "categoryId": "accessories",
+      "title": "配件-立柱型DMS摄像头-1",
+      "description": "立柱型DMS摄像头，用于驾驶员监控",
+      "image": "/images/accessories/pillar-dms-camera-1.png"
+    },
+    {
+      "id": "pillar-dms-camera-2",
+      "categoryId": "accessories",
+      "title": "配件-立柱型DMS摄像头-2",
+      "description": "立柱型DMS摄像头，用于驾驶员监控",
+      "image": "/images/accessories/pillar-dms-camera-2.png"
+    },
+    {
+      "id": "glass-mounted-dms-camera",
+      "categoryId": "accessories",
+      "title": "配件-贴玻璃式DMS摄像头",
+      "description": "贴玻璃式DMS摄像头，用于驾驶员监控",
+      "image": "/images/accessories/glass-mounted-dms-camera.png"
+    },
+    {
+      "id": "ultrasonic-oil-sensor",
+      "categoryId": "accessories",
+      "title": "配件-超声波油感",
+      "description": "超声波油感，用于油量监测",
+      "image": "/images/accessories/ultrasonic-oil-sensor.png"
+    },
+    {
+      "id": "in-cabin-ir-camera",
+      "categoryId": "accessories",
+      "title": "配件-车内红外摄像头",
+      "description": "车内红外摄像头，用于夜间监控",
+      "image": "/images/accessories/in-cabin-ir-camera.png"
+    },
+    {
+      "id": "in-cabin-high-mount-ir-camera",
+      "categoryId": "accessories",
+      "title": "配件-车内高支架红外摄像头",
+      "description": "车内高支架红外摄像头，用于全方位监控",
+      "image": "/images/accessories/in-cabin-high-mount-ir-camera.png"
+    },
+    {
+      "id": "outdoor-waterproof-ir-camera",
+      "categoryId": "accessories",
+      "title": "配件-车外防水红外摄像头",
+      "description": "车外防水红外摄像头，用于外部环境监控",
+      "image": "/images/accessories/outdoor-waterproof-ir-camera.png"
+    }
+  ]
 }
