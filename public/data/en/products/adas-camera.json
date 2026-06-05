@@ -16,11 +16,11 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "粘贴式ADAS摄像头"
+      "value": "Adhesive ADAS Camera"
     },
     {
       "label": "Cable Connector",
-      "value": "标准航空头"
+      "value": "Standard Aviation Plug"
     },
     {
       "label": "Focal Length",
@@ -40,7 +40,7 @@
     },
     {
       "label": "Video Format",
-      "value": "默认为PAL制"
+      "value": "Default to PAL System"
     },
     {
       "label": "Field of View",
@@ -52,7 +52,7 @@
     },
     {
       "label": "Resolution Standard",
-      "value": "中心：500LW/PH 四周：350LW/PH"
+      "value": "Center: 500LW/PH Surrounding: 350LW/PH"
     },
     {
       "label": "Optical Distortion",
@@ -64,11 +64,11 @@
     },
     {
       "label": "Video Output Mode",
-      "value": "模拟高清AHD信号"
+      "value": "Analog HD AHD Signal"
     },
     {
       "label": "Image Mode",
-      "value": "彩色"
+      "value": "Color"
     },
     {
       "label": "Dynamic Range",
@@ -84,11 +84,11 @@
     },
     {
       "label": "Operating Temperature & Humidity",
-      "value": "–20℃ ~70℃"
+      "value": "-20℃ ~ 70℃"
     },
     {
       "label": "Storage Temperature & Humidity",
-      "value": "–25℃ ~80℃"
+      "value": "-25℃ ~ 80℃"
     },
     {
       "label": "Aircraft Cable Length",

@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "车内红外摄像头"
+      "value": "In-Cabin IR Camera"
     },
     {
       "label": "Cable Connector",

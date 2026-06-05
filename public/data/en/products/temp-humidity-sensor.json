@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "产品名称",
-      "value": "温湿度采集器"
+      "value": "Temperature and Humidity Collector"
     },
     {
       "label": "工作电压",

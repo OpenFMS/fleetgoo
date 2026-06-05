@@ -16,11 +16,11 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "立柱型DMS摄像头"
+      "value": "Pillar Type DMS Camera"
     },
     {
       "label": "Cable Connector",
-      "value": "标准航空头"
+      "value": "Standard Aviation Plug"
     },
     {
       "label": "Focal Length",
@@ -40,7 +40,7 @@
     },
     {
       "label": "Video Format",
-      "value": "默认为PAL制"
+      "value": "Default to PAL System"
     },
     {
       "label": "Field of View",
@@ -76,11 +76,11 @@
     },
     {
       "label": "工作温 &湿度",
-      "value": "–20℃ ~70℃"
+      "value": "-20℃ ~ 70℃"
     },
     {
       "label": "存储温度& 湿度",
-      "value": "–25℃ ~80℃"
+      "value": "-25℃ ~ 80℃"
     },
     {
       "label": "标配线材长度",

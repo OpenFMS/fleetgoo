@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "贴玻璃式DMS摄像头"
+      "value": "Glass-Mounted DMS Camera"
     },
     {
       "label": "Cable Connector",

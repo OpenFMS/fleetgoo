@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "传感器类型",
-      "value": "举升密闭传感器"
+      "value": "Lift Sealed Sensor"
     },
     {
       "label": "产品名称",

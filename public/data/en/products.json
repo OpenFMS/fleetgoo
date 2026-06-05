@@ -36,6 +36,11 @@
       "id": "oem-odm",
       "label": "OEM & ODM",
       "icon": "Wrench"
+    },
+    {
+      "id": "accessories",
+      "label": "Accessories",
+      "icon": "Cpu"
     }
   ],
   "items": [

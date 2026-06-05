@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "车外防水红外摄像头"
+      "value": "Outdoor Waterproof IR Camera"
     },
     {
       "label": "Cable Connector",
@@ -52,7 +52,7 @@
     },
     {
       "label": "Video Output Mode",
-      "value": "模拟高清AHD信号"
+      "value": "Analog HD AHD Signal"
     },
     {
       "label": "Image Mode",

@@ -16,7 +16,7 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "立柱型DMS摄像头"
+      "value": "Pillar Type DMS Camera"
     },
     {
       "label": "Cable Connector",
@@ -52,7 +52,7 @@
     },
     {
       "label": "Video Output Mode",
-      "value": "模拟高清AHD信号"
+      "value": "Analog HD AHD Signal"
     },
     {
       "label": "Image Mode",
