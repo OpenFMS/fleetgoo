@@ -16,11 +16,11 @@
   "parameters": [
     {
       "label": "Camera Type",
-      "value": "车外防水全彩BSD摄像头"
+      "value": "Outdoor Waterproof Full-Color BSD Camera"
     },
     {
       "label": "Cable Connector",
-      "value": "标准航空头接口"
+      "value": "Standard Aviation Connector"
     },
     {
       "label": "Chip",
@@ -36,7 +36,7 @@
     },
     {
       "label": "Camera Angle",
-      "value": "垂直角度：50°，水平角度：100°，对角角度：135°"
+      "value": "Vertical Angle: 50°, Horizontal Angle: 100°, Diagonal Angle: 135°"
     },
     {
       "label": "Scanning System",
@@ -56,7 +56,7 @@
     },
     {
       "label": "Image Mode",
-      "value": "昼夜全彩"
+      "value": "Day/Night Full Color"
     },
     {
       "label": "White Balance",
@@ -79,8 +79,8 @@
       "value": "-25℃ ~ 80℃, Humidity up to 85%"
     },
     {
-      "label": "防水等级",
-      "value": "IP67防水等级标准"
+      "label": "Waterproof Rating",
+      "value": "IP67 Water Protection Rating Standard"
     }
   ],
   "downloads": [],

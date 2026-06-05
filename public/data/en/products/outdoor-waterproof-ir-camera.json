@@ -20,7 +20,7 @@
     },
     {
       "label": "Cable Connector",
-      "value": "标准航空头防水接口"
+      "value": "Standard Waterproof Aviation Connector"
     },
     {
       "label": "Chip",
@@ -32,11 +32,11 @@
     },
     {
       "label": "Effective Pixels",
-      "value": "可选1080P和720P"
+      "value": "Selectable 1080P and 720P"
     },
     {
       "label": "Camera Angle",
-      "value": "垂直角度：69°，水平角度：102°，对角角度：135°"
+      "value": "Vertical Angle: 69°, Horizontal Angle: 102°, Diagonal Angle: 135°"
     },
     {
       "label": "Scanning System",
@@ -83,8 +83,8 @@
       "value": "-25℃ ~ 80℃, Humidity up to 85%"
     },
     {
-      "label": "防水等级",
-      "value": "IP67防水等级标准"
+      "label": "Waterproof Rating",
+      "value": "IP67 Water Protection Rating Standard"
     }
   ],
   "downloads": [],

@@ -36,7 +36,7 @@
     },
     {
       "label": "Camera Angle",
-      "value": "水平角度：63°，对角角度：80°"
+      "value": "Horizontal Angle: 63°, Diagonal Angle: 80°"
     },
     {
       "label": "Scanning System",
@@ -56,7 +56,7 @@
     },
     {
       "label": "Image Mode",
-      "value": "黑白"
+      "value": "Black & White"
     },
     {
       "label": "White Balance",
@@ -87,7 +87,7 @@
       "value": "-25℃ ~ 80℃, Humidity up to 85%"
     },
     {
-      "label": "标配线材长度",
+      "label": "Standard Cable Length",
       "value": "2450mm"
     }
   ],

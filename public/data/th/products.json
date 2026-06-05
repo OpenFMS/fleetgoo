@@ -33,6 +33,11 @@
       "icon": "Camera"
     },
     {
+      "id": "accessories",
+      "label": "อุปกรณ์เสริม",
+      "icon": "Cpu"
+    },
+    {
       "id": "oem-odm",
       "label": "OEM & ODM",
       "icon": "Wrench"
@@ -110,6 +115,83 @@
       "description": "บริการออกแบบฮาร์ดแวร์และการผลิตตามสั่ง เราสร้าง GPS tracker, dashcam และ MDVR ตามข้อกำหนดของคุณ",
       "image": "/images/products/OEM-main.jpg",
       "icon": "Wrench"
+    },
+    {
+      "id": "adas-camera",
+      "categoryId": "accessories",
+      "title": "กล้อง ADAS",
+      "description": "กล้อง ADAS แบบติดแน่น ระยะโฟกัส 6 มม. ความละเอียด 1280*720P",
+      "image": "/images/accessories/adas-camera.png"
+    },
+    {
+      "id": "bsd-camera",
+      "categoryId": "accessories",
+      "title": "กล้อง BSD",
+      "description": "กล้อง BSD สำหรับระบบตรวจสอบจุดบอด",
+      "image": "/images/accessories/bsd-camera.png"
+    },
+    {
+      "id": "lift-sensor",
+      "categoryId": "accessories",
+      "title": "เซ็นเซอร์ลิฟต์ปิดผนึก",
+      "description": "เซ็นเซอร์ลิฟต์ปิดผนึกสำหรับระบบยกเลื่อนรถ",
+      "image": "/images/accessories/lift-sensor.png"
+    },
+    {
+      "id": "temp-humidity-sensor",
+      "categoryId": "accessories",
+      "title": "ตัวรับค่าอุณหภูมิและความชื้น",
+      "description": "ตัวรับค่าอุณหภูมิและความชื้นสำหรับตรวจสอบสภาพแวดล้อมในห้องโดยสาร",
+      "image": "/images/accessories/temp-humidity-sensor.png"
+    },
+    {
+      "id": "pillar-dms-camera-1",
+      "categoryId": "accessories",
+      "title": "กล้อง DMS แบบตั้งเสา - 1",
+      "description": "กล้อง DMS แบบตั้งเสาสำหรับตรวจสอบคนขับ",
+      "image": "/images/accessories/pillar-dms-camera-1.png"
+    },
+    {
+      "id": "pillar-dms-camera-2",
+      "categoryId": "accessories",
+      "title": "กล้อง DMS แบบตั้งเสา - 2",
+      "description": "กล้อง DMS แบบตั้งเสาสำหรับตรวจสอบคนขับ",
+      "image": "/images/accessories/pillar-dms-camera-2.png"
+    },
+    {
+      "id": "glass-mounted-dms-camera",
+      "categoryId": "accessories",
+      "title": "กล้อง DMS ติดตั้งบนกระจก",
+      "description": "กล้อง DMS ติดตั้งบนกระจกสำหรับตรวจสอบคนขับ",
+      "image": "/images/accessories/glass-mounted-dms-camera.png"
+    },
+    {
+      "id": "ultrasonic-oil-sensor",
+      "categoryId": "accessories",
+      "title": "เซ็นเซอร์น้ำมันอัลตราโซนิก",
+      "description": "เซ็นเซอร์น้ำมันอัลตราโซนิกสำหรับตรวจสอบระดับน้ำมัน",
+      "image": "/images/accessories/ultrasonic-oil-sensor.png"
+    },
+    {
+      "id": "in-cabin-ir-camera",
+      "categoryId": "accessories",
+      "title": "กล้องอินฟราเรดในห้องโดยสาร",
+      "description": "กล้องอินฟราเรดในห้องโดยสารสำหรับตรวจสอบตอนกลางคืน",
+      "image": "/images/accessories/in-cabin-ir-camera.png"
+    },
+    {
+      "id": "in-cabin-high-mount-ir-camera",
+      "categoryId": "accessories",
+      "title": "กล้องอินฟราเรดติดตั้งสูงในห้องโดยสาร",
+      "description": "กล้องอินฟราเรดติดตั้งสูงในห้องโดยสารสำหรับตรวจสอบรอบทิศทาง",
+      "image": "/images/accessories/in-cabin-high-mount-ir-camera.png"
+    },
+    {
+      "id": "outdoor-waterproof-ir-camera",
+      "categoryId": "accessories",
+      "title": "กล้องอินฟราเรดกันน้ำภายนอก",
+      "description": "กล้องอินฟราเรดกันน้ำภายนอกสำหรับตรวจสอบสภาพแวดล้อมภายนอก",
+      "image": "/images/accessories/outdoor-waterproof-ir-camera.png"
     }
   ]
 }

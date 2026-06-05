@@ -15,48 +15,48 @@
   ],
   "parameters": [
     {
-      "label": "产品名称",
+      "label": "Product Name",
       "value": "Temperature and Humidity Collector"
     },
     {
-      "label": "工作电压",
+      "label": "Operating Voltage",
       "value": "DC5V±0.5V"
     },
     {
-      "label": "工作电流",
-      "value": "8-15mA(满负荷 15MA)"
+      "label": "Operating Current",
+      "value": "8-15mA (Full Load 15mA)"
     },
     {
-      "label": "通讯方式",
-      "value": "输出对接主机 RS232，9600bps，8，1"
+      "label": "Communication Method",
+      "value": "Output connects to host RS232, 9600bps, 8, 1"
     },
     {
-      "label": "温度测量范围",
-      "value": "-50℃ ～ +105℃"
+      "label": "Temperature Measurement Range",
+      "value": "-50℃ ~ +105℃"
     },
     {
-      "label": "湿度测量范围",
+      "label": "Humidity Measurement Range",
       "value": "0-99.9%RH"
     },
     {
-      "label": "数据采集间隔",
-      "value": "5 秒一次"
+      "label": "Data Collection Interval",
+      "value": "Once every 5 seconds"
     },
     {
-      "label": "对主机发数据",
-      "value": "30 秒一次"
+      "label": "Send Data to Host",
+      "value": "Once every 30 seconds"
     },
     {
-      "label": "支持传感器路数",
-      "value": "2路数字式 485 温湿度一体化传感器/485 单温度传感器"
+      "label": "Number of Supported Sensor Channels",
+      "value": "2-channel digital 485 temperature and humidity integrated sensors / 485 single temperature sensors"
     },
     {
-      "label": "环境温度允许范围",
+      "label": "Permitted Ambient Temperature Range",
       "value": "-45°~+70°"
     },
     {
-      "label": "线长",
-      "value": "默认2米，可根据实际情况加延长线"
+      "label": "Wire Length",
+      "value": "Default 2 meters, extension cables available as needed"
     }
   ],
   "downloads": [],

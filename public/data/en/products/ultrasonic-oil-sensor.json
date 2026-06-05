@@ -15,27 +15,27 @@
   ],
   "parameters": [
     {
-      "label": "传感器类型",
-      "value": "超声波液位传感器"
+      "label": "Sensor Type",
+      "value": "Ultrasonic Level Sensor"
     },
     {
-      "label": "输入电压",
-      "value": "DC9～36V"
+      "label": "Input Voltage",
+      "value": "DC9~36V"
     },
     {
-      "label": "工作电流",
+      "label": "Operating Current",
       "value": "≦30mA"
     },
     {
-      "label": "防爆等级",
-      "value": "本安 Exia II CT6"
+      "label": "Explosion-Proof Rating",
+      "value": "Intrinsic Safety Exia II CT6"
     },
     {
-      "label": "测量范围",
-      "value": "50～1000/2000mm"
+      "label": "Measuring Range",
+      "value": "50~1000/2000mm"
     },
     {
-      "label": "测量精度",
+      "label": "Measurement Accuracy",
       "value": "≤0.5%FS"
     },
     {
@@ -43,27 +43,27 @@
       "value": "0.1mm"
     },
     {
-      "label": "测量角度",
-      "value": "0～5°"
+      "label": "Measuring Angle",
+      "value": "0~5°"
     },
     {
-      "label": "通讯接口",
-      "value": "RS232 / RS485 （可选）"
+      "label": "Communication Interface",
+      "value": "RS232 / RS485 (Optional)"
     },
     {
-      "label": "通讯速率",
-      "value": "9600（可调）"
+      "label": "Communication Rate",
+      "value": "9600 (Adjustable)"
     },
     {
-      "label": "线序定义",
-      "value": "黑色-地线； 红色-正极； 黄色-TX/B； 绿色-RX/A"
+      "label": "Wire Sequence Definition",
+      "value": "Black-Ground Wire; Red-Positive Pole; Yellow-TX/B; Green-RX/A"
     },
     {
-      "label": "存贮温度",
+      "label": "Storage Temperature",
       "value": "–45℃ ~80℃"
     },
     {
-      "label": "工作温度",
+      "label": "Operating Temperature",
       "value": "–40℃ ~75℃"
     },
     {
@@ -71,15 +71,15 @@
       "value": "-20℃ ~ 70℃"
     },
     {
-      "label": "产品尺寸",
+      "label": "Product Dimensions",
       "value": "41*18mm"
     },
     {
-      "label": "线长",
-      "value": "默认1米，可根据实际情况加延长线"
+      "label": "Wire Length",
+      "value": "Default 1 meter, extension cables available as needed"
     },
     {
-      "label": "备注",
+      "label": "Notes",
       "value": ""
     }
   ],

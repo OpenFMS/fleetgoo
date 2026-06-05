@@ -48,14 +48,14 @@
     },
     {
       "label": "Image Mode",
-      "value": "黑白"
+      "value": "Black & White"
     },
     {
       "label": "Dynamic Range",
       "value": "83dB"
     },
     {
-      "label": "信噪比",
+      "label": "Signal-to-Noise Ratio",
       "value": "41dB"
     },
     {
@@ -63,7 +63,7 @@
       "value": "1G3P"
     },
     {
-      "label": "电流",
+      "label": "Current",
       "value": "70mA"
     },
     {
@@ -71,19 +71,19 @@
       "value": "DC12V"
     },
     {
-      "label": "功耗",
+      "label": "Power Consumption",
       "value": "0.84W"
     },
     {
-      "label": "工作温 &湿度",
+      "label": "Operating Temperature & Humidity",
       "value": "-20℃ ~ 70℃"
     },
     {
-      "label": "存储温度& 湿度",
+      "label": "Storage Temperature & Humidity",
       "value": "-25℃ ~ 80℃"
     },
     {
-      "label": "标配线材长度",
+      "label": "Standard Cable Length",
       "value": "2450mm"
     }
   ],
