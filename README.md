@@ -1,53 +1,65 @@
 # FleetGoo
 
-这是一个基于 React 和 Vite 构建的海外独立网站，面向海外商用车队管理者、TSPs等客户展示车队管理解决方案(AI+硬件+软件)。项目采用了响应式设计，支持多语言（英语、西班牙语、中文），并集成了暗色模式和动态动画效果。
+FleetGoo 是一个面向全球商用车队管理者、TSPs（车联网服务提供商）的 AI 车队管理解决方案展示网站。采用 Astro + React 构建，支持多语言静态生成，集成了 SEO 优化、动态内容管理和响应式设计。
 
 ## 🛠 技术栈
 
-本项目使用了以下核心技术和库：
-
-- **核心框架**: [React](https://react.dev/) (v18)
-- **构建工具**: [Vite](https://vitejs.dev/)
-- **路由管理**: [React Router DOM](https://reactrouter.com/)
-- **样式方案**: 
-  - [Tailwind CSS](https://tailwindcss.com/) (实用优先的 CSS 框架)
-  - [Radix UI](https://www.radix-ui.com/) (无样式组件原语，用于构建高质量不仅)
-  - `class-variance-authority` (CVA) & `clsx` (类名管理)
+- **核心框架**: [Astro](https://astro.build/) (v4) - 静态站点生成器
+- **UI 框架**: [React](https://react.dev/) (v18) - 交互组件
+- **样式方案**:
+  - [Tailwind CSS](https://tailwindcss.com/) (v3) - 实用优先 CSS
+  - [Radix UI](https://www.radix-ui.com/) - 无样式组件原语
+  - `class-variance-authority` & `clsx` - 类名管理
 - **动画效果**: [Framer Motion](https://www.framer.com/motion/)
 - **图标库**: [Lucide React](https://lucide.dev/)
-- **SEO**: React Helmet
+- **SEO**: React Helmet Async + 自动生成 Sitemap
 
 ## ✨ 主要功能
 
-- **多语言支持**: 内置英语 (en)、西班牙语 (es) and 中文 (zh) 切换功能。
-- **响应式设计**: 完美适配桌面端和移动端设备。
-- **暗色模式**: 支持系统级或手动的明亮/暗色主题切换。
-- **数据驱动**: 页面内容通过 JSON 数据文件动态加载 (`/public/data/` 目录)，便于维护和更新内容。
-- **现代化组件**: 封装了丰富的 UI 组件（如 Dialog, Toast, Tabs, Dropdown 等）。
-- **联系表单**: 集成 EmailJS 实现无后端邮件通知，支持自定义反馈文案。
+- **多语言支持**: 英语 (en)、西班牙语 (es)、中文 (zh)、日语 (ja)、泰语 (th)
+- **静态生成**: Astro 预渲染，极速加载
+- **响应式设计**: 完美适配桌面端和移动端
+- **暗色模式**: 支持明亮/暗色主题切换
+- **数据驱动**: 内容通过 JSON 文件动态加载 (`/public/data/{lang}/`)
+- **SEO 优化**: 自动生成 sitemap.xml、llms.txt，支持结构化数据
+- **联系表单**: 集成 EmailJS 实现无后端邮件通知
+- **博客系统**: Markdown 内容管理，多语言博客文章
 
 ## 📂 项目结构
 
 ```
-src/
-├── components/     # UI 组件
-│   ├── ui/         # 基础组件 (Button, Input, etc.)
-│   └── ...         # 业务组件 (Header, Footer, Hero, etc.)
-├── hooks/          # 自定义 Hooks functionality (如 useFetchData)
-├── lib/            # 工具函数 (utils)
-├── pages/          # 页面组件 (路由视图)
-│   ├── HomePage.jsx
-│   ├── ProductsPage.jsx
-│   └── ...
-├── App.jsx         # 根组件及路由配置
-└── main.jsx        # 入口文件
+├── src/
+│   ├── components/     # React UI 组件
+│   │   ├── ui/         # 基础组件 (Button, Dialog, Toast 等)
+│   │   └── ...         # 业务组件 (Header, Footer, Hero 等)
+│   ├── content/        # 内容集合 (博客文章)
+│   │   └── blog/       # 多语言博客 (en, es, ja, th, zh)
+│   ├── hooks/          # 自定义 React Hooks
+│   ├── layouts/        # Astro 布局组件
+│   ├── lib/            # 工具函数和配置
+│   ├── pages/          # Astro 页面路由
+│   │   ├── [lang]/     # 多语言页面 (动态路由)
+│   │   ├── admin/      # 管理后台
+│   │   └── *.astro     # 页面组件
+│   └── views/          # 页面视图组件
+├── public/
+│   ├── data/           # 多语言 JSON 数据
+│   │   ├── en/         # 英语内容
+│   │   ├── es/         # 西班牙语内容
+│   │   ├── ja/         # 日语内容
+│   │   ├── th/         # 泰语内容
+│   │   └── zh/         # 中文内容
+│   └── images/         # 静态图片资源
+├── tools/              # 构建工具脚本
+├── docs/               # 项目文档
+└── astro.config.mjs    # Astro 配置
 ```
 
 ## 🚀 快速开始
 
 ### 1. 安装依赖
 
-确保你的本地环境已安装 Node.js (推荐 v18+)。
+确保本地环境已安装 Node.js (推荐 v18+)。
 
 ```bash
 npm install
@@ -58,7 +70,7 @@ npm install
 ```bash
 npm run dev
 ```
-启动后访问 `http://localhost:3000` (默认端口可能因配置而异，请查看终端输出)。
+启动后访问 `http://localhost:3000`
 
 ### 3. 构建生产版本
 
@@ -75,47 +87,56 @@ npm run preview
 
 ## 📝 配置说明
 
-- **Vite 配置**: 位于 `vite.config.js`。
-- **Tailwind 配置**: 位于 `tailwind.config.js`。
-- **内容数据**: 位于 `public/data/{language}/` 下的 JSON 文件中。
+- **Astro 配置**: `astro.config.mjs`
+- **Tailwind 配置**: `tailwind.config.js`
+- **多语言数据**: `public/data/{lang}/` 下的 JSON 文件
+- **站点配置**: `public/data/settings.json`
 
-## 📂 资源管理 (Asset Management)
+## 📂 资源管理
 
-为了保持项目整洁，请按照以下目录结构存放静态资源（Images, Logos, Favicons）：
+静态资源存放目录：
 
-*   **`public/images/brand/`**: 存放 Logo、Icon 等品牌标识。
-*   **`public/images/favicons/`**: 存放网站图标 (Favicon)。
-*   **`public/images/products/`**: 存放产品高清图片。
-*   **`public/images/solutions/`**: 存放解决方案相关图片。
-*   **`public/images/company/`**: 存放公司环境、团队照片等。
+- `public/images/brand/` - Logo、品牌标识
+- `public/images/favicons/` - 网站图标
+- `public/images/products/` - 产品图片
+- `public/images/solutions/` - 解决方案图片
+- `public/images/company/` - 公司环境、团队照片
 
-## 🌍 Deployment & Configuration
-> **注意**: 在代码或 JSON 数据引用这些图片时，请使用绝对路径，例如 `/images/products/my-product.jpg`。
+引用时使用绝对路径，如 `/images/products/my-product.jpg`。
+
+## 🌍 部署
 
 ### Vercel 部署
 
-本项目可以直接部署到 Vercel。对于静态站点，通常无需额外配置。但为了 SEO 和 Sitemap 生成正确，建议配置环境变量。
+本项目配置为直接部署到 Vercel。
 
-**环境变量配置 (Environment Variables)**
+**环境变量配置**:
 
-在 Vercel 后台 (Project Settings -> Environment Variables) 或本地构建时，请设置以下变量以覆盖默认域名 (`https://www.fleetgpstrack.com`)：
-
-| 变量名 (Variable Name) | 描述 (Description) | 示例 (Example) |
+| 变量名 | 描述 | 示例 |
 | :--- | :--- | :--- |
-| `SITE_URL` | **后端/构建时使用**。用于生成 `sitemap.xml` 和 `llms.txt`。 | `https://staging.fleetgoo.com` |
-| `VITE_SITE_URL` | **前端/运行时使用**。用于 React 组件中的 Canonical URL、Meta Tags、JSON-LD。 | `https://staging.fleetgoo.com` |
+| `SITE_URL` | 后端/构建时使用，生成 sitemap | `https://www.fleetgoo.com` |
+| `VITE_SITE_URL` | 前端/运行时使用，Canonical URL | `https://www.fleetgoo.com` |
 
-**示例: 自定义构建命令**
+### 构建脚本
 
 ```bash
-SITE_URL=https://custom-domain.com VITE_SITE_URL=https://custom-domain.com npm run build
-```
+# 完整构建流程（含预构建检查和 SEO 生成）
+npm run build
 
-通过这种方式，您可以灵活地部署到 Staging (测试环境) 或 Production (正式环境)，而无需修改代码文件。
+# 检查图片尺寸
+npm run check:images
+
+# 更新内容索引
+npm run content:index
+
+# 同步多语言内容
+npm run content:sync
+```
 
 ## 🤝 贡献
 
 欢迎提交 Issue 或 Pull Request 来改进本项目。
 
 ---
-Generated by Antigravity
+
+**FleetGoo Technology** | [www.fleetgoo.com](https://www.fleetgoo.com)
