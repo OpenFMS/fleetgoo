@@ -128,9 +128,9 @@ cp tmp/D606-应用场景.jpg   public/images/products/D606-04.jpg
 | Category ID | 中文名称 | 适用产品 |
 |-------------|----------|----------|
 | `gps-tracker` | GPS 定位器 | C08W, C08L |
-| `4g-dashcam` | 4G 行车记录仪 | D501, D701 |
+| `4g-dashcam` | 4G 行车记录仪 | D503, D703 |
 | `4g-aicarbox` | AI 智能主机 | D604, **D606** |
-| `4g-camera` | AI 摄像头 | D401, D901 |
+| `4g-camera` | AI 摄像头 | D401, D904 |
 | `oem-odm` | OEM/ODM 定制 | 定制服务 |
 
 **D606 归类**: `4g-aicarbox`（与 D604 同类）

@@ -22,10 +22,10 @@ Before diving into features, you must identify which hardware architecture suits
 Ideal for small delivery vans or service vehicles where the primary concern is documenting road incidents for insurance purposes. These are the most cost-effective but lack the comprehensive visibility required for large-scale logistics.
 
 ### 1.2 Dual-Channel / All-in-One AI Dashcams (Front & Cabin)
-This is the current "gold standard" for commercial fleets. Devices like the **FleetGoo D501** integrate both a road-facing camera and an infrared (IR) cabin-facing camera in a single compact unit. This setup allows for simultaneous monitoring of road conditions and driver behavior.
+This is the current "gold standard" for commercial fleets. Devices like the **FleetGoo D503** integrate both a road-facing camera and an infrared (IR) cabin-facing camera in a single compact unit. This setup allows for simultaneous monitoring of road conditions and driver behavior.
 
 ### 1.3 Multi-Channel MDVR Systems
-For heavy-duty trucks, tankers, and buses, a standalone dashcam is often insufficient. **Multi-Channel Mobile Digital Video Recorders (MDVRs)** allow for up to 8 camera inputs, providing 360-degree coverage, blind-spot monitoring, and cargo bay surveillance.
+For heavy-duty trucks, tankers, and buses, a standalone dashcam is often insufficient. **Multi-Channel Mobile Digital Video Recorders (MDVRs)** (such as the D904 series) allow for up to 8 camera inputs, providing 360-degree coverage, blind-spot monitoring, and cargo bay surveillance.
 
 ---
 
@@ -106,7 +106,7 @@ When choosing a fleet dashcam, don't just shop for the lowest price. Look for a 
 *   Robust cloud connectivity and data security.
 *   H.265 compression for data savings.
 
-**By choosing hardware like FleetGoo’s D501 or D901 series, you are not just buying a camera; you are investing in a 24/7 digital safety net for your most valuable assets: your people and your vehicles.**
+**By choosing hardware like FleetGoo's D503 or D904 series, you are not just buying a camera; you are investing in a 24/7 digital safety net for your most valuable assets: your people and your vehicles.**
 
 ---
 *Looking for a customized fleet hardware solution? [Contact our experts today](/en/contact) for a free hardware consultation.*

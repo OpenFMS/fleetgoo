@@ -2,9 +2,9 @@
   "id": "c08w-4g-gps-tracker-ip65-waterproof",
   "categoryId": "gps-tracker",
   "title": "C08W 4G GPS Tracker",
-  "metaTitle": "C08W Professional 4G GPS Tracker",
-  "metaDesc": "High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.",
-  "fullDescription": "Compact ultra-thin IP65 waterproof design, integrating high-sensitivity GPS/BeiDou/LBS positioning for real-time tracking. Features ACC detection, intelligent alarms (fence/speed/power), and a robust watchdog system for system stability. Ideal for car rental, logistics, private cars, and electric scooters.",
+  "metaTitle": "C08W GPS Tracker 4G มืออาชีพ",
+  "metaDesc": "อุปกรณ์ติดตาม GPS 4G C08W ความแม่นยำสูง ให้การตรวจสอบตำแหน่งแบบเรียลไทม์และการวิเคราะห์กลุ่มรถขั้นสูง",
+  "fullDescription": "ดีไซน์กันน้ำ IP65 บางพิเศษ 14 มม. รวมระบบตำแหน่ง GPS/BeiDou/LBS ความไวสูงสำหรับการติดตามแบบเรียลไทม์ มีฟีเจอร์ตรวจจับ ACC, การแจ้งเตือนอัจฉริยะ (รั้ว/ความเร็ว/ไฟฟ้า), และระบบวอชด็อกที่แข็งแกร่งสำหรับความเสถียรของระบบ เหมาะสำหรับการเช่ารถ, โลจิสติกส์, รถยนต์ส่วนบุคคล และสกู๊ตเตอร์ไฟฟ้า",
   "images": [
     "/images/products/C08W-main.jpg",
     "/images/products/C08W-02.jpg",
@@ -12,51 +12,51 @@
     "/images/products/C08W-04.jpg"
   ],
   "features": [
-    "Compact & Waterproof: 14mm thick ultra-thin design with IP65 rating",
-    "Precision Positioning: GPS/BeiDou/LBS triple-mode tracking",
-    "Intelligent Alerts: Fence entry/exit, speeding, power outage, and vibration alarms",
-    "Robust Stability: Built-in watchdog functionality with auto-recovery from crashes",
-    "Versatile Application: Suitable for 9-90V vehicles including logistics trucks, rental cars, and scooters"
+    "กะทัดรัดและกันน้ำ: ดีไซน์บางพิเศษ 14 มม. มาตรฐานกันน้ำ IP65",
+    "ตำแหน่งที่แม่นยำ: การติดตามแบบสามโหมด GPS/BeiDou/LBS",
+    "การแจ้งเตือนอัจฉริยะ: แจ้งเตือนเข้า/ออกรั้ว, ความเร็วเกิน, ไฟดับ และการสั่นสะเทือน",
+    "ความเสถียรที่แข็งแกร่ง: ฟังก์ชันวอชด็อกในตัว พร้อมการกู้คืนอัตโนมัติจากข้อขัดข้อง",
+    "การใช้งานหลากหลาย: เหมาะสำหรับยานพาหนะ 9-90V รวมถึงรถบรรทุกโลจิสติกส์, รถเช่า และสกู๊ตเตอร์"
   ],
   "parameters": [
     {
-      "label": "Network",
+      "label": "เครือข่าย",
       "value": "GSM/GPRS (850/900/1800/1900MHz)"
     },
     {
-      "label": "Working Voltage",
+      "label": "แรงดันไฟทำงาน",
       "value": "9-90V DC"
     },
     {
-      "label": "Working Current",
-      "value": "12V/30mA (Avg)"
+      "label": "กระแสไฟทำงาน",
+      "value": "12V/30mA (เฉลี่ย)"
     },
     {
-      "label": "Positioning",
-      "value": "GPS/BeiDou (<5m error)"
+      "label": "การกำหนดตำแหน่ง",
+      "value": "GPS/BeiDou (คลาดเคลื่อน <5ม.)"
     },
     {
-      "label": "Start Time",
-      "value": "Cold 32s / Hot 1s"
+      "label": "เวลาเริ่มต้น",
+      "value": "เย็น 32วินาที / ร้อน 1วินาที"
     },
     {
-      "label": "Sensitivity",
-      "value": "Tracking -162dBm / Capture -148dBm"
+      "label": "ความไว",
+      "value": "ติดตาม -162dBm / จับสัญญาณ -148dBm"
     },
     {
-      "label": "Battery",
-      "value": "Built-in 100mAh/3.7V Li-polymer"
+      "label": "แบตเตอรี่",
+      "value": "ในตัว 100mAh/3.7V ลิเธียมโพลิเมอร์"
     },
     {
-      "label": "Dimensions",
-      "value": "78mm x 26mm x 14mm"
+      "label": "ขนาด",
+      "value": "78มม. x 26มม. x 14มม."
     },
     {
-      "label": "Weight",
-      "value": "26.5g"
+      "label": "น้ำหนัก",
+      "value": "26.5กรัม"
     }
   ],
   "downloads": [],
-  "packaging": "1x C08W Unit, 1x Power Cable, 1x User Manual, 1x Relay (Optional)",
+  "packaging": "1x ตัวเครื่อง C08W, 1x สายไฟ, 1x คู่มือผู้ใช้, 1x รีเลย์ (เลือกได้)",
   "icon": "MapPin"
 }

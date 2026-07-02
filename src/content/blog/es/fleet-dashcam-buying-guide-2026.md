@@ -25,7 +25,7 @@ Ideales para furgonetas de reparto pequeñas o vehículos de servicio donde la p
 Este es el actual "estándar de oro". Dispositivos como el **FleetGoo D501** integran una cámara orientada a la carretera y una cámara de cabina infrarroja (IR). Esta configuración permite el monitoreo simultáneo de las condiciones de la carretera y el comportamiento del conductor.
 
 ### 1.3 Sistemas MDVR Multicanal
-Para camiones pesados y autobuses, una sola dashcam suele ser insuficiente. Los **MDVR (Grabadores de Video Digital Móviles)** permiten hasta 8 entradas de cámara, proporcionando cobertura de 360 grados y monitoreo de puntos ciegos.
+Para camiones pesados y autobuses, una sola dashcam suele ser insuficiente. Los **MDVR (Grabadores de Video Digital Móviles)** (como la serie D904) permiten hasta 8 entradas de cámara, proporcionando cobertura de 360 grados y monitoreo de puntos ciegos.
 
 ---
 
@@ -61,7 +61,7 @@ Al elegir una dashcam, no busque solo el precio más bajo. Busque un socio que o
 *   Algoritmos de IA probados para ADAS y DMS.
 *   Compresión de video H.265 para ahorro de datos.
 
-**Al elegir hardware como las series D501 o D901 de FleetGoo, está invirtiendo en una red de seguridad digital 24/7 para sus activos más valiosos.**
+**Al elegir hardware como las series D501 o D904 de FleetGoo, está invirtiendo en una red de seguridad digital 24/7 para sus activos más valiosos.**
 
 ---
 *¿Busca una solución de hardware personalizada? [Contacte a nuestros expertos](/es/contact) para una consulta gratuita.*

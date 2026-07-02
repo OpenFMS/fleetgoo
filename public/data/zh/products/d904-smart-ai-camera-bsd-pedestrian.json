@@ -1,15 +1,15 @@
 {
-  "id": "d901-smart-ai-camera-bsd-pedestrian",
+  "id": "d904-smart-ai-camera-bsd-pedestrian",
   "categoryId": "4g-camera",
-  "title": "D901 AI 智能一体机",
-  "metaTitle": "D901 高端 AI 摄像头",
-  "metaDesc": "用于商业车队的顶级 D901 AI 摄像头，具有多通道录制和高级 AI 分析功能。",
+  "title": "D904 AI 智能一体机",
+  "metaTitle": "D904 高端 AI 摄像头",
+  "metaDesc": "用于商业车队的顶级 D904 AI 摄像头，具有多通道录制和高级 AI 分析功能。",
   "fullDescription": "紧凑型中控屏一体机，用于货运和物流监控。支持 4 路 AHD 视频输入，AI 盲区预警，哨兵模式，防偷油报警，AI 语音识别和 4G 远程监控。",
   "images": [
-    "/images/products/D901-main.jpg",
-    "/images/products/D901-02.jpg",
-    "/images/products/D901-03.jpg",
-    "/images/products/D901-04.jpg"
+    "/images/products/D904-main.jpg",
+    "/images/products/D904-02.jpg",
+    "/images/products/D904-03.jpg",
+    "/images/products/D904-04.jpg"
   ],
   "features": [
     "多路视频：4路 AHD 视频输入，H.264 格式同步录制（分路存储）",
@@ -62,6 +62,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x D901 主机, 线束, 安装套件",
+  "packaging": "1x D904 主机, 线束, 安装套件",
   "icon": "Camera"
 }

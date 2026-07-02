@@ -59,18 +59,18 @@
       "image": "/images/products/C08L-main.jpg"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "id": "d503-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "D501 DashCam 4G",
+      "title": "D503 DashCam 4G",
       "description": "Dashcam en la nube de doble lente con transmisión en vivo y función de alerta SOS.",
-      "image": "/images/products/D501-main.jpg"
+      "image": "/images/products/D503-main.jpg"
     },
     {
-      "id": "d701-pro-truck-dashcam-lockable",
+      "id": "d703-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
-      "title": "D701 DashCam Pro",
+      "title": "D703 DashCam Pro",
       "description": "Dashcam robusta para flotas con almacenamiento bloqueable y soporte para cámara externa.",
-      "image": "/images/products/D701-main.jpg"
+      "image": "/images/products/D703-main.jpg"
     },
     {
       "id": "d401-ai-dashcam-adas-dms",
@@ -80,11 +80,11 @@
       "image": "/images/products/D401-main.jpg"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "id": "d904-smart-ai-camera-bsd-pedestrian",
       "categoryId": "4g-camera",
-      "title": "D901 Cámara Inteligente IA",
+      "title": "D904 Cámara Inteligente IA",
       "description": "Sistema de cámara IA multicanal con detección de puntos ciegos y peatones.",
-      "image": "/images/products/D901-main.jpg"
+      "image": "/images/products/D904-main.jpg"
     },
     {
       "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",

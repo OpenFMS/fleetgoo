@@ -103,9 +103,9 @@
             "layout": "alternating",
             "items": [
                 {
-                    "title": "D501 Centro AI Inteligente",
+                    "title": "D503 Centro AI Inteligente",
                     "desc": "Procesador de cuatro núcleos con transmisiones de video dual de 1080P, permitiendo monitoreo simultáneo del comportamiento del conductor y vigilancia de carga.",
-                    "image": "/images/products/D501-main.jpg",
+                    "image": "/images/products/D503-main.jpg",
                     "icon": "Cpu"
                 }
             ]

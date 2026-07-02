@@ -130,10 +130,10 @@ function generateSitemap() {
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "D501 4G DashCam",
-  "description": "Compact D501 4G Dashcam offering dual-lens recording...",
+  "name": "D503 4G DashCam",
+  "description": "Compact D503 4G Dashcam offering dual-lens recording...",
   "image": [
-    "https://www.fleetgoo.com/images/products/D501-main.jpg",
+    "https://www.fleetgoo.com/images/products/D503-main.jpg",
     ...
   ],
   "brand": { "@type": "Brand", "name": "FleetGoo" },
@@ -792,7 +792,7 @@ Admin 编辑 → 保存到本地 → Git Commit → PR/MR → 产品负责人审
 
 ```markdown
 ---
-# 产品：D501 4G Dashcam
+# 产品：D503 4G Dashcam
 
 ## 基本信息
 - 类别：4G Dashcam
@@ -829,7 +829,7 @@ Admin 编辑 → 保存到本地 → Git Commit → PR/MR → 产品负责人审
 ## 成功案例
 **客户：** 泰国某冷链物流公司  
 **挑战：** 20 辆冷藏车，温度监控和驾驶员行为管理  
-**方案：** D501 + 温度传感器 + FleetGoo 平台  
+**方案：** D503 + 温度传感器 + FleetGoo 平台
 **效果：** 事故减少 60%，温度违规降低 90%
 ---
 ```
@@ -838,7 +838,7 @@ Admin 编辑 → 保存到本地 → Git Commit → PR/MR → 产品负责人审
 
 ```json
 {
-  "id": "d501-4g-dashcam",
+  "id": "d503-4g-dashcam",
   "type": "product",
   "category": "4g-dashcam",
   "features": [
@@ -872,7 +872,7 @@ Admin 编辑 → 保存到本地 → Git Commit → PR/MR → 产品负责人审
       "industry": "cold-chain-logistics",
       "location": "thailand",
       "fleetSize": "20-50",
-      "solution": ["d501", "temperature-sensor", "platform"]
+      "solution": ["d503", "temperature-sensor", "platform"]
     }
   ]
 }
@@ -995,8 +995,8 @@ fleetSize: "20-50 辆车"
 
 ### 硬件配置
 
-#### 1. D501 4G AI Dashcam（每车 1 台）
-**为什么选择 D501：**
+#### 1. D503 4G AI Dashcam（每车 1 台）
+**为什么选择 D503：**
 - ✅ **双镜头监控**：同时记录路况和驾驶员行为
 - ✅ **DMS 疲劳监测**：实时检测疲劳驾驶，提前预警
 - ✅ **4G 实时传输**：管理中心可随时查看车内情况
@@ -1068,7 +1068,7 @@ fleetSize: "20-50 辆车"
 ### 案例：曼谷某冷链物流公司
 **客户背景：** 25 辆冷藏车，运输海鲜和冷冻食品  
 **挑战：** 温度监控困难，货物变质率高  
-**方案：** D501 + 温度传感器 + FleetGoo 平台  
+**方案：** D503 + 温度传感器 + FleetGoo 平台
 **效果：**
 - 货物变质损失减少 88%
 - 客户满意度提升 45%
@@ -1282,7 +1282,7 @@ def validate_solution(solution_draft, knowledge_base):
 # CLI 命令示例
 
 # 1. 导入产品资料
-fleetgoo import:product d501.md --parse --index
+fleetgoo import:product d503.md --parse --index
 
 # 2. 导入案例资料
 fleetgoo import:case thailand-cold-chain.md --parse --index

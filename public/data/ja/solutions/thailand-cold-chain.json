@@ -103,9 +103,9 @@
             "layout": "alternating",
             "items": [
                 {
-                    "title": "D501インテリジェントAIハブ",
+                    "title": "D503インテリジェントAIハブ",
                     "desc": "デュアル1080Pビデオストリームを備えたクアッドコアプロセッサにより、ドライバーの行動監視と貨物監視を同時に可能にします。",
-                    "image": "/images/products/D501-main.jpg",
+                    "image": "/images/products/D503-main.jpg",
                     "icon": "Cpu"
                 }
             ]

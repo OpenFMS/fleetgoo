@@ -1,18 +1,30 @@
 # FleetGoo Site Index
 # Using this file, LLMs can discover the structure and content of the site.
-# Generated at: 2026-04-01T10:49:34.160Z
+# Generated at: 2026-07-02T06:19:04.842Z
 
 - [AI Fleet Dashcam & GPS Tracker Solutions | FleetGoo](https://www.fleetgoo.com/en): FleetGoo provides advanced 4G Dashcams, MDVR systems, and GPS tracking for commercial fleets. Enhance safety and efficiency with our AI-powered IoT solutions.
 - [About Us](https://www.fleetgoo.com/en/about-us): Learn about our mission to lead the future of intelligent fleet management through innovative hardware and software solutions.
 - [Contact Us](https://www.fleetgoo.com/en/contact): Get in touch with our sales and support team for your vehicle tracking and fleet management needs.
+- [ADAS Camera](https://www.fleetgoo.com/en/products/adas-camera): Adhesive ADAS Camera with 6mm focal length and 1280*720P resolution
+- [BSD Camera](https://www.fleetgoo.com/en/products/bsd-camera): BSD Camera for blind spot monitoring system
 - [C08L Asset Tracker](https://www.fleetgoo.com/en/products/c08l-wireless-asset-tracker-long-standby): C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.
 - [C08W 4G GPS Tracker](https://www.fleetgoo.com/en/products/c08w-4g-gps-tracker-ip65-waterproof): High-precision C08W 4G GPS tracking device offering real-time location monitoring and advanced fleet analytics.
 - [D401 AI Camera](https://www.fleetgoo.com/en/products/d401-ai-dashcam-adas-dms): D401 AI Camera with advanced ADAS and DMS capabilities for proactive fleet safety.
-- [D501 4G DashCam](https://www.fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud): Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.
+- [D503 4G DashCam](https://www.fleetgoo.com/en/products/d503-4g-dashcam-dual-lens-cloud): Compact D503 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.
 - [D604 AI CarBox](https://www.fleetgoo.com/en/products/d604-8ch-mdvr-ai-box-fleet-surveillance): Powerful D604 AI CarBox MDVR for centralized fleet video surveillance and intelligent data processing.
-- [D701 Pro 4G DashCam](https://www.fleetgoo.com/en/products/d701-pro-truck-dashcam-lockable): Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.
-- [D901 AI Smart Camera](https://www.fleetgoo.com/en/products/d901-smart-ai-camera-bsd-pedestrian): Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.
+- [D606 4G 6-Channel Terminal](https://www.fleetgoo.com/en/products/d606-6ch-ai-dashcam-terminal): Professional 6-channel AHD + 1-channel IPC vehicle terminal with 4G/5G, DMS/ADAS/BSD intelligent driving systems.
+- [D703 Pro 4G DashCam](https://www.fleetgoo.com/en/products/d703-pro-truck-dashcam-lockable): Rugged D703 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.
+- [D904 AI Smart Camera](https://www.fleetgoo.com/en/products/d904-smart-ai-camera-bsd-pedestrian): Top-tier D904 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.
+- [Glass-Mounted DMS Camera](https://www.fleetgoo.com/en/products/glass-mounted-dms-camera): Glass-mounted DMS camera for driver monitoring
+- [In-Cabin High-Mount IR Camera](https://www.fleetgoo.com/en/products/in-cabin-high-mount-ir-camera): In-cabin high-mount IR camera for panoramic monitoring
+- [In-Cabin IR Camera](https://www.fleetgoo.com/en/products/in-cabin-ir-camera): In-cabin IR camera for night-time monitoring
+- [Lift Sealed Sensor](https://www.fleetgoo.com/en/products/lift-sensor): Lift sealed sensor for vehicle lift system
 - [OEM & ODM Custom Solution](https://www.fleetgoo.com/en/products/oem-custom-solution): Tailored hardware design and manufacturing services. We build custom GPS trackers, dashcams, and MDVRs to your specifications.
+- [Outdoor Waterproof IR Camera](https://www.fleetgoo.com/en/products/outdoor-waterproof-ir-camera): Outdoor waterproof IR camera for external environment monitoring
+- [Pillar Type DMS Camera - 1](https://www.fleetgoo.com/en/products/pillar-dms-camera-1): Pillar type DMS camera for driver monitoring
+- [Pillar Type DMS Camera - 2](https://www.fleetgoo.com/en/products/pillar-dms-camera-2): Pillar type DMS camera for driver monitoring
+- [Temperature and Humidity Collector](https://www.fleetgoo.com/en/products/temp-humidity-sensor): Temperature and humidity collector for in-cabin environment monitoring
+- [Ultrasonic Oil Sensor](https://www.fleetgoo.com/en/products/ultrasonic-oil-sensor): Ultrasonic oil sensor for fuel level monitoring
 - [Intelligent Fleet Management Platform](https://www.fleetgoo.com/en/software): Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.
 - [Mexico Cross-Border Logistics Security](https://www.fleetgoo.com/en/solutions/mexico-cross-border-logistics): Secure your cross-border fleet in Mexico with real-time AI surveillance. Prevent cargo theft, ensure driver safety, and simplify insurance claims.
 - [Public Safety Fleet Solutions](https://www.fleetgoo.com/en/solutions/public-safety): Enhance emergency response times and officer safety with AI-powered dashcams, real-time GPS tracking, and evidence-grade video retrieval.
@@ -20,14 +32,26 @@
 - [Gestión de Flotas Comerciales y Soluciones de Video Telemática](https://www.fleetgoo.com/es): FleetGoo ofrece Dashcams 4G avanzadas, sistemas MDVR y rastreo GPS para flotas comerciales. Mejore la seguridad y eficiencia con nuestras soluciones IoT impulsadas por IA.
 - [Sobre Nosotros](https://www.fleetgoo.com/es/about-us): Conozca nuestra misión de liderar el futuro de la gestión inteligente de flotas a través de soluciones innovadoras de hardware y software.
 - [Contáctenos - FleetGoo](https://www.fleetgoo.com/es/contact): Póngase en contacto con nuestro equipo de ventas y soporte para sus necesidades de seguimiento de vehículos y gestión de flotas.
+- [Cámara ADAS](https://www.fleetgoo.com/es/products/adas-camera): Cámara ADAS adhesiva con longitud focal de 6 mm y resolución de 1280*720P
+- [Cámara BSD](https://www.fleetgoo.com/es/products/bsd-camera): Cámara BSD para sistema de monitoreo de punto ciego
 - [C08L Rastreador de Activos](https://www.fleetgoo.com/es/products/c08l-wireless-asset-tracker-long-standby): Rastreador de activos de larga duración con batería de 3 años y montaje magnético.
 - [C08W Rastreador GPS 4G](https://www.fleetgoo.com/es/products/c08w-4g-gps-tracker-ip65-waterproof): Dispositivo de rastreo en tiempo real profesional 4G con corte de combustible y protección IP65.
 - [D401 Cámara IA](https://www.fleetgoo.com/es/products/d401-ai-dashcam-adas-dms): Cámara inteligente con algoritmos integrados ADAS y DMS para la seguridad del conductor.
-- [D501 DashCam 4G](https://www.fleetgoo.com/es/products/d501-4g-dashcam-dual-lens-cloud): Dashcam en la nube de doble lente con transmisión en vivo y función de alerta SOS.
+- [D503 DashCam 4G](https://www.fleetgoo.com/es/products/d503-4g-dashcam-dual-lens-cloud): Dashcam en la nube de doble lente con transmisión en vivo y función de alerta SOS.
 - [D604 AI CarBox](https://www.fleetgoo.com/es/products/d604-8ch-mdvr-ai-box-fleet-surveillance): Hub MDVR de 8 canales con potente procesamiento de IA para vigilancia centralizada.
-- [D701 DashCam Pro](https://www.fleetgoo.com/es/products/d701-pro-truck-dashcam-lockable): Dashcam robusta para flotas con almacenamiento bloqueable y soporte para cámara externa.
-- [D901 Cámara Inteligente IA](https://www.fleetgoo.com/es/products/d901-smart-ai-camera-bsd-pedestrian): Sistema de cámara IA multicanal con detección de puntos ciegos y peatones.
+- [D606 Terminal 4G 6 Canales](https://www.fleetgoo.com/es/products/d606-6ch-ai-dashcam-terminal): Terminal profesional 6 canales AHD + 1 canal IPC con 4G/5G, sistemas inteligentes DMS/ADAS/BSD.
+- [D703 DashCam Pro](https://www.fleetgoo.com/es/products/d703-pro-truck-dashcam-lockable): Dashcam robusta para flotas con almacenamiento bloqueable y soporte para cámara externa.
+- [D904 Cámara Inteligente IA](https://www.fleetgoo.com/es/products/d904-smart-ai-camera-bsd-pedestrian): Sistema de cámara IA multicanal con detección de puntos ciegos y peatones.
+- [Cámara DMS Montada en Vidrio](https://www.fleetgoo.com/es/products/glass-mounted-dms-camera): Cámara DMS montada en vidrio para monitoreo de conductor
+- [Cámara IR de Montaje Alto en Cabina](https://www.fleetgoo.com/es/products/in-cabin-high-mount-ir-camera): Cámara IR de montaje alto en cabina para monitoreo panorámico
+- [Cámara IR en Cabina](https://www.fleetgoo.com/es/products/in-cabin-ir-camera): Cámara IR en cabina para monitoreo nocturno
+- [Sensor de Elevación Sellado](https://www.fleetgoo.com/es/products/lift-sensor): Sensor de elevación sellado para sistema de elevación de vehículo
 - [Solución Personalizada OEM](https://www.fleetgoo.com/es/products/oem-custom-solution): Diseño de hardware y servicios de fabricación a medida para necesidades específicas de flotas
+- [Cámara IR Impermeable Exterior](https://www.fleetgoo.com/es/products/outdoor-waterproof-ir-camera): Cámara IR impermeable exterior para monitoreo de entorno externo
+- [Cámara DMS Tipo Pilar - 1](https://www.fleetgoo.com/es/products/pillar-dms-camera-1): Cámara DMS tipo pilar para monitoreo de conductor
+- [Cámara DMS Tipo Pilar - 2](https://www.fleetgoo.com/es/products/pillar-dms-camera-2): Cámara DMS tipo pilar para monitoreo de conductor
+- [Colector de Temperatura y Humedad](https://www.fleetgoo.com/es/products/temp-humidity-sensor): Colector de temperatura y humedad para monitoreo del ambiente en cabina
+- [Sensor Ultrasónico de Aceite](https://www.fleetgoo.com/es/products/ultrasonic-oil-sensor): Sensor ultrasónico de aceite para monitoreo de nivel de combustible
 - [Plataforma Inteligente de Gestión de Flotas](https://www.fleetgoo.com/es/software): Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.
 - [Seguridad Logística Transfronteriza México](https://www.fleetgoo.com/es/solutions/mexico-cross-border-logistics): Asegure su flota transfronteriza en México con vigilancia AI en tiempo real. Prevenga robo de carga, garantice seguridad del conductor y simplifique reclamos de seguros.
 - [Soluciones de Flota para Seguridad Pública](https://www.fleetgoo.com/es/solutions/public-safety): Mejore los tiempos de respuesta de emergencia y la seguridad de los oficiales con dashcams con IA, rastreo GPS en tiempo real y recuperación de video de grado evidencial.
@@ -35,14 +59,26 @@
 - [商用車フリート管理＆ビデオテレマティクスソリューション](https://www.fleetgoo.com/ja): FleetGooは、商用車フリート向けの高度な4Gドライブレコーダー、MDVRシステム、GPS追跡を提供します。AI搭載のIoTソリューションで安全性と効率を向上させます。
 - [会社概要](https://www.fleetgoo.com/ja/about-us): 革新的なハードウェアとソフトウェアソリューションを通じて、インテリジェントな車両管理の未来をリードする私たちの使命について。
 - [お問い合わせ - FleetGoo](https://www.fleetgoo.com/ja/contact): 車両追跡とフリート管理のニーズについて、営業およびサポートチームにお問い合わせください。
+- [ADASカメラ](https://www.fleetgoo.com/ja/products/adas-camera): 接着式ADASカメラ、焦点距離6mm、解像度1280*720P
+- [BSDカメラ](https://www.fleetgoo.com/ja/products/bsd-camera): ブラインドスポット監視システム用BSDカメラ
 - [C08L 資産トラッカー](https://www.fleetgoo.com/ja/products/c08l-wireless-asset-tracker-long-standby): 3年のバッテリー寿命と磁気マウントを備えた超長時間待機型資産トラッカー。
 - [C08W 4G GPSトラッカー](https://www.fleetgoo.com/ja/products/c08w-4g-gps-tracker-ip65-waterproof): 燃料カット機能とIP65保護を備えたプロフェッショナルな4Gリアルタイム追跡デバイス。
 - [D401 AIカメラ](https://www.fleetgoo.com/ja/products/d401-ai-dashcam-adas-dms): ドライバーの安全を確保するためのADAS＆DMSアルゴリズムを内蔵したインテリジェントカメラ。
-- [D501 4Gドライブレコーダー](https://www.fleetgoo.com/ja/products/d501-4g-dashcam-dual-lens-cloud): ライブストリーミングとSOSアラート機能を備えたデュアルレンズクラウドドライブレコーダー。
+- [D503 4Gドライブレコーダー](https://www.fleetgoo.com/ja/products/d503-4g-dashcam-dual-lens-cloud): ライブストリーミングとSOSアラート機能を備えたデュアルレンズクラウドドライブレコーダー。
 - [D604 AIカーボックス](https://www.fleetgoo.com/ja/products/d604-8ch-mdvr-ai-box-fleet-surveillance): 集中監視のための強力なAI処理を備えた8チャンネルMDVRハブ。
-- [D701 Pro ドライブレコーダー](https://www.fleetgoo.com/ja/products/d701-pro-truck-dashcam-lockable): ロック可能なストレージと外部カメラサポートを備えた頑丈なフリート用ドライブレコーダー。
-- [D901 AIスマートカメラ](https://www.fleetgoo.com/ja/products/d901-smart-ai-camera-bsd-pedestrian): 死角検知（BSD）と歩行者検知機能を備えたマルチチャンネルAIカメラシステム。
+- [D606 4G 6 チャンネルターミナル](https://www.fleetgoo.com/ja/products/d606-6ch-ai-dashcam-terminal): 6 チャンネル AHD + 1 チャンネル IPC 対応、4G 全网通/5G 対応、DMS/ADAS/BSD 智能運転支援システム。
+- [D703 Pro ドライブレコーダー](https://www.fleetgoo.com/ja/products/d703-pro-truck-dashcam-lockable): ロック可能なストレージと外部カメラサポートを備えた頑丈なフリート用ドライブレコーダー。
+- [D904 AIスマートカメラ](https://www.fleetgoo.com/ja/products/d904-smart-ai-camera-bsd-pedestrian): 死角検知（BSD）と歩行者検知機能を備えたマルチチャンネルAIカメラシステム。
+- [ガラス取り付けDMSカメラ](https://www.fleetgoo.com/ja/products/glass-mounted-dms-camera): ガラス取り付けDMSカメラ、運転手監視用
+- [キャビン内高位置マウント赤外線カメラ](https://www.fleetgoo.com/ja/products/in-cabin-high-mount-ir-camera): 全方位監視用キャビン内高位置マウント赤外線カメラ
+- [キャビン内赤外線カメラ](https://www.fleetgoo.com/ja/products/in-cabin-ir-camera): 夜間監視用キャビン内赤外線カメラ
+- [リフト密封センサー](https://www.fleetgoo.com/ja/products/lift-sensor): 車両リフトシステム用リフト密封センサー
 - [OEMカスタムソリューション](https://www.fleetgoo.com/ja/products/oem-custom-solution): お客様の特定のフリートニーズに合わせたハードウェア設計および製造サービス
+- [屋外防水赤外線カメラ](https://www.fleetgoo.com/ja/products/outdoor-waterproof-ir-camera): 外部環境監視用屋外防水赤外線カメラ
+- [支柱型DMSカメラ - 1](https://www.fleetgoo.com/ja/products/pillar-dms-camera-1): 運転手監視用支柱型DMSカメラ
+- [支柱型DMSカメラ - 2](https://www.fleetgoo.com/ja/products/pillar-dms-camera-2): 運転手監視用支柱型DMSカメラ
+- [温湿度センサー](https://www.fleetgoo.com/ja/products/temp-humidity-sensor): キャビン内環境監視用温湿度センサー
+- [超音波オイルセンサー](https://www.fleetgoo.com/ja/products/ultrasonic-oil-sensor): 燃料レベル監視用超音波オイルセンサー
 - [インテリジェント車両管理プラットフォーム](https://www.fleetgoo.com/ja/software): クラウドSaaS、モバイルアプリ、オープンAPIを統合し、完全な運用可視性を実現するエンタープライズグレードの車両管理プラットフォーム。
 - [メキシコ国境越え物流セキュリティ](https://www.fleetgoo.com/ja/solutions/mexico-cross-border-logistics): リアルタイムAI監視でメキシコの国境越えフリートを保護。貨物盗難を防止し、ドライバーの安全を確保し、保険請求を簡素化します。
 - [公共安全フリートソリューション](https://www.fleetgoo.com/ja/solutions/public-safety): AI搭載ドライブレコーダー、リアルタイムGPS追跡、証拠グレードのビデオ検索で、緊急対応時間と警察官の安全性を向上させます。
@@ -50,14 +86,26 @@
 - [โซลูชัน Dashcam และ GPS Tracker สำหรับฟลีต | FleetGoo](https://www.fleetgoo.com/th): FleetGoo ให้บริการ Dashcam 4G ระบบ MDVR และการติดตาม GPS สำหรับฟลีตพาณิชย์ ยกระดับความปลอดภัยและประสิทธิภาพด้วยโซลูชัน IoT ที่ขับเคลื่อนด้วย AI
 - [เกี่ยวกับ FleetGoo | ผู้นำด้านฮาร์ดแวร์จัดการฟลีตอัจฉริยะ](https://www.fleetgoo.com/th/about-us): เรียนรู้เกี่ยวกับภารกิจของเราในการนำอนาคตของการจัดการฟลีตอัจฉริยะผ่านนวัตกรรมฮาร์ดแวร์และซอฟต์แวร์
 - [ติดต่อ FleetGoo | โซลูชันการจัดการฟลีต](https://www.fleetgoo.com/th/contact): ติดต่อทีมขายและสนับสนุนของเราสำหรับความต้องการการติดตามยานพาหนะและการจัดการฟลีตของคุณ
+- [กล้อง ADAS](https://www.fleetgoo.com/th/products/adas-camera): กล้อง ADAS แบบติดแน่น ระยะโฟกัส 6 มม. ความละเอียด 1280*720P
+- [กล้อง BSD](https://www.fleetgoo.com/th/products/bsd-camera): กล้อง BSD สำหรับระบบตรวจสอบจุดบอด
 - [C08L Asset Tracker](https://www.fleetgoo.com/th/products/c08l-wireless-asset-tracker-long-standby): C08L 4G Asset Tracker พร้อมแบตเตอรี่อายุการใช้งานยาวนาน เหมาะสำหรับรถพ่วงและตู้คอนเทนเนอร์
 - [C08W 4G GPS Tracker](https://www.fleetgoo.com/th/products/c08w-4g-gps-tracker-ip65-waterproof): อุปกรณ์ติดตาม GPS 4G ความแม่นยำสูง พร้อมการติดตามตำแหน่งแบบเรียลไทม์และการวิเคราะห์ฟลีตขั้นสูง
 - [D401 AI Camera](https://www.fleetgoo.com/th/products/d401-ai-dashcam-adas-dms): กล้องอัจฉริยะพร้อมอัลกอริทึม ADAS และ DMS ในตัว เพื่อความปลอดภัยเชิงรุกของผู้ขับขี่
-- [D501 4G DashCam](https://www.fleetgoo.com/th/products/d501-4g-dashcam-dual-lens-cloud): Dashcam 4G ขนาดกะทัดรัดพร้อมการบันทึกสองเลนส์ (ถนน + ภายในรถ) และการเชื่อมต่อคลาวด์
+- [D503 4G DashCam](https://www.fleetgoo.com/th/products/d503-4g-dashcam-dual-lens-cloud): Dashcam 4G ขนาดกะทัดรัดพร้อมการบันทึกสองเลนส์ (ถนน + ภายในรถ) และการเชื่อมต่อคลาวด์
 - [D604 AI CarBox](https://www.fleetgoo.com/th/products/d604-8ch-mdvr-ai-box-fleet-surveillance): MDVR AI CarBox ที่ทรงพลังสำหรับการตรวจสอบวิดีโอฟลีตแบบรวมศูนย์และการประมวลผลข้อมูลอัจฉริยะ
-- [D701 Pro 4G DashCam](https://www.fleetgoo.com/th/products/d701-pro-truck-dashcam-lockable): Dashcam 4G ที่ทนทานสำหรับโลจิสติกส์และการขนส่งหนัก พร้อมความปลอดภัยข้อมูลแบบล็อคได้
-- [D901 AI Smart Camera](https://www.fleetgoo.com/th/products/d901-smart-ai-camera-bsd-pedestrian): กล้อง AI ระดับสูงสำหรับฟลีตพาณิชย์ พร้อมการบันทึกหลายช่องสัญญาณและการวิเคราะห์ AI ขั้นสูง
+- [D606 Terminal 4G 6 ช่อง](https://www.fleetgoo.com/th/products/d606-6ch-ai-dashcam-terminal): Terminal มืออาชีพ 6 ช่อง AHD + 1 ช่อง IPC พร้อม 4G/5G, ระบบอัจฉริยะ DMS/ADAS/BSD
+- [D703 Pro 4G DashCam](https://www.fleetgoo.com/th/products/d703-pro-truck-dashcam-lockable): Dashcam 4G ที่ทนทานสำหรับโลจิสติกส์และการขนส่งหนัก พร้อมความปลอดภัยข้อมูลแบบล็อคได้
+- [D904 AI Smart Camera](https://www.fleetgoo.com/th/products/d904-smart-ai-camera-bsd-pedestrian): กล้อง AI ระดับสูงสำหรับฟลีตพาณิชย์ พร้อมการบันทึกหลายช่องสัญญาณและการวิเคราะห์ AI ขั้นสูง
+- [กล้อง DMS ติดตั้งบนกระจก](https://www.fleetgoo.com/th/products/glass-mounted-dms-camera): กล้อง DMS ติดตั้งบนกระจกสำหรับตรวจสอบคนขับ
+- [กล้องอินฟราเรดติดตั้งสูงในห้องโดยสาร](https://www.fleetgoo.com/th/products/in-cabin-high-mount-ir-camera): กล้องอินฟราเรดติดตั้งสูงในห้องโดยสารสำหรับตรวจสอบรอบทิศทาง
+- [กล้องอินฟราเรดในห้องโดยสาร](https://www.fleetgoo.com/th/products/in-cabin-ir-camera): กล้องอินฟราเรดในห้องโดยสารสำหรับตรวจสอบตอนกลางคืน
+- [เซ็นเซอร์ลิฟต์ปิดผนึก](https://www.fleetgoo.com/th/products/lift-sensor): เซ็นเซอร์ลิฟต์ปิดผนึกสำหรับระบบยกเลื่อนรถ
 - [OEM & ODM Custom Solution](https://www.fleetgoo.com/th/products/oem-custom-solution): บริการออกแบบฮาร์ดแวร์และการผลิตตามสั่ง เราสร้าง GPS tracker, dashcam และ MDVR ตามข้อกำหนดของคุณ
+- [กล้องอินฟราเรดกันน้ำภายนอก](https://www.fleetgoo.com/th/products/outdoor-waterproof-ir-camera): กล้องอินฟราเรดกันน้ำภายนอกสำหรับตรวจสอบสภาพแวดล้อมภายนอก
+- [กล้อง DMS แบบตั้งเสา - 1](https://www.fleetgoo.com/th/products/pillar-dms-camera-1): กล้อง DMS แบบตั้งเสาสำหรับตรวจสอบคนขับ
+- [กล้อง DMS แบบตั้งเสา - 2](https://www.fleetgoo.com/th/products/pillar-dms-camera-2): กล้อง DMS แบบตั้งเสาสำหรับตรวจสอบคนขับ
+- [ตัวรับค่าอุณหภูมิและความชื้น](https://www.fleetgoo.com/th/products/temp-humidity-sensor): ตัวรับค่าอุณหภูมิและความชื้นสำหรับตรวจสอบสภาพแวดล้อมในห้องโดยสาร
+- [เซ็นเซอร์น้ำมันอัลตราโซนิก](https://www.fleetgoo.com/th/products/ultrasonic-oil-sensor): เซ็นเซอร์น้ำมันอัลตราโซนิกสำหรับตรวจสอบระดับน้ำมัน
 - [แพลตฟอร์มการจัดการฟลีตอัจฉริยะ | FleetGoo Platform](https://www.fleetgoo.com/th/software): แพลตฟอร์มการจัดการฟลีตระดับองค์กรที่ผสานรวม Cloud SaaS, แอปมือถือ และ Open API สำหรับการมองเห็นการดำเนินงานทั้งหมด
 - [ความปลอดภัยโลจิสติกส์ข้ามพรมแดนเม็กซิโก](https://www.fleetgoo.com/th/solutions/mexico-cross-border-logistics): รักษาความปลอดภัยฟลีตข้ามพรมแดนของคุณในเม็กซิโกด้วยการตรวจสอบ AI แบบเรียลไทม์ ป้องกันการโจรกรรมสินค้า รับประกันความปลอดภัยผู้ขับขี่ และทำให้การเรียกร้องประกันง่ายขึ้น
 - [โซลูชันฟลีตความปลอดภัยสาธารณะ](https://www.fleetgoo.com/th/solutions/public-safety): เพิ่มเวลาตอบสนองเหตุฉุกเฉินและความปลอดภัยของเจ้าหน้าที่ด้วย dashcam ที่ขับเคลื่อนด้วย AI การติดตาม GPS แบบเรียลไทม์ และการดึงวิดีโอระดับหลักฐาน
@@ -65,14 +113,26 @@
 - [商用车队管理与视频远程通信解决方案](https://www.fleetgoo.com/zh): FleetGoo提供先进的商用车队4G行车记录仪、MDVR系统和GPS追踪服务。通过我们的人工智能IoT解决方案提升安全性和效率。
 - [关于我们](https://www.fleetgoo.com/zh/about-us): 了解我们的使命：通过创新的软硬件解决方案引领智能车队管理的未来。
 - [联系我们 - FleetGoo](https://www.fleetgoo.com/zh/contact): 联系我们的销售和支持团队，满足您的车辆追踪和车队管理需求。
+- [配件-ADAS摄像头](https://www.fleetgoo.com/zh/products/adas-camera): 粘贴式ADAS摄像头，焦距6mm，分辨率1280*720P
+- [配件-BSD摄像头](https://www.fleetgoo.com/zh/products/bsd-camera): BSD摄像头，用于盲点监测系统
 - [C08L 资产追踪器](https://www.fleetgoo.com/zh/products/c08l-wireless-asset-tracker-long-standby): 超长待机资产追踪器，拥有3年电池寿命与免安装磁吸设计。
 - [C08W 4G GPS定位器](https://www.fleetgoo.com/zh/products/c08w-4g-gps-tracker-ip65-waterproof): 专业级4G实时追踪设备，支持远程断油电与IP65级防护。
 - [D401 AI智能摄像头](https://www.fleetgoo.com/zh/products/d401-ai-dashcam-adas-dms): 内置ADAS与DMS算法的智能摄像头，全方位保障驾驶安全。
-- [D501 4G云记录仪](https://www.fleetgoo.com/zh/products/d501-4g-dashcam-dual-lens-cloud): 双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。
+- [D503 4G云记录仪](https://www.fleetgoo.com/zh/products/d503-4g-dashcam-dual-lens-cloud): 双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。
 - [D604 AI智能盒子](https://www.fleetgoo.com/zh/products/d604-8ch-mdvr-ai-box-fleet-surveillance): 8通道MDVR中枢，搭载强大AI算力，实现集中化视频监控。
-- [D701 Pro 货车记录仪](https://www.fleetgoo.com/zh/products/d701-pro-truck-dashcam-lockable): 坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。
-- [D901 AI旗舰摄像头](https://www.fleetgoo.com/zh/products/d901-smart-ai-camera-bsd-pedestrian): 多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。
+- [D606 4G 6 通道双卡智能车载终端](https://www.fleetgoo.com/zh/products/d606-6ch-ai-dashcam-terminal): 支持 6 路 AHD+1 路 IPC 视频输入，4G 全网通/5G 可选，DMS/ADAS/BSD 智能驾驶辅助系统。
+- [D703 Pro 货车记录仪](https://www.fleetgoo.com/zh/products/d703-pro-truck-dashcam-lockable): 坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。
+- [D904 AI旗舰摄像头](https://www.fleetgoo.com/zh/products/d904-smart-ai-camera-bsd-pedestrian): 多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。
+- [配件-贴玻璃式DMS摄像头](https://www.fleetgoo.com/zh/products/glass-mounted-dms-camera): 贴玻璃式DMS摄像头，用于驾驶员监控
+- [配件-车内高支架红外摄像头](https://www.fleetgoo.com/zh/products/in-cabin-high-mount-ir-camera): 车内高支架红外摄像头，用于全方位监控
+- [配件-车内红外摄像头](https://www.fleetgoo.com/zh/products/in-cabin-ir-camera): 车内红外摄像头，用于夜间监控
+- [配件-举升密闭传感器](https://www.fleetgoo.com/zh/products/lift-sensor): 举升密闭传感器，用于车辆举升系统
 - [OEM定制化方案](https://www.fleetgoo.com/zh/products/oem-custom-solution): 为您特定的车队需求量身定制硬件设计与制造服务
+- [配件-车外防水红外摄像头](https://www.fleetgoo.com/zh/products/outdoor-waterproof-ir-camera): 车外防水红外摄像头，用于外部环境监控
+- [配件-立柱型DMS摄像头-1](https://www.fleetgoo.com/zh/products/pillar-dms-camera-1): 立柱型DMS摄像头，用于驾驶员监控
+- [配件-立柱型DMS摄像头-2](https://www.fleetgoo.com/zh/products/pillar-dms-camera-2): 立柱型DMS摄像头，用于驾驶员监控
+- [配件-温湿度采集器](https://www.fleetgoo.com/zh/products/temp-humidity-sensor): 温湿度采集器，监测车内环境
+- [配件-超声波油感](https://www.fleetgoo.com/zh/products/ultrasonic-oil-sensor): 超声波油感，用于油量监测
 - [智能车队管理平台](https://www.fleetgoo.com/zh/software): 集成云端SaaS、移动应用和开放API的企业级车队管理平台，实现全面的运营可视化。
 - [墨西哥跨境物流安全](https://www.fleetgoo.com/zh/solutions/mexico-cross-border-logistics): 通过实时AI监控保护您在墨西哥的跨境车队。防止货物盗窃，确保司机安全，简化保险理赔。
 - [公共安全车队解决方案](https://www.fleetgoo.com/zh/solutions/public-safety): 通过AI驱动的行车记录仪、实时GPS跟踪和证据级视频检索，提高应急响应时间和警员安全。

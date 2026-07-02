@@ -69,7 +69,7 @@ tags: ["Buying Guide", "Products", "Fleet Management"]
 
 ## 3. เปรียบเทียบผลิตภัณฑ์ FleetGoo
 
-| รุ่น | D501 | D701 Pro | D901 |
+| รุ่น | D503 | D703 Pro | D904 |
 |------|------|----------|------|
 | **วิดีโอ** | 1080P + 720P | 1080P | 1080P x4 |
 | **AI** | ADAS + DMS | ADAS + DMS | ADAS + DMS + BSD |

@@ -20,7 +20,7 @@ Una de las tácticas más comunes es el uso de "Jammers" o inhibidores de señal
 
 ## 2. Evidencia de Video: El Poder de MDVR
 
-MDVR como el **FleetGoo D901** ofrece cobertura multicámara:
+MDVR como el **FleetGoo D904** ofrece cobertura multicámara:
 *   **Cámara frontal**: Documentación del evento de robo.
 *   **Cámara de carga**: Monitoreo de aperturas de puertas no autorizadas.
 *   **Botones de pánico (SOS)**: El conductor alerta al centro de monitoreo sin conocimiento de los ladrones.

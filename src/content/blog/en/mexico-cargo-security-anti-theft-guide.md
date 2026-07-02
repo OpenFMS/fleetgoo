@@ -31,7 +31,7 @@ Relying on a single cellular network is a risk. Professional solutions use **Mul
 While a GPS tracker tells you *where* the vehicle is, a **Mobile Digital Video Recorder (MDVR)** shows you *what* is happening.
 
 ### 2.1 Multi-Camera Coverage
-A professional MDVR system like the **FleetGoo D901** should include:
+A professional MDVR system like the **FleetGoo D904** should include:
 *   **Front-Facing Camera**: Documentation of the hijacking event.
 *   **Cargo Area Camera**: Monitoring for unauthorized door openings and cargo tampering.
 *   **Blind Spot Cameras**: Identifying suspicious vehicles following the truck.

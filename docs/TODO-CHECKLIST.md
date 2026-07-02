@@ -83,7 +83,7 @@
 - [ ] **验证 Schema 标记**
   - 工具：https://search.google.com/test/rich-results
   - 测试 URL:
-    - [ ] https://www.fleetgoo.com/en/products/d501-4g-dashcam-dual-lens-cloud
+    - [ ] https://www.fleetgoo.com/en/products/d503-4g-dashcam-dual-lens-cloud
     - [ ] https://www.fleetgoo.com/en
   - 预期：Product Schema 和 Organization Schema 有效
 

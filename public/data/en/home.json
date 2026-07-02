@@ -39,11 +39,11 @@
     "subtitle": "Explore our flagship devices designed for reliability and performance.",
     "tabs": [
       {
-        "id": "d501",
-        "label": "D501 - AI Dashcam",
-        "title": "D501 Smart 4G Dashcam",
+        "id": "d503",
+        "label": "D503 - AI Dashcam",
+        "title": "D503 Smart 4G Dashcam",
         "description": "Designed for commercial vehicles, including those compliant with Chinese Ministry of Transport standards (such as for ride-hailing and logistics), this AI dash cam integrates dual 1080P video, cloud storage, BeiDou positioning, Driver Monitoring System (DMS), and Advanced Driver Assistance System (ADAS) to enhance safety and fleet management efficiency.",
-        "image": "/images/products/D501-main.jpg",
+        "image": "/images/products/D503-main.jpg",
         "benefits": [
           "AI-powered ADAS & DMS (Fatigue/Distraction)",
           "Real-time 1080p HD Video Streaming",
@@ -73,11 +73,11 @@
         ]
       },
       {
-        "id": "d901",
-        "label": "D901 - 4CH MDVR",
-        "title": "D901 4-Channel MDVR",
+        "id": "d904",
+        "label": "D904 - 4CH MDVR",
+        "title": "D904 4-Channel MDVR",
         "description": "Compact all-in-one device with central control screen for freight and logistics monitoring. Supports 4-channel AHD video input, AI blind spot warnings, sentry mode, fuel theft prevention alerts, AI voice recognition, and 4G remote monitoring.",
-        "image": "/images/products/D901-main.jpg",
+        "image": "/images/products/D904-main.jpg",
         "benefits": [
           "AI Detection fuel theft prevention, and voice recognition",
           "Supports up to 4 AHD Cameras",

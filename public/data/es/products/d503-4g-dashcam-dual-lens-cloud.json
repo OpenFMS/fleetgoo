@@ -1,16 +1,16 @@
 {
-  "id": "d501-4g-dashcam-dual-lens-cloud",
+  "id": "d503-4g-dashcam-dual-lens-cloud",
   "categoryId": "4g-dashcam",
-  "title": "DashCam 4G D501",
-  "metaTitle": "DashCam 4G de Doble Lente D501",
-  "metaDesc": "Dashcam compacta D501 4G que ofrece grabación de doble lente (carretera + cabina) y conectividad en la nube.",
+  "title": "DashCam 4G D503",
+  "metaTitle": "DashCam 4G de Doble Lente D503",
+  "metaDesc": "Dashcam compacta D503 4G que ofrece grabación de doble lente (carretera + cabina) y conectividad en la nube.",
   "fullDescription": "Dashcam compacta 4G para encendedor de cigarrillos que ofrece grabación de doble canal (frontal 1080P + interior 720P). Cuenta con instalación plug-and-play, monitoreo remoto en vivo, punto de acceso WiFi y análisis inteligente del comportamiento de conducción.",
   "images": [
-    "/images/products/D501-main.jpg",
-    "/images/products/D501-02.jpg",
-    "/images/products/D501-03.jpg",
-    "/images/products/D501-04.jpg",
-    "/images/products/D501-05.jpg"
+    "/images/products/D503-main.jpg",
+    "/images/products/D503-02.jpg",
+    "/images/products/D503-03.jpg",
+    "/images/products/D503-04.jpg",
+    "/images/products/D503-05.jpg"
   ],
   "features": [
     "Grabación Dual: 1080P (frente 120°) + 720P (interior 90°) grabación simultánea",
@@ -54,6 +54,6 @@
     }
   ],
   "downloads": [],
-  "packaging": "1x Dashcam D501, 1x Cable, 1x Montaje 3M, 1x Botón SOS",
+  "packaging": "1x Dashcam D503, 1x Cable, 1x Montaje 3M, 1x Botón SOS",
   "icon": "Video"
 }

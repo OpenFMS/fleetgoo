@@ -59,18 +59,18 @@
       "image": "/images/products/C08L-main.jpg"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "id": "d503-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "D501 4Gドライブレコーダー",
+      "title": "D503 4Gドライブレコーダー",
       "description": "ライブストリーミングとSOSアラート機能を備えたデュアルレンズクラウドドライブレコーダー。",
-      "image": "/images/products/D501-main.jpg"
+      "image": "/images/products/D503-main.jpg"
     },
     {
-      "id": "d701-pro-truck-dashcam-lockable",
+      "id": "d703-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
-      "title": "D701 Pro ドライブレコーダー",
+      "title": "D703 Pro ドライブレコーダー",
       "description": "ロック可能なストレージと外部カメラサポートを備えた頑丈なフリート用ドライブレコーダー。",
-      "image": "/images/products/D701-main.jpg"
+      "image": "/images/products/D703-main.jpg"
     },
     {
       "id": "d401-ai-dashcam-adas-dms",
@@ -80,11 +80,11 @@
       "image": "/images/products/D401-main.jpg"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "id": "d904-smart-ai-camera-bsd-pedestrian",
       "categoryId": "4g-camera",
-      "title": "D901 AIスマートカメラ",
+      "title": "D904 AIスマートカメラ",
       "description": "死角検知（BSD）と歩行者検知機能を備えたマルチチャンネルAIカメラシステム。",
-      "image": "/images/products/D901-main.jpg"
+      "image": "/images/products/D904-main.jpg"
     },
     {
       "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",

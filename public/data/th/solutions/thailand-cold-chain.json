@@ -103,9 +103,9 @@
       "layout": "alternating",
       "items": [
         {
-          "title": "D501 Intelligent AI Hub",
+          "title": "D503 Intelligent AI Hub",
           "desc": "Quad-core processor with dual 1080P video streams, enabling simultaneous driver behavior monitoring and cargo surveillance.",
-          "image": "/images/products/D501-main.jpg",
+          "image": "/images/products/D503-main.jpg",
           "icon": "Cpu"
         }
       ]

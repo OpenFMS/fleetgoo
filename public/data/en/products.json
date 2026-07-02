@@ -69,11 +69,11 @@
       "icon": "Camera"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "id": "d503-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "D501 4G DashCam",
-      "description": "Compact D501 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.",
-      "image": "/images/products/D501-main.jpg",
+      "title": "D503 4G DashCam",
+      "description": "Compact D503 4G Dashcam offering dual-lens recording (road + cabin) and cloud connectivity.",
+      "image": "/images/products/D503-main.jpg",
       "icon": "Video"
     },
     {
@@ -93,19 +93,19 @@
       "icon": "Server"
     },
     {
-      "id": "d701-pro-truck-dashcam-lockable",
+      "id": "d703-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
-      "title": "D701 Pro 4G DashCam",
-      "description": "Rugged D701 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
-      "image": "/images/products/D701-main.jpg",
+      "title": "D703 Pro 4G DashCam",
+      "description": "Rugged D703 4G Dashcam designed for logistics and heavy transport, featuring tamper-proof data security.",
+      "image": "/images/products/D703-main.jpg",
       "icon": "Video"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "id": "d904-smart-ai-camera-bsd-pedestrian",
       "categoryId": "4g-camera",
-      "title": "D901 AI Smart Camera",
-      "description": "Top-tier D901 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
-      "image": "/images/products/D901-main.jpg",
+      "title": "D904 AI Smart Camera",
+      "description": "Top-tier D904 AI Camera for commercial fleets, featuring multi-channel recording and advanced AI analytics.",
+      "image": "/images/products/D904-main.jpg",
       "icon": "Camera"
     },
     {

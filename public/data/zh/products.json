@@ -34,7 +34,7 @@
     },
     {
       "id": "accessories",
-      "label": "配件",
+      "label": "配件精选",
       "icon": "Cpu"
     },
     {
@@ -59,18 +59,18 @@
       "image": "/images/products/C08L-main.jpg"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "id": "d503-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "D501 4G云记录仪",
+      "title": "D503 4G云记录仪",
       "description": "双镜头云端行车记录仪，支持实时视频直播与SOS一键报警。",
-      "image": "/images/products/D501-main.jpg"
+      "image": "/images/products/D503-main.jpg"
     },
     {
-      "id": "d701-pro-truck-dashcam-lockable",
+      "id": "d703-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
-      "title": "D701 Pro 货车记录仪",
+      "title": "D703 Pro 货车记录仪",
       "description": "坚固耐用的车队记录仪，配有可锁卡槽与外接摄像头支持。",
-      "image": "/images/products/D701-main.jpg"
+      "image": "/images/products/D703-main.jpg"
     },
     {
       "id": "d401-ai-dashcam-adas-dms",
@@ -80,11 +80,11 @@
       "image": "/images/products/D401-main.jpg"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "id": "d904-smart-ai-camera-bsd-pedestrian",
       "categoryId": "4g-camera",
-      "title": "D901 AI旗舰摄像头",
+      "title": "D904 AI旗舰摄像头",
       "description": "多通道AI摄像系统，支持盲区监测(BSD)与行人检测功能。",
-      "image": "/images/products/D901-main.jpg"
+      "image": "/images/products/D904-main.jpg"
     },
     {
       "id": "d604-8ch-mdvr-ai-box-fleet-surveillance",
@@ -110,77 +110,77 @@
     {
       "id": "adas-camera",
       "categoryId": "accessories",
-      "title": "配件-ADAS摄像头",
+      "title": "ADAS摄像头",
       "description": "粘贴式ADAS摄像头，焦距6mm，分辨率1280*720P",
       "image": "/images/accessories/adas-camera.png"
     },
     {
       "id": "bsd-camera",
       "categoryId": "accessories",
-      "title": "配件-BSD摄像头",
+      "title": "BSD摄像头",
       "description": "BSD摄像头，用于盲点监测系统",
       "image": "/images/accessories/bsd-camera.png"
     },
     {
       "id": "lift-sensor",
       "categoryId": "accessories",
-      "title": "配件-举升密闭传感器",
+      "title": "举升密闭传感器",
       "description": "举升密闭传感器，用于车辆举升系统",
       "image": "/images/accessories/lift-sensor.png"
     },
     {
       "id": "temp-humidity-sensor",
       "categoryId": "accessories",
-      "title": "配件-温湿度采集器",
+      "title": "温湿度采集器",
       "description": "温湿度采集器，监测车内环境",
       "image": "/images/accessories/temp-humidity-sensor.png"
     },
     {
       "id": "pillar-dms-camera-1",
       "categoryId": "accessories",
-      "title": "配件-立柱型DMS摄像头-1",
+      "title": "立柱型DMS摄像头",
       "description": "立柱型DMS摄像头，用于驾驶员监控",
       "image": "/images/accessories/pillar-dms-camera-1.png"
     },
     {
       "id": "pillar-dms-camera-2",
       "categoryId": "accessories",
-      "title": "配件-立柱型DMS摄像头-2",
+      "title": "立柱型DMS摄像头",
       "description": "立柱型DMS摄像头，用于驾驶员监控",
       "image": "/images/accessories/pillar-dms-camera-2.png"
     },
     {
       "id": "glass-mounted-dms-camera",
       "categoryId": "accessories",
-      "title": "配件-贴玻璃式DMS摄像头",
+      "title": "贴玻璃式DMS摄像头",
       "description": "贴玻璃式DMS摄像头，用于驾驶员监控",
       "image": "/images/accessories/glass-mounted-dms-camera.png"
     },
     {
       "id": "ultrasonic-oil-sensor",
       "categoryId": "accessories",
-      "title": "配件-超声波油感",
+      "title": "超声波油感",
       "description": "超声波油感，用于油量监测",
       "image": "/images/accessories/ultrasonic-oil-sensor.png"
     },
     {
       "id": "in-cabin-ir-camera",
       "categoryId": "accessories",
-      "title": "配件-车内红外摄像头",
+      "title": "车内红外摄像头",
       "description": "车内红外摄像头，用于夜间监控",
       "image": "/images/accessories/in-cabin-ir-camera.png"
     },
     {
       "id": "in-cabin-high-mount-ir-camera",
       "categoryId": "accessories",
-      "title": "配件-车内高支架红外摄像头",
+      "title": "车内高支架红外摄像头",
       "description": "车内高支架红外摄像头，用于全方位监控",
       "image": "/images/accessories/in-cabin-high-mount-ir-camera.png"
     },
     {
       "id": "outdoor-waterproof-ir-camera",
       "categoryId": "accessories",
-      "title": "配件-车外防水红外摄像头",
+      "title": "车外防水红外摄像头",
       "description": "车外防水红外摄像头，用于外部环境监控",
       "image": "/images/accessories/outdoor-waterproof-ir-camera.png"
     }

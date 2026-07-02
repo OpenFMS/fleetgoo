@@ -62,7 +62,7 @@ To get the most out of your AI cameras, your fleet management should follow thes
 
 ## Conclusion: Investing in Zero-Accident Goals
 
-The ultimate goal for any fleet is "Vision Zero"—zero accidents on the road. While technology alone cannot replace a professional driver, **AI cameras like the FleetGoo D501** provide a digital safety net that bridges the gap between human capability and the unpredictable nature of the road. 
+The ultimate goal for any fleet is "Vision Zero"—zero accidents on the road. While technology alone cannot replace a professional driver, **AI cameras like the FleetGoo D503** provide a digital safety net that bridges the gap between human capability and the unpredictable nature of the road. 
 
 By investing in AI-driven accident reduction, you are not only saving money on insurance and repairs; you are fulfilling your duty of care to your employees and the public.
 

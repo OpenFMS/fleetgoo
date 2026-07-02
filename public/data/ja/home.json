@@ -39,11 +39,11 @@
     "subtitle": "信頼性とパフォーマンスのために設計された主力デバイスをご覧ください。",
     "tabs": [
       {
-        "id": "d501",
-        "label": "D501 - AIドラレコ",
-        "title": "D501 スマート4Gドライブレコーダー",
+        "id": "d503",
+        "label": "D503 - AIドラレコ",
+        "title": "D503 スマート4Gドライブレコーダー",
         "description": "中国交通運輸部の基準（ライドシェアや物流など）に準拠した商用車両向けに設計されたこのAIドライブレコーダーは、デュアル1080Pビデオ、クラウドストレージ、北斗測位、ドライバー監視システム（DMS）、および先進運転支援システム（ADAS）を統合し、安全性とフリート管理効率を向上させます。",
-        "image": "/images/products/D501-main.jpg",
+        "image": "/images/products/D503-main.jpg",
         "benefits": [
           "AI搭載ADAS＆DMS（疲労/脇見運転）",
           "リアルタイム1080p HDビデオストリーミング",
@@ -73,11 +73,11 @@
         ]
       },
       {
-        "id": "d901",
-        "label": "D901 - 4CH MDVR",
-        "title": "D901 4チャンネルMDVR",
+        "id": "d904",
+        "label": "D904 - 4CH MDVR",
+        "title": "D904 4チャンネルMDVR",
         "description": "貨物および物流監視用の中央制御画面を備えたコンパクトなオールインワンデバイス。4チャンネルAHDビデオ入力、AI死角警告、セントリーモード、燃料盗難防止アラート、AI音声認識、4Gリモート監視をサポートします。",
-        "image": "/images/products/D901-main.jpg",
+        "image": "/images/products/D904-main.jpg",
         "benefits": [
           "AI検知、燃料盗難防止、音声認識",
           "最大4台のAHDカメラをサポート",

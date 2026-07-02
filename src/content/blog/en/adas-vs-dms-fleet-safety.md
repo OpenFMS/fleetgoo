@@ -8,7 +8,7 @@ tags: ["Technology", "ADAS", "DMS", "Safety Standards"]
 
 ## Clearing the Confusion: ADAS and DMS in Fleet Telematics
 
-When you start researching AI-powered dashcams or MDVR systems for your fleet, you will constantly encounter the acronyms **ADAS** (Advanced Driver Assistance Systems) and **DMS** (Driver Monitoring Systems). While they are often bundled into the same device—like the **FleetGoo D501 AI Dashcam**—they are distinct technologies with different sensors, goals, and impacts on fleet safety.
+When you start researching AI-powered dashcams or MDVR systems for your fleet, you will constantly encounter the acronyms **ADAS** (Advanced Driver Assistance Systems) and **DMS** (Driver Monitoring Systems). While they are often bundled into the same device—like the **FleetGoo D503 AI Dashcam**—they are distinct technologies with different sensors, goals, and impacts on fleet safety.
 
 To build a truly safe fleet in 2026, you must understand the "Who, What, and Where" of these two systems and how they work together to create a 360-degree safety net.
 
@@ -73,7 +73,7 @@ When these two data points are combined, the system knows that this isn't just a
 
 When selecting hardware that supports both ADAS and DMS, look for the following:
 
-1.  **Dual-Lens Integration**: Choose an "All-in-One" device like the **FleetGoo D501** for easier installation and better data synchronization.
+1.  **Dual-Lens Integration**: Choose an "All-in-One" device like the **FleetGoo D503** for easier installation and better data synchronization.
 2.  **Night Vision Capabilities**: Ensure the DMS camera has high-quality IR LEDs so it can accurately detect fatigue in the middle of the night.
 3.  **Low False-Positive Rate**: Professional AI models (like those used in FleetGoo hardware) are tuned to minimize "nuisance alerts," ensuring that drivers don't ignore the warnings.
 4.  **Privacy Covers**: To build trust with drivers, some DMS units come with physical or digital privacy shutters that only activate when the vehicle is in motion.

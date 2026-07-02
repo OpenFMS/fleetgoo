@@ -39,11 +39,11 @@
     "subtitle": "Explore nuestros dispositivos insignia diseñados para confiabilidad y rendimiento.",
     "tabs": [
       {
-        "id": "d501",
-        "label": "D501 - Dashcam IA",
-        "title": "D501 Dashcam 4G Inteligente",
+        "id": "d503",
+        "label": "D503 - Dashcam IA",
+        "title": "D503 Dashcam 4G Inteligente",
         "description": "Diseñada para vehículos comerciales, incluidos aquellos que cumplen con los estándares del Ministerio de Transporte de China (como para transporte de pasajeros y logística), esta dashcam IA integra video dual 1080P, almacenamiento en la nube, posicionamiento BeiDou, Sistema de Monitoreo del Conductor (DMS) y Sistema Avanzado de Asistencia al Conductor (ADAS) para mejorar la seguridad y eficiencia de la gestión de flotas.",
-        "image": "/images/products/D501-main.jpg",
+        "image": "/images/products/D503-main.jpg",
         "benefits": [
           "ADAS y DMS impulsados por IA (Fatiga/Distracción)",
           "Transmisión de video HD 1080p en tiempo real",
@@ -73,11 +73,11 @@
         ]
       },
       {
-        "id": "d901",
-        "label": "D901 - MDVR 4CH",
-        "title": "D901 MDVR de 4 Canales",
+        "id": "d904",
+        "label": "D904 - MDVR 4CH",
+        "title": "D904 MDVR de 4 Canales",
         "description": "Dispositivo compacto todo en uno con pantalla de control central para monitoreo de carga y logística. Soporta entrada de video AHD de 4 canales, advertencias de punto ciego IA, modo centinela, alertas de prevención de robo de combustible, reconocimiento de voz IA y monitoreo remoto 4G.",
-        "image": "/images/products/D901-main.jpg",
+        "image": "/images/products/D904-main.jpg",
         "benefits": [
           "Detección IA, prevención de robo de combustible y reconocimiento de voz",
           "Soporta hasta 4 cámaras AHD",

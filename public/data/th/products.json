@@ -69,11 +69,11 @@
       "icon": "Camera"
     },
     {
-      "id": "d501-4g-dashcam-dual-lens-cloud",
+      "id": "d503-4g-dashcam-dual-lens-cloud",
       "categoryId": "4g-dashcam",
-      "title": "D501 4G DashCam",
+      "title": "D503 4G DashCam",
       "description": "Dashcam 4G ขนาดกะทัดรัดพร้อมการบันทึกสองเลนส์ (ถนน + ภายในรถ) และการเชื่อมต่อคลาวด์",
-      "image": "/images/products/D501-main.jpg",
+      "image": "/images/products/D503-main.jpg",
       "icon": "Camera"
     },
     {
@@ -93,19 +93,19 @@
       "icon": "Server"
     },
     {
-      "id": "d701-pro-truck-dashcam-lockable",
+      "id": "d703-pro-truck-dashcam-lockable",
       "categoryId": "4g-dashcam",
-      "title": "D701 Pro 4G DashCam",
+      "title": "D703 Pro 4G DashCam",
       "description": "Dashcam 4G ที่ทนทานสำหรับโลจิสติกส์และการขนส่งหนัก พร้อมความปลอดภัยข้อมูลแบบล็อคได้",
-      "image": "/images/products/D701-main.jpg",
+      "image": "/images/products/D703-main.jpg",
       "icon": "Camera"
     },
     {
-      "id": "d901-smart-ai-camera-bsd-pedestrian",
+      "id": "d904-smart-ai-camera-bsd-pedestrian",
       "categoryId": "4g-camera",
-      "title": "D901 AI Smart Camera",
+      "title": "D904 AI Smart Camera",
       "description": "กล้อง AI ระดับสูงสำหรับฟลีตพาณิชย์ พร้อมการบันทึกหลายช่องสัญญาณและการวิเคราะห์ AI ขั้นสูง",
-      "image": "/images/products/D901-main.jpg",
+      "image": "/images/products/D904-main.jpg",
       "icon": "Camera"
     },
     {

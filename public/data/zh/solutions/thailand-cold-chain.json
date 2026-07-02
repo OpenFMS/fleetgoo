@@ -103,9 +103,9 @@
             "layout": "alternating",
             "items": [
                 {
-                    "title": "D501智能AI中枢",
+                    "title": "D503智能AI中枢",
                     "desc": "四核处理器配备双1080P视频流，可同时进行司机行为监控和货物监控。",
-                    "image": "/images/products/D501-main.jpg",
+                    "image": "/images/products/D503-main.jpg",
                     "icon": "Cpu"
                 }
             ]

@@ -1,10 +1,10 @@
 {
   "id": "c08l-wireless-asset-tracker-long-standby",
   "categoryId": "gps-tracker",
-  "title": "C08L Asset Tracker",
-  "metaTitle": "C08L Long Standby GPS Tracker",
-  "metaDesc": "C08L 4G Asset Tracker with ultra-long battery life, ideal for trailer and container tracking.",
-  "fullDescription": "Designed for asset risk control, the C08L integrates GPS/BeiDou/GLONASS triple-mode positioning with low power consumption, real-time monitoring, and remote control capabilities. It is the ideal solution for reliable cargo tracking and vehicle security, featuring a robust design with anti-removal protection and OTA remote management.",
+  "title": "C08L เครื่องติดตามสินทรัพย์",
+  "metaTitle": "C08L GPS Tracker แบตเตอรี่อึด ใช้งานได้นาน",
+  "metaDesc": "C08L 4G Asset Tracker แบตเตอรี่อึดใช้งานได้นาน เหมาะสำหรับการติดตามเทรลเลอร์และตู้คอนเทนเนอร์",
+  "fullDescription": "ออกแบบมาสำหรับการควบคุมความเสี่ยงของสินทรัพย์ C08L รวมระบบตำแหน่ง GPS/BeiDou/GLONASS สามโหมดเข้าด้วยกัน พร้อมการบริโภคพลังงานต่ำ การตรวจสอบแบบเรียลไทม์ และความสามารถในการควบคุมระยะไกล เป็นทางออกที่เหมาะสมสำหรับการติดตามสินค้าที่เชื่อถือได้และความปลอดภัยของยานพาหนะ ด้วยการออกแบบที่แข็งแกร่งพร้อมการป้องกันการถอดออกและการจัดการระยะไกล OTA",
   "images": [
     "/images/products/C08L-main.jpg",
     "/images/products/C08L-02.jpg",
@@ -12,56 +12,56 @@
     "/images/products/C08L-04.jpg"
   ],
   "features": [
-    "Precision Positioning: Triple-mode (GPS/BeiDou/GLONASS) with <10m error and AGPS support",
-    "Low Power Design: Auto-sleep mode with vibration-triggered activation",
-    "Advanced Security: Remote fuel/power cutoff, anti-tamper alerts, and anti-fake base station detection",
-    "Robust Reliability: Anti-removal SIM slot, dual hardware/software protection, defect rate <3‰",
-    "Customization Ready: Supports JT808 protocol and private customization",
-    "Smart Management: OTA updates, SMS/APP configuration, and real-time status analysis"
+    "การระบุตำแหน่งที่แม่นยำ: สามโหมด (GPS/BeiDou/GLONASS) คลาดเคลื่อน <10 เมตร พร้อมรองรับ AGPS",
+    "การออกแบบประหยัดพลังงาน: โหมดสลีปอัตโนมัติ พร้อมการเปิดใช้งานเมื่อสัมผัสการสั่นสะเทือน",
+    "ความปลอดภัยขั้นสูง: ตัดน้ำมัน/ไฟฟ้าจากระยะไกล แจ้งเตือนการป้องกันการปลอมแปลง และตรวจจับสถานีฐานปลอม",
+    "ความน่าเชื่อถือที่แข็งแกร่ง: ช่องใส่ซิมกันถอด การป้องกันฮาร์ดแวร์/ซอฟต์แวร์สองชั้น อัตราข้อบกพร่อง <3‰",
+    "พร้อมสำหรับการปรับแต่ง: รองรับโปรโตคอล JT808 และการปรับแต่งแบบส่วนตัว",
+    "การจัดการอัจฉริยะ: อัปเดต OTA การตั้งค่าผ่าน SMS/APP และการวิเคราะห์สถานะแบบเรียลไทม์"
   ],
   "parameters": [
     {
-      "label": "Hardware Platform",
+      "label": "แพลตฟอร์มฮาร์ดแวร์",
       "value": "LTE Cat. 1 Module"
     },
     {
-      "label": "Working Voltage",
-      "value": "9-90V Wide Voltage"
+      "label": "แรงดันไฟฟ้าทำงาน",
+      "value": "9-90V แรงดันไฟฟ้ากว้าง"
     },
     {
-      "label": "Working Current",
+      "label": "กระแสไฟฟ้าทำงาน",
       "value": "25mA@12V"
     },
     {
-      "label": "Positioning",
-      "value": "Satellite + Base Station (<10m error)"
+      "label": "การระบุตำแหน่ง",
+      "value": "ดาวเทียม + สถานีฐาน (คลาดเคลื่อน <10 เมตร)"
     },
     {
-      "label": "GPS Antenna",
-      "value": "GPS/BD Dual-mode Ceramic"
+      "label": "เสาอากาศ GPS",
+      "value": "GPS/BD เซรามิกโหมดคู่"
     },
     {
-      "label": "Network Standard",
+      "label": "มาตรฐานเครือข่าย",
       "value": "LTE-TDD:B34/38/39/40/41, FDD:B1/3/5/8"
     },
     {
-      "label": "Hot/Cold Start",
-      "value": "2s / 8s"
+      "label": "การเริ่มต้นร้อน/เย็น",
+      "value": "2 วินาที / 8 วินาที"
     },
     {
-      "label": "Battery",
-      "value": "55mAh/3.7V Industrial Li-Polymer"
+      "label": "แบตเตอรี่",
+      "value": "55mAh/3.7V ลิเธียมโพลิเมอร์อุตสาหกรรม"
     },
     {
-      "label": "Weight",
-      "value": "28g (Device) / 74g (Total)"
+      "label": "น้ำหนัก",
+      "value": "28 กรัม (อุปกรณ์) / 74 กรัม (รวม)"
     },
     {
-      "label": "Working Temp",
+      "label": "อุณหภูมิทำงาน",
       "value": "-25℃ ~ +75℃"
     }
   ],
   "downloads": [],
-  "packaging": "1x C08L Tracker, 1x Mounting Bracket, 1x User Guide",
+  "packaging": "1x C08L Tracker, 1x ขายึดติดตั้ง, 1x คู่มือผู้ใช้",
   "icon": "MapPin"
 }
