@@ -160,6 +160,12 @@
           "image": "/images/products/platform/ai-assistant.jpg"
         },
         {
+          "title": "オンライン安全教育",
+          "desc": "管理者が安全教育コンテンツ（記事、動画など）を自由にアップロード。ドライバーはモバイルアプリからいつでも学習し、プラットフォームが学習進捗と考核結果を自動記録し、継続的な安全文化を構築します。",
+          "icon": "BookOpen",
+          "image": "/images/products/platform/online-safety-courses.png"
+        },
+        {
           "title": "マルチプラットフォームアクセス",
           "desc": "Webポータル、デスクトップクライアント、モバイルアプリ、ミニプログラム — 1つのプラットフォーム、すべての画面、リアルタイム同期。フリート運用が中断なく接続されたまま維持されます。",
           "icon": "Smartphone",

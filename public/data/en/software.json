@@ -160,6 +160,12 @@
           "image": "/images/products/platform/ai-assistant.jpg"
         },
         {
+          "title": "Online Safety Training",
+          "desc": "Upload custom safety education content — articles, videos, and more. Drivers learn anytime through the mobile app, while the platform tracks completion and assessment results automatically, building a culture of continuous safety improvement.",
+          "icon": "BookOpen",
+          "image": "/images/products/platform/online-safety-courses.png"
+        },
+        {
           "title": "Multi-Platform Access",
           "desc": "Web portal, desktop client, mobile app, and mini-program — one platform, every screen, real-time sync. Your fleet operations stay connected without interruption.",
           "icon": "Smartphone",

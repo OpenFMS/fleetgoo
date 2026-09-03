@@ -160,6 +160,12 @@
           "image": "/images/products/platform/ai-assistant.jpg"
         },
         {
+          "title": "Capacitación en Seguridad en Línea",
+          "desc": "Suba contenido educativo de seguridad personalizado — artículos, videos y más. Los conductores aprenden en cualquier momento a través de la app móvil, mientras la plataforma registra automáticamente el progreso y los resultados de evaluación, construyendo una cultura de mejora continua en seguridad.",
+          "icon": "BookOpen",
+          "image": "/images/products/platform/online-safety-courses.png"
+        },
+        {
           "title": "Acceso Multiplataforma",
           "desc": "Portal web, cliente de escritorio, app móvil y mini-programa — una plataforma, cada pantalla, sincronización en tiempo real. Sus operaciones de flota permanecen conectadas sin interrupciones.",
           "icon": "Smartphone",

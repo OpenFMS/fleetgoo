@@ -160,6 +160,12 @@
           "image": "/images/products/platform/ai-assistant.jpg"
         },
         {
+          "title": "在线安全教育",
+          "desc": "管理端自主上传安全教育课程——图文、视频等多种形式。司机通过APP随时学习，平台自动记录学习进度与考核结果，构建持续改善的安全文化。",
+          "icon": "BookOpen",
+          "image": "/images/products/platform/online-safety-courses.png"
+        },
+        {
           "title": "多端协同",
           "desc": "Web端、PC客户端、移动App、小程序——一个平台、多屏同步，数据实时互通，运营管理不中断。",
           "icon": "Smartphone",
