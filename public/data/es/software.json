@@ -1,17 +1,61 @@
 {
   "id": "software",
   "categoryId": "product",
-  "title": "Plataforma Inteligente de Gestión de Flotas",
-  "metaTitle": "Plataforma Inteligente de Gestión de Flotas",
-  "metaDesc": "Plataforma de gestión de flotas de nivel empresarial que integra SaaS en la nube, aplicaciones móviles y API abierta para una visibilidad operativa total.",
+  "title": "Plataforma de Gestión de Riesgo de Flota Basada en Evidencia",
+  "metaTitle": "Plataforma de Gestión de Riesgo de Flota Basada en Evidencia | FleetGoo",
+  "metaDesc": "Plataforma integral de flota que combina evidencia de video con IA, servicios gestionados y control de riesgo en ciclo cerrado — para aseguradoras, TSPs, OEMs y flotas empresariales.",
   "blocks": [
     {
       "type": "hero",
-      "title": "La Plataforma de Inteligencia de Flotas Todo en Uno",
-      "subtitle": "Unifique sus operaciones con un ecosistema completo. Desde nuestro potente SaaS en la nube y aplicaciones móviles intuitivas hasta integraciones flexibles de API abierta: proporcionamos la infraestructura para decisiones de flota más inteligentes.",
+      "title": "Gestión de Riesgo de Flota Basada en Evidencia",
+      "subtitle": "Convierta cada viaje en datos de seguridad verificables. Captura de video con IA, cadenas de evidencia a prueba de manipulación y control de riesgo en ciclo cerrado — diseñado para flotas, aseguradoras y los socios tecnológicos que los conectan.",
       "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
-      "ctaText": "Explorar la Plataforma",
+      "ctaText": "Solicitar Demo",
       "ctaLink": "/es/contact"
+    },
+    {
+      "type": "stats",
+      "background": "blue",
+      "items": [
+        {
+          "value": "6,000+",
+          "label": "Flotas Atendidas"
+        },
+        {
+          "value": "15M",
+          "label": "Dispositivos Conectados"
+        },
+        {
+          "value": "2.6M",
+          "label": "Canales de Visión IA"
+        },
+        {
+          "value": "12B km",
+          "label": "Monitoreados al Mes"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "Tres Pilares de Seguridad de Flota",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Video",
+          "title": "Evidencia de Video Seguridad",
+          "desc": "Cada incidente capturado en HD, con marca de tiempo y almacenado en una cadena de evidencia a prueba de manipulación. La grabación activada por IA asegura que nunca pierda el momento crítico — y la evidencia siempre respalda cuando más importa."
+        },
+        {
+          "icon": "Shield",
+          "title": "Servicio de Seguridad Gestionado",
+          "desc": "No solo implemente tecnología — implemente una operación de seguridad. Nuestro equipo de monitoreo 24/7 vigila su flota las 24 horas, clasifica alertas y entrega informes de seguridad accionables para que su equipo se enfoque en el negocio."
+        },
+        {
+          "icon": "RefreshCcw",
+          "title": "Ciclo Cerrado de Control de Riesgo",
+          "desc": "Detectar → Alertar → Entrenar → Medir → Mejorar. Cerramos el ciclo entre la detección de riesgos y el cambio de comportamiento, convirtiendo datos de conducción en resultados de seguridad medibles."
+        }
+      ]
     },
     {
       "type": "features",
@@ -20,84 +64,136 @@
       "items": [
         {
           "icon": "Cloud",
-          "title": "Portal SaaS en la Nube",
-          "desc": "Centro de comando centralizado para monitorear el estado de la flota, reproducir rutas y gestionar conductores desde cualquier navegador."
+          "title": "Centro de Comando en la Nube",
+          "desc": "Un centro de operaciones centralizado en la nube para monitorear el estado de la flota en tiempo real, reproducir historial de rutas y gestionar perfiles de conductores y vehículos — accesible desde cualquier navegador."
         },
         {
           "icon": "Smartphone",
-          "title": "Ecosistema Móvil",
-          "desc": "Aplicaciones nativas de iOS y Android que permiten a los gestores de flotas y conductores mantenerse conectados sobre la marcha."
+          "title": "Apps Móviles de Flota",
+          "desc": "Apps nativas para iOS y Android con experiencias diferenciadas para gestores y conductores — despacho de tareas, notificaciones en tiempo real y gestión de flota en movimiento."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Motor de Video Telemática",
+          "desc": "Un motor unificado de video + GPS + IA. Grabación HD de carretera y cabina, grabación activada por IA y posicionamiento de alta precisión — una implementación, captura de datos multidimensional."
         },
         {
           "icon": "Webhook",
-          "title": "Motor de API Abierta",
-          "desc": "Integre perfectamente los datos de la flota con su ERP, CRM o aplicaciones personalizadas existentes a través de nuestra API RESTful."
+          "title": "API Abierta e Integraciones",
+          "desc": "API RESTful + Webhooks para conectar datos de flota con su ERP, CRM o sistemas empresariales existentes — permita que los datos fluyan libremente en su organización."
         },
         {
           "icon": "BarChart3",
           "title": "Analítica Avanzada",
-          "desc": "Transforme los datos brutos en información procesable con mantenimiento predictivo e informes de uso de combustible."
+          "desc": "Transforme datos brutos de flota en información accionable — alertas de mantenimiento predictivo, análisis de consumo de combustible y puntuación de comportamiento del conductor para impulsar cada decisión operativa."
         },
         {
           "icon": "Shield",
-          "title": "Seguridad Empresarial",
-          "desc": "Cifrado de nivel bancario (AES-256), soporte SSO y control de acceso basado en roles (RBAC) granular."
-        },
-        {
-          "icon": "MapPinned",
-          "title": "Telemática en Tiempo Real",
-          "desc": "Seguimiento GPS de alta precisión con actualizaciones inferiores al segundo e integración de transmisión de video en vivo."
+          "title": "Seguridad de Nivel Empresarial",
+          "desc": "Cifrado AES-256, soporte SSO y control de acceso basado en roles (RBAC) granular — cumpliendo con los requisitos de cumplimiento y auditoría que las empresas exigen."
         }
       ]
     },
     {
       "type": "features",
-      "title": "Funcionalidades Principales",
+      "title": "Funciones Principales",
       "layout": "alternating",
       "items": [
         {
-          "title": "Tablero de Operaciones",
-          "desc": "Los tres informes principales sobre operaciones, seguridad y datos permiten a la gerencia tener una comprensión más completa y precisa de la dinámica y las tendencias de la flota de vehículos comerciales.",
-          "icon": "Check",
+          "title": "Panel de Operaciones",
+          "desc": "Informes en tres dimensiones: operaciones, seguridad y cumplimiento — puntuaciones de seguridad, tendencias de riesgo y disponibilidad de dispositivos de un vistazo, brindando a la dirección una visión completa de la salud de la flota.",
+          "icon": "BarChart3",
           "image": "/images/products/platform/Dashboard.png"
         },
         {
-          "title": "Ubicación GPS en Tiempo Real",
-          "desc": "Obtenga la ubicación del vehículo en tiempo real y la información del vehículo, incluida la velocidad, el estado, el kilometraje y el tiempo de conducción a través del dispositivo.",
-          "icon": "Check",
+          "title": "Evaluación de Riesgo de Flota",
+          "desc": "Sistema de cuantificación de riesgo para toda la flota — calificaciones de riesgo general, perfil de comportamiento de riesgo del conductor y análisis de riesgo por cada 100 km. Defina niveles de seguridad con datos y tome decisiones de gestión con confianza.",
+          "icon": "TrendingUp",
+          "image": "/images/products/platform/fleet-risk-assessment.png"
+        },
+        {
+          "title": "Inteligencia de Vehículos en Tiempo Real",
+          "desc": "Telemetría en vivo para cada vehículo — posición, velocidad, estado, kilometraje y tiempo de conducción — presentada en un mapa interactivo donde las anomalías son visibles al instante.",
+          "icon": "MapPinned",
           "image": "/images/products/platform/vehicle-gps-real-monitor.png"
         },
         {
-          "title": "Videovigilancia",
-          "desc": "Reproduzca videos de monitoreo de vehículos en tiempo real y soporte la navegación simultánea, captura y configuración de parámetros de video de múltiples vehículos.",
-          "icon": "Check",
+          "title": "Videovigilancia en Vivo",
+          "desc": "Transmita video HD en vivo de las cámaras de carretera y cabina de cualquier vehículo en cualquier momento. Visualización multicámara simultánea, captura instantánea e intercomunicador bidireccional lo ponen en el asiento del conductor.",
+          "icon": "Video",
           "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
-          "title": "Control Remoto",
-          "desc": "Realice capturas remotas, intercomunicador, control PTZ, configuración de parámetros y otras operaciones en el vehículo.",
-          "icon": "Check",
+          "title": "Alertas de Seguridad Activa",
+          "desc": "ADAS y DMS monitorean el riesgo de conducción en tiempo real — advertencias de colisión frontal, desvío de carril, fatiga del conductor y distracciones activan alertas instantáneas. Cada evento se graba automáticamente con evidencia de video para trazabilidad y revisión completa.",
+          "icon": "Bell",
+          "image": "/images/products/platform/active-safety-alerts.png"
+        },
+        {
+          "title": "Verificación de Identidad del Conductor",
+          "desc": "Pre-registre perfiles y fotos de conductores en la plataforma. Al arrancar el vehículo, el sistema verifica automáticamente la identidad del conductor actual — asegurando que solo personal autorizado opere su flota, controlando el riesgo humano desde el origen.",
+          "icon": "UserCheck",
+          "image": "/images/products/platform/driver-identity-verification.png"
+        },
+        {
+          "title": "Control Remoto de Vehículos",
+          "desc": "Captura remota, intercomunicador bidireccional, control PTZ y configuración de parámetros por aire — cada comando se entrega y ejecuta al instante, sin limitaciones de distancia.",
+          "icon": "Wrench",
           "image": "/images/products/platform/vehicle-remote-control.png"
         },
         {
-          "title": "Reproducción de Video y Seguimiento",
-          "desc": "Consulte la trayectoria de la ruta histórica de cada vehículo, mostrando paradas, alarmas y curvas de velocidad; reproduzca datos de video históricos y descárguelos al sistema local.",
-          "icon": "Check",
+          "title": "Reproducción de Video y Trayectoria",
+          "desc": "Reproduzca cualquier viaje en contexto completo — trayectoria de ruta, puntos de parada, eventos de alarma y curvas de velocidad sincronizados con video multicanal. Descargable para revisión offline o archivo de evidencia.",
+          "icon": "Clock",
           "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
-          "title": "Geo Cerca",
-          "desc": "Configure zonas de cerca electrónica y reciba alertas cada vez que un vehículo entre o salga de la zona.",
-          "icon": "Check",
+          "title": "Gestión de Geocercas",
+          "desc": "Defina zonas de límite virtual y reciba alertas instantáneas cuando los vehículos entren o salgan — ideal para cumplimiento de rutas y monitoreo de seguridad en depósitos.",
+          "icon": "MapPin",
           "image": "/images/products/platform/vehicle-geoface.png"
         },
         {
-          "title": "Integración multiplataforma",
-          "desc": "La plataforma admite la interconectividad a través de múltiples terminales, incluidos web, PC, mini programas y aplicaciones móviles.",
-          "icon": "",
+          "title": "Asistente IA",
+          "desc": "Un asistente IA integrado impulsado por modelos de lenguaje. Haga preguntas en lenguaje natural — consulte datos, detecte tendencias, encuentre anomalías — y obtenga respuestas precisas al instante. Analítica compleja de flota, simplificada a una conversación.",
+          "icon": "Sparkles",
+          "image": "/images/products/platform/ai-assistant.jpg"
+        },
+        {
+          "title": "Acceso Multiplataforma",
+          "desc": "Portal web, cliente de escritorio, app móvil y mini-programa — una plataforma, cada pantalla, sincronización en tiempo real. Sus operaciones de flota permanecen conectadas sin interrupciones.",
+          "icon": "Smartphone",
           "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
         }
       ]
+    },
+    {
+      "type": "features",
+      "title": "Diseñado para su Ecosistema",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "FileCheck",
+          "title": "Para Aseguradoras y Suscriptores",
+          "desc": "Equipe sus flotas aseguradas con seguridad de video de grado de evidencia. Acelere la resolución de siniestros con reproducción de incidentes a prueba de manipulación, reduzca la exposición al fraude y diseñe incentivos de prima basados en datos reales de comportamiento de conducción."
+        },
+        {
+          "icon": "Layers",
+          "title": "Para Proveedores de Telemática",
+          "desc": "Integre seguridad de video probada en su stack de telemática existente. Implementación marca blanca, integración API abierta y backend completamente gestionado — usted mantiene la relación con el cliente mientras nosotros potenciamos la plataforma."
+        },
+        {
+          "icon": "Building",
+          "title": "Para OEMs y Flotas Empresariales",
+          "desc": "Instalación de fábrica o reacondicionamiento, nuestra plataforma se adapta a su arquitectura de vehículos y escala operativa. Desde implementación de flota única hasta programas de seguridad gestionada multirregional con soporte de monitoreo 24/7."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "¿Listo para Construir su Cadena de Evidencia de Seguridad?",
+      "link": "/es/contact",
+      "buttonText": "Solicitar Demo"
     }
   ]
 }

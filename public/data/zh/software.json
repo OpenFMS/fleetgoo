@@ -1,52 +1,96 @@
 {
   "id": "software",
   "categoryId": "product",
-  "title": "智能车队管理平台",
-  "metaTitle": "智能车队管理平台",
-  "metaDesc": "集成云端SaaS、移动应用和开放API的企业级车队管理平台，实现全面的运营可视化。",
+  "title": "证据驱动的车队风险管理平台",
+  "metaTitle": "证据驱动的车队风险管理平台 | FleetGoo",
+  "metaDesc": "集成AI视频安全证据、托管服务和风控闭环的一体化车队管理平台，面向保险、TSP、OEM及企业车队赋能。",
   "blocks": [
     {
       "type": "hero",
-      "title": "一体化车队智能平台",
-      "subtitle": "通过完整的生态系统统一您的运营。从我们强大的云端SaaS和直观的移动应用，到灵活的Open API集成——我们为更明智的车队决策提供基础设施。",
+      "title": "证据驱动的车队风险管理",
+      "subtitle": "让每一次出车都成为可验证的安全数据。AI视频采集、防篡改证据链、风控闭环管理——为车队、保险公司和技术合作伙伴而构建。",
       "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
-      "ctaText": "探索平台",
+      "ctaText": "预约演示",
       "ctaLink": "/zh/contact"
     },
     {
+      "type": "stats",
+      "background": "blue",
+      "items": [
+        {
+          "value": "6,000+",
+          "label": "服务车队"
+        },
+        {
+          "value": "1,500万",
+          "label": "联网设备"
+        },
+        {
+          "value": "260万",
+          "label": "AI视觉通道"
+        },
+        {
+          "value": "120亿km",
+          "label": "月监控里程"
+        }
+      ]
+    },
+    {
       "type": "features",
-      "title": "平台能力",
+      "title": "三大核心支柱",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Video",
+          "title": "视频安全证据",
+          "desc": "每一次事件都以高清捕捉、精确标注时间戳，并存入防篡改的证据链。AI触发录制确保不遗漏关键时刻——在最需要的时候，证据永远可信。"
+        },
+        {
+          "icon": "Shield",
+          "title": "托管安全服务",
+          "desc": "不只是部署技术，更是部署一整套安全运营体系。7×24小时监控团队全天候值守，实时研判告警，输出可执行的安全报告——让您的团队专注于核心业务。"
+        },
+        {
+          "icon": "RefreshCcw",
+          "title": "风控闭环",
+          "desc": "检测 → 预警 → 干预 → 度量 → 改善。在风险发现与行为改变之间建立完整闭环，将原始驾驶数据转化为可量化的安全成果。"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "平台技术能力",
       "layout": "grid",
       "items": [
         {
           "icon": "Cloud",
-          "title": "云端SaaS门户",
-          "desc": "集中指挥中心，可通过任何浏览器监控车队状态、回放路线并管理司机。"
+          "title": "云端管控中心",
+          "desc": "集中式云端指挥中心，通过任意浏览器实时监控车队状态、回放路线轨迹、管理司机与车辆档案。"
         },
         {
           "icon": "Smartphone",
-          "title": "移动生态系统",
-          "desc": "原生的iOS和Android应用，让车队管理者和司机随时随地保持连接。"
+          "title": "移动应用生态",
+          "desc": "原生iOS与Android双端应用，管理者与司机分角色协同——任务下发、实时通知、在途管理，随时随地保持连接。"
+        },
+        {
+          "icon": "MapPinned",
+          "title": "视频遥测引擎",
+          "desc": "视频+GPS+AI三合一融合引擎。高清道路与舱内画面、AI触发录制、高精度定位——一次部署，多维数据同步采集。"
         },
         {
           "icon": "Webhook",
-          "title": "开放API引擎",
-          "desc": "通过我们的RESTful API，将车队数据与您现有的ERP、CRM或自定义应用程序无缝集成。"
+          "title": "开放API与集成",
+          "desc": "RESTful API + Webhook，将车队运营数据无缝对接您现有的ERP、CRM或业务系统，让数据在组织内自由流动。"
         },
         {
           "icon": "BarChart3",
-          "title": "高级分析",
-          "desc": "将原始数据转化为可行动的洞察，提供预测性维护和燃油使用报告。"
+          "title": "高级数据分析",
+          "desc": "将原始车队数据转化为可执行的洞察——预测性维护提醒、燃油消耗分析、驾驶行为评分，用数据驱动每一个运营决策。"
         },
         {
           "icon": "Shield",
           "title": "企业级安全",
-          "desc": "银行级加密（AES-256），支持SSO单点登录和精细的基于角色的访问控制（RBAC）。"
-        },
-        {
-          "icon": "MapPinned",
-          "title": "实时远程信息处理",
-          "desc": "具有亚秒级更新的高精度GPS追踪和实时视频流集成。"
+          "desc": "AES-256传输加密，支持SSO单点登录与精细化RBAC角色权限控制，满足企业合规与安全审计要求。"
         }
       ]
     },
@@ -57,47 +101,99 @@
       "items": [
         {
           "title": "运营仪表盘",
-          "desc": "运营、安全、数据三大报表，让管理层更全面、精准地掌握商用车车队的动态和趋势。",
-          "icon": "Check",
+          "desc": "运营、安全、合规三大维度报表——安全评分、风险趋势、设备在线率一目了然，为管理层提供车队健康状态的全局视图。",
+          "icon": "BarChart3",
           "image": "/images/products/platform/Dashboard.png"
         },
         {
-          "title": "实时GPS位置",
-          "desc": "通过终端获取实时车辆位置及车辆信息，包括速度、车辆状态、里程、驾驶时长等。",
-          "icon": "Check",
+          "title": "车队风险评估",
+          "desc": "全车队风险量化评估体系——车队综合风险等级、司机风险行为画像、百公里风险分析。用数据定义安全水平，让管理决策有据可依。",
+          "icon": "TrendingUp",
+          "image": "/images/products/platform/fleet-risk-assessment.png"
+        },
+        {
+          "title": "实时车辆智能",
+          "desc": "实时获取每台车辆的位置、速度、状态、里程与驾驶时长，所有数据在地图上直观呈现，异常即时可辨。",
+          "icon": "MapPinned",
           "image": "/images/products/platform/vehicle-gps-real-monitor.png"
         },
         {
-          "title": "视频监控",
-          "desc": "可播放实时车辆监控视频，支持多车同时浏览、抓拍及视频参数设置。",
-          "icon": "Check",
+          "title": "实时视频监控",
+          "desc": "随时调取任意车辆的舱内与道路实时高清画面，支持多路同屏监看、即时抓拍与双向对讲，让管理者'身临其境'。",
+          "icon": "Video",
           "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
-          "title": "远程控制",
-          "desc": "可对车辆进行远程抓拍、对讲、云台控制、参数配置等操作。",
-          "icon": "Check",
+          "title": "主动安全报警",
+          "desc": "ADAS与DMS实时监测驾驶风险——前车碰撞预警、车道偏离、疲劳驾驶、分心行为等危险事件即时报警，所有触发事件自动留存视频证据，可追溯、可审查。",
+          "icon": "Bell",
+          "image": "/images/products/platform/active-safety-alerts.png"
+        },
+        {
+          "title": "司机身份识别",
+          "desc": "平台预录入司机信息与照片，车辆启动时自动比对当前驾驶人身份——确保合规上岗，杜绝非授权驾驶，从源头管控人为风险。",
+          "icon": "UserCheck",
+          "image": "/images/products/platform/driver-identity-verification.png"
+        },
+        {
+          "title": "远程车辆控制",
+          "desc": "远程抓拍、双向对讲、云台控制、参数配置——所有指令即时下达、即时执行，不受距离限制。",
+          "icon": "Wrench",
           "image": "/images/products/platform/vehicle-remote-control.png"
         },
         {
-          "title": "视频及轨迹回放",
-          "desc": "查询各车辆过去的行驶轨迹（停靠点、报警、速度曲线）；支持回放特定时间段的视频数据，并支持下载到本地。",
-          "icon": "Check",
+          "title": "视频与轨迹回放",
+          "desc": "完整还原任意时段的行驶轨迹——停靠点、报警事件、速度曲线与多通道视频同步回放。支持本地下载，用于离线审查或证据归档。",
+          "icon": "Clock",
           "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
           "title": "电子围栏",
-          "desc": "可设置电子围栏区域，车辆进出区域均会触发系统报警。",
-          "icon": "Check",
+          "desc": "自定义虚拟围栏区域，车辆进出即时触发系统告警——适用于路线合规管理与场站安全监控。",
+          "icon": "MapPin",
           "image": "/images/products/platform/vehicle-geoface.png"
         },
         {
-          "title": "多平台集成",
-          "desc": "平台支持Web、PC、小程序、移动App等多终端互联互通。",
-          "icon": "",
+          "title": "AI智能助手",
+          "desc": "平台内置AI大模型驱动的智能助手，随时以自然语言提问——查数据、看趋势、找异常，即刻获得精准回答，让复杂分析变得像对话一样简单。",
+          "icon": "Sparkles",
+          "image": "/images/products/platform/ai-assistant.jpg"
+        },
+        {
+          "title": "多端协同",
+          "desc": "Web端、PC客户端、移动App、小程序——一个平台、多屏同步，数据实时互通，运营管理不中断。",
+          "icon": "Smartphone",
           "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
         }
       ]
+    },
+    {
+      "type": "features",
+      "title": "赋能您的生态",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "FileCheck",
+          "title": "保险与承保方",
+          "desc": "为承保车队配备证据级视频安全方案。通过防篡改的事件回放加速理赔定责，降低欺诈风险，并基于真实驾驶行为数据设计保费激励机制。"
+        },
+        {
+          "icon": "Layers",
+          "title": "TSP远程信息服务商",
+          "desc": "将成熟的视频安全能力嵌入您现有的远程信息服务体系。白标部署、开放API对接、后端全托管——您专注维护客户关系，我们驱动平台运转。"
+        },
+        {
+          "icon": "Building",
+          "title": "OEM主机厂与企业车队",
+          "desc": "从原厂预装到后期改装，平台灵活适配您的车辆架构与运营规模。从单一车队部署到多区域托管安全项目，配备7×24小时监控支持。"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "准备好构建您的安全证据链了吗？",
+      "link": "/zh/contact",
+      "buttonText": "预约演示"
     }
   ]
 }

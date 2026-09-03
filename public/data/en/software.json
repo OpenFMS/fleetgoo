@@ -1,17 +1,61 @@
 {
   "id": "software",
   "categoryId": "product",
-  "title": "Intelligent Fleet Management Platform",
-  "metaTitle": "Intelligent Fleet Management Platform",
-  "metaDesc": "Enterprise-grade fleet management platform integrating Cloud SaaS, Mobile Apps, and Open API for total operational visibility.",
+  "title": "Evidence-Driven Fleet Risk Management Platform",
+  "metaTitle": "Evidence-Driven Fleet Risk Management Platform | FleetGoo",
+  "metaDesc": "All-in-one fleet platform integrating AI video safety evidence, managed services, and closed-loop risk control — built for insurers, TSPs, OEMs, and enterprise fleets.",
   "blocks": [
     {
       "type": "hero",
-      "title": "The All-In-One Fleet Intelligence Platform",
-      "subtitle": "Unify your operations with a complete ecosystem. From our powerful Cloud SaaS and intuitive Mobile Apps to flexible Open API integrations—we provide the infrastructure for smarter fleet decisions.",
+      "title": "Evidence-Driven Fleet Risk Management",
+      "subtitle": "Turn every trip into verifiable safety intelligence. AI-powered video capture, tamper-proof evidence chains, and closed-loop risk control — built for fleets, insurers, and the technology partners who connect them.",
       "backgroundImage": "/images/products/platform/FleetGoo-Hero.jpeg",
-      "ctaText": "Explore the Platform",
+      "ctaText": "Book a Demo",
       "ctaLink": "/en/contact"
+    },
+    {
+      "type": "stats",
+      "background": "blue",
+      "items": [
+        {
+          "value": "6,000+",
+          "label": "Fleets Served"
+        },
+        {
+          "value": "15M",
+          "label": "Devices Connected"
+        },
+        {
+          "value": "2.6M",
+          "label": "AI Vision Channels"
+        },
+        {
+          "value": "12B km",
+          "label": "Monitored Monthly"
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "title": "Three Pillars of Fleet Safety",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "Video",
+          "title": "Video Safety Evidence",
+          "desc": "Every incident captured in HD, timestamped, and stored in a tamper-proof evidence chain. AI-triggered recording ensures you never miss the critical moment — and the evidence always holds up when it matters most."
+        },
+        {
+          "icon": "Shield",
+          "title": "Managed Safety Service",
+          "desc": "Don't just deploy technology — deploy a safety operation. Our 24/7 monitoring team watches your fleet around the clock, triages alerts, and delivers actionable safety reports so your team can focus on running the business."
+        },
+        {
+          "icon": "RefreshCcw",
+          "title": "Risk Control Closed-Loop",
+          "desc": "Detect → Alert → Coach → Measure → Improve. We close the loop between risk detection and behavioral change, turning raw driving data into measurable safety outcomes."
+        }
+      ]
     },
     {
       "type": "features",
@@ -20,84 +64,136 @@
       "items": [
         {
           "icon": "Cloud",
-          "title": "Cloud SaaS Portal",
-          "desc": "Centralized command center to monitor fleet status, replay routes, and manage drivers from any browser."
+          "title": "Cloud Command Center",
+          "desc": "A centralized cloud hub to monitor fleet status in real time, replay route history, and manage driver and vehicle profiles — accessible from any browser, anywhere."
         },
         {
           "icon": "Smartphone",
-          "title": "Mobile Ecosystem",
-          "desc": "Native iOS and Android apps empowering fleet managers and drivers to stay connected on the go."
+          "title": "Mobile Fleet Apps",
+          "desc": "Native iOS and Android apps with role-based experiences for managers and drivers — task dispatch, real-time notifications, and on-the-go fleet management."
+        },
+        {
+          "icon": "MapPinned",
+          "title": "Video Telematics Engine",
+          "desc": "A unified video + GPS + AI engine. HD road and in-cabin footage, AI-triggered recording, and high-precision positioning — one deployment, multi-dimensional data capture."
         },
         {
           "icon": "Webhook",
-          "title": "Open API Engine",
-          "desc": "Seamlessly integrate fleet data with your existing ERP, CRM, or custom applications via our RESTful API."
+          "title": "Open API & Integrations",
+          "desc": "RESTful API + Webhooks to seamlessly connect fleet data with your existing ERP, CRM, or business systems — let data flow freely across your organization."
         },
         {
           "icon": "BarChart3",
           "title": "Advanced Analytics",
-          "desc": "Transform raw data into actionable insights with predictive maintenance and fuel usage reports."
+          "desc": "Transform raw fleet data into actionable insights — predictive maintenance alerts, fuel consumption analysis, and driver behavior scoring to drive every operational decision."
         },
         {
           "icon": "Shield",
-          "title": "Enterprise Security",
-          "desc": "Bank-level encryption (AES-256), SSO support, and granular role-based access control (RBAC)."
-        },
-        {
-          "icon": "MapPinned",
-          "title": "Real-Time Telematics",
-          "desc": "High-precision GPS tracking with sub-second updates and live video streaming integration."
+          "title": "Enterprise-Grade Security",
+          "desc": "AES-256 encryption, SSO support, and granular role-based access control (RBAC) — meeting the compliance and audit requirements enterprises demand."
         }
       ]
     },
     {
       "type": "features",
-      "title": "Core Feature",
+      "title": "Core Features",
       "layout": "alternating",
       "items": [
         {
           "title": "Operations Dashboard",
-          "desc": "The three major reports on operations, safety, and data enable management to have a more comprehensive and precise understanding of the dynamics and trends of the commercial vehicle fleet.",
-          "icon": "Check",
+          "desc": "Three-pillar reporting across operations, safety, and compliance — safety scores, risk trends, and device uptime at a glance, giving management a complete view of fleet health.",
+          "icon": "BarChart3",
           "image": "/images/products/platform/Dashboard.png"
         },
         {
-          "title": "Real-Time GPS Location",
-          "desc": "Through the device to obtain real-time vehicle location and vehicle information, including speed, vehicle status, mileage, driving time, etc.",
-          "icon": "Check",
+          "title": "Fleet Risk Assessment",
+          "desc": "A fleet-wide risk quantification system — overall risk ratings, driver risk behavior profiling, and per-100km risk analysis. Define safety levels with data, and make management decisions with confidence.",
+          "icon": "TrendingUp",
+          "image": "/images/products/platform/fleet-risk-assessment.png"
+        },
+        {
+          "title": "Real-Time Vehicle Intelligence",
+          "desc": "Live telemetry for every vehicle — position, speed, status, mileage, and driving time — presented on an interactive map where anomalies are instantly visible.",
+          "icon": "MapPinned",
           "image": "/images/products/platform/vehicle-gps-real-monitor.png"
         },
         {
-          "title": "Video Surveillance",
-          "desc": "It can play real-time vehicle monitoring video, and supports simultaneous browsing, capture, and video parameter setting of multiple vehicles.",
-          "icon": "Check",
+          "title": "Live Video Surveillance",
+          "desc": "Stream live HD footage from any vehicle's road-facing and in-cabin cameras at any time. Multi-channel simultaneous viewing, instant snapshot, and two-way intercom put you in the driver's seat.",
+          "icon": "Video",
           "image": "/images/products/platform/vehicle-video-surveillance.png"
         },
         {
-          "title": "Remote Control",
-          "desc": "It can carry out remote capture, intercom, PTZ control, parameter configuration and other operations on the vehicle.",
-          "icon": "Check",
+          "title": "Active Safety Alerts",
+          "desc": "ADAS and DMS monitor driving risk in real time — forward collision warnings, lane departure, driver fatigue, and distraction events trigger instant alerts. Every triggered event is automatically recorded with video evidence for full traceability and review.",
+          "icon": "Bell",
+          "image": "/images/products/platform/active-safety-alerts.png"
+        },
+        {
+          "title": "Driver Identity Verification",
+          "desc": "Pre-register driver profiles and photos on the platform. When a vehicle starts, the system automatically verifies the current driver's identity — ensuring only authorized personnel operate your fleet, controlling human risk at the source.",
+          "icon": "UserCheck",
+          "image": "/images/products/platform/driver-identity-verification.png"
+        },
+        {
+          "title": "Remote Vehicle Control",
+          "desc": "Remote snapshot, two-way intercom, PTZ control, and over-the-air parameter configuration — every command delivered and executed instantly, with no distance limitations.",
+          "icon": "Wrench",
           "image": "/images/products/platform/vehicle-remote-control.png"
         },
         {
           "title": "Video & Track Playback",
-          "desc": "Query the route trajectory of each vehicle in the past, displaying information such as stopping points, alarm times, and speed curves during the journey; playback video data from each channel for a specific time period in the past for every vehicle, and support downloading to the local system",
-          "icon": "Check",
+          "desc": "Replay any trip in full context — route trajectory, stop points, alarm events, and speed curves synchronized with multi-channel video. Downloadable for offline review or evidence archiving.",
+          "icon": "Clock",
           "image": "/images/products/platform/vehicle-track-video-play.png"
         },
         {
-          "title": "Geo Fence",
-          "desc": "An electronic fence zone can be set up, and an alert will be triggered whenever a vehicle enters or exits the zone.",
-          "icon": "Check",
+          "title": "Geofence Management",
+          "desc": "Define virtual boundary zones and receive instant alerts when vehicles enter or exit — ideal for route compliance enforcement and depot security monitoring.",
+          "icon": "MapPin",
           "image": "/images/products/platform/vehicle-geoface.png"
         },
         {
-          "title": "Multi-platform integration",
-          "desc": "The platform supports interconnectivity across multiple terminals including web, PC, mini programs, and mobile apps.",
-          "icon": "",
+          "title": "AI Assistant",
+          "desc": "A built-in AI assistant powered by large language models. Ask questions in natural language — query data, spot trends, find anomalies — and get precise answers instantly. Complex fleet analytics, simplified to a conversation.",
+          "icon": "Sparkles",
+          "image": "/images/products/platform/ai-assistant.jpg"
+        },
+        {
+          "title": "Multi-Platform Access",
+          "desc": "Web portal, desktop client, mobile app, and mini-program — one platform, every screen, real-time sync. Your fleet operations stay connected without interruption.",
+          "icon": "Smartphone",
           "image": "/images/products/platform/FleetGoo-SaaS-App.jpeg"
         }
       ]
+    },
+    {
+      "type": "features",
+      "title": "Built for Your Ecosystem",
+      "layout": "grid",
+      "items": [
+        {
+          "icon": "FileCheck",
+          "title": "For Insurers & Underwriters",
+          "desc": "Equip your insured fleets with evidence-grade video safety. Accelerate claims resolution with tamper-proof incident replay, reduce fraud exposure, and design usage-based premium incentives backed by real driving behavior data."
+        },
+        {
+          "icon": "Layers",
+          "title": "For Telematics Service Providers",
+          "desc": "Embed proven video safety into your existing telematics stack. White-label deployment, open API integration, and a fully managed backend — you own the customer relationship while we power the platform."
+        },
+        {
+          "icon": "Building",
+          "title": "For OEMs & Enterprise Fleets",
+          "desc": "Factory-fit or retrofit, our platform adapts to your vehicle architecture and operational scale. From single-fleet deployment to multi-region managed safety programs with 24/7 monitoring support."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to Build Your Safety Evidence Chain?",
+      "link": "/en/contact",
+      "buttonText": "Book a Demo"
     }
   ]
 }

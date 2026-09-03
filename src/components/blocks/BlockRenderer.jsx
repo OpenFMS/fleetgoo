@@ -6,13 +6,17 @@ import {
     Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, // Software page
     Award, Users2, Globe2, TrendingUp, // About page
     Webhook, // API feature
-    Eye, Smile // New About values
+    Eye, Smile, // New About values
+    RefreshCcw, Wrench, Clock, UserCheck, Sparkles, BookOpen, // Software page — new features
+    FileCheck, Layers, Building // Software page — ecosystem partners
 } from 'lucide-react';
 
 const iconMap = {
     Cloud, BarChart3, Shield, Smartphone, Bell, MapPinned, CheckCircle2,
     Award, Users2, Globe2, TrendingUp, Webhook,
-    Eye, Smile
+    Eye, Smile, MapPin, Video,
+    RefreshCcw, Wrench, Clock, UserCheck, Sparkles, BookOpen,
+    FileCheck, Layers, Building
 };
 import { Link } from '@/lib/react-router-shim.jsx';
 
@@ -209,15 +213,15 @@ const FeatureGridBlock = ({ data }) => {
 /* --- 5. Stats Block --- */
 const StatsBlock = ({ data }) => {
     return (
-        <div className={`${data.background === 'blue' ? 'bg-blue-600' : 'bg-slate-50 dark:bg-slate-900'} py-16`}>
+        <div className="py-10 mx-4">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {data.items?.map((item, idx) => (
-                        <div key={idx} className="px-4">
-                            <div className={`text-4xl font-bold mb-2 ${data.background === 'blue' ? 'text-white' : 'text-slate-900 dark:text-white'}`}>
+                        <div key={idx} className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-6 text-center shadow-sm">
+                            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
                                 {item.value}
                             </div>
-                            <div className={`text-sm font-medium ${data.background === 'blue' ? 'text-blue-100' : 'text-slate-500'}`}>
+                            <div className="text-sm font-medium text-slate-500 dark:text-slate-400">
                                 {item.label}
                             </div>
                         </div>
