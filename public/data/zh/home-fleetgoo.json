@@ -1,0 +1,119 @@
+{
+  "metaTitle": "首页",
+  "metaDesc": "",
+  "keywords": [],
+  "hero": {
+    "title": "先进车辆智能系统",
+    "subtitle": "用智能硬件和AI软件变革您的车队",
+    "description": "业界领先的4G行车记录仪、GPS追踪、MDVR系统以及受全球企业信赖的综合车队管理平台。",
+    "ctaPrimary": "探索产品",
+    "ctaSecondary": "联系销售",
+    "image": "/images/heros/default-hero.jpg"
+  },
+  "valueProps": {
+    "title": "解决您最棘手的车队挑战",
+    "subtitle": "我们将运营数据转化为可操作的情报。",
+    "items": [
+      {
+        "icon": "🎯",
+        "title": "实时可见性",
+        "description": "实时追踪您的车队。",
+        "stat": "99.9%",
+        "statLabel": "正常运行时间"
+      },
+      {
+        "icon": "🛡️",
+        "title": "安全优先",
+        "description": "AI 驱动的行车记录仪保护您的资产。",
+        "stat": "50%",
+        "statLabel": "事故减少"
+      },
+      {
+        "icon": "📊",
+        "title": "数据驱动决策",
+        "description": "智能分析优化运营。",
+        "stat": "30%",
+        "statLabel": "成本节省"
+      }
+    ]
+  },
+  "featuredProducts": {
+    "title": "精选硬件",
+    "subtitle": "探索我们专为可靠性和高性能设计的旗舰设备。",
+    "tabs": [
+      {
+        "name": "行车记录仪",
+        "products": [
+          {
+            "image": "/images/products/D503-main.jpg",
+            "name": "D503 Pro",
+            "tagline": "4K 双镜头行车记录仪",
+            "features": [
+              {
+                "value": "4K 前镜头"
+              },
+              {
+                "value": "夜视"
+              },
+              {
+                "value": "GPS"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "为什么选择 FleetGoo？",
+    "items": [
+      {
+        "icon": "🏭",
+        "title": "自有工厂",
+        "description": "10,000㎡制造基地，月产能200,000+"
+      },
+      {
+        "icon": "🏆",
+        "title": "行业领导者",
+        "description": "13年经验，600+全球企业客户"
+      },
+      {
+        "icon": "🔬",
+        "title": "研发驱动",
+        "description": "80+人研发团队，40+专利"
+      },
+      {
+        "icon": "🌍",
+        "title": "全球覆盖",
+        "description": "120+国家销售网络"
+      }
+    ]
+  },
+  "socialProof": {
+    "title": "深受行业领导者信赖",
+    "stats": [
+      {
+        "value": "600+",
+        "label": "全球企业"
+      },
+      {
+        "value": "120+",
+        "label": "国家覆盖"
+      },
+      {
+        "value": "200万+",
+        "label": "设备部署"
+      },
+      {
+        "value": "13年",
+        "label": "行业经验"
+      }
+    ]
+  },
+  "cta": {
+    "title": "获取您的车队定制报价",
+    "subtitle": "填写表单，我们的车队专家将为您提供量身定制的解决方案。",
+    "buttonText": "发送咨询",
+    "backgroundImage": "/images/heros/cta-bg.jpg"
+  }
+}
